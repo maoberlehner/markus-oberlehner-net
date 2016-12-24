@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-modularis",
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

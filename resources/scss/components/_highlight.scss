@@ -1,0 +1,93 @@
+.c-highlight {
+  display: block;
+  overflow-x: auto;
+  padding: setting-spacing(l);
+  background: setting-color(a, gray);
+  color: #333;
+}
+
+.c-highlight__comment,
+.c-highlight__quote {
+  color: setting-color(c, gray);
+  font-style: italic;
+}
+
+.c-highlight__keyword,
+.c-highlight__selector-tag,
+.c-highlight__subst {
+  color: #333;
+  font-weight: 700;
+}
+
+.c-highlight__number,
+.c-highlight__literal,
+.c-highlight__variable,
+.c-highlight__template-variable,
+.c-highlight__tag .c-highlight__attr {
+  color: #008080;
+}
+
+.c-highlight__string,
+.c-highlight__doctag {
+  color: #d14;
+}
+
+.c-highlight__title,
+.c-highlight__section,
+.c-highlight__selector-id {
+  color: #900;
+  font-weight: 700;
+}
+
+.c-highlight__subst {
+  font-weight: 400;
+}
+
+.c-highlight__type,
+.c-highlight__class .c-highlight__title {
+  color: #458;
+  font-weight: 700;
+}
+
+.c-highlight__tag,
+.c-highlight__name,
+.c-highlight__attribute {
+  color: #000080;
+  font-weight: 400;
+}
+
+.c-highlight__regexp,
+.c-highlight__link {
+  color: #009926;
+}
+
+.c-highlight__symbol,
+.c-highlight__bullet {
+  color: #990073;
+}
+
+.c-highlight__built_in,
+.c-highlight__builtin-name {
+  color: #0086b3;
+}
+
+.c-highlight__meta {
+  color: setting-color(a, gray);
+  font-weight: 700;
+}
+
+.c-highlight__deletion {
+  background: #fdd;
+}
+
+.c-highlight__addition {
+  background: #dfd;
+}
+
+.c-highlight__emphasis {
+  font-style: italic;
+}
+
+.c-highlight__strong {
+  font-weight: 700;
+}

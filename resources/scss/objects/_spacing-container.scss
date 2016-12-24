@@ -1,0 +1,17 @@
+.o-spacing-container {
+  > * + * {
+    margin-top: setting-spacing(m);
+  }
+}
+
+.o-spacing-container--l {
+  > * + * {
+    margin-top: setting-spacing(l);
+  }
+}
+
+.o-spacing-container--xxxl {
+  > * + * {
+    margin-top: setting-spacing(xxxl);
+  }
+}

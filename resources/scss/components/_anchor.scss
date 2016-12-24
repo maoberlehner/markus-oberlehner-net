@@ -1,0 +1,13 @@
+.c-anchor {
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+}
+
+.c-anchor--low-key {
+  &,
+  &:visited {
+    color: #444;
+  }
+}

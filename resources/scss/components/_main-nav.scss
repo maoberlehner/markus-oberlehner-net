@@ -1,0 +1,19 @@
+.c-main-nav {
+  display: flex;
+}
+
+.c-main-nav__link {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-main-nav__divide {
+  margin-right: setting-spacing(s);
+  margin-left: setting-spacing(s);
+}

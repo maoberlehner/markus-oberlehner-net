@@ -1,0 +1,30 @@
+.c-main-header {
+  padding-top: setting-spacing(l);
+  padding-bottom: setting-spacing(l);
+  background: $brand-color;
+
+  &,
+  a {
+    color: $brand-color-contrast;
+  }
+}
+
+.c-main-header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 33em) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.c-main-header__logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: setting-font-size(s);
+  font-family: Tahoma;
+  line-height: 1.1;
+}

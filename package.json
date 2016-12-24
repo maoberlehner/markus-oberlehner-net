@@ -1,0 +1,49 @@
+{
+  "name": "markus-oberlehner-net",
+  "description": "Generator for the personal website of Markus Oberlehner",
+  "version": "0.0.1",
+  "author": "Markus Oberlehner",
+  "homepage": "https://markus.oberlehner.net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalanchesass/markus-oberlehner-net"
+  },
+  "bugs": {
+    "url": "https://github.com/avalanchesass/markus-oberlehner-net/issues"
+  },
+  "devDependencies": {
+    "@avalanche/object-container": "^4.0.0-alpha.3",
+    "@avalanche/object-grid": "^4.0.0-alpha.7",
+    "autoprefixer": "^6.5.4",
+    "clean-css": "^3.4.22",
+    "eslint": "^3.12.1",
+    "eslint-config-modularis": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "glob": "^7.1.1",
+    "handlebars": "^4.0.6",
+    "highlight.js": "^9.8.0",
+    "htmlclean": "^2.7.8",
+    "lighthouse": "^1.2.2",
+    "marked": "^0.3.6",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.0.0",
+    "node-sass-magic-importer": "^3.1.0",
+    "postcss": "^5.2.6",
+    "postcss-scss": "^0.4.0",
+    "static-http2-server": "^1.5.3",
+    "stylelint": "^7.6.0",
+    "stylelint-config-modularis": "^2.0.1",
+    "uncss": "^0.14.1"
+  },
+  "scripts": {
+    "init": "yarn && http2-server --generate-cert",
+    "start": "yarn run build && http2-server dist -o -g -P",
+    "build": "yarn run clean && node scripts/build.js && cp -R resources/images/favicon.ico dist",
+    "build:production": "yarn run clean && node scripts/build.js --minify && cp resources/images/favicon.ico dist",
+    "clean": "rm -Rf dist",
+    "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
+    "lighthouse": "lighthouse https://127.0.0.1:4443/",
+    "publish": "yarn run build:production && rsync -avze ssh dist/* vs1.oberlehner.net:/var/www/markus.oberlehner.net/web"
+  }
+}
