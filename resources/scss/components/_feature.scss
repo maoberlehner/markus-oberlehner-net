@@ -1,0 +1,17 @@
+.c-feature {
+  padding-top: setting-spacing(xxxl);
+  padding-bottom: setting-spacing(xxxl);
+  border: 1px solid setting-color(b, gray);
+  border-right: none;
+  border-left: none;
+  background: mix(setting-color(a), #fff, 10%);
+  font-size: setting-font-size(l);
+}
+
+.c-feature__content-grid {
+  align-items: center;
+}
+
+.c-feature__cta {
+  display: inline-block;
+}

@@ -15,6 +15,8 @@
   "devDependencies": {
     "@avalanche/object-container": "^4.0.0-alpha.3",
     "@avalanche/object-grid": "^4.0.0-alpha.7",
+    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
+    "@avalanche/utility-width": "^4.0.0-alpha.3",
     "autoprefixer": "^6.5.4",
     "clean-css": "^3.4.22",
     "eslint": "^3.12.1",
@@ -39,8 +41,8 @@
   "scripts": {
     "init": "yarn && http2-server --generate-cert",
     "start": "yarn run build && http2-server dist -o -g -P",
-    "build": "yarn run clean && node scripts/build.js && cp -R resources/images/favicon.ico dist",
-    "build:production": "yarn run clean && node scripts/build.js --minify && cp resources/images/favicon.ico dist",
+    "build": "yarn run clean && node scripts/build.js && cp -R resources/images dist && mv dist/images/favicon.ico dist",
+    "build:production": "yarn run clean && node scripts/build.js --minify && cp -R resources/images dist && mv dist/images/favicon.ico dist",
     "clean": "rm -Rf dist",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",

@@ -1,3 +1,15 @@
 .c-hero {
   font-size: setting-font-size(l);
 }
+
+.c-hero__items {
+  align-items: flex-end;
+}
+
+.c-hero__text {
+  margin-bottom: setting-spacing(xxl);
+}
+
+.c-hero__image {
+  display: block;
+}

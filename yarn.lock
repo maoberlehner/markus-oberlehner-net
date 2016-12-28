@@ -14,9 +14,29 @@
   dependencies:
     "@avalanche/setting-spacings" "^4.0.0-alpha.2"
 
+"@avalanche/object-vertical-spacing@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@avalanche/object-vertical-spacing/-/object-vertical-spacing-4.0.0-alpha.1.tgz#4afbe93fdc37a4e2ad5140327f49a4b1e38de60f"
+  dependencies:
+    "@avalanche/setting-spacings" "^4.0.0-alpha.3"
+
+"@avalanche/setting-breakpoints@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@avalanche/setting-breakpoints/-/setting-breakpoints-4.0.0-alpha.1.tgz#ef0b70adb1469468578b7178dc75a85588f4dbc1"
+
 "@avalanche/setting-spacings@^4.0.0-alpha.2":
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.2.tgz#796cb45f174107fb272c09d120aac103ede4a0eb"
+
+"@avalanche/setting-spacings@^4.0.0-alpha.3":
+  version "4.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.3.tgz#06af7b656caff50a27570aa415966f926caf9029"
+
+"@avalanche/utility-width@^4.0.0-alpha.3":
+  version "4.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@avalanche/utility-width/-/utility-width-4.0.0-alpha.3.tgz#3643f3a6a5051e83cfd52a1af6643e1ab63c3937"
+  dependencies:
+    "@avalanche/setting-breakpoints" "^4.0.0-alpha.1"
 
 JSONStream@^0.8.4:
   version "0.8.4"

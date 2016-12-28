@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-size: font-size(l);
+  font-size: setting-font-size(l);
   line-height: 1.15;
 }
 
@@ -32,8 +32,10 @@ strong {
   font-weight: 600;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
+  height: auto;
 }
 
 pre,

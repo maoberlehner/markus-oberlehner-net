@@ -11,14 +11,7 @@
 
 .c-main-header__inner {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 33em) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 
 .c-main-header__logo {
