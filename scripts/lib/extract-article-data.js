@@ -1,12 +1,15 @@
 const fs = require(`fs`);
+const moment = require(`moment`);
 const path = require(`path`);
 
 module.exports = (article) => {
-  const dateArray = path.parse(article).base.split(`_`)[0].split(`-`);
+  const dateString = path.parse(article).base.split(`_`)[0];
+  const dateArray = dateString.split(`-`);
   const date = {
     year: dateArray[0],
     month: dateArray[1],
     day: dateArray[2],
+    string: moment(dateString).format(`MMMM D, YYYY`),
   };
   const slug = path.parse(article).base.split(`_`)[1].replace(`.md`, ``);
   let markdown = fs.readFileSync(article, `utf8`);

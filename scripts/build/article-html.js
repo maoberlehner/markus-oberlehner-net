@@ -43,6 +43,8 @@ module.exports = (article, data) => {
   .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
   .replace(new RegExp(`<p><div`, `g`), `<div`)
   .replace(new RegExp(`</div></p>`, `g`), `</div>`)
+  // Add the article date.
+  .replace(new RegExp(`</h1>`), `</h1><span class="c-content__date">${articleData.date.string}</span>`)
   // Style links and make them SEO friendly.
   .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
