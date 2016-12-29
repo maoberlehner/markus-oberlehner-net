@@ -62,5 +62,9 @@ a {
 ul,
 ol,
 dl {
-  list-style-position: inside;
+  padding-left: 2.5em;
+}
+
+li + li {
+  margin-top: setting-spacing(xs);
 }
