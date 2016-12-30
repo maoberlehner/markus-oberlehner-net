@@ -18,12 +18,12 @@ I tinkered around with OOCSS and really liked it, so I started to build some reu
 
 In the year 2011 Bootstrap was released and quickly gained traction. Although I liked many parts of Bootstrap, there were some aspects I didn't agree with. So as almost every self respecting programmer does at some point in life, I made a momentous decision: I should make my own framework.
 
-avalanche was born ([obligatory XKCD link](https://xkcd.com/927/)).
+**avalanche** was born ([obligatory XKCD link](https://xkcd.com/927/)).
 
 ## avalanche 2.x.x and 3.x.x
-avalanche 1.x.x was basically a collection of BEM style OOCSS components. It was not until version 2.x.x when it became interesting.
+**avalanche** 1.x.x was basically a collection of BEM style OOCSS components. It was not until version 2.x.x when it became interesting.
 
-I moved all components into separate GitHub repositories and made them work as [Bower](https://bower.io/) packages. I also split the packages into different types (mostly based on the ITCSS convention).
+I moved all components into separate GitHub repositories and made them work as [Bower](https://bower.io/) packages. I also split the packages into different types (mostly based on the [ITCSS convention](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf)).
 
 The biggest change from version 2.x.x to 3.x.x was the switch to NPM instead of Bower. With version 3.x.x I also tried to use SASS to it's limits and made almost every aspect of the packages configurable.
 
@@ -44,10 +44,10 @@ The biggest change from version 2.x.x to 3.x.x was the switch to NPM instead of 
 }
 ```
 
-This was powerful and flexible but also very hard to explain to other developers. One other major pain point still existed in version 3.x.x – packages depended on the avalanche core and were not usable without it.
+This was powerful and flexible but also very hard to explain to other developers. One other major pain point still existed in version 3.x.x – packages depended on the **avalanche** core and were not usable without it.
 
 ## 4.x.x
-I already knew that a package based workflow is superior to monolithic approaches but one thing I learned from my experiences building and using avalanche was: it is very hard to build reusable packages.
+I already knew that a package based workflow is superior to a monolithic approach but one thing I learned from my experiences building and using **avalanche** was: it is very hard to build reusable packages.
 
 One of the biggest problems with package based CSS workflows I encountered is, that CSS and even SASS or LESS, do not provide all the tools necessary to efficiently integrate packages into your project.
 
@@ -68,10 +68,10 @@ In the front-end world every byte matters and therefore it is quite costly to `@
 3. **Selectors should match the projects naming convention**  
 If you use a third party CSS package, you do not want to end up with a mixture of different naming conventions for CSS selectors.
 
-For my idea of how avalanche 4.x.x should work, I needed a solution for those three problems. Thats why I built the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer), a custom node-sass importer.
+For my idea of how **avalanche** 4.x.x should work, I needed a solution for those three problems. Thats why I built [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer), a custom node-sass importer.
 
 ### Standalone packages
-What really bothered me with version 3.x.x was that all the packages still depended on the core avalanche package. With version 4.x.x packages are built in a way so that they can work standalone.
+What really bothered me with version 3.x.x was that all the packages still depended on the core **avalanche** package. With version 4.x.x packages are built in a way so that they can work standalone.
 
 Packages are now way less configurable but thanks to the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) most of the configuration options aren't necessary anymore. Instead of controlling the output of packages with variables, the user can import only the selectors he needs from the package.
 
@@ -95,9 +95,9 @@ Being an open source maintainer really made me fall in love with automated testi
 
 Although automated tests are not a huge thing in the CSS world, I really wanted to have some system in place to prevent me from releasing faulty code.
 
-Every avalanche 4.x.x package comes with it's own regression tests and a new release is only created if all the packages pass their tests. [BackstopJS](https://github.com/garris/backstopjs) is used to run the tests.
+Every **avalanche** 4.x.x package comes with it's own regression tests and a new release is only created if all the packages pass their tests. [BackstopJS](https://github.com/garris/backstopjs) is used to run the tests.
 
 ## Conclusion
-For now I'm quite happy with the latest release of avalanche. I made the packages work standalone, optimized the development process by using a monorepo approach and made development less fragile by adding regression tests.
+For now I'm quite happy with the latest release of **avalanche**. I made the packages work standalone, optimized the development process by using a monorepo approach and made development less fragile by adding regression tests.
 
-I do not expect for avalanche to be the next Bootstrap or even to be used by many people. Although what I hope for is, that other people keep working on better ways of building design systems with CSS and that avalanche may serve as an inspiration for some of those people.
+I do not expect for **avalanche** to be the next Bootstrap or even to be used by many people. Although what I hope for is, that other people keep working on better ways of building design systems with CSS and that **avalanche** may serve as an inspiration for some of those people.
