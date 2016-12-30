@@ -12,6 +12,7 @@ module.exports = (article) => {
     string: moment(dateString).format(`MMMM D, YYYY`),
   };
   const slug = path.parse(article).base.split(`_`)[1].replace(`.md`, ``);
+  const url = `/blog/${date.year}/${date.month}/${slug}/`;
   let markdown = fs.readFileSync(article, `utf8`);
   const jsonRegex = /^{[\s\S]*?}/i;
   const extractedData = JSON.parse(markdown.match(jsonRegex)[0]);
@@ -20,6 +21,7 @@ module.exports = (article) => {
   return Object.assign({
     date,
     slug,
+    url,
     markdown,
   }, extractedData);
 };

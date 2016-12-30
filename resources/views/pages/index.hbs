@@ -18,7 +18,7 @@
       <div class="o-vertical-spacing o-vertical-spacing--xxxl">
         <section class="c-feature">
           <div class="o-container o-vertical-spacing">
-            <h2 class="c-title--2">What I do</h2>
+            <h2 class="c-title c-title--2">What I do</h2>
             <div class="c-feature__content">
               <div class="o-grid o-grid--xxl c-feature__content-grid">
                 <div class="o-grid__item o-vertical-spacing u-width-12/12 u-width-9/12@m">
@@ -35,7 +35,17 @@
           </div>
         </section>
         <section class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
-          <h2 class="c-title--2">Latest articles</h2>
+          <h2 class="c-title c-title--2">Latest articles</h2>
+          <div class="c-article-list">
+            {{#each articles}}
+              <div class="o-vertical-spacing o-vertical-spacing--xs c-article-list__item">
+                <h3 class="c-title c-title--3"><a class="c-article-list__title" href="{{ url }}">{{ title }}</a></h3>
+                <span class="c-article-list__date">{{ date.string }}</span>
+                <p>{{ intro }}</p>
+                <a class="c-article-list__cta c-anchor" href="{{ url }}">Read more...</a>
+              </div>
+            {{/each}}
+          </div>
         </section>
       </div>
     </main>

@@ -3,7 +3,6 @@ const highlightJs = require(`highlight.js`);
 const marked = require(`marked`);
 const path = require(`path`);
 
-const extractArticleData = require(`../lib/extract-article-data.js`);
 const hbs2html = require(`../lib/hbs2html.js`);
 
 marked.setOptions({
@@ -15,25 +14,23 @@ marked.setOptions({
   },
 });
 
-const hbs = path.join(process.cwd(), `resources`, `views`, `pages`, `article.hbs`);
+const hbs = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
 const template = fs.readFileSync(hbs, `utf8`);
 const blogDirectory = path.join(process.cwd(), `dist`, `blog`);
 
 module.exports = (article, data) => {
-  const articleData = extractArticleData(article);
-
   const outputFile = path.join(
     blogDirectory,
-    articleData.date.year,
-    articleData.date.month,
-    articleData.slug,
+    data.date.year,
+    data.date.month,
+    data.slug,
     `index.html`
   );
 
   // Create live demo code from code example.
   const matchExamples = new RegExp(`\`\`\`html((.|\n)*?)\`\`\``, `g`);
   // eslint-disable-next-line no-param-reassign
-  data.content = marked(articleData.markdown.replace(
+  data.content = marked(data.markdown.replace(
     matchExamples,
     `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
   ))
@@ -44,14 +41,14 @@ module.exports = (article, data) => {
   .replace(new RegExp(`<p><div`, `g`), `<div`)
   .replace(new RegExp(`</div></p>`, `g`), `</div>`)
   // Add the article date.
-  .replace(new RegExp(`</h1>`), `</h1><span class="c-content__date">${articleData.date.string}</span>`)
+  .replace(new RegExp(`</h1>`), `</h1><span class="c-content__date">${data.date.string}</span>`)
   // Style links and make them SEO friendly.
   .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
   // eslint-disable-next-line no-param-reassign
-  data.metaTitle = `${articleData.title} | Markus Oberlehner`;
+  data.metaTitle = `${data.title} | Markus Oberlehner`;
   // eslint-disable-next-line no-param-reassign
-  data.metaDescription = articleData.description;
+  data.metaDescription = data.description;
 
   hbs2html(template, data, outputFile);
 };

@@ -1,0 +1,20 @@
+.c-article-list__item {
+  &:not(:first-child) {
+    margin-top: setting-spacing(l);
+    padding-top: setting-spacing(l);
+    border-top: 1px solid setting-color(b, gray);
+  }
+}
+
+.c-article-list__title {
+  color: #333;
+  text-decoration: none;
+}
+
+.c-article-list__cta {
+  display: inline-block;
+}
+
+.c-article-list__date {
+  font-size: setting-font-size(s);
+}

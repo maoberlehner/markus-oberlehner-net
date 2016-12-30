@@ -1,0 +1,21 @@
+{{#> "layouts/main" metaTitle="Markus Oberlehner | I build stuff." metaDescription="I'm a web developer currently working at karriere.at and I write blog articles about web development and life." }}
+  <div class="o-vertical-spacing o-vertical-spacing--xxxl">
+    {{> partials/header }}
+
+    <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
+      <h1 class="c-title c-title--1">Blog</h1>
+      <div class="c-article-list">
+        {{#each articles}}
+          <div class="o-vertical-spacing o-vertical-spacing--xs c-article-list__item">
+            <h2 class="c-title c-title--2"><a class="c-article-list__title" href="{{ url }}">{{ title }}</a></h2>
+            <span class="c-article-list__date">{{ date.string }}</span>
+            <p>{{ intro }}</p>
+            <a class="c-article-list__cta c-anchor" href="{{ url }}">Read more...</a>
+          </div>
+        {{/each}}
+      </div>
+    </main>
+
+    {{> partials/footer }}
+  </div>
+{{/ "layouts/main" }}
