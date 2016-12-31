@@ -93,7 +93,7 @@ Using packages is easier when they are tiny and easy to understand without havin
 ### Testing
 Being an open source maintainer really made me fall in love with automated testing. Without tests you can't be sure if a bugfix or a new feature didn't break something in your project. You live in constant fear that, after a new release, bug report notifications flood your inbox.
 
-Although automated tests are not a huge thing in the CSS world, I really wanted to have some system in place to prevent me from releasing faulty code.
+Although automated tests are not a huge thing in the CSS world, I really wanted to have a system in place to prevent me from releasing faulty code.
 
 Every **avalanche** 4.x.x package comes with it's own regression tests and a new release is only created if all the packages pass their tests. [BackstopJS](https://github.com/garris/backstopjs) is used to run the tests.
 
