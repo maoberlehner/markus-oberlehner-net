@@ -29,7 +29,7 @@ My personal favorite learning resource is [laracasts.com](https://laracasts.com/
 
 Although I rarely read books about programming there are two books I can whole heartedly recommend: [Clean Code](http://amzn.to/2hm46Eg) by Robert C. Martin and [CSS Secrets](http://amzn.to/2hm4YJ9) by Lea Verou. The former will help you to be a better programmer and the later teaches you things about CSS you never heard or thought about before. Currently I'm reading [Learning JavaScript Design Patterns](http://amzn.to/2ivlDZC) by Addy Osmani and I've already learned **a lot**.
 
-Not everything you learn has to be related to programming. Most of the time I read books to become a more knowledgeable human in general. Recently I've read [7 Habits Of Highly Effective People](http://amzn.to/2i2i6jy) by Stephen R. Covey and I learned some things about living a effective life.
+Not everything you learn has to be related to programming. Most of the time I read books to become a more knowledgeable human in general. Recently I've read [7 Habits Of Highly Effective People](http://amzn.to/2i2i6jy) by Stephen R. Covey and I learned some things about living an effective life.
 
 ### Hardware
 Don't try to save money by buying cheap hardware (if you are an employer, don't try to save money by buying cheap hardware for your employees).
