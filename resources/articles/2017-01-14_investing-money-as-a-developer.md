@@ -9,7 +9,7 @@ Developers tend to earn a decent amount of money. Although this varies from coun
 
 How much money is enough money to even start thinking about investing it? As with so many things in life: it depends™.
 
-How much money do you earn? Do you have a car? How much is your rent? Do you have plans on spending a lot of money in the near future? How good is the social security system in your country?
+How much money do you earn? Do you have a car? How much is your rent? Do you have to spend a lot of money on something in the near future? How good is the social security system in your country?
 
 A general rule of thumb is to keep at least two months' income in your bank account. Depending on your situation (see the factors I listed above) this number may be up to five or even ten times your monthly income.
 
