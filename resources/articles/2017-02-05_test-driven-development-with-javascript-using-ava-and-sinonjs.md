@@ -27,7 +27,7 @@ module.exports = function formatValues(values) {
 };
 ```
 
-Whats wrong with this code when it comes to testability? The `formatValues` function depends on functions in the global scope (`chalk` and `Math`). Why is this bad? When testing this function we are limited in what we can test. In fact we only can test the output of the function. If we change something and the test fails, the only thing we know is that something is wrong but not exactly what. We are not able to determine if the `Math` or the `chalk` functions are called with the correct values or if they are called at all.
+Whats wrong with this code when it comes to testability? The `formatValues` function depends on functions in the global scope (`chalk` and `Math`). Why is this bad? When testing this function we are limited in what we can test. In fact we can only test the output of the function. If we change something and the test fails, the only thing we know is that something is wrong but not exactly what. We are not able to determine if the `Math` or the `chalk` functions are called with the correct values or if they are called at all.
 
 ## Refactoring with TDD
 So let's rebuild the `formatValues` function using the TDD approach.
