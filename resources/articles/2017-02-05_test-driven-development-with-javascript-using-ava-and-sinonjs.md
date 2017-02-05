@@ -62,7 +62,7 @@ test(`Should be a function.`, (t) => {
 });
 ```
 
-This might seem like a silly test, obviously we need a function and obviously there will be a function `formatValues` once we define it. So yeah, you may not write tests for the function itself in your codebase, but I like the idea of having tests documenting the code. What this test is saying is: “In this codebase, there is a function called `formatValues`”.
+This might seem like a silly test, obviously we need a function and obviously there will be a function `formatValues` once we define it. So yeah, you may not write tests for the existence of the function itself in your codebase, but I like the idea of having tests documenting the code. What this test is saying is: “In this codebase, there is a function called `formatValues`”.
 
 Although it might seem superfluous, it is a good habit to always run your tests (and see them fail) once you wrote a new test. That way you might catch an error in your test – if you wrote a new test and the test is not failing, something is wrong with your test (assuming you are doing TDD and write your tests before the actual code).
 
