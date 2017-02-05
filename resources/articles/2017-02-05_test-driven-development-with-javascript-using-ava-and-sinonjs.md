@@ -50,7 +50,7 @@ yarn add -D ava sinon
 ```
 
 ### Writing our first (failing) test
-Because we are real developers who only do real TDD, we start with creating our first test.
+Because we are real developers who only do real TDD, we start with creating our first test before we are writing any actual code.
 
 ```js
 // test/format-values.test.js
