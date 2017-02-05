@@ -7,7 +7,7 @@
 # Test driven development with JavaScript using ava and Sinon.JS
 For a long time testing and test driven development (TDD) was kind of a magical thing to me. I didn't really know what it meant and it seemed to be something only “real” developers can do correctly. Many developers suffer from imposter syndrome and so did (sometimes even today do) I and I was too scared to get into this magical thing called TDD.
 
-Two or three years ago I started to work on some open source projects and I needed a way to stop things from breaking because of changes made to the codebase. So I bit the bullet and started to write tests for my projects. I did everything wrong what you can do wrong, but tagging a new release knowing everything still works as expected is just a great feeling. It was amazing
+Two or three years ago I started to work on some open source projects and I needed a way to stop things from breaking because of changes made to the codebase. I bit the bullet and started to write tests for my projects. I did everything wrong what you can do wrong, but tagging a new release knowing everything still works as expected is just a great feeling. It was amazing
 
 Up until this day I'm still learning how to do this testing thing correctly and most of the time I still write my tests after I wrote the code (so I actually don't do TDD).
 
@@ -27,7 +27,7 @@ module.exports = function formatValues(values) {
 };
 ```
 
-Whats wrong with this code when it comes to testability? The `formatValues` function depends on functions in the global scope (`chalk` and `Math`). Why is this bad? When testing this function we are limited in what we can test. In fact we only can test the output of the function. So if we change something and the test fails, the only thing we know is that something is wrong but not exactly what. We are not able to determine if the `Math` or the `chalk` functions are called with the correct values or if they are called at all.
+Whats wrong with this code when it comes to testability? The `formatValues` function depends on functions in the global scope (`chalk` and `Math`). Why is this bad? When testing this function we are limited in what we can test. In fact we only can test the output of the function. If we change something and the test fails, the only thing we know is that something is wrong but not exactly what. We are not able to determine if the `Math` or the `chalk` functions are called with the correct values or if they are called at all.
 
 ## Refactoring with TDD
 So let's rebuild the `formatValues` function using the TDD approach.
@@ -69,7 +69,7 @@ Although it might seem superfluous, it is a good habit to always run your tests 
 ![Terminal output of failing ava test](/images/2017-02-05/failing-test.png)
 
 ### Make our first test succeed
-So our test is failing – let's make it succeed.
+Now we have a failing test – let's make it succeed.
 
 ```js
 // lib/format-values.js
@@ -80,7 +80,7 @@ module.exports = function formatValuesFactory(dependencies) {
 };
 ```
 
-So whats going on here? We are creating an empty function which takes an object literal as the first parameter (using the [ES6 destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)). And we define and export a factory function to [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) the dependencies (which will come later) to our function and return it. It will become clearer what we are doing here in the next step, trust me.
+Whats going on here? We are creating an empty function which takes an object literal as the first parameter (using the [ES6 destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)). And we define and export a factory function to [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) the dependencies (which will come later) to our function and return it. It will become clearer what we are doing here in the next step, trust me.
 
 Usually you shouldn't have to change your test after writing your code, but in this special case (because we created a new file) we have to update our test to import and use this new file.
 
@@ -99,7 +99,7 @@ Let's run the test and see it succeed.
 ![Terminal output of succeeding ava test](/images/2017-02-05/succeeding-test.png)
 
 ### Adding functionality
-So our test succeeds and that's great, but our code doesn't do much. In fact, it does nothing at all, so let's change that. But first, we add a new test, off course.
+Our test succeeds and that's great, but our code doesn't do much. In fact, it does nothing at all, so let's change that. But first, we add a new test, off course.
 
 ```js
 test(`Should call Math.min().`, (t) => {
@@ -118,7 +118,7 @@ The first step on the journey to achieve this goal is to find the min values in 
 
 We want our function to call `Math.min()` with the parameters from an array. We use an object literal and `sinon.spy()` to create a fake `Math.min()` function. This enables us to spy on the fake function and detect if it was actually called.
 
-The test is ready, so now we can make it succeed be updating our function.
+The test is ready, now we can make it succeed be updating our function.
 
 ```js
 function formatValues({ Math }, values) {
@@ -180,7 +180,7 @@ test(`Should return an array with the min values highlighted.`, (t) => {
 
 This time we make `chalk.bold.green()` return `highlighted` this should replace the min values of our array with `highlighted` and we can check it by testing if the array returned from `formatValues` equals the values in our `expectedResult` array.
 
-Currently we do not return anything in the `formatValues` function, so let's change that and make our final test succeed.
+Currently we do not return anything in the `formatValues` function, let's change that and make our final test succeed.
 
 ```js
 function formatValues({ Math, chalk }, values) {
