@@ -118,7 +118,7 @@ The first step on the journey to achieve this goal is to find the min values in 
 
 We want our function to call `Math.min()` with the parameters from an array. We use an object literal and `sinon.spy()` to create a fake `Math.min()` function. This enables us to spy on the fake function and detect if it was actually called.
 
-The test is ready, now we can make it succeed be updating our function.
+The test is ready, now we can make it succeed by updating our function.
 
 ```js
 function formatValues({ Math }, values) {
