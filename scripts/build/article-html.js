@@ -34,7 +34,7 @@ module.exports = (article, data) => {
     matchExamples,
     `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
   ))
-  .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">`)
+  .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">\n`)
   .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
   .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
   .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
