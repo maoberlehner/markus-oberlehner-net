@@ -15,8 +15,6 @@ The testable module pattern builds upon the traditional approach of using depend
 In my last blog article I wrote about how to make a module testable by using a factory function for injecting dependencies into a function.
 
 ```js
-// Example of a module using dependency injection
-// utilizing a factory function.
 export function formatValues({ Math, chalk }, values) {
   const minValue = Math.min(...values);
   return values.map((value) => {

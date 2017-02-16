@@ -18,6 +18,7 @@ Let's take the following code from my most recent project ([loading-comparison](
 
 ```js
 const chalk = require(`chalk`);
+
 module.exports = function formatValues(values) {
   const minValue = Math.min(...values);
   return values.map((value) => {
