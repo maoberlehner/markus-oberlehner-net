@@ -4,7 +4,7 @@ const htmlclean = require(`htmlclean`);
 const path = require(`path`);
 const uncss = require(`uncss`);
 
-const fixPreIdentation = require(`./fix-pre-identation.js`);
+const fixPreIndentation = require(`./fix-pre-indentation.js`);
 const handlebarsRegisterPartials = require(`./handlebars-register-partials.js`);
 const writeFile = require(`./write-file.js`);
 
@@ -24,9 +24,9 @@ module.exports = (template, data, outputFile) => {
       data.css = `<style>${minifiedCss}</style>`;
       html = htmlclean(Handlebars.compile(template)(data));
 
-      writeFile(outputFile, fixPreIdentation(html));
+      writeFile(outputFile, fixPreIndentation(html));
     });
   } else {
-    writeFile(outputFile, fixPreIdentation(html));
+    writeFile(outputFile, fixPreIndentation(html));
   }
 };
