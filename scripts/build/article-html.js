@@ -27,13 +27,8 @@ module.exports = (article, data) => {
     `index.html`
   );
 
-  // Create live demo code from code example.
-  const matchExamples = new RegExp(`\`\`\`html((.|\n)*?)\`\`\``, `g`);
   // eslint-disable-next-line no-param-reassign
-  data.content = marked(data.markdown.replace(
-    matchExamples,
-    `XDIVclass=c-demoX\r\nXDIVclass=c-demo__viewX\r\n$1/XDIVX\r\n\`\`\`html$1\`\`\`\r\n/XDIVX`
-  ))
+  data.content = marked(data.markdown)
   .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">\n`)
   .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
   .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
