@@ -31,7 +31,7 @@ So how can we use a combination of BEM mixes and modifiers to handle the styling
 </div>
 ```
 
-```css
+```scss
 // button.css
 .button {
 	// ... Generic button styles.
@@ -42,7 +42,7 @@ So how can we use a combination of BEM mixes and modifiers to handle the styling
 }
 ```
 
-```css
+```scss
 // modal.css
 .modal {
 	// ... All the modal styles.
