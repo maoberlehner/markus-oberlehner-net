@@ -54,7 +54,7 @@ So how can we use a combination of BEM mixes and modifiers to handle the styling
 ```
 
 ## BEM mix or modifier – where do i put my styles?
-You may wonder how to decide what styles do belong in a BEM mix and what styles do belong in a modifier. I'd say that positional styles like `margin` or `top` / `left` are typical candidates for a BEM mix. Other than that `font-size`, `color` and `text-align` may also be potential styles which could be used in a BEM mix under some circumstances. You should ask yourself if a certain style hinders potential reusability outside of a given context, if that is the case, a BEM mix might be the best place to put such a style.
+You may wonder how to decide which styles do belong in a BEM mix and which styles do belong in a modifier. I'd say that positional styles like `margin` or `top` / `left` are typical candidates for a BEM mix. Other than that `font-size`, `color` and `text-align` may also be potential styles which could be used in a BEM mix under some circumstances. You should ask yourself if a certain style hinders potential reusability outside of a given context, if that is the case, a BEM mix might be the best place to put such a style.
 
 ## Conclusion
 First of all I'd argue that writing a style like `.modal .button {}` should be avoided by all means. You'll not only end up wondering where you should put such a style but you're also opening the pandora's box of specificity battles.
