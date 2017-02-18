@@ -7,7 +7,7 @@
 # CSS, BEM and context
 The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things.
 
-It all started with a [tweet from Dave Rupert](https://twitter.com/davatron5000/status/829091851651149824). He asked whether the style `.some-context .thing {}` belongs into `thing.css` or `some-context.css`. [Harry Roberts weighed in](https://twitter.com/csswizardry/status/829124651288780801) saying the style should be in `thing.css`.
+It all started with [a tweet from Dave Rupert](https://twitter.com/davatron5000/status/829091851651149824). He asked whether the style `.some-context .thing {}` belongs into `thing.css` or `some-context.css`. [Harry Roberts weighed in](https://twitter.com/csswizardry/status/829124651288780801) saying the style should be put in `thing.css`.
 
 Some days later Harry Roberts wrote [a blog article](https://csswizardry.com/2017/02/code-smells-in-css-revisited#a-class-appearing-in-another-components-file) referencing Dave Rupert's tweet and Jonathan Snook also wrote [a blog article](https://snook.ca/archives/html_and_css/coding-css-for-context) referencing both, Dave Rupert's tweet and Harry's article (this is getting really meta).
 
@@ -17,7 +17,7 @@ So where do we stand taking the input of this three sources? The  poll attached 
 Both Harry Roberts and Jonathan Snook go a little further and explain different ways to avoid writing a nested style like that in the first place. Harry Roberts suggests to use a so called “BEM mix” and Jonathan Snook explains how to use a BEM modifier class to style `.thing` to avoid styling a specific context but a specific purpose (of “the thing”).
 
 ## Combining BEM mixes and modifiers
-Harry Roberts doesn't go into much detail about how to use a BEM mix in such a situation and Jonathan Snook states, that a BEM modifier would be a better fit for the problem at hand. I'd argue that in many cases a combination of both can be most beneficial.
+Harry Roberts doesn't go into much detail about how to use a BEM mix in such a situation and Jonathan Snook states, that a BEM modifier would be a better fit for the problem at hand. I'd argue that in many cases a combination of both can be the most beneficial.
 
 So how can we use a combination of BEM mixes and modifiers to handle the styling of a thing in the context of another thing? Let's build upon Jonathan's example of a `.modal` and a `.button`. First we identify **why** the button should look different in the context of a modal and we might end up choosing a modifier like `.button--primary`. But there may still be other styles that are specific to the context (the modal) but need to be on the button. For example we may want to have a lot of whitespace around the button. In situations like those, a BEM mix is the perfect fit.
 
