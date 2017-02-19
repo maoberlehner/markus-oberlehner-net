@@ -12,9 +12,9 @@ It all started with [a tweet from Dave Rupert](https://twitter.com/davatron5000/
 Some days later Harry Roberts wrote [a blog article](https://csswizardry.com/2017/02/code-smells-in-css-revisited#a-class-appearing-in-another-components-file) referencing Dave Rupert's tweet and Jonathan Snook also wrote [a blog article](https://snook.ca/archives/html_and_css/coding-css-for-context) referencing both, Dave Rupert's tweet and Harry's article (this is getting really meta).
 
 ## Now what?
-So where do we stand taking the input of this three sources? The  poll attached to Dave Rupert's tweet comes to the conclusion, that a slim majority would put `.some-context .thing {}` in a file named `some-context.css`. Harry Roberts and Jonathan Snook disagree and argue that `thing.css` should contain this style.
+So where do we stand taking the input of those three sources? The poll attached to Dave Rupert's tweet comes to the conclusion, that a slim majority would put `.some-context .thing {}` in a file named `some-context.css`. Harry Roberts and Jonathan Snook disagree and argue that `thing.css` should contain this style.
 
-Both Harry Roberts and Jonathan Snook go a little further and explain different ways to avoid writing a nested style like that in the first place. Harry Roberts suggests to use a so called “BEM mix” and Jonathan Snook explains how to use a BEM modifier class to style `.thing` to avoid styling a specific context but a specific purpose (of “the thing”).
+Both Harry Roberts and Jonathan Snook go a little further and explain different ways how to avoid writing a nested style like that in the first place. Harry Roberts suggests to use a so called “BEM mix” and Jonathan Snook explains how to use a BEM modifier class to style `.thing` to avoid styling a specific context but a specific purpose (of “the thing”).
 
 ## Combining BEM mixes and modifiers
 Harry Roberts doesn't go into much detail about how to use a BEM mix in such a situation (because it is outside of the scope of his article) and Jonathan Snook states, that a BEM modifier would be a better fit for the problem at hand. I'd argue that in many cases a combination of both can be the most beneficial.
