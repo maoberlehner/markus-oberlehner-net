@@ -11,22 +11,26 @@ const writeFile = require(`./write-file.js`);
 const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
 handlebarsRegisterPartials(Handlebars, viewsDirectory);
 
-module.exports = (template, data, outputFile) => {
-  let html = htmlclean(Handlebars.compile(template)(data));
-  const minify = process.argv.includes(`--minify`);
+module.exports = (template, data, outputFile) => (
+  new Promise((resolve) => {
+    let html = htmlclean(Handlebars.compile(template)(data));
+    const minify = process.argv.includes(`--minify`);
 
-  if (minify) {
-    uncss(html, { htmlroot: `dist` }, (error, output) => {
-      const minifiedCss = new CleanCss({
-        level: 2,
-      }).minify(output).styles;
-      // eslint-disable-next-line no-param-reassign
-      data.css = `<style>${minifiedCss}</style>`;
-      html = htmlclean(Handlebars.compile(template)(data));
+    if (minify) {
+      uncss(html, { htmlroot: `dist` }, (error, output) => {
+        const minifiedCss = new CleanCss({
+          level: 2,
+        }).minify(output).styles;
+        // eslint-disable-next-line no-param-reassign
+        data.css = `<style>${minifiedCss}</style>`;
+        html = htmlclean(Handlebars.compile(template)(data));
 
+        writeFile(outputFile, fixPreIndentation(html));
+        resolve();
+      });
+    } else {
       writeFile(outputFile, fixPreIndentation(html));
-    });
-  } else {
-    writeFile(outputFile, fixPreIndentation(html));
-  }
-};
+      resolve();
+    }
+  })
+);
