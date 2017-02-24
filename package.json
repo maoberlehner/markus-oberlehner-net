@@ -47,6 +47,6 @@
     "clean": "rm -Rf dist",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "publish": "yarn run build:production && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats -e ssh dist/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
+    "publish": "yarn run build:production && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh dist/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
