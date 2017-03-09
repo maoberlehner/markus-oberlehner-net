@@ -13,11 +13,10 @@ const defaultData = {
 };
 
 articleFiles.forEach((fileName) => {
-  const data = JSON.parse(JSON.stringify(defaultData));
-  Object.assign(data, extractArticleData(fileName));
-  defaultData.articles.push(data);
+  const articleData = Object.assign({}, defaultData, extractArticleData(fileName));
+  defaultData.articles.push(articleData);
 
-  buildArticleHtml(fileName, data);
+  buildArticleHtml(fileName, articleData);
 });
 
 buildBaseHtml(defaultData);
