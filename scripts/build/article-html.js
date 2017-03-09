@@ -29,16 +29,16 @@ module.exports = (article, data) => {
 
   // eslint-disable-next-line no-param-reassign
   data.content = marked(data.markdown)
-  .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">\n`)
-  .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
-  .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
-  .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
-  .replace(new RegExp(`<p><div`, `g`), `<div`)
-  .replace(new RegExp(`</div></p>`, `g`), `</div>`)
-  // Add the article date.
-  .replace(new RegExp(`</h1>`), `</h1><span class="c-content__date">${data.date.string}</span>`)
-  // Style links and make them SEO friendly.
-  .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
+    .replace(new RegExp(`<pre>`, `g`), `<pre class="c-highlight">\n`)
+    .replace(new RegExp(`class="hljs-`, `g`), `class="c-highlight__`)
+    .replace(new RegExp(`(<p>)?XDIVclass=(.*?)X(</p>)?`, `g`), `<div class="$2">`)
+    .replace(new RegExp(`/XDIVX`, `g`), `</div>`)
+    .replace(new RegExp(`<p><div`, `g`), `<div`)
+    .replace(new RegExp(`</div></p>`, `g`), `</div>`)
+    // Add the article date.
+    .replace(new RegExp(`</h1>`), `</h1><span class="c-content__date">${data.date.string}</span>`)
+    // Style links and make them SEO friendly.
+    .replace(new RegExp(`<a`, `g`), `<a class="c-anchor" rel="nofollow"`);
 
   // eslint-disable-next-line no-param-reassign
   data.metaTitle = `${data.title} | Markus Oberlehner`;
