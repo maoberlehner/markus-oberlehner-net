@@ -44,13 +44,14 @@
     "start": "yarn run serve-dev",
     "serve-dev": "http2-server dist/dev -o -g -P",
     "serve-prod": "http2-server dist/prod -o -g -P",
-    "build-dev": "yarn run clean-dev && node scripts/build.js && cp -R resources/images dist/dev/ && mv dist/dev/images/favicon.ico dist/dev",
-    "build-prod": "yarn run clean-prod && NODE_ENV=production node scripts/build.js && cp -R resources/images dist/prod/ && mv dist/prod/images/favicon.ico dist/prod",
+    "build-dev": "yarn run clean-dev && node scripts/build.js && yarn run sw-precache-dev && cp -a resources/public/. dist/dev/",
+    "build-prod": "yarn run clean-prod && NODE_ENV=production node scripts/build.js && yarn run sw-precache-prod && cp -a resources/public/. dist/prod/",
+    "sw-precache-dev": "sw-precache --root=dist/dev",
+    "sw-precache-prod": "sw-precache --root=dist/prod --sw-file-path=dist/prod/service-worker.js",
     "clean-dev": "rm -Rf dist/dev",
     "clean-prod": "rm -Rf dist/prod",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
-    "llighthouse": "lighthouse https://127.0.0.1:4443/",
-    "lighthouse": "lighthouse https://markus.oberlehner.net/",
+    "lighthouse": "lighthouse https://127.0.0.1:4443/",
     "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh dist/prod/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
