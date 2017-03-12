@@ -4,6 +4,9 @@ const path = require(`path`);
 
 const hbs2html = require(`../lib/hbs2html.js`);
 
+const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
+const minify = process.env.NODE_ENV === `production`;
+
 module.exports = (data) => {
   const pagesDirectory = path.join(process.cwd(), `resources`, `views`, `pages`);
   const pages = glob.sync(path.join(pagesDirectory, `**`, `*.hbs`));
@@ -14,13 +17,13 @@ module.exports = (data) => {
     const subPath = path
       .parse(page.replace(path.join(pagesDirectory, path.sep), ``))
       .dir.split(path.sep);
-    const outputPath = [process.cwd(), `dist`, ...subPath];
+    const outputPath = [process.cwd(), `dist`, distEnvPath, ...subPath];
 
     if (pathName !== `index`) {
       outputPath.push(pathName);
     }
 
     const outputFile = path.join(...outputPath, `index.html`);
-    hbs2html(baseTemplate, data, outputFile);
+    hbs2html(baseTemplate, data, outputFile, minify);
   });
 };

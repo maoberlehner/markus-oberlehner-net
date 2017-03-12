@@ -41,12 +41,16 @@
   },
   "scripts": {
     "init": "yarn && http2-server --generate-cert",
-    "start": "yarn run build && http2-server dist -o -g -P",
-    "build": "yarn run clean && node scripts/build.js && cp -R resources/images dist && mv dist/images/favicon.ico dist",
-    "build:production": "yarn run clean && node scripts/build.js --minify && cp -R resources/images dist && mv dist/images/favicon.ico dist",
-    "clean": "rm -Rf dist",
+    "start": "yarn run serve-dev",
+    "serve-dev": "http2-server dist/dev -o -g -P",
+    "serve-prod": "http2-server dist/prod -o -g -P",
+    "build-dev": "yarn run clean-dev && node scripts/build.js && cp -R resources/images dist/dev/ && mv dist/dev/images/favicon.ico dist/dev",
+    "build-prod": "yarn run clean-prod && NODE_ENV=production node scripts/build.js && cp -R resources/images dist/prod/ && mv dist/prod/images/favicon.ico dist/prod",
+    "clean-dev": "rm -Rf dist/dev",
+    "clean-prod": "rm -Rf dist/prod",
     "lint": "stylelint 'resources/**/*.scss' && eslint scripts",
-    "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "publish": "yarn run build:production && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh dist/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
+    "llighthouse": "lighthouse https://127.0.0.1:4443/",
+    "lighthouse": "lighthouse https://markus.oberlehner.net/",
+    "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh dist/prod/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }

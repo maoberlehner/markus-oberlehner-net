@@ -8,16 +8,16 @@ const fixPreIndentation = require(`./fix-pre-indentation.js`);
 const handlebarsRegisterPartials = require(`./handlebars-register-partials.js`);
 const writeFile = require(`./write-file.js`);
 
+const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
 const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
 handlebarsRegisterPartials(Handlebars, viewsDirectory);
 
-module.exports = (template, data, outputFile) => (
+module.exports = (template, data, outputFile, minify = false) => (
   new Promise((resolve) => {
     let html = htmlclean(Handlebars.compile(template)(data));
-    const minify = process.argv.includes(`--minify`);
 
     if (minify) {
-      uncss(html, { htmlroot: `dist` }, (error, output) => {
+      uncss(html, { htmlroot: path.join(`dist`, distEnvPath) }, (error, output) => {
         const minifiedCss = new CleanCss({
           level: 2,
         }).minify(output).styles;

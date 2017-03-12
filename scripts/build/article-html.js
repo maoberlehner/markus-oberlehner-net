@@ -5,6 +5,9 @@ const path = require(`path`);
 
 const hbs2html = require(`../lib/hbs2html.js`);
 
+const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
+const minify = process.env.NODE_ENV === `production`;
+
 marked.setOptions({
   highlight: (code, language) => {
     if (language) {
@@ -16,7 +19,7 @@ marked.setOptions({
 
 const hbs = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
 const template = fs.readFileSync(hbs, `utf8`);
-const blogDirectory = path.join(process.cwd(), `dist`, `blog`);
+const blogDirectory = path.join(process.cwd(), `dist`, distEnvPath, `blog`);
 
 module.exports = (article, data) => {
   const outputFile = path.join(
@@ -45,5 +48,5 @@ module.exports = (article, data) => {
   // eslint-disable-next-line no-param-reassign
   data.metaDescription = data.description;
 
-  hbs2html(template, data, outputFile);
+  hbs2html(template, data, outputFile, minify);
 };
