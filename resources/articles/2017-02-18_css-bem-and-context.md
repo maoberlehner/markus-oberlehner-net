@@ -1,8 +1,8 @@
-{
-  "title": "CSS, BEM and context",
-  "description": "How can we use a combination of BEM mixes and modifiers to handle the styling of a thing in the context of another thing?",
-  "intro": "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
-}
+---
+title: "CSS, BEM and context"
+description: "How can we use a combination of BEM mixes and modifiers to handle the styling of a thing in the context of another thing?"
+intro: "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
+---
 
 # CSS, BEM and context
 The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things.
