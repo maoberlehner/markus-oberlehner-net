@@ -1,9 +1,9 @@
-const fs = require(`fs`);
-const moment = require(`moment`);
-const path = require(`path`);
-const yaml = require(`js-yaml`);
+import * as fs from 'fs';
+import * as moment from 'moment';
+import * as path from 'path';
+import * as yaml from 'js-yaml';
 
-module.exports = (article) => {
+export default function extractArticleData(article) {
   const dateString = path.parse(article).base.split(`_`)[0];
   const dateArray = dateString.split(`-`);
   const date = {
@@ -25,4 +25,4 @@ module.exports = (article) => {
     url,
     markdown,
   }, extractedData);
-};
+}

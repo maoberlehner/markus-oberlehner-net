@@ -1,12 +1,12 @@
-const autoprefixer = require(`autoprefixer`);
-const magicImporter = require(`node-sass-magic-importer`);
-const postcss = require(`postcss`);
-const postcssScssSyntax = require(`postcss-scss`);
-const sass = require(`node-sass`);
+import * as autoprefixer from 'autoprefixer';
+import * as magicImporter from 'node-sass-magic-importer';
+import * as postcss from 'postcss';
+import * as postcssScssSyntax from 'postcss-scss';
+import * as sass from 'node-sass';
 
-const writeFile = require(`./write-file.js`);
+import writeFile from './write-file';
 
-module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
+export default function sass2css(inputFile, outputFile, options = { cwd: process.cwd() }) {
   sass.render({
     file: inputFile,
     importer: magicImporter(options),
@@ -18,4 +18,4 @@ module.exports = (inputFile, outputFile, options = { cwd: process.cwd() }) => {
 
     writeFile(outputFile, css);
   });
-};
+}

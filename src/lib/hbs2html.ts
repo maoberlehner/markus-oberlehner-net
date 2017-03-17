@@ -1,19 +1,19 @@
-const CleanCss = require(`clean-css`);
-const Handlebars = require(`handlebars`);
-const htmlclean = require(`htmlclean`);
-const path = require(`path`);
-const uncss = require(`uncss`);
+import * as CleanCss from 'clean-css';
+import * as Handlebars from 'handlebars';
+import * as htmlclean from 'htmlclean';
+import * as path from 'path';
+import * as uncss from 'uncss';
 
-const fixPreIndentation = require(`./fix-pre-indentation.js`);
-const handlebarsRegisterPartials = require(`./handlebars-register-partials.js`);
-const writeFile = require(`./write-file.js`);
+import fixPreIndentation from './fix-pre-indentation';
+import handlebarsRegisterPartials from './handlebars-register-partials';
+import writeFile from './write-file';
 
 const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
 const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
 handlebarsRegisterPartials(Handlebars, viewsDirectory);
 
-module.exports = (template, data, outputFile, minify = false) => (
-  new Promise((resolve) => {
+export default function hbs2html(template, data, outputFile, minify = false) {
+  return new Promise((resolve) => {
     let html = htmlclean(Handlebars.compile(template)(data));
 
     if (minify) {
@@ -32,5 +32,5 @@ module.exports = (template, data, outputFile, minify = false) => (
       writeFile(outputFile, fixPreIndentation(html));
       resolve();
     }
-  })
-);
+  });
+}

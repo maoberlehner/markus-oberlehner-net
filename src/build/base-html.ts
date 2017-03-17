@@ -1,13 +1,13 @@
-const fs = require(`fs`);
-const glob = require(`glob`);
-const path = require(`path`);
+import * as fs from 'fs';
+import * as glob from 'glob';
+import * as path from 'path';
 
-const hbs2html = require(`../lib/hbs2html.js`);
+import hbs2html from '../lib/hbs2html';
 
 const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
 const minify = process.env.NODE_ENV === `production`;
 
-module.exports = (data) => {
+export default function baseHtml(data) {
   const pagesDirectory = path.join(process.cwd(), `resources`, `views`, `pages`);
   const pages = glob.sync(path.join(pagesDirectory, `**`, `*.hbs`));
 
@@ -26,4 +26,4 @@ module.exports = (data) => {
     const outputFile = path.join(...outputPath, `index.html`);
     hbs2html(baseTemplate, data, outputFile, minify);
   });
-};
+}

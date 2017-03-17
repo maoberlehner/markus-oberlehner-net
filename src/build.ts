@@ -1,10 +1,11 @@
-const glob = require(`glob`);
+import * as glob from 'glob';
 
-const buildArticleHtml = require(`./build/article-html.js`);
-const buildBaseCss = require(`./build/base-css.js`);
-const buildBaseHtml = require(`./build/base-html.js`);
-const config = require(`./config.js`);
-const extractArticleData = require(`./lib/extract-article-data.js`);
+import config from './config';
+
+import buildArticleHtml from './build/article-html';
+import buildBaseCss from './build/base-css';
+import buildBaseHtml from './build/base-html';
+import extractArticleData from './lib/extract-article-data';
 
 const articleFiles = glob.sync(`resources/articles/*.md`).reverse();
 
