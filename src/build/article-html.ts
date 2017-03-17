@@ -1,9 +1,9 @@
-const fs = require(`fs`);
-const highlightJs = require(`highlight.js`);
-const marked = require(`marked`);
-const path = require(`path`);
+import * as fs from 'fs';
+import * as highlightJs from 'highlight.js';
+import * as marked from 'marked';
+import * as path from 'path';
 
-const hbs2html = require(`../lib/hbs2html.js`);
+import hbs2html from '../lib/hbs2html';
 
 marked.setOptions({
   highlight: (code, language) => {
@@ -14,11 +14,11 @@ marked.setOptions({
   },
 });
 
-const hbs = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
-const template = fs.readFileSync(hbs, `utf8`);
+const hbs: string = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
+const template: string = fs.readFileSync(hbs, `utf8`);
 
-module.exports = ({ blogDirectory, minify }, article, data) => {
-  const outputFile = path.join(
+export default function articleHtml({ blogDirectory, minify }, article, data): void {
+  const outputFile: string = path.join(
     blogDirectory,
     data.date.year,
     data.date.month,
@@ -45,4 +45,4 @@ module.exports = ({ blogDirectory, minify }, article, data) => {
   data.metaDescription = data.description;
 
   hbs2html(template, data, outputFile, minify);
-};
+}
