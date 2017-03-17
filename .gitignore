@@ -25,6 +25,7 @@ nbproject
 Thumbs.db
 
 # Folders to ignore
+app
 certs
 dist
 node_modules
