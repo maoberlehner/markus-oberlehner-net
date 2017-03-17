@@ -3,20 +3,22 @@ import * as moment from 'moment';
 import * as path from 'path';
 import * as yaml from 'js-yaml';
 
-export default function extractArticleData(article) {
-  const dateString = path.parse(article).base.split(`_`)[0];
-  const dateArray = dateString.split(`-`);
+import Article from '../classes/Article';
+
+export default function extractArticleData(fileName: string): Article {
+  const dateString: string = path.parse(fileName).base.split(`_`)[0];
+  const dateArray: Array<string> = dateString.split(`-`);
   const date = {
     year: dateArray[0],
     month: dateArray[1],
     day: dateArray[2],
     string: moment(dateString).format(`MMMM D, YYYY`),
   };
-  const slug = path.parse(article).base.split(`_`)[1].replace(`.md`, ``);
-  const url = `/blog/${date.year}/${date.month}/${slug}/`;
-  let markdown = fs.readFileSync(article, `utf8`);
-  const yamlRegex = /^---([\s\S]*?)---/i;
-  const extractedData = yaml.safeLoad(markdown.match(yamlRegex)[1]);
+  const slug: string = path.parse(fileName).base.split(`_`)[1].replace(`.md`, ``);
+  const url: string = `/blog/${date.year}/${date.month}/${slug}/`;
+  let markdown: string = fs.readFileSync(fileName, `utf8`);
+  const yamlRegex: RegExp = /^---([\s\S]*?)---/i;
+  const extractedData: Article = yaml.safeLoad(markdown.match(yamlRegex)[1]);
   markdown = markdown.replace(/^---[\s\S]*?---/i, ``);
 
   return Object.assign({

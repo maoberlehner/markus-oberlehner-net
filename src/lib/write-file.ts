@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as mkdir from 'mkdirp';
 import * as path from 'path';
 
-export default function writeFile(file, contents) {
+export default function writeFile(file: string, contents: string): void {
   try {
     mkdir.sync(path.parse(file).dir);
     fs.writeFileSync(file, contents);

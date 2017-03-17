@@ -6,7 +6,11 @@ import * as sass from 'node-sass';
 
 import writeFile from './write-file';
 
-export default function sass2css(inputFile, outputFile, options = { cwd: process.cwd() }) {
+export default function sass2css(
+  inputFile: string,
+  outputFile: string,
+  options: Object = { cwd: process.cwd() }
+): void {
   sass.render({
     file: inputFile,
     importer: magicImporter(options),

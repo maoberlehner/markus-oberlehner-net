@@ -14,11 +14,11 @@ marked.setOptions({
   },
 });
 
-const hbs = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
-const template = fs.readFileSync(hbs, `utf8`);
+const hbs: string = path.join(process.cwd(), `resources`, `views`, `templates`, `article.hbs`);
+const template: string = fs.readFileSync(hbs, `utf8`);
 
-export default function articleHtml({ blogDirectory, minify }, article, data) {
-  const outputFile = path.join(
+export default function articleHtml({ blogDirectory, minify }, article, data): void {
+  const outputFile: string = path.join(
     blogDirectory,
     data.date.year,
     data.date.month,

@@ -4,21 +4,28 @@ import * as htmlclean from 'htmlclean';
 import * as path from 'path';
 import * as uncss from 'uncss';
 
+import Page from '../classes/Page';
+
 import fixPreIndentation from './fix-pre-indentation';
 import handlebarsRegisterPartials from './handlebars-register-partials';
 import writeFile from './write-file';
 
-const distEnvPath = process.env.NODE_ENV === `production` ? `prod` : `dev`;
-const viewsDirectory = path.join(process.cwd(), `resources`, `views`);
+const distEnvPath: string = process.env.NODE_ENV === `production` ? `prod` : `dev`;
+const viewsDirectory: string = path.join(process.cwd(), `resources`, `views`);
 handlebarsRegisterPartials(Handlebars, viewsDirectory);
 
-export default function hbs2html(template, data, outputFile, minify = false) {
-  return new Promise((resolve) => {
-    let html = htmlclean(Handlebars.compile(template)(data));
+export default function hbs2html(
+  template: string,
+  data: Page,
+  outputFile: string,
+  minify: boolean = false
+): Promise<any> {
+  return new Promise((resolve: Function) => {
+    let html: string = htmlclean(Handlebars.compile(template)(data));
 
     if (minify) {
       uncss(html, { htmlroot: path.join(`dist`, distEnvPath) }, (error, output) => {
-        const minifiedCss = new CleanCss({
+        const minifiedCss: string = new CleanCss({
           level: 2,
         }).minify(output).styles;
         // eslint-disable-next-line no-param-reassign
