@@ -101,7 +101,7 @@ export class FileDriver implements IDatabase {
   }
 
   public getAll(table: string): Array<object> {
-    const globPattern = path.resolve(this.cwd, `resources/${table}/*.md`);
+    const globPattern = path.resolve(this.cwd, `resources/${table}/*`);
     return this.glob.sync(globPattern)
       .map((file) => {
         const fileContent: string = this.readFile(file);
@@ -110,7 +110,7 @@ export class FileDriver implements IDatabase {
   }
 
   public getById(id: string, table: string): object {
-    const file = this.path.resolve(this.cwd, `resources/${table}/${id}.md`);
+    const file = this.path.resolve(this.cwd, `resources/${table}/${id}`);
     const fileContent: string = this.readFile(file);
 
     return this.extractData(fileContent);
