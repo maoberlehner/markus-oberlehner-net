@@ -256,14 +256,12 @@ export default function articleFactory(db: IDatabase): Article {
 Now we don't have to specify the table if we wan't to get articles from the database. Which is admittedly not that big of a deal – but heyyy: we added another layer of abstraction (and we have an example for an interface extending another interface).
 
 ```ts
-import * as path from 'path';
-
 import databaseFactory from './classes/Database';
 import fileDriverFactory from './classes/FileDriver';
 import markdownExtractorFactory from './classes/MarkdownExtractor';
 import articleFactory from './models/Article';
 
-const cwd = path.resolve(__dirname, `../`);
+const cwd = process.cwd();
 
 const dbDriver = fileDriverFactory(markdownExtractorFactory, cwd);
 const db = databaseFactory(dbDriver);
