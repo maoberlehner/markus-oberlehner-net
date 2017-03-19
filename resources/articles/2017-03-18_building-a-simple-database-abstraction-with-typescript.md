@@ -5,10 +5,9 @@ intro: "Two weeks ago, I had this idea for an app. I decided this was the perfec
 ---
 
 # Building a simple (but overengineered) database abstraction with TypeScript
-
 Two weeks ago, I had this idea for an app. I decided this was the perfect opportunity to give [Ionic](http://ionicframework.com/) a try. Long story short – I quickly realized it would be too much work to build the app I had in mind. But I found the technologies used by Ionic 2 to be interesting. Ionic 2 is built on top of Angular 2 which in turn is built with [TypeScript](https://www.typescriptlang.org/). I'm not quite sure yet if I like Angular 2 or not but TypeScript definitely caught my attention.
 
-I'm currently in the process of rewriting some of my projects using the [TDD approach](https://markus.oberlehner.net/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/) and after I did some more research on TypeScript I was quite tempted to also use TypeScript in favor of vanilla JavaScript. Today I started rewriting the static site generator which is powering this blog (which I initially hacked together not caring too much about the quality of the code) with TypeScript and I started by implementing the (file based) database.
+I'm currently in the process of rewriting some of my projects using the [TDD approach](https://markus.oberlehner.net/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/) and after I did some more research on TypeScript I was quite tempted to also use TypeScript in favor of vanilla JavaScript. Today I started rewriting the static site generator which is powering this blog (which I initially hacked together not caring too much about the quality of the code) with TypeScript, beginning with implementing a (file based) database.
 
 ## The directory structure
 What we're going to build is a database abstraction layer which uses a driver to access data from wherever the driver decides. In this case we're using a file driver which pulls content from a `resources` directory. The file driver uses an extractor implementation to generate an object from the contents of a Markdown file.
@@ -68,7 +67,7 @@ export default function databaseFactory(driver: IDatabase) {
 }
 ```
 
-The database class implements the interface we defined in the first step. The database class calls the corresponding methods on the driver which is injected in the class instance. Other than that, not much work is done in this class. The driver is doing the real work.
+The database class implements the interface we defined in the first step. It calls the corresponding methods on the driver which is injected in the class instance. Other than that, not much work is done in this class – the driver is doing the real work.
 
 We're using the [testable module pattern](https://markus.oberlehner.net/blog/2017/02/the-testable-module-pattern/) for our modules, therefore the default export is a factory function which handles the instantiation of the class for us.
 
