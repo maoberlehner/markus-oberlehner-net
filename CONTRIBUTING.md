@@ -16,7 +16,7 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
    # Navigate to the newly cloned directory
    cd markus-oberlehner-net
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/avalanchesass/markus-oberlehner-net
+   git remote add upstream https://github.com/maoberlehner/markus-oberlehner-net
    # Install the tools necessary for development
    npm install
    ```
@@ -40,8 +40,8 @@ Pull requests are the greatest contributions, so be sure they are focused in sco
    ```
 4. Now [open a pull request] with a clear title and description.
 
-[already been reported]: https://github.com/avalanchesass/markus-oberlehner-net/issues
-[fork this project]:     https://github.com/avalanchesass/markus-oberlehner-net/fork
+[already been reported]: https://github.com/maoberlehner/markus-oberlehner-net/issues
+[fork this project]:     https://github.com/maoberlehner/markus-oberlehner-net/fork
 [live example]:          http://codepen.io/pen
 [open a pull request]:   https://help.github.com/articles/using-pull-requests/
 [reduced test case]:     https://css-tricks.com/reduced-test-cases/
