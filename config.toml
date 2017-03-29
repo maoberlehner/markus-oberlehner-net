@@ -1,0 +1,15 @@
+languageCode = "en-us"
+title = "I build stuff"
+baseURL = "https://markus.oberlehner.net/"
+enableRobotsTXT = true
+SectionPagesMenu = "main"
+
+[params]
+  description = "I'm a web developer currently working at karriere.at. I write blog articles about web development and life."
+  author = "Markus Oberlehner"
+
+[[menu.main]]
+    name = "Home"
+    weight = -100
+    identifier = "home"
+    url = "/"

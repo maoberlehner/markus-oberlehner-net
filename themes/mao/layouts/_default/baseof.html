@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    {{ with .Description }}
+      <meta name="description" content="{{ . }}">
+    {{ end }}
+    {{ $default_noindex_kinds := slice "section" "taxonomy" "taxonomyTerm" }}
+    {{ $noindex_kinds := .Site.Params.noindex_kinds | default $default_noindex_kinds }}
+    {{ $is_noindex_true := and (isset .Params "noindex") .Params.noindex }}
+    {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
+      <meta name="robots" content="noindex">
+    {{ end }}
+    {{ partial "meta/name-author" . }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ partial "meta/ogimage-maybe" . }}
+    {{ partial "meta/theme-color" . }}
+    {{ if .RSSLink }}
+      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ if (isset .Params "prev") }}
+      <link rel="prev" href="{{ .Params.prev }}">
+    {{ end }}
+    {{ if (isset .Params "next") }}
+      <link rel="next" href="{{ .Params.next }}">
+    {{ end }}
+  </head>
+  <body>
+    <div class="o-vertical-spacing o-vertical-spacing--xxxl">
+      {{ block "header" . }}{{ end }}
+      {{ block "main" . }}{{ end }}
+    </div>
+    {{ block "footer" . }}{{ end }}
+    <script>
+      // if ('serviceWorker' in navigator) {
+      //   navigator.serviceWorker.register('/service-worker.js');
+      // }
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        };
+      });
+    </script>
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-57407594-3','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" defer></script>
+  </body>
+</html>

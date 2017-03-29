@@ -1,0 +1,7 @@
+name = "mao"
+license = "MIT"
+min_version = 0.19
+
+[author]
+  name = "Markus Oberlehner"
+  homepage = "https://markus.oberlehner.net"

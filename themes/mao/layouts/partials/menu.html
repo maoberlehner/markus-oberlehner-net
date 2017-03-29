@@ -1,0 +1,11 @@
+{{ if ne .Site.Params.show_menu false }}
+  <nav class="c-main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
+      <a class="c-main-nav__link {{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}is-active{{end}}" href="{{ .URL }}">
+        <span itemprop="name">{{ .Name }}</span>
+      </a>
+      <span class="c-main-nav__divide"> | </span>
+    {{ end }}
+  </nav>
+{{ end }}

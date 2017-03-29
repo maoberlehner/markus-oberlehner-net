@@ -2,12 +2,13 @@
 Generator for the personal website of Markus Oberlehner.
 
 ## Getting started
-- `yarn run init`
-- `yarn start`
+- Install [Hugo](https://gohugo.io/).
+- Run `yarn start`.
+- Open [http://localhost:1313/](http://localhost:1313/) in your browser.
 
-## Build
-- `yarn run build` (development)
-- `yarn run build:production` (production)
+## Build & publish
+- `yarn run build`
+- `yarn run publish`
 
 ## Lint
 - `yarn run lint`

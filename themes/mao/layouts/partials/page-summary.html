@@ -1,0 +1,19 @@
+<article itemscope itemtype="http://schema.org/CreativeWork">
+  <header>
+    <h2 itemprop="headline">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
+    {{ if eq .Type "post" }}
+      <p class="muted">{{ partial "post/meta" . }}</p>
+    {{ end }}
+  </header>
+  {{ if .Description }}
+    <blockquote itemprop="about">{{ .Description }}</blockquote>
+  {{ end }}
+  <div itemprop="description">
+    {{ .Summary }}
+  </div>
+  {{ if .Truncated }}
+    <p><a itemprop="url" href="{{ .RelPermalink }}">Read More&nbsp;&raquo;</a></p>
+  {{ end }}
+</article>
