@@ -1,10 +1,13 @@
----
-title: "Perfectionism kills motivation"
-description: "Every programmer knows that feeling: you're looking at some code you wrote a few weeks or maybe even some months or years ago and you are embarrassed."
-intro: "The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation..."
----
++++
+date = "2017-02-26T11:07:05+02:00"
+title = "Perfectionism kills motivation"
+description = "Every programmer knows that feeling: you're looking at some code you wrote a few weeks or maybe even some months or years ago and you are embarrassed."
+intro = "The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation..."
+draft = false
+categories = ["Life"]
+tags = ["discipline", "motivation", "perfectionism"]
++++
 
-# Perfectionism kills motivation
 The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation. As I found out there are multiple factors why I was feeling less and less motivated to work on my pet projects.
 
 ## Discipline > Motivation

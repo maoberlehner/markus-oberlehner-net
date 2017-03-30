@@ -1,10 +1,13 @@
----
-title: "CSS, BEM and context"
-description: "How can we use a combination of BEM mixes and modifiers to handle the styling of a thing in the context of another thing?"
-intro: "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
----
++++
+date = "2017-02-18T10:09:05+02:00"
+title = "CSS, BEM and context"
+description = "How can we use a combination of BEM mixes and modifiers to handle the styling of a thing in the context of another thing?"
+intro = "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
+draft = false
+categories = ["Development"]
+tags = ["CSS", "BEM", "CSS architecture"]
++++
 
-# CSS, BEM and context
 The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things.
 
 It all started with [a tweet from Dave Rupert](https://twitter.com/davatron5000/status/829091851651149824). He asked whether the style `.some-context .thing {}` belongs into `thing.css` or `some-context.css`. [Harry Roberts weighed in](https://twitter.com/csswizardry/status/829124651288780801) saying the style should be put in `thing.css`.

@@ -1,10 +1,13 @@
----
-title: "Abbreviations suck"
-description: "Writing clean code is hard. Not using abbreviations is an effortless way to make your code easier to understand."
-intro: "For a recent project I had to work a lot with express (Node.js framework). In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic."
----
++++
+date = "2017-01-22T09:06:05+02:00"
+title = "Abbreviations suck"
+description = "Writing clean code is hard. Not using abbreviations is an effortless way to make your code easier to understand."
+intro = "For a recent project I had to work a lot with express (Node.js framework). In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic."
+draft = false
+categories = ["Development"]
+tags = ["coding style"]
++++
 
-# Abbreviations suck
 For a recent project I had to work a lot with the express Node.js framework. In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic.
 
 ## The case for abbreviations

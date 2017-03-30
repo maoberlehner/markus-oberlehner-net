@@ -1,10 +1,13 @@
----
-title: "Test driven development with JavaScript using ava and Sinon.JS"
-description: "Learning how to do test driven development with the test framework ava using real world code."
-intro: "For a long time testing and test driven development (TDD) was kind of a magical thing to me. I didn't really know what it meant and it seemed to be something only “real” developers can do correctly. Many developers suffer from imposter syndrome and so did (sometimes even today do) I and I was too scared to get into this magical thing called TDD. Two or three years ago I started to work..."
----
++++
+date = "2017-02-05T11:07:05+02:00"
+title = "Test driven development with JavaScript using ava and Sinon.JS"
+description = "Learning how to do test driven development with the test framework ava using real world code."
+intro = "For a long time testing and test driven development (TDD) was kind of a magical thing to me. I didn't really know what it meant and it seemed to be something only “real” developers can do correctly. Many developers suffer from imposter syndrome and so did (sometimes even today do) I and I was too scared to get into this magical thing called TDD. Two or three years ago I started to work..."
+draft = false
+categories = ["Development"]
+tags = ["JavaScript", "TDD"]
++++
 
-# Test driven development with JavaScript using ava and Sinon.JS
 For a long time testing and test driven development (TDD) was kind of a magical thing to me. I didn't really know what it meant and it seemed to be something only “real” developers can do correctly. Many developers suffer from imposter syndrome and so did (sometimes even today do) I and I was too scared to get into this magical thing called TDD.
 
 Two or three years ago I started to work on some open source projects and I needed a way to stop things from breaking because of changes made to the codebase. I bit the bullet and started to write tests for my projects. I did everything wrong what you can do wrong, but tagging a new release knowing everything still works as expected is just a great feeling. It was amazing

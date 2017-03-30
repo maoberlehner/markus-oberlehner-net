@@ -1,10 +1,13 @@
----
-title: "Investing money (as a developer)"
-description: "Some thoughts on how to invest money, especially if you are a developer."
-intro: "Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!"
----
++++
+date = "2017-01-14T10:18:05+02:00"
+title = "Investing money (as a developer)"
+description = "Some thoughts on how to invest money, especially if you are a developer."
+intro = "Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!"
+draft = false
+categories = ["Development", "Life"]
+tags = ["money", "investing"]
++++
 
-# Investing money (as a developer)
 Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!
 
 How much money is enough money to even start thinking about investing it? As with so many things in life: it depends™.

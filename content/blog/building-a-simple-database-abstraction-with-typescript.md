@@ -1,10 +1,13 @@
 +++
-date = "2017-03-29T16:27:05+02:00"
-title = "building a simple database abstraction with typescript"
-draft = true
+date = "2017-03-18T16:27:05+02:00"
+title = "Building a simple (but overengineered) database abstraction with TypeScript"
+description = "Using TypeScript to build a simple database abstraction. The database uses a file driver to load Markdown files from a directory on the file system."
+intro = "Two weeks ago, I had this idea for an app. I decided this was the perfect opportunity to give Ionic a try. Long story short – I quickly realized it would be too much work to build the app I had in mind. But I found the technologies used by Ionic 2 pretty interesting..."
+draft = false
+categories = ["Development"]
+tags = ["JavaScript", "TypeScript"]
 +++
 
-# Building a simple (but overengineered) database abstraction with TypeScript
 Two weeks ago, I had this idea for an app. I decided this was the perfect opportunity to give [Ionic](http://ionicframework.com/) a try. Long story short – I quickly realized it would be too much work to build the app I had in mind. But I found the technologies used by Ionic 2 to be interesting. Ionic 2 is built on top of Angular 2 which in turn is built with [TypeScript](https://www.typescriptlang.org/). I'm not quite sure yet if I like Angular 2 or not but TypeScript definitely caught my attention.
 
 I'm currently in the process of rewriting some of my projects using the [TDD approach](https://markus.oberlehner.net/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/) and after I did some more research on TypeScript I was quite tempted to also use TypeScript in favor of vanilla JavaScript. Today I started rewriting the static site generator which is powering this blog (which I initially hacked together not caring too much about the quality of the code) with TypeScript, beginning with implementing a (file based) database.
