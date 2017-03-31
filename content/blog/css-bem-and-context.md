@@ -27,33 +27,33 @@ So how can we use a combination of BEM mixes and modifiers to handle the styling
 
 ```html
 <div class="modal">
-	<h2 class="modal__title">I'm a modal!</div>
-	<!-- Other modal content -->
-	<button class="modal__button button button--primary">
-		Please click me!
-	</button>
+  <h2 class="modal__title">I'm a modal!</div>
+  <!-- Other modal content -->
+  <button class="modal__button button button--primary">
+    Please click me!
+  </button>
 </div>
 ```
 
 ```scss
 // button.css
 .button {
-	// ... Generic button styles.
+  // ... Generic button styles.
 }
 
 .button--primary {
-	background: hotpink;
+  background: hotpink;
 }
 ```
 
 ```scss
 // modal.css
 .modal {
-	// ... All the modal styles.
+  // ... All the modal styles.
 }
 
 .modal__button {
-	margin: 3em; // A lot of whitespace.
+  margin: 3em; // A lot of whitespace.
 }
 ```
 

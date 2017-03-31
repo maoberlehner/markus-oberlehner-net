@@ -86,10 +86,10 @@ const formattedValues = formatValues([1, 2, 3]);
 import { formatValuesFactory } from './format-values';
 
 test(`Some test case.`, (t) => {
-	const Math = fakeMath();
-	const chalk = fakeChalk();
-	const formatValues = formatValuesFactory({ Math, chalk });
-	// ...
+  const Math = fakeMath();
+  const chalk = fakeChalk();
+  const formatValues = formatValuesFactory({ Math, chalk });
+  // ...
 });
 ```
 
