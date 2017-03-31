@@ -2,7 +2,7 @@
   {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
-  {{ partial "menu" . }}
+  {{ partial "header" . }}
 {{ end }}
 {{ define "main" }}
   <main>
@@ -40,12 +40,9 @@
       <section class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
         <h2 class="c-title c-title--2">Latest articles</h2>
         <div class="c-article-list">
-          <div class="o-vertical-spacing o-vertical-spacing--xs c-article-list__item">
-            <h3 class="c-title c-title--3"><a class="c-article-list__title" href=""></a></h3>
-            <span class="c-article-list__date"></span>
-            <p></p>
-            <a class="c-article-list__cta c-anchor" href="">Read more...</a>
-          </div>
+          {{ range first 3 .Paginator.Pages }}
+            {{ partial "page-summary-h3" . }}
+          {{ end }}
         </div>
       </section>
     </div>

@@ -6,7 +6,7 @@
     <h1 class="c-title c-title--1">{{ .Title }}</h1>
     <ul>
       {{ range $key, $value := .Data.Terms }}
-        <li><a href="{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
+        <li><a class="c-anchor" href="{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
       {{ end }}
     </ul>
   </main>

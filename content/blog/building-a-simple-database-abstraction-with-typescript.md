@@ -15,7 +15,7 @@ I'm currently in the process of rewriting some of my projects using the [TDD app
 ## The directory structure
 What we're going to build is a database abstraction layer which uses a driver to access data from wherever the driver decides. In this case we're using a file driver which pulls content from a `resources` directory. The file driver uses an extractor implementation to generate an object from the contents of a Markdown file.
 
-```
+```bash
 resources/
 └── articles/
     ├── an-article.md
@@ -124,8 +124,8 @@ export class FileDriver implements IDatabase {
   }
 
   private extractData(fileContent: string): object {
-	  // The extractor is responsible for
-		// extracting data from a file string.
+    // The extractor is responsible for
+    // extracting data from a file string.
     return this.extractor(fileContent).extractData();
   }
 }
@@ -189,7 +189,7 @@ export class MarkdownExtractor implements IExtractor {
 }
 
 export default function markdownExtractorFactory(
-	fileContent: string,
+  fileContent: string,
 ): MarkdownExtractor {
   return new MarkdownExtractor(yaml, fileContent);
 }

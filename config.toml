@@ -1,12 +1,16 @@
 languageCode = "en-us"
-title = "I build stuff"
+title = "Markus Oberlehner"
 baseURL = "https://markus.oberlehner.net/"
 enableRobotsTXT = true
 SectionPagesMenu = "main"
+disableHugoGeneratorInject = true
+PygmentsCodeFences = true
+PygmentsUseClasses = true
 
 [params]
   description = "I'm a web developer currently working at karriere.at. I write blog articles about web development and life."
   author = "Markus Oberlehner"
+  hide_author = true
 
 [[menu.main]]
     name = "Home"

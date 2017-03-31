@@ -3,25 +3,34 @@
 {{ end }}
 {{ define "main" }}
   <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
-    <article itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="o-vertical-spacing o-vertical-spacing--l" itemscope itemtype="http://schema.org/BlogPosting">
       {{ template "_internal/schema.html" . }}
-      <header>
-        <h1 itemprop="headline">{{ .Title }}</h1>
+      <header class="o-vertical-spacing o-vertical-spacing--xs">
+        <h1 class="c-title c-title--1" itemprop="headline">{{ .Title }}</h1>
+        {{ partial "post/byline" . }}
       </header>
-      <div itemprop="articleBody">
+      <div class="o-vertical-spacing o-vertical-spacing--l c-content" itemprop="articleBody">
         {{ .Content }}
       </div>
       {{ if .Site.DisqusShortname }}
-        <article>
-          {{ template "_internal/disqus.html" . }}
-        </article>
+        {{ template "_internal/disqus.html" . }}
       {{ end }}
-      <footer>
-        <hr>
-        {{ partial "post/byline" . }}
-        {{ partial "post/related-content" . }}
-      </footer>
+      {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+        {{ $.Scratch.Set "has_related" true }}
+      {{ end }}
     </article>
+    {{ if $.Scratch.Get "has_related" }}
+        <hr class="c-hr">
+        <aside class="o-vertical-spacing o-vertical-spacing--m">
+          <h2 class="c-title c-title--2">Related Content</h2>
+          <ul>
+            {{ $num_to_show := .Site.Params.related_content_limit | default 7 }}
+            {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+              <li><a class="c-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a> &ndash; {{ .ReadingTime }} minutes
+            {{ end }}
+          </ul>
+        </aside>
+      {{ end }}
   </main>
 {{ end }}
 {{ define "footer" }}

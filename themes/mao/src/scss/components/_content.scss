@@ -14,13 +14,8 @@
   h4 {
     font-size: setting-font-size(l);
   }
-}
 
-.c-content__date {
-  font-size: setting-font-size(s);
-
-  h1 + & {
-    position: relative;
-    top: setting-spacing(xs) / 2;
+  a {
+    @extend .c-anchor;
   }
 }

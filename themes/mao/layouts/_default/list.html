@@ -4,9 +4,11 @@
 {{ define "main" }}
   <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
     <h1 class="c-title c-title--1">{{ .Title }}</h1>
-    {{ range .Paginator.Pages }}
-      {{ partial "page-summary" . }}
-    {{ end }}
+    <div class="c-article-list">
+      {{ range .Paginator.Pages }}
+        {{ partial "page-summary" . }}
+      {{ end }}
+    </div>
     {{ partial "pagination" . }}
   </main>
 {{ end }}
