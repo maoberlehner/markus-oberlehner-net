@@ -38,6 +38,6 @@
     "sw-precache": "sw-precache --root=dist/prod --sw-file-path=dist/prod/service-worker.js",
     "lint": "stylelint 'resources/**/*.scss'",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
-    "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/robots.txt --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh dist/prod/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
+    "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
