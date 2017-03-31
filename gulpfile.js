@@ -2,6 +2,8 @@ const autoprefixer = require(`gulp-autoprefixer`);
 const cleancss = require(`gulp-cleancss`);
 const del = require(`del`);
 const gulp = require(`gulp`);
+const htmlmin =  require(`gulp-htmlmin`);
+const inline = require(`gulp-inline`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
 const rename = require(`gulp-rename`);
 const sass = require(`gulp-sass`);
@@ -24,16 +26,19 @@ gulp.task(`styles`, [`clean:styles`], () =>
     .pipe(gulp.dest(stylesDestDirectory))
 );
 
-gulp.task(`minify:styles`, () =>
-  gulp.src(`app/css/**/*.css`)
-    .pipe(rename((originalPath) => {
-      // eslint-disable-next-line no-param-reassign
-      originalPath.basename += `.min`;
+gulp.task(`minify:markup`, () =>
+  gulp.src(`public/**/*.html`)
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(inline({
+      base: 'public/',
+      css: [cleancss],
+      disabledTypes: ['img'],
     }))
-    .pipe(cleancss())
-    .pipe(gulp.dest(stylesDestDirectory))
+    .pipe(gulp.dest('public'))
 );
 
 gulp.task(`clean:styles`, () => del(stylesDestDirectory));
+
+gulp.task(`build`, [`minify:markup`]);
 
 gulp.task(`default`, [`watch`]);

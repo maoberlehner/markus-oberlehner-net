@@ -21,6 +21,8 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cleancss": "^0.2.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-inline": "^0.1.3",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.5.0",
@@ -31,8 +33,8 @@
     "sw-precache": "^5.0.0"
   },
   "scripts": {
-    "start": "gulp & hugo server --theme=mao --buildDrafts",
-    "build": "gulp styles && hugo --theme=mao",
+    "start": "hugo server --theme=mao --buildDrafts & gulp",
+    "build": "hugo --theme=mao && gulp build",
     "sw-precache": "sw-precache --root=dist/prod --sw-file-path=dist/prod/service-worker.js",
     "lint": "stylelint 'resources/**/*.scss'",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
