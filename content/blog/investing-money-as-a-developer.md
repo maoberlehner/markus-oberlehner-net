@@ -6,6 +6,7 @@ intro = "Developers tend to earn a decent amount of money. Although this varies 
 draft = false
 categories = ["Development", "Life"]
 tags = ["money", "investing"]
+aliases = ["/blog/2017/01/investing-money-as-a-developer/"]
 +++
 
 Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!

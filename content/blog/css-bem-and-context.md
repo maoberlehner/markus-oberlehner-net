@@ -6,6 +6,7 @@ intro = "The recent days there was some talk about one of my favorite CSS archit
 draft = false
 categories = ["Development"]
 tags = ["CSS", "BEM", "CSS architecture"]
+aliases = ["/blog/2017/02/css-bem-and-context/"]
 +++
 
 The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things.

@@ -6,6 +6,7 @@ intro = "Two weeks ago, I had this idea for an app. I decided this was the perfe
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TypeScript"]
+aliases = ["/blog/2017/03/building-a-simple-database-abstraction-with-typescript/"]
 +++
 
 Two weeks ago, I had this idea for an app. I decided this was the perfect opportunity to give [Ionic](http://ionicframework.com/) a try. Long story short – I quickly realized it would be too much work to build the app I had in mind. But I found the technologies used by Ionic 2 to be interesting. Ionic 2 is built on top of Angular 2 which in turn is built with [TypeScript](https://www.typescriptlang.org/). I'm not quite sure yet if I like Angular 2 or not but TypeScript definitely caught my attention.
