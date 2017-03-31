@@ -17,8 +17,6 @@
     "@avalanche/object-grid": "^4.0.0-alpha.10",
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
     "@avalanche/utility-width": "^4.0.0-alpha.4",
-    "autoprefixer": "^6.7.6",
-    "clean-css": "^4.0.8",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
@@ -27,14 +25,10 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.5.0",
     "lighthouse": "^1.6.0",
-    "node-sass": "^4.5.0",
     "node-sass-magic-importer": "^4.1.4",
-    "postcss": "^5.2.16",
-    "postcss-scss": "^0.4.1",
     "stylelint": "^7.9.0",
     "stylelint-config-modularis": "^5.0.0",
-    "sw-precache": "^5.0.0",
-    "uncss": "^0.14.1"
+    "sw-precache": "^5.0.0"
   },
   "scripts": {
     "start": "gulp & hugo server --theme=mao --buildDrafts",
