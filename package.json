@@ -30,7 +30,8 @@
     "node-sass-magic-importer": "^4.1.4",
     "stylelint": "^7.9.0",
     "stylelint-config-modularis": "^5.0.0",
-    "sw-precache": "^5.0.0"
+    "sw-precache": "^5.0.0",
+    "testcafe": "^0.14.0"
   },
   "scripts": {
     "start": "gulp & hugo server --theme=mao --buildDrafts",
@@ -38,6 +39,7 @@
     "sw-precache": "sw-precache --root=dist/prod --sw-file-path=dist/prod/service-worker.js",
     "lint": "stylelint 'resources/**/*.scss'",
     "lighthouse": "lighthouse https://127.0.0.1:4443/",
+    "test": "testcafe chrome tests/",
     "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
