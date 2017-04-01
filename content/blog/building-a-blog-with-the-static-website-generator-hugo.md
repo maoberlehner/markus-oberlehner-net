@@ -105,4 +105,6 @@ The combination of reactive JavaScript frameworks and static websites is very po
 
 Hugo is a very mighty and fast static website generator. I personally do not like the Go template language but I guess thats a matter of taste.
 
+The code powering this blog is [available on GitHub](https://github.com/maoberlehner/markus-oberlehner-net).
+
 Static website generators are here to stay and I love it.
