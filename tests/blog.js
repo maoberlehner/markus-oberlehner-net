@@ -3,12 +3,6 @@ import { Selector } from 'testcafe';
 fixture `Blog`
   .page `http://localhost:1313/blog/`;
 
-test(`the page contains a robots tag with noindex value`, async t => {
-  const robots = await Selector(`[name="robots"]`).getAttribute(`content`);
-
-  await t.expect(robots).contains(`noindex`);
-});
-
 test(`less than 11 articles are shown`, async t => {
   const articleCount = await Selector(`.c-article-list__item`).count;
 
@@ -31,7 +25,7 @@ test(`blog article contains important header data`, async t => {
     .expect(description.length > 70).ok()
     .expect(author).ok()
     .expect(themeColor).ok()
-    .expect(robots).notOk()
+    .expect(robots).ok()
     .expect(canonical).ok()
     .expect(manifest).ok();
 });

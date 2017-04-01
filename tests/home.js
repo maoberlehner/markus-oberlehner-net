@@ -17,7 +17,7 @@ test(`the page contains all important header data`, async t => {
     .expect(description.length > 70).ok()
     .expect(author).ok()
     .expect(themeColor).ok()
-    .expect(robots).notOk()
+    .expect(robots).ok()
     .expect(canonical).ok()
     .expect(manifest).ok();
 });
