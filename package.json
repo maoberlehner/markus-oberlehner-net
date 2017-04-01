@@ -33,7 +33,7 @@
     "sw-precache": "^5.0.0"
   },
   "scripts": {
-    "start": "hugo server --theme=mao --buildDrafts & gulp",
+    "start": "gulp & hugo server --theme=mao --buildDrafts",
     "build": "hugo --theme=mao && gulp build",
     "sw-precache": "sw-precache --root=dist/prod --sw-file-path=dist/prod/service-worker.js",
     "lint": "stylelint 'resources/**/*.scss'",
