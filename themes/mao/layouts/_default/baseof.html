@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ if eq .Data.Singular "tag" }}
+      {{ $.Scratch.Add "titlePrefix" "Articles tagged with " }}
+    {{ else if eq .Data.Singular "category" }}
+      {{ $.Scratch.Add "titlePrefix" "Articles about " }}
+    {{ else }}
+      {{ $.Scratch.Add "titlePrefix" "" }}
+    {{ end }}
+    <title>{{ if isset .Params "metatitle" }}{{ .Params.MetaTitle }}{{ else }}{{ $.Scratch.Get "titlePrefix" }}{{ .Title }}{{ end }}</title>
 
     {{ partial "meta/description" . }}
     {{ partial "meta/robots" . }}

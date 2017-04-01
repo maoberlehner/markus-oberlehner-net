@@ -2,6 +2,19 @@
   align-items: flex-end;
 }
 
+.c-hero__title {
+  font-weight: 400;
+  font-size: setting-font-size(m);
+}
+
+.c-hero__mainTitle {
+  font-weight: 500;
+}
+
+.c-hero__subTitle {
+  line-height: 1.6;
+}
+
 .c-hero__text {
   margin-bottom: setting-spacing(xxl);
 }

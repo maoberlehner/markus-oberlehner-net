@@ -8,7 +8,7 @@ PygmentsCodeFences = true
 PygmentsUseClasses = true
 
 [params]
-  description = "I'm a web developer currently working at karriere.at. I write blog articles about web development and life."
+  description = "Read articles about Web Development topics like JavaScript, CSS, TDD and Front-End Architecture but also about Motivation and Investing."
   author = "Markus Oberlehner"
 
 [[menu.main]]

@@ -2,14 +2,23 @@
   {{ partial "header" . }}
 {{ end }}
 {{ define "main" }}
-  <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
-    <h1 class="c-title c-title--1">{{ .Title }}</h1>
-    <div class="c-article-list">
-      {{ range .Paginator.Pages }}
-        {{ partial "page-summary" . }}
+  <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--xxl">
+    <div class="o-vertical-spacing o-vertical-spacing--l">
+      <h1 class="c-title c-title--1">{{ .Title }}</h1>
+      {{ if and .Content (not .Paginator.HasPrev) }}
+        <div class="o-vertical-spacing o-vertical-spacing--l c-intro c-content">
+          {{ .Content }}
+        </div>
+        </div>
+        <div class="o-vertical-spacing o-vertical-spacing--l">
       {{ end }}
+      <div class="c-article-list">
+        {{ range .Paginator.Pages }}
+          {{ partial "page-summary" . }}
+        {{ end }}
+      </div>
+      {{ partial "pagination" . }}
     </div>
-    {{ partial "pagination" . }}
   </main>
 {{ end }}
 {{ define "footer" }}

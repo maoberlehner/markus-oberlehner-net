@@ -1,3 +1,3 @@
 +++
-title = "Welcome to Markus Oberlehner’s website"
+title = "Markus Oberlehner | Web Developer, Open Source Contributor and Blogger"
 +++

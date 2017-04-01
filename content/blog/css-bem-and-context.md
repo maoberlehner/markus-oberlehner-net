@@ -5,7 +5,7 @@ description = "How can we use a combination of BEM mixes and modifiers to handle
 intro = "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "BEM", "CSS architecture"]
+tags = ["CSS", "BEM", "Front-End Architecture"]
 aliases = ["/blog/2017/02/css-bem-and-context/"]
 +++
 
