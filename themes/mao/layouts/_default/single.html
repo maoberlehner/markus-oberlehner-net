@@ -15,10 +15,10 @@
       {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}
       {{ end }}
-      {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-        {{ $.Scratch.Set "has_related" true }}
-      {{ end }}
     </article>
+    {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+      {{ $.Scratch.Set "has_related" true }}
+    {{ end }}
     {{ if $.Scratch.Get "has_related" }}
         <hr class="c-hr">
         <aside class="o-vertical-spacing o-vertical-spacing--m">
