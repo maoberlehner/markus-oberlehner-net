@@ -3,18 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
-    {{ $default_noindex_kinds := slice "section" "taxonomy" "taxonomyTerm" }}
-    {{ $noindex_kinds := .Site.Params.noindex_kinds | default $default_noindex_kinds }}
-    {{ $is_noindex_true := and (isset .Params "noindex") .Params.noindex }}
-    {{ if or (in $noindex_kinds .Kind) ($is_noindex_true) }}
-      <meta name="robots" content="noindex">
-    {{ end }}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ partial "meta/name-author" . }}
-    {{ template "_internal/opengraph.html" . }}
+
+    {{ partial "meta/description" . }}
+    {{ partial "meta/robots" . }}
+    {{ partial "meta/author" . }}
+    {{ partial "meta/viewport" . }}
     {{ partial "meta/theme-color" . }}
+
+    {{ template "_internal/opengraph.html" . }}
+
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
