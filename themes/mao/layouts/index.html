@@ -41,7 +41,7 @@
       </section>
       <section class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
         <h2 class="c-title c-title--2">Latest Articles</h2>
-        <div class="c-article-list">
+        <div class="c-article-list" itemscope itemtype="http://schema.org/Blog">
           {{ range first 3 .Paginator.Pages }}
             {{ partial "page-summary-h3" . }}
           {{ end }}

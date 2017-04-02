@@ -1,10 +1,12 @@
-<div class="o-vertical-spacing o-vertical-spacing--xs c-article-list__item">
-  <h3 class="c-title c-title--3">
-    <a class="c-article-list__title" href="{{ .Permalink }}">{{ .Title }}</a>
-  </h3>
-  <time class="c-article-list__date" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
+<article class="o-vertical-spacing o-vertical-spacing--xs c-article-list__item" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+  <a class="c-article-list__title" itemprop="mainEntityOfPage" href="{{ .Permalink }}">
+    <h3 class="c-title c-title--3" itemprop="headline">
+      {{ .Title }}
+    </h3>
+  </a>
+  <time class="c-article-list__date" itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">
     {{ .Date.Format "2 January 2006" }}
   </time>
-  <p>{{ .Params.Intro }}</p>
+  <p itemprop="articleBody">{{ .Params.Intro }}</p>
   <a class="c-article-list__cta c-anchor" href="{{ .RelPermalink }}">Read more...</a>
-</div>
+</article>

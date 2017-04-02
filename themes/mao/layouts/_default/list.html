@@ -12,11 +12,11 @@
         </div>
         <div class="o-vertical-spacing o-vertical-spacing--l">
       {{ end }}
-      <div class="c-article-list">
+      <section class="c-article-list" itemscope itemtype="http://schema.org/Blog">
         {{ range .Paginator.Pages }}
           {{ partial "page-summary" . }}
         {{ end }}
-      </div>
+      </section>
       {{ partial "pagination" . }}
     </div>
   </main>
