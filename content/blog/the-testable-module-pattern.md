@@ -1,7 +1,7 @@
 +++
 date = "2017-02-12T10:19:05+02:00"
-title = "The testable module pattern"
-description = "The testable module pattern is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function."
+title = "The Testable Module Pattern"
+description = "The Testable Module Pattern is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function."
 intro = "This is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function. You might use this pattern when you want to use unit tests but you do not want to give up on the flexibility of a modular, dependency based approach of structuring your code..."
 draft = false
 categories = ["Development"]

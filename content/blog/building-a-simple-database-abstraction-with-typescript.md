@@ -1,7 +1,7 @@
 +++
 date = "2017-03-18T16:27:05+02:00"
-title = "Building a simple (but overengineered) database abstraction with TypeScript"
-description = "Using TypeScript to build a simple database abstraction. The database uses a file driver to load Markdown files from a directory on the file system."
+title = "Building a simple (but overengineered) Database Abstraction with TypeScript"
+description = "Using TypeScript to build a simple Database Abstraction. The Database uses a file driver to load Markdown files from a directory on the file system."
 intro = "Two weeks ago, I had this idea for an app. I decided this was the perfect opportunity to give Ionic a try. Long story short – I quickly realized it would be too much work to build the app I had in mind. But I found the technologies used by Ionic 2 pretty interesting..."
 draft = false
 categories = ["Development"]
