@@ -101,7 +101,7 @@ The only thing a really don't like about Hugo is the Go template language. It su
 I wrote this code myself just a day ago and I have no idea what the hell is going on. So this is my only major pain point with Hugo so far.
 
 ## Conclusion
-The combination of reactive JavaScript frameworks and static websites is very powerful and enables developers to build websites which are not only faster than regular dynamically rendered websites but also easier to build and to deploy.
+The combination of Progressive Web App technologies and static websites is very powerful and enables developers to build websites which are not only faster than regular dynamically rendered websites but also easier to build and to deploy.
 
 Hugo is a very mighty and fast static website generator. I personally do not like the Go template language but I guess thats a matter of taste.
 
