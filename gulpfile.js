@@ -1,6 +1,6 @@
 const autoprefixer = require(`gulp-autoprefixer`);
 const cleancss = require(`gulp-cleancss`);
-const del = require(`del`);
+const rimraf = require(`rimraf`);
 const gulp = require(`gulp`);
 const htmlmin =  require(`gulp-htmlmin`);
 const inline = require(`gulp-inline`);
@@ -37,7 +37,7 @@ gulp.task(`minify:markup`, () =>
     .pipe(gulp.dest('public'))
 );
 
-gulp.task(`clean:styles`, () => del(stylesDestDirectory));
+gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));
 
 gulp.task(`build`, [`minify:markup`]);
 
