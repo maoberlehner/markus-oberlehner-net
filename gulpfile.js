@@ -2,7 +2,7 @@ const autoprefixer = require(`gulp-autoprefixer`);
 const cleancss = require(`gulp-cleancss`);
 const rimraf = require(`rimraf`);
 const gulp = require(`gulp`);
-const htmlmin =  require(`gulp-htmlmin`);
+const htmlmin = require(`gulp-htmlmin`);
 const inline = require(`gulp-inline`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
 const rename = require(`gulp-rename`);
@@ -30,11 +30,11 @@ gulp.task(`minify:markup`, () =>
   gulp.src(`public/**/*.html`)
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(inline({
-      base: 'public/',
+      base: `public/`,
       css: [cleancss],
-      disabledTypes: ['img'],
+      disabledTypes: [`img`],
     }))
-    .pipe(gulp.dest('public'))
+    .pipe(gulp.dest(`public`))
 );
 
 gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));
