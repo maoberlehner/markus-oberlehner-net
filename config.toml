@@ -8,7 +8,7 @@ PygmentsCodeFences = true
 PygmentsUseClasses = true
 
 [params]
-  description = "Read articles about Web Development topics like JavaScript, CSS, TDD and Front-End Architecture but also about Motivation and Investing."
+  description = "Articles about Web Development topics like JavaScript, CSS, Test Driven Development and Front-End Architecture but also about general life issues like Motivation and Investing."
   author = "Markus Oberlehner"
 
 [[menu.main]]
