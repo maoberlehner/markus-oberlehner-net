@@ -1,0 +1,11 @@
+.c-stage {
+  > :not(:first-child) {
+    margin-top: setting-spacing(xxl);
+  }
+
+  @media (min-width: setting-breakpoint(m)) {
+    > :not(:first-child) {
+      margin-top: setting-spacing(xxxl);
+    }
+  }
+}
