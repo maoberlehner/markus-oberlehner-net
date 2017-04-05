@@ -3715,6 +3715,10 @@ package-json@^2.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
+parallelshell@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/parallelshell/-/parallelshell-2.0.0.tgz#c94af5d6348526a26da9020faeb5fc724a80600c"
+
 param-case@2.1.x:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/param-case/-/param-case-2.1.1.tgz#df94fd8cf6531ecf75e6bef9a0858fbc72be2247"

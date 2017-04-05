@@ -30,6 +30,7 @@
     "gulp-sourcemaps": "^2.5.0",
     "lighthouse": "^1.6.0",
     "node-sass-magic-importer": "^4.1.4",
+    "parallelshell": "^2.0.0",
     "rimraf": "^2.6.1",
     "stylelint": "^7.9.0",
     "stylelint-config-modularis": "^5.0.0",
@@ -37,7 +38,7 @@
     "testcafe": "^0.14.0"
   },
   "scripts": {
-    "start": "gulp & hugo server --theme=mao --buildDrafts",
+    "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts'",
     "build": "hugo --theme=mao && gulp build",
     "sw-precache": "sw-precache --root=public --sw-file-path=public/service-worker.js",
     "lint": "eslint **/.js && stylelint 'themes/**/*.scss'",
