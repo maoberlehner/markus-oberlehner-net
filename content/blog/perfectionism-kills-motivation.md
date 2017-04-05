@@ -6,7 +6,6 @@ intro = "The last couple of days I was feeling like running out of steam. Follow
 draft = false
 categories = ["Life"]
 tags = ["discipline", "motivation", "perfectionism"]
-aliases = ["/blog/2017/02/perfectionism-kills-motivation/"]
 +++
 
 The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation. As I found out there are multiple factors why I was feeling less and less motivated to work on my pet projects.

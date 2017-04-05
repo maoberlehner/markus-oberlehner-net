@@ -6,7 +6,6 @@ intro = "This is a pattern to write JavaScript modules which are fully testable 
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "dependency injection"]
-aliases = ["/blog/2017/02/the-testable-module-pattern/"]
 +++
 
 This is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function.

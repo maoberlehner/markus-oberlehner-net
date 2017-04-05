@@ -6,7 +6,6 @@ intro = "Up until a few years ago, most people didn't put much thought into „C
 draft = false
 categories = ["Development"]
 tags = ["CSS", "SCSS", "CSS architecture", "avalanche"]
-aliases = ["/blog/2016/12/building-avalanche-v4/"]
 +++
 
 Up until a few years ago, most people didn't put much thought into „CSS architecture“ (I'm quite sure it wasn't even a thing). Around the year 2009 some sophisticated fronted folks (most notably Nicole Sullivan) started talking about concepts like [OOCSS](http://de.slideshare.net/stubbornella/object-oriented-css).

@@ -6,7 +6,6 @@ intro = "For a long time testing and test driven development (TDD) was kind of a
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD"]
-aliases = ["/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/"]
 +++
 
 For a long time testing and test driven development (TDD) was kind of a magical thing to me. I didn't really know what it meant and it seemed to be something only “real” developers can do correctly. Many developers suffer from imposter syndrome and so did (sometimes even today do) I and I was too scared to get into this magical thing called TDD.
