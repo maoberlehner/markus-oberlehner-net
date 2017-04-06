@@ -1,4 +1,6 @@
-{{ if or .Content .IsHome }}
+{{ if or .IsHome (eq .Kind "page") }}
+  <meta name="robots" content="index,follow">
+{{ else if and .Content ( not .Paginator.HasPrev ) }}
   <meta name="robots" content="index,follow">
 {{ else }}
   <meta name="robots" content="noindex,follow">
