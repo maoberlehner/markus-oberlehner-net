@@ -21,7 +21,7 @@ test(`blog article contains important header data`, async t => {
   const manifest = await Selector(`[rel="manifest"]`).exists;
 
   await t
-    .expect(title.length > 20).ok()
+    .expect(title.length > 10).ok()
     .expect(description.length > 70).ok()
     .expect(author).ok()
     .expect(themeColor).ok()
