@@ -32,7 +32,7 @@ The success of most businesses is much less dependent on the quality of the code
 
 Bad code makes us feel bad. We as developers want to learn new things, we want to work with new technologies, and we want to write clean code of which we can be proud of at the end of the day.
 
-Companies want to have happy employees and they especially want the employees which build their product to be happy. What's even more important: there is currently a shortage of developers on the job market – so companies can't afford to loose developers on a regular basis.
+Companies want to have happy employees and they especially want their employees which build their product to be happy. What's even more important: there is currently a shortage of developers on the job market – so companies can't afford to loose developers on a regular basis.
 
 Last but not least: happy employees will work harder and write better code, which leads to even more happy employees.
 
