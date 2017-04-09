@@ -23,7 +23,7 @@ At my workplace I can experience three levels of code quality first hand. We hav
 But guess what? The messy old legacy project pays our bills and it does for a lot of people – from which most of aren't even developers – since years. There are thousands of users using it daily and they don't care if the developers implementing new features wan't to kill themselves on a regular basis (of course I'm exaggerating).
 
 ## The Business Value of good Code
-We know that bad code is bad for developers. We as developers want to think that bad code is also bad for businesses. But very often this is not true. If you look deeper you'll find out, that many highly successful companies run on software of horrific (code) quality.
+We know that bad code is bad for developers. We as developers want to think that bad code is equally bad for businesses. But very often that's not true. If you look deeper you'll find out, that many highly successful companies run on software of horrific (code) quality.
 
 There may be a tipping point at which the atrocious quality of the code stops a company from moving forward and ultimately leads to the company failing. The YouTuber and Spotify employee MPJ has an interesting proposal on how to deal with software which is of such bad quality: Let it die. I recommend you to [watch the video](https://www.youtube.com/watch?v=M6_a2wBK-yc) for some insights on this topic.
 
