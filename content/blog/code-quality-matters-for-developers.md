@@ -41,10 +41,9 @@ Although we have examined why it's worth to keep developers happy and how code q
 
 I myself have experienced this a lot with my personal projects. I built the first version of [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) over a weekend. The code was ugly, definitely nothing I was proud of, but I had a working “product” I could start to tell people about and checkout if they are interested. My biggest error I made, was not that I build ugly, but not following best practices. Most notably: I had no tests in place. I quickly fixed this issue and from there on, I could focus on refactoring.  
 It was fun to build a working product in very little time and now it is fun to improve the quality of the code and implement new technologies as I'm going. Which is very easy to do if you have automated tests in place.  
-Some weeks ago I made a classical programmer error which was to give in the urge of rewriting everything from the ground. I wanted to do it *right* and write *perfect code*. Although I knew this was a mistake I still did it because of the fun I have writing clean new code. Today marks the third week I work on this project and I'm not even done with half of the features yet.
+Some weeks ago I made a classical programmer error which is to give in the urge of rewriting everything from the ground. I wanted to do it *right* and write *perfect code*. Although I knew this was a mistake I still did it because of the fun I have writing clean new code. Today marks the third week I work on this project and I'm not even done with half of the features yet.
 
-It is easy to see why such an approach is tolerable for smaller, personal projects but potentially risking bankruptcy if you're running a business.
-
+It is easy to see why such an approach is tolerable for smaller, personal projects but potentially risking bankruptcy if you're running a business.  
 Businesses and developers must find a balance between a sane codebase which still allows moving fast when it comes to implementing new features.
 
 Beware of preemptively optimizing your code when it comes to performance or keeping it DRY. Build ugly, repeat yourself if you can't be sure if what you're implementing is actually a repeating pattern or just coincidently the same. Don't throw best practices over board, but always question if they are useful for the specific use case you're facing. But most importantly **write tests**. I can't stress that enough **write tests**.
