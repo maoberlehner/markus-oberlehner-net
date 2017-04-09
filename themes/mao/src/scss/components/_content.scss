@@ -18,4 +18,12 @@
   a {
     @extend .c-anchor;
   }
+
+  blockquote {
+    padding: setting-spacing(s);
+    background: setting-color(a, gray);
+    font-style: italic;
+    font-size: setting-font-size(l);
+    font-family: serif;
+  }
 }
