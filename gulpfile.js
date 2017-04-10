@@ -38,6 +38,6 @@ gulp.task(`minify:markup`, () =>
 
 gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));
 
-gulp.task(`build`, [`minify:markup`]);
+gulp.task(`build`, [`styles`, `minify:markup`]);
 
 gulp.task(`default`, [`watch`]);
