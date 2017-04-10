@@ -5,7 +5,6 @@ const gulp = require(`gulp`);
 const htmlmin = require(`gulp-htmlmin`);
 const inline = require(`gulp-inline`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
-const rename = require(`gulp-rename`);
 const sass = require(`gulp-sass`);
 const sourcemaps = require(`gulp-sourcemaps`);
 
