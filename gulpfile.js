@@ -3,6 +3,7 @@ const CleanCSS = require(`clean-css`);
 const gulp = require(`gulp`);
 const htmlmin = require(`gulp-htmlmin`);
 const inline = require(`gulp-inline-source`);
+const uncss = require(`uncss`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
 const rimraf = require(`rimraf`);
 const sass = require(`gulp-sass`);
@@ -33,9 +34,15 @@ gulp.task(`minify:markup`, () =>
       rootpath: `public/`,
       handlers: (source, context, next) => {
         if (source.type === `css` && source.fileContent && !source.content) {
-          source.content = `<style>${new CleanCSS({ level: 2 }).minify(source.fileContent).styles}</style>`;
+          uncss(context.html, { htmlroot: `public` }, (error, css) => {
+            if (error) throw error;
+            // eslint-disable-next-line no-param-reassign
+            source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
+            next();
+          });
+        } else {
+          next();
         }
-        next();
       },
     }))
     .pipe(gulp.dest(`public`))

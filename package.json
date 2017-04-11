@@ -34,7 +34,8 @@
     "stylelint": "^7.9.0",
     "stylelint-config-modularis": "^5.0.0",
     "sw-precache": "^5.1.0",
-    "testcafe": "^0.14.0"
+    "testcafe": "^0.14.0",
+    "uncss": "^0.14.1"
   },
   "scripts": {
     "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts'",
