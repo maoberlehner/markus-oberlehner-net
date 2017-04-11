@@ -1,8 +1,8 @@
 const autoprefixer = require(`gulp-autoprefixer`);
-const cleancss = require(`gulp-cleancss`);
+const CleanCSS = require(`clean-css`);
 const gulp = require(`gulp`);
 const htmlmin = require(`gulp-htmlmin`);
-const inline = require(`gulp-inline`);
+const inline = require(`gulp-inline-source`);
 const nodeSassMagicImporter = require(`node-sass-magic-importer`);
 const rimraf = require(`rimraf`);
 const sass = require(`gulp-sass`);
@@ -30,9 +30,13 @@ gulp.task(`minify:markup`, () =>
   gulp.src(`public/**/*.html`)
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(inline({
-      base: `public/`,
-      css: [cleancss],
-      disabledTypes: [`img`],
+      rootpath: `public/`,
+      handlers: (source, context, next) => {
+        if (source.type === `css` && source.fileContent && !source.content) {
+          source.content = `<style>${new CleanCSS({ level: 2 }).minify(source.fileContent).styles}</style>`;
+        }
+        next();
+      },
     }))
     .pipe(gulp.dest(`public`))
 );
