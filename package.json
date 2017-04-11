@@ -39,7 +39,6 @@
   "scripts": {
     "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts'",
     "build": "hugo --theme=mao && gulp build",
-    "sw-precache": "sw-precache --root=public --sw-file-path=public/service-worker.js",
     "lint": "eslint **/.js && stylelint 'themes/**/*.scss'",
     "lighthouse": "lighthouse https://localhost:1313/",
     "test": "testcafe chrome tests/",
