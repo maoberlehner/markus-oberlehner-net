@@ -39,9 +39,9 @@
   "scripts": {
     "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts'",
     "build": "hugo --theme=mao && gulp build",
-    "lint": "eslint gulpfile.js tests/**/*.js && stylelint 'themes/**/*.scss'",
+    "lint": "eslint gulpfile.js test/**/*.js && stylelint 'themes/**/*.scss'",
     "lighthouse": "lighthouse https://localhost:1313/",
-    "test": "testcafe chrome tests/",
+    "test": "testcafe chrome test/",
     "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
