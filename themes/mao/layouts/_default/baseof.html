@@ -11,7 +11,12 @@
     {{ else }}
       {{ $.Scratch.Add "titlePrefix" "" }}
     {{ end }}
-    <title>{{ if isset .Params "metatitle" }}{{ .Params.MetaTitle }}{{ else }}{{ $.Scratch.Get "titlePrefix" }}{{ .Title }}{{ end }}</title>
+    {{ if .IsHome }}
+      {{ $.Scratch.Add "titleSuffix" "" }}
+    {{ else }}
+      {{ $.Scratch.Add "titleSuffix" " - Markus Oberlehner" }}
+    {{ end }}
+    <title>{{ if isset .Params "metatitle" }}{{ .Params.MetaTitle }}{{ else }}{{ $.Scratch.Get "titlePrefix" }}{{ .Title }}{{ end }}{{ $.Scratch.Get "titleSuffix" }}</title>
 
     {{ partial "meta/description" . }}
     {{ partial "meta/robots" . }}
