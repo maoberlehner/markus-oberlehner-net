@@ -50,7 +50,7 @@ gulp.task(`minify:markup`, () =>
 
 gulp.task(`service-worker`, () =>
   swPrecache.write(`public/service-worker.js`, {
-    staticFileGlobs: [`public/**/*.{js,css,png,jpg,gif,svg,eot,ttf,woff}`],
+    staticFileGlobs: [`public/**/*.{png,jpg,gif,svg,eot,ttf,woff}`],
     stripPrefix: `public`,
   })
 );
