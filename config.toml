@@ -16,3 +16,9 @@ PygmentsUseClasses = true
     weight = -100
     identifier = "home"
     url = "/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+  lego = "lego"
