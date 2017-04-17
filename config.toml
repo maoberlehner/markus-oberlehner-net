@@ -6,6 +6,7 @@ SectionPagesMenu = "main"
 disableHugoGeneratorInject = true
 PygmentsCodeFences = true
 PygmentsUseClasses = true
+disqusShortname = "markusoberlehner"
 
 [params]
   description = "Articles about Web Development topics like JavaScript, CSS, Test Driven Development and Front-End Architecture but also about general life issues like Motivation and Investing."
