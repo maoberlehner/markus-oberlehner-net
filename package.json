@@ -38,7 +38,7 @@
     "uncss": "^0.14.1"
   },
   "scripts": {
-    "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts'",
+    "start": "parallelshell 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
     "build": "hugo --theme=mao && gulp build",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint 'themes/**/*.scss'",
     "lighthouse": "lighthouse https://localhost:1313/",
