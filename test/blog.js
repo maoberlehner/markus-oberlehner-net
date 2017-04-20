@@ -9,6 +9,20 @@ test(`less than 11 articles are shown`, async t => {
   await t.expect(articleCount < 11).ok();
 });
 
+test(`page 1 is indexable`, async t => {
+  const description = await Selector(`[name="robots"]`).getAttribute(`content`);
+
+  await t.expect(description === `index,follow`).ok();
+});
+
+test(`page 2 is not indexable`, async t => {
+  await t.click('.c-pagination > .c-anchor');
+
+  const description = await Selector(`[name="robots"]`).getAttribute(`content`);
+
+  await t.expect(description === `noindex,follow`).ok();
+});
+
 test(`blog article contains important header data`, async t => {
   await t.click('.c-article-list__cta');
 
