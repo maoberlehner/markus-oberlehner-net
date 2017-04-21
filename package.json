@@ -33,7 +33,6 @@
     "rimraf": "^2.6.1",
     "stylelint": "^7.10.1",
     "stylelint-config-modularis": "^5.0.0",
-    "sw-precache": "^5.1.0",
     "testcafe": "^0.14.0",
     "uncss": "^0.14.1"
   },
