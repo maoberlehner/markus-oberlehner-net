@@ -4,7 +4,7 @@
 {{ define "main" }}
   <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l">
     <h1 class="c-title c-title--1">{{ .Title }}</h1>
-    <section class="o-vertical-spacing o-vertical-spacing--xxl c-article-list" itemscope itemtype="http://schema.org/Blog">
+    <section class="o-vertical-spacing o-vertical-spacing--xl c-article-list" itemscope itemtype="http://schema.org/Blog">
       {{ range .Paginator.Pages }}
         {{ partial "page-summary" . }}
       {{ end }}
