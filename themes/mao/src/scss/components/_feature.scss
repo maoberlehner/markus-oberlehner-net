@@ -1,10 +1,7 @@
 .c-feature {
   padding-top: setting-spacing(xxl);
   padding-bottom: setting-spacing(xxl);
-  border: 1px solid setting-color(b, gray);
-  border-right: none;
-  border-left: none;
-  background: mix(setting-color(a), #fff, 10%);
+  background: setting-color(a, gray);
 }
 
 .c-feature__content-grid {
