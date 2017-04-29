@@ -6,7 +6,8 @@
   font-size: setting-font-size(s);
 
   &,
-  a {
+  a,
+  a:visited {
     color: $brand-color-contrast;
   }
 
