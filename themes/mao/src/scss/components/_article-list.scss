@@ -1,14 +1,17 @@
 .c-article-list__item {
-  &:not(:first-child) {
-    margin-top: setting-spacing(l);
-    padding-top: setting-spacing(l);
-    border-top: 1px solid setting-color(b, gray);
+  > :not(:first-child) {
+    margin-top: setting-spacing(xs, true) / 2;
   }
 }
 
 .c-article-list__title {
-  color: #333;
+  display: block;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .c-article-list__cta {
@@ -16,5 +19,8 @@
 }
 
 .c-article-list__date {
+  display: inline-block;
+  color: setting-color(c, gray);
+  text-transform: uppercase;
   font-size: setting-font-size(s);
 }
