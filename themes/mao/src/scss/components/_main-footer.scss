@@ -1,6 +1,17 @@
 .c-main-footer {
-  padding-top: setting-spacing(s);
-  padding-bottom: setting-spacing(s);
-  background: setting-color(a, gray);
+  padding-top: setting-spacing(l);
+  padding-bottom: setting-spacing(l);
+  background: $brand-color;
   text-align: center;
+  font-size: setting-font-size(s);
+
+  &,
+  a {
+    color: $brand-color-contrast;
+  }
+
+  // Hack hack
+  small {
+    font-size: inherit;
+  }
 }
