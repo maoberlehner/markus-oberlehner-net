@@ -1,4 +1,6 @@
 .c-stage {
+  background: #fafafa;
+
   > :not(:first-child) {
     margin-top: setting-spacing(xxl);
   }
