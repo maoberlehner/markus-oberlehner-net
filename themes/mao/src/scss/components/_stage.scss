@@ -1,10 +1,10 @@
 .c-stage {
+  background: #fafafa;
+
   > :not(:first-child) {
     margin-top: setting-spacing(xxl);
-  }
 
-  @media (min-width: setting-breakpoint(m)) {
-    > :not(:first-child) {
+    @media (min-width: setting-breakpoint(m)) {
       margin-top: setting-spacing(xxxl);
     }
   }

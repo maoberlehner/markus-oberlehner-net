@@ -1,3 +1,12 @@
+.c-hero {
+  // Temporary set the background to white and compensate margins
+  // because tha site has a very light gray background
+  // but the current hero image has a white background.
+  margin-top: setting-spacing(xxxl) * -1;
+  padding-top: setting-spacing(xxxl);
+  background: #fff;
+}
+
 .c-hero__items {
   align-items: flex-end;
 }

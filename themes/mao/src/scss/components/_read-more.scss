@@ -1,0 +1,15 @@
+.c-read-more {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: setting-font-size(s);
+
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
