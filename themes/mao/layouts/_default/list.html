@@ -2,7 +2,7 @@
   {{ partial "header" . }}
 {{ end }}
 {{ define "main" }}
-  <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--xxl">
+  <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--xxl c-stage__main">
     <div class="o-vertical-spacing o-vertical-spacing--l">
       <h1 class="c-title c-title--1">{{ .Title }}</h1>
       {{ if and .Content (not .Paginator.HasPrev) }}
