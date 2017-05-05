@@ -1,11 +1,19 @@
 .c-stage {
   background: #fafafa;
+}
 
-  > :not(:first-child) {
+.c-stage__hero {
+  margin-top: setting-spacing(xl);
+
+  @media (min-width: setting-breakpoint(m)) {
     margin-top: setting-spacing(xxl);
+  }
+}
 
-    @media (min-width: setting-breakpoint(m)) {
-      margin-top: setting-spacing(xxxl);
-    }
+.c-stage__footer {
+  margin-top: setting-spacing(xxl);
+
+  @media (min-width: setting-breakpoint(m)) {
+    margin-top: setting-spacing(xxxl);
   }
 }
