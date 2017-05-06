@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/avalanchesass/markus-oberlehner-net"
+    "url": "https://github.com/maoberlehner/markus-oberlehner-net"
   },
   "bugs": {
-    "url": "https://github.com/avalanchesass/markus-oberlehner-net/issues"
+    "url": "https://github.com/maoberlehner/markus-oberlehner-net/issues"
   },
   "devDependencies": {
     "@avalanche/object-container": "^4.0.0-alpha.4",
