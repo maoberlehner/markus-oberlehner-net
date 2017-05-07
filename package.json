@@ -13,6 +13,7 @@
     "url": "https://github.com/maoberlehner/markus-oberlehner-net/issues"
   },
   "devDependencies": {
+    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
     "@avalanche/object-container": "^4.0.0-alpha.4",
     "@avalanche/object-grid": "^4.0.0-alpha.10",
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
