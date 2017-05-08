@@ -28,6 +28,10 @@
   version "4.0.0-alpha.2"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-breakpoints/-/setting-breakpoints-4.0.0-alpha.2.tgz#4dd3e235273a50f04c624f34adde4d0986975d58"
 
+"@avalanche/setting-colors@^4.0.0-alpha.1":
+  version "4.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@avalanche/setting-colors/-/setting-colors-4.0.0-alpha.1.tgz#58a20585f2dfbd759f7e831b2c738e9947a3fcab"
+
 "@avalanche/setting-spacings@^4.0.0-alpha.3":
   version "4.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@avalanche/setting-spacings/-/setting-spacings-4.0.0-alpha.3.tgz#06af7b656caff50a27570aa415966f926caf9029"
