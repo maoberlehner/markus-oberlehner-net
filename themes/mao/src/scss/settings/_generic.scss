@@ -13,19 +13,3 @@ $colors-contrast: (
   d: #fff,
   e: #fff,
 );
-
-$font-sizes: (
-  xs: 0.64em,
-  s: 0.8em,
-  m: 1em,
-  l: 1.25em,
-  xl: 1.563em,
-  xxl: 1.953em,
-  xxxl: 2.441em,
-);
-
-@function setting-font-size($size, $rem: false) {
-  $font-size: map-get($font-sizes, $size);
-  @if $rem { $font-size: ($font-size / 1em) * 1rem; }
-  @return $font-size;
-}
