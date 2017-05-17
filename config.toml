@@ -13,10 +13,10 @@ disqusShortname = "markusoberlehner"
   author = "Markus Oberlehner"
 
 [[menu.main]]
-    name = "Home"
-    weight = -100
-    identifier = "home"
-    url = "/"
+  name = "Home"
+  weight = -100
+  identifier = "home"
+  url = "/"
 
 [taxonomies]
   tag = "tags"
