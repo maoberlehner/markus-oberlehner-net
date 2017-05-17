@@ -15,13 +15,11 @@
   "dependencies": {
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
     "@avalanche/object-container": "^4.0.0-alpha.4",
-    "@avalanche/object-grid": "^4.0.0-alpha.10",
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
     "@avalanche/setting-breakpoints": "^4.0.0-alpha.2",
     "@avalanche/setting-colors": "^4.0.0-alpha.1",
     "@avalanche/setting-font-sizes": "^4.0.0-alpha.2",
-    "@avalanche/setting-spacings": "^4.0.0-alpha.3",
-    "@avalanche/utility-width": "^4.0.0-alpha.4"
+    "@avalanche/setting-spacings": "^4.0.0-alpha.3"
   },
   "devDependencies": {
     "@avalanche/eslint-config": "^0.1.0",

@@ -30,7 +30,6 @@
  * - Agnostically named classes only (e.g. .o-uilist {}).
  */
 @import '{ .o-container, .o-container--s } from ~@avalanche/object-container';
-@import '{ .o-grid } from ~@avalanche/object-grid';
 @import '{
   .o-vertical-spacing,
   .o-vertical-spacing--xs,
@@ -39,7 +38,7 @@
   .o-vertical-spacing--xxl,
   .o-vertical-spacing--xxxl
 } from ~@avalanche/object-vertical-spacing';
-// @import 'objects/**/*';
+@import 'objects/**/*';
 
 /**
  * Components
@@ -57,10 +56,4 @@
  * - Only affect one piece of the DOM at a time.
  * - Usually carry !important.
  */
-@import '{
-  .u-width-12/12,
-  .u-width-3/12@m,
-  .u-width-6/12@m,
-  .u-width-9/12@m
-} from ~@avalanche/utility-width';
-// @import 'utilities/**/*';
+@import 'utilities/**/*';

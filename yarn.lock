@@ -18,12 +18,6 @@
   dependencies:
     "@avalanche/setting-spacings" "^4.0.0-alpha.3"
 
-"@avalanche/object-grid@^4.0.0-alpha.10":
-  version "4.0.0-alpha.10"
-  resolved "https://registry.yarnpkg.com/@avalanche/object-grid/-/object-grid-4.0.0-alpha.10.tgz#5c50c9f920d9761abd3803f7159a69c6a67ffb88"
-  dependencies:
-    "@avalanche/setting-spacings" "^4.0.0-alpha.3"
-
 "@avalanche/object-vertical-spacing@^4.0.0-alpha.1":
   version "4.0.0-alpha.1"
   resolved "https://registry.yarnpkg.com/@avalanche/object-vertical-spacing/-/object-vertical-spacing-4.0.0-alpha.1.tgz#4afbe93fdc37a4e2ad5140327f49a4b1e38de60f"
@@ -51,12 +45,6 @@
   resolved "https://registry.yarnpkg.com/@avalanche/stylelint-config/-/stylelint-config-0.1.0.tgz#9928bb303a55fcee3545f4a6edee0d024bdd7906"
   dependencies:
     stylelint-order "^0.3.0"
-
-"@avalanche/utility-width@^4.0.0-alpha.4":
-  version "4.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@avalanche/utility-width/-/utility-width-4.0.0-alpha.4.tgz#c0f70c7908d3c38ac8b0d506881b7c2451e29f54"
-  dependencies:
-    "@avalanche/setting-breakpoints" "^4.0.0-alpha.2"
 
 "@gulp-sourcemaps/identity-map@1.X":
   version "1.0.1"

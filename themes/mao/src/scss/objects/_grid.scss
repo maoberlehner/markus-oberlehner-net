@@ -1,0 +1,6 @@
+.o-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: setting-spacing(m);
+  grid-row-gap: setting-spacing(m);
+}

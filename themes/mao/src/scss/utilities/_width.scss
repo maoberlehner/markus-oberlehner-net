@@ -1,0 +1,21 @@
+.u-width-12\/12 {
+  grid-column-end: span 12;
+}
+
+.u-width-3\/12\@m {
+  @media (min-width: setting-breakpoint(m)) {
+    grid-column-end: span 3;
+  }
+}
+
+.u-width-6\/12\@m {
+  @media (min-width: setting-breakpoint(m)) {
+    grid-column-end: span 6;
+  }
+}
+
+.u-width-9\/12\@m {
+  @media (min-width: setting-breakpoint(m)) {
+    grid-column-end: span 9;
+  }
+}
