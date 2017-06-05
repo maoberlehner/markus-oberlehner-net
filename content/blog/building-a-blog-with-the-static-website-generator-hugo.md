@@ -72,7 +72,7 @@ In the following example you can see a list of scripts which make your life as a
 ```
 
 ## My thoughts about Hugo
-Although I was a little sad to move away from my custom built solution, I'm quite happy with Hugo so far. Basic features like tagging and pagination would have cost me many hours to build and the custom built solution would be way less powerful than what Hugo has to offer out of the box. Although the installation process of Hugo is painless (assuming you're using macOS) I miss the simplicity a pure Node.js powered solution provides thanks to `yarn install`.
+Although I was a little sad to move away from my custom built solution, I'm quite happy with Hugo so far. Basic features like tagging and pagination would have cost me many hours to build and the custom built solution would be way less powerful than what Hugo has to offer out of the box. Although the installation process of Hugo is painless (assuming you're using macOS) I miss the simplicity a pure Node.js powered solution provides thanks to `npm install`.
 
 One major feature my custom static site generator had to offer, was using [UnCSS](https://github.com/giakki/uncss) to remove all the unnecessary CSS on a site by site basis. I couldn't get this feature up and running with Hugo – but I guess it is also doable.
 

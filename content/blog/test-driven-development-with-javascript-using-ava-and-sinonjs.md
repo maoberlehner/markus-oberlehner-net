@@ -42,7 +42,7 @@ Although I'm used to [mocha](https://mochajs.org/), sometimes I want to try new 
 Let's install ava and [Sinon.JS](http://sinonjs.org/) and add a new `test` script to our `package.json` file to get started.
 
 ```bash
-yarn add -D ava sinon
+npm add -D ava sinon
 ```
 
 ```json
