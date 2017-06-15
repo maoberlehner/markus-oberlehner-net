@@ -35,7 +35,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "lighthouse": "^2.0.0",
     "node-sass-magic-importer": "^4.1.5",
-    "parallelshell": "^2.0.0",
+    "parallelshell": "^3.0.1",
     "rimraf": "^2.6.1",
     "stylelint": "^7.10.1",
     "testcafe": "^0.15.0",
