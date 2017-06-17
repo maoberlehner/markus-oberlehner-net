@@ -10,6 +10,14 @@
   }
 }
 
+.c-main-header--overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(#fff, 0.1);
+  background: transparent;
+}
+
 .c-main-header__inner {
   display: flex;
   justify-content: space-between;

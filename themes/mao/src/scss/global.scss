@@ -38,7 +38,7 @@
   .o-vertical-spacing--xxl,
   .o-vertical-spacing--xxxl
 } from ~@avalanche/object-vertical-spacing';
-@import 'objects/**/*';
+// @import 'objects/**/*';
 
 /**
  * Components
@@ -56,4 +56,4 @@
  * - Only affect one piece of the DOM at a time.
  * - Usually carry !important.
  */
-@import 'utilities/**/*';
+// @import 'utilities/**/*';

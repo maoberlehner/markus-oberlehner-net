@@ -2,14 +2,6 @@
   background: #fafafa;
 }
 
-.c-stage__hero {
-  margin-top: setting-spacing(xl);
-
-  @media (min-width: setting-breakpoint(m)) {
-    margin-top: setting-spacing(xxl);
-  }
-}
-
 .c-stage__main {
   margin-top: setting-spacing(xxl);
 
