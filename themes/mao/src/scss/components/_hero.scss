@@ -1,5 +1,6 @@
 .c-hero {
   min-height: 24em;
+  max-height: 100vw;
   height: 100vh;
   background-image: url('/images/markus-oberlehner-mobile-2017-06.jpg');
   background-position: top center;
@@ -19,6 +20,7 @@
 .c-hero__inner {
   display: flex;
   min-height: 24em;
+  max-height: 100vw;
   height: 100vh;
   align-items: flex-end;
 }
