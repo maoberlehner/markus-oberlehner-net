@@ -64,8 +64,31 @@ Setting the `transform` property to `scale(-1, 1)` to mirror the circle element,
 
 You might think now we're done, but there is one Problem still remaining.
 
-### Negative values
-If you can't outright avoid using negative values, there is no perfect and elegant solution to this problem. Passing a negative number to our circle chart module would result in `stroke-dashoffset="1-25"` which does not work. The solution I came up with is, that you have to pass a second parameter to the module to display a negative value. The parameters passed to the template might look something like this: `{ percentage: 25, negative: true }`. If the `negative` parameter is set to `true` a modifier class, which resets the mirroring which we applied in the previous step, is added to the circle element with the effect of filling the circle in the opposite direction, representing a negative value.
+### Values >=100% and <=0%
+If you can't outright avoid displaying values lower or equal to 0% or values higher or equal to 100%, there is no perfect and elegant solution to this problem. Passing a negative number to our circle chart module would result in `stroke-dashoffset="1-25"` which does not work. Passing 100% would result in `stroke-dashoffset="1100"` which gives you a circle spinning 10 times which might not be exactly what you'd expect. The solution I came up with is, that you have to pass additional parameters to the module to display such “edge case” values. The parameters passed to the template might look something like this:
+
+```js
+{
+  percentage: 25,
+  empty: false,
+  full: false,
+  negative: true
+}
+```
+
+If the `negative` parameter is set to `true` a modifier class, which resets the mirroring which we applied in the previous step, is added to the circle element with the effect of filling the circle in the opposite direction, representing a negative value. If either `full` or `empty` is set, we're either changing the template to fill the circle to `stroke-dashoffset="199.9"` which looks like a fully filled circle or we're setting `stroke-dashoffset="100"` which represents an empty circle.
+
+```html
+{{#if full}}
+  stroke-dashoffset="199.9"
+{{else if empty}}
+  stroke-dashoffset="100"
+{{else}}
+  stroke-dashoffset="1{{ percentage }}"
+{{/if}}
+```
+
+Admittedly this is not the most beautiful solution. Depending on the goals and priorities you've set for your project, using JavaScript instead of sacrificing the simplicity of the modules API, might be a better solution in your case.
 
 ## Wrapping it up
 It was a lot of fun and a great learning experience coming up with a CSS only solution for animating an SVG circle chart. The following pen includes all the features and I tried to add some useful comments to make it easier to understand how all the CSS properties work together.
