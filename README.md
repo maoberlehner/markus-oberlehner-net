@@ -6,7 +6,7 @@ Generator for the personal website of Markus Oberlehner.
 - Install [Pygments](https://gohugo.io/extras/highlighting#pygments).
 - Install dependencies `npm install`.
 - Run `npm start`.
-- Open [http://localhost:1313/](http://localhost:1313/) in your browser.
+- Your browser opens automatically.
 
 ## Build & publish
 - `npm run build`
