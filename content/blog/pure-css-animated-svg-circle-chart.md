@@ -76,7 +76,7 @@ If you can't outright avoid displaying values lower or equal to 0% or values hig
 }
 ```
 
-If the `negative` parameter is set to `true` a modifier class, which resets the mirroring which we applied in the previous step, is added to the circle element with the effect of filling the circle in the opposite direction, representing a negative value. If either `full` or `empty` is set, we're either changing the template to fill the circle to `stroke-dashoffset="199.9"` which looks like a fully filled circle or we're setting `stroke-dashoffset="100"` which represents an empty circle.
+If the `negative` parameter is set to `true` a modifier class, which resets the mirroring which we applied in the previous step, is added to the circle element with the effect of filling the circle in the opposite direction, representing a negative value. If either `full` or `empty` is set, we're either changing the template to fill the circle to `stroke-dashoffset="200"` which makes it a fully filled circle or we're setting `stroke-dashoffset="100"` which represents an empty circle.
 
 ```html
 {{#if full}}
