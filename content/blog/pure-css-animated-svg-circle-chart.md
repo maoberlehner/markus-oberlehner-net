@@ -24,7 +24,7 @@ In the example above you can see the math involved for calculating the value for
 
 As you might remember from school, the formula to calculate the circumference of a circle reads as: `2 * π * Radius`. Knowing the circumference of our circle we can calculate the length that needs to be filled to represent a certain percentage value. The formula is `Circumference * (100 - Percentage to fill) / 100`.
 
-Although this is not exactly NASA level math, it makes understanding the code and changing the percentage value a unnecessary hard task to do.
+Although this is not exactly NASA level math, it makes understanding the code and changing the percentage value an unnecessary hard task to do.
 
 Back to my nightly adventures. The idea – which suddenly crossed my mind when I was lying in bed – to fix this circumference problem is so simple, I guess some of you already figured it out while reading the last paragraph: we have to change the radius of the circle so that the formula `Circumference * (100 - Percentage to fill) / 100` equals `Percentage to fill`.
 
