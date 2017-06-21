@@ -80,7 +80,7 @@ If the `negative` parameter is set to `true` a modifier class, which resets the 
 
 ```html
 {{#if full}}
-  stroke-dashoffset="199.9"
+  stroke-dashoffset="200"
 {{else if empty}}
   stroke-dashoffset="100"
 {{else}}
