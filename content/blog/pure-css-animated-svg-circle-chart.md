@@ -90,6 +90,11 @@ If the `negative` parameter is set to `true` a modifier class, which resets the 
 
 Admittedly this is not the most beautiful solution. Depending on the goals and priorities you've set for your project, using JavaScript instead of sacrificing the simplicity of the modules API, might be a better solution in your case.
 
+## Part 4: Internet Explorer strikes back
+At this point I thought I was done, but as one of my colleagues noticed, this approach doesn't quite work in Internet Explorer and Edge. Looking up the `transform` property at [caniuse.com](http://caniuse.com/#feat=transforms2d) quickly revealed whats the problem: Internet Explorer and Edge do not support CSS transforms on SVG elements. But they support using the transform attribute directly in the SVG itself.
+
+Because setting the transform origin when using the `transform` attribute is not possible, rotating and mirroring an SVG element is a little bit trickier that way: `transform="rotate(90 16.91549431 16.91549431) matrix(-1, 0, 0, 1, 33.83098862, 0)"`. We have to use the second and third parameter of `rotate` to rotate the element using it's center as origin. Because `scale` does not support setting the transform origin, we have to use `matrix` instead, to mirror the SVG element. The transformation attribute to display negative values, looks like the following: `transform="rotate(-90 16.91549431 16.91549431)"`.
+
 ## Wrapping it up
 It was a lot of fun and a great learning experience coming up with a CSS only solution for animating an SVG circle chart. The following pen includes all the features and I tried to add some useful comments to make it easier to understand how all the CSS properties work together.
 
