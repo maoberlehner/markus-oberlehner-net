@@ -62,7 +62,7 @@ This time I can't offer a clever solution process like consulting [MDN](https://
 
 Setting the `transform` property to `scale(-1, 1)` to mirror the circle element, makes it possible to pass the actual percentage value `25` to our Handlebars template to fill the circle to 25%. The minor flaw of having to set `stroke-dashoffset` to `125` when we actually want to fill the circle by 25% remains, but I'm OK with that.
 
-You might think now we're done, but there is one Problem still remaining.
+You might think now we're done, but there is one problem still remaining.
 
 ### Values >=100% and <=0%
 If you can't outright avoid displaying values lower or equal to 0% or values higher or equal to 100%, there is no perfect and elegant solution to this problem. Passing a negative number to our circle chart module would result in `stroke-dashoffset="1-25"` which does not work. Passing 100% would result in `stroke-dashoffset="1100"` which gives you a circle spinning 10 times which might not be exactly what you'd expect. The solution I came up with is, that you have to pass additional parameters to the module to display such “edge case” values. The parameters passed to the template might look something like this:
