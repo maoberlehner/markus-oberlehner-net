@@ -20,7 +20,7 @@ First of all let me explain how you can change the length of the stroke of an SV
 <p data-height="380" style="height:320px;" data-theme-id="0" data-slug-hash="gRLrpx" data-default-tab="html,result" data-user="moberlehner" data-embed-version="2" data-pen-title="Part 1: Math is hard (Pure CSS animated SVG Circle Chart)" class="codepen">See the Pen <a href="https://codepen.io/moberlehner/pen/gRLrpx/">Part 1: Math is hard (Pure CSS animated SVG Circle Chart)</a> by Markus Oberlehner (<a href="https://codepen.io/moberlehner">@moberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-In the example above you can see the math involved for calculating the value for the `stroke-dashoffset` attribute to represent a circle which is filled 25%.
+In the example above you can see the math involved for calculating the value for the `stroke-dashoffset` attribute to represent a circle which is filled to 25%.
 
 As you might remember from school, the formula to calculate the circumference of a circle reads as: `2 * π * Radius`. Knowing the circumference of our circle we can calculate the length that needs to be filled to represent a certain percentage value. The formula is `Circumference * (100 - Percentage to fill) / 100`.
 
