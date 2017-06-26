@@ -1,5 +1,5 @@
 +++
-date = "2017-06-27T19:21:11+02:00"
+date = "2017-06-26T18:41:11+02:00"
 title = "Dreaming of a Package based CSS Workflow"
 description = "Learn more about some of my ideas about building modular CSS architectures using third party packages. In this article I'll introduce you to tools like node-sass-magic-importer, which make it possible to use ES6 style import syntax in CSS."
 intro = "CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language. But there are new challenges coming up in the fast moving web development world..."
