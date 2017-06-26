@@ -55,9 +55,9 @@ Another feature which can be used to write more modular CSS is `@extend`. This m
 @import 'node_modules/some-package/containing/someSelector.scss';
 
 .some-selector {
-	@extend .someSelector;
-	// Additional custom styling.
-	color: blue;
+  @extend .someSelector;
+  // Additional custom styling.
+  color: blue;
 }
 ```
 
@@ -74,9 +74,9 @@ Mixins in combination with `@include` are also a way to achieve a similar outcom
 @import 'node_modules/some-package/containing/some-mixin.scss';
 
 .some-selector {
-	@include some-mixin();
-	// Additional custom styling.
-	color: blue;
+  @include some-mixin();
+  // Additional custom styling.
+  color: blue;
 }
 ```
 
