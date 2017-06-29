@@ -34,7 +34,6 @@
     "gulp-inline-source": "^3.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "lighthouse": "^2.1.0",
     "node-sass-magic-importer": "^4.1.5",
     "rimraf": "^2.6.1",
     "stylelint": "^7.11.1",
@@ -45,7 +44,6 @@
     "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
     "build": "hugo --theme=mao && gulp build",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint 'themes/**/*.scss'",
-    "lighthouse": "lighthouse http://localhost:1313/",
     "test": "testcafe chrome test/",
     "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
