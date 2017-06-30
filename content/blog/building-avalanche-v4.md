@@ -28,7 +28,7 @@ In the year 2011 Bootstrap was released and quickly gained traction. Although I 
 
 I moved all components into separate GitHub repositories and made them work as [Bower](https://bower.io/) packages. I also split the packages into different types (mostly based on the [ITCSS convention](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf)).
 
-The biggest change from version 2.x.x to 3.x.x was the switch to NPM instead of Bower. With version 3.x.x I also tried to use SASS to it's limits and made almost every aspect of the packages configurable.
+The biggest change from version 2.x.x to 3.x.x was the switch to npm instead of Bower. With version 3.x.x I also tried to use SASS to it's limits and made almost every aspect of the packages configurable.
 
 ```scss
 // 3.x.x example code (grid object package).
