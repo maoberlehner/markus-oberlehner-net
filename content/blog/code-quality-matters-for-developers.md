@@ -1,6 +1,6 @@
 +++
 date = "2017-04-09T08:57:02+02:00"
-title = "Code Quality matters (for Developers)"
+title = "Code Quality Matters (for Developers)"
 description = "Almost every developer with some years of experience knows the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase."
 intro = "Earlier today I read an interesting article speculating about the code quality at Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with...."
 draft = false
@@ -14,20 +14,20 @@ Most of the comments agree with the conclusions of the article and I myself know
 
 > “And yet Facebook has more active users at any given moment than any other site in the world. How many startups run by functional programming snobs succeed vs the move fast and break things cohort? Perhaps perfection is an unrealistic and distracting target as the future is uncertain, hard to predict and is therefore the enemy of good.”
 
-## Why Developers hate bad Code
+## Why developers hate bad code
 Almost every developer with some years of experience knows the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase. We're feeling dirty if we have to change or extend the functionality and feel forced to write even more bad code. It seems impossible to write clean code when working with all this old messy code (at least thats what we're telling our bosses).
 
-## Why Developers should appreciate Legacy Code
+## Why developers should appreciate legacy code
 At my workplace I can experience three levels of code quality first hand. We have the fancy new codebase, built from the ground up featuring all the latest technologies. Then there is the “newish” project still using modern technologies but, yeah it's fine but not great. And we have the big old legacy project featuring messy code and all the worst practices. It is really fun to build on top of the new codebase. It doesn't suck to work with the “newish” project. But working with the legacy project is a PITA – it is almost impossible to make changes of a certain size without introducing new bugs.
 
 But guess what? The messy old legacy project pays our bills and it does for a lot of people – from which most of aren't even developers – since years. There are thousands of users using it daily and they don't care if the developers implementing new features wan't to kill themselves on a regular basis (of course I'm exaggerating).
 
-## The Business Value of good Code
+## The business value of good code
 We know that bad code is bad for developers. We as developers want to think that bad code is equally bad for businesses. But very often that's not true. If you look deeper you'll find out, that many highly successful companies run on software of horrific (code) quality.
 
 There may be a tipping point at which the atrocious quality of the code stops a company from moving forward and ultimately leads to the company failing. The YouTuber and Spotify employee MPJ has an interesting proposal on how to deal with software which is of such bad quality: Let it die. I recommend you to [watch the video](https://www.youtube.com/watch?v=M6_a2wBK-yc) for some insights on this topic.
 
-### Why should Companies care about code quality?
+### Why should companies care about code quality?
 The success of most businesses is much less dependent on the quality of the code which is powering them, than most of us developers want to think – so why should businesses care about it in the first place?
 
 Bad code makes us feel bad. We as developers want to learn new things, we want to work with new technologies, and we want to write clean code of which we can be proud of at the end of the day.

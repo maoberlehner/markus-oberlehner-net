@@ -1,6 +1,6 @@
 +++
 date = "2017-06-15T16:36:01+02:00"
-title = "Creating a pure CSS animated SVG Circle Chart"
+title = "Creating a Pure CSS Animated SVG Circle Chart"
 description = "Creating an animated SVG Circle Chart with pure CSS. A detailed explanation of how to build an SVG circle chart without using JavaScript."
 intro = "Recently at work we faced the task of creating an animated SVG circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle..."
 draft = false
@@ -50,7 +50,7 @@ Setting the `animation-direction` to `reverse` plays the animation backwards. In
 ## Part 3: Let's get crazy
 We already have achieved a lot. The math is easier and we are able to animate the circles fill status with CSS alone. So basically we have already accomplished our mission, we eliminated the need for JavaScript to achieve our goal of an animated SVG circle chart. But there are still some problems with our current solution.
 
-### The Templating Problem
+### The templating problem
 A problem which still remains is, that we can't easily set the percentage value with a limited templating language like Handlebars (which we are rendering both on the server and in the client if necessary). Handlebars does not allow calculations in templates so we can't render the Handlebars template giving it a parameter of `25%` and do the math inside the template. This was one of the major concerns when implementing this in our system. This seems like a minor problem but in fact it is a major one. It either means you have an ugly API for using this module, requiring you to pass the calculated `stroke-dashoffset` value to the template, or there is no way around using JavaScript.
 
 To solve the templating problem in a satisfying way, it must be possible to pass the percentage value we want to show, directly to the Handlebars template. This was a hard nut to crack but after inventing one of the most world changing math formulas since `E = mc²` and reading two short paragraphs of documentation, nothing seemed to be impossible anymore.

@@ -1,6 +1,6 @@
 +++
 date = "2017-02-26T11:07:05+02:00"
-title = "Perfectionism kills Motivation"
+title = "Perfectionism Kills Motivation"
 description = "Every programmer knows that feeling: you're looking at some code you wrote a few weeks or maybe even some months or years ago and you are embarrassed."
 intro = "The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation..."
 draft = false
@@ -10,7 +10,7 @@ tags = ["Discipline", "Motivation", "Perfectionism"]
 
 The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation. As I found out there are multiple factors why I was feeling less and less motivated to work on my pet projects.
 
-## Discipline > Motivation
+## Discipline > motivation
 First of all: motivation sucks. Motivation will betray you at the first opportunity. If you are anything like me, you can't rely solely on motivation to achieve anything. Motivation comes and goes it is almost impossible to be consistently motivated to work on a (side) project over a longer period of time.
 
 What keeps me going is discipline. I stand up at 6 o'clock in the morning and the first thing I do is doing my pushups and some other fitness stuff. Then I get my brain going with some mind training ([lumosity](https://www.lumosity.com/)). I don't do that just when I'm feeling motivated to do it, I do it every single day no matter what, just like I'm committing code every single day. That's discipline and the only way how I'm able to do something consistently.
