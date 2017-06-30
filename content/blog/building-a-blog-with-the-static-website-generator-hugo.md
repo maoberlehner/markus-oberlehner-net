@@ -5,7 +5,7 @@ description = "Using the Static Website Generator Hugo to build a Blog. Setup a 
 intro = "There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are currently getting a lot of attention. With smashingmagazine.com one of the most well known web design blogs has just announced to make the switch from WordPress to a static website generator..."
 draft = false
 categories = ["Development"]
-tags = ["Hugo", "Static Website Generator", "NPM scripts"]
+tags = ["Hugo", "Static Website Generator", "npm Scripts"]
 +++
 
 There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are getting a lot of attention since [smashingmagazine.com](https://www.smashingmagazine.com/) – one of the most well known web design blogs – has announced to make the switch from WordPress to a static website generator. Their choice fell on [Hugo](https://gohugo.io/) which is the current rising star in the static website generator universe.
