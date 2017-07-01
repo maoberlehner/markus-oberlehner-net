@@ -1,7 +1,7 @@
 +++
 date = "2017-06-17T12:33:15+02:00"
 title = "Get Going"
-description = "Learn how to build up motivation if you're feeling like you don't want to do anything at all. Read about activities which can help you to build up motivation and how you can find just enough motivation to get going."
+description = "Learn how to build up motivation if you're feeling like you don't want to do anything at all and read about activities which can help you to gain motivation."
 intro = "The last two weeks I started to learn more about what motivates people to do what they do. I myself experience varying levels of motivation. Sometimes I feel very motivated to do a lot of stuff, especially on the weekend, and sometimes I can't motivate me to do a thing. What I already learned previously is, that you can't rely solely on motivation to achieve excellence..."
 draft = false
 categories = ["Life"]

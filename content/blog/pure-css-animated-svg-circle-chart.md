@@ -1,14 +1,14 @@
 +++
 date = "2017-06-15T16:36:01+02:00"
 title = "Creating a Pure CSS Animated SVG Circle Chart"
-description = "Creating an animated SVG Circle Chart with pure CSS. A detailed explanation of how to build an SVG circle chart without using JavaScript."
+description = "Creating an animated SVG pie chart with pure CSS. A detailed explanation of how to build an SVG doughnut chart with just CSS animations and no JavaScript."
 intro = "Recently at work we faced the task of creating an animated SVG circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle..."
 draft = false
 categories = ["Development"]
 tags = ["Pure CSS", "CSS", "SVG"]
 +++
 
-Recently at work we faced the task of creating an animated SVG circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle.
+Recently at work we faced the task of creating an animated SVG pie / doughnut / circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle.
 
 Although I usually love JavaScript and most of what I do at work and in my free time has something to do with JavaScript, there are situations where I also hate JavaScript – sometimes. Every time I think something should be done with pure HTML or SVG and CSS and it seems to be impossible to do it without JavaScript, I hate JavaScript.
 

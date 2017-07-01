@@ -1,7 +1,7 @@
 +++
 date = "2017-03-05T13:17:05+02:00"
 title = "A (Final?) Look at Grid Frameworks"
-description = "With CSS Grid Layout around the corner and Flexbox being broadly supported, it seems that the importance of grid frameworks is declining."
+description = "CSS Grid and Flexbox are great tools for building layouts in CSS. Because of CSS Grid and Flexbox, some argue that grid frameworks are obsolete – I disagree."
 intro = "With CSS Grid Layout around the corner and Flexbox being broadly supported, it seems that the importance of grid frameworks is declining. Some people even say that Flexbox made grid frameworks obsolete. I disagree..."
 draft = false
 categories = ["Development"]

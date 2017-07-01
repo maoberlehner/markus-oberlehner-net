@@ -1,7 +1,7 @@
 +++
 date = "2017-05-13T18:57:41+02:00"
 title = "An Introvert on a Stage"
-description = "I had the privilege to speak on one of the side stages at the WeAreDevelopers conference, which is the largest developers conference in Europe. Although, as an introvert, there are not many things I hate more than speaking in front of hundreds of people, it was an opportunity I had to take."
+description = "Introverts tend to avoid large crowds – but I took the chance to speak in front of 300 people. Read more about my experience as an introvert on a stage."
 intro = "I had the privilege to speak on one of the side stages at the WeAreDevelopers conference, which is the largest developers conference in Europe. Although, as an introvert, there are not many things I hate more than speaking in front of hundreds of people, it was an opportunity I had to take..."
 draft = false
 categories = ["Development", "Life"]

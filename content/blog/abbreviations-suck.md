@@ -1,7 +1,7 @@
 +++
 date = "2017-01-22T09:06:05+02:00"
 title = "Abbreviations Suck"
-description = "Writing clean code is hard. Not using abbreviations is an effortless way to make your code easier to understand."
+description = "Using abbreviations for naming variables and functions leads to harder to understand code. Not using abbreviations is an easy way to improve your code."
 intro = "For a recent project I had to work a lot with express (Node.js framework). In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic."
 draft = false
 categories = ["Development"]

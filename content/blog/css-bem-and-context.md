@@ -1,7 +1,7 @@
 +++
 date = "2017-02-18T10:09:05+02:00"
 title = "CSS, BEM and Context"
-description = "How can we use a combination of BEM Mixes and Modifiers to handle the styling of a thing in the context of another thing?"
+description = "Read about how you can use BEM mixes and modifiers to handle the styling of a block in the context of another block or to use multiple blocks on the same element."
 intro = "The recent days there was some talk about one of my favorite CSS architecture topics: styling things in the context of other things. It all started with a tweet from Dave Rupert. He asked whether the style..."
 draft = false
 categories = ["Development"]
