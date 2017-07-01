@@ -5,12 +5,12 @@ description = "Using the Static Website Generator Hugo to build a Blog. Setup a 
 intro = "There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are currently getting a lot of attention. With smashingmagazine.com one of the most well known web design blogs has just announced to make the switch from WordPress to a static website generator..."
 draft = false
 categories = ["Development"]
-tags = ["Hugo", "Static Website Generator", "NPM scripts"]
+tags = ["Hugo", "Static Website Generator", "npm Scripts"]
 +++
 
 There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are getting a lot of attention since [smashingmagazine.com](https://www.smashingmagazine.com/) – one of the most well known web design blogs – has announced to make the switch from WordPress to a static website generator. Their choice fell on [Hugo](https://gohugo.io/) which is the current rising star in the static website generator universe.
 
-## Building my Blog
+## Building my blog
 When I started my blog a few months ago, it was a no brainer for me to utilize a static website generator instead of a heavyweight CMS like WordPress. I played around with Hugo and also [Jekyll](https://github.com/jekyll/jekyll) and [Hexo](https://hexo.io/) but suffering from a severe form of [NIH syndrome](https://en.wikipedia.org/wiki/Not_invented_here) I quickly decided to build a simple static site generator myself.
 
 I started hacking and after two days I had built my own, very basic static website generator. It was lacking basic features like pagination but who needs pagination anyway if there aren't any blog articles yet? So I was quite happy with what I had built and everything worked nicely. In fact everything worked so well it became really boring and after [next.smashingmagazine.com](https://next.smashingmagazine.com/) was released and everybody raved about how great Hugo is, I decided I should give it a try.
@@ -34,7 +34,7 @@ After installing Hugo you can create a new site by running `hugo new site myblog
 
 One of the most powerful features of Hugo is it's built in development server. Run `hugo server --buildDrafts` to run the development server and open `http://localhost:1313/` in your browser to see – nothing – because we haven't created a theme yet.
 
-### Add a Theme
+### Add a theme
 Switch into the `themes` directory and clone the `robust` theme. Start the development server again and open `http://localhost:1313/` in your browser to see your newly created site.
 
 ```bash
@@ -44,8 +44,8 @@ cd ..
 hugo server --theme=hugo_theme_robust --buildDrafts
 ```
 
-### Add NPM scripts
-If you're anything like me and you immediately feel the itch to tear everything down and rebuild it from the ground, I have some tips for you. NPM scripts are a great tool for making complex build tasks more modular while also keeping the commands to execute them memorizable.
+### Add npm scripts
+If you're anything like me and you immediately feel the itch to tear everything down and rebuild it from the ground, I have some tips for you. npm scripts are a great tool for making complex build tasks more modular while also keeping the commands to execute them memorizable.
 
 In the following example you can see a list of scripts which make your life as a developer easier.
 

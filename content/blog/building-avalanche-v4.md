@@ -5,7 +5,7 @@ description = "Thoughts about building avalanche, a package based CSS framework.
 intro = "Up until a few years ago, most people didn't put much thought into „CSS architecture“ (I'm quite sure it wasn't even a thing). Around the year 2009 some sophisticated fronted folks (most notably Nicole Sullivan) started talking about concepts like OOCSS..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "SCSS", "CSS architecture", "avalanche"]
+tags = ["CSS", "SCSS", "CSS Architecture", "avalanche"]
 +++
 
 Up until a few years ago, most people didn't put much thought into „CSS architecture“ (I'm quite sure it wasn't even a thing). Around the year 2009 some sophisticated fronted folks (most notably Nicole Sullivan) started talking about concepts like [OOCSS](http://de.slideshare.net/stubbornella/object-oriented-css).
@@ -28,7 +28,7 @@ In the year 2011 Bootstrap was released and quickly gained traction. Although I 
 
 I moved all components into separate GitHub repositories and made them work as [Bower](https://bower.io/) packages. I also split the packages into different types (mostly based on the [ITCSS convention](http://csswizardry.net/talks/2014/11/itcss-dafed.pdf)).
 
-The biggest change from version 2.x.x to 3.x.x was the switch to NPM instead of Bower. With version 3.x.x I also tried to use SASS to it's limits and made almost every aspect of the packages configurable.
+The biggest change from version 2.x.x to 3.x.x was the switch to npm instead of Bower. With version 3.x.x I also tried to use SASS to it's limits and made almost every aspect of the packages configurable.
 
 ```scss
 // 3.x.x example code (grid object package).

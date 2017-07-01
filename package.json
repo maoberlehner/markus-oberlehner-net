@@ -13,39 +13,37 @@
     "url": "https://github.com/maoberlehner/markus-oberlehner-net/issues"
   },
   "dependencies": {
-    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.2",
-    "@avalanche/object-container": "^4.0.0-alpha.4",
-    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.1",
-    "@avalanche/setting-breakpoints": "^4.0.0-alpha.2",
-    "@avalanche/setting-colors": "^4.0.0-alpha.2",
-    "@avalanche/setting-font-sizes": "^4.0.0-alpha.2",
-    "@avalanche/setting-spacings": "^4.0.0-alpha.3"
+    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.3",
+    "@avalanche/object-container": "^4.0.0-alpha.6",
+    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.3",
+    "@avalanche/setting-breakpoints": "^4.0.0-alpha.3",
+    "@avalanche/setting-colors": "^4.0.0-alpha.3",
+    "@avalanche/setting-font-sizes": "^4.0.0-alpha.3",
+    "@avalanche/setting-spacings": "^4.0.0-alpha.4"
   },
   "devDependencies": {
-    "@avalanche/eslint-config": "^0.1.0",
-    "@avalanche/stylelint-config": "^0.1.0",
-    "clean-css": "^4.1.4",
+    "@avalanche/eslint-config": "^0.1.1",
+    "@avalanche/stylelint-config": "^0.1.1",
+    "clean-css": "^4.1.5",
     "concurrently": "^3.5.0",
-    "eslint": "^4.0.0",
-    "eslint-plugin-import": "^2.5.0",
+    "eslint": "^4.1.1",
+    "eslint-plugin-import": "^2.6.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-inline-source": "^3.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "lighthouse": "^2.1.0",
     "node-sass-magic-importer": "^4.1.5",
     "rimraf": "^2.6.1",
-    "stylelint": "^7.11.1",
-    "testcafe": "^0.16.1",
+    "stylelint": "^7.12.0",
+    "testcafe": "^0.16.2",
     "uncss": "^0.14.1"
   },
   "scripts": {
     "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
     "build": "hugo --theme=mao && gulp build",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint 'themes/**/*.scss'",
-    "lighthouse": "lighthouse http://localhost:1313/",
     "test": "testcafe chrome test/",
     "publish": "rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }

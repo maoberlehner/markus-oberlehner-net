@@ -1,11 +1,11 @@
 +++
-date = "2017-06-26T18:41:11+02:00"
-title = "Dreaming of a Package based CSS Workflow"
+date = "2017-06-27T19:21:11+02:00"
+title = "Dreaming of a Package Based CSS Workflow"
 description = "Learn more about some of my ideas about building modular CSS architectures using third party packages. In this article I'll introduce you to tools like node-sass-magic-importer, which make it possible to use ES6 style import syntax in CSS."
 intro = "CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language. But there are new challenges coming up in the fast moving web development world..."
 draft = false
 categories = ["Development"]
-tags = ["css", "sass", "avalanche", "front-end architecture", "workflow"]
+tags = ["CSS", "Sass", "avalanche", "Front-End Architecture", "Workflow"]
 +++
 
 CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language.
@@ -108,7 +108,7 @@ To demonstrate the principles of my vision for the future of package based CSS w
 
 Using only certain parts of the framework doesn't require users to create a custom build using an UI on a website. Not only is this a very inconvenient way of dealing with this problem, it also fails important principles for creating code that is not only extendable but – even more importantly – also easy deletable. By creating a custom build upfront most people will choose features they might or might not use in there final codebase which leads to a bloated codebase right at the beginning.
 
-## Implementing a Package based CSS Workflow with avalanche and Vue.js
+## Implementing a package based CSS workflow with avalanche and Vue.js
 On my journey of writing the most modular, extendable and delete key friendly frontend code, I ended up with a combination of `node-sass` + `node-sass-magic-importer`, the avalanche CSS framework and the Vue.js JavaScript framework.
 
 Combining those technologies makes it possible to build self contained frontend modules. Using external dependencies from npm via ES6 style import syntax – thanks to `node-sass-magic-importer` – makes it possible to build complex components very fast without reinventing the wheel over and over again.
