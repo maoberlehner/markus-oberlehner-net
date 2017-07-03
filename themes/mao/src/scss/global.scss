@@ -29,14 +29,17 @@
  * - No cosmetics.
  * - Agnostically named classes only (e.g. .o-uilist {}).
  */
-@import '{ .o-container, .o-container--s } from ~@avalanche/object-container';
+@import '{
+  .o-container,
+  .o-container--s,
+} from ~@avalanche/object-container';
 @import '{
   .o-vertical-spacing,
   .o-vertical-spacing--xs,
   .o-vertical-spacing--l,
   .o-vertical-spacing--xl,
   .o-vertical-spacing--xxl,
-  .o-vertical-spacing--xxxl
+  .o-vertical-spacing--xxxl,
 } from ~@avalanche/object-vertical-spacing';
 // @import 'objects/**/*';
 
