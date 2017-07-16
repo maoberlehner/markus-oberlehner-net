@@ -24,7 +24,7 @@ At first I didn’t realise that the HTML select element does not support the pl
 ## The solution
 After playing around and noticing that you can change the color of the select element itself, I worked on the idea of setting the select elements color to placeholder grey as long as a disabled option is selected and changing the color to the default color as soon as the value changes.
 
-After coming up with a simple JavaScript powered solution my “somehow this has to work without JavaScript” sense tingled again. After some research I found out I could use native browser form validation with the required attribute and the `:invalid` pseudo class to achieve the effect I was looking for.
+After coming up with a simple JavaScript powered solution my “somehow this has to work without JavaScript” sense tingled again. After some research I found out I could use native browser form validation with the `required` attribute and the `:invalid` pseudo class to achieve the effect I was looking for.
 
 <p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="moberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/moberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/moberlehner">@moberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
