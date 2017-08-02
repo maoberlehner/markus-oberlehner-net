@@ -10,12 +10,11 @@ const sass = require(`gulp-sass`);
 const sourcemaps = require(`gulp-sourcemaps`);
 const uncss = require(`uncss`);
 
-const stylesDestDirectory = `static/dist/css`;
 const themeSrcDirectory = `themes/mao/src`;
+const publicDirectory = `public`;
+const stylesDestDirectory = `static/dist/css`;
 const scssRoot = `scss`;
 const scssPath = path.join(themeSrcDirectory, scssRoot, `**/*.scss`);
-
-const publicDirectory = `public`;
 const htmlPath = path.join(publicDirectory, `**/*.html`);
 
 gulp.task(`watch`, () => {
