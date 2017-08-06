@@ -27,7 +27,7 @@ After all I already had built everything I needed, the only thing I had to do wa
 
 In retrospect none of this reasons is valid.
 
-### Laerning
+### Learning
 Although it is true that I've learned a lot about TypeScript over the course of the last months, I could have achieved similar results using TypeScript for new projects I started or rewriting some of the very small projects I maintain first. And also one of the main things I learned about TypeScript is, that TypeScript is not the best fit for the project at hand.
 
 ### Clean code
