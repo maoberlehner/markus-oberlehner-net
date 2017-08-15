@@ -103,7 +103,7 @@ catsAreAwesome(); // Returns `Cats say: Meow`.
 catsSay(); // Returns `Meow`.
 ```
 
-## Publish types to npm
+## Publishing types to npm
 If you're using TypeScript you might have noticed that a lot of npm packages are missing support for types. If you're publishing a new package built on top of TypeScript you're able to publish the type declarations to npm automatically, so other TypeScript users are getting full type support out of the box when using your package.
 
 To do so there are only two settings you have to make. First of all open your `tsconfig.json` file and add `"declaration": true` to your `compilerOptions`.
