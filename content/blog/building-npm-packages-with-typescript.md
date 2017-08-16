@@ -39,7 +39,7 @@ export function catsSay(): string {
 }
 
 export default function catsAreAwesome(): string {
-  return `Cats say: ${catsSay}`;
+  return `Cats say: ${catsSay()}`;
 }
 ```
 
@@ -89,7 +89,7 @@ export = function catsSay(): string {
 import catsSay = require('./cats-say');
 
 export = function catsAreAwesome(): string {
-  return `Cats say: ${catsSay}`;
+  return `Cats say: ${catsSay()}`;
 };
 ```
 
