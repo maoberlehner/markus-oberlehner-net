@@ -1,5 +1,6 @@
 const autoprefixer = require(`gulp-autoprefixer`);
 const CleanCSS = require(`clean-css`);
+const declassify = require(`declassify`);
 const gulp = require(`gulp`);
 const htmlmin = require(`gulp-htmlmin`);
 const inline = require(`gulp-inline-source`);
@@ -8,6 +9,7 @@ const path = require(`path`);
 const rimraf = require(`rimraf`);
 const sass = require(`gulp-sass`);
 const sourcemaps = require(`gulp-sourcemaps`);
+const transform = require(`gulp-transform`);
 const uncss = require(`uncss`);
 
 const themeSrcDirectory = `themes/mao/src`;
@@ -50,6 +52,7 @@ gulp.task(`minify:markup`, () =>
         }
       },
     }))
+    .pipe(transform(`utf8`, content => declassify.process(content)))
     .pipe(gulp.dest(publicDirectory))
 );
 
