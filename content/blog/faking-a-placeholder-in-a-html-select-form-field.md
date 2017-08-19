@@ -26,7 +26,7 @@ After playing around and noticing that you can change the color of the select el
 
 After coming up with a simple JavaScript powered solution my “somehow this has to work without JavaScript” sense tingled again. After some research I found out I could use native browser form validation with the `required` attribute and the `:invalid` pseudo class to achieve the effect I was looking for.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="moberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/moberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/moberlehner">@moberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Avoiding JavaScript at all costs
@@ -37,7 +37,7 @@ Assuming that select fields are either always required or we are able to provide
 
 Although usually one of my pet peeves is to build functionality which requires (or seems to require) JavaScript, with pure CSS, in this case just some sprinkles of JavaScript could solve this problem once and for all.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="YQBQNj" data-default-tab="css,result" data-user="moberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with (CSS + JavaScript Fallback)" class="codepen">See the Pen <a href="https://codepen.io/moberlehner/pen/YQBQNj/">Fake Select Placeholder with (CSS + JavaScript Fallback)</a> by Markus Oberlehner (<a href="https://codepen.io/moberlehner">@moberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="YQBQNj" data-default-tab="css,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with (CSS + JavaScript Fallback)" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/YQBQNj/">Fake Select Placeholder with (CSS + JavaScript Fallback)</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 By setting the initial placeholder grey color of the element with JavaScript, we are save in case the user has disabled JavaScript, JavaScript didn’t load, the Browser couldn’t execute our JavaScript code or any other reason why JavaScript can be not available.

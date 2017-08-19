@@ -14,7 +14,7 @@ One of the first methods to build layouts was using HTML tables. With CSS taking
 
 To cut a long story short: none of those approaches were originally intended to be used to build layouts. If you want to read a little bit more about the history of displaying elements side by side, you can read further about it in the following article: [A (Final?) Look at Grid Frameworks](https://markus.oberlehner.net/blog/a-final-look-at-grid-frameworks/).
 
-I created an [example CodePen](https://codepen.io/moberlehner/pen/aWarZO) using the concepts explained in the following article: [Good Ol' 12 Column CSS Grid Framework Using CSS Grid Layout](https://codepen.io/moberlehner/pen/aWarZO)
+I created an [example CodePen](https://codepen.io/maoberlehner/pen/aWarZO) using the concepts explained in the following article: [Good Ol' 12 Column CSS Grid Framework Using CSS Grid Layout](https://codepen.io/maoberlehner/pen/aWarZO)
 
 ## Finally: CSS Grid Layout
 A framework is a tool to provide a solid fundament for building complex systems. By building your own CSS grid framework, we have a solid and - at least after some time - battle tested system to build on top on.

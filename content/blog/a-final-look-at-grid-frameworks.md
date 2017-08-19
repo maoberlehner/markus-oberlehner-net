@@ -56,7 +56,7 @@ It is not practical to assume that there only will be one gutter size throughout
 3. **Overflow issues**  
 The usage of gutters on both sides of the grid elements can lead to overflow issues if you are using gutters which are wider than the padding of the default container. Look at the following example, you'll notice a horizontal scrollbar.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="YZWLBL" data-default-tab="result" data-user="moberlehner" data-embed-version="2" data-pen-title="Bootstrap grid overflow issue" class="codepen">See the Pen <a href="http://codepen.io/moberlehner/pen/YZWLBL/">Bootstrap grid overflow issue</a> by Markus Oberlehner (<a href="http://codepen.io/moberlehner">@moberlehner</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="YZWLBL" data-default-tab="result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Bootstrap grid overflow issue" class="codepen">See the Pen <a href="http://codepen.io/maoberlehner/pen/YZWLBL/">Bootstrap grid overflow issue</a> by Markus Oberlehner (<a href="http://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## A better approach with single direction margins
@@ -66,7 +66,7 @@ First of all, let's talk about single direction margins. I'm a huge fan of this 
 
 But other than that, single direction margins are also solving the overflowing issue you can see in the CodePen example above. And even further, with single direction margins vertical spacing is no problem to implement. The following CodePen uses single direction margins and also adds vertical spacing. This is the same approach used for the [avalanche grid package](https://avalanche.oberlehner.net/packages/object-grid/).
 
-<p data-height="265" data-theme-id="0" data-slug-hash="QpErew" data-default-tab="result" data-user="moberlehner" data-embed-version="2" data-pen-title="avalanche grid awesomeness" class="codepen">See the Pen <a href="http://codepen.io/moberlehner/pen/QpErew/">avalanche grid awesomeness</a> by Markus Oberlehner (<a href="http://codepen.io/moberlehner">@moberlehner</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="QpErew" data-default-tab="result" data-user="maoberlehner" data-embed-version="2" data-pen-title="avalanche grid awesomeness" class="codepen">See the Pen <a href="http://codepen.io/maoberlehner/pen/QpErew/">avalanche grid awesomeness</a> by Markus Oberlehner (<a href="http://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ## Final thougts
