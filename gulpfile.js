@@ -52,7 +52,11 @@ gulp.task(`minify:markup`, () =>
         }
       },
     }))
-    .pipe(transform(`utf8`, content => declassify.process(content)))
+    .pipe(transform(`utf8`, content => declassify.process(content, {
+      // The last RegExp which matches single character classes
+      // is necessary because of a bug in the declassify package.
+      ignore: [`codepen`, /language-.+/, /^[a-z]$/],
+    })))
     .pipe(gulp.dest(publicDirectory))
 );
 
