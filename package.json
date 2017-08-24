@@ -37,6 +37,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-transform": "^3.0.5",
+    "http-server": "^0.10.0",
     "node-sass-magic-importer": "^5.0.0-alpha.5",
     "rimraf": "^2.6.1",
     "stylelint": "^8.0.0",
@@ -47,7 +48,7 @@
     "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
     "build": "hugo --theme=mao && gulp build",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint 'themes/**/*.scss'",
-    "test": "testcafe chrome test/",
+    "test": "npm run build && concurrently -k 'http-server -p 1337' 'testcafe chrome test/'",
     "deploy": "npm run build && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }

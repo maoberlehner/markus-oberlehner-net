@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-fixture(`Blog`).page(`http://localhost:1313/blog/`);
+fixture(`Blog`).page(`http://localhost:1337/blog/`);
 
 test(`less than 11 articles are shown`, async (t) => {
   const articleCount = await Selector(`.c-article-list__item`).count;

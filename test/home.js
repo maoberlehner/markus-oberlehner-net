@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-fixture(`Home`).page(`http://localhost:1313/`);
+fixture(`Home`).page(`http://localhost:1337/`);
 
 test(`the page contains all important header data`, async (t) => {
   const title = await Selector(`title`).innerText;
