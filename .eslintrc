@@ -8,5 +8,12 @@
       "exports": "always-multiline",
       "functions": "never"
     }]
+  },
+  "globals": {
+    "fixture": true,
+    "test": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 8
   }
 }

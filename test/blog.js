@@ -1,30 +1,29 @@
 import { Selector } from 'testcafe';
 
-fixture `Blog`
-  .page `http://localhost:1313/blog/`;
+fixture(`Blog`).page(`http://localhost:1313/blog/`);
 
-test(`less than 11 articles are shown`, async t => {
+test(`less than 11 articles are shown`, async (t) => {
   const articleCount = await Selector(`.c-article-list__item`).count;
 
   await t.expect(articleCount < 11).ok();
 });
 
-test(`page 1 is indexable`, async t => {
+test(`page 1 is indexable`, async (t) => {
   const description = await Selector(`[name="robots"]`).getAttribute(`content`);
 
   await t.expect(description === `index,follow`).ok();
 });
 
-test(`page 2 is not indexable`, async t => {
-  await t.click('.c-pagination > .c-anchor');
+test(`page 2 is not indexable`, async (t) => {
+  await t.click(`.c-pagination > .c-anchor`);
 
   const description = await Selector(`[name="robots"]`).getAttribute(`content`);
 
   await t.expect(description === `noindex,follow`).ok();
 });
 
-test(`blog article contains important header data`, async t => {
-  await t.click('.c-article-list__cta');
+test(`blog article contains important header data`, async (t) => {
+  await t.click(`.c-article-list__cta`);
 
   const title = await Selector(`title`).innerText;
   const description = await Selector(`[name="description"]`).getAttribute(`content`);
@@ -35,11 +34,18 @@ test(`blog article contains important header data`, async t => {
   const manifest = await Selector(`[rel="manifest"]`).exists;
 
   await t
-    .expect(title.length > 10).ok()
-    .expect(description.length > 70).ok()
-    .expect(author).ok()
-    .expect(themeColor).ok()
-    .expect(robots).ok()
-    .expect(canonical).ok()
-    .expect(manifest).ok();
+    .expect(title.length > 10)
+    .ok()
+    .expect(description.length > 70)
+    .ok()
+    .expect(author)
+    .ok()
+    .expect(themeColor)
+    .ok()
+    .expect(robots)
+    .ok()
+    .expect(canonical)
+    .ok()
+    .expect(manifest)
+    .ok();
 });
