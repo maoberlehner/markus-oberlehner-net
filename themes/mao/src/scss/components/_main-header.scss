@@ -8,6 +8,17 @@
   a {
     color: $brand-color-contrast;
   }
+
+  &::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 0.2em;
+    background: $brand-color;
+    content: '';
+  }
 }
 
 .c-main-header--overlay {
@@ -16,6 +27,10 @@
   left: 0;
   border-bottom: 1px solid rgba(#fff, 0.1);
   background: transparent;
+
+  &::before {
+    display: none;
+  }
 }
 
 .c-main-header__inner {
