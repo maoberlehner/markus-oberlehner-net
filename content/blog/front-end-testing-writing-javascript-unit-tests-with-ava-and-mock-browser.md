@@ -1,6 +1,6 @@
 +++
 date = "2017-09-03T10:40:25+02:00"
-title = "Front-End Testing Part 1: Writing Unit Tests with ava and mock-browser"
+title = "Front-End Testing Part 1: Writing JavaScript Unit Tests with ava and mock-browser"
 description = "Learn how to write front-end unit tests using ava and mock-browser. Build fast running front-end unit tests powered by npm scripts."
 intro = "In this article we're going to explore how to build unit tests for JavaScript code which is intended to run in the browser. We're going to use ava as our test runner and the mock-browser package to simulate a browser environment..."
 draft = false
