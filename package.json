@@ -27,7 +27,7 @@
     "@avalanche/stylelint-config": "^0.1.2",
     "clean-css": "^4.1.7",
     "concurrently": "^3.5.0",
-    "declassify": "^1.2.0",
+    "declassify": "^1.2.1",
     "eslint": "^4.5.0",
     "eslint-plugin-import": "^2.7.0",
     "gulp": "^3.9.1",
