@@ -36,7 +36,7 @@ We're installing TestCafe locally, therefore we need to add an npm script to our
 }
 ```
 
-The `test:unit` npm script you can see here was created in the first part of this article series about front-end testing. The `test:acceptance` script is the one we're going to focus on in this article. We're starting `testcafe` and by providing `chrome,firefox` in the command line arguments we're telling TestCafe to run tests in the locally installed browsers Chrome and Firefox. The next argument `test/acceptance/` is telling TestCafe were to look for test scripts.
+The `test:unit` npm script you can see here was created in the first part of this article series about front-end testing. The `test:acceptance` script is the one we're going to focus on in this article. By providing `chrome,firefox` in the command line arguments for the `testcafe` command we're telling TestCafe to run tests in the locally installed browsers Chrome and Firefox. The next argument `test/acceptance/` is telling TestCafe were to look for test scripts.
 
 By specifying the `--app` option we can tell TestCafe to start a new HTTP server using the `http-server` npm package, serving the contents from the `demo/` directory, using port `6666` and suppress (HTTP server) log messages by providing the `-s` (silent) option. The site which is served by `http-server` is the site we're going to test.
 
@@ -47,27 +47,27 @@ Usually you'll create a separate test file for every page of your website. In so
 
 ```js
 // test/acceptance/index.js
-import { ClientFunction, Selector } from 'testcafe';
+import { Selector } from 'testcafe';
 
 fixture('Index').page('http://localhost:6666/');
 ```
 
-In the example code above you can see that we're importing `ClientFunction` and `Selector` from the `testcafe` package – `ClientFunction` can be used to obtain data from the client, `Selector` is a helper function to make it possible to select DOM elements. Next we're defining a new `fixture`, fixtures in TestCafe are a way of categorizing your tests. In this case we're naming our test `Index` and defining the page we want to test. The port we use here, must be the same you've specified in the npm script in your `package.json` file.
+In the example code above you can see that we're importing `Selector` from the `testcafe` package – `Selector` is a helper function to make it possible to select DOM elements. Next we're defining a new `fixture`, fixtures in TestCafe are a way of categorizing your tests. In this case we're naming our test `Index` and defining the page we want to test. The port we use here, must be the same you've specified in the npm script in your `package.json` file.
 
 ```js
 test('The hero section is visible.', async (t) => {
-  const heroSection = await Selector('.c-hero').exists;
+  const heroSection = Selector('.c-hero');
 
-  await t.expect(heroSection).ok();
+  await t.expect(heroSection.exists).ok();
 });
 ```
 
-Our first test is a rather simple one. What we're doing here is that we try to select an element with a `.c-hero` selector and check if it exists on the page. You might have noticed that TestCafe is relying heavily on asynchronous functions and the `async` `await` syntax. It took me some time to get used to it and I have to admit that more often than once I forgot adding either `async` or `await` and wondered why my tests were failing.
+Our first test is a rather simple one. What we're doing here is that we try to select an element with a `.c-hero` selector and check if it exists on the page.
 
 ```js
 test(`Click on hero image opens lightbox.`, async (t) => {
-  const heroImageLink = await Selector(`.c-hero .perfundo__link`);
-  const heroImageOverlay = await Selector(`.c-hero .perfundo__overlay`);
+  const heroImageLink = Selector(`.c-hero .perfundo__link`);
+  const heroImageOverlay = Selector(`.c-hero .perfundo__overlay`);
 
   await t
     .expect(heroImageOverlay.visible)
@@ -181,7 +181,7 @@ I personally had some troubles to get up and running with linting TestCafe files
 }
 ```
 
-What you can see above is my `.eslintrc` ESLint configuration file. By defining `fixture` and `test` as globals, ESLint ignores the usage of those variables without defining them. Setting the `ecmaVersion` to `8` makes it possible to use the latest JavaScript syntax which is also used in the TestCafe documentation code examples. There is also an [official TestCafe ESLint configuration package](https://www.npmjs.com/package/eslint-plugin-testcafe) you can use but the only thing it does is to add the `fixture` and `test` globals.
+What you can see above is my `.eslintrc` ESLint configuration file. By defining `fixture` and `test` as globals, ESLint ignores the usage of those variables without defining them. Setting the `ecmaVersion` to `8` makes it possible to use the latest JavaScript syntax which is also used in the TestCafe documentation code examples. There is also an [official TestCafe ESLint configuration package](https://www.npmjs.com/package/eslint-plugin-testcafe) you can use, but the only thing it does is to add the `fixture` and `test` globals.
 
 ## Wrapping it up
 The combination of TestCafe, BrowserStack and Travis CI makes it possible to run all of your acceptance tests on all of your supported platforms automatically whenever you push new code to your repository.
