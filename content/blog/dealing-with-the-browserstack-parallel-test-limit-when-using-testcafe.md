@@ -28,7 +28,7 @@ ERROR Unable to establish one or more of the specified browser connections. This
 Also your BrowserStack Automate instance will crash and you can't execute automated tests anymore. Even clicking “Stop session” on frozen tests won't work and you have to wait until they time out or some nice member of the BrowserStack support team stops them for you.
 
 ## Running TestCafe tests on BrowserStack consecutively
-The solution to the problem is to run TestCafe tests on BrowserStack one after another instead all at once. TestCafe does not support this out of the box so we have to build a little shell script to help us out.
+The solution to the problem is to run TestCafe tests on BrowserStack one after another instead of all at once. TestCafe does not support this out of the box so we have to build a little shell script to help us out.
 
 ```bash
 #!/bin/bash
@@ -49,4 +49,4 @@ In this script I'm assuming your plan is limited to one parallel test at a time,
 browsers=( "browserstack:ie@10.0:Windows 8,browserstack:ie@11.0:Windows 10,browserstack:edge@15.0:Windows 10" "browserstack:edge@14.0:Windows 10,browserstack:firefox@54.0:Windows 10,browserstack:firefox@55.0:Windows 10" "browserstack:chrome@59.0:Windows 10,browserstack:chrome@60.0:Windows 10,browserstack:opera@46.0:Windows 10" "browserstack:opera@47.0:Windows 10,browserstack:safari@9.1:OS X El Capitan,browserstack:safari@10.1:OS X Sierra" )
 ```
 
-As you can see above you can group browsers to run in parallel by separating them with a comma. So in the following case `"browserstack:ie@10.0:Windows 8,browserstack:ie@11.0:Windows 10,browserstack:edge@15.0:Windows 10"` tests in Internet Explorer 10 and 11 and Edge 15 are started simultaneously. In this case you would need a BrowserStack plan which supports running three automated tests in parallel.
+As you can see above you can group browsers to run in parallel by separating them with a comma. So in the following case `"browserstack:ie@10.0:Windows 8,browserstack:ie@11.0:Windows 10,browserstack:edge@15.0:Windows 10"` tests with Internet Explorer 10 and 11 and Edge 15 are started simultaneously. In this case you'd need a BrowserStack plan which supports running three automated tests in parallel.
