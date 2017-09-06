@@ -31,14 +31,14 @@ We're installing TestCafe locally, therefore we need to add an npm script to our
 ```json
 "scripts": {
   "test:unit": "ava test/unit/**/*.test.js",
-  "test:acceptance": "testcafe chrome,firefox test/acceptance/ --app 'http-server demo/ -p 6666 -s'",
+  "test:acceptance": "testcafe chrome,firefox test/acceptance/ --app 'http-server demo/ -p 1337 -s'",
   "test": "npm run test:acceptance"
 }
 ```
 
 The `test:unit` npm script you can see here was created in the first part of this article series about front-end testing. The `test:acceptance` script is the one we're going to focus on in this article. By providing `chrome,firefox` in the command line arguments for the `testcafe` command we're telling TestCafe to run tests in the locally installed browsers Chrome and Firefox. The next argument `test/acceptance/` is telling TestCafe were to look for test scripts.
 
-By specifying the `--app` option we can tell TestCafe to start a new HTTP server using the `http-server` npm package, serving the contents from the `demo/` directory, using port `6666` and suppress (HTTP server) log messages by providing the `-s` (silent) option. The site which is served by `http-server` is the site we're going to test.
+By specifying the `--app` option we can tell TestCafe to start a new HTTP server using the `http-server` npm package, serving the contents from the `demo/` directory, using port `1337` and suppress (HTTP server) log messages by providing the `-s` (silent) option. The site which is served by `http-server` is the site we're going to test.
 
 ## Writing tests
 The page we're going to test is the project website of an open source project of mine: [perfundo – a pure CSS lightbox](https://perfundo.oberlehner.net/). You can find [the code of the site and also all the test code on GitHub](https://github.com/maoberlehner/perfundo/tree/3.0.3).
@@ -49,7 +49,7 @@ Usually you'll create a separate test file for every page of your website. In so
 // test/acceptance/index.js
 import { Selector } from 'testcafe';
 
-fixture('Index').page('http://localhost:6666/');
+fixture('Index').page('http://localhost:1337/');
 ```
 
 In the example code above you can see that we're importing `Selector` from the `testcafe` package – `Selector` is a helper function to make it possible to select DOM elements. Next we're defining a new `fixture`, fixtures in TestCafe are a way of categorizing your tests. In this case we're naming our test `Index` and defining the page we want to test. The port we use here, must be the same you've specified in the npm script in your `package.json` file.
@@ -138,7 +138,7 @@ First of all we're creating a new `.env` file which is exporting the BrowserStac
 
 ```json
 "scripts": {
-  "test:acceptance": "testcafe 'browserstack:ie@10.0:Windows 8,browserstack:ie@11.0:Windows 10' test/acceptance/ --app 'http-server demo/ -p 6666 -s'"
+  "test:acceptance": "testcafe 'browserstack:ie@10.0:Windows 8,browserstack:ie@11.0:Windows 10' test/acceptance/ --app 'http-server demo/ -p 1337 -s'"
 }
 ```
 
