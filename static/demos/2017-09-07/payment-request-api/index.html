@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DEMO: Payment Request API Part 1: Simple Products and the Credit Card Payment Method</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .product {
+        max-width: 13em;
+        padding: 1em;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+        border-radius: 0.25em;
+      }
+
+      .product > :not(:first-child) {
+        margin-top: 0.85em;
+      }
+
+      .product__cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .product__button {
+        color: #fff;
+        background: blue;
+        padding: 0.25em 1em;
+        text-decoration: none;
+      }
+
+      html {
+        font-family: sans-serif;
+        line-height: 1.4;
+        padding: 2em;
+      }
+
+      body > :not(:first-child) {
+        margin-top: 1.5em;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.15;
+      }
+
+      * {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Payment Request API Demo Shop</h1>
+    <p>
+      This demo is using the Payment Request API to ask the user for her credit card data.<br>
+      Please open your browser console to see debug data.
+    </p>
+    <div class="product" data-id="PRODUCT-001" data-label="Fancy Product" data-currency="EUR" data-value="29.99">
+      <h2>Fancy Product</h2>
+      <p>I'm a super awesome product, please buy me!</p>
+      <div class="product__cta">
+        <strong class="product__price">only 29.99 €</strong>
+        <a href="#no-js-checkout" class="product__button">Buy</a>
+      </div>
+    </div>
+
+    <script>
+      // payment-request-polyfill.js
+      function PaymentRequestPolyfill() {
+        return { show: () => alert('Polyfill me!') };
+      }
+
+      // payment-processor.js
+      function paymentProcessorFactory() {
+        return {
+          send: (data) => new Promise((resolve) => {
+            // Add delay to simulate a request to a payment processor.
+            window.setTimeout(() => {
+              console.log('Payment processor:', data);
+              resolve();
+            }, 2000);
+          })
+        };
+      }
+
+      // payment-handler.js
+      function paymentHandlerFactory({ paymentProcessor }) {
+        return (paymentResponse) => {
+          // This is the place to submit the payment data
+          // to your payment processor (e.g. PayPal or Stripe).
+          paymentProcessor.send(paymentResponse)
+            .then(() => paymentResponse.complete());
+        }
+      }
+
+      // error-handler.js
+      function errorHandlerFactory() {
+        return (error) => {
+          console.log('Error handler:', error);
+        }
+      }
+
+      // payment-request.js
+      function paymentRequestFactory({ paymentMethods }) {
+        return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
+      }
+
+      // start-payment.js
+      function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
+        return (paymentDetails) => {
+          paymentRequest(paymentDetails)
+            .show()
+            .then((paymentResponse) => {
+              return paymentHandler(paymentResponse);
+            })
+            .catch(error => errorHandler(error));
+        }
+      }
+
+      // get-product-data.js
+      function getProductData($product) {
+        return {
+          id: $product.dataset.id,
+          label: $product.dataset.label,
+          currency: $product.dataset.currency,
+          value: $product.dataset.value,
+        }
+      }
+
+      // payment-methods.js
+      const creditCardPaymentMethod = {
+        supportedMethods: ['basic-card'],
+      };
+      const paymentMethods = [creditCardPaymentMethod];
+
+      // app.js
+      // Check if the `PaymentRequest` object is available,
+      // if not we substitute it with a polyfill.
+      const PaymentRequest = window.PaymentRequest || PaymentRequestPolyfill;
+      // In a real world application the payment processor
+      // would be a payment provider like PayPal or Stripe.
+      const paymentProcessor = paymentProcessorFactory();
+      // We're using a payment handler function as a
+      // wrapper around the API of our payment processor.
+      const paymentHandler = paymentHandlerFactory({ paymentProcessor });
+      // The error handler deals with failed or cancelled payments.
+      const errorHandler = errorHandlerFactory();
+      // We wrap the `PaymentRequest` object with a factory
+      // so we have to provide the `paymentMethods` only once.
+      const paymentRequest = paymentRequestFactory({ paymentMethods });
+      // The `startPayment` function triggers a new payment
+      // request and passes it's return value to either the
+      // `paymentHandler` or the `errorHandler` function.
+      const startPayment = startPaymentFactory({
+        paymentRequest,
+        paymentHandler,
+        errorHandler,
+      });
+
+      function handleProductClick(e) {
+        e.preventDefault();
+
+        const $product = e.currentTarget;
+        const $button = e.target;
+
+        if ($button.classList.contains('product__button')) {
+          const productData = getProductData($product);
+          const paymentDetails = {
+            total: {
+              label: productData.label,
+              amount: {
+                currency: productData.currency,
+                value: productData.value,
+              },
+            },
+          };
+
+          startPayment(paymentDetails);
+        }
+      }
+
+      const $products = document.querySelectorAll('.product');
+      [].slice.call($products).forEach($product => $product.addEventListener('click', handleProductClick));
+    </script>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-57407594-3','auto');ga('send','pageview');
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
