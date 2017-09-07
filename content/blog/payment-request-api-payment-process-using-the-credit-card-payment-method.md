@@ -8,14 +8,14 @@ categories = ["Development"]
 tags = ["JavaScript", "Payment Request API"]
 +++
 
-This is the first part of a three part series on how to use the new Payment Request browser API. In the following article we're going to implement a very basic payment process, collecting credit card data via the Payment Request API. In the following article we're going to look at how a Payment Request API powered shopping cart solution could look like. Last but not least in the third article of this series, we'll implement taxes and discounts into our Payment Request API powered payment process.
+This is the first part of a three part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In the second article we're going to look at how to build a Payment Request API powered shopping cart. Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.
 
 <div class="u-text-align-center">
   <img srcset="/images/2017-09-07/payment-request-api-screenshot.png 2x" alt="Payment Request API screenshot">
   <p><small>Payment Request API popup (Chrome 61)</small></p>
 </div>
 
-Thanks to the Payment Request API, accepting payments from your users now is a piece of cake. Albeit support from third party payment processors is still rather limited – Android Pay being one of the most notable – this will very likely change in the near future. Furthermore you don't necessarily need a third party payment provider to integrate directly into the Request Payment API, it is also possible to collect credit card data from the user via the Request Payment API and send them to your payment provider using it's own API.
+Thanks to the Payment Request API, accepting payments from our users now is a piece of cake. Albeit support from third party payment processors is still rather limited – Android Pay being one of the most notable – this will very likely change in the near future. Furthermore you don't necessarily need a third party payment provider to integrate directly into the Request Payment API, it is also possible to collect credit card data from the user via the Request Payment API and send them to your payment provider using it's own API.
 
 ## Building a demo shop using the Request Payment API
 In the following examples we'll examine how to collect credit card data from a user in order to pay for a product in an online shop. The end result will be a [little demo shop](/demos/2017-09-07/payment-request-api/) – you can [look at the complete code of the demo shop on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
@@ -145,7 +145,7 @@ function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
 }
 ```
 
-Again we're using a factory function for better testability and easier consecutive usage. We're initializing a new instance of the function and providing instances of `paymentRequest()`, `paymentHandler()` and `errorHandler()`.
+Again we're using a factory function for better testability and easier consecutive usage. We're initializing a new instance of the function and provide instances of `paymentRequest()`, `paymentHandler()` and `errorHandler()`.
 
 By calling the `show()` method on the `paymentRequest()` we're telling the browser to show the payment popup and ask for the credit card informations of the user.
 
