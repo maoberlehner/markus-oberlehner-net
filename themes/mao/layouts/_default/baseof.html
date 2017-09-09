@@ -24,7 +24,8 @@
     {{ partial "meta/theme-color" . }}
 
     {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/google_news.html" . }}
+    {{ partial "meta/twitter-cards" . }}
 
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />

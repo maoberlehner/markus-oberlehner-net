@@ -10,6 +10,7 @@ PygmentsUseClasses = true
 [params]
   description = "Articles about Web Development topics like JavaScript, CSS, Test Driven Development and Front-End Architecture but also about general life issues like Motivation and Investing."
   author = "Markus Oberlehner"
+  images = ["https://markus.oberlehner.net/images/markus-oberlehner-meta-2017-06.jpg"]
 
 [[menu.main]]
   name = "Home"
