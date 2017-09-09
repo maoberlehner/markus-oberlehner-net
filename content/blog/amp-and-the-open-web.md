@@ -6,6 +6,7 @@ intro = "About three months ago I held a talk about Google AMP at the local stah
 draft = false
 categories = ["Development"]
 tags = ["AMP", "Open Web"]
+images = ["https://markus.oberlehner.net/images/2017-04-04/stahlstadtjs-amp-rant.jpg"]
 +++
 
 About three months ago I did a talk about Google AMP at the local [stahlstadt.js meet up](https://www.meetup.com/de-DE/stahlstadt-js/). Since then AMP has gained a lot of traction. Today most of my Google search results for news on mobile have this little lightning bolt which marks them as valid (and cached) AMP pages.
