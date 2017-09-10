@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Payment Request API"]
 +++
 
-This is the first part of a three part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In the second article we're going to look at how to build a Payment Request API powered shopping cart. Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.
+This is the first part of a three part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In [the second article we're going to look at how to build a Payment Request API powered shopping cart](/blog/payment-request-api-building-a-shopping-cart/). Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.
 
 <div class="u-text-align-center">
   <img srcset="/images/2017-09-07/payment-request-api-screenshot.png 2x" alt="Payment Request API screenshot">
@@ -167,6 +167,6 @@ function paymentHandlerFactory({ paymentProcessor }) {
 The `paymentHandler()` function is responsible for handling the payment data which the user provided. Usually this means sending them to a third party payment provider like PayPal or Stripe. The most important thing which is going on here is calling the `complete()` method on the `paymentResponse` object – this is telling the browser, that all went well which in turn closes the payment popup.
 
 ## Full code and demo
-The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the full code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
+The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
 
 The code you can see on GitHub is the code used to build [this demo page on which you can see the Payment Request API in action](/demos/2017-09-07/payment-request-api/).
