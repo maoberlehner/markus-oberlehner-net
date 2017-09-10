@@ -84,7 +84,7 @@ const getPaymentDetails = getPaymentDetailsFactory({ store });
 
 First of all we need a `store` where we can store our line items which represent the shopping cart. In this example we're simply using JavaScripts own `Map()` object. In a real world app you'll most likely need a persistent data store but for demonstration purposes this is fine.
 
-The `addToCart()` functions is built by providing the previously created `store` as a dependency. This function will take with whatever it got initialized as it's store (as long as it matches the `Map()` interface) to save products in it.
+The `addToCart()` function is built by providing the previously created `store` as a dependency. This function will take with whatever it got initialized as it's store (as long as it matches the `Map()` interface) to save products in it.
 
 Finally we need a way to retrieve the payment detail data from the shopping cart store. This is what the `getPaymentDetails()` function does.
 
@@ -106,7 +106,7 @@ function handleProductClick(e) {
 }
 ```
 
-As you can see above, instead of starting a new payment, we're calling a new `addToCart()` function and provide the products data as a parameter.
+As you can see above, instead of starting a new payment, we're calling a new `addToCart()` function and provide a product data object as a parameter.
 
 ```js
 function addToCartFactory({ store }) {
