@@ -76,7 +76,7 @@ For my idea of how **avalanche** 4.x.x should work, I needed a solution for thos
 ### Standalone packages
 What really bothered me with version 3.x.x was that all the packages still depended on the core **avalanche** package. With version 4.x.x packages are built in a way so that they can work standalone.
 
-Packages are now way less configurable but thanks to the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) most of the configuration options aren't necessary anymore. Instead of controlling the output of packages with variables, the user can import only the selectors he needs from the package.
+Packages are now way less configurable but thanks to the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) most of the configuration options aren't necessary anymore. Instead of controlling the output of packages with variables, the user can import only the selectors he or she needs from the package.
 
 ```scss
 // Importing only specific selectors from an avalanche 4.x.x package.
