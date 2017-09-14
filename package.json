@@ -38,8 +38,8 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-transform": "^3.0.5",
     "http-server": "^0.10.0",
-    "node-sass-magic-importer": "^5.0.0-alpha.6",
-    "rimraf": "^2.6.1",
+    "node-sass-magic-importer": "^5.0.0-alpha.10",
+    "rimraf": "^2.6.2",
     "stylelint": "^8.1.1",
     "testcafe": "^0.17.2",
     "uncss": "^0.15.0"
