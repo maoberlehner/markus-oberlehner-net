@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DEMO: Payment Request API Part 3: Taxes and Discounts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .card-list {
+        display: grid;
+        list-style-type: none;
+        padding: 0;
+        grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+        grid-gap: 1em;
+      }
+
+      .product {
+        padding: 1em;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+        border-radius: 0.25em;
+      }
+
+      .product > :not(:first-child) {
+        margin-top: 0.85em;
+      }
+
+      .product__cta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.25em 1em;
+        color: #fff;
+        background: blue;
+        text-decoration: none;
+      }
+
+      .checkout-button {
+        padding: 0.5em 1.5em;
+        background: green;
+      }
+
+      html {
+        font-family: sans-serif;
+        line-height: 1.4;
+        padding: 2em;
+      }
+
+      body > :not(:first-child) {
+        margin-top: 1.5em;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.15;
+      }
+
+      * {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Payment Request API Demo Shop</h1>
+    <p>
+      This demo is using the Payment Request API to ask the user for her credit card data.<br>
+      You can add products and discounts to your cart, if you add the same products multiple times, the quantity of the line item is raised accordingly.<br>
+      Please open your browser console to see debug data.
+    </p>
+    <ul class="card-list">
+      <li class="card-list__item">
+        <div class="product" data-id="PRODUCT-001" data-label="Fancy Product" data-tax="1" data-currency="EUR" data-value="29.99">
+          <h2>Fancy Product</h2>
+          <p>I'm a super awesome product, please buy me!</p>
+          <div class="product__cta">
+            <strong class="product__price">only 29.99 €</strong>
+            <a href="#no-js-checkout" class="button product__button">Add to cart</a>
+          </div>
+        </div>
+      </li>
+      <li class="card-list__item">
+        <div class="product" data-id="PRODUCT-002" data-label="Cheap Product" data-tax="2" data-currency="EUR" data-value="19.99">
+          <h2>Cheap Product</h2>
+          <p>I'm a super awesome product, please buy me!</p>
+          <div class="product__cta">
+            <strong class="product__price">only 19.99 €</strong>
+            <a href="#no-js-checkout" class="button product__button">Add to cart</a>
+          </div>
+        </div>
+      </li>
+      <li class="card-list__item">
+        <div class="product" data-id="PRODUCT-003" data-label="Expensive Product" data-tax="3" data-currency="EUR" data-value="49.99">
+          <h2>Expensive Product</h2>
+          <p>I'm a super awesome product, please buy me!</p>
+          <div class="product__cta">
+            <strong class="product__price">only 49.99 €</strong>
+            <a href="#no-js-checkout" class="button product__button">Add to cart</a>
+          </div>
+        </div>
+      </li>
+      <li class="card-list__item">
+        <div class="product" data-id="PRODUCT-004" data-label="5 € Discount" data-currency="EUR" data-value="-5">
+          <h2>5 € Discount</h2>
+          <p>Add a super nice 5 € discount!</p>
+          <div class="product__cta">
+            <strong class="product__price">-5 €</strong>
+            <a href="#no-js-checkout" class="button product__button">Add to cart</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <a href="#no-js-checkout" class="button checkout-button">
+      Checkout
+    </a>
+
+    <script>
+      // payment-request-polyfill.js
+      function PaymentRequestPolyfill() {
+        return { show: () => alert('Polyfill me!') };
+      }
+
+      // payment-processor.js
+      function paymentProcessorFactory() {
+        return {
+          send: (data) => new Promise((resolve) => {
+            // Add delay to simulate a request to a payment processor.
+            window.setTimeout(() => {
+              console.log('Payment processor:', data);
+              resolve();
+            }, 2000);
+          })
+        };
+      }
+
+      // payment-handler.js
+      function paymentHandlerFactory({ paymentProcessor }) {
+        return (paymentResponse) => {
+          // This is the place to submit the payment data
+          // to your payment processor (e.g. PayPal or Stripe).
+          paymentProcessor.send(paymentResponse)
+            .then(() => paymentResponse.complete());
+        }
+      }
+
+      // error-handler.js
+      function errorHandlerFactory() {
+        return (error) => {
+          console.log('Error handler:', error);
+        }
+      }
+
+      // payment-request.js
+      function paymentRequestFactory({ paymentMethods }) {
+        return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
+      }
+
+      // start-payment.js
+      function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
+        return (paymentDetails) => {
+          paymentRequest(paymentDetails)
+            .show()
+            .then((paymentResponse) => {
+              return paymentHandler(paymentResponse);
+            })
+            .catch(error => errorHandler(error));
+        }
+      }
+
+      // add-to-cart.js
+      function addToCartFactory({ store }) {
+        return (product) => {
+          const storeProduct = store.get(product.id);
+          const currentQuantity = storeProduct ? storeProduct.quantity : 0;
+          const quantity = product.quantity + currentQuantity;
+
+          store.set(product.id, Object.assign({}, product, { quantity }));
+
+          alert(`Prdouct “${product.label}” was added to your cart.`);
+        }
+      }
+
+      // get-payment-details.js
+      function getLineItemValueFromProduct(product) {
+        return parseFloat(product.value, 10) * parseInt(product.quantity, 10);
+      }
+
+      function getDisplayItemsFromProducts(products) {
+        return products
+          .map((product) => {
+            const quantityPrefix = product.quantity > 1 ? `${product.quantity} x ` : '';
+
+            return {
+              label: `${quantityPrefix}${product.label}`,
+              amount: {
+                currency: product.currency,
+                value: getLineItemValueFromProduct(product),
+              }
+            };
+          })
+          .sort((a, b) => a.amount.value < b.amount.value);
+      }
+
+      function getTaxesFromProducts(products, taxCategories) {
+        return Object.keys(taxCategories)
+          .map((tax) => {
+            const taxCategory = taxCategories[tax];
+            const productsByTaxCategory = products.filter(product => product.tax === tax);
+
+            if (!productsByTaxCategory.length) return;
+
+            const taxValue = getTotalValueFromProducts(productsByTaxCategory) / taxCategory.percentage;
+
+            return {
+              label: taxCategory.label,
+              amount: {
+                currency: 'EUR',
+                value: Math.round(taxValue * 100) / 100,
+              }
+            };
+          })
+          .filter(x => x);
+      }
+
+      function getTotalValueFromProducts(products) {
+        return products.reduce((total, product) => {
+          return total + getLineItemValueFromProduct(product);
+        }, 0);
+      }
+
+      function getTotalValue(displayItems) {
+        return displayItems.reduce((total, displayItem) => {
+          return total + displayItem.amount.value;
+        }, 0);
+      }
+
+      function getPaymentDetailsFactory({ store, taxCategories }) {
+        return () => {
+          const products = [...store.values()];
+          const taxes = getTaxesFromProducts(products, taxCategories);
+          const displayItems = getDisplayItemsFromProducts(products).concat(taxes);
+          const totalValue = getTotalValue(displayItems);
+
+          return {
+            total: {
+              label: 'Total',
+              amount: {
+                currency: 'EUR',
+                value: totalValue,
+              },
+            },
+            displayItems,
+          };
+        }
+      }
+
+      // get-product-data.js
+      function getProductData($product) {
+        return {
+          id: $product.dataset.id,
+          label: $product.dataset.label,
+          currency: $product.dataset.currency,
+          value: $product.dataset.value,
+          // You could read the quantity from a select field.
+          quantity: 1,
+          tax: $product.dataset.tax,
+        }
+      }
+
+      // payment-methods.js
+      const creditCardPaymentMethod = {
+        supportedMethods: ['basic-card'],
+      };
+      const paymentMethods = [creditCardPaymentMethod];
+
+      // app.js
+      // Check if the `PaymentRequest` object is available,
+      // if not we substitute it with a polyfill.
+      const PaymentRequest = window.PaymentRequest || PaymentRequestPolyfill;
+      // In a real world application the payment processor
+      // would be a payment provider like PayPal or Stripe.
+      const paymentProcessor = paymentProcessorFactory();
+      // We're using a payment handler function as a
+      // wrapper around the API of our payment processor.
+      const paymentHandler = paymentHandlerFactory({ paymentProcessor });
+      // The error handler deals with failed or cancelled payments.
+      const errorHandler = errorHandlerFactory();
+      // We wrap the `PaymentRequest` object with a factory
+      // so we have to provide the `paymentMethods` only once.
+      const paymentRequest = paymentRequestFactory({ paymentMethods });
+      // The `startPayment` function triggers a new payment
+      // request and passes it's return value to either the
+      // `paymentHandler` or the `errorHandler` function.
+      const startPayment = startPaymentFactory({
+        paymentRequest,
+        paymentHandler,
+        errorHandler,
+      });
+      // Initialize a new store for our cart items.
+      // In a real app you might need a more sophisticated
+      // storage implementation powered by either `localStorage`,
+      // an API or some other persistent storage method.
+      const store = new Map();
+      // The `addToCart` functions takes a product data
+      // object and adds it to the given store. If the
+      // same product is added multiple times the `quantitiy`
+      // property on the product counter is raised.
+      const addToCart = addToCartFactory({ store });
+      // The tax categories can contain taxes like the VAT.
+      const taxCategories = {
+        1: {
+          label: 'Tax 1 (10%)',
+          percentage: '10',
+        },
+        2: {
+          label: 'Tax 2 (15%)',
+          percentage: '15',
+        },
+        3: {
+          label: 'Tax 3 (20%)',
+          percentage: '20',
+        }
+      };
+      // Retrieve the payment details (total amount
+      // and display items) from the store.
+      const getPaymentDetails = getPaymentDetailsFactory({ store, taxCategories });
+
+      function handleProductClick(e) {
+        e.preventDefault();
+
+        const $product = e.currentTarget;
+        const $button = e.target;
+
+        if ($button.classList.contains('product__button')) {
+          const productData = getProductData($product);
+
+          addToCart(productData);
+        }
+      }
+
+      const $products = document.querySelectorAll('.product');
+      [].slice.call($products).forEach($product => $product.addEventListener('click', handleProductClick));
+
+      const $checkoutButton = document.querySelector('.checkout-button');
+      $checkoutButton.addEventListener('click', () => startPayment(getPaymentDetails()));
+    </script>
+    <script>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-57407594-3','auto');ga('send','pageview');
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
