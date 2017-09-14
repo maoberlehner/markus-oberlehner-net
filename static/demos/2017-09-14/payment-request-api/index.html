@@ -216,7 +216,7 @@
 
             if (!productsByTaxCategory.length) return;
 
-            const taxValue = getTotalValueFromProducts(productsByTaxCategory) / taxCategory.percentage;
+            const taxValue = getTotalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
 
             return {
               label: taxCategory.label,

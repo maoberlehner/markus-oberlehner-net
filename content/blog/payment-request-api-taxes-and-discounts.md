@@ -122,7 +122,7 @@ function getTaxesFromProducts(products, taxCategories) {
 
       if (!productsByTaxCategory.length) return;
 
-      const taxValue = getTotalValueFromProducts(productsByTaxCategory) / taxCategory.percentage;
+      const taxValue = getTotalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
 
       return {
         label: taxCategory.label,
@@ -136,7 +136,7 @@ function getTaxesFromProducts(products, taxCategories) {
 }
 ```
 
-The `getTaxesFromProducts()` helper function, takes an array of `products` and the `taxCategories` object as its parameters. We're traversing the `taxCategories` objects keys to find all products which match the current tax category. The total value of all the products of the current tax category is divided by the percentage of the current tax category to get the total tax value. Tax categories with no matching products are filtered out. This function returns an array of tax display items.
+The `getTaxesFromProducts()` helper function, takes an array of `products` and the `taxCategories` object as its parameters. We're traversing the `taxCategories` objects keys to find all products which match the current tax category. The total value of all the products of the current tax category is used to calculate the total tax value. Tax categories with no matching products are filtered out. This function returns an array of tax display items.
 
 ## Discounts
 There are usually two kinds of discounts you can find in online shops: fixed price discounts and percentage based discounts. In this example we're going to implement fixed price discounts.
