@@ -1,5 +1,5 @@
 # markus-oberlehner-net
-[![Build Status](https://travis-ci.org/maoberlehner/markus-oberlehner-net.svg?branch=master)](https://travis-ci.org/maoberlehner/markus-oberlehner-net)
+[![Build Status](https://travis-ci.org/maoberlehner/markus-oberlehner-net.svg?branch=dev)](https://travis-ci.org/maoberlehner/markus-oberlehner-net)
 
 Generator for the personal website of Markus Oberlehner.
 
