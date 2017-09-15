@@ -86,46 +86,48 @@
 
       // payment-handler.js
       function paymentHandlerFactory({ paymentProcessor }) {
-        return (paymentResponse) => {
-          // This is the place to submit the payment data
-          // to your payment processor (e.g. PayPal or Stripe).
-          paymentProcessor.send(paymentResponse)
-            .then(() => paymentResponse.complete());
-        }
+        // This is the place to submit the payment data
+        // to your payment processor (e.g. PayPal or Stripe).
+        return paymentResponse => paymentProcessor.send(paymentResponse)
+          .then(() => paymentResponse.complete());
       }
 
       // error-handler.js
       function errorHandlerFactory() {
-        return (error) => {
-          console.log('Error handler:', error);
-        }
+        return error => console.log('Error handler:', error);
       }
 
       // payment-request.js
       function paymentRequestFactory({ paymentMethods }) {
-        return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
+        return paymentDetails => new PaymentRequest(paymentMethods, paymentDetails);
       }
 
-      // start-payment.js
-      function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
-        return (paymentDetails) => {
-          paymentRequest(paymentDetails)
-            .show()
-            .then((paymentResponse) => {
-              return paymentHandler(paymentResponse);
-            })
-            .catch(error => errorHandler(error));
-        }
+      // payment.js
+      function paymentFactory({ paymentRequest }) {
+        return paymentDetails => paymentRequest(paymentDetails).show();
       }
 
-      // get-product-data.js
-      function getProductData($product) {
-        return {
+      // product-from-dom.js
+      function productFromDomFactory() {
+        return ($product) => ({
           id: $product.dataset.id,
           label: $product.dataset.label,
           currency: $product.dataset.currency,
           value: $product.dataset.value,
-        }
+        });
+      }
+
+      // payment-details-from-product.js
+      function paymentDetailsFromProductFactory() {
+        return (product) => ({
+          total: {
+            label: product.label,
+            amount: {
+              currency: product.currency,
+              value: product.value,
+            },
+          },
+        });
       }
 
       // payment-methods.js
@@ -149,14 +151,13 @@
       // We wrap the `PaymentRequest` object with a factory
       // so we have to provide the `paymentMethods` only once.
       const paymentRequest = paymentRequestFactory({ paymentMethods });
-      // The `startPayment` function triggers a new payment
-      // request and passes it's return value to either the
-      // `paymentHandler` or the `errorHandler` function.
-      const startPayment = startPaymentFactory({
-        paymentRequest,
-        paymentHandler,
-        errorHandler,
-      });
+      // The `payment` function triggers a new payment
+      // request and returns a promise.
+      const payment = paymentFactory({ paymentRequest });
+      // Create a `product` object from a DOM node.
+      const productFromDom = productFromDomFactory();
+      // Build a `paymentDetails` object from a `product` object.
+      const paymentDetailsFromProduct = paymentDetailsFromProductFactory();
 
       function handleProductClick(e) {
         e.preventDefault();
@@ -165,18 +166,12 @@
         const $button = e.target;
 
         if ($button.classList.contains('product__button')) {
-          const productData = getProductData($product);
-          const paymentDetails = {
-            total: {
-              label: productData.label,
-              amount: {
-                currency: productData.currency,
-                value: productData.value,
-              },
-            },
-          };
+          const product = productFromDom($product);
+          const paymentDetails = paymentDetailsFromProduct(product);
 
-          startPayment(paymentDetails);
+          payment(paymentDetails)
+            .then(paymentResponse => paymentHandler(paymentResponse))
+            .catch(error => errorHandler(error));
         }
       }
 

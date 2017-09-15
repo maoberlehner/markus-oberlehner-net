@@ -142,36 +142,25 @@
 
       // payment-handler.js
       function paymentHandlerFactory({ paymentProcessor }) {
-        return (paymentResponse) => {
-          // This is the place to submit the payment data
-          // to your payment processor (e.g. PayPal or Stripe).
-          paymentProcessor.send(paymentResponse)
-            .then(() => paymentResponse.complete());
-        }
+        // This is the place to submit the payment data
+        // to your payment processor (e.g. PayPal or Stripe).
+        return paymentResponse => paymentProcessor.send(paymentResponse)
+          .then(() => paymentResponse.complete());
       }
 
       // error-handler.js
       function errorHandlerFactory() {
-        return (error) => {
-          console.log('Error handler:', error);
-        }
+        return error => console.log('Error handler:', error);
       }
 
       // payment-request.js
       function paymentRequestFactory({ paymentMethods }) {
-        return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
+        return paymentDetails => new PaymentRequest(paymentMethods, paymentDetails);
       }
 
-      // start-payment.js
-      function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
-        return (paymentDetails) => {
-          paymentRequest(paymentDetails)
-            .show()
-            .then((paymentResponse) => {
-              return paymentHandler(paymentResponse);
-            })
-            .catch(error => errorHandler(error));
-        }
+      // payment.js
+      function paymentFactory({ paymentRequest }) {
+        return paymentDetails => paymentRequest(paymentDetails).show();
       }
 
       // add-to-cart.js
@@ -187,12 +176,12 @@
         }
       }
 
-      // get-payment-details.js
-      function getLineItemValueFromProduct(product) {
+      // checkout-payment-details.js
+      function lineItemValueFromProduct(product) {
         return parseFloat(product.value, 10) * parseInt(product.quantity, 10);
       }
 
-      function getDisplayItemsFromProducts(products) {
+      function displayItemsFromProducts(products) {
         return products
           .map((product) => {
             const quantityPrefix = product.quantity > 1 ? `${product.quantity} x ` : '';
@@ -201,14 +190,14 @@
               label: `${quantityPrefix}${product.label}`,
               amount: {
                 currency: product.currency,
-                value: getLineItemValueFromProduct(product),
+                value: lineItemValueFromProduct(product),
               }
             };
           })
           .sort((a, b) => a.amount.value < b.amount.value);
       }
 
-      function getTaxesFromProducts(products, taxCategories) {
+      function taxesFromProducts(products, taxCategories) {
         return Object.keys(taxCategories)
           .map((tax) => {
             const taxCategory = taxCategories[tax];
@@ -216,7 +205,7 @@
 
             if (!productsByTaxCategory.length) return;
 
-            const taxValue = getTotalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
+            const taxValue = totalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
 
             return {
               label: taxCategory.label,
@@ -229,31 +218,30 @@
           .filter(x => x);
       }
 
-      function getTotalValueFromProducts(products) {
+      function totalValueFromProducts(products) {
         return products.reduce((total, product) => {
-          return total + getLineItemValueFromProduct(product);
+          return total + lineItemValueFromProduct(product);
         }, 0);
       }
 
-      function getTotalValue(displayItems) {
+      function totalValue(displayItems) {
         return displayItems.reduce((total, displayItem) => {
           return total + displayItem.amount.value;
         }, 0);
       }
 
-      function getPaymentDetailsFactory({ store, taxCategories }) {
+      function checkoutPaymentDetailsFactory({ store, taxCategories }) {
         return () => {
           const products = [...store.values()];
-          const taxes = getTaxesFromProducts(products, taxCategories);
-          const displayItems = getDisplayItemsFromProducts(products).concat(taxes);
-          const totalValue = getTotalValue(displayItems);
+          const taxes = taxesFromProducts(products, taxCategories);
+          const displayItems = displayItemsFromProducts(products).concat(taxes);
 
           return {
             total: {
               label: 'Total',
               amount: {
                 currency: 'EUR',
-                value: totalValue,
+                value: totalValue(displayItems),
               },
             },
             displayItems,
@@ -261,9 +249,9 @@
         }
       }
 
-      // get-product-data.js
-      function getProductData($product) {
-        return {
+      // product-from-dom.js
+      function productFromDomFactory() {
+        return ($product) => ({
           id: $product.dataset.id,
           label: $product.dataset.label,
           currency: $product.dataset.currency,
@@ -271,7 +259,7 @@
           // You could read the quantity from a select field.
           quantity: 1,
           tax: $product.dataset.tax,
-        }
+        });
       }
 
       // payment-methods.js
@@ -295,14 +283,11 @@
       // We wrap the `PaymentRequest` object with a factory
       // so we have to provide the `paymentMethods` only once.
       const paymentRequest = paymentRequestFactory({ paymentMethods });
-      // The `startPayment` function triggers a new payment
-      // request and passes it's return value to either the
-      // `paymentHandler` or the `errorHandler` function.
-      const startPayment = startPaymentFactory({
-        paymentRequest,
-        paymentHandler,
-        errorHandler,
-      });
+      // The `payment` function triggers a new payment
+      // request and returns a promise.
+      const payment = paymentFactory({ paymentRequest });
+      // Create a `product` object from a DOM node.
+      const productFromDom = productFromDomFactory();
       // Initialize a new store for our cart items.
       // In a real app you might need a more sophisticated
       // storage implementation powered by either `localStorage`,
@@ -330,7 +315,7 @@
       };
       // Retrieve the payment details (total amount
       // and display items) from the store.
-      const getPaymentDetails = getPaymentDetailsFactory({ store, taxCategories });
+      const checkoutPaymentDetails = checkoutPaymentDetailsFactory({ store, taxCategories });
 
       function handleProductClick(e) {
         e.preventDefault();
@@ -339,9 +324,9 @@
         const $button = e.target;
 
         if ($button.classList.contains('product__button')) {
-          const productData = getProductData($product);
+          const product = productFromDom($product);
 
-          addToCart(productData);
+          addToCart(product);
         }
       }
 
@@ -349,7 +334,11 @@
       [].slice.call($products).forEach($product => $product.addEventListener('click', handleProductClick));
 
       const $checkoutButton = document.querySelector('.checkout-button');
-      $checkoutButton.addEventListener('click', () => startPayment(getPaymentDetails()));
+      $checkoutButton.addEventListener('click', () => {
+        payment(checkoutPaymentDetails())
+          .then(paymentResponse => paymentHandler(paymentResponse))
+          .catch(error => errorHandler(error));
+      });
     </script>
     <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

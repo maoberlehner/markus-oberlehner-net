@@ -44,15 +44,6 @@ const $products = document.querySelectorAll('.product');
 In this step we're adding event listeners for the click event to all products which might be on the page. If a user clicks on a product, the `handleProductClick()` function is called.
 
 ```js
-function getProductData($product) {
-  return {
-    id: $product.dataset.id,
-    label: $product.dataset.label,
-    currency: $product.dataset.currency,
-    value: $product.dataset.value,
-  }
-}
-
 function handleProductClick(e) {
   e.preventDefault();
 
@@ -60,28 +51,24 @@ function handleProductClick(e) {
   const $button = e.target;
 
   if ($button.classList.contains('product__button')) {
-    const productData = getProductData($product);
-    const paymentDetails = {
-      total: {
-        label: productData.label,
-        amount: {
-          currency: productData.currency,
-          value: productData.value,
-        },
-      },
-    };
+    const product = productFromDom($product);
+    const paymentDetails = paymentDetailsFromProduct(product);
 
-    startPayment(paymentDetails);
+    payment(paymentDetails)
+      .then(paymentResponse => paymentHandler(paymentResponse))
+      .catch(error => errorHandler(error));
   }
 }
 ```
 
-The `handleProductClick()` function checks if the click target actually was the button inside the product and if so retrieves the product data via the `getProductData()` function. Next we're creating a new `paymentDetails` object which we're going to use later to build the payment request. At last we're calling the `startPayment()` function with `paymentDetails` as a parameter.
+The `handleProductClick()` function checks if the click target actually was the button inside the product and if so, retrieves the product data via the `productFromDom()` function. Next we're creating a new `paymentDetails` object by calling `paymentDetailsFromProduct()`. We're going to use the `paymentDetails` object to build the payment request. At last we're calling the `payment()` function with `paymentDetails` as its parameter, to trigger a new payment request.
 
-### Submiting a payment request
-In order to make it easier to structure and test our codebase, we're going to make heavy use of factory functions and dependency injection for initializing all the functions that we need without having to specify their dependencies every time we're using them.
+If everything worked correctly, the `then()` method is called which in turn is calling the `paymentHandler()` function.
 
-The following block of code initializes all the functions we need via their factory functions. At the end we're making our core `startPayment()` function which we already used earlier in the `handleProductClick()` helper function.
+If the payment gets cancelled or some other error occurs, we catch the `error` and pass it to our `errorHandler()` which takes further action (in our case, just logging the error to the browser console).
+
+### Initializing functions
+In order to make it easier to structure and test our codebase, we're going to make heavy use of factory functions and dependency injection for initializing all the functions that we need without having to specify their dependencies every time we're using them. The following block of code initializes all the functions we need via their factory functions.
 
 ```js
 // Check if the `PaymentRequest` object is available,
@@ -98,20 +85,36 @@ const errorHandler = errorHandlerFactory();
 // We wrap the `PaymentRequest` object with a factory
 // so we have to provide the `paymentMethods` only once.
 const paymentRequest = paymentRequestFactory({ paymentMethods });
-// The `startPayment` function triggers a new payment
-// request and passes it's return value to either the
-// `paymentHandler` or the `errorHandler` function.
-const startPayment = startPaymentFactory({
-  paymentRequest,
-  paymentHandler,
-  errorHandler,
-});
+// The `payment` function triggers a new payment
+// request and returns a promise.
+const payment = paymentFactory({ paymentRequest });
+// Create a `product` object from a DOM node.
+const productFromDom = productFromDomFactory();
+// Build a `paymentDetails` object from a `product` object.
+const paymentDetailsFromProduct = paymentDetailsFromProductFactory();
 ```
 
-Because their specific implementation doesn't matter too much for our example, I won't go into much detail about how `PaymentRequestPolyfill`, `paymentProcessorFactory()`, and `errorHandler()` are implemented. If you're interested in the code you can look at [the complete code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
+### Submiting a payment request
+Because their specific implementation doesn't matter too much for our example, I won't go into much detail about how `PaymentRequestPolyfill`, `paymentProcessorFactory()`, `errorHandlerFactory()`, and `productFromDomFactory()` are implemented. If you're interested in the code you can look at [the complete code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
+
+#### The payment details object
+```js
+function paymentDetailsFromProductFactory() {
+  return (product) => ({
+    total: {
+      label: product.label,
+      amount: {
+        currency: product.currency,
+        value: product.value,
+      },
+    },
+  });
+}
+```
+
+The `PaymentRequest` function expects a `paymentDetails` object as its second parameter. The function returned by the `paymentDetailsFromProductFactory()` function you can see above, takes a `product` object and returns a new `paymentDetails` object to be used for triggering a payment request.
 
 #### Wrapping the PaymentRequest object
-
 ```js
 function paymentRequestFactory({ paymentMethods }) {
   return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
@@ -129,29 +132,18 @@ const paymentMethods = [creditCardPaymentMethod];
 
 The `paymentMethods` you can see above, are passed to the `paymentRequestFactory()` function to initialize a new `PaymentRequest` using those payment methods. In our example we're only defining `basic-card` as a payment method, you can read more at [developers.google.com](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/deep-dive-into-payment-request#defining_supported_payment_methods) about other available payment methods.
 
-#### Starting a payment
-The `startPayment()` function is where the magic happens. We call this function every time the user should be promted to enter her payment details.
+#### Triggering a payment request
+The `payment()` function is where the magic happens. We call this function every time the user should be promted to enter his or her payment details.
 
 ```js
-function startPaymentFactory({ paymentRequest, paymentHandler, errorHandler }) {
-  return (paymentDetails) => {
-    paymentRequest(paymentDetails)
-      .show()
-      .then((paymentResponse) => {
-        return paymentHandler(paymentResponse);
-      })
-      .catch(error => errorHandler(error));
-  }
+function paymentFactory({ paymentRequest }) {
+  return paymentDetails => paymentRequest(paymentDetails).show();
 }
 ```
 
-Again we're using a factory function for better testability and easier consecutive usage. We're initializing a new instance of the function and provide instances of `paymentRequest()`, `paymentHandler()` and `errorHandler()`.
+Again we're using a factory function for better testability and easier consecutive usage. The `payment()` function is calling the `PaymentRequest` instance provided by the `paymentRequest()` function which is injected as a dependency.
 
-By calling the `show()` method on the `paymentRequest()` we're telling the browser to show the payment popup and ask for the credit card informations of the user.
-
-If the payment gets cancelled or some other error occurs, we catch the `error` and pass it to our `errorHandler()` which takes further action (in our case, just logging the error to the browser console).
-
-If everything went well, the `then()` method is called which in turn is calling the `paymentHandler()` function.
+By calling the `show()` method on the `paymentRequest()` function we're telling the browser to show the payment popup and ask for the credit card informations of the user.
 
 ```js
 function paymentHandlerFactory({ paymentProcessor }) {
@@ -164,7 +156,7 @@ function paymentHandlerFactory({ paymentProcessor }) {
 }
 ```
 
-The `paymentHandler()` function is responsible for handling the payment data which the user provided. Usually this means sending them to a third party payment provider like PayPal or Stripe. The most important thing which is going on here is calling the `complete()` method on the `paymentResponse` object – this is telling the browser, that all went well which in turn closes the payment popup.
+The `paymentHandler()` function is responsible for handling the payment data which the user provided. Usually this means sending them to a third party payment provider like PayPal or Stripe. The most important thing which is going on here is calling the `complete()` method on the `paymentResponse` object – this is telling the browser, that everything worked correctly which in turn closes the payment popup.
 
 ## Full code and demo
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).

@@ -56,12 +56,16 @@ const $products = document.querySelectorAll('.product');
 [].slice.call($products).forEach($product => $product.addEventListener('click', handleProductClick));
 
 const $checkoutButton = document.querySelector('.checkout-button');
-$checkoutButton.addEventListener('click', () => startPayment(getPaymentDetails()));
+$checkoutButton.addEventListener('click', () => {
+  payment(checkoutPaymentDetails())
+    .then(paymentResponse => paymentHandler(paymentResponse))
+    .catch(error => errorHandler(error));
+});
 ```
 
-The process of adding the event listeners to trigger the `handleProductClick()` function is still the same as in the previous article. But we're adding two new lines for binding a new `click` event listener onto the new checkout button. If the user clicks the checkout button, a new payment is started with the payment details we retrieve from `getPaymentDetails()`.
+The process of adding the event listeners to trigger the `handleProductClick()` function is still the same as in the previous article. But we're also binding a `click` event listener onto the new checkout button. If the user clicks the checkout button, a new payment is started with the payment details we retrieve from `checkoutPaymentDetails()`.
 
-For a detailed explanation of the `startPayment()` function, you can read [the previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) or take a look at [the code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html).
+For a detailed explanation of the `payment()` function, you can read [the previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) or take a look at [the code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html).
 
 ## Initializing functions
 Additionally to the functions we've already used in [the previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) we need three more objects which we have to initialize.
@@ -79,14 +83,14 @@ const store = new Map();
 const addToCart = addToCartFactory({ store });
 // Retrieve the payment details (total amount
 // and display items) from the store.
-const getPaymentDetails = getPaymentDetailsFactory({ store });
+const checkoutPaymentDetails = checkoutPaymentDetailsFactory({ store });
 ```
 
 First of all we need a `store` where we can store our line items which represent the shopping cart. In this example we're simply using JavaScripts own `Map()` object. In a real world app you'll most likely need a persistent data store but for demonstration purposes this is fine.
 
 The `addToCart()` function is built by providing the previously created `store` as a dependency. This function will take with whatever it got initialized as it's store (as long as it matches the `Map()` interface) to save products in it.
 
-Finally we need a way to retrieve the payment detail data from the shopping cart store. This is what the `getPaymentDetails()` function does.
+Finally we need a way to retrieve the payment detail data from the shopping cart store. This is what the `checkoutPaymentDetails()` function does.
 
 ## Adding products to the cart
 In order to add products to the cart instead of immediately triggering the checkout process when the user clicks on a product button, we have to make some slight modifications to the `handleProductClick()` function.
@@ -99,14 +103,14 @@ function handleProductClick(e) {
   const $button = e.target;
 
   if ($button.classList.contains('product__button')) {
-    const productData = getProductData($product);
+    const product = productFromDom($product);
 
-    addToCart(productData);
+    addToCart(product);
   }
 }
 ```
 
-As you can see above, instead of starting a new payment, we're calling a new `addToCart()` function and provide a product data object as a parameter.
+As you can see above, instead of starting a payment, we're calling the new `addToCart()` function and provide a `product` object as a parameter.
 
 ```js
 function addToCartFactory({ store }) {
@@ -130,15 +134,15 @@ By calling `store.set()` we're either overriding an existing line item in the st
 
 To notify the user that he or she has successfully added a new product to the cart, we're calling `alert()` with an info message.
 
-## Retrieving payment details from the shopping cart store
-To retrieve the payment details, which we're providing when we're calling the `startPayment()` function, we need a function to take all the items we've added to the store and build a valid `paymentDetails` object with them.
+## Checkout payment details from the shopping cart store
+To retrieve the payment details, which we're providing when we're calling the `payment()` function, we need a function to take all the items we've added to the store and build a valid `paymentDetails` object from them.
 
 ```js
-function getPaymentDetailsFactory({ store }) {
+function checkoutPaymentDetailsFactory({ store }) {
   return () => {
     const products = [...store.values()];
-    const displayItems = getDisplayItemsFromProducts(products);
-    const totalValue = getTotalValueFromProducts(products);
+    const displayItems = displayItemsFromProducts(products);
+    const totalValue = totalValueFromProducts(products);
 
     return {
       total: {
@@ -154,14 +158,14 @@ function getPaymentDetailsFactory({ store }) {
 }
 ```
 
-The function returned by `getPaymentDetailsFactory()` takes no arguments. We're using the new ES6 destructor syntax `[...store.values()]` to get an array of all the values in the `store`. Next we're calling the two helper functions `getDisplayItemsFromProducts()` and `getTotalValueFromProducts()` to build a `displayItems` object with the first, and to get the total value of all products by the second function. Finally we're returning a `paymentDetails` object containing all the necessary data to start a new payment request.
+The function returned by `checkoutPaymentDetailsFactory()` takes no arguments. We're using the new ES6 destructor syntax `[...store.values()]` to get an array of all the values in the `store`. Next we're calling the two helper functions `displayItemsFromProducts()` and `totalValueFromProducts()` to build a `displayItems` object with the first, and to get the total value of all products by the second function. Finally we're returning a `paymentDetails` object containing all the necessary data to start a new payment request.
 
 ```js
-function getLineItemValueFromProduct(product) {
+function lineItemValueFromProduct(product) {
   return parseFloat(product.value, 10) * parseInt(product.quantity, 10);
 }
 
-function getDisplayItemsFromProducts(products) {
+function displayItemsFromProducts(products) {
   return products.map((product) => {
     const quantityPrefix = product.quantity > 1 ? `${product.quantity} x ` : '';
 
@@ -169,24 +173,24 @@ function getDisplayItemsFromProducts(products) {
       label: `${quantityPrefix}${product.label}`,
       amount: {
         currency: product.currency,
-        value: getLineItemValueFromProduct(product),
+        value: lineItemValueFromProduct(product),
       }
     };
   });
 }
 
-function getTotalValueFromProducts(products) {
+function totalValueFromProducts(products) {
   return products.reduce((total, product) => {
-    return total + getLineItemValueFromProduct(product);
+    return total + lineItemValueFromProduct(product);
   }, 0);
 }
 ```
 
-The first function `getLineItemValueFromProduct()` you can see in the example code above, takes a `product` object, containing it's quantity and value, and calculates the total price by multiplication of those two values.
+The first function `lineItemValueFromProduct()` you can see in the example code above, takes a `product` object, containing it's quantity and value, and calculates the total price by multiplication of those two values.
 
-The `getDisplayItemsFromProducts()` helper function takes an array of products and builds a new `displayItems` object from it. Because the [current specification of the Payment Request API](https://www.w3.org/TR/payment-request/) does not mention any way of specifying a quantity on a payment item, we have to use it's `label` property for providing informations about how often one item was added to the shopping cart. If the quantity is higher than `1` a prefix in the form of `2 x` is added to the products label.
+The `displayItemsFromProducts()` helper function takes an array of products and builds a new `displayItems` object from it. Because the [current specification of the Payment Request API](https://www.w3.org/TR/payment-request/) does not mention any way of specifying a quantity on a payment item, we have to use it's `label` property for providing informations about how often one item was added to the shopping cart. If the quantity is higher than `1` a prefix in the form of `2 x` is added to the products label.
 
-In the `getTotalValueFromProducts()` helper function, we're using JavaScripts `Array.reduce()` function to calculate the total value of all products in the shopping cart store.
+In the `totalValueFromProducts()` helper function, we're using JavaScripts `Array.reduce()` function to calculate the total value of all products in the shopping cart store.
 
 ## Full code and demo
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html).

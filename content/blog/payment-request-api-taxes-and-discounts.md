@@ -69,8 +69,8 @@ In this example we're assuming that we're selling products of three different ta
 We also need a way of associating our products with the tax category they fall into. We're doing this by adding a new `data-tax` attribute.
 
 ```js
-function getProductData($product) {
-  return {
+function productFromDomFactory() {
+  return ($product) => ({
     id: $product.dataset.id,
     label: $product.dataset.label,
     currency: $product.dataset.currency,
@@ -78,29 +78,28 @@ function getProductData($product) {
     // You could read the quantity from a select field.
     quantity: 1,
     tax: $product.dataset.tax,
-  }
+  });
 }
 ```
 
-In order to retrieve the tax category from products, we have to update the `getProductData()` function. As you can see above, we're adding a new `tax` property.
+In order to retrieve the tax category from products, we have to update the `productFromDomFactory()` function. As you can see above, we're adding a new `tax` property.
 
 ## Calculating taxes
 Because it is possible that the user adds multiple products – which are associated with different tax categories – to his or her shopping cart, we can't just calculate the taxes from the total value.
 
 ```js
-function getPaymentDetailsFactory({ store, taxCategories }) {
+function checkoutPaymentDetailsFactory({ store, taxCategories }) {
   return () => {
     const products = [...store.values()];
-    const taxes = getTaxesFromProducts(products, taxCategories);
-    const displayItems = getDisplayItemsFromProducts(products).concat(taxes);
-    const totalValue = getTotalValue(displayItems);
+    const taxes = taxesFromProducts(products, taxCategories);
+    const displayItems = displayItemsFromProducts(products).concat(taxes);
 
     return {
       total: {
         label: 'Total',
         amount: {
           currency: 'EUR',
-          value: totalValue,
+          value: totalValue(displayItems),
         },
       },
       displayItems,
@@ -109,12 +108,12 @@ function getPaymentDetailsFactory({ store, taxCategories }) {
 }
 ```
 
-The `getPaymentDetailsFactory()` returns the `getPaymentDetails()` function, which extracts all relevant informations from the products added to the shopping cart.
+The `checkoutPaymentDetailsFactory()` returns the `checkoutPaymentDetails()` function, which extracts all relevant informations from all of the products added to the shopping cart.
 
-The new `getTaxesFromProducts()` helper function is responsible for calculating sub totals for all products of the different tax categories and further calculate the respective tax value. The function returns an array of display items for all relevant tax categories which we can concatenate onto the display items of all products, returned by `getDisplayItemsFromProducts()`.
+The new `taxesFromProducts()` helper function is responsible for calculating sub totals for all products of the different tax categories and further calculate the respective tax value. The function returns an array of display items for all relevant tax categories which we can concatenate onto the display items of all products, returned by `displayItemsFromProducts()`.
 
 ```js
-function getTaxesFromProducts(products, taxCategories) {
+function taxesFromProducts(products, taxCategories) {
   return Object.keys(taxCategories)
     .map((tax) => {
       const taxCategory = taxCategories[tax];
@@ -122,7 +121,7 @@ function getTaxesFromProducts(products, taxCategories) {
 
       if (!productsByTaxCategory.length) return;
 
-      const taxValue = getTotalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
+      const taxValue = totalValueFromProducts(productsByTaxCategory) * (taxCategory.percentage / 100);
 
       return {
         label: taxCategory.label,
@@ -136,7 +135,7 @@ function getTaxesFromProducts(products, taxCategories) {
 }
 ```
 
-The `getTaxesFromProducts()` helper function, takes an array of `products` and the `taxCategories` object as its parameters. We're traversing the `taxCategories` objects keys to find all products which match the current tax category. The total value of all the products of the current tax category is used to calculate the total tax value. Tax categories with no matching products are filtered out. This function returns an array of tax display items.
+The `taxesFromProducts()` helper function, takes an array of `products` and the `taxCategories` object as its parameters. We're traversing the `taxCategories` objects keys to find all products which match the current tax category. The total value of all the products of the current tax category is used to calculate the total tax value. Tax categories with no matching products are filtered out. This function returns an array of tax display items.
 
 ## Discounts
 There are usually two kinds of discounts you can find in online shops: fixed price discounts and percentage based discounts. In this example we're going to implement fixed price discounts.
@@ -169,7 +168,7 @@ As you can see above, because we're displaying the products in the shopping cart
 The easiest way to overcome this problem, is to sort all the products in the shopping cart by their values.
 
 ```js
-function getDisplayItemsFromProducts(products) {
+function displayItemsFromProducts(products) {
   return products
     .map((product) => {
       const quantityPrefix = product.quantity > 1 ? `${product.quantity} x ` : '';
@@ -178,7 +177,7 @@ function getDisplayItemsFromProducts(products) {
         label: `${quantityPrefix}${product.label}`,
         amount: {
           currency: product.currency,
-          value: getLineItemValueFromProduct(product),
+          value: lineItemValueFromProduct(product),
         }
       };
     })
@@ -186,7 +185,7 @@ function getDisplayItemsFromProducts(products) {
 }
 ```
 
-The `getDisplayItemsFromProducts()` helper function you can see above, is responsible for building an array of display items to submit to the Payment Request API. By adding the `sort()` function at the bottom, we're ordering the products in the shopping cart by their value from high to low which leads to the discount product – with its negative value, which is always lower than a positive value of a product – being at the bottom automatically.
+The `displayItemsFromProducts()` helper function you can see above, is responsible for building an array of display items to submit to the Payment Request API. By adding the `sort()` function at the bottom, we're ordering the products in the shopping cart by their value from high to low which leads to the discount product – with its negative value, which is always lower than a positive value of a product – being at the bottom automatically.
 
 ## Full code and demo
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html).
