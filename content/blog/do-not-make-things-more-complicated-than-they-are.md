@@ -28,7 +28,7 @@ Although PostCSS generates a source map and node-sass generates a source map too
 
 ```scss
 // index.scss
-@import { .selector2 } from 'original-source-file.scss';
+@import '{ .selector2 } from original-source-file.scss';
 ```
 
 ```scss
