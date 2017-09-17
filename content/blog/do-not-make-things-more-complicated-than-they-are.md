@@ -52,7 +52,7 @@ At first I thought the problem could only be solved if the tools I used (PostCSS
 
 At this point I thought about giving up. Implementing the logic to generate or modify source maps myself, would've been way to complicated. But suddenly, by just looking at my code and forget about all the other tools involved and how complicated everything is, my perspective shifted and the solution seemed to be very easy.
 
-What if I just not remove filtered nodes completely but replace them with the same amount of newlines `\n` which they've occupied lines?
+What if I replace the nodes with newlines (`\n`) instead of removing them completely?
 
 ```scss
 // virtual original-source-file.scss in memory
