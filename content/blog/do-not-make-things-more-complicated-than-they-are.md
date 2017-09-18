@@ -1,6 +1,6 @@
 +++
 date = "2017-09-17T06:56:54+02:00"
-title = "Don't Make Things More Complicated than They Are"
+title = "Don't Make Things More Complicated as They Are"
 description = "Thoughts about overthinking programming problems and how to deal with issues which seem to be too complicated to solve."
 intro = "Yesterday I’ve learned a valuable lesson in how to solve a problem by looking at it from a different angle. The longest open issues in the node-sass-magic-importer GitHub issue queue, is about source map support..."
 draft = false
