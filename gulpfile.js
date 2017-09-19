@@ -53,7 +53,7 @@ gulp.task(`minify:markup`, () =>
       },
     }))
     .pipe(transform(`utf8`, content => declassify.process(content, {
-      ignore: [`codepen`, /language-.+/],
+      ignore: [`codepen`, /language-.+/, (process.env.NODE_ENV === `test` ? /qa-.+/ : undefined)],
     })))
     .pipe(gulp.dest(publicDirectory))
 );

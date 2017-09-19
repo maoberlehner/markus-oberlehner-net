@@ -48,7 +48,7 @@
     "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
     "build": "gulp styles && hugo --theme=mao && gulp minify:markup",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint themes/**/*.scss",
-    "test": "npm run build && testcafe chrome test/ --app 'http-server -p 1337 -s'",
+    "test": "NODE_ENV=test npm run build && testcafe chrome test/ --app 'http-server -p 1337 -s'",
     "deploy": "npm run build && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }

@@ -29,7 +29,7 @@ test(`the page contains all important header data`, async (t) => {
 });
 
 test(`the latest 3 articles are shown`, async (t) => {
-  const articleCount = await Selector(`.c-article-list__item`).count;
+  const articleCount = await Selector(`.qa-article-list-item`).count;
 
   await t.expect(articleCount === 3).ok();
 });
