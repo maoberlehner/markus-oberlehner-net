@@ -1,4 +1,4 @@
-<article class="c-article-list__item" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="c-article-list__item qa-article-list-item" itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
   <a class="c-article-list__title c-anchor" itemprop="mainEntityOfPage" href="{{ .Permalink }}">
     <h2 class="c-title c-title--2" itemprop="headline">
       {{ .Title }}
@@ -8,5 +8,5 @@
     {{ .Date.Format "2 January 2006" }}
   </time>
   <p itemprop="articleBody">{{ .Params.Intro }}</p>
-  <a class="c-article-list__cta c-read-more" href="{{ .RelPermalink }}">Read more</a>
+  <a class="c-article-list__cta c-read-more qa-article-list-cta" href="{{ .RelPermalink }}">Read more</a>
 </article>
