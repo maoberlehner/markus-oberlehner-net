@@ -1,7 +1,7 @@
 +++
 date = "2017-09-24T09:39:12+02:00"
 title = "CSS Selector Namespaces for Stable Acceptance Tests"
-description = "Prevent tightly coupling in your acceptance tests, by specifying separate, namespaced CSS classes for testing purposes only."
+description = "Prevent tightly coupled code in your acceptance tests, by specifying separate, namespaced CSS classes for testing purposes only."
 intro = "Today we're going to look at the approach of using CSS selector namespaces to help us with detecting changes which have to be considered in the tests. Using separate selectors for testing also leads to a more stable way of structuring our code without tightly coupling our tests with the markup and CSS styles of the implementation..."
 draft = false
 categories = ["Development"]
