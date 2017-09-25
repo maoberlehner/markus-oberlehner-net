@@ -2,7 +2,7 @@ import { Selector } from 'testcafe';
 
 fixture(`Home`).page(`http://localhost:1337/`);
 
-test(`the page contains all important header data`, async (t) => {
+test(`The page contains all important header data.`, async (t) => {
   const title = await Selector(`title`).innerText;
   const description = await Selector(`[name="description"]`).getAttribute(`content`);
   const author = await Selector(`[name="author"]`).exists;
@@ -28,7 +28,7 @@ test(`the page contains all important header data`, async (t) => {
     .ok();
 });
 
-test(`the latest 3 articles are shown`, async (t) => {
+test(`The latest 3 articles are shown.`, async (t) => {
   const articleCount = await Selector(`.qa-article-list-item`).count;
 
   await t.expect(articleCount === 3).ok();

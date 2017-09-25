@@ -2,19 +2,19 @@ import { Selector } from 'testcafe';
 
 fixture(`Blog`).page(`http://localhost:1337/blog/`);
 
-test(`less than 11 articles are shown`, async (t) => {
+test(`Less than 11 articles are shown.`, async (t) => {
   const articleCount = await Selector(`.qa-article-list-item`).count;
 
   await t.expect(articleCount < 11).ok();
 });
 
-test(`page 1 is indexable`, async (t) => {
+test(`Page 1 is indexable.`, async (t) => {
   const description = await Selector(`[name="robots"]`).getAttribute(`content`);
 
   await t.expect(description === `index,follow`).ok();
 });
 
-test(`page 2 is not indexable`, async (t) => {
+test(`Page 2 is not indexable.`, async (t) => {
   await t.click(`.qa-pagination-next`);
 
   const description = await Selector(`[name="robots"]`).getAttribute(`content`);
@@ -22,7 +22,7 @@ test(`page 2 is not indexable`, async (t) => {
   await t.expect(description === `noindex,follow`).ok();
 });
 
-test(`blog article contains important header data`, async (t) => {
+test(`Blog article contains important header data.`, async (t) => {
   await t.click(`.qa-article-list-cta`);
 
   const title = await Selector(`title`).innerText;
