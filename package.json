@@ -1,10 +1,17 @@
 {
   "name": "markus-oberlehner-net",
-  "description": "Generator for the personal website of Markus Oberlehner",
   "version": "0.0.1",
+  "description": "Generator for the personal website of Markus Oberlehner",
   "author": "Markus Oberlehner",
   "homepage": "https://markus.oberlehner.net",
   "license": "MIT",
+  "scripts": {
+    "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
+    "build": "gulp styles && hugo --theme=mao && gulp minify:markup",
+    "lint": "eslint gulpfile.js test/**/*.js && stylelint themes/**/*.scss",
+    "test": "NODE_ENV=test npm run build && testcafe chrome test/ --app 'http-server -p 1337 -s'",
+    "deploy": "npm run build && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/maoberlehner/markus-oberlehner-net"
@@ -43,12 +50,5 @@
     "stylelint": "^8.1.1",
     "testcafe": "^0.17.2",
     "uncss": "^0.15.0"
-  },
-  "scripts": {
-    "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
-    "build": "gulp styles && hugo --theme=mao && gulp minify:markup",
-    "lint": "eslint gulpfile.js test/**/*.js && stylelint themes/**/*.scss",
-    "test": "NODE_ENV=test npm run build && testcafe chrome test/ --app 'http-server -p 1337 -s'",
-    "deploy": "npm run build && rsync -avz --delete --exclude=/.* --exclude=/error --exclude=/stats --exclude=/google15e4ae9ecda47ac0.html -e ssh public/ vs0.oberlehner.net:/var/www/markus.oberlehner.net/web"
   }
 }
