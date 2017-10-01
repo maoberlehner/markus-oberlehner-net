@@ -48,7 +48,7 @@ npm run dev
 Now we're ready for developing an awesome new PWA powered application with Vue. By running `npm run build` we can build our PWA and deploy the contents of the `dist` directory, which is created by this command, on our web server.
 
 ## Code splitting
-Client side rendered single page applications (SPA) are currently the way to go if you're planning to build an app like experience in the browser. Although they are awesome and with tools like webpack, ES6 and npm developing single page JavaScript applications has never been more enjoyable, there are many things you can do wrong when developing a SPA.
+Client side rendered single page applications (SPA) are currently the way to go if you're planning to build an app like experience in the browser. Although they are awesome and with tools like webpack, ES6 and npm, developing single page JavaScript applications has never been more enjoyable, there are many things you can do wrong when developing a SPA.
 
 One major downside of single page applications is that they can grow to an enormous size. I've seen single page applications which are sending multiple megabytes of JavaScript on initial page load. This is a huge burden not only on the loading time of the website, but also on the time it takes to render the site for the first time, because the browser has to parse this huge amount of JavaScript first before it can render anything meaningful. And although many people argue, that the first load doesn't matter as much with an SPA, because subsequent visits are loading very fast thanks to caching, the time the browser takes to parse several megabytes of JavaScript is still critical, especially on low end smartphones.
 
@@ -179,7 +179,7 @@ If you take a look at the network tab after hard reloading our PWA, you can see 
 
 Those are the separate chunks which webpack is automatically creating for us. Two things might seem confusing at first: Why is `1.SOME-RANDOM-HASH.js` (the chunk containing `Hello.vue`) loaded two times and why is `0.SOME-RANDOM-HASH.js` (the chunk containing `World.vue`) loaded at all?
 
-The answer is: prefetching. There are two `1.SOME-RANDOM-HASH.js` requests, because the script is prefetched and then loaded immediately because it is needed to render the current page. And `0.SOME-RANDOM-HASH.js` is loaded (although it is not needed yet) because it is prefetched by the browser, which makes loading the `/hello` route blazing fast.
+The answer is prefetching. There are two `1.SOME-RANDOM-HASH.js` requests, because the script is prefetched and then loaded immediately because it is needed to render the current page. And `0.SOME-RANDOM-HASH.js` is loaded (although it is not needed yet) because it is prefetched by the browser, which makes loading the `/hello` route blazing fast.
 
 ## Configuring the Extract Text Plugin for code splitting
 The Vue PWA template we've used to set up our app, is utilizing the Extract Text Plugin for webpack to extract the CSS code from the JavaScript code. This has the advantage of faster rendering and, under some circumstances, faster loading of the app.
