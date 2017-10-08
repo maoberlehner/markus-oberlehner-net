@@ -106,7 +106,7 @@ In order to being able to test anything, we have to create a website we can test
 ```html
 <form class="js-newsletter-form">
   <h2>Newsletter</h2>
-  <input class="qa-newsletter-input js-newsletter-input" placeholder="Your email address">
+  <input class="js-newsletter-input qa-newsletter-input" placeholder="Your email address">
   <div class="error js-newsletter-error qa-newsletter-error">Error</div>
   <div class="success js-newsletter-success qa-newsletter-success">Success</div>
   <button class="qa-newsletter-submit">Submit</button>
