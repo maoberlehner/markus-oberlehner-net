@@ -101,7 +101,7 @@ The main Nightwatch.js configuration in the `module.exports` block, basically te
 In the `test_settings` section, you can specify the browser environments in which you want to run your tests. In this example, we're using Chrome as our default browser and we're defining `http://localhost:1337` as the URL of our test server. Firefox is set up as an optional testing environment.
 
 ## The website
-In order to being able to test anything, we have to create a website we can test first. For this reason, we create a new file `index.html` in the `src` directory. The following example shows only the most important bits of the code, if you want to see the full code you can go to the corresponding [GitHub repository I created for this blog post](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-1-setup).
+In order to being able to test anything, we have to create a website we can test first. For this reason, we create a new file `index.html` in the `src` directory. The following example shows only the most important bits of the code, if you want to see the full code you can go to the corresponding [GitHub repository I've created for this blog post](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-1-setup).
 
 ```html
 <form class="js-newsletter-form">
@@ -157,7 +157,7 @@ Next we're using the `Then` keyword to signal that we want to observe an outcome
 
 By starting a sentence with the `When` keyword, we're describing the key user action we want to simulate, which is that the user enters an (invalid) email address.
 
-`And` can be used to avoid repeating keywords. In this case we want to specify a second user action and instead of using the `When` keyword a again, we can use `And` to achieve a more natural language.
+`And` can be used to avoid repeating keywords. In this case we want to specify a second user action and instead of using the `When` keyword again, we can use `And` to achieve a more natural language.
 
 In the next line we're specifying the supposed outcome – again with using the `Then` keyword – which is that an error message should be visible.
 
