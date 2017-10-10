@@ -1,8 +1,7 @@
 .c-main-header {
-  padding-top: setting-spacing(l);
-  padding-bottom: setting-spacing(l);
+  padding-top: setting-spacing(m);
+  padding-bottom: setting-spacing(m);
   background: $brand-color;
-  font-size: setting-font-size(s);
 
   &,
   a {
