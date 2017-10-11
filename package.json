@@ -34,7 +34,7 @@
     "@avalanche/stylelint-config": "^0.1.2",
     "clean-css": "^4.1.9",
     "concurrently": "^3.5.0",
-    "declassify": "^1.2.1",
+    "declassify": "^2.0.0",
     "eslint": "^4.8.0",
     "eslint-plugin-import": "^2.7.0",
     "gulp": "^3.9.1",
@@ -45,10 +45,10 @@
     "gulp-sourcemaps": "^2.6.1",
     "gulp-transform": "^3.0.5",
     "http-server": "^0.10.0",
-    "node-sass-magic-importer": "^5.0.0-alpha.14",
+    "node-sass-magic-importer": "^5.0.0-alpha.15",
     "rimraf": "^2.6.2",
-    "stylelint": "^8.1.1",
-    "testcafe": "^0.17.2",
+    "stylelint": "^8.2.0",
+    "testcafe": "^0.18.0",
     "uncss": "^0.15.0"
   }
 }
