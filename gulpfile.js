@@ -31,7 +31,7 @@ gulp.task(`styles`, [`clean:styles`], () =>
     }).on(`error`, sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write({ sourceRoot: path.join(`/`, scssRoot) }))
-    .pipe(gulp.dest(stylesDestDirectory))
+    .pipe(gulp.dest(stylesDestDirectory)),
 );
 
 gulp.task(`minify:markup`, () =>
@@ -55,7 +55,7 @@ gulp.task(`minify:markup`, () =>
     .pipe(transform(`utf8`, content => declassify.process(content, {
       ignore: [`codepen`, /language-.+/, (process.env.NODE_ENV === `test` ? /qa-.+/ : undefined)],
     })))
-    .pipe(gulp.dest(publicDirectory))
+    .pipe(gulp.dest(publicDirectory)),
 );
 
 gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));

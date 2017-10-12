@@ -1,14 +1,5 @@
 {
   "extends": "@avalanche/eslint-config",
-  "rules": {
-    "comma-dangle": [2, {
-      "arrays": "always-multiline",
-      "objects": "always-multiline",
-      "imports": "always-multiline",
-      "exports": "always-multiline",
-      "functions": "never"
-    }]
-  },
   "globals": {
     "fixture": true,
     "test": true
