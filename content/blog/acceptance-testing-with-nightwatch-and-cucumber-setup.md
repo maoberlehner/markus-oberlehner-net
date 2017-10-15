@@ -212,7 +212,7 @@ Now that we've specified step definition patterns for all the sentences we're us
 
 ```json
 "scripts": {
-  "test": "concurrently 'http-server src/ -p 1337 -s' 'nightwatch -c test/conf/default.conf.js' --kill-others"
+  "test": "concurrently 'http-server src/ -p 1337 -s' 'nightwatch -c test/conf/default.conf.js' --success first --kill-others"
 }
 ```
 
