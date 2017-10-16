@@ -1,15 +1,15 @@
 .c-title--1 {
-  font-size: setting-font-size(xxxl);
+  @include fluid-type(font-size, 20em, 80em, setting-font-size(xxl), setting-font-size(xxxl));
 }
 
 .c-title--2 {
-  font-size: setting-font-size(xxl);
+  @include fluid-type(font-size, 20em, 80em, setting-font-size(xl), setting-font-size(xxl));
 }
 
 .c-title--3 {
-  font-size: setting-font-size(xl);
+  @include fluid-type(font-size, 20em, 80em, setting-font-size(l), setting-font-size(xl));
 }
 
 .c-title--4 {
-  font-size: setting-font-size(l);
+  @include fluid-type(font-size, 20em, 80em, setting-font-size(m), setting-font-size(l));
 }
