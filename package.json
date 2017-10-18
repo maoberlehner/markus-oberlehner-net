@@ -35,7 +35,7 @@
     "clean-css": "^4.1.9",
     "concurrently": "^3.5.0",
     "declassify": "^2.0.0",
-    "eslint": "^4.8.0",
+    "eslint": "^4.9.0",
     "eslint-plugin-import": "^2.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -48,7 +48,7 @@
     "node-sass-magic-importer": "^5.0.0-alpha.15",
     "rimraf": "^2.6.2",
     "stylelint": "^8.2.0",
-    "testcafe": "^0.18.0",
+    "testcafe": "^0.18.1",
     "uncss": "^0.15.0"
   }
 }
