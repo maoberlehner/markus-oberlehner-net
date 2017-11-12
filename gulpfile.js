@@ -11,6 +11,7 @@ const sass = require(`gulp-sass`);
 const sourcemaps = require(`gulp-sourcemaps`);
 const transform = require(`gulp-transform`);
 const uncss = require(`uncss`);
+const wbBuild = require(`workbox-build`);
 
 const themeSrcDirectory = `themes/mao/src`;
 const publicDirectory = `public`;
@@ -58,8 +59,27 @@ gulp.task(`minify:markup`, () =>
     .pipe(gulp.dest(publicDirectory)),
 );
 
+gulp.task(`service-worker`, () =>
+  wbBuild.generateSW({
+    globDirectory: `./public/`,
+    swDest: `./public/sw.js`,
+    globPatterns: [
+      `dist/**/*.{html,js,css}`,
+      `images/*.{png,jpg}`,
+      `index.html`,
+    ],
+  })
+    .then(() => {
+      // eslint-disable-next-line no-console
+      console.log(`Service worker generated.`);
+    })
+    .catch((error) => {
+      // eslint-disable-next-line no-console
+      console.log(`[ERROR] ${error}`);
+    }));
+
 gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));
 
-gulp.task(`build`, [`styles`, `minify:markup`]);
+gulp.task(`build`, [`styles`, `minify:markup`, `service-worker`]);
 
 gulp.task(`default`, [`watch`, `build`]);

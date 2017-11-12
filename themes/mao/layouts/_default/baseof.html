@@ -47,6 +47,11 @@
       {{ block "footer" . }}{{ end }}
     </div>
     <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js');
+      }
+    </script>
+    <script>
         window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
         ga('create','UA-57407594-3','auto');ga('send','pageview');
         [].slice.call(document.querySelectorAll('[data-event-category]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event',e.getAttribute('data-event-category'),e.getAttribute('data-event-action'),e.getAttribute('data-event-label'),e.getAttribute('data-event-value'))})}),[].slice.call(document.querySelectorAll('[href*="amzn.to"]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event','link','click: afiliate',e.getAttribute('href'))})});
