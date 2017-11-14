@@ -121,16 +121,16 @@ defineSupportCode(({ defineStep }) => {
     client.url(pages[pageName]));
 
   defineStep(/^I (?:find|identify|see|spot).*? (`.*`).*?$/, selectorChain =>
-    client.expect.element(createNestedSelector(selectorChain)).to.be.visible);
+    client.expect.element(nestedSelector(selectorChain)).to.be.visible);
 
   defineStep(/^I (?:can|don)'t (?:find|identify|see|spot).*? (`.*`).*?$/, selectorChain =>
-    client.expect.element(createNestedSelector(selectorChain)).to.not.be.visible);
+    client.expect.element(nestedSelector(selectorChain)).to.not.be.visible);
 
   defineStep(/^I (?:enter|input|supply|type).*? "(.*?)" in.*? (`.*`)$/, (value, selectorChain) =>
-    client.setValue(createNestedSelector(selectorChain), value));
+    client.setValue(nestedSelector(selectorChain), value));
 
   defineStep(/^I (?:activate|click).*? (`.*`)$/, selectorChain =>
-    client.click(createNestedSelector(selectorChain)));
+    client.click(nestedSelector(selectorChain)));
 });
 ```
 
