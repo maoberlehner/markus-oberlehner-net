@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["Git"]
 +++
 
-When people think about programmers, they think of pale nerds who sit in front of their computers and write code all day long. As we all know, this couldn't be further from the truth. In reality we're pale nerds, who spend most of our time siting in front of our computers **reading** (and trying to make sense of code), written by **other people** (or our past selves).
+When people think about programmers, they think of pale nerds who sit in front of their computers and write code all day long. As we all know, this couldn't be further from the truth. In reality we're pale nerds, who spend most of our time siting in front of our computers **reading** (and trying to make sense of) code, written by **other people** (or our past selves).
 
 Because what most of us do most of the time is reading and trying do understand code, it is all the more important to write code which is easy to understand. But even if we're doing a great job writing simple code, what oftentimes is missing, is an explanation **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story **why** it was written in the first place all by itself.
 
@@ -100,6 +100,7 @@ git rebase -i HEAD~3
 # commit you want to update to `edit`.
 edit bb5de49 Some commit
 pick daf2ab3 Some other commit
+pick txf1av2 Refactoring
 # Fix the typo and add the affected file(s)
 # to the index back again afterwards.
 git add the/file.js
