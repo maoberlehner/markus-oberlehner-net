@@ -33,9 +33,9 @@
     "@avalanche/eslint-config": "^1.0.2",
     "@avalanche/stylelint-config": "^0.1.2",
     "clean-css": "^4.1.9",
-    "concurrently": "^3.5.0",
+    "concurrently": "^3.5.1",
     "declassify": "^2.0.0",
-    "eslint": "^4.11.0",
+    "eslint": "^4.12.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
@@ -47,9 +47,9 @@
     "http-server": "^0.10.0",
     "node-sass-magic-importer": "^5.0.0-alpha.17",
     "rimraf": "^2.6.2",
-    "stylelint": "^8.2.0",
-    "testcafe": "^0.18.3",
-    "uncss": "^0.15.0",
-    "workbox-build": "^2.1.1"
+    "stylelint": "^8.3.1",
+    "testcafe": "^0.18.5",
+    "uncss": "^0.16.1",
+    "workbox-build": "^2.1.2"
   }
 }
