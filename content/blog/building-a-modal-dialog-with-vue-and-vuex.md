@@ -71,7 +71,7 @@ To keep this article as short as possible, we'll keep this component rather simp
 
 ```js
 describe('ModalLogin', () => {
-	// ...
+  // ...
 
   test('It should close the modal when clicking cancel.', () => {
     wrapper.find('.c-modalLogin__cancel').trigger('click');
@@ -120,7 +120,7 @@ Next we want to implement a (fake) login button. But let's write the test first.
 
 ```js
 describe('ModalLogin', () => {
-	// ...
+  // ...
 
   test('It should close the modal after successfully logging in.', () => {
     wrapper.find('.c-modalLogin__login').trigger('click');
