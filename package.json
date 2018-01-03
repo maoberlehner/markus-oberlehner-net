@@ -42,7 +42,7 @@
     "gulp-htmlmin": "^4.0.0",
     "gulp-inline-source": "^3.1.0",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.2",
+    "gulp-sourcemaps": "^2.6.3",
     "gulp-transform": "^3.0.5",
     "http-server": "^0.10.0",
     "node-sass-magic-importer": "^5.0.3",
