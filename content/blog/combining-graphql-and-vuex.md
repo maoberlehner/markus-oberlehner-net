@@ -122,7 +122,7 @@ Now we're already able to start the server by typing `node api/server.js` in the
 },
 ```
 
-This makes it possible to run `npm start api` to start the API server. The `nodemon` package, automatically restarts the server when files are changing, which is especially useful during development.
+This makes it possible to run `npm run api` to start the API server. The `nodemon` package, automatically restarts the server when files are changing, which is especially useful during development.
 
 ### Using GraphiQL to test the API server
 
@@ -367,4 +367,4 @@ As you can see above, we're using the `mapState()` helper function, which Vuex i
 
 In the `beforeCreate()` hook, which is already called before the component is even created, we're dispatching the `fetchBook` and `fetchBookList` store actions, which are responsible for fetching data from our GraphQL server.
 
-To test if everything is working correctly, first start the GraphQL server by running `npm start api` and then start the webpack dev server by running `npm start`. Now open `http://localhost:8080/` in your browser and you should be able to see our application rendering the data from our server.
+To test if everything is working correctly, first start the GraphQL server by running `npm run api` and then start the webpack dev server by running `npm start`. Now open `http://localhost:8080/` in your browser and you should be able to see our application rendering the data from our server.
