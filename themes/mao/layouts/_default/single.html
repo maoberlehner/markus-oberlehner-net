@@ -16,6 +16,15 @@
         {{ template "_internal/disqus.html" . }}
       {{ end }}
     </article>
+    <hr class="c-hr">
+    <div class="c-service-info">
+      <h2>Did you enjoy this?</h2>
+      <p class="c-service-info__body">
+        I'm available for <strong>consultancy</strong>
+        and <strong>speaking</strong>.<br>
+        <a class="c-anchor" href="mailto:markus.oberlehner@gmail.com">Contact me!</a>
+      </p>
+    </div>
     {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
       {{ $.Scratch.Set "has_related" true }}
     {{ end }}
