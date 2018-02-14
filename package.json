@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Generator for the personal website of Markus Oberlehner",
   "author": "Markus Oberlehner",
+  "private": true,
   "homepage": "https://markus.oberlehner.net",
   "license": "MIT",
   "scripts": {
