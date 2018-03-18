@@ -12,7 +12,7 @@ In my previous article about [automated acceptance testing with Cypress](https:/
 
 Making the switch to Cypress in all of my projects, isn't possible for two reasons: changing your testing framework isn't a small task to begin with and furthermore, full blown support for the Gherkin syntax is a must have in my book. So I started to think about ways of how to integrate network stubs and mock timers into my existing Nightwatch.js and Cucumber.js powered test setup.
 
-In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwath.js configuration, if you're interested in that, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/blog/tags/acceptance-tests/).
+In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwatch.js configuration, if you're interested in that, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/blog/tags/acceptance-tests/).
 
 <div class="u-text-align-center">
   <video src="/videos/2018-03-18/nightwatch-mock-timers.mp4" autoplay muted loop></video>
@@ -65,7 +65,7 @@ window.clock = lolex.install({
 
 In the example above, you can see that we're importing the `lolex` package and we're initializing it with `lolex.install()`. This replaces all timer related functions like `setTimeout()` and `setInterval()` with mock implementations.
 
-By specifying the `now` option, we tell `lolex` to start with the current date instead of unix epoch `0`. This is not relevant for the following examples, but depending on your application epoch `0` might lead to strange behavior of your app because you may rely on the fact that it's not 1970 anymore.
+By specifying the `now` option, we tell Lolex to start with the current date instead of unix epoch `0`. This is not relevant for the following examples, but depending on your application epoch `0` might lead to strange behavior of your app because you may rely on the fact that it's not 1970 anymore.
 
 Setting `shouldAdvanceTime` to `true` makes timers behave like regular timers – otherwise you always have to control time manually if you want something to happen which is triggered by a timer.
 
@@ -73,7 +73,7 @@ Because we wan't to be able to control the `clock()` in our Nightwatch.js test w
 
 ### Mocking XHR requests with nise
 
-`nise` provides a fake implementation of the `XMLHttpRequest` object and allows us to manipulate its behavior. What's especially useful to us is, that it makes it possible to define how it's responding to certain requests.
+nise provides a fake implementation of the `XMLHttpRequest` object and allows us to manipulate its behavior. What's especially useful to us is, that it makes it possible to define how it's responding to certain requests.
 
 ```js
 // test/server/src/network-stubs.js
@@ -107,7 +107,7 @@ if (queuedStubs) {
 window.addNetworkStub = addNetworkStub;
 ```
 
-Stubbing network requests with `nise` turns out to be a little bit more complicated. First of all we import the `nise` package and the configuration option `IDENTIFIERS` which is an object of identifiers for cookie names and session storage keys.
+Stubbing network requests with nise turns out to be a little bit more complicated. First of all we import the nise package and the configuration option `IDENTIFIERS` which is an object of identifiers for cookie names and session storage keys.
 
 Next we start a new `fakeServer` with `nise.fakeServer.create()`. By telling it to `respondImmediately`, there is no fake delay before returning a response when making requests, which makes our tests faster, but also slightly less realistic.
 
@@ -356,7 +356,7 @@ When(/^I (?:browse|open|visit).*? `(.*?)`$/, (pageName) => {
 });
 ```
 
-In this step we take the values from `networkStubs` and `cookies` to fill the session storage with network stubs and set the correct cookies to enable the mocking functionality in the browser.
+In this step, we take the values from `networkStubs` and `cookies` to fill the session storage with network stubs and set the correct cookies to enable the mocking functionality in the browser.
 
 One minor inconvenience of this approach is, that we have to first load the page, then set cookies and fill the session storage and then refresh the page to send all necessary cookies and set up the correct network stubs which are triggered immediately. This can add up to a several hundred milliseconds of loading time to every page open step.
 
@@ -381,7 +381,7 @@ Scenario: Render a list of posts
 
 In the scenario above, we're testing if a list of posts is rendering correctly. In the first line, you can see the step to enable network stubs and in the next line we're defining what the endpoint `/posts` should return. You can find the [JSON file containing the list of posts in the GitHub repository](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber/blob/master/test/mocks/posts/list-of-posts.json).
 
-As you can see in the [demo `index.html` file](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber/blob/master/public/index.html#L33), the `/posts` endpoint is called immediately after the page is loaded. Because of that, we must define the step before we're opening the home page.
+As you can see in the [demo index.html file](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber/blob/master/public/index.html#L33), the `/posts` endpoint is called immediately after the page is loaded. Because of that, we must define the step before we're opening the home page.
 
 ### Timers
 
@@ -404,7 +404,7 @@ Scenario: Greet new user
 
 In the example scenario above, we're also enabling time traveling additionally to network stubs. Because in this case, the POST request to the `/users` endpoint is made after the user clicks a button, we can define the step for defining a mock response after the step for opening the page. It has to be defined before the step for clicking the button tough.
 
-After the user clicks a button, a new user is created and they should be greeted by a message which should disappear after 4 seconds. Because we don't want to actually wait for 4 seconds, we can utilize the power of mock timers, to fast forward 5 seconds instantaneously.
+After the user clicks a button, a new user is created and they should be greeted by a message which should disappear after 4 seconds. Because we don't want to actually wait for 4 seconds, we can utilize the power of mock timers, to fast forward 5 seconds (4 seconds + 1 second buffer) instantaneously.
 
 ## Wrapping it up
 
