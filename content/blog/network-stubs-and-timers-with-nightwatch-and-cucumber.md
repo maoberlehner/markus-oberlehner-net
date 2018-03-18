@@ -2,15 +2,15 @@
 date = "2018-03-18T11:05:31+02:00"
 title = "Network Stubs and Timers with Nightwatch.js and Cucumber.js"
 description = "Learn how to mock API requests and Timers with Nightwatch.js and Cucumber.js to efficiently test single page applications."
-intro = "In my previous article about automated acceptance testing with Cypress I explored the possibilities of the `cy.route()` and `cy.clock()` commands. Because I fell in love with how easy it is to stub network requests and manipulate JavaScript timeout functions (like `setTimeout` and `setInterval`) with those two commands, I began to feel bad about not having those possibilities in Nightwatch.js und Cucumber.js powered acceptance tests..."
+intro = "In my previous article about automated acceptance testing with Cypress I explored the possibilities of the `cy.route()` and `cy.clock()` commands. Because I fell in love with how easy it is to stub network requests and manipulate JavaScript timeout functions (like `setTimeout` and `setInterval`) with those two commands, I began to feel bad about not having this functionality in Nightwatch.js und Cucumber.js powered acceptance tests..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In my previous article about [automated acceptance testing with Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-network-stubs-and-timers/) I explored the possibilities of the `cy.route()` and `cy.clock()` commands. Because I fell in love with how easy it is to stub network requests and manipulate JavaScript timeout functions (like `setTimeout` and `setInterval`) with those two commands, I began to feel bad about not having those possibilities in Nightwatch.js und Cucumber.js powered acceptance tests.
+In my previous article about [automated acceptance testing with Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-network-stubs-and-timers/) I explored the possibilities of the `cy.route()` and `cy.clock()` commands. Because I fell in love with how easy it is to stub network requests and manipulate JavaScript timeout functions (like `setTimeout` and `setInterval`) with those two commands, I began to feel bad about not having this functionality in Nightwatch.js und Cucumber.js powered acceptance tests.
 
-Making the switch to Cypress in all of my projects, isn't possible for two reasons: changing your testing framework isn't a small task to begin with and furthermore, full blown support for the Gherkin syntax is a must have in my book. So I started to think about possibilities for how to integrate network stubs and mock timers into my existing Nightwatch.js and Cucumber.js powered test setup.
+Making the switch to Cypress in all of my projects, isn't possible for two reasons: changing your testing framework isn't a small task to begin with and furthermore, full blown support for the Gherkin syntax is a must have in my book. So I started to think about ways of how to integrate network stubs and mock timers into my existing Nightwatch.js and Cucumber.js powered test setup.
 
 In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwath.js configuration, if you're interested in that, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/blog/tags/acceptance-tests/).
 
