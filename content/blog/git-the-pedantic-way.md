@@ -79,6 +79,17 @@ If your code is not merged yet, and you're the only one who is working on the br
 
 #### Fixing the most recent commit
 
+There are two ways to make changes to the most recent commit. If you want to quickly fix a typo or add some file, you’ve forgot to add, to the most recent commit, that's the quickest way to do it.
+
+```bash
+# Add the changes you want to have in your previous commit.
+git add --all
+# Append changes to the previous commit and edit commit message.
+git commit --amend
+```
+
+If you want to see all the changes again before making a change to the most recent commit, the following approach can be very useful.
+
 ```bash
 # Undo the most recent commit.
 git reset HEAD~
