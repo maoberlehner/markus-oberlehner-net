@@ -1,7 +1,7 @@
 +++
 date = "2018-04-01T13:45:21+02:00"
 title = "Vue.js Application Structure and CSS Architecture"
-description = "Learn about three ways of how to structure the CSS in a Vue.js application and a comparison of the pros and cons of each."
+description = "Learn more about three different ways of how to structure the CSS in a Vue.js application and what pros and cons they have."
 intro = "In recent days, I thought a lot about structuring large scale component based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together and without too much effort you've implemented the first feature of your application in a reasonable amount of time..."
 draft = false
 categories = ["Development"]
