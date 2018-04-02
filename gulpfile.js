@@ -32,8 +32,7 @@ gulp.task(`styles`, [`clean:styles`], () =>
     }).on(`error`, sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write({ sourceRoot: path.join(`/`, scssRoot) }))
-    .pipe(gulp.dest(stylesDestDirectory)),
-);
+    .pipe(gulp.dest(stylesDestDirectory)));
 
 gulp.task(`minify:markup`, () =>
   gulp.src(htmlPath)
@@ -57,8 +56,7 @@ gulp.task(`minify:markup`, () =>
       attrs: [`class`],
       ignore: [`codepen`, /language-.+/, (process.env.NODE_ENV === `test` ? /qa-.+/ : undefined)],
     })))
-    .pipe(gulp.dest(publicDirectory)),
-);
+    .pipe(gulp.dest(publicDirectory)));
 
 gulp.task(`service-worker`, () =>
   wbBuild.generateSW({
