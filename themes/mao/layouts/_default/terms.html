@@ -5,8 +5,9 @@
   <main class="o-container o-container--s o-vertical-spacing o-vertical-spacing--l c-stage__main">
     <h1 class="c-title c-title--1">{{ .Title }}</h1>
     <ul>
+      {{ $data := .Data }}
       {{ range $key, $value := .Data.Terms }}
-        <li><a class="c-anchor" href="{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
+        <li><a class="c-anchor" href="/{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> ({{ len $value }})
       {{ end }}
     </ul>
   </main>
