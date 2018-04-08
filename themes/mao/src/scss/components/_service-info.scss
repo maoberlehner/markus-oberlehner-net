@@ -1,6 +1,8 @@
 .c-service-info {
+  margin-top: setting-spacing(l);
+  margin-bottom: setting-spacing(l);
   text-align: center;
-  font-size: setting-font-size(l);
+  font-size: setting-font-size(xl);
 }
 
 .c-service-info__body {
