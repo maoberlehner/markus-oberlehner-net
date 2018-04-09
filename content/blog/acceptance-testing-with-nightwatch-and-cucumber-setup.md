@@ -223,4 +223,4 @@ To run the npm script, type `npm test` into your command line tool of choice. Yo
 ## Next steps
 The result of todays work is a very basic test case and very basic step definitions. We've also learned the general principles of running Cucumber.js powered tests in Nightwatch.js.
 
-In the next article of this series we're exploring more sophisticated ways of writing step definitions and how to create a setup that integrates testing deeply into your general project workflow. Stay tuned.
+In [the next article of this series](/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/) we're exploring more sophisticated ways of writing step definitions and how to create a setup that integrates testing deeply into your general project workflow. Stay tuned.

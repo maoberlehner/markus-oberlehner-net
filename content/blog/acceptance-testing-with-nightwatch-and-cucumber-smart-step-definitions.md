@@ -184,4 +184,4 @@ Because we're using a lot of very general matching regular expressions in our sm
 
 Although writing tests with Gherkin syntax is something you have to get used to, I begin to see the advantages of such a system. Having the specification of a feature written down in plain english, checked in directly into your repository, can be a huge advantage later on, when you're not quite sure why some feature is implemented in a certain way.
 
-In the third part of this series, we're going to integrate cross browser testing (powered by BrowserStack) into our Nichtwatch.js and Cucumber.js workflow, [follow me on Twitter](https://twitter.com/MaOberlehner) to not miss the next article.
+In [the third part of this series](/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/), we're going to integrate cross browser testing (powered by BrowserStack) into our Nichtwatch.js and Cucumber.js workflow, [follow me on Twitter](https://twitter.com/MaOberlehner) to not miss the next article.
