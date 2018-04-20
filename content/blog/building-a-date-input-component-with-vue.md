@@ -2,13 +2,13 @@
 date = "2018-04-15T10:42:42+02:00"
 title = "Building a Date Input Component with Vue.js"
 description = "Learn how to build a custom date input component with Vue.js including timestamp conversion and automatically focusing the correct input fields."
-intro = "Today we are going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are certain situations where the native date input field falls short. So let us take a look at how we can build a custom date input field with Vue.js..."
+intro = "Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are certain situations where the native date input field falls short. So let us take a look at how we can build a custom date input field with Vue.js..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Today we are going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are [certain situations where the native date input field falls short](http://html5doctor.com/the-woes-of-date-input/). So let us take a look at how we can build a custom date input field with Vue.js.
+Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are [certain situations where the native date input field falls short](http://html5doctor.com/the-woes-of-date-input/). So let us take a look at how we can build a custom date input field with Vue.js.
 
 <div class="u-text-align-center">
   <video src="/videos/2018-04-15/vue-date-input-component.mp4" autoplay muted loop></video>
@@ -42,7 +42,7 @@ We begin with defining the basic markup for our date input element. There are tw
 </template>
 ```
 
-Above we can see our template which consists of a wrapper div, which we will use later to style the date field, and three separate `<input>` elements for the day, month and year parts of the date.
+Above we can see our template which consists of a wrapper div, which we'll use later to style the date field, and three separate `<input>` elements for the day, month and year parts of the date.
 
 ## Conditional rendering
 
@@ -98,7 +98,7 @@ export default {
 </script>
 ```
 
-As you can see above, we have added three properties which make it possible to conditionally show or hide certain parts of the date. To toggle rendering of the `<input>` elements, we have added `v-if` directives onto them. It gets a little bit more complicated when we take a look at the `v-if` directives on the divider `<span>` elements.
+As you can see above, we've added three properties which make it possible to conditionally show or hide certain parts of the date. To toggle rendering of the `<input>` elements, we've added `v-if` directives onto them. It gets a little bit more complicated when we take a look at the `v-if` directives on the divider `<span>` elements.
 
 The first divider is only shown if the day and the month input field are both activated. If only one of them is activated, the divider is not needed because the next divider element comes into play.
 
@@ -167,15 +167,15 @@ Now that the basic functionality is implemented and the template is ready, we ca
 }
 ```
 
-In the SCSS code above, we are styling the wrapper `<div>` to look like a form element. The styles of the `<input>` elements itself, are reset so they do not look like `<input>` elements anymore. This is mostly achieved by removing the border.
+In the SCSS code above, we're styling the wrapper `<div>` to look like a form element. The styles of the `<input>` elements itself, are reset so they do not look like `<input>` elements anymore. This is mostly achieved by removing the border.
 
 By setting the `-moz-appearance` to `textfield` and by hiding the `::-webkit-inner-spin-button` pseudo element, we remove the spinner buttons which are displayed by default on `<input>` elements of type number.
 
-Also, we are resetting the focus styles of the `<input>` elements, keep in mind tough, that you absolutely should implement your own (fake) focus styles on the wrapper `<div>`.
+Also, we're resetting the focus styles of the `<input>` elements, keep in mind tough, that you absolutely should implement your own (fake) focus styles on the wrapper `<div>`.
 
 Depending on the font you are using, you might have to use different values for the width of the `<input>` elements.
 
-On the divider element, we are disabling `pointer-events` to prevent users from accidentally selecting the divider `/` characters.
+On the divider element, we're disabling `pointer-events` to prevent users from accidentally selecting the divider `/` characters.
 
 ## Emitting a value
 
@@ -252,27 +252,27 @@ export default {
 </style>
 ```
 
-Let us walk through the changes one by one. First of all we have added a new `@keyup` event handler onto the wrapper `<div>`. Thanks to the `capture` modifier, we are able to listen to all the `keyup` events which are happening inside of our component and we are triggering the `updateValue()` method if we are registering such an event.
+Let us walk through the changes one by one. First of all we've added a new `@keyup` event handler onto the wrapper `<div>`. Thanks to the `capture` modifier, we're able to listen to all the `keyup` events which are happening inside of our component and we trigger the `updateValue()` method if we register such an event.
 
 ### Transforming the value
 
-On the `<input>` elements, we have added `v-model` directives. The `v-model` directives are linking the value of the input field with the corresponding variable which we have defined in the `data()` method of the component.
+On the `<input>` elements, we've added `v-model` directives. The `v-model` directives are linking the value of the input field with the corresponding variable which we've defined in the `data()` method of the component.
 
-Next, in the `<script>` part of the code above, we can see a new `value` property which is used to pass an initial value to the component. In this example we are using a combination of the types `Number` and `String` for the value because we want to use a timestamp in milliseconds or an empty string (for no value) as the value of our date component. But you could change this to be an instance of `Date` for example.
+Next, in the `<script>` part of the code above, we can see a new `value` property which is used to pass an initial value to the component. In this example we're using a combination of the types `Number` and `String` for the value because we want to use a timestamp in milliseconds or an empty string (for no value) as the value of our date component. But you could change this to be an instance of `Date` for example.
 
 The new `data()` method transforms the timestamp which is stored in `value` into a `day`, `month` and `year` representation using the JavaScript `Date` object. Because we want to handle the values of the input fields as strings, we use backticks to transform the values of type `Number`, which are returned by the methods of the date object, to strings. If an empty `value` is set, the values for `day`, `month` and `year` will be set to empty strings.
 
 ### Updating the value
 
-At the bottom of the code snippet above, we can see the `updateValue()` function. We are using this function to convert the three separate values for day, month and year into a timestamp which we emit as an `input` event. Emitting an `input` event, triggers a Vue.js component to update its value if it is bound with `v-model` when the component is initialized.
+At the bottom of the code snippet above, we can see the `updateValue()` function. We're using this function to convert the three separate values for day, month and year into a timestamp which we emit as an `input` event. Emitting an `input` event, triggers a Vue.js component to update its value if it's bound with `v-model` when the component is initialized.
 
-We are using `Date.parse()` to create a timestamp (number of milliseconds since January 1, 1970, 00:00:00 UTC) of the values of the three input fields of our component. Because the JavaScript date object has its quirks, although, for example, the year `01.08.10` should be a valid date, JavaScript can't handle years consisting of less than four digits. So we have to use `this.year.padStart(4, 0)` to fill up years below 1000 with `0` – so `01.08.10` becomes `01.08.0010`.
+We use `Date.parse()` to create a timestamp (number of milliseconds since January 1, 1970, 00:00:00 UTC) of the values of the three input fields of our component. Because the JavaScript date object has its quirks, although, for example, the year `01.08.10` should be a valid date, JavaScript can't handle years consisting of less than four digits. So we have to use `this.year.padStart(4, 0)` to fill up years below 1000 with `0` – so `01.08.10` becomes `01.08.0010`.
 
 If `Date.parse()` can not successfully parse the given date, the return value is not a number. To prevent emitting an invalid timestamp as the value of the component, we check if the timestamp is not a number with `Number.isNaN()` and only if the timestamp is a valid number, are we emitting an `input` event with the new value of the component.
 
 ## Usability improvements
 
-Although, as of now, we have already a working date component, the usability (and the styling) is not that great. Let us make some improvements to our component to enhance the overall usability.
+Although, as of now, we already have a working date component, the usability (and the styling) is not that great. Let us make some improvements to our component to enhance the overall usability.
 
 ```html
 <template>
@@ -347,24 +347,24 @@ export default {
 </style>
 ```
 
-The first little improvement we can see directly in the template above, is that we have added `@blur` event listeners onto every `input` element. We are using the `blur` event to update the value of the affected field with a padded representation of the original value – so the day `1` becomes `01` or the year `100` becomes `0100` when the focus on an input field is lost.
+The first little improvement we can see directly in the template above, is that we've added `@blur` event listeners onto every `input` element. We're using the `blur` event to update the value of the affected field with a padded representation of the original value – so the day `1` becomes `01` or the year `100` becomes `0100` when the focus on an input field is lost.
 
 ### Handling focus
 
 We also have added a second new event listener on the `day` and `month` fields. The `@input` event listener triggers an `updateDay()` or an `updateMonth()` method every time the user enters a new value in one of those `<input>` fields.
 
-In the `updateDay()` method, we are checking if the currently entered day value is not empty (`!this.day.length`) or the newly entered value is below `4`. If a value was entered and if this value is larger than `4` we want to focus the next field (if one is rendered). The logic behind this is the following: there is no day, in any given month, larger than 31, so if the user enters a number larger than 3, they usually (if they made no mistake) are done with entering the day and usually the next step is to enter the month.
+In the `updateDay()` method, we check if the currently entered day value is not empty (`!this.day.length`) or the newly entered value is below `4`. If a value was entered and if this value is larger than `4` we want to focus the next field (if one is rendered). The logic behind this is the following: there is no day, in any given month, larger than 31, so if the user enters a number larger than 3, they usually (if they made no mistake) are done with entering the day and usually the next step is to enter the month.
 
-The `updateMonth()` function works pretty much the same, but because there is no month in the year with a number larger than 12, we are checking if the newly entered value is below `2` before, to determine if the next field should be focused or not.
+The `updateMonth()` function works pretty much the same, but because there is no month in the year with a number larger than 12, we check if the newly entered value is below `2` before, to determine if the next field should be focused or not.
 
 ### Limit the year input field
 
-In the code in the `<script>` block above, you can also see a new `watch` section containing a `year()` method. This method is automatically triggered, every time the value of the year changes. We are using this method to effectively limit the digits of the year `<input>` field to 4. Keep in mind tough, that there might be situations where you want to allow more than 4 digits.
+In the code in the `<script>` block above, you can also see a new `watch` section containing a `year()` method. This method is automatically triggered, every time the value of the year changes. We're using this method to effectively limit the digits of the year `<input>` field to 4. Keep in mind tough, that there might be situations where you want to allow more than 4 digits.
 
 ## Wrapping it up
 
-It is always risky to re-implement features, which are already implemented in browsers, yourself. Oftentimes something like a `<input>` of type `date` seems much simpler than it really is – for example: in the current version, we're missing `:focus` styles, which is a huge usability no-no.
+It's always risky to re-implement features, which are already implemented in browsers, yourself. Oftentimes something like a `<input>` of type `date` seems much simpler than it really is – for example: in the current version, we're missing `:focus` styles, which is a huge usability no-no.
 
-On the other hand tough, there are certain situations, where the native implementation is not feasibly for the product you are building. Thanks to Vue.js, we are able to build very powerful form components ourself.
+On the other hand tough, there are certain situations, where the native implementation is not feasibly for the product you are building. Thanks to Vue.js, we're able to build very powerful form components ourself.
 
-You can find a working example of [the date input component we have built on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue) or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).
+You can find a working example of [the date input component we've built on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue) or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).
