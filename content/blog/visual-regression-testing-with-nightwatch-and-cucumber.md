@@ -59,7 +59,7 @@ function compare({ currentImage, name, referenceImage }) {
       }
 
       const diff = new PNG({ width: img1.width, height: img1.height });
-      // pixelmatch returns 0 if the images do exactly match,
+      // pixelmatch returns 0 if the images match exactly,
       // it returns a value > 0 if they don't match.
       const imageMismatch = pixelmatch(
         img1.data,
