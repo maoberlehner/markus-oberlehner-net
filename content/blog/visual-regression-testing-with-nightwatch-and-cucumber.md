@@ -12,9 +12,13 @@ As most of my regular readers have probably already noticed, I'm a huge fan of t
 
 Unit testing ensures, that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can ensure that what we've built does what it should do. Visual regression testing makes it possible, that we can test if our application actually looks the way it's supposed to look. At least after we've defined a reference point for how it should look.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2018-04-22/visual-regression-diff.png 2x" alt="Screenshots of reference, current and diff representation">
-  <p><small>Screenshots of the reference (left) and current (middle) representations of a page and the diff of both (right)</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2018-04-22/visual-regression-diff.png 2x" alt="Screenshots of reference, current and diff representation">
+  </div>
+  <p class="c-content__caption">
+    <small>Screenshots of the reference (left) and current (middle) representations of a page and the diff of both (right)</small>
+  </p>
 </div>
 
 As our applications grow, not only in size but also in complexity, it can become close to impossible to keep track of in which places a certain component is used and how a certain component should look like in a certain context. With visual regression testing, we can automate the process of making sure that changes to the style of a component (or some other part of the application) in one context, don't have unwanted side effects in another context in which the element is used.

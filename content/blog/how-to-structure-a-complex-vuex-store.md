@@ -10,9 +10,13 @@ tags = ["JavaScript", "Vue", "Vuex"]
 
 In todays article, we're going to take a look at a possible way of how to structure a Vuex store for a large scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find any good examples. Most of the Vuex examples out there, are demonstrating the core concepts of Vuex, by showing how to build a simple application, for example a very basic shopping cart or a to-do list.
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-02-04/vuex-store-api-model-mapping.mp4" autoplay loop muted></video>
-  <p><small>Form fields are mapped to a Vuex store which is mapped to an API request</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-02-04/vuex-store-api-model-mapping.mp4" autoplay loop muted></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Form fields are mapped to a Vuex store which is mapped to an API request</small>
+  </p>
 </div>
 
 ## What we're building

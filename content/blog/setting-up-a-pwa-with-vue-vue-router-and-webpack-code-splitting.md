@@ -128,9 +128,13 @@ The http-server package can be used to quickly start a new http web server, serv
 
 To quickly start a new web server, serving the production code of our PWA, we can add a new script to the scripts section of our `package.json` file. Run `npm serve-production` and after the http-server booted, open `http://localhost:8888/#/` in your browser, to view the production version of our web app.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-10-01/vue-pwa-network-tab1.png 2x" alt="Vue PWA requests without code splitting">
-  <p><small>Vue PWA requests without code splitting</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-10-01/vue-pwa-network-tab1.png 2x" alt="Vue PWA requests without code splitting">
+  </div>
+  <p class="c-content__caption">
+    <small>Vue PWA requests without code splitting</small>
+  </p>
 </div>
 
 If you're looking at the network tab of your browser, you can see, that the browser is loading three JavaScript and one CSS file. The file called `app.SOME-RANDOM-HASH.js` currently contains all the code needed to render our application, including the code of `World.vue` although we're currently viewing `Hello.vue`.
@@ -172,9 +176,13 @@ Because we're currently running the `serve-production` script, we have to manual
 ## Lazy loading and prefetching
 If you take a look at the network tab after hard reloading our PWA, you can see that we're now loading two additional files: `0.SOME-RANDOM-HASH.js` and `1.SOME-RANDOM-HASH.js`.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-10-01/vue-pwa-network-tab2.png 2x" alt="Vue PWA requests with code splitting">
-  <p><small>Vue PWA requests with code splitting</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-10-01/vue-pwa-network-tab2.png 2x" alt="Vue PWA requests with code splitting">
+  </div>
+  <p class="c-content__caption">
+    <small>Vue PWA requests with code splitting</small>
+  </p>
 </div>
 
 Those are the separate chunks which webpack is automatically creating for us. Two things might seem confusing at first: Why is `1.SOME-RANDOM-HASH.js` (the chunk containing `Hello.vue`) loaded two times and why is `0.SOME-RANDOM-HASH.js` (the chunk containing `World.vue`) loaded at all?

@@ -14,9 +14,13 @@ Making the switch to Cypress in all of my projects, isn't possible for two reaso
 
 In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwatch.js configuration, if you're interested in that, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/tags/acceptance-tests/).
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-03-18/nightwatch-mock-timers.mp4" autoplay muted loop></video>
-  <p><small>Slow motion video of a Nightwatch.js test run with time traveling and network stubs</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-03-18/nightwatch-mock-timers.mp4" autoplay muted loop></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Slow motion video of a Nightwatch.js test run with time traveling and network stubs</small>
+  </p>
 </div>
 
 ## The goal

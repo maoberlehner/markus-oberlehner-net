@@ -10,9 +10,13 @@ tags = ["JavaScript", "Payment Request API"]
 
 [The first article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-09-10/payment-request-api-cart-screenshot.png 2x" alt="Payment Request API screenshot">
-  <p><small>Payment Request API popup with multiple line items and quantity (Chrome 61)</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-09-10/payment-request-api-cart-screenshot.png 2x" alt="Payment Request API screenshot">
+  </div>
+  <p class="c-content__caption">
+    <small>Payment Request API popup with multiple line items and quantity (Chrome 61)</small>
+  </p>
 </div>
 
 The following code examples are based on the code in [the previous article about the Payment Request API](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/), you can look at [the full code featured in this article at GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html) and you can checkout the functionality by looking at [the demo](/demos/2017-09-10/payment-request-api/).

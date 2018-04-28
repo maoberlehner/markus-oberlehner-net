@@ -1,67 +1,247 @@
 .highlight {
   pre {
     display: block;
+    margin-right: -(setting-spacing(l));
+    margin-left: -(setting-spacing(l));
     padding: setting-spacing(l);
     overflow-x: auto;
+    border-radius: 0.5em;
     background: setting-color(a, gray);
-    color: #333;
+    font-size: setting-font-size(s);
   }
 }
 
-.hll {
-  padding: 6px 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #f8f8f8;
-}
-
-.c {
-  color: #998;
-  font-style: italic;
-}
-
 .err {
-  background-color: #e3d2d2;
-  color: #a61717;
+  background-color: #faa;
+  color: #f00;
+}
+
+.lntd {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+.lntable {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: auto;
+  border: 0;
+  border-spacing: 0;
+}
+
+.hl {
+  display: block;
+  width: 100%;
+  background-color: #ffc;
+}
+
+.lnt {
+  margin-right: 0.4em;
+  padding: 0 0.4em;
+}
+
+.ln {
+  margin-right: 0.4em;
+  padding: 0 0.4em;
 }
 
 .k {
+  color: #00a;
+}
+
+.kc {
+  color: #00a;
+}
+
+.kd {
+  color: #00a;
+}
+
+.kn {
+  color: #00a;
+}
+
+.kp {
+  color: #00a;
+}
+
+.kr {
+  color: #00a;
+}
+
+.kt {
+  color: #0aa;
+}
+
+.na {
+  color: #1e90ff;
+}
+
+.nb {
+  color: #0aa;
+}
+
+.nc {
+  color: #0a0;
+}
+
+.no {
+  color: #a00;
+}
+
+.nd {
+  color: #888;
+}
+
+.ni {
+  color: #800;
   font-weight: 700;
 }
 
-.o {
+.nf {
+  color: #0a0;
+}
+
+.nn {
+  color: #0aa;
+}
+
+.nt {
+  color: #1e90ff;
   font-weight: 700;
 }
 
-.cm {
-  color: #998;
+.nv {
+  color: #a00;
+}
+
+.s {
+  color: #a50;
+}
+
+.sa {
+  color: #a50;
+}
+
+.sb {
+  color: #a50;
+}
+
+.sc {
+  color: #a50;
+}
+
+.dl {
+  color: #a50;
+}
+
+.sd {
+  color: #a50;
+}
+
+.s2 {
+  color: #a50;
+}
+
+.se {
+  color: #a50;
+}
+
+.sh {
+  color: #a50;
+}
+
+.si {
+  color: #a50;
+}
+
+.sx {
+  color: #a50;
+}
+
+.sr {
+  color: #099;
+}
+
+.s1 {
+  color: #a50;
+}
+
+.ss {
+  color: #00a;
+}
+
+.m {
+  color: #099;
+}
+
+.mb {
+  color: #099;
+}
+
+.mf {
+  color: #099;
+}
+
+.mh {
+  color: #099;
+}
+
+.mi {
+  color: #099;
+}
+
+.il {
+  color: #099;
+}
+
+.mo {
+  color: #099;
+}
+
+.ow {
+  color: #00a;
+}
+
+.c {
+  color: #aaa;
   font-style: italic;
 }
 
-.cp {
-  color: #999;
-  font-weight: 700;
+.ch {
+  color: #aaa;
+  font-style: italic;
+}
+
+.cm {
+  color: #aaa;
+  font-style: italic;
 }
 
 .c1 {
-  color: #998;
+  color: #aaa;
   font-style: italic;
 }
 
 .cs {
-  color: #999;
-  font-weight: 700;
+  color: #00a;
   font-style: italic;
 }
 
-.gd {
-  background-color: #fdd;
-  color: #000;
+.cp {
+  color: #4c8317;
 }
 
-.gd .x {
-  background-color: #faa;
-  color: #000;
+.cpf {
+  color: #4c8317;
+}
+
+.gd {
+  color: #a00;
 }
 
 .ge {
@@ -73,17 +253,12 @@
 }
 
 .gh {
-  color: #999;
+  color: #000080;
+  font-weight: 700;
 }
 
 .gi {
-  background-color: #dfd;
-  color: #000;
-}
-
-.gi .x {
-  background-color: #afa;
-  color: #000;
+  color: #0a0;
 }
 
 .go {
@@ -107,175 +282,6 @@
   color: #a00;
 }
 
-.kc {
-  font-weight: 700;
-}
-
-.kd {
-  font-weight: 700;
-}
-
-.kn {
-  font-weight: 700;
-}
-
-.kp {
-  font-weight: 700;
-}
-
-.kr {
-  font-weight: 700;
-}
-
-.kt {
-  color: #458;
-  font-weight: 700;
-}
-
-.m {
-  color: #099;
-}
-
-.s {
-  color: #d14;
-}
-
-.n {
-  color: #333;
-}
-
-.na {
-  color: teal;
-}
-
-.nb {
-  color: #0086b3;
-}
-
-.nc {
-  color: #458;
-  font-weight: 700;
-}
-
-.no {
-  color: teal;
-}
-
-.ni {
-  color: purple;
-}
-
-.ne {
-  color: #900;
-  font-weight: 700;
-}
-
-.nf {
-  color: #900;
-  font-weight: 700;
-}
-
-.nn {
-  color: #555;
-}
-
-.nt {
-  color: navy;
-}
-
-.nv {
-  color: teal;
-}
-
-.ow {
-  font-weight: 700;
-}
-
 .w {
   color: #bbb;
-}
-
-.mf {
-  color: #099;
-}
-
-.mh {
-  color: #099;
-}
-
-.mi {
-  color: #099;
-}
-
-.mo {
-  color: #099;
-}
-
-.sb {
-  color: #d14;
-}
-
-.sc {
-  color: #d14;
-}
-
-.sd {
-  color: #d14;
-}
-
-.s2 {
-  color: #d14;
-}
-
-.se {
-  color: #d14;
-}
-
-.sh {
-  color: #d14;
-}
-
-.si {
-  color: #d14;
-}
-
-.sx {
-  color: #d14;
-}
-
-.sr {
-  color: #009926;
-}
-
-.s1 {
-  color: #d14;
-}
-
-.ss {
-  color: #990073;
-}
-
-.bp {
-  color: #999;
-}
-
-.vc {
-  color: teal;
-}
-
-.vg {
-  color: teal;
-}
-
-.vi {
-  color: teal;
-}
-
-.il {
-  color: #099;
-}
-
-.gc {
-  background-color: #eaf2f5;
-  color: #999;
 }

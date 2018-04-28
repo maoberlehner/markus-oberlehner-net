@@ -10,9 +10,13 @@ tags = ["JavaScript", "Vue"]
 
 Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are [certain situations where the native date input field falls short](http://html5doctor.com/the-woes-of-date-input/). So let us take a look at how we can build a custom date input field with Vue.js.
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-04-15/vue-date-input-component.mp4" autoplay muted loop></video>
-  <p><small>Custom date input field powered by Vue.js</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-04-15/vue-date-input-component.mp4" autoplay muted loop></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Custom date input field powered by Vue.js</small>
+  </p>
 </div>
 
 If you want to play around with the component we will build in this article yourself, you can find a working example of [the date input component on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue) or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).

@@ -7,7 +7,7 @@
 {{ define "main" }}
   <main>
     <section class="c-hero">
-      <div class="o-container">
+      <div class="o-container o-container--l">
         <div class="c-hero__inner">
           <div class="o-vertical-spacing c-hero__text">
             <h1 class="c-hero__title">
@@ -19,9 +19,9 @@
         </div>
       </div>
     </section>
-    <div class="o-vertical-spacing o-vertical-spacing--xxxl">
+    <div class="o-vertical-spacing o-vertical-spacing--xxl">
       <section class="c-feature">
-        <div class="o-container o-container--s o-vertical-spacing o-vertical-spacing--xl">
+        <div class="o-container o-container--m o-vertical-spacing o-vertical-spacing--xl">
           <h2 class="c-section-headline">Personal Projects</h2>
           <ul class="c-feature__list">
             <li class="o-vertical-spacing o-vertical-spacing--xs c-feature__listItem">
@@ -39,7 +39,7 @@
           </ul>
         </div>
       </section>
-      <section class="o-container o-container--s o-vertical-spacing o-vertical-spacing--xl">
+      <section class="o-container o-container--m o-vertical-spacing o-vertical-spacing--xl">
         <h2 class="c-section-headline">Latest Articles</h2>
         <div class="o-vertical-spacing o-vertical-spacing--xl c-article-list" itemscope itemtype="http://schema.org/Blog">
           {{ range first 3 .Paginator.Pages }}

@@ -12,9 +12,13 @@ In this article we're going to explore two approaches for dynamically loading SV
 
 If you want to take a closer look at the example code, you can [find it on GitHub](https://github.com/maoberlehner/dynamically-loading-svg-icons-with-vue). Or you can checkout a live example of the code [hosted on Netlify](https://dynamically-loading-svg-icons-with-vue.netlify.com).
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-02-11/dynamically-loading-icons.mp4" autoplay loop muted></video>
-  <p><small>Dynamically loading icons with Vue.js</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-02-11/dynamically-loading-icons.mp4" autoplay loop muted></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Dynamically loading icons with Vue.js</small>
+  </p>
 </div>
 
 ## Installing vue-svgicon

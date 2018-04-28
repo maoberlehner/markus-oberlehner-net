@@ -56,9 +56,13 @@ In the example above, you can see that we've added a new test to our existing te
 
 In the test, we use `data` selectors to find the element which should contain the name of the currently logged in user. Let's start our development server with `npm start` and the Cypress GUI with `npm run test:open` to run our test and see it fail.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2018-03-11/cypress-tests-failing.png 2x" alt="Failing Cypress tests">
-  <p style="margin-top:-1.5em;"><small>The feature is not implemented yet, the test fails</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2018-03-11/cypress-tests-failing.png 2x" alt="Failing Cypress tests">
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>The feature is not implemented yet, the test fails</small>
+  </p>
 </div>
 
 To make the test pass, we need to implement the functionality first. Let's update our `PageHome` component to fetch the currently logged in user and display its username.
@@ -104,9 +108,13 @@ export default {
 
 Above you can see that we're conditionally rendering a `<p>` tag containing the username, if a user object is available. In the JavaScript block, we're fetching the currently logged in user.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2018-03-11/cypress-tests-failing-api-request.png 2x" alt="Failing Cypress tests">
-  <p style="margin-top:-1.5em;"><small>The real API returns a real username</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2018-03-11/cypress-tests-failing-api-request.png 2x" alt="Failing Cypress tests">
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>The real API returns a real username</small>
+  </p>
 </div>
 
 As you can see in the screenshot above, our test is still failing, because the username we get from the placeholder API (which would be your real API in real world code) does not match the username we've specified in our test.
@@ -131,9 +139,13 @@ it('Should display the name of the curent user in the header.', () => {
 
 In order to enable response stubbing, we have to run `cy.server()` before the first request to the API is made. By defining the route we want to mock with `cy.route()` we basically override every request that matches the `url` pattern to return the response we've specified.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2018-03-11/cypress-tests-succeeding-network-stub.png 2x" alt="Succeeding Cypress tests">
-  <p style="margin-top:-1.5em;"><small>The username from the stubbed response is displayed</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2018-03-11/cypress-tests-succeeding-network-stub.png 2x" alt="Succeeding Cypress tests">
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>The username from the stubbed response is displayed</small>
+  </p>
 </div>
 
 As you can see in the screenshot above, the expected username is showing and our test is finally succeeding.
@@ -217,9 +229,13 @@ export default {
 
 Above you can see the code of our `App` component. On the root element, we're listening for click events inside of the app and we trigger the `resetInactivityTimer()` method if one is detected. The `<p>` tag in the template, is only rendered if the variable `showLogoutWarning` is `true`. In the `created()` method of our component, we're checking every `1000` milliseconds if the `userInactivityInMs` has exceeded the `warningTimerInMs`, if yes, we're activating the logout warning.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2018-03-11/cypress-tests-succeeding-clock.png 2x" alt="Succeeding Cypress tests">
-  <p style="margin-top:-1.5em;"><small>The tests succeed without having to wait</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2018-03-11/cypress-tests-succeeding-clock.png 2x" alt="Succeeding Cypress tests">
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>The tests succeed without having to wait</small>
+  </p>
 </div>
 
 If we run our test again, we can see that it succeeds, and we can see that it succeeds almost immediately instead of having to wait the actual four and a half minutes.

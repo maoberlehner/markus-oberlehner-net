@@ -12,9 +12,13 @@ In one of my previous articles about [form field handling in combination with Vu
 
 In todays article we take it a step further and we'll explore how we can use the latest release of [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to build a Vuex powered multi-row form.
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-01-28/vuex-map-fields-multi-row.mp4" autoplay loop muted></video>
-  <p><small>Add and edit rows of form fields</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-01-28/vuex-map-fields-multi-row.mp4" autoplay loop muted></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Add and edit rows of form fields</small>
+  </p>
 </div>
 
 ## Multi-row form with Vue and Vuex

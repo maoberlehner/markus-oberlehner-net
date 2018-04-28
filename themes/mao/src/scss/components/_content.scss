@@ -1,3 +1,6 @@
+$c-content-broad-gap: 6rem;
+$c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-broad-gap + 2;
+
 .c-content {
   h1 {
     @extend .c-title--1;
@@ -26,4 +29,22 @@
     font-size: setting-font-size(l);
     font-family: serif;
   }
+}
+
+.c-content__header {
+  @media (min-width: $c-content-broad-breakpoint) {
+    text-align: center;
+  }
+}
+
+.c-content__broad {
+  @media (min-width: $c-content-broad-breakpoint) {
+    margin-right: -($c-content-broad-gap / 2);
+    margin-left: -($c-content-broad-gap / 2);
+  }
+}
+
+.c-content__caption {
+  line-height: 1.25;
+  text-align: center;
 }

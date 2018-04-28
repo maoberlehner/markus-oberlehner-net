@@ -14,9 +14,13 @@ To further improve the functionality, we looked at [how to build a Payment Reque
 
 Today we're going to implement taxes and discounts into our existing checkout process. The code is based on the code we've produced in the previous steps. You can look up [the full code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html) and [checkout the demo by following this link](/demos/2017-09-14/payment-request-api/).
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-09-14/payment-request-api-cart-screenshot1.png 2x" alt="Payment Request API screenshot">
-  <p><small>Payment Request API popup with multiple line items, quantity, discounts and taxes (Chrome 61)</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-09-14/payment-request-api-cart-screenshot1.png 2x" alt="Payment Request API screenshot">
+  </div>
+  <p class="c-content__caption">
+    <small>Payment Request API popup with multiple line items, quantity, discounts and taxes (Chrome 61)</small>
+  </p>
 </div>
 
 ## Adding tax categories
@@ -158,9 +162,13 @@ The discount product has the same markup as all the other products, the only dif
 
 Basically thats it, because the discount is just a regular product with a negative price this would already work. Although there is one flaw with this approach.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-09-14/payment-request-api-cart-screenshot2.png 2x" alt="Payment Request API screenshot">
-  <p><small>The discount display item is displayed as first item</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-09-14/payment-request-api-cart-screenshot2.png 2x" alt="Payment Request API screenshot">
+  </div>
+  <p class="c-content__caption">
+    <small>The discount display item is displayed as first item</small>
+  </p>
 </div>
 
 As you can see above, because we're displaying the products in the shopping cart in the order in which the user added the products, it is possible that we end up with the discount being at the top.

@@ -10,9 +10,13 @@ tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 
 In todays article we're going to take a look at one of the rising stars in the automated end-to-end testing scene: [Cypress](https://www.cypress.io/). When I first discovered Cypress, I thought that it looks very promising but I was skeptical if it can live up to the hype. Although [Nightwatch.js](http://nightwatchjs.org/) is kinda old and boring, it has proven to be a useful tool, which, even tough it has it quirks, does its job well, most of the time. Let's find out if Cypress is a serious competitor.
 
-<div class="u-text-align-center">
-  <video src="/videos/2018-03-04/cypress-gui.mp4" autoplay muted controls></video>
-  <p><small>Cypress GUI running a simple test</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <video src="/videos/2018-03-04/cypress-gui.mp4" autoplay muted controls></video>
+  </div>
+  <p class="c-content__caption">
+    <small>Cypress GUI running a simple test</small>
+  </p>
 </div>
 
 ## Setup

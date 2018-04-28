@@ -14,9 +14,13 @@ One of this (kinda) new approaches is a variant of the Priority+ pattern (coined
 
 The Priority+ horizontal scroll navigation pattern works the same way but instead of pressing a button, the user has to scroll horizontally to the right or to the left to show hidden navigation items.
 
-<div class="u-text-align-center">
-  <img srcset="/images/2017-08-20/google-priority-plus.png 2x" alt="Google Search Priority+ scroll navigation">
-  <p><small>Google Search Priority+ scroll navigation</small></p>
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <img srcset="/images/2017-08-20/google-priority-plus.png 2x" alt="Google Search Priority+ scroll navigation">
+  </div>
+  <p class="c-content__caption">
+    <small>Google Search Priority+ scroll navigation</small>
+  </p>
 </div>
 
 ## The markup

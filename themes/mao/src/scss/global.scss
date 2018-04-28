@@ -41,6 +41,8 @@
 @import '{
   .o-container,
   .o-container--s,
+  .o-container--m,
+  .o-container--l,
 } from ~@avalanche/object-container';
 @import '{
   .o-vertical-spacing,
@@ -48,7 +50,6 @@
   .o-vertical-spacing--l,
   .o-vertical-spacing--xl,
   .o-vertical-spacing--xxl,
-  .o-vertical-spacing--xxxl,
 } from ~@avalanche/object-vertical-spacing';
 // @import 'objects/**/*';
 
@@ -68,5 +69,4 @@
  * - Only affect one piece of the DOM at a time.
  * - Usually carry !important.
  */
-@import '{ .u-text-align-center } from ~@avalanche/utility-text-align';
 // @import 'utilities/**/*';
