@@ -158,8 +158,10 @@ const config = {
 Now we're ready to build our application with webpack. Let's add a new npm script for starting our build process.
 
 ```bash
-"scripts": {
-  "build": "cross-env NODE_ENV=production webpack"
+{
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack"
+  }
 }
 ```
 
@@ -234,10 +236,12 @@ module.exports = function openBrowser(url) {
 The code for the `openBrowser()` function you can see above, is stolen from the [vue-cli](https://github.com/maoberlehner/setting-up-a-vue-project-with-webpack-4-and-babel-7/blob/master/bin/lib/open-chrome.applescript) project. Additionally to the code above, you also need a `.applescript` file which was originally created by Facebook, you can find [the file in the GitHub repository accompanying this article](https://github.com/maoberlehner/setting-up-a-vue-project-with-webpack-4-and-babel-7/blob/master/bin/lib/open-chrome.applescript). What it does is, that (if you're running macOS and using Google Chrome as your default browser) it tries to reuse an existing tab (which is already running our application) every time the development server is started.
 
 ```json
-"scripts": {
-  "start": "npm run serve:dev",
-  "serve:dev": "cross-env NODE_ENV=development node bin/dev-server.js"
-},
+{
+  "scripts": {
+    "start": "npm run serve:dev",
+    "serve:dev": "cross-env NODE_ENV=development node bin/dev-server.js"
+  }
+}
 ```
 
 By adding a new `serve:dev` script, and also adding a `start` script as an alias of the first, we're now able to run our application in development mode with hot reloading enabled by executing `npm start`.
@@ -411,8 +415,10 @@ openBrowser(`http://localhost:${port}`);
 The code above, starts a very basic express server which either returns a static file (if one is requested) or the `index.html` inside of our `dist/` directory for every other request.
 
 ```json
-"scripts": {
-  "serve:production": "cross-env NODE_ENV=production node bin/spa-server.js"
+{
+  "scripts": {
+    "serve:production": "cross-env NODE_ENV=production node bin/spa-server.js"
+  }
 }
 ```
 

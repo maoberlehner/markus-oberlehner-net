@@ -161,9 +161,7 @@ The `createReport()` function you can see above, does two things: copying the re
 ```diff
  function compare({ currentImage, name, referenceImage }) {
    return new Promise((resolve, reject) => {
-     let img1;
-@@ -30,9 +58,16 @@ function compare({ currentImage, name, referenceImage }) {
-       );
+       // ...
  
        if (imageMismatch) {
 +        const reportDiffImage = createReport({
@@ -180,7 +178,11 @@ The `createReport()` function you can see above, does two things: copying the re
        }
  
        resolve(true);
-@@ -49,4 +84,5 @@ function compare({ currentImage, name, referenceImage }) {
+     }
+
+     // ...
+   });
+ }
  
  module.exports = {
    compare,
@@ -269,10 +271,12 @@ Now that we've implemented the core functionality to enable visual regression te
 Let's start with adding a new npm script to our `package.json` file, to make it easier to run our regression tests.
 
 ```json
-"scripts": {
-  "test:acceptance": "nightwatch -c test/conf.nightwatch.js --skiptags visual-regression",
-  "test:visual-regression": "nightwatch -c test/conf.nightwatch.js --tags visual-regression"
-},
+{
+  "scripts": {
+    "test:acceptance": "nightwatch -c test/conf.nightwatch.js --skiptags visual-regression",
+    "test:visual-regression": "nightwatch -c test/conf.nightwatch.js --tags visual-regression"
+  }
+}
 ```
 
 In the example above, you can see two scripts. The first one `test:acceptance` is the script to trigger our regular acceptance tests. By specifying the `--skiptags` option, with the tag we've defined for our regression tests as its value, we're making sure that all visual regression tests are skipped.
@@ -315,9 +319,11 @@ Instead, we also can enhance our step definition, for creating the screenshots o
 As you can see above, we've updated the code in the `test/step-definitions/visual-regression.js` file, to check if the CLI arguments of the current test run include `visual-regression-reference`, if this argument is included, a new reference screenshot (which replaces the current one) is created.
 
 ```json
-"scripts": {
-  "test:visual-regression-reference": "nightwatch -c test/conf.nightwatch.js --tags visual-regression-reference"
-},
+{
+  "scripts": {
+    "test:visual-regression-reference": "nightwatch -c test/conf.nightwatch.js --tags visual-regression-reference"
+  }
+}
 ```
 
 The new `test:visual-regression-reference` npm script which we've added to our `package.json` file, can be used as a shortcut to trigger a Nightwatch.js run with the tag `visual-regression-reference`.
