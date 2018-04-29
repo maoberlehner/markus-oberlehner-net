@@ -44,7 +44,10 @@ $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-br
   }
 }
 
+.c-content__figure {
+  text-align: center;
+}
+
 .c-content__caption {
   line-height: 1.25;
-  text-align: center;
 }
