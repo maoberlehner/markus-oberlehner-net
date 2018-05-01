@@ -241,7 +241,7 @@ The `textareaGrow()` method, takes care of the height of the text area. Every ti
 
 ### Styling
 
-Beneath you can see the basic styling needed for our (almost) invisible text area trick to work. We basically make the text and the background inside the `<textarea>` invisible and move the `<textarea>` above the `<div>` with the class `TweetBox__htmlarea`. So what the user is actually seeing when they enter a new value into the `TweetBox`, is the content of the `<div>` element behind the `<textarea>` – the actual text they're entering is invisible.
+Beneath you can see the basic styling needed for our (almost) invisible text area trick to work. We basically make the background of the `<textarea>` invisible and move the `<textarea>` above the `<div>` with the class `TweetBox__htmlarea`. So what the user is actually seeing when they enter a too long value into the `TweetBox`, is the background color of the `<em>` tag inside the `<div>` element behind the `<textarea>` – the actual text is also replicated in the HTML area `<div>` behind the `<textarea>` but it is invisible.
 
 ```diff
  .TweetBox {
@@ -268,31 +268,28 @@ Beneath you can see the basic styling needed for our (almost) invisible text are
 +  // 1. Remove the element from the normal document flow,
 +  //    so the <textarea> lies above this element, and
 +  //    make the HTML area <div> as tall as the <textarea>.
-+  // 2. Make word breaks behave exactly like in a textarea.
++  // 2. Make the text color transparent, so only the
++  //    background color of the <em> is visible.
++  // 3. Make word breaks behave exactly like in a textarea.
 +  &__htmlarea {
 +    position: absolute; // 1
 +    height: 100%; // 1
 +    background-color: #fff;
-+    white-space: pre-wrap; // 2
-+    word-wrap: break-word; // 2
++    color: transparent; // 2
++    white-space: pre-wrap; // 3
++    word-wrap: break-word; // 3
 +  }
 +
 +  // 1. Make the <textarea> a block level element to make
 +  //    its sizing behave like that of a <div>.
-+  // 2. By making the background color and the font color
-+  //    transparent, the user sees the content of the HTML
-+  //    area <div> behind the <textarea>. Because by default
-+  //    the caret color is the same as the font color, we
-+  //    explicitly set the `caret-color` property, otherwise
-+  //    the caret would be transparent too.
++  // 2. By making the background color transparent, the user
++  //    sees the content of the HTML area <div> behind the <textarea>.
 +  &__textarea {
 +    display: block; // 1
 +    position: relative;
 +    border-color: $color-border;
      outline: 0;
 +    background-color: transparent; // 2
-+    color: transparent; // 2
-+    caret-color: #444; // 2
      resize: none;
 
      &:focus {
