@@ -30,7 +30,7 @@ A popular saying, when the question is raised how big a commit should be, is “
 
 So in general, I'd say a commit is too small, if it doesn't contain a working feature but only some code that is work in progress.
 
-On the other hand, a possible indication that a commit is too large can be, if you have to write a rather long commit message to explain the reasoning behind the code you're checking in. Usually if their are a lot of things going on in your code, where you feel the urge to explain your reasoning behind them in the commit message, it might be a perfect situation to split your changes into multiple smaller commits.
+On the other hand, a possible indication that a commit is too large can be, if you have to write a rather long commit message to explain the reasoning behind the code you're checking in. Usually, if there are a lot of things going on in your code, where you feel the urge to explain your reasoning behind them in the commit message, it might be a perfect situation to split your changes into multiple smaller commits.
 
 ## A typical workflow
 In the following examples, we're going to look at some typical version control challenges which happen to arise during every day development. I'm going to assume that you're using a workflow which uses some kind of feature branches which are merged into the master branch (e.g. Git flow).
