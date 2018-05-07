@@ -409,29 +409,46 @@ Because it's outside of the scope of this article, I don't show you how to style
 
 ## Step 3: Glue it together
 
-Now that we've implemented the separate building blocks for creating a user login modal popup, we're ready to glue everything together. Let's create a new `PageHome` component in `src/components` which contains a button to trigger the modal popup.
+Now that we've implemented the separate building blocks for creating a user login modal popup, we're ready to glue everything together. First we create a new `PageHome` component in `src/components` which contains a button to trigger the modal popup.
 
 ```html
 <template>
   <div class="c-pageHome">
     <button class="c-pageHome__login" @click="showModal('ModalLogin')">Login</button>
-
-    <app-modal></app-modal>
   </div>
 </template>
 
 <script>
 import { mapMutations } from 'vuex';
 
-import AppModal from './AppModal';
-
 export default {
   name: 'PageHome',
-  components: {
-    AppModal,
-  },
   methods: {
     ...mapMutations(['showModal']),
+  },
+};
+</script>
+```
+
+Next we must add the `AppModal` and the `PageHome` components in our `App.vue` root component.
+
+```html
+<template>
+  <div id="app">
+    <page-home></page-home>
+    <app-modal></app-modal>
+  </div>
+</template>
+
+<script>
+import AppModal from './components/AppModal';
+import PageHome from './components/PageHome';
+
+export default {
+  name: 'app',
+  components: {
+    AppModal,
+    PageHome,
   },
 };
 </script>
