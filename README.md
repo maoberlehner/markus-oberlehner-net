@@ -15,14 +15,18 @@ Generator for the personal website of Markus Oberlehner.
 - `npm run publish`
 
 ## Lint
+
 - `npm run lint`
 
 ## About
+
 ### Author
+
 Markus Oberlehner  
 Website: https://markus.oberlehner.net  
 Twitter: https://twitter.com/MaOberlehner  
 PayPal.me: https://paypal.me/maoberlehner
 
 ### License
+
 MIT
