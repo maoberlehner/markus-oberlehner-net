@@ -93,7 +93,7 @@ In the code snippet above, you can see that we're using a native ES6 `import` st
 
 ### The App
 
-If we'd run our application now, we'd be greeted with a JavaScript error because we don't have a `App.js` file yet, let's fix this.
+If we'd run our application now, we'd be greeted with a JavaScript error because we don't have an `App.js` file yet, let's fix this.
 
 ```js
 // src/components/App.js
@@ -107,7 +107,7 @@ export default {
 };
 ```
 
-Above you can see some very basic implementation of our core `App` component. We've added the `container`, `mx-auto` and `p-4` [Tailwind CSS utility classes](https://tailwindcss.com/docs/container) for at least some minimal styling of the application.
+Above you can see a very basic implementation of our core `App` component. We've added the `container`, `mx-auto` and `p-4` [Tailwind CSS utility classes](https://tailwindcss.com/docs/container) for at least some minimal styling of the application.
 
 Now we're ready to run our application and view it in the browser. `npm start` starts a local server and opens your default browser.
 
