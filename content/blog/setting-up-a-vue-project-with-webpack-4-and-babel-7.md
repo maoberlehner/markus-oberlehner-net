@@ -248,7 +248,7 @@ By adding a new `serve:dev` script, and also adding a `start` script as an alias
 
 ### Source maps
 
-To enhance the development experience even further, we can enable source maps, which give us the benefit of the browser showing us the correct files and line numbers if we're debugging JavaScript or CSS code.
+To enhance the development experience even further, we can enable source maps, which give us the benefit of the browser showing us the correct file names and line numbers in case we're debugging JavaScript or CSS code.
 
 ```js
 // webpack.config.js
