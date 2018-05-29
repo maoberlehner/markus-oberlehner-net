@@ -28,7 +28,7 @@ export default {
 </script>
 ```
 
-So far so good. But as our application is growing, we might want to use a more powerful, but also a more complex state management pattern like Vuex. One of the core principles of state management patterns like Vuex is immutability: we're not allowed to change the state in a Vuex store directly, but we have to use so called “mutations” to trigger state changes.
+So far so good. But as our application is growing, we might want to use a more powerful, but also a more complex state management pattern like Vuex. One of the core principles of state management patterns like Vuex is immutability: **we're not allowed to change the state in a Vuex store directly**, but we have to use so called “mutations” to trigger state changes.
 
 ## Vuex form handling
 
@@ -71,7 +71,7 @@ If we check this out in the browser, it works – kinda. Although updating the v
 Error: [vuex] Do not mutate vuex store state outside mutation handlers.
 ```
 
-Because we've initialized the Vuex store in strict mode (which you should definitely do in your development environment), we get an error message telling us that it is not allowed to mutate the Vuex store outside of a mutation handler.
+Because we've initialized the Vuex store in strict mode (which you should definitely do in your development environment), we get an error message telling us that **it is not allowed to mutate the Vuex store outside of a mutation handler**.
 
 ### Correct ways of handling form data with Vuex
 
@@ -120,11 +120,11 @@ export default {
 </script>
 ```
 
-As you can see in the example above, although the officially recommended way of using two-way computed properties is pretty straightforward and works perfectly fine, it becomes tedious to handle more than a few form fields this way. If we take a closer look, we can see there is a lot of repetition in this code. Where there's repetition, there's potential to do some refactoring / abstraction.
+As you can see in the example above, although the officially recommended way of using two-way computed properties is pretty straightforward and works perfectly fine, **it quickly becomes tedious to handle more than a few form fields this way**. If we take a closer look, we can see there is a lot of repetition in this code. **Where there's repetition, there's potential to do some refactoring / abstraction**.
 
 ### Using vuex-map-fields for simple Vuex form handling
 
-After fiddling around with some code to come up with a reusable implementation of the two-way computed property approach, I decided to create a new npm package for handling Vuex powered form fields: [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields).
+After fiddling around with some code to come up with a reusable implementation of the two-way computed property approach, **I decided to create a new npm package for handling Vuex powered form fields: [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields)**.
 
 With `vuex-map-fields` we can take the code from above and refactor it.
 

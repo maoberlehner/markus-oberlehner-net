@@ -24,7 +24,7 @@ Because we want to strictly separate the state from the business logic of our ap
 
 ### Reusability
 
-Thanks to the global nature of Vuex, we're able to control our modal dialog from every component in our application. But we also want to dynamically inject complex content into our modal dialog component. In order to solve this problem, we will use dynamic imports to import components containing the content we want to show in the modal.
+Thanks to the global nature of Vuex, we're able to control our modal dialog from every component in our application. **But we also want to dynamically inject complex content into our modal dialog component**. In order to solve this problem, we will use dynamic imports to import components containing the content we want to show in the modal.
 
 ## Step 0: The Vuex store
 

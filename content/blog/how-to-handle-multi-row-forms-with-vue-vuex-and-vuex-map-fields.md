@@ -70,7 +70,7 @@ export default new Vuex.Store({
 ```
 
 ### The component
-We want the component to render all items of the `addresses` property, which we defined in the store above, as one row with form elements. Also we want to be able, to dynamically add new rows to add additional addresses when needed.
+We want the component to render all items of the `addresses` property, which we defined in the store above, as one row with form elements. **Also we want to be able, to dynamically add new rows to add additional addresses when needed**.
 
 ```html
 <template>

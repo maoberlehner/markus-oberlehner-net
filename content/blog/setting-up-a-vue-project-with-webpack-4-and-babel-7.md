@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "webpack", "code splitting", "Babel"]
 +++
 
-For my previous article about [three different ways of how to structure a Vue.js application](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/), I wanted to set up a build system which not only allows for regular JavaScript code splitting, but also CSS code splitting. Thanks to webpack 4 and the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) (which basically is the successor of the [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)), CSS code splitting is finally possible.
+For my previous article about [three different ways of how to structure a Vue.js application](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/), I wanted to set up a build system which not only allows for regular **JavaScript code splitting, but also CSS code splitting**. Thanks to webpack 4 and the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) (which basically is the successor of the [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)), **CSS code splitting is finally possible**.
 
 I quickly realized tough, that there is currently no official way of how to setup a webpack 4 powered Vue.js development environment. Both the current [Vue.js webpack template](https://github.com/vuejs-templates/webpack) and the [vue-cli](https://github.com/vuejs/vue-cli) (which is currently in beta), are still using webpack 3. So I decided to set up a webpack 4 powered build process myself.
 
@@ -16,7 +16,7 @@ This tutorial focuses exclusively on how to configure webpack, you can see [the 
 
 ## Configuring webpack 4 for Vue.js
 
-In this article, we'll focus on the bare minimum build setup we need to build a very basic Vue.js application. If you're planning to set up the build process for a large scale application, you should consider using the new [vue-cli](https://github.com/vuejs/vue-cli) instead of rolling your own. That said, I think it is very useful to know how stuff works, so let's start to explore how to build our own basic webpack configuration for bundling a Vue.js application.
+In this article, we'll focus on the **bare minimum build setup we need to build a very basic Vue.js application**. If you're planning to set up the build process for a large scale application, you should consider using the new [vue-cli](https://github.com/vuejs/vue-cli) instead of rolling your own. That said, I think it is very useful to know how stuff works, so let's start to explore how to build our own basic webpack configuration for bundling a Vue.js application.
 
 ### Basic configuration
 
@@ -169,7 +169,7 @@ We can start the build process by running `npm run build`, which creates a bundl
 
 ### webpack development server with hot reloading
 
-In order to being able to comfortable work on our application, we don't want to run the build process manually every time we make a small change to the code. Instead we want webpack to watch our code and start the build process automatically after every change. Also we want our browser to display those changes immediately without reloading the application. We can achieve this with the `webpack-serve` package and hot reloading.
+In order to being able to comfortable work on our application, we don't want to run the build process manually every time we make a small change to the code. Instead **we want webpack to watch our code and start the build process automatically after every change**. Also we want our browser to **display those changes immediately without reloading the application**. We can achieve this with the `webpack-serve` package and hot reloading.
 
 ```bash
 npm install --save-dev webpack-serve opn
@@ -192,7 +192,7 @@ serve({ config, clipboard: false }).then((server) => {
 });
 ```
 
-The script above starts a development server powered by the `webpack-serve` package. After the server was started, your browser should automatically be opened and load the application, thanks to the `openBrowser()` function we'll implement in the next step.
+The script above starts a development server powered by the `webpack-serve` package. After the server was started, **your browser should automatically be opened and load the application**, thanks to the `openBrowser()` function we'll implement in the next step.
 
 ```js
 // bin/lib/open-browser.js
@@ -290,9 +290,9 @@ const config = {
 
 ### Extract CSS
 
-Although we're now already able to build our application, and thanks to webpack 4 which automatically minifies JavaScript code in production mode, the built code is already kinda production ready. But for now, all the CSS code is bundled alongside the JavaScript code. This makes it impossible to cache the CSS code separately from the JavaScript code – if either the CSS or the JavaScript code changes, both have to be downloaded again by the client. Additionally, the browser has more work to do if the CSS code has to be processed inside the JavaScript code.
+Although we're now already able to build our application, and thanks to webpack 4 which automatically minifies JavaScript code in production mode, the built code is already kinda production ready. But for now, **all the CSS code is bundled alongside the JavaScript code**. This makes it impossible to cache the CSS code separately from the JavaScript code – if either the CSS or the JavaScript code changes, both have to be downloaded again by the client. Additionally, **the browser has more work to do if the CSS code has to be processed inside the JavaScript code**.
 
-For those two reasons, we want to extract the CSS code from the JavaScript bundles and serve regular `.css` files to the client instead.
+For those two reasons, **we want to extract the CSS code from the JavaScript bundles** and serve regular `.css` files to the client instead.
 
 ```bash
 npm install --save-dev mini-css-extract-plugin
@@ -321,7 +321,7 @@ module.exports = config;
 
 To make the `mini-css-extract-plugin` do its work, we have to update our `webpack.config.js` file. If webpack is started in production mode, we add a new instance of the `MiniCssExtractPlugin()` to the list of plugins. Also we're replacing the `vue-style-loader` in the `sass-loader` configuration (the `vue-style-loader` is on position `0` of the `use` array) with the `MiniCssExtractPlugin.loader`.
 
-If we build our application again, we can see, that the CSS code is now extracted and split into multiple separate CSS files. Similar to the JavaScript code splitting feature, the `mini-css-extract-plugin` is able to split CSS code so only code necessary for rendering the current chunk is loaded.
+If we build our application again, we can see, that **the CSS code is now extracted and split into multiple separate CSS files**. Similar to the JavaScript code splitting feature, the `mini-css-extract-plugin` is able to split CSS code so only code necessary for rendering the current chunk is loaded.
 
 ### Minification
 
@@ -377,7 +377,7 @@ if (minify) {
 
 ### Serve the production build
 
-Finally our production build satisfies all our basic needs. We have code splitting enabled (for both JavaScript **and** CSS) and everything is minified nicely. Now let's write a simple SPA server script to serve the production build of our application.
+Finally our production build satisfies all our basic needs. We have code splitting enabled (for both JavaScript *and* CSS) and everything is minified nicely. Now let's write a simple SPA server script to serve the production build of our application.
 
 ```bash
 npm install --save-dev express
@@ -426,6 +426,6 @@ After adding a new npm script for starting our SPA server, we can run `npm run s
 
 ## Wrapping it up
 
-Although I'd not recommend to roll your own build setup for large scale applications (use [vue-cli](https://github.com/vuejs/vue-cli) instead), I find it very useful to know at least the basics of how to configure webpack.
+Although I'd not recommend to roll your own build setup for large scale applications (use [vue-cli](https://github.com/vuejs/vue-cli) instead), **I think it is important to know at least the basics of how to configure webpack**.
 
-Also, it can be very useful to set up your own build process for small scale or experimental applications and although doing so is still not as straight forward as I'd wish, webpack 4 is a huge step in the right direction.
+Also, it can be very useful to set up your own build process for small scale or experimental applications and although doing so is still not as straight forward as I'd wish, webpack 4 is a huge step forward in that regards.

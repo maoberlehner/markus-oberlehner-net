@@ -27,7 +27,7 @@ You can checkout [a demo of the project here](https://how-to-structure-a-complex
 
 ## A new way of structuring a Vuex store
 
-Because I couldn't find any examples of large scale applications using Vuex, which are open source, that would fit the needs of the project I was working on, I decided we can figure stuff out as I we were going. In doing so, we learned a lot of things, especially how not to do it, but as I see it, thats OK. One of the great things of writing code is, that you can always go back and refactor things.
+Because I couldn't find any examples of large scale applications using Vuex, which are open source, that would fit the needs of the project I was working on, I decided we can figure stuff out as I we were going. In doing so, **we learned a lot of things, especially how not to do it**, but as I see it, thats OK. One of the great things of writing code is, that you can always go back and refactor things.
 
 I was not happy how things turned out, so I started to think about new ways of how to structure a Vuex store to meet the needs of the project. The following approach is what I came up with so far.
 
@@ -67,7 +67,7 @@ export default new Vuex.Store({
 });
 ```
 
-As you can see above, there is not much going on in our main `index.js` file. The reason for this is, that we move most of the logic into separate modules. This has the advantage of making it possible to reuse certain parts of the code and it also allows us to dynamically load Vuex modules as needed.
+As you can see above, there is not much going on in our main `index.js` file. The reason for this is, that we move most of the logic into separate modules. **This has the advantage of making it possible to reuse certain parts of the code and it also allows us to dynamically load Vuex modules as needed**.
 
 ## Form modules
 
@@ -404,7 +404,7 @@ export default {
 
 As you can see above, there is not much actual logic going on inside of the component. Most of what we're doing is to map actions, mutations and fields from the store modules to our component.
 
-This basic principle of how the Vuex store is structured, can be scaled up to large applications and it enables us to reuse large parts of the module code. If you want to see the application in action, you can go to [the live demo on Netlify](https://how-to-structure-a-complex-vuex-store.netlify.com/) and you can see [the full code on GitHub](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store).
+**This basic principle of how the Vuex store is structured, can be scaled up to large applications and it enables us to reuse large parts of the module code**. If you want to see the application in action, you can go to [the live demo on Netlify](https://how-to-structure-a-complex-vuex-store.netlify.com/) and you can see [the full code on GitHub](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store).
 
 ## Summary
 
@@ -412,11 +412,11 @@ Let's take a short look at what we've achieved and how this approach of structur
 
 ### Dynamically loading of modules
 
-Because we're not globally registering all of our modules upfront, it's possible to [use webpacks code splitting feature in combination with the vue-router](https://markus.oberlehner.net/blog/setting-up-a-pwa-with-vue-vue-router-and-webpack-code-splitting/), to dynamically load components and their associated store modules. This makes the app bundle size smaller which can have a huge effect on the initial loading time, especially with large scale applications.
+Because we're not globally registering all of our modules upfront, it's possible to [use webpacks code splitting feature in combination with the vue-router](https://markus.oberlehner.net/blog/setting-up-a-pwa-with-vue-vue-router-and-webpack-code-splitting/), to **dynamically load components and their associated store modules**. This makes the app bundle size smaller which can have a **huge effect on the initial loading time**, especially with large scale applications.
 
 ### Maximum reusability
 
-Designing our store structure in a way which makes certain modules reusable, can have an enormous positive impact on maintainability and also bundle size, when the application is getting bigger. The key to success with this strategy, is to come up with strict rules for naming and structuring your modules, so that they all adhere to a certain API and are named in a predictable way.
+Designing our store structure in a way which makes certain modules reusable, can have an **enormous positive impact on maintainability and also bundle size**, when the application is getting bigger. The key to success with this strategy, is to come up with strict rules for naming and structuring your modules, so that they all adhere to a certain API and are named in a predictable way.
 
 ## Closing remarks
 

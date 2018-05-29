@@ -16,11 +16,11 @@ In this article, I want to take a closer look at three different approaches of h
 
 ## 1. Few components + Sass Mixins
 
-The first approach we want to investigate is using very few  Vue.js components but a lot of reusable Sass Mixins for styling recurring elements of our application.
+The first approach we want to investigate is using **very few Vue.js components but a lot of reusable Sass Mixins** for styling recurring elements of our application.
 
 ### Hypothesis
 
-Although Vue.js tends to be very fast, large scale applications consisting of a large number of components, can still become slow. By using fewer components and instead utilizing Sass Mixins for consistent styling, we can save on the number of components (e.g. a button doesn't have to be a component, but can be styled with a Sass Mixin).
+Although Vue.js tends to be very fast, large scale applications consisting of a large number of components, can still become slow. **By using fewer components and instead utilizing Sass Mixins for consistent styling, we can save on the number of components** (e.g. a button doesn't have to be a component, but can be styled with a Sass Mixin).
 
 Also we expect it to be easier to deal with cases when something looks (almost) exactly as something else, but it works (a little) differently; with this approach we're able to create two components, each doing different things, but sharing the same look without having to duplicate the CSS, thanks to the Sass Mixin.
 
@@ -156,7 +156,7 @@ In the example above, you can see the code for the homepage component of the [Sa
 
 Every HTML element has at most one CSS class attached to it and in the style block you can see that most CSS classes are implementing an accompanying Sass Mixin which we're importing from our `scss` directory.
 
-This approach makes it possible to inherit default styles from a Sass Mixin which you can extend with your own styles depending on the context (or you could even override certain properties).
+**This approach makes it possible to inherit default styles from a Sass Mixin which you can extend with your own styles depending on the context** (or you could even override certain properties).
 
 ```scss
 // Extend the default `teaserList`
@@ -180,19 +180,19 @@ Because our application is very small and has very few components and also very 
 
 Let's take a quick look at some pros and cons of this approach of using as few Vue.js components as possible and utilizing Sass Mixins to keep the CSS *dry*.
 
-\+ Maximum reusability of CSS code  
-\+ Clean HTML, only one class per element  
-\+ No issues with specificity when extending styles  
-\- It's cumbersome to include the Mixins again and again  
-\- Duplication of styles in the compiled CSS
+\+ **Maximum reusability of CSS code**  
+\+ **Clean HTML**, only one class per element  
+\+ **No issues with specificity** when extending styles  
+\- It's **cumbersome to include the Mixins again and again**  
+\- **Duplication of styles** in the compiled CSS
 
 ## 2. Few components + CSS classes
 
-Next we want to take a closer look at a more classic approach of doing things. In this example we want to, again, use as few components as possible, but instead of using Sass Mixins we'll use reusable CSS classes to style our HTML.
+Next we want to take a closer look at a more classic approach of doing things. In this example we want to, again, use as few components as possible, but instead of using Sass Mixins **we'll use reusable CSS classes to style our HTML**.
 
 ### Hypothesis
 
-Although it's gone out of fashion lately to style things with applying CSS classes to HTML elements, in my opinion it's still one of the most straight forward approaches. CSS classes are reusable and, in theory, it should be more efficient to declare a CSS class once and reuse it as often as you like. A potential downside of using CSS classes could be that it's harder to maintain large scale applications because it's not always clear if some class is still in use or not.
+Although it's gone out of fashion lately to style things with applying CSS classes to HTML elements, in my opinion it's still one of the most straight forward approaches. **CSS classes are reusable and, in theory, it should be more efficient to declare a CSS class once and reuse it as often as you like**. A potential downside of using CSS classes could be that it's harder to maintain large scale applications because it's not always clear if some class is still in use or not.
 
 ### Example
 
@@ -286,7 +286,7 @@ export default {
 </style>
 ```
 
-In this example we can see, that we have a lot less custom CSS code in the `style` block, but instead we explicitly import all the classes we need to style our HTML. We're utilizing the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) custom `node-sass` importer in order to being able to import only the CSS classes we actually need.
+In this example we can see, that we have a lot less custom CSS code in the `style` block, but instead we explicitly import all the classes we need to style our HTML. We're utilizing the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer) custom `node-sass` importer in order to being able to **import only the CSS classes we actually need**.
 
 In the HTML code we can see, that there are occasions where we might have to combine multiple CSS classes like `teaserList` and `PageHome__teaserList` for example. Keep in mind that this approach can lead to specificity problems. In this example we're solving any kind of specificity issues by using the `scoped` attribute on the style block for the custom styles of the component but not on the block where we're importing the generic CSS classes. By scoping the component styles, we're also raising their specificity as a side effect, so the custom component styles will always win against the generic styles (as long as you're keeping the specificity of the generic classes as low as possible), which is usually what we want to achieve.
 
@@ -306,11 +306,11 @@ Considering that the `mini-css-extract-plugin` is still very young, there might 
 
 ### Pros and cons
 
-\+ Maximum flexibility because Mixins are still available for dealing with edge cases  
-\+ Adding classes is the most convenient and fastest way of styling HTML elements  
-\+ No duplication (in theory, in practice webpack is currently not able to optimize the CSS output perfectly)  
-\- More CSS classes in the HTML code  
-\- Potential issues with specificity (which can be solved by using scoped styles)
+\+ **Maximum flexibility** because Mixins are still available for dealing with edge cases  
+\+ Adding classes is the **most convenient and fastest way of styling HTML** elements  
+\+ **No duplication** (in theory, in practice webpack is currently not able to optimize the CSS output perfectly)  
+\- **More CSS classes** in the HTML code  
+\- **Potential issues with specificity** (which can be solved by using scoped styles)
 
 ## 3. Everything is a component
 
@@ -320,7 +320,7 @@ Last but not least we'll build our little example application by using component
 
 On the one hand, using components for everything, which makes it possible to have the styles, the markup and the logic in one place, should help with maintainability because it's easier to find out if some component and its styles are still being used anywhere in the application.
 
-On the other hand, it can be very hard to build components which are generic enough to fit every use case. In real world applications, this can lead to developers making copies of certain components because, in a certain context, a component might work in a completely different way, but it still looks the same. So now every time you make changes to the styling of the component, you have to make those changes in two places. This can lead to maintenance hell.
+On the other hand, it can be very hard to build components which are generic enough to fit every use case. **In real world applications, this can lead to developers making copies of certain components because, in a certain context, a component might work in a completely different way, but it still looks the same**. So now every time you make changes to the styling of the component, you have to make those changes in two places. This can lead to maintenance hell.
 
 We expect this approach to lead to a bigger bundle size, because we'll have overall more JavaScript code. Tough, if this approach is used correctly and with great discipline, it might very well be worth it.
 
@@ -391,7 +391,7 @@ export default {
 </style>
 ```
 
-As you can see above, we've replaced all the regular HTML elements with separate Vue.js components. Each component is self contained and has its own styles.
+As you can see above, **we've replaced all the regular HTML elements with separate Vue.js components**. Each component is self contained and has its own styles.
 
 ### Benchmark
 
@@ -403,16 +403,16 @@ As we've expected, the file size of the JavaScript output is the largest of the 
 
 ### Pros and cons
 
-\+ Potentially the easiest to maintain  
-\+ Very clean application structure  
-\+ Easy to find styles attached to a certain component  
-\- Makes it harder to deal with edge cases  
-\- Slightly larger bundle size  
-\- There might by performance issues with very large applications
+\+ Potentially **the easiest to maintain**  
+\+ Very **clean application structure**  
+\+ **Easy to find styles** attached to a certain component  
+\- Makes it **harder to deal with edge cases**  
+\- Slightly **larger bundle size**  
+\- There might by **performance issues with very large applications**
 
 ## Conclusion
 
-I'm pretty convinced there isn't the one and only *correct way* of doing things in programming. Every one of the three approaches we've investigated has its pros and cons. Tough, I have to say, that using **only** Sass Mixins or **only** CSS classes to build Vue.js applications, might be not the best approach.
+I'm pretty convinced there isn't the one and only *correct way* of doing things in programming. **Every one of the three approaches we've investigated has its pros and cons**. Tough, I have to say, that using *only* Sass Mixins or *only* CSS classes to build Vue.js applications, might be not the best approach.
 
 I think it depends very much on the nature of the application you're building. If you're building a large scale application and you want it to be very fast, even on low end devices, it might be wise to carefully consider if you're adding a new component or you use a regular HTML element and add the styling via a CSS class or a Sass Mixin.
 

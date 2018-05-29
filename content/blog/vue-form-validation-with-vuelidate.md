@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In todays article we're going to build a simple contact form with inline validation powered by [Vuelidate](https://monterail.github.io/vuelidate/). One of the best features of Vuelidate is its relatively small footprint which is about 4.2 kB (gzipped). But the small package size comes with a cost: Vuelidate focuses on validation only. It's the task of us programmers to add further functionality like displaying validation error messages and scrolling to the first validation error.
+In todays article we're going to build a simple contact form with inline validation powered by [Vuelidate](https://monterail.github.io/vuelidate/). One of the best features of Vuelidate is its relatively **small footprint which is about 4.2 kB** (gzipped). But the small package size comes with a cost: Vuelidate focuses on validation only. It's the task of us programmers to add further functionality like displaying validation error messages and scrolling to the first validation error.
 
 [The full code which is featured in this article is available on GitHub](https://github.com/maoberlehner/vue-form-validation-with-vuelidate).
 
@@ -184,7 +184,7 @@ Now that we've successfully created a simple contact form component, let's move 
 npm install --save vuelidate
 ```
 
-There are two ways how to integrate Vuelidate into our Vue.js app. We can either use it globally as a Vue plugin `Vue.use(Vuelidate)` or as a mixin. Because using it as a mixin, allows for better bundle optimizations via webpack, we're going to use the second approach.
+**There are two ways how to integrate Vuelidate into our Vue.js app**. We can either use it globally as a Vue plugin `Vue.use(Vuelidate)` or as a mixin. Because **using it as a mixin, allows for better bundle optimizations via webpack**, we're going to use the second approach.
 
 Furthermore we want to make our code as reusable as possible. Mixins, in Vue.js, are a great way to achieve that goal. Let's create a new form mixin which we'll later use to handle all our generic form related logic for us.
 
@@ -313,7 +313,7 @@ To render the error messages, we're using an unordered list. The list will only 
 
 ## Scroll to the first error
 
-Now that we've implemented the basic functionality of our contact form and we've also set up validation, let's add one further enhancement. It's general a good practice to focus the first form field with a validation error. And oftentimes it's even inevitable to somehow guide the user to the form field which they've entered incorrectly because the error message might not be visible otherwise, causing the user to be confused.
+Now that we've implemented the basic functionality of our contact form and we've also set up validation, let's add one further enhancement. **It's general a good practice to focus the first form field with a validation error**. And oftentimes it's even inevitable to somehow **guide the user to the form field which they've entered incorrectly because the error message might not be visible otherwise**, causing the user to be confused.
 
 ```js
 // src/mixins/form.js
@@ -345,7 +345,7 @@ export default {
 };
 ```
 
-In the code above, we've added two new methods. The `focusFirstStatus()` function recursively searches for the first component with a `status` and sets the focus on the HTML element of the component. This triggers the browser to automatically scroll the focused element into view, so the user can see the validation error.
+In the code above, we've added two new methods. The `focusFirstStatus()` function recursively searches for the first component with a `status` and sets the focus on the HTML element of the component. **This triggers the browser to automatically scroll the focused element into view, so the user can see the validation error**.
 
 The `validate()` method triggers Vuelidate to check the current validation status with `this.$v.$touch()`. In the next line we're waiting for the next tick in order to make sure that Vue has updated all the components according to the new validation status and then we call the `focusFirstStatus()` function to scroll to the first validation error.
 
@@ -359,8 +359,8 @@ To trigger the newly created validation function, we have to change the event ha
 
 ## Final thoughts
 
-Vuelidate is one of the most minimal validation plugins for Vue – functionality wise and in terms of file size. I'm personally a fan of minimal plugins and packages, even though it oftentimes means you have to code some important functionality yourself. 
+Vuelidate is one of the most minimal validation plugins for Vue – functionality wise and in terms of file size. I'm personally a fan of minimal plugins and packages, even though it oftentimes means you have to code some important functionality yourself.
 
-The end result is usually a lightweight, custom tailored solution, which does exactly what you want, without wasting precious resources for stuff you don't need.
+**The end result is usually a lightweight, custom tailored solution, which does exactly what you want**, without wasting precious resources for stuff you don't need.
 
 If you want to dive deeper, you can checkout [the code on GitHub](https://github.com/maoberlehner/vue-form-validation-with-vuelidate).
