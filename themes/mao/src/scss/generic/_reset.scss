@@ -41,7 +41,7 @@ code {
 code:not([class]) {
   padding: 0.2em 0.4em;
   border-radius: 0.1875em;
-  background: setting-color(a, gray);
+  background: darken(setting-color(a, gray), 2%);
   font-size: 85%;
 }
 
