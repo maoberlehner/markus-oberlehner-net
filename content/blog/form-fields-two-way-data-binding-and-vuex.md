@@ -180,6 +180,15 @@ export default new Vuex.Store({
 
 `vuex-map-fields` is taking care of creating the necessary getter and setter functions for the two-way computed properties. The `updateField()` mutation in the store takes care of mutating the corresponding field value when the field is updated.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you have any questions?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Final thoughts
 
 I was really surprised to learn that there is no convenient way, how to handle form field data with Vuex. Usually with Vue we're used to an amazing “out of the box experience” but not so much with handling two-way data binding on form fields in combination with Vuex.
@@ -187,3 +196,5 @@ I was really surprised to learn that there is no convenient way, how to handle f
 `vuex-map-fields` can help with dealing with this problem and doing so without having a very large footprint – the file size of `vuex-map-fields` is just about 690 bytes (gziped).
 
 I hope this article and the `vuex-map-fields` package are helpful for some people.
+
+If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](https://markus.oberlehner.net/blog/how-to-structure-a-complex-vuex-store/)**.

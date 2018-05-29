@@ -456,6 +456,15 @@ export default {
 
 In the example code above we're initializing the modal component and we render a button which triggers the `showModal()` mutation when it's clicked. By providing the component name `ModalLogin` we're telling our modal which component it should load for rendering in the content section.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you have any questions?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Final thoughts
 
 By using Vuex for controlling the rendering of the modal dialog we don't have to make the modal dialog instance globally available like many other Vue modal solutions are doing it.
@@ -463,3 +472,5 @@ By using Vuex for controlling the rendering of the modal dialog we don't have to
 Using dynamic imports for rendering content inside of the modal, can be very helpful in large scale applications, with many different modal dialogs.
 
 On the other hand, the solution demonstrated in this article, might be too complex for smaller applications.
+
+If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](https://markus.oberlehner.net/blog/how-to-structure-a-complex-vuex-store/)**.

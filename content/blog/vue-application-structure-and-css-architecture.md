@@ -410,6 +410,15 @@ As we've expected, the file size of the JavaScript output is the largest of the 
 \- Slightly **larger bundle size**  
 \- There might by **performance issues with very large applications**
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you want to discuss this topic?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Conclusion
 
 I'm pretty convinced there isn't the one and only *correct way* of doing things in programming. **Every one of the three approaches we've investigated has its pros and cons**. Tough, I have to say, that using *only* Sass Mixins or *only* CSS classes to build Vue.js applications, might be not the best approach.

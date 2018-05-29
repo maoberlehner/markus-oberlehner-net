@@ -223,6 +223,15 @@ Like with most things in life, dynamically loading SVG icons also has its downsi
 
 The wrapper component approach I've shown in this article isn't very flexible in that regard: all icons are always loaded dynamically. No matter if you're showing them instantly or after a certain user interaction.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you have any questions?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Recap
 
 Depending on your situation, you might consider to use one of the two approaches I've shown in this article. The first approach, of using the Vue.js `watch` feature to dynamically load icons if needed and bundle them with the main bundle otherwise, is more flexible but also more complicated.

@@ -141,7 +141,18 @@ export default {
 
 In the Vue component you can see above, we're using `v-for` to render rows of form elements to enter new, or edit existing addresses. We're using `mapMultiRowFields()` to map the array of address rows from the store, to a computed property named `addresses`. In the `methods` section of the component, we're using the native Vuex `mapMutations()` function to create a mapping from the store mutation to a method with the same name in our component.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you have any questions?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Recap
 Handling form data with Vue in a way which does not mutate the Vuex store, can be a tricky thing to do. Even more tricky can it be to handle multi-row forms.
 
 I hope for [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to be a useful tool in the tool belt of Vue developers to make handling form data with Vue and Vuex a more pleasant experience.
+
+If you enjoyed this article, please **make sure to also read one of my previous articles about [form field handling in combination with Vuex](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/)**.

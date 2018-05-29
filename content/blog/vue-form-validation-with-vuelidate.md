@@ -357,6 +357,15 @@ To trigger the newly created validation function, we have to change the event ha
 </button>
 ```
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you have any questions?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Final thoughts
 
 Vuelidate is one of the most minimal validation plugins for Vue – functionality wise and in terms of file size. I'm personally a fan of minimal plugins and packages, even though it oftentimes means you have to code some important functionality yourself.
