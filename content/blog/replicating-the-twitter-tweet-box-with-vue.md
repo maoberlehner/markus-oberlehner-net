@@ -162,8 +162,7 @@ First of all, we have to make some minor changes to the template. As you can see
 +    <div
 +      :class="`${$options.name}__htmlarea`"
 +      aria-hidden
-+      v-html="htmlValue"
-+    />
++    >{{ valueAllowed }}<em v-if="valueExcess">{{ valueExcess }}</em></div>
      <textarea
 +      ref="textarea"
        :class="`${$options.name}__textarea`"
@@ -188,8 +187,11 @@ The changes in the JavaScript code of the component are a little bit more extens
      },
    },
 +  computed: {
-+    htmlValue() {
-+      return `${this.value.slice(0, this.limit)}<em>${this.value.slice(this.limit)}</em>`;
++    valueAllowed() {
++      return this.limit ? this.value.slice(0, this.limit) : this.value;
++    },
++    valueExcess() {
++      return this.limit ? this.value.slice(this.limit) : '';
 +    },
 +    limitStatus() {
 +      return (this.value.length / this.limit) * 100;
@@ -235,7 +237,7 @@ The changes in the JavaScript code of the component are a little bit more extens
 
 The first change you can see above, is a new property `limit` which defines, well, the limit which defines the maximum characters. If this is reached, we highlight every additional character with a light red background.
 
-Next you can see three new computed properties. The `htmlValue()` property, takes the `value` and wraps all additional characters, which are over the limit, in a `<em>` tag. `limitStatus()` returns the percentage representation of how many characters the user has already entered relative to the limit. And last but not least, there is the `textareaStyle()` computed property, which returns the computed styles of the `<textarea>` HTML element.
+Next you can see four new computed properties. The `vallueAllowed()` and `valueExcess()` properties, take the `value` and slice it to represent the allowed portion of the string and everything which exceeds the given limit. `limitStatus()` returns the percentage representation of how many characters the user has already entered relative to the limit. And last but not least, there is the `textareaStyle()` computed property, which returns the computed styles of the `<textarea>` HTML element.
 
 The `textareaGrow()` method, takes care of the height of the text area. Every time a new row is added, the number of rows of the `<textarea>` element is updated to reflect the number of rows entered, so that there is never a scrollbar.
 
@@ -334,8 +336,7 @@ Let's start with a simple counter that shows how many characters are still allow
      <div
        :class="`${$options.name}__htmlarea`"
        aria-hidden
-       v-html="htmlValue"
-     />
+     >{{ valueAllowed }}<em v-if="valueExcess">{{ valueExcess }}</em></div>
      <textarea
        ref="textarea"
        :class="`${$options.name}__textarea`"
