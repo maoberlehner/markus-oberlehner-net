@@ -305,7 +305,7 @@ describe('AppModal', () => {
     storeMocks.state.modalVisible = true;
     wrapper.update();
 
-    wrapper.trigger('keydown.esc');
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
 
     expect(storeMocks.mutations.hideModal).toBeCalled();
   });
@@ -314,16 +314,30 @@ describe('AppModal', () => {
 
 After running our tests and see them fail, we're ready to implement the functionality.
 
-```html
-<template>
-  <div class="c-appModal" @keydown.esc="hideModal">
-    <div class="c-appModal__overlay" v-if="visible"></div>
-    <div class="c-appModal__content" v-if="visible" @click.self="hideModal"></div>
-  </div>
-</template>
+```diff
+       modalComponent: 'modalComponent',
+     }),
+   },
++  created() {
++    const escapeHandler = (e) => {
++      if (e.key === 'Escape' && this.visible) {
++        this.hideModal();
++      }
++    };
++
++    document.addEventListener('keydown', escapeHandler);
++    this.$once('hook:destroyed', () => {
++      document.removeEventListener('keydown', escapeHandler);
++    });
++  },
+   methods: {
+     ...mapMutations(['hideModal']),
+   },
 ```
 
-The only thing we have to change is adding a `keydown` event listener to the components root element.
+Because we want to catch the `keydown` event no matter which element is currently focused, the best way to do this, is to listen for a `keydown` event on the `document` itself. This might seem strange because we're reaching outsite the scope of our component, but in this case it is the most reliable way to do this.
+
+In order to cleanup whenever our component is destroyed, we remove the event listener when the `hook.destroyed` event of the component is triggered.
 
 #### Dynamically render a content component
 
