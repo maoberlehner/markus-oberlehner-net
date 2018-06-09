@@ -681,6 +681,15 @@ As you can see in the example below, the public API of the `FormTagsInput` compo
 />
 ```
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Did you find this useful?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Wrapping it up
 
 Although there are other approaches how you can achieve similar results by using computed properties, not inside of the form component but inside the component which is consuming the form component, I think this approach makes it easier to handle complex form data. Especially for apps which have to juggle a large number of form fields, it can make things a lot easier if you're abstracting the logic away into the form components themselves.
