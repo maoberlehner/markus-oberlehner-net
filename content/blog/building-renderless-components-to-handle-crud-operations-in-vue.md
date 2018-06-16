@@ -453,6 +453,15 @@ Now let's imagine the following scenario: you want to render a list of posts and
 
 In the example above, you can see that we can nest `DataList` and `DataModel` components. By passing a `post` object as an entity to the `DataModel` component, no API call is made initially, but we're able to run CRUD operations on the model. A post can be deleted by clicking on the `Delete` button, the `@success` event handler on the `<data-model>` is triggered after a successful request, so if the post was deleted successfully, we trigger the `load()` method provided by the `DataList` component, which triggers a reload of the data provided by the `DataList` (which now shouldn't contain the deleted post anymore).
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you like what you're reading?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Wrapping it up
 
 The power of `slot-scope` makes it possible to build generic wrapper components to provide all kinds of data or functionality to the wrapped component. Handling CRUD operations is only one of the plentiful possibilities. But I think it is one of the most useful ways of how to utilize renderless components.

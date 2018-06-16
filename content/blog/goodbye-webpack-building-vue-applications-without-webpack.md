@@ -213,6 +213,15 @@ In the first two snippets we've created a `UserList` and a `UserInfo` component.
 
 If you take a look at the application in your browser and open the Network tab of the browsers development tools, you can see that the `UserInfo.js` file is **not** loaded on initial page load. Click on one of the `Learn more` buttons an keep an eye on the Network tab to see the `UnserInfo.js` file being loaded dynamically. That's right, "code splitting" basically for free.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you like what you're reading?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Wrapping it up
 
 Although it is pretty impressive what, thanks to the features of modern browsers, we can achieve with almost any tooling at all, it has to be mentioned, that you most likely can't build a production ready website without relying on a build step in some way. Our little app is lacking minification of the code and browser support is limited to only the latest versions of browsers.
