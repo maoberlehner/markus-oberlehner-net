@@ -7,8 +7,8 @@
   "homepage": "https://markus.oberlehner.net",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently 'gulp' 'hugo server --theme=mao --buildDrafts' 'open http://localhost:1313'",
-    "build": "gulp styles && hugo --theme=mao && gulp minify:markup && gulp service-worker",
+    "start": "concurrently 'gulp' 'hugo server --buildDrafts' 'open http://localhost:1313'",
+    "build": "gulp styles && hugo && gulp minify:markup && gulp service-worker",
     "lint": "eslint gulpfile.js test/**/*.js && stylelint themes/**/*.scss",
     "test": "NODE_ENV=test npm run build && testcafe -e chrome test/ --app 'http-server -p 1337 -s'"
   },
