@@ -119,6 +119,15 @@ In order to make it easier to make a decision wether to store data in a centrali
   </p>
 </div>
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you like what you're reading?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Conclusion
 
 Keep in mind that there is no one size fits all way of how to do things in software development. Everything is situational and although some of the techniques described in this article work great in certain situations, they might not be right for your specific use case.
