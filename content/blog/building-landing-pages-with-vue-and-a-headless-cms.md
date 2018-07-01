@@ -493,6 +493,6 @@ Last but not least, there is only one thing missing from our landing page: the t
 
 ## Wrapping it up
 
-Although this approach is already quite powerful, there remain two problems with this methodology: SEO and initial page load performance. But there are ways around those issues, **if you're interested in how we can use pre-rendering for boosting the initial page load time and delivering static HTML to search engines, [follow me on Twitter to not miss my next article on this topic](https://twitter.com/maoberlehner).**
+Although this approach is already quite powerful, there remain two problems with this methodology: SEO and initial page load performance. But there are ways around those issues, **if you're interested in how we can use pre-rendering for boosting the initial page load time and delivering static HTML to search engines, [you can read the next article about this topic](/blog/how-to-pre-render-vue-powered-websites-with-webpack/).**
 
 Building landing pages and brochure style websites with modern web technologies is awesome. **By utilizing the power of headless, cloud hosted content management systems, you can build complex landing pages in a matter of hours.** This is definitely the way how I'll build landing pages and brochure sites in the future.
