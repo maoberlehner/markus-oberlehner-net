@@ -22,7 +22,7 @@ Of course very basic examples are used when explaining the concepts of TDD, it i
 But when you're working on real world projects, things are different. You have to solve complex problems of a kind you more often than not, have never dealt with before. In such situations it feels like all of those articles, books and talks about TDD are a lie. Of course TDD works when dealing with such (artificially) simple problems, you might think in those moments.
 
 ## Exploratory coding to the rescue
-One technique I've used with decent success lately in such situations, is exploratory coding. The way I do it, is to start hacking and playing around with the code similar to “normal”, non test driven coding. There are two major differences tough.
+One technique I've used with decent success lately in such situations, is exploratory coding. The way I do it, is to start hacking and playing around with the code similar to “normal”, non test driven coding. There are two major differences though.
 
 1. **I don't care about code quality at all.** Usually when writing code, I'm trying to do my best to keep the code clean and DRY. But not so when I'm doing exploratory coding – quite the opposite. Oftentimes I intentionally write WET code to see patterns emerge. What counts in this phase of programming is, that I get a feeling for the requirements of the implementation. The end result is not necessarily a working implementation, but an idea of how a possible implementation could look like.
 2. **I throw away the initial code.** After the first phase of getting a feeling for what's needed to solve the problem at hand, I delete (or at least comment out) the code I've written so far.

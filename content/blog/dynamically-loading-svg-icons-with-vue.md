@@ -41,7 +41,7 @@ After we've installed `vue-svgicon`, **we can use it to automatically generate i
 }
 ```
 
-The `icons` script is responsible for creating Vue components from static `.svg` files located in the `src/assets/icons` directory. We also add a `prebuild` script, which automatically runs before the `build` script, to start the `icons` script before building the page. Keep in mind tough, that you have to run `npm run icons` manually every time you add a new icon during development.
+The `icons` script is responsible for creating Vue components from static `.svg` files located in the `src/assets/icons` directory. We also add a `prebuild` script, which automatically runs before the `build` script, to start the `icons` script before building the page. Keep in mind though, that you have to run `npm run icons` manually every time you add a new icon during development.
 
 ## Configuring vue-svgicon
 

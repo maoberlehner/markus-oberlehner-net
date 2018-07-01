@@ -47,7 +47,7 @@ So you invested in yourself, learned a lot, bought books and great hardware and 
 ### Real estate
 Although not the most profitable way of investing money (especially for small investors) real estate is one of the safer options you have. Mortgages are currently very cheap so if you plan on investing in real estate, now is a great time to do so.
 
-Keep in mind tough, that profit rates for real estate are historically in the 3-4% range. If you discount a 2% mortgage rate you can expect profits in the range of 1-2% per year. Which is pretty much the same you can expect from a (long term) savings account.
+Keep in mind though, that profit rates for real estate are historically in the 3-4% range. If you discount a 2% mortgage rate you can expect profits in the range of 1-2% per year. Which is pretty much the same you can expect from a (long term) savings account.
 
 Keep your mortgage term low. Between 10-15 years is ok – lower is better (as long as you can afford the monthly payments).
 

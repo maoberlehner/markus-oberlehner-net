@@ -175,7 +175,7 @@ In the SCSS code above, we're styling the wrapper `<div>` to look like a form el
 
 By setting the `-moz-appearance` to `textfield` and by hiding the `::-webkit-inner-spin-button` pseudo element, we remove the spinner buttons which are displayed by default on `<input>` elements of type number.
 
-Also, we're resetting the focus styles of the `<input>` elements, keep in mind tough, that you absolutely should implement your own (fake) focus styles on the wrapper `<div>`.
+Also, we're resetting the focus styles of the `<input>` elements, keep in mind though, that you absolutely should implement your own (fake) focus styles on the wrapper `<div>`.
 
 Depending on the font you are using, you might have to use different values for the width of the `<input>` elements.
 
@@ -363,12 +363,12 @@ The `updateMonth()` function works pretty much the same, but because there is no
 
 ### Limit the year input field
 
-In the code in the `<script>` block above, you can also see a new `watch` section containing a `year()` method. This method is automatically triggered, every time the value of the year changes. We're using this method to effectively limit the digits of the year `<input>` field to 4. Keep in mind tough, that there might be situations where you want to allow more than 4 digits.
+In the code in the `<script>` block above, you can also see a new `watch` section containing a `year()` method. This method is automatically triggered, every time the value of the year changes. We're using this method to effectively limit the digits of the year `<input>` field to 4. Keep in mind though, that there might be situations where you want to allow more than 4 digits.
 
 ## Wrapping it up
 
 It's always risky to re-implement features, which are already implemented in browsers, yourself. Oftentimes something like a `<input>` of type `date` seems much simpler than it really is – for example: in the current version, we're missing `:focus` styles, which is a huge usability no-no.
 
-On the other hand tough, there are certain situations, where the native implementation is not feasibly for the product you are building. Thanks to Vue.js, we're able to build very powerful form components ourself.
+On the other hand though, there are certain situations, where the native implementation is not feasibly for the product you are building. Thanks to Vue.js, we're able to build very powerful form components ourself.
 
 You can find a working example of [the date input component we've built on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue) or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).

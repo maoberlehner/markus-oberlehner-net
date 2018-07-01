@@ -204,7 +204,7 @@ app.listen(PORT);
 
 What you can see above, is a very, very basic example of an Express server just capable enough to serve basic single page applications. The server is configured to serve every static file as is and for everything else the `index.html` file is returned.
 
-Before we're returning the `index.html` file to the browser tough, we're checking if cookies for activating timers or network stubs are set. If so, the scripts we've created in the previous steps, are injected immediately after the opening `<head>` element to make sure they run before every other line of JavaScript code.
+Before we're returning the `index.html` file to the browser though, we're checking if cookies for activating timers or network stubs are set. If so, the scripts we've created in the previous steps, are injected immediately after the opening `<head>` element to make sure they run before every other line of JavaScript code.
 
 By using cookies to enable timers and network stubs, we make sure to only load those scripts if we actually need them in our current test.
 
@@ -212,7 +212,7 @@ By using cookies to enable timers and network stubs, we make sure to only load t
 
 I won't go into much detail about the general Nightwatch.js configuration. You can take a look at the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) if you're interested to see the full code.
 
-One important thing to mention tough, is that you have to clear cookies and the session storage after every scenario, to make sure to start from a clean slate and that network stubs or timers of a previous test do not interfere with the current one. You can do this by adding the following lines to your Nightwatch.js hooks.
+One important thing to mention though, is that you have to clear cookies and the session storage after every scenario, to make sure to start from a clean slate and that network stubs or timers of a previous test do not interfere with the current one. You can do this by adding the following lines to your Nightwatch.js hooks.
 
 ```js
 // test/hooks.js
@@ -406,7 +406,7 @@ Scenario: Greet new user
   Then I expect the `user greeting` to not be present
 ```
 
-In the example scenario above, we're also enabling time traveling additionally to network stubs. Because in this case, the POST request to the `/users` endpoint is made after the user clicks a button, we can define the step for defining a mock response after the step for opening the page. It has to be defined before the step for clicking the button tough.
+In the example scenario above, we're also enabling time traveling additionally to network stubs. Because in this case, the POST request to the `/users` endpoint is made after the user clicks a button, we can define the step for defining a mock response after the step for opening the page. It has to be defined before the step for clicking the button though.
 
 After the user clicks a button, a new user is created and they should be greeted by a message which should disappear after 4 seconds. Because we don't want to actually wait for 4 seconds, we can utilize the power of mock timers, to fast forward 5 seconds (4 seconds + 1 second buffer) instantaneously.
 

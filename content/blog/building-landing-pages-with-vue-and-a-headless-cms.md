@@ -261,7 +261,7 @@ Instead of using the `getEntry()` method to retrieve a single entity, we now use
 
 ### Resolving content blocks
 
-Next we have to add the content blocks data to our model. Before we can do this tough, we need a new `ContentBlock` model.
+Next we have to add the content blocks data to our model. Before we can do this though, we need a new `ContentBlock` model.
 
 ```js
 export class ContentBlock {

@@ -322,7 +322,7 @@ On the one hand, using components for everything, which makes it possible to hav
 
 On the other hand, it can be very hard to build components which are generic enough to fit every use case. **In real world applications, this can lead to developers making copies of certain components because, in a certain context, a component might work in a completely different way, but it still looks the same**. So now every time you make changes to the styling of the component, you have to make those changes in two places. This can lead to maintenance hell.
 
-We expect this approach to lead to a bigger bundle size, because we'll have overall more JavaScript code. Tough, if this approach is used correctly and with great discipline, it might very well be worth it.
+We expect this approach to lead to a bigger bundle size, because we'll have overall more JavaScript code. Though, if this approach is used correctly and with great discipline, it might very well be worth it.
 
 ### Example
 
@@ -421,7 +421,7 @@ As we've expected, the file size of the JavaScript output is the largest of the 
 
 ## Conclusion
 
-I'm pretty convinced there isn't the one and only *correct way* of doing things in programming. **Every one of the three approaches we've investigated has its pros and cons**. Tough, I have to say, that using *only* Sass Mixins or *only* CSS classes to build Vue.js applications, might be not the best approach.
+I'm pretty convinced there isn't the one and only *correct way* of doing things in programming. **Every one of the three approaches we've investigated has its pros and cons**. Though, I have to say, that using *only* Sass Mixins or *only* CSS classes to build Vue.js applications, might be not the best approach.
 
 I think it depends very much on the nature of the application you're building. If you're building a large scale application and you want it to be very fast, even on low end devices, it might be wise to carefully consider if you're adding a new component or you use a regular HTML element and add the styling via a CSS class or a Sass Mixin.
 

@@ -246,7 +246,7 @@ In the code above, you can see the two step definitions we'll use in the next st
 
 ### Using Gherkin to define visual regression tests
 
-At this point at the latest, some people might argue, that acceptance tests, written in Gherkin syntax, are not necessarily  the best way to deal with visual regression testing. On the one hand, they are absolutely right: visual regression testing has nothing to do with BDD for which Gherkin is primarily intended. On the other hand tough, I'd say it can be very nice to have all the tests for your frontend in one place. So why *not* write visual regression tests in Gherkin?
+At this point at the latest, some people might argue, that acceptance tests, written in Gherkin syntax, are not necessarily  the best way to deal with visual regression testing. On the one hand, they are absolutely right: visual regression testing has nothing to do with BDD for which Gherkin is primarily intended. On the other hand though, I'd say it can be very nice to have all the tests for your frontend in one place. So why *not* write visual regression tests in Gherkin?
 
 ```gherkin
 @visual-regression

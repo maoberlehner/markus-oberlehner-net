@@ -128,7 +128,7 @@ router.beforeResolve(async (to, from, next) => {
 app.$mount('#app');
 ```
 
-Above you can see our `main.js` file with the code necessary to fetch the data from the API **before** every route change. By using this pattern, nothing is rendered until the API request has finished, so there is no *flash of empty application*. Depending on your application tough, you might want to use a different approach. Also, this is a simple example of this pattern, if your situation is more complex, [take a look at the official documentation about server side rendering](https://ssr.vuejs.org/guide/data.html#server-data-fetching). You can see, that we're using the `injectInitialState()` utility function, if you're interested in the code, [you can look it up on GitHub](https://github.com/maoberlehner/how-to-pre-render-vue-powered-websites-with-webpack/blob/master/src/utils/inject-initial-state.js).
+Above you can see our `main.js` file with the code necessary to fetch the data from the API **before** every route change. By using this pattern, nothing is rendered until the API request has finished, so there is no *flash of empty application*. Depending on your application though, you might want to use a different approach. Also, this is a simple example of this pattern, if your situation is more complex, [take a look at the official documentation about server side rendering](https://ssr.vuejs.org/guide/data.html#server-data-fetching). You can see, that we're using the `injectInitialState()` utility function, if you're interested in the code, [you can look it up on GitHub](https://github.com/maoberlehner/how-to-pre-render-vue-powered-websites-with-webpack/blob/master/src/utils/inject-initial-state.js).
 
 Next, for our application to work correctly, it's important that the application renders its root element with an `id="app"` attribute. We update our [default layout](https://github.com/maoberlehner/how-to-pre-render-vue-powered-websites-with-webpack/blob/master/src/components/layouts/LayoutDefault.vue) accordingly to achieve this.
 
@@ -241,7 +241,7 @@ The Prerender SPA Plugin provides a way of post processing the HTML before savin
   </p>
 </div>
 
-By making use of the `defer` attribute we removed one link from the critical request chain which drastically improves the performance. Thanks to deferred loading, our site now loads a bit faster than before. Keep in mind tough, that this application is still by no means well optimized. **Because I'm lazy when building those demo applications, I load the entirety of bootstrap while using only a fraction of it (don't ever do this on a production site!).** Also, the critical path CSS could be inlined and image loading could be optimized. But this article is about pre-rendering and we've seen significant improvements by applying pre-rendering to our application.
+By making use of the `defer` attribute we removed one link from the critical request chain which drastically improves the performance. Thanks to deferred loading, our site now loads a bit faster than before. Keep in mind though, that this application is still by no means well optimized. **Because I'm lazy when building those demo applications, I load the entirety of bootstrap while using only a fraction of it (don't ever do this on a production site!).** Also, the critical path CSS could be inlined and image loading could be optimized. But this article is about pre-rendering and we've seen significant improvements by applying pre-rendering to our application.
 
 Interestingly enough, telling Vue.js that the HTML is already pre-rendered by adding `data-server-rendered="true"`, the input latency seems to be in much better shape then in our previous test run.
 
@@ -256,6 +256,6 @@ Interestingly enough, telling Vue.js that the HTML is already pre-rendered by ad
 
 ## Wrapping it up
 
-Although, as we've seen in the second benchmark, you have to double check how certain measures affect the performance metrics of your site, we've also seen that pre-rendering has huge potential to speed up your site. Keep in mind tough, that pre-rendering is not a silver bullet. Depending on which type of application you're building, there might be better approaches like SSR.
+Although, as we've seen in the second benchmark, you have to double check how certain measures affect the performance metrics of your site, we've also seen that pre-rendering has huge potential to speed up your site. Keep in mind though, that pre-rendering is not a silver bullet. Depending on which type of application you're building, there might be better approaches like SSR.
 
 In the next article, we'll take a look at how we can use Nuxt.js to build sites which not only support pre-rendering but also SSR. You can [follow me on Twitter](https://twitter.com/maoberlehner) if you don't want to miss that.

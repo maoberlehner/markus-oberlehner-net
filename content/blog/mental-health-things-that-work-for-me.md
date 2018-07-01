@@ -26,7 +26,7 @@ I'll start with some rather minor adjustments that I made to my life, which were
 
 ### Meditation
 
-Although, since a few months, I meditate daily, I’m still not quite sure of how beneficial it really is. I'm definitely better at dealing with uncomfortable feelings like anger and anxiety since I started this habit. Tough it could be some kind of placebo effect. But it works, and I couldn’t care less exactly *why* it works.
+Although, since a few months, I meditate daily, I’m still not quite sure of how beneficial it really is. I'm definitely better at dealing with uncomfortable feelings like anger and anxiety since I started this habit. Though it could be some kind of placebo effect. But it works, and I couldn’t care less exactly *why* it works.
 
 I'm definitely less prone to become angry when driving in my car since I started meditating. Also, it helps me dealing with negative thought loops. I oftentimes have a topic in mind that really bothers me, like the stupid policies of our right-wing government or if something really embarrassing has happened to me recently. Then I constantly repeat this topic in my head until it completely destroys my mood. I think meditation has helped me to deal with such situations - at least a little bit.
 
@@ -94,7 +94,7 @@ Some of the habits I do daily are: making at least one commit on GitHub, cleanin
 
 One thing that oftentimes bothers me about articles like that one you're currently reading is, that they claim that doing this or that will improve your life by an order of magnitude almost instantaneously. Exercising is such an activity which is often times praised to be a miracle cure for a bad mood.
 
-But except for some very potent (and most of the time illegal) drugs, nothing you can do magically cures you of serious mental health issues immediately. In the long run tough, exercising actually can be a quite powerful tool to becoming an overall more happy person.
+But except for some very potent (and most of the time illegal) drugs, nothing you can do magically cures you of serious mental health issues immediately. In the long run though, exercising actually can be a quite powerful tool to becoming an overall more happy person.
 
 The hardest thing is to get going. I recommend you to start with (very) short workouts. There are a ton of “7-Minute” exercising apps in the app stores. It doesn't matter how busy or how out of shape you are, everybody can spare 7 minutes a day.
 
