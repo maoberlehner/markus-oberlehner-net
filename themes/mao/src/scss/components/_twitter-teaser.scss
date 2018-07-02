@@ -1,0 +1,58 @@
+.c-twitter-teaser {
+  display: flex;
+  min-height: 14em;
+  align-items: center;
+  border-radius: 0.1875em;
+  background-image: url('/images/twitter-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.c-twitter-teaser__content {
+  margin-left: auto;
+  padding-right: 2em;
+  padding-left: 2em;
+  max-width: 22em;
+  text-align: center;
+}
+
+.c-twitter-teaser__headline {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: setting-font-size(s);
+}
+
+.c-twitter-teaser__body {
+  margin-top: setting-spacing(s, true);
+  line-height: 1.2;
+  font-size: setting-font-size(l);
+}
+
+// 1. Important is necessary to override content style #yolo.
+.c-twitter-teaser__button {
+  display: inline-block;
+  margin-top: setting-spacing(m, true);
+  padding: setting-spacing(xs) setting-spacing(s);
+  border: 1px solid #fff;
+  border-radius: 0.1875em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+
+  &,
+  &:visited {
+    color: #fff !important; // 1
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #fff;
+    color: setting-color(a) !important; // 1
+  }
+
+  &::before {
+    border-color: #fff;
+  }
+}
