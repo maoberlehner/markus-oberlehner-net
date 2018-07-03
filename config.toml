@@ -9,7 +9,7 @@ PygmentsUseClasses = true
 theme = "mao"
 
 [params]
-  description = "Articles about Web Development topics like JavaScript, CSS, Test Driven Development and Front-End Architecture but also about general life issues like Motivation and Investing."
+  description = "Markus Oberlehner writes articles about Vue.js, JavaScript, CSS, Test Driven Development and Front-End Architecture in general."
   author = "Markus Oberlehner"
   images = ["https://markus.oberlehner.net/images/markus-oberlehner-meta-2017-06.jpg"]
 
