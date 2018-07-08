@@ -6,15 +6,15 @@ $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-br
     @extend .c-title--1;
   }
 
-  > h2 {
+  h2:not([class]) {
     @extend .c-title--2;
   }
 
-  > h3 {
+  h3:not([class]) {
     @extend .c-title--3;
   }
 
-  > h4 {
+  h4:not([class]) {
     @extend .c-title--4;
   }
 

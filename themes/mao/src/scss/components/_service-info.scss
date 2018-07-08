@@ -3,6 +3,10 @@
   margin-bottom: setting-spacing(l);
   text-align: center;
   font-size: setting-font-size(xl);
+
+  h2 {
+    font-size: setting-font-size(l) !important;
+  }
 }
 
 .c-service-info__body {
