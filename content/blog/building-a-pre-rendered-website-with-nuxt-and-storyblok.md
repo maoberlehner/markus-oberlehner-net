@@ -44,7 +44,7 @@ One problem with a lot of the headless CMS platforms out there is a lack of flex
 
 That's where Storyblok really shines. Thanks to its flexible plugin system you're able to extend its functionality with custom plugins which are based on Vue.js components. This makes Storyblok the perfect headless CMS for Vue.js developers. **You can utilize your Vue.js skills for extending your CMS by building custom plugins with all the power of regular Vue.js components.**
 
-In todays article, we'll focus on how to set up a very basic page with Storyblok but in one of my next articles, we'll take a closer look at the Storyblok plugin system and we'll build our own custom field type plugin with Vue.js. You can [follow me on Twitter if you don't want to miss any of it](https://twitter.com/maoberlehner).
+In todays article, we'll focus on how to set up a very basic page with Storyblok but in one of my next articles, we'll take [a closer look at the Storyblok plugin system and we'll build our own custom field type plugin with Vue.js](/blog/building-a-custom-storyblok-field-type-plugin-with-vue/).
 
 ## Setting up Nuxt.js
 
@@ -473,4 +473,4 @@ With the two commands you can see above, you can either serve a server side rend
 
 Storyblok provides us with all the tools necessary to implement not only very simple websites, like the one we built in this article, but also very complex projects. Nuxt.js makes it very easy to create a pre-rendered bundle of our application which is not only important for SEO but it also makes it possible to build single page applications that load very fast.
 
-In my next article, we'll explore how we can build our own Storyblok field type plugins with Vue.js. If you don't want to miss this or any of my future articles, I'll recommend you to [follow me on Twitter](https://twitter.com/maoberlehner).
+[In my next article, we'll explore how we can build our own Storyblok field type plugins with Vue.js](/blog/building-a-custom-storyblok-field-type-plugin-with-vue/).
