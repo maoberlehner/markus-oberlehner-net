@@ -126,7 +126,7 @@ So far so good, we're done setting up our basic application structure and, at le
 
 ### Building a user list component
 
-In this example, we'll build a very simple component to render a list of users. We also want to be able to load more informations regarding the user to test the native ES6 dynamic import feature (a.k.a. native code splitting). I won't go into much detail explaining the components itself, because the point of this article is to show what we're capable of doing without webpack, not how to build stuff with Vue.js in general.
+In this example, we'll build a very simple component to render a list of users. We also want to be able to load more informations regarding the user to test the native ES6 dynamic import feature (a.k.a. native code splitting). Keep in mind, though, that ES6 dynamic imports are currently [not supported in every modern browser](https://caniuse.com/#feat=es6-module-dynamic-import). I won't go into much detail explaining the components itself, because the point of this article is to show what we're capable of doing without webpack, not how to build stuff with Vue.js in general.
 
 ```js
 // src/components/UserList.js
@@ -224,7 +224,7 @@ If you take a look at the application in your browser and open the Network tab o
 
 ## Wrapping it up
 
-Although it is pretty impressive what, thanks to the features of modern browsers, we can achieve with almost any tooling at all, it has to be mentioned, that you most likely can't build a production ready website without relying on a build step in some way. Our little app is lacking minification of the code and browser support is limited to only the latest versions of browsers.
+Although it is pretty impressive what, thanks to the features of modern browsers, we can achieve with almost any tooling at all, it has to be mentioned, that you most likely can't build a production ready website without relying on a build step in some way. Our little app is lacking minification of the code and browser support is limited to only the latest versions of browsers (provided we replace the dynamic imports with regular imports, with dynamic imports browser support currently is very, very poor).
 
 Vue.js single file components are also greatly missed. We have to rely on global styling or use inline styling directly in the JavaScript templates instead, which is not ideal, to say the least.
 
