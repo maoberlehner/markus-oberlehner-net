@@ -12,7 +12,7 @@ In some of my recent articles I wrote about how to build websites with a headles
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="http://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-final.mp4" controls muted></video>
+    <video src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-final.mp4" controls muted></video>
   </div>
   <p class="c-content__caption">
     <small>The final result of our work: an editable Vue.js powered website</small>
@@ -198,10 +198,10 @@ We also clean up the `src/views/Home.vue` component to only output a headline fo
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/starting-point.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/starting-point.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/starting-point.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/starting-point.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/starting-point.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/starting-point.png 2x"
         alt="Screenshot of the stripped-down application"
       >
     </a>
@@ -301,10 +301,10 @@ We create a new `_base.scss` file in the newly created `src/assets/scss/generic`
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/css-reset.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/css-reset.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/css-reset.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/css-reset.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/css-reset.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/css-reset.png 2x"
         alt="Screenshot of the stripped-down application with resets applied"
       >
     </a>
@@ -473,10 +473,10 @@ Now that we've already set up most of our basic CSS and we've declared all the v
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/basic-layout.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/basic-layout.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/basic-layout.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/basic-layout.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/basic-layout.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/basic-layout.png 2x"
         alt="Screenshot of the basic layout"
       >
     </a>
@@ -496,10 +496,10 @@ I have to admit, setting up the basic application and CSS structure, is not the 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-component.png 2x"
         alt="Screenshot of the Storyblok UI for creating the Landing Page component"
       >
     </a>
@@ -513,10 +513,10 @@ For the beginning we just add one schema for the page title, this is only tempor
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-new.png 2x"
         alt="Screenshot of the UI for creating a new Landing Page in Storyblok"
       >
     </a>
@@ -530,10 +530,10 @@ After adding a new Landing Page content we can set the value of the title field 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-title.png 2x"
         alt="Screenshot of the UI for editing the title field"
       >
     </a>
@@ -551,10 +551,10 @@ First of all, we have to add the Storyblok access tokens, which we need to talk 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158511/blog/2018-07-22/storyblok-api-tokens.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158511/blog/2018-07-22/storyblok-api-tokens.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158511/blog/2018-07-22/storyblok-api-tokens.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158511/blog/2018-07-22/storyblok-api-tokens.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158511/blog/2018-07-22/storyblok-api-tokens.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158511/blog/2018-07-22/storyblok-api-tokens.png 2x"
         alt="Screenshot of the Storyblok API key settings"
       >
     </a>
@@ -651,10 +651,10 @@ Now that everything we need to talk to the Storyblok API is set up, let's update
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/fetching-content-from-storyblok.png 2x"
         alt="Screenshot of the website rendering content fetched from Storyblok"
       >
     </a>
@@ -752,10 +752,10 @@ If we now head over to Storyblok, we first have to add a new environment for our
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158511/blog/2018-07-22/storyblok-environment-settings.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158511/blog/2018-07-22/storyblok-environment-settings.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158511/blog/2018-07-22/storyblok-environment-settings.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158511/blog/2018-07-22/storyblok-environment-settings.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158511/blog/2018-07-22/storyblok-environment-settings.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158511/blog/2018-07-22/storyblok-environment-settings.png 2x"
         alt="Screenshot of adding a new environment in Storyblok"
       >
     </a>
@@ -769,10 +769,10 @@ Next we open the `Home` content we've created earlier and we change its `Real Pa
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-visual-editor.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-visual-editor.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-visual-editor.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-visual-editor.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-visual-editor.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-visual-editor.png 2x"
         alt="Screenshot of the Storyblok Visual Editor"
       >
     </a>
@@ -786,7 +786,7 @@ In the following video you can see the Visual Editor in action.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="http://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4" controls muted></video>
+    <video src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4" controls muted></video>
   </div>
   <p class="c-content__caption">
     <small>The Visual Editor in action</small>
@@ -815,10 +815,10 @@ We want to build a system where pages like our `Home` landing page, consist of m
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-intro-chapter.png 2x"
         alt="Screenshot of the Storyblok UI for creating the Intro component"
       >
     </a>
@@ -830,10 +830,10 @@ We want to build a system where pages like our `Home` landing page, consist of m
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-media-object-chapter.png 2x"
         alt="Screenshot of the Storyblok UI for creating the Media Object component"
       >
     </a>
@@ -847,10 +847,10 @@ After creating the two new components, we have to update our Landing Page compon
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-chapters.png 2x"
         alt="Screenshot of the Storyblok UI for adding a new schema for the chapter blocks"
       >
     </a>
@@ -864,10 +864,10 @@ Finally we have to update our Landing Page content to make use of the newly crea
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-landing-page-with-chapters.png 2x"
         alt="Screenshot of the Home landing page with some chapter blocks"
       >
     </a>
@@ -1312,10 +1312,10 @@ This makes it very simple to also update the `src/views/About.vue` component and
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/final-result.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/final-result.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/final-result.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/final-result.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/final-result.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/final-result.png 2x"
         alt="Screenshot of the final result of our work"
       >
     </a>
@@ -1341,10 +1341,10 @@ In Netlify, we create a new site from Git and choose the repository of our websi
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/netlify-deploy.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/netlify-deploy.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/netlify-deploy.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/netlify-deploy.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/netlify-deploy.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/netlify-deploy.png 2x"
         alt="Screenshot of the Netlify UI for deployment settings"
       >
     </a>
@@ -1360,10 +1360,10 @@ Now we have to repeat the process but this time, we change the deployment comman
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/netlify-deploy-bridge.png 2x"
         alt="Screenshot of the Netlify UI for deployment settings"
       >
     </a>
@@ -1377,10 +1377,10 @@ Now we have to repeat the process but this time, we change the deployment comman
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-domain.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-domain.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-domain.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-domain.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-domain.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-domain.png 2x"
         alt="Screenshot of the Storyblok domain settings"
       >
     </a>
@@ -1394,10 +1394,10 @@ Now we can edit our `Home` content and change the environment to see the changes
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png">
       <img
-        src="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png"
-        srcset="http://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png 2x"
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-22/storyblok-visual-editor-final-image.png 2x"
         alt="Screenshot of the Storyblok Visual Editor using the live environment"
       >
     </a>
