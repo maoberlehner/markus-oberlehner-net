@@ -1,7 +1,7 @@
 +++
 date = "2018-07-22T06:06:06+02:00"
 title = "Building a Website with Vue.js, the Storyblok Visual Editor and Netlify"
-description = "Learn how to build a Vue.js powered websites with the headless CMS Storyblok, edit it with a Visual Editor and how to deploy it on Netlify."
+description = "Learn how to build a Vue.js powered website with the headless CMS Storyblok, edit it with a Visual Editor and how to deploy it on Netlify."
 intro = "In recent weeks I played around with a ton of headless content management systems. To cut a long story short: there are a lot of bad and a couple of pretty good ones out there. At the end of my journey, I was left with two systems I both very much enjoy: Contentful and Storyblok..."
 draft = false
 categories = ["Development"]
