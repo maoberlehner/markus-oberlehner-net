@@ -12,7 +12,12 @@ In some of my recent articles I wrote about how to build websites with a headles
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-final.mp4" controls muted></video>
+    <video
+      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-final.mp4"
+      poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-07-22/storyblok-visual-editor-final"
+      controls
+      muted
+    ></video>
   </div>
   <p class="c-content__caption">
     <small>The final result of our work: an editable Vue.js powered website</small>
@@ -786,7 +791,12 @@ In the following video you can see the Visual Editor in action.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4" controls muted></video>
+    <video
+      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4"
+      poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0//v1532157367/blog/2018-07-22/storyblok-visual-editor-video"
+      controls
+      muted
+    ></video>
   </div>
   <p class="c-content__caption">
     <small>The Visual Editor in action</small>
