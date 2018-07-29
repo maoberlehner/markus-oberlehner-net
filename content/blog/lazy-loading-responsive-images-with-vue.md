@@ -168,7 +168,7 @@ There are multiple ways of how to use the component. If you're ok with the image
 ```html
 <app-image
  lazy-src="/my/image.jpg"
- laty-srcset="/my/image-2x.jpg 2x"
+ lazy-srcset="/my/image-2x.jpg 2x"
 />
 ```
 
@@ -285,4 +285,4 @@ Another route you can go, is to use a low fi blurry version of the image as a pl
 
 Using lazy loading techniques can have a huge positive effect on the loading performance of a website, especially on pages featuring a lot of large scale, high quality images.
 
-But keep in mind, that using this techniques can also have downsides. Always test the implications of optimizations like that on a broad range of real devices, form low end smartphones up to the latest and greatest flagships.
+But keep in mind, that using this techniques can also have downsides. Always test the implications of optimizations like that on a broad range of real devices, starting from low end smartphones up to the latest and greatest flagships.
