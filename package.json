@@ -20,21 +20,21 @@
     "url": "https://github.com/maoberlehner/markus-oberlehner-net/issues"
   },
   "dependencies": {
-    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.4",
-    "@avalanche/object-container": "^4.0.0-alpha.7",
-    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.4",
-    "@avalanche/setting-breakpoints": "^4.0.0-alpha.4",
-    "@avalanche/setting-colors": "^4.0.0-alpha.4",
-    "@avalanche/setting-font-sizes": "^4.0.0-alpha.4",
-    "@avalanche/setting-spacings": "^4.0.0-alpha.5"
+    "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.5",
+    "@avalanche/object-container": "^4.0.0-alpha.8",
+    "@avalanche/object-vertical-spacing": "^4.0.0-alpha.5",
+    "@avalanche/setting-breakpoints": "^4.0.0-alpha.5",
+    "@avalanche/setting-colors": "^4.0.0-alpha.5",
+    "@avalanche/setting-font-sizes": "^4.0.0-alpha.5",
+    "@avalanche/setting-spacings": "^4.0.0-alpha.6"
   },
   "devDependencies": {
-    "@avalanche/eslint-config": "^2.0.0",
-    "@avalanche/stylelint-config": "^0.1.2",
-    "clean-css": "^4.1.11",
-    "concurrently": "^3.6.0",
+    "@avalanche/eslint-config": "^3.0.0",
+    "@avalanche/stylelint-config": "^1.0.0",
+    "clean-css": "^4.2.0",
+    "concurrently": "^3.6.1",
     "declassify": "^2.1.0",
-    "eslint": "^5.0.1",
+    "eslint": "^5.3.0",
     "eslint-plugin-import": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -44,11 +44,11 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-transform": "^3.0.5",
     "http-server": "^0.11.1",
-    "node-sass-magic-importer": "^5.1.3",
+    "node-sass-magic-importer": "^5.2.0",
     "rimraf": "^2.6.2",
-    "stylelint": "^9.3.0",
-    "testcafe": "^0.20.4",
+    "stylelint": "^9.4.0",
+    "testcafe": "^0.21.0",
     "uncss": "^0.16.2",
-    "workbox-build": "^3.3.1"
+    "workbox-build": "^3.4.1"
   }
 }
