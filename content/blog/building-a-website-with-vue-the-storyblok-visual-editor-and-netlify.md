@@ -5,7 +5,7 @@ description = "Learn how to build a Vue.js powered website with the headless CMS
 intro = "In recent weeks I played around with a ton of headless content management systems. To cut a long story short: there are a lot of bad and a couple of pretty good ones out there. At the end of my journey, I was left with two systems I both very much enjoy: Contentful and Storyblok..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Vue", "headless CMS"]
+tags = ["JavaScript", "Vue", "headless CMS", "Netlify"]
 +++
 
 In some of my recent articles I wrote about how to build websites with a headless CMS backend and a Vue.js frontend. We explored the topic of [pre-rendering with Vue.js](/blog/how-to-pre-render-vue-powered-websites-with-webpack/) and [Nuxt.js](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/). My headless CMS of choice for my last two articles was Storyblok, which is one of the most feature packed headless content management systems out there. **But up until now I completely neglected one of the core features of Storyblok, which sets it apart from most competitors: the Visual Editor.**
