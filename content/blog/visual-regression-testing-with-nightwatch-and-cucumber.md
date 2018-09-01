@@ -287,7 +287,7 @@ The second script `test:visual-regression` works in the opposite direction and t
 
 At the first execution of `npm run test:visual-regression`, new reference images are generated automatically. You should add those newly created reference images to the index of your version control system.
 
-You can now start working on you applications and make changes to it. If you later run `npm run test:visual-regression` again, you'll most likely see your tests fail because the reference screenshot created earlier, does not match the current state of things.
+You can now start working on your application and make changes to it. If you later run `npm run test:visual-regression` again, you'll most likely see your tests fail because the reference screenshot created earlier, does not match the current state of things.
 
 If you take a look at the screenshots created in the reports directory, you should only see differences that you've intended with the changes you made to your application. If there are differences you did not expect, you've successfully used visual regression testing to find an unintended regression.
 
