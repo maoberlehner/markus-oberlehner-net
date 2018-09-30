@@ -36,7 +36,7 @@ Let's say you have a component for displaying a list of the latest articles of y
 </template>
 ```
 
-In this simplified example of a `LatestArticles` component, we can see a pattern emerge: the *Element* part of the class names is prefixed (e.g. `LatestArticles__list-item` and `LatestArticles__list-headline`). In the first example, you might think about simply removing the prefix and defining a class like `LatestArticles__item` but a class name like this might be too generic and as we can see with the class `LatestArticles__list-headline` this approach won't work, because we already have a class named `LatestArticles__headline`.
+In this simplified example of a `LatestArticles` component, we can see a pattern emerge: the *Element* part of the class names is prefixed (e.g. `LatestArticles__list-item` and `LatestArticles__list-headline`). In the first example, you might think about simply removing the prefix and defining a class name like `LatestArticles__item` but a name like that might be too generic and as we can see with the class `LatestArticles__list-headline` this approach won't work, because we already have a class named `LatestArticles__headline`.
 
 **Prefixing class names like that, might be a good indicator for when it's time to refactor your component and splitting it up into multiple smaller components might be a good idea.**
 
@@ -70,7 +70,7 @@ In this simplified example of a `LatestArticles` component, we can see a pattern
 </template>
 ```
 
-Not only does this approach prevent you from running out of class names, but it also makes it possible to reuse the `ArticleList` component in another place without having to duplicate any of the CSS.
+Not only does this approach prevent you from running out of class names, but it also makes it possible to reuse the `ArticleList` component in other places without having to duplicate any of the CSS.
 
 ## Wrapping it up
 
