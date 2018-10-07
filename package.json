@@ -34,11 +34,11 @@
     "clean-css": "^4.2.1",
     "concurrently": "^4.0.1",
     "declassify": "^2.1.0",
-    "eslint": "^5.5.0",
+    "eslint": "^5.6.1",
     "eslint-plugin-import": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-htmlmin": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-inline-source": "^3.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
@@ -46,9 +46,9 @@
     "http-server": "^0.11.1",
     "node-sass-magic-importer": "^5.2.0",
     "rimraf": "^2.6.2",
-    "stylelint": "^9.5.0",
+    "stylelint": "^9.6.0",
     "testcafe": "^0.22.0",
     "uncss": "^0.16.2",
-    "workbox-build": "^3.4.1"
+    "workbox-build": "^3.6.2"
   }
 }
