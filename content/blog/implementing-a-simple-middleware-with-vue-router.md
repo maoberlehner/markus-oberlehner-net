@@ -121,7 +121,7 @@ Next we have to find a way to process the attached Middleware functions before t
 +  return (...parameters) => {
 +    // Run the default Vue Router `next()` callback first.
 +    context.next(...parameters);
-+    // Than run the subsequent Middleware with a new
++    // Then run the subsequent Middleware with a new
 +    // `nextMiddleware()` callback.
 +    const nextMiddleware = nextFactory(context, middleware, index + 1);
 +    subsequentMiddleware({ ...context, next: nextMiddleware });
