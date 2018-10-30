@@ -239,6 +239,20 @@ Above you can see the contents of the `App.vue` file in the `src` directory of t
 
 If `geolocationSupported` is `true` we render a button which calls the `fetchAddress()` method. After asking the user for their permission and successfully fetching the address, the `address` property is filled and the form field values are updated.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Once again the renderless component pattern proves to be very powerful. It helps us to build highly reusable components which can be used anywhere in your application.

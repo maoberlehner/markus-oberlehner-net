@@ -72,6 +72,20 @@ In this simplified example of a `LatestArticles` component, we can see a pattern
 
 Not only does this approach prevent you from running out of class names, but it also makes it possible to reuse the `ArticleList` component in other places without having to duplicate any of the CSS.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 In the days of scoped styles or even CSS in JS, following the BEM naming scheme might not seem to be necessary anymore. But I'd argue that there is still a lot to be gained by following this battle tested approach for structuring your CSS. Having an indicator when to split up your components into multiple smaller ones, is one of the benefits of this approach which may not be the first thing that comes to mind when you think about BEM.

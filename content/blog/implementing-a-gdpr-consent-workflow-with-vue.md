@@ -452,6 +452,20 @@ export default {
 };
 ```
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 The concept of renderless components is a very powerful one. As we've seen with this example, we can build flexible and reusable components that way. By simply using a different provider, we're able to use the same logic for handling the GDPR consent for a newsletter, for a EU cookie bar.

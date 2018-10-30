@@ -156,6 +156,20 @@ I've already written a dedicated article about the topic of [lazy loading images
 
 You can take a look at [the full code at GitHub](https://github.com/maoberlehner/using-cloudinary-and-storyblok-to-handle-assets-for-a-vue-application) and you can see a [demo of this hosted on Netlify](https://storyblok-cloudinary-assets-vue-demo.netlify.com/).
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 **Cloudinary provides us with a lot of awesome features to reduce the load time of images.** It automatically optimizes not only the quality of your images, but also in which format the images are delivered to the browser. Browsers which do support `webp` for example, get images in this very efficient format, which can dramatically decrease the load time of your images.

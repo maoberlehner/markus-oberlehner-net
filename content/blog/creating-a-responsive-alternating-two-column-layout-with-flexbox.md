@@ -50,6 +50,20 @@ In the following CodePen, you can see how to solve the responsive alternating tw
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </div>
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 There are certainly situations where using CSS Grid with Media Queries to solve this problem is a straight forward and good enough solution. But if you're working with components and you want to make them as reusable as possible, you have to build flexible components which are able to adapt to the space, which is available to them, automatically. This is where using Media Queries just doesn't cut it anymore and when Flexbox shows it's strength and why it's still useful in the time of widespread CSS Grid support in modern browsers.

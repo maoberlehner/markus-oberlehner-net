@@ -69,6 +69,20 @@ This approach does not work in every situation. You have to keep in mind, that a
 
 Furthermore, this approach is kind of a hack. It might not be immediately obvious to other people reading your code how this works. So keep that in mind and add comments when you think it's appropriate.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 As I discovered this approach for hiding content based on the container width, after fiddling around with some HTML and CSS for a few hours, I couldn't believe it. In this moment, it almost felt like CSS is powerful enough that everything you can imagine is possible as long as you can come up with some crazy way to achieve it.

@@ -38,6 +38,20 @@ Another problem I oftentimes encounter, is, that we tend to reinvent the wheel o
 
 This defeats the point of a design system and, over time, can lead to a bloated codebase which is very hard to maintain.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Naming things requires a lot of discipline. You have to withstand the urge of doing the easy thing and just name things after the context they are used in, because this almost certainly leads to problems in the future. And even more importantly: you have to bite the bullet if you recognize that one of your components has a bad name, don't hesitate to rename it and refactor your codebase accordingly.
