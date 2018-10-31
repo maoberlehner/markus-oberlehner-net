@@ -30,7 +30,7 @@ import axios from 'axios';
 
 export default {
   props: {
-    basUrl: {
+    baseUrl: {
       type: String,
       // The JSONPlaceholder API is a fake API
       // basically a Lorem Ipsum JSON API.
@@ -50,7 +50,7 @@ export default {
     return {
       // Create a new axios instance.
       // See: https://github.com/axios/axios#creating-an-instance
-      api: axios.create({ baseURL: this.basUrl }),
+      api: axios.create({ baseURL: this.baseUrl }),
       data: null,
       error: null,
       loading: false,
@@ -169,7 +169,7 @@ Before we get started with implementing a component to handle CRUD operations, w
  export default {
 +  mixins: [queryMixin],
    props: {
--    basUrl: {
+-    baseUrl: {
 -      type: String,
 -      // The JSONPlaceholder API is a fake API
 -      // basically a Lorem Ipsum JSON API.
@@ -189,7 +189,7 @@ Before we get started with implementing a component to handle CRUD operations, w
 -    return {
 -      // Create a new axios instance.
 -      // See: https://github.com/axios/axios#creating-an-instance
--      api: axios.create({ baseURL: this.basUrl }),
+-      api: axios.create({ baseURL: this.baseUrl }),
 -      data: null,
 -      error: null,
 -      loading: false,
@@ -233,7 +233,7 @@ import axios from 'axios';
 
 export default {
   props: {
-    basUrl: {
+    baseUrl: {
       type: String,
       // The JSONPlaceholder API is a fake API
       // basically a Lorem Ipsum JSON API.
@@ -248,7 +248,7 @@ export default {
     return {
       // Create a new axios instance.
       // See: https://github.com/axios/axios#creating-an-instance
-      api: axios.create({ baseURL: this.basUrl }),
+      api: axios.create({ baseURL: this.baseUrl }),
       data: null,
       error: null,
       loading: false,
