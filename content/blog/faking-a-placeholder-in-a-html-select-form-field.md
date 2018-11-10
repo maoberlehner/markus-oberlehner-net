@@ -1,7 +1,7 @@
 +++
 date = "2017-07-16T07:55:22+02:00"
 title = "Faking a Placeholder in a HTML Select Form Field"
-description = "Style a select form field using a placeholder as default value. Make a HTML form element look like an input field with placeholder attribute."
+description = "Learn how to add a placeholder to a select HTML tag and how you can make a select element look like an input field with placeholder attribute."
 intro = "Styling native HTML form fields – especially select fields – with CSS has always been a little tricky. Recently I was confronted with the task of creating a select field with a placeholder value so that the select field blends in nicely with other form fields on the page. The problem of custom styled select elements is a hard one..."
 draft = false
 categories = ["Development"]
