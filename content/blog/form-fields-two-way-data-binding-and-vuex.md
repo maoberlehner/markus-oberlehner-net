@@ -1,7 +1,7 @@
 +++
 date = "2017-12-31T11:22:24+02:00"
 title = "Form Fields, Two-Way Data Binding and Vuex"
-description = "Learn how to handle form data the Vuex way and how to use Vue.js two-way data binding in combination with Vuex."
+description = "Learn how to use v-model to store form data in Vuex and how to use Vue.js two-way data binding in combination with Vuex."
 intro = "One of the most valuable features that Vue.js has to offer, is painless two-way data binding. By using the `v-model` directive, you can quickly set up two-way data binding on form elements..."
 draft = false
 categories = ["Development"]
