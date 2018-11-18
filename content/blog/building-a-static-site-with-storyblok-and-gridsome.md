@@ -55,7 +55,7 @@ We can use the `storyblok-js-client` package to query the Storyblok API.
 npm install storyblok-js-client
 ```
 
-No we're able to create a new Gridsome datasource plugin for Storyblok.
+Now we're able to create a new Gridsome datasource plugin for Storyblok.
 
 ```js
 // src/plugins/source-storyblok/index.js
