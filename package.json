@@ -46,7 +46,7 @@
     "http-server": "^0.11.1",
     "node-sass-magic-importer": "^5.2.0",
     "rimraf": "^2.6.2",
-    "stylelint": "^9.8.0",
+    "stylelint": "^9.9.0",
     "testcafe": "^0.23.2",
     "uncss": "^0.16.2",
     "workbox-build": "^3.6.3"
