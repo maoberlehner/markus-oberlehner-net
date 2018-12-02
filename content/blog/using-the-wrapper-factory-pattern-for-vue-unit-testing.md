@@ -1,6 +1,6 @@
 +++
 date = "2018-12-02T06:04:04+02:00"
-title = "Using the Wrapper Factory Patten for Vue.js Unit Testing"
+title = "Using the Wrapper Factory Pattern for Vue.js Unit Testing"
 description = "Learn how to use the Wrapper Factory Pattern to simplify your Vue.js unit test code."
 intro = "If you test Vue.js Components with a certain complexity, oftentimes you'll be faced with the situation of repeating the same component initialization code again and again. There are multiple patterns to deal with situations like that but today we'll take a look at how we can solve this problem by using a wrapper factory function..."
 draft = false
