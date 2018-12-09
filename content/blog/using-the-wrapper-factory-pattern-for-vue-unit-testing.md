@@ -87,6 +87,20 @@ In the code snippet above, you can see, that we've created a `wrapperFactory()` 
 
 This example is a rather simple one. **The wrapper factory pattern becomes more and more useful the more boilerplate code is needed to initialize the component.**
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Although some general programming rules like “don't repeat yourself” do not always apply when writing test code, keeping repetition at a minimum is usually still a good idea. Thanks to the wrapper factory pattern, we can reduce the amount of repetition in our test files by quite a lot without harming transparency too much.
