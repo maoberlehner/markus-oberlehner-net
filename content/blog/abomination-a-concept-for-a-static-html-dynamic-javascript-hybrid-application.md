@@ -5,7 +5,7 @@ description = "Learn more about a potential solution to the problem of a very hi
 intro = "Static site generators are on the rise. To be more specific: static site generators like Gatsby.js (React) and VuePress (Vue.js) which are based on modern frontend frameworks are becoming more and more popular. Although those are great projects and especially the developer experience is amazing, there is one huge downside of using those systems to generate mostly static, text and image based websites..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Vue"]
+tags = ["JavaScript", "Vue", "Front-End Architecture"]
 +++
 
 Static site generators are on the rise. To be more specific: static site generators like Gatsby.js (React) and VuePress (Vue.js) which are based on modern frontend frameworks are becoming more and more popular.
