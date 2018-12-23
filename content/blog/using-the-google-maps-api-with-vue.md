@@ -6,7 +6,7 @@ intro = "In today’s article we take a look at how we can use the Google Maps A
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/map-with-clustered-markers"]
+images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/vue-google-map-twitter-card"]
 +++
 
 In today’s article we take a look at how we can use the Google Maps API in combination with Vue.js. **We will build a simple Vue.js component which renders a Google Map.** Furthermore we will find out how we can listen for click events on markers and how we can cluster multiple markers in close distance to each other.
