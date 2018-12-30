@@ -83,6 +83,10 @@ export default {
       element.style.visibility = null;
       element.style.height = 0;
 
+      // Force repaint to make sure the
+      // animation is triggered correctly.
+      getComputedStyle(element).height;
+
       // Trigger the animation.
       // We use `setTimeout` because we need
       // to make sure the browser has finished
@@ -135,6 +139,10 @@ export default {
       const height = getComputedStyle(element).height;
       
       element.style.height = height;
+
+      // Force repaint to make sure the
+      // animation is triggered correctly.
+      getComputedStyle(element).height;
 
       setTimeout(() => {
         element.style.height = 0;
@@ -276,6 +284,10 @@ As a little bonus, let's take a look at how we can transform our regular compone
 +          element.style.visibility = null;
 +          element.style.height = 0;
 +
++          // Force repaint to make sure the
++          // animation is triggered correctly.
++          getComputedStyle(element).height;
++
 +          setTimeout(() => {
 +            element.style.height = height;
 +          });
@@ -289,6 +301,10 @@ As a little bonus, let's take a look at how we can transform our regular compone
 -      element.style.height = 0;
 +          element.style.height = height;
  
+-      // Force repaint to make sure the
+-      // animation is triggered correctly.
+-      getComputedStyle(element).height;
+-
 -      setTimeout(() => {
 -        element.style.height = height;
 -      });
@@ -297,6 +313,10 @@ As a little bonus, let's take a look at how we can transform our regular compone
 -      const height = getComputedStyle(element).height;
 -      
 -      element.style.height = height;
++          // Force repaint to make sure the
++          // animation is triggered correctly.
++          getComputedStyle(element).height;
++
 +          setTimeout(() => {
 +            element.style.height = 0;
 +          });
@@ -304,6 +324,10 @@ As a little bonus, let's take a look at how we can transform our regular compone
 +      }
 +    };
  
+-      // Force repaint to make sure the
+-      // animation is triggered correctly.
+-      getComputedStyle(element).height;
+-
 -      setTimeout(() => {
 -        element.style.height = 0;
 -      });
