@@ -22,7 +22,7 @@ Over the last couple of years as a web developer I've seen the same pattern over
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
-    <small>Lazy loading components and show placeholder boxes initially</small>
+    <small>Show placeholder boxes initially and lazy load components</small>
   </p>
 </div>
 
