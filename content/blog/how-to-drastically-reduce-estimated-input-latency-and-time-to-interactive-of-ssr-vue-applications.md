@@ -252,6 +252,20 @@ I’ve built a little demo application to do some benchmarks. There are two vers
 
 As you can see in the screenshots above, **both Estimated Input Latency and Time to interactive, are much lower in the second screenshot** which shows the Lighthouse results of the optimized version of the demo application.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Lazy loading and hydration of Vue.js components for SSR powered applications can bring huge performance benefits. Keep in mind though, that this technique is highly experimental and as of writing this the `vue-lazy-hydration` plugin is in a very early alpha stage.
