@@ -1,0 +1,259 @@
++++
+date = "2019-01-13T06:10:10+02:00"
+title = "How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications"
+description = "Learn how to solve the problem of a very high Estimated Input Latency of pre-rendered Vue.js or Nuxt.js powered Single Page Applications"
+intro = "Performance is a huge topic in the web dev world. Furthermore  performance is especially a huge topic in the context of SPAs. Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern..."
+draft = false
+categories = ["Development"]
+tags = ["JavaScript", "Vue", "Front-End Architecture"]
+images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark-twitter"]
++++
+
+Performance is a huge topic in the web dev world. Furthermore  performance is especially a huge topic in the context of SPAs. **Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern.** While subsequent page views are typically very fast with client side rendered applications, the initial page load can require to load (and even more importantly: to parse) a few megabytes (!) of JavaScript.
+
+Nuxt.js and other frameworks promise to help with the initial page load dilemma which developers of large scale Vue.js applications oftentimes have to deal with. But there comes the next problem: **rehydrating server side rendered applications is also a huge burden on the CPU** and it shows in benchmarks like Lighthouse.
+
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/high-estimated-input-latency">
+      <img
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/high-estimated-input-latency"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/high-estimated-input-latency 2x"
+        alt="High values for Time to Interactive and Estimated Input Latency."
+      >
+    </a>
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>High values for Time to Interactive and Estimated Input Latency</small>
+  </p>
+</div>
+
+If you want to dive directly into the code, you can [take a look at the GitHub repository](https://github.com/maoberlehner/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications) for [the demo application](https://drastically-reduce-estimated-input-latency.netlify.com/) and you can also [checkout the vue-lazy-hydration plugin GitHub project](https://github.com/maoberlehner/vue-lazy-hydration).
+
+## Solutions to high Estimated Input Latency and Time to Interactive
+
+One of the most important techniques to deal with those kind of problems is code splitting on a per route level. Nuxt.js and most other tools with SSR backed in (like VuePress or Gridsome) already handle this automatically for you, so in my opinion, this problem is solved.
+
+But we can also use code splitting on a per component level as you can see in the following example.
+
+```html
+<template>
+  <div class="MyComponent">
+    <ImageSlider v-if="showImageSlider"/>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {
+    ImageSlider: () => import('./ImageSlider.vue'),
+  },
+  data() {
+    return {
+      showImageSlider: false,
+    };
+  },
+  // ...
+};
+</script>
+```
+
+So far so good, but although this is another step in the right direction there is still a lot of room for improvement. 
+
+Consider the following example: a very long page is viewed on a small screen, there are a lot of components rendered which are not even visible to the user and they might very well never be if the user decides to navigate to the next page without scrolling. What a waste of resources.
+
+### The vue-lazy-hydration plugin
+
+Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plugin](https://github.com/maoberlehner/vue-lazy-hydration). This plugin makes it pretty easy to utilize certain techniques for lazy loading Vue.js components on demand. Furthermore it makes it possible to delay the hydration of server side rendered HTML until it’s really needed. In the following examples we‘ll use `vue-lazy-hydration` to improve the Estimated Input Latency of our [demo application](https://drastically-reduce-estimated-input-latency.netlify.com/).
+
+### Conditionally loading components
+
+I've already written an [article about conditionally loading components as soon as they become visible](/blog/lazy-load-vue-components-when-they-become-visible/). But as of writing the previous article I did not realize the further implications of this technique when combined with SSR. Instead of rendering a placeholder box, like in the example of the article, we can do without such tricks because the user already sees the pre-rendered HTML which is generated on the server. **So we can conditionally load components as soon as they become visible without our users noticing any of it.**
+
+#### Load components based on visibility
+
+First we have to install the `vue-lazy-hydration` package via npm so we can use it as a module in our `nuxt.config.js` file.
+
+```bash
+npm install vue-lazy-hydration
+```
+
+```js
+export default {
+  // ...
+  modules: ['vue-lazy-hydration/nuxt'],
+  // ...
+};
+```
+
+After configuring Nuxt.js to load the `vue-lazy-hydration` plugin we can use it to only load and hydrate components which are actually visible to the user.
+
+```html
+<template>
+  <div class="IndexPage">
+    <!-- ... -->
+    <ImageSlider/>
+    <!-- ... -->
+  </div>
+</template>
+
+<script>
+import {
+  loadWhenVisible,
+} from 'vue-lazy-hydration';
+
+export default {
+  name: 'IndexPage',
+  components: {
+    // ...
+    ImageSlider: loadWhenVisible(
+      () => import('../components/ImageSlider.vue'),
+      {
+        selector: '.ImageSlider',
+      },
+    ),
+    // ...
+  },
+  // ...
+};
+</script>
+```
+
+In the example above you can see how to use the `loadWhenVisible()` helper function to dynamically load components only when they become visible. We need to provide a `selector` configuration option so it is possible for `vue-lazy-hydration` to detect when an instance of the component becomes visible.
+
+#### Load components as soon as users start interacting
+
+Next we take a look at the `loadOnInteraction()` loader function provided by `vue-lazy-hydration`.
+
+```html
+<template>
+  <div class="IndexPage">
+    <!-- ... -->
+    <ImageSlider/>
+    <AppCounter/>
+    <!-- ... -->
+  </div>
+</template>
+
+<script>
+import {
+  loadWhenVisible,
+  loadOnInteraction,
+} from 'vue-lazy-hydration';
+
+export default {
+  name: 'IndexPage',
+  components: {
+    // ...
+    ImageSlider: loadWhenVisible(
+      () => import('../components/ImageSlider.vue'),
+      {
+        selector: '.ImageSlider',
+      },
+    ),
+    AppCounter: loadOnInteraction(
+      () => import('../components/AppCounter.vue'),
+      {
+        event: ['click', 'focusin'],
+        selector: '.AppCounter',
+      },
+    ),
+    // ...
+  },
+  // ...
+};
+</script>
+```
+
+Above you can see how we can use the `loadOnInteraction()` helper function to load the `AppCounter` component in a way that it is only really loaded as soon as either a `click` event or a `focusin` event is fired on a DOM element that matches the given `.AppCounter` selector.
+
+### Not loading components at all
+
+So much about conditionally loading components. But what about all those components which are only representational? They might only show some text and an image but they don't have any functionality other than just rendering content. Why even bother with loading the JavaScript code and doing expensive rehydrating of server side rendered code if the rendered HTML output of those components doesn't change no matter what?
+
+```html
+<template>
+  <div class="IndexPage">
+    <!-- ... -->
+    <ImageSlider/>
+    <AppCounter/>
+    <AppMediaObject/>
+    <!-- ... -->
+  </div>
+</template>
+
+<script>
+import {
+  loadWhenVisible,
+  loadOnInteraction,
+  loadSsrOnly,
+} from 'vue-lazy-hydration';
+
+export default {
+  name: 'IndexPage',
+  components: {
+    // ...
+    ImageSlider: loadWhenVisible(
+      () => import('../components/ImageSlider.vue'),
+      {
+        selector: '.ImageSlider',
+      },
+    ),
+    AppCounter: loadOnInteraction(
+      () => import('../components/AppCounter.vue'),
+      {
+        event: ['click', 'focusin'],
+        selector: '.AppCounter',
+      },
+    ),
+    AppMediaObject: loadSsrOnly(() => import('../components/AppMediaObject.vue')),
+    // ...
+  },
+  // ...
+};
+</script>
+```
+
+In the example code snippet above, the `AppMediaObject` component is only ever loaded when the page is rendered on the server. No expensive parsing of JavaScript code or rehydrating of pre-rendered HTML necessary.
+
+## Benchmarks
+
+I’ve built a little demo application to do some benchmarks. There are two versions of the application. [One which does not utilize the techniques described above](https://no-lazy-hydration--drastically-reduce-estimated-input-latency.netlify.com/) and [another one which does](https://drastically-reduce-estimated-input-latency.netlify.com/). Let's see the results.
+
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark">
+      <img
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark 2x"
+        alt="The baseline Lighthouse benchmark result showing high value for Estimated Input Latency."
+      >
+    </a>
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>The baseline: High value for Estimated Input Latency</small>
+  </p>
+</div>
+
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark">
+      <img
+        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark"
+        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark 2x"
+        alt="The improved Lighthouse benchmark result showing lower values for Estimated Input Latency and Time to Interactive."
+      >
+    </a>
+  </div>
+  <p class="c-content__caption" style="margin-top:-1.5em;">
+    <small>Lower values for Estimated Input Latency and Time to Interactive</small>
+  </p>
+</div>
+
+As you can see in the screenshots above, **both Estimated Input Latency and Time to interactive, are much lower in the second screenshot** which shows the Lighthouse results of the optimized version of the demo application.
+
+## Wrapping it up
+
+Lazy loading and hydration of Vue.js components for SSR powered applications can bring huge performance benefits. Keep in mind though, that this technique is highly experimental and as of writing this the `vue-lazy-hydration` plugin is in a very early alpha stage.
+
+If you're trying out `vue-lazy-hydration` yourself, please let me know how it's going.
