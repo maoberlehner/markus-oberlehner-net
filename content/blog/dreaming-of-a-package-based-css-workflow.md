@@ -38,7 +38,7 @@ Now that we know how JavaScript has evolved to embrace modularity and enabling p
 
 In the early days of CSS, writing CSS usually meant finding a selector which targets the element you want, open a single CSS file and add a new rule to the bottom of those file. Some more sophisticated folks used to split the CSS into different sections usually named like `header`, `body` and `footer`.
 
-It is funny enough, that CSS has support for `@import` since many years, although it is considered bad practice to use it because of performance implications, I still think it is interesting, that CSS has the most important prerequisite for enabling modularization already backed in since a long time.
+It is funny enough, that CSS has support for `@import` since many years, although it is considered bad practice to use it because of performance implications, I still think it is interesting, that CSS has the most important prerequisite for enabling modularization already baked in since a long time.
 
 ## Sass
 Because CSS was lacking many features which we're demanded by aspiring CSS architects, CSS preprocessors like LESS and Sass came up.

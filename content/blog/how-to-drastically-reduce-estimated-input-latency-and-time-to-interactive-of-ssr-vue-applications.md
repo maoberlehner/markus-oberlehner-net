@@ -32,7 +32,7 @@ If you want to dive directly into the code, you can [take a look at the GitHub r
 
 ## Solutions to high Estimated Input Latency and Time to Interactive
 
-One of the most important techniques to deal with those kind of problems is code splitting on a per route level. Nuxt.js and most other tools with SSR backed in (like VuePress or Gridsome) already handle this automatically for you, so in my opinion, this problem is solved.
+One of the most important techniques to deal with those kind of problems is code splitting on a per route level. Nuxt.js and most other tools with SSR baked in (like VuePress or Gridsome) already handle this automatically for you, so in my opinion, this problem is solved.
 
 But we can also use code splitting on a per component level as you can see in the following example.
 
