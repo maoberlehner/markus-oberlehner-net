@@ -9,7 +9,7 @@ tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark-twitter"]
 +++
 
-Performance is a huge topic in the web dev world. Furthermore  performance is especially a huge topic in the context of SPAs. **Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern.** While subsequent page views are typically very fast with client side rendered applications, the initial page load can require to load (and even more importantly: to parse) a few megabytes (!) of JavaScript.
+Performance is a huge topic in the web dev world. Furthermore performance is especially a huge topic in the context of SPAs. **Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern.** While subsequent page views are typically very fast with client side rendered applications, the initial page load can require to load (and even more importantly: to parse) a few megabytes (!) of JavaScript.
 
 Nuxt.js and other frameworks promise to help with the initial page load dilemma which developers of large scale Vue.js applications oftentimes have to deal with. But there comes the next problem: **rehydrating server side rendered applications is also a huge burden on the CPU** and it shows in benchmarks like Lighthouse.
 
@@ -70,48 +70,36 @@ Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plu
 
 I've already written an [article about conditionally loading components as soon as they become visible](/blog/lazy-load-vue-components-when-they-become-visible/). But as of writing the previous article I did not realize the further implications of this technique when combined with SSR. Instead of rendering a placeholder box, like in the example of the article, we can do without such tricks because the user already sees the pre-rendered HTML which is generated on the server. **So we can conditionally load components as soon as they become visible without our users noticing any of it.**
 
-#### Load components based on visibility
+#### Load and hydrate components based on visibility
 
-First we have to install the `vue-lazy-hydration` package via npm so we can use it as a module in our `nuxt.config.js` file.
+First we have to install the `vue-lazy-hydration` package via npm so we can use it in our application.
 
 ```bash
 npm install vue-lazy-hydration
 ```
 
-```js
-export default {
-  // ...
-  modules: ['vue-lazy-hydration/nuxt'],
-  // ...
-};
-```
-
-After configuring Nuxt.js to load the `vue-lazy-hydration` plugin we can use it to only load and hydrate components which are actually visible to the user.
+Now we can import the `<LazyHydrate>` wrapper component and use it to only hydrate components which are actually visible to the user.
 
 ```html
 <template>
   <div class="IndexPage">
     <!-- ... -->
-    <ImageSlider/>
+    <LazyHydrate when-visible>
+      <ImageSlider/>
+    </LazyHydrate>
     <!-- ... -->
   </div>
 </template>
 
 <script>
-import {
-  loadWhenVisible,
-} from 'vue-lazy-hydration';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   name: 'IndexPage',
   components: {
     // ...
-    ImageSlider: loadWhenVisible(
-      () => import('../components/ImageSlider.vue'),
-      {
-        selector: '.ImageSlider',
-      },
-    ),
+    LazyHydrate,
+    ImageSlider: () => import('../components/ImageSlider.vue'),
     // ...
   },
   // ...
@@ -119,45 +107,55 @@ export default {
 </script>
 ```
 
-In the example above you can see how to use the `loadWhenVisible()` helper function to dynamically load components only when they become visible. We need to provide a `selector` configuration option so it is possible for `vue-lazy-hydration` to detect when an instance of the component becomes visible.
+In the example above you can see how to use the `<LazyHydrate>` component to dynamically hydrate components only when they become visible.
 
-#### Load components as soon as users start interacting
-
-Next we take a look at the `loadOnInteraction()` loader function provided by `vue-lazy-hydration`.
+**One thing to keep in mind: if we don't add a condition directive onto the wrapped component, the component bundle is still loaded immediately.** But we can change that by adding a condition.
 
 ```html
 <template>
   <div class="IndexPage">
     <!-- ... -->
-    <ImageSlider/>
-    <AppCounter/>
+    <LazyHydrate when-visible>
+      <ImageSlider
+        slot-scope="{ hydrated }"
+        v-if="hydrated"
+      />
+    </LazyHydrate>
+    <!-- ... -->
+  </div>
+</template>
+```
+
+The `<LazyHydrate>` wrapper component passes a `hydrated` property to its child component. We can use this property to only load the `<ImageSlider>` component bundle if it is actually hydrated.
+
+#### Hydrate components as soon as users start interacting
+
+Next we take a look at the `on-interaction` loader mode provided by `vue-lazy-hydration`.
+
+```html
+<template>
+  <div class="IndexPage">
+    <!-- ... -->
+    <LazyHydrate when-visible>
+      <ImageSlider/>
+    </LazyHydrate>
+    <LazyHydrate :on-interaction="['click', 'focus']">
+      <AppCounter/>
+    </LazyHydrate>
     <!-- ... -->
   </div>
 </template>
 
 <script>
-import {
-  loadWhenVisible,
-  loadOnInteraction,
-} from 'vue-lazy-hydration';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   name: 'IndexPage',
   components: {
     // ...
-    ImageSlider: loadWhenVisible(
-      () => import('../components/ImageSlider.vue'),
-      {
-        selector: '.ImageSlider',
-      },
-    ),
-    AppCounter: loadOnInteraction(
-      () => import('../components/AppCounter.vue'),
-      {
-        event: ['click', 'focusin'],
-        selector: '.AppCounter',
-      },
-    ),
+    LazyHydrate,
+    ImageSlider: () => import('../components/ImageSlider.vue'),
+    AppCounter: () => import('../components/AppCounter.vue'),
     // ...
   },
   // ...
@@ -165,48 +163,43 @@ export default {
 </script>
 ```
 
-Above you can see how we can use the `loadOnInteraction()` helper function to load the `AppCounter` component in a way that it is only really loaded as soon as either a `click` event or a `focusin` event is fired on a DOM element that matches the given `.AppCounter` selector.
+Above you can see how we can use the `on-interaction` property to initialize the `AppCounter` component in a way that it is only really hydrated as soon as either a `click` event or a `focus` event is fired.
 
-### Not loading components at all
+### Not loading and hydrating components at all
 
-So much about conditionally loading components. But what about all those components which are only representational? They might only show some text and an image but they don't have any functionality other than just rendering content. Why even bother with loading the JavaScript code and doing expensive rehydrating of server side rendered code if the rendered HTML output of those components doesn't change no matter what?
+So much about conditionally hydrating components. But what about all those components which are only representational? They might only show some text and an image but they don't have any functionality other than just rendering content. Why even bother with loading the JavaScript code and doing expensive rehydrating of server side rendered code if the rendered HTML output of those components doesn't change no matter what?
 
 ```html
 <template>
   <div class="IndexPage">
     <!-- ... -->
-    <ImageSlider/>
-    <AppCounter/>
-    <AppMediaObject/>
+    <LazyHydrate when-visible>
+      <ImageSlider/>
+    </LazyHydrate>
+    <LazyHydrate :on-interaction="['click', 'focus']">
+      <AppCounter/>
+    </LazyHydrate>
+    <LazyHydrate ssr-only>
+      <AppMediaObject
+        slot-scope="{ hydrated }"
+        v-if="hydrated"
+      />
+    </LazyHydrate>
     <!-- ... -->
   </div>
 </template>
 
 <script>
-import {
-  loadWhenVisible,
-  loadOnInteraction,
-  loadSsrOnly,
-} from 'vue-lazy-hydration';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
   name: 'IndexPage',
   components: {
     // ...
-    ImageSlider: loadWhenVisible(
-      () => import('../components/ImageSlider.vue'),
-      {
-        selector: '.ImageSlider',
-      },
-    ),
-    AppCounter: loadOnInteraction(
-      () => import('../components/AppCounter.vue'),
-      {
-        event: ['click', 'focusin'],
-        selector: '.AppCounter',
-      },
-    ),
-    AppMediaObject: loadSsrOnly(() => import('../components/AppMediaObject.vue')),
+    LazyHydrate,
+    ImageSlider: () => import('../components/ImageSlider.vue'),
+    AppCounter: () => import('../components/AppCounter.vue'),
+    AppMediaObject: () => import('../components/AppMediaObject.vue'),
     // ...
   },
   // ...
@@ -271,3 +264,5 @@ As you can see in the screenshots above, **both Estimated Input Latency and Time
 Lazy loading and hydration of Vue.js components for SSR powered applications can bring huge performance benefits. Keep in mind though, that this technique is highly experimental and as of writing this the `vue-lazy-hydration` plugin is in a very early alpha stage.
 
 If you're trying out `vue-lazy-hydration` yourself, please let me know how it's going.
+
+Special thanks to [Rahul Kadyan](https://github.com/znck) who took up my initial idea and improved it greatly. The latest version of `vue-lazy-hydration` is basically an opinionated fork of his lazy hydration package: [lazy-hydration](https://github.com/znck/lazy-hydration).
