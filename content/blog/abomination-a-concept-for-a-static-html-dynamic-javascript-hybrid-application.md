@@ -8,6 +8,8 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 +++
 
+**UPDATE:** Since writing this article, I have created [a new npm package](https://github.com/maoberlehner/vue-lazy-hydration) that allows you to use the technique described in the article in a clean way. You can [read more about it in my article about how to drastically reduce estimated input latency](/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/).
+
 Static site generators are on the rise. To be more specific: static site generators like Gatsby.js (React) and VuePress (Vue.js) which are based on modern frontend frameworks are becoming more and more popular.
 
 Although those are great projects and especially the developer experience is amazing, there is one huge downside of using those systems to generate mostly static, text and image based websites (as opposed to web apps, which the underlying frameworks were originally designed for): **they spit out huge JavaScript bundles which can lead to a very high Estimated Input Latency**.
