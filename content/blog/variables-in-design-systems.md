@@ -2,7 +2,7 @@
 date = "2018-12-09T06:13:13+02:00"
 title = "Variables in Design Systems"
 description = "Are we overusing variables in design systems? In this article I try to articulate my thoughts about using variables in design systems in kind of a dogmatic way."
-intro = "Recently, I've been thinking a lot about variables in (Sass based) design systems. My approach with avalanche, and more recently with the design system we're building at work, always was to use variables for everything from spacings to colors and things like border radius.."
+intro = "Recently, I've been thinking a lot about variables in (Sass based) design systems. My approach with avalanche, and more recently with the design system we're building at work, always was to use variables for everything from spacings to colors and things like border radius..."
 draft = false
 categories = ["Development"]
 tags = ["CSS", "Sass", "Front-End Architecture"]

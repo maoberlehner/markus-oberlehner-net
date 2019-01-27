@@ -358,4 +358,4 @@ Netlify Functions make it really easy to deploy a full blown application contain
 
 ## References
 
-[Deploy a fullstack Apollo app with Netlify](https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b)
+- [Deploy a fullstack Apollo app with Netlify](https://blog.apollographql.com/deploy-a-fullstack-apollo-app-with-netlify-45a7dfd51b0b)
