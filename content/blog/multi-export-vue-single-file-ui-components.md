@@ -457,11 +457,11 @@ After seeing this implementation of the Media Object, you may wonder if this mig
     <UiMedia>
       <img
         slot="figure"
-	      src="..."
-	      alt="A nice image."
-	    >
-	    <h2>Lorem Ipsum</h2>
-	    <p>Dolor sit ...</p>
+        src="..."
+        alt="A nice image."
+      >
+      <h2>Lorem Ipsum</h2>
+      <p>Dolor sit ...</p>
     </UiMedia>
   </div>
 </template>
