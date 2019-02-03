@@ -27,7 +27,7 @@ $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-br
     background: setting-color(a, gray);
     font-style: italic;
     font-size: setting-font-size(l);
-    font-family: serif;
+    font-family: inherit;
   }
 }
 
