@@ -9,7 +9,8 @@ tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-03/named-export-vue-sfc-twitter"]
 +++
 
-> **Note:** This is the first part of my “Advanced Vue.js Project Structure” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.
+> **Note:** This is the first part of my “Advanced Vue.js Project Structure” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss any new article.  
+> [Next >](/blog/reusing-logic-with-renderless-vue-frame-components/)
 
 In todays article we'll learn how to build **Vue.js Single File Components (SFC) which export multiple components at once using ES6 named exports.** Furthermore we'll utilize render functions to render the markup of our components via JSX. By combining these techniques, we are able to create UI components that consist of **several separate components combined into a single file.**
 
@@ -498,3 +499,5 @@ In the following CodeSandbox you can see how to use the `UiGrid` and `UiMedia` c
 Although the techniques outlined in this article also has their downsides I really like the  approach that everything is a component. In the past I mostly reached for global CSS and I basically built my own CSS framework. This is a quite simple solution at the beginning but as your project grows it gets harder and harder to keep track of which CSS styles are used in which places. When using components instead, tooling can help with that and if a component is not used anymore, all the styles associated with the component disappear from your codebase automatically.
 
 But from a performance point of view, having hundreds of small UI components, might take its toll. Like so often these times it’s a trade off between the optimal developer experience and the maximum possible performance.
+
+This was part one of my article series about Advanced Vue.js Project Structure. [In part two we take a look at how we can reuse logic by using renderless Vue.js Frame Components](/blog/reusing-logic-with-renderless-vue-frame-components/).
