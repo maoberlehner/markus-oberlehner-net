@@ -39,18 +39,19 @@ gulp.task(`minify:markup`, () =>
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(inline({
       rootpath: path.join(publicDirectory, `/`),
-      handlers: (source, context, next) => {
-        if (source.type === `css` && source.fileContent && !source.content) {
-          uncss(context.html, { htmlroot: publicDirectory }, (error, css) => {
-            if (error) throw error;
-            // eslint-disable-next-line no-param-reassign
-            source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
-            next();
-          });
-        } else {
-          next();
-        }
-      },
+      handlers: (source, context) =>
+        new Promise((resolve) => {
+          if (source.type === `css` && source.fileContent && !source.content) {
+            uncss(context.html, { htmlroot: publicDirectory }, (error, css) => {
+              if (error) throw error;
+              // eslint-disable-next-line no-param-reassign
+              source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
+              resolve();
+            });
+          } else {
+            resolve();
+          }
+        }),
     }))
     .pipe(transform(`utf8`, content => declassify.process(content, {
       attrs: [`class`],
