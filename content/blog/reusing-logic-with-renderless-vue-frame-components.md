@@ -26,7 +26,7 @@ The first component we build is pretty similar to the wonderful [vue-promised](h
 export default {
   props: {
     promise: {
-      default: false,
+      default: null,
       type: Promise,
     },
   },
@@ -38,18 +38,25 @@ export default {
       resolved: null,
     };
   },
-  async created() {
-    try {
-      this.status({ pending: true });
-      const { data } = await this.promise;
-      this.status({ data, resolved: true });
-    } catch (error) {
-      this.status({
-        data: null,
-        error,
-        resolved: false,
-      });
-    }
+  watch: {
+    promise: {
+      immediate: true,
+      async handler() {
+        if (!this.promise) return;
+
+        try {
+          this.status({ pending: true });
+          const { data } = await this.promise;
+          this.status({ data, resolved: true });
+        } catch (error) {
+          this.status({
+            data: null,
+            error,
+            resolved: false,
+          });
+        }
+      },
+    },
   },
   methods: {
     status({
@@ -127,7 +134,7 @@ export default {
   },
   data() {
     return {
-      response: null,
+      response: undefined,
     };
   },
   created() {
@@ -205,7 +212,7 @@ Because those two components are most likely always used in conjunction we could
     },
     data() {
       return {
-        response: null,
+        response: undefined,
       };
     },
     created() {
