@@ -9,14 +9,14 @@ tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-10/renderless-frame-components-twitter"]
 +++
 
-> **Note:** This is the second part of my “Advanced Vue.js Project Structure” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
+> **Note:** This is the second part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
 > [< Previous](/blog/multi-export-vue-single-file-ui-components/) [Next >](/blog/advanced-vue-component-composition-with-container-components/)
 
 **Reusing logic and keeping your codebase DRY** should be one of your top priorities. In a Vue.js application components are the most important means of code reuse. But usually we think of components as a combination of markup, logic and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all.
 
 Components which do not render their own markup are called renderless components. I’ve already written a couple of articles about [how to use renderless components to handle CRUD operations](/blog/building-renderless-components-to-handle-crud-operations-in-vue/) and [how to build a renderless reCAPTCHA component](/blog/building-a-renderless-recaptcha-v3-form-component-with-vue/) for example. **Since the term “renderless” is more of a name for the overall pattern, I choose to call this type of component “Frame Components” in my codebase.** They form a frame around other components and offer a range of useful functions or data to everything they encompass.
 
-Today we’ll build a couple of Frame Components to lay the foundation for building a fully functional demo application that we’ll build step by step over the next articles in this series on advanced Vue.js project structure.
+Today we’ll build a couple of Frame Components to lay the foundation for building a fully functional demo application that we’ll build step by step over the next articles in this series on Advanced Vue.js Application Architecture.
 
 ## Consuming promises in a declarative way
 
@@ -374,7 +374,7 @@ In the example implementation above you can see how we can use the `FrameApi` co
 
 The renderless component pattern makes it very easy to build reusable chunks of logic which, because they are regular components, feel very Vue-ish. If you don’t already use Frame Components in your codebase, I very much recommend you to search for opportunities to refactor your code using this pattern.
 
-This was part two of my series about Advanced Vue.js Project Structure. In the next article we'll take a closer look at how we can combine the [UI Componets we’ve built in the first article](/blog/multi-export-vue-single-file-ui-components/) with the Frame Components of this article to build an application featuring a product listing and an article listing. Furthermore, we'll explore how to structure our application and how the testability of our application is affected by the way we compose our components.
+This was part two of my series about Advanced Vue.js Application Architecture. In the next article we'll take a closer look at how we can combine the [UI Componets we’ve built in the first article](/blog/multi-export-vue-single-file-ui-components/) with the Frame Components of this article to build an application featuring a product listing and an article listing. Furthermore, we'll explore how to structure our application and how the testability of our application is affected by the way we compose our components.
 
 ## References
 
