@@ -10,7 +10,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 +++
 
 > **Note:** This is the third part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
-> [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/reusing-logic-with-renderless-vue-frame-components/)
+> [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/reusing-logic-with-renderless-vue-frame-components/) [Next >](/blog/integration-testing-vue-container-components-with-cypress/)
 
 When building large scale applications **where it is a top priority to achieve high test coverage,** you are often faced with the problem that it becomes very difficult to test some of the components of the application. A common reason for this is that you have to mock a lot of global dependencies like the Vue Router or the Vuex Store and other side effect afflicted parts of your code like data fetching logic.
 
