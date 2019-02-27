@@ -9,15 +9,13 @@ sudo: required
 
 addons:
   firefox: latest
+  chrome: stable
   apt:
-    sources:
-     - google-chrome
     packages:
-     - google-chrome-stable fluxbox
+     - fluxbox
      - python-pygments
 
 before_install:
-  - sudo apt -qq update
   - sudo apt install snapd
   - sudo snap install hugo
   - PATH=$PATH:/snap/bin
