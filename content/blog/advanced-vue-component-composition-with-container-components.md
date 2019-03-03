@@ -110,6 +110,17 @@ export default UiCard;
 
 We'll later use our UI Components to build more specific product and article components out of them.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about building advanced Vue.js applications?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### The NavFilter component
 
 Now that we've set up all the UI Components we need to build our product listing, let's start with the first a little more complex component. The `NavFilter` component should render a list of filters (e.g. product categories or tags). **Because we want our users to be able to get to a certain filter directly via a link, we want the `NavFilter` component to work with good old URL query parameters.** This means we can use the `RouterLink` component provided by Vue Router instead of rolling our own logic.
