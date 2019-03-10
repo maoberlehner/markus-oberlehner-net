@@ -10,7 +10,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 +++
 
 > **Note:** This is the second part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
-> [< Previous](/blog/multi-export-vue-single-file-ui-components/) [Next >](/blog/advanced-vue-component-composition-with-container-components/)
+> [< Previous](/blog/multi-export-vue-single-file-ui-components/) [Next >](/blog/renderless-vue-lifecycle-hook-components/)
 
 **Reusing logic and keeping your codebase DRY** should be one of your top priorities. In a Vue.js application components are the most important means of code reuse. But usually we think of components as a combination of markup, logic and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all.
 

@@ -9,7 +9,7 @@ tags = ["JavaScript", "Vue", "Front-End Architecture", "TDD"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-24/acceptance-test-code-twitter"]
 +++
 
-> **Note:** This is the fourth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
+> **Note:** This is the fifth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
 > [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/advanced-vue-component-composition-with-container-components/) [Next >](/blog/integration-testing-vue-components-with-jest-and-puppeteer/)
 
 In my previous article about [Advanced Component Composition](/blog/advanced-vue-component-composition-with-container-components/), we wrote Unit Tests for all of our Vue.js components except the Container Components. **Writing Unit Tests for components with a lot of external dependencies (e.g. making API calls or accessing the `$route` object) is usually very hard to do because most of the time you have to mock a lot of their dependencies.** There is nothing more annoying than writing complicated Vuex Store mocks to test a simple `if` condition.
