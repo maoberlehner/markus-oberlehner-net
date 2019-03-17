@@ -10,7 +10,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 +++
 
 > **Note:** This is the sixth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
-> [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/integration-testing-vue-container-components-with-cypress/)
+> [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/integration-testing-vue-container-components-with-cypress/) [Next >](/blog/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer/)
 
 This is a followup article of [my previous article about Integration Testing Vue.js applications with Cypress](/blog/integration-testing-vue-container-components-with-cypress/). In this article we are testing the same application but instead of using Cypress we want to use the combined forces of Jest and Puppeteer. I won’t go into much detail about the application itself or about the separation of Integration Tests and Acceptance Tests, if you’re interested in that, please also [read the previous article](/blog/integration-testing-vue-container-components-with-cypress/). **In this article we take a closer look at the technical aspect of how we can utilize Jest and Puppeteer to write Integration and Acceptance Tests for a Vue.js application.**
 
