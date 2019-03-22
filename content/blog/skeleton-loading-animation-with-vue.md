@@ -13,7 +13,7 @@ Although there is some debate as to whether skeleton loading screens actually do
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-04/skeleton-loading-with-shimmer.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-04/skeleton-loading-with-shimmer.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-11-04/skeleton-loading-with-shimmer"
       muted
       autoplay
@@ -32,7 +32,7 @@ Let's take a look at our example application which we want to improve with a loa
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-04/blank-page-loading.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-04/blank-page-loading.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-11-04/blank-page-loading"
       muted
       autoplay

@@ -477,7 +477,7 @@ I don't want to make sweeping statements like â€œDon't use named slots at all.â€
 In the following CodeSandbox you can see how to use the `UiGrid` and `UiMedia` components.
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/n9wyzvpo8m?module=%2Fpages%2Findex.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/n9wyzvpo8m?module=%2Fpages%2Findex.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 <div class="c-content__broad">

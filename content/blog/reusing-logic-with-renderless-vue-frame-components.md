@@ -284,7 +284,7 @@ You might wonder why we even have a stand-alone `FramePromise` component in the 
 As you can see above, the new version of the `FrameApi` component is much easier to use and also uses a more natural language for providing status informations. Because the term `pending` that we used for the `FramePromise` component is very strongly associated with Promises and not so much with API requests.
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/8yvl6n6652?module=%2Fsrc%2FApp.vue&view=editor" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/8yvl6n6652?module=%2Fsrc%2FApp.vue&view=editor" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 ## Submitting form data

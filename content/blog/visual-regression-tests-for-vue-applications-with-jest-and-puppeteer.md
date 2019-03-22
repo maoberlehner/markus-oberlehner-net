@@ -187,10 +187,16 @@ npm run test:visual
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/new-diff-screenshot">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/new-diff-screenshot 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/new-diff-screenshot 2x"
         alt="A new reference image is automatically created."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
+          alt="A new reference image is automatically created."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-3.5em;">

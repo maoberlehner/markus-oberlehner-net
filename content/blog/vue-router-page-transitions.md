@@ -18,7 +18,7 @@ Let's get started with the most basic transition effect: **fade out the current 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-06-10/basic-vue-router-fade-transition.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-06-10/basic-vue-router-fade-transition.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Basic fade transition between pages</small>
@@ -77,7 +77,7 @@ Thanks to the amazing `<transition>` component, we've already achieved a basic f
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-06-10/advanced-vue-router-fade-transition-with-height.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-06-10/advanced-vue-router-fade-transition-with-height.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Advanced fade transition (with height) between pages</small>
@@ -152,7 +152,7 @@ So far so good, the combination of transitioning the opacity and the height of t
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-06-10/vue-router-slide-transition.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-06-10/vue-router-slide-transition.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Slide transition between pages</small>
@@ -284,7 +284,7 @@ Ok, those sliding transitions are already pretty fancy but we can still make an 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-06-10/vue-router-zoom-transition.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-06-10/vue-router-zoom-transition.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Zoom transition between pages</small>

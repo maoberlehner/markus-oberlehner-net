@@ -14,7 +14,7 @@ In todays article, we're going to take a look at a possible way of how to struct
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-02-04/vuex-store-api-model-mapping.mp4" autoplay loop muted></video>
+    <video data-src="/videos/2018-02-04/vuex-store-api-model-mapping.mp4" autoplay loop muted></video>
   </div>
   <p class="c-content__caption">
     <small>Form fields are mapped to a Vuex store which is mapped to an API request</small>

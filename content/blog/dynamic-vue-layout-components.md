@@ -140,7 +140,7 @@ Although, in terms of flexibility, this approach has everything we need, there i
 You can play around with the following demo application to see an example of this in action. Note that the username in the top right will be loaded again and again every time you navigate from one page to another.
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/mm2x15m8r9?module=%2Fsrc%2FApp.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/mm2x15m8r9?module=%2Fsrc%2FApp.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 **So static layout wrapper components are very powerful and flexible, but they also come with a cost.** Let's checkout if we can come up with an approach which has all the positive characteristics of static wrapper components but none of the negative ones.
@@ -213,7 +213,7 @@ At first glance, this might seem like a more complicated version of the static l
 Next you can see the same demo application as in the static layout wrapper example but now using a dynamic component to load the layout instead. **Note that other than in the first example, the name of the currently logged in user in the top right, is not fetched again and again on every route change because only the router view is re-rendered.**
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/184177316l?module=%2Fsrc%2FApp.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/184177316l?module=%2Fsrc%2FApp.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 ### Building a renderless dynamic layout component

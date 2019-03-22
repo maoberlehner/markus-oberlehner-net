@@ -14,7 +14,7 @@ Although I already know about the possible solutions, because all three of those
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-06-03/transition-to-height-auto-with-vue.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-06-03/transition-to-height-auto-with-vue.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Transition the height of an element from 0 to auto</small>

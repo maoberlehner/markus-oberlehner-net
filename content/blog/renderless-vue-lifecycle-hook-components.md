@@ -142,7 +142,7 @@ export default {
 I think this simple example already demonstrates very well how powerful this pattern can be. **We can reuse existing Frame Components throughout our application to integrate something like pagination functionality without even writing a single line of custom JavaScript code** (not counting the function call).
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/1y2r3q4j93?module=%2Fsrc%2Fviews%2FHome.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/1y2r3q4j93?module=%2Fsrc%2Fviews%2FHome.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 <div class="c-content__broad">

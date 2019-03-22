@@ -27,7 +27,6 @@ After playing around and noticing that you can change the color of the select el
 After coming up with a simple JavaScript powered solution my “somehow this has to work without JavaScript” sense tingled again. After some research I found out I could use native browser form validation with the `required` attribute and the `:invalid` pseudo class to achieve the effect I was looking for.
 
 <p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### Avoiding JavaScript at all costs
 The problem with this solution is, that it only works for required form fields. **To circumvent the need for JavaScript we can avoid using a placeholder in optional select fields altogether by providing a neutral default option** like you can see with the second select field in the CodePen above.

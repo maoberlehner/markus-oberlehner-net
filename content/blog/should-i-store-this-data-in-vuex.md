@@ -112,7 +112,13 @@ In order to make it easier to make a decision wether to store data in a centrali
 
 <div class="c-content__figure">
   <a class="c-content__broad" href="/images/2018-05-27/should-i-store-this-data-in-vuex-flow-chart.png">
-    <img srcset="/images/2018-05-27/should-i-store-this-data-in-vuex-flow-charts-small.png 2x" alt="Flow chart to answer the question: Should I Store This Data in Vuex?">
+    <img data-srcset="/images/2018-05-27/should-i-store-this-data-in-vuex-flow-charts-small.png 2x" alt="Flow chart to answer the question: Should I Store This Data in Vuex?">
+    <noscript>
+      <img
+        src="/images/2018-05-27/should-i-store-this-data-in-vuex-flow-charts-small.png"
+        alt="Flow chart to answer the question: Should I Store This Data in Vuex?"
+      >
+    </noscript>
   </a>
   <p class="c-content__caption">
     <small>The “Should I Store This Data in Vuex?” flow chart</small>
