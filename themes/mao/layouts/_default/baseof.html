@@ -51,39 +51,7 @@
         navigator.serviceWorker.register('/sw.js');
       }
 
-      let link;
-      const links = document.links;
-      const gitHubUrl = 'https://github.com/maoberlehner/';
-      const netlifyUrl = '.netlify.com';
-      for (let i = 0, linksLength = links.length; i < linksLength; i++) {
-        link = links[i]
-        // Temporary make all external links `target="_blank"`
-        // to checkout if bounce rate is getting better.
-        if (link.hostname != window.location.hostname) {
-          link.target = '_blank';
-        }
-
-        // Attach Google Analytics events.
-        if (!link.attributes['data-event-category']) {
-          const isGitHubProject = link.attributes.href.value.indexOf(gitHubUrl) === 0;
-          const isDemoLink = link.attributes.href.value.includes(netlifyUrl);
-
-          if (isGitHubProject) {
-            link.setAttribute('data-event-category', 'link');
-            link.setAttribute('data-event-action', 'click: project');
-            link.setAttribute('data-event-label', `${link.attributes.href.value.replace(gitHubUrl, '')} (article content)`);
-          }
-
-          if (isDemoLink) {
-            let demoTitle = link.attributes.href.value
-              .replace('https://', '')
-              .replace(new RegExp(`${netlifyUrl}\/?`), '');
-            link.setAttribute('data-event-category', 'link');
-            link.setAttribute('data-event-action', 'click: demo');
-            link.setAttribute('data-event-label', demoTitle);
-          }
-        }
-      }
+      var link;"serviceWorker"in navigator&&navigator.serviceWorker.register("/sw.js");for(var links=document.links,gitHubUrl="https://github.com/maoberlehner/",netlifyUrl=".netlify.com",i=0,linksLength=links.length;i<linksLength;i++)if((link=links[i]).hostname!=window.location.hostname&&(link.target="_blank"),!link.attributes["data-event-category"]){var isGitHubProject=0===link.attributes.href.value.indexOf(gitHubUrl),isDemoLink=link.attributes.href.value.includes(netlifyUrl);if(isGitHubProject&&(link.setAttribute("data-event-category","link"),link.setAttribute("data-event-action","click: project"),link.setAttribute("data-event-label",`${link.attributes.href.value.replace(gitHubUrl,"")} (article content)`)),isDemoLink){var demoTitle=link.attributes.href.value.replace("https://","").replace(new RegExp(`${netlifyUrl}/?`),"");link.setAttribute("data-event-category","link"),link.setAttribute("data-event-action","click: demo"),link.setAttribute("data-event-label",demoTitle)}}
 
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-57407594-3','auto');ga('send','pageview');
