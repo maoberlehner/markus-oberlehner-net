@@ -18,10 +18,16 @@ Although those are great projects and especially the developer experience is ama
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency 2x"
-        alt="High Estimated Input Latency result for Gatsby.js"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency 2x"
+        alt="High Estimated Input Latency result for Gatsby.js."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
+          alt="High Estimated Input Latency result for Gatsby.js."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -33,10 +39,16 @@ Although those are great projects and especially the developer experience is ama
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency 2x"
-        alt="High Estimated Input Latency result for VuePress"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency 2x"
+        alt="High Estimated Input Latency result for VuePress."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
+          alt="High Estimated Input Latency result for VuePress."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
