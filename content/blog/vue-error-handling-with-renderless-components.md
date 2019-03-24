@@ -121,6 +121,17 @@ export default {
 
 Above you can see an example of how we can use the generic `FrameError` renderless component to trigger some action like showing a snackbar containing the error message.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about building advanced Vue.js applications?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Making a snackbar error capturing component
 
 Let's take the code from above and create a more specific and easily reusable `CaptureErrorSnackbar` component.
@@ -170,6 +181,20 @@ As you can see above we replaced the direct usage of the child component `<Error
 
 <div class="c-content__broad">
   <iframe data-src="https://codesandbox.io/embed/1889llp297?fontsize=14&module=%2Fsrc%2FApp.vue" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</div>
+
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
 </div>
 
 ## Wrapping it up
