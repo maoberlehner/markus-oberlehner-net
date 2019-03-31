@@ -34,7 +34,7 @@
     "clean-css": "^4.2.1",
     "concurrently": "^4.1.0",
     "declassify": "^2.1.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-plugin-import": "^2.16.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
