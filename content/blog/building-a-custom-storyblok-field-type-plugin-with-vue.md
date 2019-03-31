@@ -16,10 +16,16 @@ In my recent article I wrote about [how to build a simple website with Storyblok
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-15/augmented-image-final-result">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/augmented-image-final-result"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/augmented-image-final-result 2x"
-        alt="Screenshot of the data provided by our plugin in action"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/augmented-image-final-result"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/augmented-image-final-result 2x"
+        alt="Screenshot of the data provided by our plugin in action."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/augmented-image-final-result"
+          alt="Screenshot of the data provided by our plugin in action."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -37,10 +43,16 @@ Before we start building our image augmentation plugin, let's take a look at the
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-15/storyblok-plugin-editor">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-plugin-editor"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-plugin-editor 2x"
-        alt="Screenshot of the Storyblok plugin editor UI"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-plugin-editor"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-plugin-editor 2x"
+        alt="Screenshot of the Storyblok plugin editor UI."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-plugin-editor"
+          alt="Screenshot of the Storyblok plugin editor UI."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -100,10 +112,16 @@ Now that we've learned the very basics, let's move on with building a more advan
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor 2x"
-        alt="Screenshot of the augmented image editor field in Storyblok"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor 2x"
+        alt="Screenshot of the augmented image editor field in Storyblok."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
+          alt="Screenshot of the augmented image editor field in Storyblok."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -578,10 +596,16 @@ We now listen for a `remove` event on the `ImageDetail` component and call the `
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor 2x"
-        alt="Screenshot of the augmented image editor field in Storyblok"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor 2x"
+        alt="Screenshot of the augmented image editor field in Storyblok."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-editor"
+          alt="Screenshot of the augmented image editor field in Storyblok."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -599,10 +623,16 @@ Now that our plugin is ready, if you followed the [official guide for setting up
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-07-15/storyblok-augmented-image-options">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-options"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-options 2x"
-        alt="Screenshot of the augmented image schema settings"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-options"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-07-15/storyblok-augmented-image-options 2x"
+        alt="Screenshot of the augmented image schema settings."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-07-15/storyblok-augmented-image-options"
+          alt="Screenshot of the augmented image schema settings."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
