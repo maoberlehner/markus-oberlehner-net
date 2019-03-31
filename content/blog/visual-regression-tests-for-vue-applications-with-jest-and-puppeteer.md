@@ -224,6 +224,10 @@ Now, as soon as you make some changes, you can run the Visual Regression Tests a
 
 Visual Regression tests can be a great way of detecting unexpected Visual Regressions. But they also take quite long to execute. The longer your test suite runs the less useful it is. Keep that in mind when implementing Visual Regression Tests.
 
+## Follow-up
+
+If you have troubles with failing tests due to rendering inconsistencies between different operating systems, you can read my article about [how to run Visual Integration Tests with Docker](/blog/using-docker-to-run-visual-regression-tests-with-jest-and-puppeteer).
+
 ## References
 
 - [Andres Escobar, Smile for the Camera: Using Mocks for Reliable Image Snapshots](https://americanexpress.io/smile-for-the-camera/)
