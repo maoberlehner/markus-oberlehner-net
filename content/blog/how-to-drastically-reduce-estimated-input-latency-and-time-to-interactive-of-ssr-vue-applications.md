@@ -17,10 +17,16 @@ Nuxt.js and other frameworks promise to help with the initial page load dilemma 
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/high-estimated-input-latency">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/high-estimated-input-latency"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/high-estimated-input-latency 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/high-estimated-input-latency"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/high-estimated-input-latency 2x"
         alt="High values for Time to Interactive and Estimated Input Latency."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/high-estimated-input-latency"
+          alt="High values for Time to Interactive and Estimated Input Latency."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -217,10 +223,16 @@ I’ve built a little demo application to do some benchmarks. There are two vers
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark 2x"
         alt="The baseline Lighthouse benchmark result showing high value for Estimated Input Latency."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/no-lazy-hydration-demo-benchmark"
+          alt="The baseline Lighthouse benchmark result showing high value for Estimated Input Latency."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -232,10 +244,16 @@ I’ve built a little demo application to do some benchmarks. There are two vers
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark 2x"
         alt="The improved Lighthouse benchmark result showing lower values for Estimated Input Latency and Time to Interactive."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark"
+          alt="The improved Lighthouse benchmark result showing lower values for Estimated Input Latency and Time to Interactive."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
