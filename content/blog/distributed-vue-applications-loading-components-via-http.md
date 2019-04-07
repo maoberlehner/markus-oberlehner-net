@@ -2,7 +2,7 @@
 date = "2019-04-07T07:34:34+02:00"
 title = "Distributed Vue.js Applications Part 1: Loading Components via HTTP"
 description = "Learn how to load external Vue.js components via HTTP and how to generate standalone component libraries with Vue CLI."
-intro = "Today we'll explore how we can use Docker to run our tests in a standardized environment in order to prevent false positives because of differences between operating systems..."
+intro = "Imagine the following scenario: We have a central content distribution server responsible for pushing new content (think of news articles for example) to a variety of Vue.js-based client applications. But we not only want to push new content but also describe the shape of the content via Vue.js components..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
