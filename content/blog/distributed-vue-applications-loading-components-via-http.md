@@ -90,6 +90,17 @@ We can start our server by running `node server/index.js`. Now you should be abl
 
 **Keep in mind that express is usually not the best fit to serve static files at scale.** In a production environment you’ll most likely reach for something like Nginx or [use a reverse proxy for express](https://expressjs.com/en/advanced/best-practice-performance.html#use-a-reverse-proxy).
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Loading Vue.js components over HTTP
 
 Usually, if we want to dynamically load a Vue.js component, we use a dynamic import.
@@ -147,6 +158,20 @@ export default {
 ```
 
 If you now serve the Vue.js application you should be able to see that the external `MyComponent` is rendering correctly.
+
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
 
 ## Wrapping it up
 
