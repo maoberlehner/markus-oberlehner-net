@@ -106,6 +106,17 @@ In the simplified pseudo example above, you can see a `AppDeleteButton` componen
 
 I've also written an [article about how to implement a modal component using Vuex](https://markus.oberlehner.net/blog/building-a-modal-dialog-with-vue-and-vuex/) if you're interested in the opposite approach.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## The “Should I Store This Data in Vuex?” flow chart
 
 In order to make it easier to make a decision wether to store data in a centralized Vuex store or not, I made a flow chart to help with that.

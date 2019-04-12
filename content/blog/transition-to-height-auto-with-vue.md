@@ -227,6 +227,17 @@ In the CSS code snippet above, you can see how you can override certain style pr
 </div>
 <hr class="c-hr">
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Making the component a functional component
 
 As a little bonus, let's take a look at how we can transform our regular component into a functional component. Functional components are basically what functions are to classes in “regular” JavaScript (although Vue.js is basically regular JavaScript so you can think about regular components as Objects or Classes and functional components as Functions).

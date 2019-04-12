@@ -146,6 +146,17 @@ After the entrance transition of the new page has finished, the `afterEnter()` m
 
 In order to animate the change of the height, we have to add the `height` to the list of transition properties. Also we have to add `overflow: hidden` to make sure the height of the page is actually cut off and not visible until it has transitioned to its final height.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Slide transition
 
 So far so good, the combination of transitioning the opacity and the height of the pages, already looks pretty decent. But we still can do better and make an even more fancy page transition: **we can use a sliding effect to transition between pages**.
