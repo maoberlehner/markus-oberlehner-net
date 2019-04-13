@@ -73,7 +73,7 @@ npm install express
 const express = require('express');
 const path = require('path');
 
-const STATIC_PORT = 8200;
+const PORT = 8200;
 
 const app = express();
 
@@ -81,9 +81,9 @@ app.use(express.static(path.resolve(__dirname, 'components'), {
   maxAge: '365d',
 }));
 
-app.listen(STATIC_PORT);
+app.listen(PORT);
 
-console.log(`Listening on: http://localhost:${STATIC_PORT}`);
+console.log(`Listening on: http://localhost:${PORT}`);
 ```
 
 We can start our server by running `node server/index.js`. Now you should be able to open the following URL in your browser to see the compiled source code of our component: [http://localhost:8200/.../MyComponent.c9c0abb8e999d0e5654e.umd.min.js](http://localhost:8200/MyComponent/MyComponent.c9c0abb8e999d0e5654e.umd.min.js).
