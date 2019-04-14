@@ -16,7 +16,7 @@ In the following article I'll show you a basic approach for mocking XHR requests
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <video src="/videos/2018-03-18/nightwatch-mock-timers.mp4" autoplay muted loop></video>
+    <video data-src="/videos/2018-03-18/nightwatch-mock-timers.mp4" autoplay muted loop></video>
   </div>
   <p class="c-content__caption">
     <small>Slow motion video of a Nightwatch.js test run with time traveling and network stubs</small>

@@ -17,7 +17,7 @@ In my previous article about [Advanced Component Composition](/blog/advanced-vue
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,c_scale,h_720/v1532157367/blog/2019-02-24/acceptance-tests"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,c_scale,h_720/v1532157367/blog/2019-02-24/acceptance-tests"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2019-02-24/acceptance-tests"
       muted
       controls

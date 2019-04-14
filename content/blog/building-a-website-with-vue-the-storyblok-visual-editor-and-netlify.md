@@ -792,7 +792,7 @@ In the following video you can see the Visual Editor in action.
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-22/storyblok-visual-editor-video.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0//v1532157367/blog/2018-07-22/storyblok-visual-editor-video"
       controls
       muted

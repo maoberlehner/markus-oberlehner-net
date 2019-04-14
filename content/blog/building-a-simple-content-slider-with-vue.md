@@ -254,7 +254,7 @@ export default {
 
 <div class="c-content__figure">
   <video
-    src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/simple-content-slider.mp4"
+    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/simple-content-slider.mp4"
     poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-11-11/simple-content-slider"
     controls
     muted
@@ -391,7 +391,7 @@ As you can see above, the basic structure of our tabbed content section is not s
 
 <div class="c-content__figure">
   <video
-    src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/tabbed-content.mp4"
+    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/tabbed-content.mp4"
     poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-11-11/tabbed-content"
     controls
     muted
@@ -594,7 +594,7 @@ After setting up the `ImageSlider` component, we're able to use it in our `App` 
 
 <div class="c-content__figure">
   <video
-    src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/image-slider-component.mp4"
+    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-11-11/image-slider-component.mp4"
     poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-11-11/image-slider-component"
     controls
     muted

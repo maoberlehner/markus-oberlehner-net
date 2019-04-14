@@ -36,7 +36,7 @@ It's pretty common practice nowadays to use lazy loading techniques to delay the
 
 <div class="c-content__figure">
   <video
-    src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157368/blog/2018-12-30/lazy-loading-components.mp4"
+    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157368/blog/2018-12-30/lazy-loading-components.mp4"
     poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157368/blog/2018-12-30/lazy-loading-components"
     muted
     autoplay

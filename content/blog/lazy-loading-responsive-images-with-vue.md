@@ -175,7 +175,7 @@ There are multiple ways of how to use the component. If you're ok with the image
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-popping-up.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-popping-up.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-07-29/lazy-load-popping-up"
       controls
       muted
@@ -200,7 +200,7 @@ You can optimize this a little bit, by adding the dimensions of the image. By pr
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-gray-rectangle.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-gray-rectangle.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-07-29/lazy-load-gray-rectangle"
       controls
       muted
@@ -228,7 +228,7 @@ To further improve the perceived performance, [you can extract the most dominant
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-dominant-color.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-dominant-color.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-07-29/lazy-load-dominant-color"
       controls
       muted
@@ -256,7 +256,7 @@ Another route you can go, is to use a low fi blurry version of the image as a pl
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-low-fi.mp4"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1532157367/blog/2018-07-29/lazy-load-low-fi.mp4"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-07-29/lazy-load-low-fi"
       controls
       muted

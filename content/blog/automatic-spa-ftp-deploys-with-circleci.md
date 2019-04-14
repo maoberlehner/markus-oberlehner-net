@@ -23,7 +23,7 @@ One of the hardest problems to solve, when deploying a new version of a single p
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,c_scale,h_720/v1532157367/blog/2018-08-12/chunk-loading-error"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,c_scale,h_720/v1532157367/blog/2018-08-12/chunk-loading-error"
       poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1532157367/blog/2018-08-12/chunk-loading-error"
       controls
       muted

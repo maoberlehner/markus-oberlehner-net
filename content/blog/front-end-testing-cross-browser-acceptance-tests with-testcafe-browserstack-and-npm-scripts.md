@@ -146,7 +146,7 @@ As you can see in the example above I have replaced `chrome,firefox` with the Br
 
 While your tests are running you can watch their status in the [BrowserStack Automate dashboard](https://www.browserstack.com/automate). And after the tests are finished you can watch a video of your test.
 
-<video src="/videos/2017-09-04/perfundo-testcafe-browserstack-video.mp4" poster="/videos/2017-09-04/perfundo-testcafe-browserstack-video.jpg" controls></video>
+<video data-src="/videos/2017-09-04/perfundo-testcafe-browserstack-video.mp4" poster="/videos/2017-09-04/perfundo-testcafe-browserstack-video.jpg" controls></video>
 
 ### Re-configure Travis CI for BrowserStack cross browser testing
 If you want to test only in BrowserStack browsers, you can cleanup your `.travis.yml` configuration file.
