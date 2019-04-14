@@ -180,7 +180,7 @@ If you now serve the Vue.js application you should be able to see that the exter
 
 ## Wrapping it up
 
-In this first part of this article series we have laid the foundation for more exciting things to come. In the next article of this series **we'll upgrade our content distribution server to dynamically push new versions of components and also content to the client side application.** [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article. Stay tuned!
+In this first part of this article series we have laid the foundation for more exciting things to come. In [the next article of this series](/blog/distributed-vue-applications-pushing-content-and-component-updates-to-the-client/) **we'll upgrade our content distribution server to dynamically push new versions of components and also content to the client side application.**
 
 ## References
 
