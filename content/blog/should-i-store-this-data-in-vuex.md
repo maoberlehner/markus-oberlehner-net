@@ -155,3 +155,7 @@ In order to make it easier to make a decision wether to store data in a centrali
 Keep in mind that there is no one size fits all way of how to do things in software development. Everything is situational and although some of the techniques described in this article work great in certain situations, they might not be right for your specific use case.
 
 Be open minded about new (and old) ways of doing things and don't be scared to try out something – if it turns out using some way of sharing state across your app wasn't the right thing to do, at least you've learned how not to do it and there is always the possibility to refactor your code.
+
+## Coffee time ☕️
+
+If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!

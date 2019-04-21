@@ -315,3 +315,7 @@ Now, if a user clicks on a marker, we simply zoom closer. Admittedly not too exi
 ## Wrapping it up
 
 Integrating the Google Maps API into a Vue.js application is pretty straight forward. One concern though using it, is the dependence on Google. Sadly currently, for most projects where some kind of map is needed, there is no way around Google Maps so far (although OpenStreetMaps can be a valid alternative in certain cases). On the other hand, Google Maps is a really powerful tool and it’s still free if you don’t have a lot of traffic.
+
+## Coffee time ☕️
+
+If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!

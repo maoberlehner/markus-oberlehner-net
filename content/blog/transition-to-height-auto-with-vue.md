@@ -352,3 +352,7 @@ As a little bonus, let's take a look at how we can transform our regular compone
 ## Conclusion
 
 Thanks to the awesomeness of the Vue.js core `<transition>` component, making powerful custom transition components is very easy to do. By applying some JavaScript magic, it's even possible to solve the age-old problem of transitioning from `height: 0` to `height: auto` and thanks to the concept of components, we're able to reuse this logic anywhere in our application without having to know anything about the implementation.
+
+## Coffee time ☕️
+
+If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!

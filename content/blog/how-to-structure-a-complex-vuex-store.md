@@ -443,3 +443,7 @@ Designing our store structure in a way which makes certain modules reusable, can
 ## Closing remarks
 
 Admittedly, the approach we've looked at in this article, is designed to solve a very specific use case. You might have to adapt certain aspects of it to your own needs. But I hope this article will serve as an inspiration for a powerful solution which fits your specific use case.
+
+## Coffee time ☕️
+
+If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!
