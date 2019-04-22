@@ -55,7 +55,7 @@ import { login } from '../services/user';
 export default {
   // ...
   methods: {
-    await login() {
+    async login() {
       this.success = await login();
     }
   },
