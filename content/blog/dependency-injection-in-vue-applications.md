@@ -39,6 +39,7 @@ In this article, **we take a look at what patterns exist in Vue.js applications 
 Let's start with the first method of how we can “inject” functionality into a Vue.js component: module imports. Although one might argue that this is the complete opposite of dependency injection, I go with the literal sense of the words. Even if you don't agree with me calling this a form of dependency injection, I think it's still worth taking a closer look at what the pros and cons of this practice are.
 
 ```html
+<!-- components/LoginButton.vue -->
 <template>
   <button
     class="LoginButton"
@@ -67,6 +68,7 @@ export default {
 There are a few things that are wrong with this example above. First of all the name: `LoginButton`. We could make it much more reusable by calling it `SubmitButton` instead. **The main problem, however, is the tight coupling with the `login()` method of the user service. By decoupling this component from this hard-coded dependency, we can make it much more useful.**
 
 ```html
+<!-- components/LoginForm.vue -->
 <template>
   <div class="LoginForm">
     <BaseInput/>
@@ -89,6 +91,7 @@ import BaseButton from './BaseButton.vue';
 In the above example we also use imports but this time we use it to import [base components](https://vuejs.org/v2/style-guide/#Base-component-names-strongly-recommended) which are the basic building blocks of our application. Think of them as HTML elements on steroids. You might even consider to [globally register](https://vuejs.org/v2/guide/components-registration.html#Automatic-Global-Registration-of-Base-Components) such components (although I'm personally not a fan of this practice).
 
 ```html
+<!-- components/UserFormContainer.vue -->
 <template>
   <UserForm @submit="login"/>
 </template>
@@ -120,6 +123,7 @@ Here you can see a [container component](/blog/advanced-vue-component-compositio
 Although it is usually not called this way, slots in Vue.js are actually an implementation of the IoC pattern. Let's take a look at the following two code examples to see what I mean.
 
 ```html
+<!-- components/ProductListing.vue -->
 <template>
   <div class="ProductListing">
     <ProductListingFilter/>
@@ -155,6 +159,7 @@ export default {
 **In the this example, the `ProductListing` component itself fetches the data it needs. This means it's tightly coupled to the product service.** In the following example we use the container component pattern to solve this.
 
 ```html
+<!-- components/ProductListingContainer.vue -->
 <template>
   <ListingLayout>
     <NavFilter
@@ -241,6 +246,7 @@ export default (Vue) => {
 Above you can see the recommended way of how to globally register a variable with a plugin. You might consider to bind `$userService` directly to `Vue.prototype.$userService` but this has the downside that you bind it to every instance of `Vue` which, depending on the situation, might or might not be what you want. Next you can see how to use the now globally available `$userService`.
 
 ```html
+<!-- components/UserFormContainer.vue -->
 <template>
   <UserForm @submit="login"/>
 </template>
@@ -280,6 +286,7 @@ I feel [provide / inject](https://vuejs.org/v2/api/#provide-inject) has kind of 
 But the way we want to use provide / inject, we don't care about reactivity at all: we want to inject dependencies, like the product service we've seen earlier, to child components.
 
 ```html
+<!-- components/ListingContainer.vue -->
 <template>
   <ListingLayout>
     <NavFilter
@@ -323,6 +330,7 @@ export default {
 Above you can see the `ListingContainer` component which is a generic version of the `ProductListingContainer` from an earlier example. **By injecting the `fetch()` method we can reuse the component for every content type we like.**
 
 ```html
+<!-- components/ProductListingProvider.vue -->
 <template>
   <ListingContainer/>
 </template>
