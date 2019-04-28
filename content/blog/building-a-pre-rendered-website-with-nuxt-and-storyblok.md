@@ -15,7 +15,13 @@ In recent weeks I played around with a ton of headless content management system
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/contentful-create-homepage-content-orig.png">
-      <img src="/images/2018-07-08/contentful-create-homepage-content.png" srcset="/images/2018-07-08/contentful-create-homepage-content-2x.png 2x" alt="Screenshot of the Contentful user interface">
+      <img data-src="/images/2018-07-08/contentful-create-homepage-content.png" data-srcset="/images/2018-07-08/contentful-create-homepage-content-2x.png 2x" alt="The Contentful user interface.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/contentful-create-homepage-content.png"
+          alt="The Contentful user interface."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -34,7 +40,13 @@ One problem with a lot of the headless CMS platforms out there is a lack of flex
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-edit-plugin-orig.png">
-      <img src="/images/2018-07-08/storyblok-edit-plugin.png" srcset="/images/2018-07-08/storyblok-edit-plugin-2x.png 2x" alt="Screenshot of the Storyblok plugin editor">
+      <img data-src="/images/2018-07-08/storyblok-edit-plugin.png" data-srcset="/images/2018-07-08/storyblok-edit-plugin-2x.png 2x" alt="The Storyblok plugin editor.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-edit-plugin.png"
+          alt="The Storyblok plugin editor."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -63,7 +75,13 @@ First we create a new component with the name `landing_page` and we configure it
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-landing-page-component-orig.png">
-      <img src="/images/2018-07-08/storyblok-landing-page-component.png" srcset="/images/2018-07-08/storyblok-landing-page-component-2x.png 2x" alt="Screenshot of the Storyblok Components interface">
+      <img data-src="/images/2018-07-08/storyblok-landing-page-component.png" data-srcset="/images/2018-07-08/storyblok-landing-page-component-2x.png 2x" alt="The Storyblok Components interface.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-landing-page-component.png"
+          alt="The Storyblok Components interface."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -76,7 +94,13 @@ Next we can start to add “Schemas” (or fields) to our landing page component
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-add-title-schema-orig.png">
-      <img src="/images/2018-07-08/storyblok-add-title-schema.png" srcset="/images/2018-07-08/storyblok-add-title-schema-2x.png 2x" alt="Screenshot of adding fields in Storyblok">
+      <img data-src="/images/2018-07-08/storyblok-add-title-schema.png" data-srcset="/images/2018-07-08/storyblok-add-title-schema-2x.png 2x" alt="Adding fields in Storyblok.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-add-title-schema.png"
+          alt="Adding fields in Storyblok."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -91,7 +115,13 @@ Our landing page should not only consist of a title and an intro text but also o
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/nuxt-landing-page-final-result-orig.png">
-      <img src="/images/2018-07-08/nuxt-landing-page-final-result.png" srcset="/images/2018-07-08/nuxt-landing-page-final-result-2x.png 2x" alt="Screenshot of the final result">
+      <img data-src="/images/2018-07-08/nuxt-landing-page-final-result.png" data-srcset="/images/2018-07-08/nuxt-landing-page-final-result-2x.png 2x" alt="The final result.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/nuxt-landing-page-final-result.png"
+          alt="The final result."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-3.5em;">
@@ -108,7 +138,13 @@ To achieve the image + text layout, we create a new “Media Block” component.
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-media-block-component-orig.png">
-      <img src="/images/2018-07-08/storyblok-media-block-component.png" srcset="/images/2018-07-08/storyblok-media-block-component-2x.png 2x" alt="Screenshot of the Media Block component editor">
+      <img data-src="/images/2018-07-08/storyblok-media-block-component.png" data-srcset="/images/2018-07-08/storyblok-media-block-component-2x.png 2x" alt="The Media Block component editor.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-media-block-component.png"
+          alt="The Media Block component editor."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -123,7 +159,13 @@ The Teaser component is pretty similar to the Media Block component but instead 
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-teaser-component-orig.png">
-      <img src="/images/2018-07-08/storyblok-teaser-component.png" srcset="/images/2018-07-08/storyblok-teaser-component-2x.png 2x" alt="Screenshot of the Teaser component editor">
+      <img data-src="/images/2018-07-08/storyblok-teaser-component.png" data-srcset="/images/2018-07-08/storyblok-teaser-component-2x.png 2x" alt="The Teaser component editor.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-teaser-component.png"
+          alt="The Teaser component editor."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -138,7 +180,13 @@ Now we can integrate our new Media Block and Teaser components into the Landing 
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblock-media-blocks-schema-orig.png">
-      <img src="/images/2018-07-08/storyblock-media-blocks-schema.png" srcset="/images/2018-07-08/storyblock-media-blocks-schema-2x.png 2x" alt="Screenshot of adding a “Blocks“ field schema">
+      <img data-src="/images/2018-07-08/storyblock-media-blocks-schema.png" data-srcset="/images/2018-07-08/storyblock-media-blocks-schema-2x.png 2x" alt="Adding a “Blocks“ field schema.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblock-media-blocks-schema.png"
+          alt="Adding a “Blocks“ field schema."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -155,7 +203,13 @@ Lastly we add two new content entries of the type `landing_page` in the Storyblo
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/storyblok-new-landingpage-orig.png">
-      <img src="/images/2018-07-08/storyblok-new-landingpage.png" srcset="/images/2018-07-08/storyblok-new-landingpage-2x.png 2x" alt="Screenshot of the Storyblok content editor">
+      <img data-src="/images/2018-07-08/storyblok-new-landingpage.png" data-srcset="/images/2018-07-08/storyblok-new-landingpage-2x.png 2x" alt="The Storyblok content editor.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/storyblok-new-landingpage.png"
+          alt="The Storyblok content editor."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -300,7 +354,13 @@ Above you can see the code of the homepage file `pages/index.vue`.
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/nuxt-landing-page-title-intro-orig.png">
-      <img src="/images/2018-07-08/nuxt-landing-page-title-intro.png" srcset="/images/2018-07-08/nuxt-landing-page-title-intro-2x.png 2x" alt="Screenshot of a landing page with a title and an intro text">
+      <img data-src="/images/2018-07-08/nuxt-landing-page-title-intro.png" data-srcset="/images/2018-07-08/nuxt-landing-page-title-intro-2x.png 2x" alt="Landing page with a title and an intro text.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/nuxt-landing-page-title-intro.png"
+          alt="Landing page with a title and an intro text."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -433,7 +493,13 @@ Above you can see the changes necessary to render all of the data we're fetching
 <div class="c-content__figure">
   <div class="c-content__broad">
     <a href="/images/2018-07-08/nuxt-landing-page-final-result-orig.png">
-      <img src="/images/2018-07-08/nuxt-landing-page-final-result.png" srcset="/images/2018-07-08/nuxt-landing-page-final-result-2x.png 2x" alt="Screenshot of the final result">
+      <img data-src="/images/2018-07-08/nuxt-landing-page-final-result.png" data-srcset="/images/2018-07-08/nuxt-landing-page-final-result-2x.png 2x" alt="The final result.">
+      <noscript>
+        <img
+          src="/images/2018-07-08/nuxt-landing-page-final-result.png"
+          alt="The final result."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-3.5em;">
