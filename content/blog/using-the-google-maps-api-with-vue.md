@@ -218,6 +218,21 @@ In the two code snippets above you can see that we've added an array of location
   </p>
 </div>
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you enjoy this article?</h2>
+    <p class="c-service-info__body">
+      You can buy me a ☕️ on Ko-fi!<br>
+      <div style="margin-top: 0.75em;">
+        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script> 
+      </div>
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Cluster markers
 
 When previously our map was too empty, now it is definitely too crowded – at least in the area of Vienna. But we can use the `@google/markerclusterer` library to merge markers which are very close to each other.
