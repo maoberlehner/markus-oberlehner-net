@@ -5,7 +5,6 @@ description = "Using abbreviations for naming variables and functions leads to h
 intro = "For a recent project I had to work a lot with express (Node.js framework). In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic."
 draft = false
 categories = ["Development"]
-tags = ["Coding Style"]
 +++
 
 For a recent project I had to work a lot with the express Node.js framework. In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic.

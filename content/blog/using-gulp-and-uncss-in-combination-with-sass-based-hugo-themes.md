@@ -5,7 +5,7 @@ description = "Using UnCSS and Gulp to build Hugo themes which pass the PageSpee
 intro = "My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog wich loads almost instantly and scores highly in the Google PageSpeed Insights test..."
 draft = false
 categories = ["Development"]
-tags = ["Gulp", "npm scripts", "Hugo", "CSS", "Sass", "PageSpeed Insights"]
+tags = ["CSS Architecture", "Sass"]
 +++
 
 In one of my previous articles I wrote about [setting up a basic blog with Hugo](https://markus.oberlehner.net/blog/building-a-blog-with-the-static-website-generator-hugo/). My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog which loads almost instantly and scores highly in the Google PageSpeed Insights test.

@@ -5,7 +5,7 @@ description = "Learn how to publish your TypeScript code as npm package, how to 
 intro = "Recently I worked on a couple of npm packages which I built using TypeScript. In the process of figuring things out I encountered some challenges with publishing my code built with TypeScript to npm. In this article I'm going to show you how to setup your project to make publishing your TypeScript powered package to npm a pleasant experience..."
 draft = false
 categories = ["Development"]
-tags = ["npm", "TypeScript", "ES6"]
+tags = ["TypeScript"]
 +++
 
 Recently I worked on a couple of npm packages which I built using TypeScript. In the process of figuring things out I encountered some challenges with publishing my code built with TypeScript to npm. In this article I'm going to show you how to setup your project to make publishing your TypeScript powered package to npm a pleasant experience.

@@ -5,7 +5,7 @@ description = "CSS Grid and Flexbox are great tools for building layouts in CSS.
 intro = "With CSS Grid Layout around the corner and Flexbox being broadly supported, it seems that the importance of grid frameworks is declining. Some people even say that Flexbox made grid frameworks obsolete. I disagree..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "SCSS", "Grid", "avalanche"]
+tags = ["CSS Architecture", "Sass"]
 +++
 
 With [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) around the corner and Flexbox being broadly supported, it seems that the importance of grid frameworks is declining. Some people even say that Flexbox made grid frameworks obsolete. I disagree. As an advocate of OOCSS I'm a fan ob abstracting away complexity as much as possible. Flexbox made it easier to build grid layouts but it is still a good practice to use CSS classes whenever a repeating pattern needs a solution. Elements displayed side by side with a certain gutter around, is a pattern that you'll find many times on almost every website. Thats why in my opinion there is still no way around grid frameworks in the foreseeable future.

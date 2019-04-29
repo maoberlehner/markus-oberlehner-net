@@ -5,7 +5,7 @@ description = "Thoughts about building avalanche, a package based CSS framework.
 intro = "Up until a few years ago, most people didn't put much thought into „CSS architecture“ (I'm quite sure it wasn't even a thing). Around the year 2009 some sophisticated fronted folks (most notably Nicole Sullivan) started talking about concepts like OOCSS..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "SCSS", "CSS Architecture", "avalanche"]
+tags = ["CSS Architecture", "Sass"]
 +++
 
 Up until a few years ago, most people didn't put much thought into „CSS architecture“ (I'm quite sure it wasn't even a thing). Around the year 2009 some sophisticated fronted folks (most notably Nicole Sullivan) started talking about concepts like [OOCSS](http://de.slideshare.net/stubbornella/object-oriented-css).

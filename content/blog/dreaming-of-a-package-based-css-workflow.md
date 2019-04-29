@@ -5,7 +5,7 @@ description = "Learn more about building modular CSS architectures using third p
 intro = "CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language. But there are new challenges coming up in the fast moving web development world..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Sass", "avalanche", "Front-End Architecture", "Workflow"]
+tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
 +++
 
 CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language.

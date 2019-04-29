@@ -5,7 +5,6 @@ description = "Many people and especially many developers, are struggling with m
 intro = "Yesterday, an old friend of mine, with whom I had no contact for a long time, called me and told me that he is currently having a rough time mentally. I was surprised that he was able to talk very open about it. Usually, that is a topic we tend to keep to ourselves. Because of that experience and also encouraged by a great article written by Taylor Otwell about this very topic, I decided to share some of the things I did and still do, that helped me a lot when I was struggling with finding happiness in my life..."
 draft = false
 categories = ["Life"]
-tags = ["Mental Health"]
 +++
 
 Yesterday, an old friend of mine, with whom I had no contact for a long time, called me and told me that he is currently having a rough time mentally. I was surprised that he was able to talk very open about it. Usually, that is a topic we tend to keep to ourselves.

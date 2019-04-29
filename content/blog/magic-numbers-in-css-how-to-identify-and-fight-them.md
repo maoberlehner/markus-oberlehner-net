@@ -5,7 +5,7 @@ description = "Learn how to identify magic numbers in CSS design systems and abo
 intro = "Recently I started thinking about magic numbers. Until this point I haven't given much thought to what the term “magic number“ actually means in the context of CSS. I thought about it as basically all numbers in my CSS. The logical solution was to use variables for everything. But having read some articles on this topic and after further thinking about it, I realised that not every number in your CSS code is inevitably a magic one..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Sass", "Front-End Architecture"]
+tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-01-27/magic-numbers-twitter"]
 +++
 

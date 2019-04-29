@@ -5,7 +5,7 @@ description = "Prevent tightly coupled code in your acceptance tests, by specify
 intro = "Today we're going to look at the approach of using CSS selector namespaces to help us with detecting changes which have to be considered in the tests. Using separate selectors for testing also leads to a more stable way of structuring our code without tightly coupling our tests with the markup and CSS styles of the implementation..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Front-End Architecture", "Front-End testing", "TDD", "acceptance tests"]
+tags = ["CSS Architecture", "Front-End Architecture", "Front-End testing", "TDD"]
 +++
 
 For some weeks now, I'm experimenting with acceptance testing – you can read more about my journey in my article about [implementing cross browser acceptance tests with TestCafe](https://markus.oberlehner.net/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/). One problem often encountered when working with acceptance tests is, that the implementation and the tests get out of sync. For example: somebody changes the markup of a module which leads to a failing test.

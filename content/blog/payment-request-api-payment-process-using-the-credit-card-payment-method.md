@@ -5,7 +5,7 @@ description = "Learn how to implement the Payment Request API to collect credit 
 intro = "Thanks to the Payment Request API, accepting payments from your users now is a piece of cake. Albeit support from third party payment processors is still rather limited – Android Pay being one of the most notable – this will very likely change in the near future. Furthermore you don't necessarily need a third party payment provider to integrate directly into the Request Payment API, it is also possible to collect credit card data from the user via the Request Payment API and send them to your payment provider using it's own API..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Payment Request API"]
+tags = ["JavaScript"]
 +++
 
 This is the first part of a three part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In [the second article we're going to look at how to build a Payment Request API powered shopping cart](/blog/payment-request-api-building-a-shopping-cart/). Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.

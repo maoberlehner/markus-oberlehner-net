@@ -5,7 +5,7 @@ description = "Beeing addicted to consume informations is a huge waste of time a
 intro = "Being addicted to consume informations like constantly checking emails, glancing over your Facebook news feed or reading instant messages at the moment they arrive on your phone, is not only time consuming, it can make you inefficient at work. Even worse: studies have shown, that people who are spending a lot of time on Facebook and other social media platforms are often less happy with their life in general..."
 draft = false
 categories = ["Life"]
-tags = ["Addiction", "Social Media", "Time Management"]
+tags = ["Time Management"]
 +++
 
 If there is not enough time in your day to do all the things you wan't to do, naturally you'll start looking for opportunities to stop wasting time to have more time available for doing things which add real value to your life.

@@ -5,7 +5,7 @@ description = "Learn how to hide content based on the width of its container usi
 intro = "The more we think about websites as collections of separate components (or atoms, molecules and organisms, to use the terms of the popular Atomic Design methodology), the more clear it becomes, that Media Queries are not the best solution for building truly responsive websites and applications..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Flexbox", "Container Queries"]
+tags = ["CSS Architecture"]
 +++
 
 The more we think about websites as collections of separate components (or atoms, molecules and organisms, to use the terms of the popular Atomic Design methodology), the more clear it becomes, that Media Queries are not the best solution for building truly responsive websites and applications.

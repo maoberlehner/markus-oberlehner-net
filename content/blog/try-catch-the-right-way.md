@@ -5,7 +5,7 @@ description = "Learn how to use try...catch, when it might be a good idea to han
 intro = "Because of a recent bug hunting session where it took me a couple of hours to drill down several levels of npm dependencies in order to finally find a try...catch statement with the catch part being empty, I decided to write an article about this topic. Although, I have to admit, my first instinct was to be angry at the developer who did this..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Node.js"]
+tags = ["JavaScript"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158515/blog/2019-04-28/try-catch-the-right-way"]
 +++
 

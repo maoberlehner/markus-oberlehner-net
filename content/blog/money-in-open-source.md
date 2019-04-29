@@ -5,7 +5,6 @@ description = "In theory, open source seems like an egalitarian system where eve
 intro = "On last weeks Scriptconf, Evan You, the creator of Vue.js, spoke about his journey to full time open source. Although most of the things he was talking about do not apply to small open source projects and their contributors, I still found it interesting to gain some insights in the world of highly successful open source projects. But the one thing people seemed to talk about most after the talk, was how much money Evan makes on Patreon..."
 draft = false
 categories = ["Development"]
-tags = ["Open Source", "Money"]
 +++
 
 On last weeks [Scriptconf](https://scriptconf.org/speakers), Evan You, the creator of Vue.js, spoke about his journey to full time open source. Although most of the things he was talking about do not apply to small open source projects and their contributors, I still found it interesting to gain some insights in the world of highly successful open source projects.

@@ -5,7 +5,6 @@ description = "Almost every developer with some years of experience knows the pa
 intro = "Earlier today I read an interesting article speculating about the code quality at Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with...."
 draft = false
 categories = ["Development"]
-tags = ["Code Quality", "Coding Style", "Bad Code", "Refactoring"]
 +++
 
 Earlier today I read an [interesting article speculating about the code quality at Facebook](https://www.darkcoding.net/software/facebooks-code-quality-problem/). There is also a [Reddit thread](https://www.reddit.com/r/programming/comments/3r90iy/facebooks_code_quality_problem/) discussing the article with some insights from current and former Facebook employees.

@@ -5,7 +5,7 @@ description = "Learn how to add a placeholder to a select HTML tag and how you c
 intro = "Styling native HTML form fields – especially select fields – with CSS has always been a little tricky. Recently I was confronted with the task of creating a select field with a placeholder value so that the select field blends in nicely with other form fields on the page. The problem of custom styled select elements is a hard one..."
 draft = false
 categories = ["Development"]
-tags = ["Pure CSS", "CSS", "Forms"]
+tags = ["CSS Architecture"]
 +++
 
 Styling native HTML form fields – especially select fields – with CSS has always been a little tricky. Recently I was confronted with the task of creating a select field with a placeholder value so that the select field blends in nicely with other form fields on the page.

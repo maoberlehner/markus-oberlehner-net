@@ -5,7 +5,7 @@ description = "Rewriting the entirety of your codebase from scratch, is almost a
 intro = "A few months ago I started to learn more about TypeScript. It was refreshing and in the process I learned a lot about type based programming in general. So the natural urge of a programmer learning a new technique he or she enjoys hit me: I wanted to rewrite everything I've ever built using TypeScript..."
 draft = false
 categories = ["Development"]
-tags = ["Workflow", "TypeScript", "TDD"]
+tags = ["TDD", "TypeScript"]
 +++
 
 A few months ago I started to learn more about TypeScript. It was refreshing and in the process I learned a lot about type based programming in general.

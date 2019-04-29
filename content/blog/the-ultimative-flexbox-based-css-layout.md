@@ -5,7 +5,7 @@ description = "Learn how to build the ultimative Flexbox CSS layout using Sass. 
 intro = "Things are looking good on the CSS layout front. Flexbox can be used in all major browsers and CSS Grid Layout is almost at a point where browser support has reached a sweet spot – for some of us it might even be feasible to build production websites using CSS Grid Layout and some form of graceful fallback. Until the rest of us can also switch to CSS Grid Layout for good, we have to rely solely on Flexbox to serve all of our layout needs. But this is not a bad thing at all, Flexbox is pretty powerful by itself already..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "CSS Grid Layout", "Flexbox", "Grid"]
+tags = ["CSS Architecture"]
 +++
 
 Things are looking good on the CSS layout front. Flexbox can be used in all major browsers and CSS Grid Layout is almost at a point where browser support has reached a sweet spot – for some of us it might even be feasible to build production websites using CSS Grid Layout and some form of graceful fallback.

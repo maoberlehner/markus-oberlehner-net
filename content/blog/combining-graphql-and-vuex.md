@@ -5,7 +5,7 @@ description = "Learn how to combine GraphQL and Vuex for managing state in Vue a
 intro = "In todays article, we're going to take a look at how we can combine GraphQL and Vuex to manage the state of a Vue application. But first of all let me say that the way we're going to integrate the Apollo GraphQL client into our Vue application is not the “official” way of how to integrate GraphQL into a Vue powered application..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Vue", "Vuex", "GraphQL"]
+tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
 In todays article, we're going to take a look at how we can combine GraphQL and Vuex to manage the state of a Vue application. But first of all let me say that the way we're going to integrate the Apollo GraphQL client into our Vue application is not the “official” way of how to integrate GraphQL into a Vue powered application. The most standard way of using GraphQL with Vue would be the [vue-apollo](https://github.com/Akryum/vue-apollo) plugin.

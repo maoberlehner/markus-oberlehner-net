@@ -5,7 +5,7 @@ description = "Learn how to add taxes and discounts to Payment Request API power
 intro = "Today we're going to implement taxes and discounts into our Payment Request API powered checkout process. The code is based on the code we've produced in the previous steps..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Payment Request API"]
+tags = ["JavaScript"]
 +++
 
 In [the first part](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three part series about the Payment Request API, we explored how to implement a basic payment process using the new Payment Request API.

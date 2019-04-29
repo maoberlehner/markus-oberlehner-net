@@ -5,7 +5,7 @@ description = "A two tier variable system can help with keeping large scale CSS 
 intro = "One of the hardest challenges when working with CSS (or Sass) at scale, is to keep everything consistent and maintainable. Sass variables or CSS custom properties can be a very useful tool to help with consistency and flexibility. Although variables can make your life as a developer a lot easier, there are many considerations you have to keep in mind when defining variables for your CSS framework..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Sass", "Front-End Architecture"]
+tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
 +++
 
 One of the hardest challenges when working with CSS (or Sass) at scale, is to keep everything consistent and maintainable. Sass variables or CSS custom properties can be a very useful tool to help with consistency and flexibility. Although variables can make your life as a developer a lot easier, there are many considerations you have to keep in mind when defining variables for your CSS framework.

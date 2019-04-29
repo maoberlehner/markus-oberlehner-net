@@ -5,7 +5,7 @@ description = "Markus Oberlehner speaking at the We are Developers conference 20
 intro = "About a month ago I held my first talk at a major conference, the We are Developers conference 2017. I talked about Monorepos and how they can be used to manage huge codebases at an organizational level or smaller codebases like modular open source projects..."
 draft = false
 categories = ["Development"]
-tags = ["Talk", "Monorepo"]
+tags = ["Monorepo"]
 +++
 
 About a month ago I held my first talk at a major conference, the We are Developers conference 2017. I talked about Monorepos and how they can be used to manage huge codebases at an organizational level or smaller codebases like modular open source projects.

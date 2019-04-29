@@ -5,7 +5,7 @@ description = "Learn how to build a 12 column grid framework using CSS Grid Layo
 intro = "A framework is a tool to provide a solid fundament for building complex systems. By building your own CSS grid framework, we have a solid and - at least after some time - battle tested system to build on top on. After Flexbox we now have a second „official“ way of building CSS powered layouts. As I wrote in a previous article, many people argue, that those new tools make grid frameworks obsolete. Let's prove them wrong..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "CSS Grid Layout", "Flexbox", "Grid"]
+tags = ["CSS Architecture"]
 +++
 
 Placing elements side by side is one of the oldest challenges in web development. Over the years smart developers have invented a plethora of techniques to achieve the goal of displaying HTML elements in parallel.

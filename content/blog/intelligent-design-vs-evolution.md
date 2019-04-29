@@ -5,7 +5,6 @@ description = "Why is it, that we as developers don't honor the principles of ev
 intro = "In the recent days I was confronted with the result of wrong planning in multiple (personal and professional) projects I work on. It is an unpleasant feeling if you have to refactor large parts of the architecture of a project because you've came to the realization that, what seemed like a good idea in the beginning, turned out to not work like you imagined it..."
 draft = false
 categories = ["Development"]
-tags = ["Software architecture"]
 +++
 
 In the recent days I was confronted with the result of wrong planning in multiple (personal and professional) projects I work on. It is an unpleasant feeling if you have to refactor large parts of the architecture of a project because you've came to the realization that, what seemed like a good idea in the beginning, turned out to not work like you imagined it.

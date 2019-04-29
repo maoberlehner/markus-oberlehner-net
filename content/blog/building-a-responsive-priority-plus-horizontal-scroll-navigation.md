@@ -5,7 +5,7 @@ description = "Learn how to build a responsive Priority+ horizontal scroll navig
 intro = "One of the harder problems to solve in responsive design and especially when designing websites which are supposed to work well on small screens, is building user friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction..."
 draft = false
 categories = ["Development"]
-tags = ["HTML", "CSS", "JavaScript"]
+tags = ["CSS Architecture", "JavaScript"]
 +++
 
 One of the harder problems to solve in responsive design and especially when designing websites which are supposed to work well on small screens, is building user friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction.

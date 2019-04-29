@@ -5,7 +5,7 @@ description = "Learn how to implement a JavaScript shopping cart and collect cre
 intro = "The first article of this three part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Payment Request API"]
+tags = ["JavaScript"]
 +++
 
 [The first article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process.

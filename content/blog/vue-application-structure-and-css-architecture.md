@@ -5,7 +5,7 @@ description = "Learn about 3 ways of how to structure the CSS in a Vue.js projec
 intro = "In recent days, I thought a lot about structuring large scale component based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together and without too much effort you've implemented the first feature of your application in a reasonable amount of time..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Vue", "CSS", "CSS Architecture", "SCSS"]
+tags = ["JavaScript", "Vue", "CSS Architecture", "Sass"]
 +++
 
 In recent days, I thought a lot about structuring large scale component based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together and without too much effort you've implemented the first feature of your application in a reasonable amount of time.

@@ -5,7 +5,7 @@ description = "Learn how to build an alternating two column layout with text on 
 intro = "Last week a Tweet by Benjamin De Cock about how to achieve a two column layout with CSS Grid popped up in my timeline. This reminded me of my own journey of creating a two column layout featuring the image left / text right, text right / image left pattern, I've gone through very recently..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "CSS Grid Layout", "Flexbox", "Grid"]
+tags = ["CSS Architecture"]
 +++
 
 Last week a Tweet by Benjamin De Cock about how to achieve a two column layout with CSS Grid popped up in my timeline.

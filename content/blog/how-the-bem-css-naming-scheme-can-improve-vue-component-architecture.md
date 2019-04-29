@@ -5,7 +5,7 @@ description = "Quick tip about how the BEM CSS naming scheme can be useful to de
 intro = "In todays quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "BEM", "Front-End Architecture", "Vue"]
+tags = ["CSS Architecture", "BEM", "Front-End Architecture", "Vue"]
 +++
 
 In todays quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones.

@@ -5,7 +5,7 @@ description = "Creating an animated SVG pie chart with pure CSS. A detailed expl
 intro = "Recently at work we faced the task of creating an animated SVG circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle..."
 draft = false
 categories = ["Development"]
-tags = ["Pure CSS", "CSS", "SVG"]
+tags = ["CSS Architecture"]
 +++
 
 Recently at work we faced the task of creating an animated SVG pie / doughnut / circle chart. At first it didn't strike me as a huge challenge but after playing around with a JavaScript powered solution that was provided to us, and me setting the goal of finding a solution that works without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle.

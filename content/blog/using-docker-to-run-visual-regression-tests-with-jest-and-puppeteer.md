@@ -5,7 +5,7 @@ description = "Learn how to use Docker to run Jest and Puppeteer powered Visual 
 intro = "Today we'll explore how we can use Docker to run our tests in a standardized environment in order to prevent false positives because of differences between operating systems..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Docker", "TDD"]
+tags = ["JavaScript", "TDD"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"]
 +++
 

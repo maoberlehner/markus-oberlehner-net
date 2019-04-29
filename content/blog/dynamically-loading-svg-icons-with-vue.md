@@ -5,7 +5,7 @@ description = "Learn how to create Vue components from SVG files and how to dyna
 intro = "In this article we're going to explore two approaches for dynamically loading SVG icons with Vue.js. We'll use the wonderful vue-svgicon package as a foundation for our SVG icon workflow..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "Vue", "SVG"]
+tags = ["JavaScript", "Vue"]
 +++
 
 In this article we're going to explore two approaches for dynamically loading SVG icons with Vue.js. We'll use the wonderful [vue-svgicon](https://github.com/MMF-FE/vue-svgicon) package as a foundation for our SVG icon workflow.

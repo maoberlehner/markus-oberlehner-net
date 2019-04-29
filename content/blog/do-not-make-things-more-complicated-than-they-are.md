@@ -5,7 +5,7 @@ description = "Thoughts about overthinking programming problems and how to deal 
 intro = "Yesterday I’ve learned a valuable lesson in how to solve a problem by looking at it from a different angle. The longest open issues in the node-sass-magic-importer GitHub issue queue, is about source map support..."
 draft = false
 categories = ["Development"]
-tags = ["Workflow", "SCSS"]
+tags = ["Sass"]
 +++
 
 Yesterday I’ve learned a valuable lesson in how to solve a problem by looking at it from a different angle.

@@ -5,7 +5,6 @@ description = "Some thoughts on how to invest money, especially if you are a Dev
 intro = "Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!"
 draft = false
 categories = ["Development", "Life"]
-tags = ["Money", "Investing"]
 +++
 
 Developers tend to earn a decent amount of money. Although this varies from country to country and job to job, it is true most of the time. So what to do with all the money? Invest it!

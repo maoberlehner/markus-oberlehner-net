@@ -5,7 +5,7 @@ description = "Are we overusing variables in design systems? In this article I t
 intro = "Recently, I've been thinking a lot about variables in (Sass based) design systems. My approach with avalanche, and more recently with the design system we're building at work, always was to use variables for everything from spacings to colors and things like border radius..."
 draft = false
 categories = ["Development"]
-tags = ["CSS", "Sass", "Front-End Architecture"]
+tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
 +++
 
 Recently, I've been thinking a lot about variables in (Sass based) design systems. My approach with [avalanche](https://avalanche.oberlehner.net/), and more recently with the design system we're building at work, always was to **use variables for everything from spacings to colors and things like border radius for example**. The rule is, that there are no colors or spacings, like margins and paddings, that do not use a variable value.
