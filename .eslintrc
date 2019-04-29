@@ -1,9 +1,5 @@
 {
   "extends": "@avalanche/eslint-config",
-  "globals": {
-    "fixture": true,
-    "test": true
-  },
   "parserOptions": {
     "ecmaVersion": 8
   }
