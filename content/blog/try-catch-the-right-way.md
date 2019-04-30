@@ -134,7 +134,7 @@ Instead of catching the error directly in the article service, where we wouldn't
       You can buy me a ☕️ on Ko-fi!<br>
       <div style="margin-top: 0.75em;">
         <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
-        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script> 
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
       </div>
     </p>
   </div>

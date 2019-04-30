@@ -440,10 +440,21 @@ Because we're not globally registering all of our modules upfront, it's possible
 
 Designing our store structure in a way which makes certain modules reusable, can have an **enormous positive impact on maintainability and also bundle size**, when the application is getting bigger. The key to success with this strategy, is to come up with strict rules for naming and structuring your modules, so that they all adhere to a certain API and are named in a predictable way.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Did you enjoy this article?</h2>
+    <p class="c-service-info__body">
+      You can buy me a ☕️ on Ko-fi!<br>
+      <div style="margin-top: 0.75em;">
+        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
+      </div>
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Closing remarks
 
 Admittedly, the approach we've looked at in this article, is designed to solve a very specific use case. You might have to adapt certain aspects of it to your own needs. But I hope this article will serve as an inspiration for a powerful solution which fits your specific use case.
-
-## Coffee time ☕️
-
-If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!

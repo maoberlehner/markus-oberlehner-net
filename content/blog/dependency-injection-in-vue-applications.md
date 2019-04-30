@@ -403,10 +403,6 @@ As we've seen, there are a lot of ways of how to deal with dependency injection 
 
 My goal with this article is to extend the available tools in your and my toolbox so the next time we face a Phillips-head screw problem we don't immediately reach for our good old hammer and start hammering away.
 
-## Coffee time ☕️
-
-If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!
-
 ## References
 
 - [Rahul Kadyan, Provide/Inject in Vue 2.2](https://medium.com/@znck/provide-inject-in-vue-2-2-b6473a7f7816)

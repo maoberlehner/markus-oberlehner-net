@@ -349,10 +349,21 @@ As a little bonus, let's take a look at how we can transform our regular compone
  </script>
 ```
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you enjoy this article?</h2>
+    <p class="c-service-info__body">
+      You can buy me a ☕️ on Ko-fi!<br>
+      <div style="margin-top: 0.75em;">
+        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
+      </div>
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Conclusion
 
 Thanks to the awesomeness of the Vue.js core `<transition>` component, making powerful custom transition components is very easy to do. By applying some JavaScript magic, it's even possible to solve the age-old problem of transitioning from `height: 0` to `height: auto` and thanks to the concept of components, we're able to reuse this logic anywhere in our application without having to know anything about the implementation.
-
-## Coffee time ☕️
-
-If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!

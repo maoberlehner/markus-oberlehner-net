@@ -226,7 +226,7 @@ In the two code snippets above you can see that we've added an array of location
       You can buy me a ☕️ on Ko-fi!<br>
       <div style="margin-top: 0.75em;">
         <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
-        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script> 
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
       </div>
     </p>
   </div>
@@ -330,7 +330,3 @@ Now, if a user clicks on a marker, we simply zoom closer. Admittedly not too exi
 ## Wrapping it up
 
 Integrating the Google Maps API into a Vue.js application is pretty straight forward. One concern though using it, is the dependence on Google. Sadly currently, for most projects where some kind of map is needed, there is no way around Google Maps so far (although OpenStreetMaps can be a valid alternative in certain cases). On the other hand, Google Maps is a really powerful tool and it’s still free if you don’t have a lot of traffic.
-
-## Coffee time ☕️
-
-If you enjoyed this article, you might [consider to buy me a coffee](https://ko-fi.com/maoberlehner). Thx!
