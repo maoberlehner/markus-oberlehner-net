@@ -4,7 +4,7 @@
     {{ partial "meta/charset" . }}
 
     {{ if eq .Data.Singular "tag" }}
-      {{ $.Scratch.Add "titlePrefix" "Articles tagged with " }}
+      {{ $.Scratch.Add "titlePrefix" "Articles about " }}
     {{ else if eq .Data.Singular "category" }}
       {{ $.Scratch.Add "titlePrefix" "Articles about " }}
     {{ else }}
