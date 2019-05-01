@@ -1,7 +1,7 @@
 +++
 date = "2018-02-04T10:01:01+02:00"
-title = "How to Structure a Complex Vuex Store"
-description = "Learn how to structure a Vuex store with modules, how to enable lazy loading of Vuex store modules and how to fetch data via an API."
+title = "How to Structure a Complex Vuex Store with Modules"
+description = "Best practices for using Vuex modules to structure a Vuex store. Learn how to enable lazy loading of Vuex store modules and how to fetch data via an API."
 intro = "In todays article, we're going to take a look at a possible way of how to structure a Vuex store for a large scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find any good examples..."
 draft = false
 categories = ["Development"]

@@ -1,7 +1,7 @@
 +++
 date = "2018-07-29T06:30:30+02:00"
-title = "Lazy Loading Responsive Images with Vue.js"
-description = "Learn how to build an image lazy loading component for responsive images which maintains the aspect ratio and shows the dominant color as a placeholder."
+title = "Vue.js Responsive Image Lazy Loading"
+description = "Learn how to use lazy loading for responsive images with Vue.js and how to maintain the aspect ratio of the lazy loaded images while showing the images dominant color as a placeholder."
 intro = "In todays article, we'll take a closer look at how we can build our own custom lazy loading image component with Vue.js. We'll use the very fast and lightweight Lozad.js package for handling the lazy loading logic for us and we'll enhance it with the ability to display the dominant color of the image as a fallback color..."
 draft = false
 categories = ["Development"]

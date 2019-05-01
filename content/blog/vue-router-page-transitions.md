@@ -1,7 +1,7 @@
 +++
 date = "2018-06-10T10:15:15+02:00"
-title = "Vue Router Page Transitions"
-description = "Learn how to transition between pages with Vue Router and how to combine various animations like zoom, slide and fade."
+title = "Vue Router Page Transitions with Fade, Slide and Zoom Effects"
+description = "Learn how to transition between Vue Router Views using fade, slide and zoom effects. Examples for using animations for Vue Router page transitions."
 intro = "In my last article we've explored how to use the powerful Vue.js transition component, to animate an element from zero height to auto height. Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application..."
 draft = false
 categories = ["Development"]
