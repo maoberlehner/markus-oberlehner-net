@@ -1,6 +1,6 @@
 +++
 date = "2019-02-17T11:20:20+02:00"
-title = "Advanced Vue.js Component Composition With Container Components"
+title = "Container Components in Vue.js: Advanced Component Composition"
 description = "Learn how to utilize the Container Component pattern in Vue.js in order to build highly reusable and easy to test components."
 intro = "When building large scale applications where it is a top priority to achieve high test coverage, you are often faced with the problem that it becomes very difficult to test some of the components of the application. A common reason for this is that you have to mock a lot of global dependencies like the Vue Router or the Vuex Store..."
 draft = false
