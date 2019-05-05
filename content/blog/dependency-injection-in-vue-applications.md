@@ -346,6 +346,8 @@ export default {
 </script>
 ```
 
+If you would like to learn more about this approach, you can take a look at my follow-up article: [The IoC Container Pattern with Vue](/blog/the-ioc-container-pattern-with-vue).
+
 **The `ProductListingProvider` is responsible for providing the correct `fetch()` method to its children.** In this example we could've used properties as well, but I find it cleaner to use provide / inject for passing functions to child components.
 
 This pattern solves a couple of problems we've faced with using plugins. **First of all it's more obvious where a certain method is coming from because we have to reference it in the `inject` section of our consumer component.**
