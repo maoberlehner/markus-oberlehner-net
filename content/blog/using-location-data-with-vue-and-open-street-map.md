@@ -16,10 +16,16 @@ You can find a [live demo of the application on Netlify](https://using-location-
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-28/asking-for-permission">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-28/asking-for-permission"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-28/asking-for-permission 2x"
-        alt="Asking the user for their permission"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-28/asking-for-permission"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-28/asking-for-permission 2x"
+        alt="Asking the user for their permission."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-28/asking-for-permission"
+          alt="Asking the user for their permission."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-2.5em;">
