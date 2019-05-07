@@ -177,6 +177,21 @@ That's a really good question. **Arguably the IoC container pattern is actually 
 
 How useful this pattern can be depends largely on the type of application(s) you build. **If you want to create highly reusable components that are not dependent on a particular instance of a service, this pattern can still be useful.** Imagine you want to deploy a component across multiple applications, but each application uses a different repository for fetching users (and they all share the same interface). Another use case would be if you reuse a component on multiple routes but you want to use a different repository (fetching data from different APIs) for each route - **you could inject different implementations of the repository for each view.**
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you enjoy this article?</h2>
+    <p class="c-service-info__body">
+      You can buy me a ☕️ on Ko-fi!<br>
+      <div style="margin-top: 0.75em;">
+        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
+      </div>
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Slightly more convenient
 
 Another benefit of this approach ist that injected properties are automatically available everywhere in your component, even in the `<template>` section. So you don’t have to assign the imported module to a property of your component to make it available in the `<template>` section.
