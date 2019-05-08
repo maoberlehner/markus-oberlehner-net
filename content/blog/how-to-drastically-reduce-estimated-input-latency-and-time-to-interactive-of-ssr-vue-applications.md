@@ -134,6 +134,21 @@ In the example above you can see how to use the `<LazyHydrate>` component to dyn
 
 The `<LazyHydrate>` wrapper component passes a `hydrated` property to its child component. We can use this property to only load the `<ImageSlider>` component bundle if it is actually hydrated.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you enjoy this article?</h2>
+    <p class="c-service-info__body">
+      You can buy me a ☕️ on Ko-fi!<br>
+      <div style="margin-top: 0.75em;">
+        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
+        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
+      </div>
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 #### Hydrate components as soon as users start interacting
 
 Next we take a look at the `on-interaction` loader mode provided by `vue-lazy-hydration`.
@@ -214,6 +229,17 @@ export default {
 ```
 
 In the example code snippet above, the `AppMediaObject` component is only ever loaded when the page is rendered on the server. No expensive parsing of JavaScript code or rehydrating of pre-rendered HTML necessary.
+
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
 
 ## Benchmarks
 
