@@ -117,6 +117,10 @@ I've also written an [article about how to implement a modal component using Vue
   <hr class="c-hr">
 </div>
 
+### GraphQL & Apollo
+
+If you already use GraphQL & Apollo in your application, you might decide to also use it for managing your state. [Natalia Tepluhina](https://twitter.com/N_Tepluhina) has written [a great article about how you can utilize the local state feature of Apollo for state management](https://dev.to/n_tepluhina/apollo-state-management-in-vue-application-8k0).
+
 ## The “Should I Store This Data in Vuex?” flow chart
 
 In order to make it easier to make a decision wether to store data in a centralized Vuex store or not, I made a flow chart to help with that.
