@@ -54,21 +54,6 @@ To enable HTTP/2 Server Push for your website on Netlify, you can create a file 
 
 If you rely on Nuxt.js for building your static sites, you can use the wonderful [nuxt-netlify-http2-server-push](https://github.com/jmblog/nuxt-netlify-http2-server-push) Nuxt.js module to automatically generate the `_headers` file for you every time you run `nuxt generate`.
 
-<div>
-  <hr class="c-hr">
-  <div class="c-service-info">
-    <h2>Do you enjoy this article?</h2>
-    <p class="c-service-info__body">
-      You can buy me a ☕️ on Ko-fi!<br>
-      <div style="margin-top: 0.75em;">
-        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
-        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
-      </div>
-    </p>
-  </div>
-  <hr class="c-hr">
-</div>
-
 ## Wrapping it up
 
 HTTP/2 Server Push can be a potent solution for speeding up the loading time of your application. But remember, it's not a silver bullet! You should absolutely run a variety of benchmarks like Lighthouse and webpagetest.org to figure out if HTTP/2 Server Pushing certain resources has a net positive effect on the overall perceived loading of your application.

@@ -126,21 +126,6 @@ try {
 
 Instead of catching the error directly in the article service, where we wouldn't really know what to do with it anyway, we capture it where we actually use the article service. Here we can decide either to render an error message or to handle the error silently, e.g. if we only render a few article teasers in a sidebar, which isn't important at all for the user.
 
-<div>
-  <hr class="c-hr">
-  <div class="c-service-info">
-    <h2>Do you enjoy this article?</h2>
-    <p class="c-service-info__body">
-      You can buy me a ☕️ on Ko-fi!<br>
-      <div style="margin-top: 0.75em;">
-        <script type="text/javascript" src='https://ko-fi.com/widgets/widget_2.js'></script>
-        <script type="text/javascript">kofiwidget2.init('Support Me on Ko-fi', '#00acc1', 'O4O7U55Y');kofiwidget2.draw();</script>
-      </div>
-    </p>
-  </div>
-  <hr class="c-hr">
-</div>
-
 ##  How to *really* deal with unhandled promise rejection in Node.js
 
 One thing that many of you have certainly stumbled upon is the infamous, `UnhandledPromiseRejectionWarning` in Node.js.
