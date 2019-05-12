@@ -122,6 +122,17 @@ export default {
 
 As you can see in the example above, although the officially recommended way of using two-way computed properties is pretty straightforward and works perfectly fine, **it quickly becomes tedious to handle more than a few form fields this way**. If we take a closer look, we can see there is a lot of repetition in this code. **Where there's repetition, there's potential to do some refactoring / abstraction**.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Using vuex-map-fields for simple Vuex form handling
 
 After fiddling around with some code to come up with a reusable implementation of the two-way computed property approach, **I decided to create a new npm package for handling Vuex powered form fields: [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields)**.

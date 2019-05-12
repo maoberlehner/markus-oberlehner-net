@@ -125,6 +125,17 @@ export default {
 
 Above you can see how to use the `lazyLoadComponent()` function inside of a Vue.js component. If you're interested in the implementation of the `SkeletonBox` component, which we use as a loading placeholder, you can [read my article about how to build it](https://markus.oberlehner.net/blog/skeleton-loading-animation-with-vue/).
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Analyzing the results
 
 In order to find out how this approach affects the loading performance of a *real* application, I built a little demo app. You can [checkout the code at GitHub](https://github.com/maoberlehner/lazy-load-vue-components-when-they-become-visible) and you can [test it yourself on Netlify](https://lazy-load-vue-components-when-they-become-visible.netlify.com/).

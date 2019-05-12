@@ -44,6 +44,17 @@ export default function log({ next, to }) {
 }
 ```
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Running the Middleware before each route change
 
 First of all, we have to associate the routes we want to be processed by Middleware with the Middleware functions. Let's update our `src/router.js` file to make it possible to use Middleware.

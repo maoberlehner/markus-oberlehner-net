@@ -161,6 +161,17 @@ export default {
 
 Above you can see the code of the `AppImage` component. I've added comments to explain what's going on.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Using the component
 
 There are multiple ways of how to use the component. If you're ok with the image popping up as soon as it's loaded, you can use the component almost the same way as a regular `<img>` tag. The only difference is that you have to prefix the `src` and `srcset` properties with the `lazy-` keyword, if you want to make use of lazy loading that is, otherwise you can use the regular `src` and `srcset` properties.

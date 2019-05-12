@@ -218,15 +218,6 @@ Sometimes you might want to change the transition behavior or you want to add an
 
 In the CSS code snippet above, you can see how you can override certain style properties of the transition. You'd apply those styles inside of the component in which you're using the `<transition-expand>` component.
 
-<hr class="c-hr">
-<div class="c-service-info">
-  <h2>Did you find this useful?</h2>
-  <p class="c-service-info__body">
-    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
-  </p>
-</div>
-<hr class="c-hr">
-
 <div>
   <hr class="c-hr">
   <div class="c-service-info">
@@ -348,6 +339,20 @@ As a little bonus, let's take a look at how we can transform our regular compone
  };
  </script>
 ```
+
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
 
 ## Conclusion
 
