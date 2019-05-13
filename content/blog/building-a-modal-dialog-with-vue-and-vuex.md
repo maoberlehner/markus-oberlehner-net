@@ -470,14 +470,19 @@ export default {
 
 In the example code above we're initializing the modal component and we render a button which triggers the `showModal()` mutation when it's clicked. By providing the component name `ModalLogin` we're telling our modal which component it should load for rendering in the content section.
 
-<hr class="c-hr">
-<div class="c-service-info">
-  <h2>Do you have any questions?</h2>
-  <p class="c-service-info__body">
-    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">You can find me on Twitter</a>.
-  </p>
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
 </div>
-<hr class="c-hr">
 
 ## Final thoughts
 
