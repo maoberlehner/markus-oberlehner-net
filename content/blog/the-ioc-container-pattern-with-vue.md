@@ -171,6 +171,42 @@ I have prepared a CodeSandbox to show you a live example of this approach, but u
   <hr class="c-hr">
 </div>
 
+### Dynamically import services when they are injected
+
+In the above example we wait until the service is actually used before loading it. Although this is the most efficient way in terms of bandwidth, it might not be the most ideal solution in terms of perceived performance because we not only have to wait for the API request but also for the repository code to be loaded. By making some slight modifications to our code, we can make it possible to either load a service when it's actually used (like above) or immediately load it when it's injected in a component.
+
+```diff
+-function bind(repositoryName, Interface) {
++function bind(repositoryFactory, Interface) {
+   return {
+     ...Object.keys(Interface).reduce((prev, method) => {
+       const resolveableMethod = async (...args) => {
+-        const repository = await import(`./repositories/${repositoryName}`);
++        const repository = await repositoryFactory();
+         return repository.default[method](...args);
+       };
+       return { ...prev, [method]: resolveableMethod };
+     }, {})
+   };
+ }
+
+ export default {
+-  productRepository: bind('product', RepositoryInterface),
++  get productRepository() {
++    // Delay loading until a method of the repository is called.
++    return bind(() => import(`./repositories/product`), RepositoryInterface);
++  },
+-  userRepository: bind('user', RepositoryInterface),
++  get userRepository() {
++    // Load the repository immediately when it's injected.
++    const userRepositoryPromise = import(`./repositories/user`);
++    return bind(() => userRepositoryPromise, RepositoryInterface);
++  },
+ };
+```
+
+In the above example you can see that we bind the product repository in a way that it's still only loaded when one of its methods is actually called. The user repository on the other hand is now immediately loaded as soon as it's injected in at least one component. But it is **not** loaded as long as it's not injected anywhere – so we still only load it if it (might) be needed.
+
 ## What's all this good for?
 
 That's a really good question. **Arguably the IoC container pattern is actually a lot less useful in a language like JavaScript.** Why is that? Because you don't need it for a lot of the benefits you gain from it in other languages like PHP. E.g. you can easily mock imported modules in JavaScript with tools like Jest. Additionally we can use the concept of higher order functions to pass dependencies via parameters to the function (or via `props` in Vue.js components).
