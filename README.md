@@ -5,6 +5,7 @@
 > Generator for the personal website of Markus Oberlehner.
 
 ## Getting started
+
 - Install [Hugo](https://gohugo.io/).
 - Install [Pygments](https://gohugo.io/extras/highlighting#pygments).
 - Install dependencies `npm install`.
@@ -12,6 +13,7 @@
 - Your browser opens automatically.
 
 ## Build & publish
+
 - `npm run build`
 - `npm run publish`
 
