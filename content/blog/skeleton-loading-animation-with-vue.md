@@ -270,6 +270,17 @@ Now we're ready to use the skeleton component inside of our blog post component 
 
 Above you can see the changes necessary to update the `BlogPost` component to make use of the new `SkeletonBox` component. Combining the default view and the skeleton view keeps the code DRY and makes it easier to maintain your codebase. But you might not like the idea of loading the skeleton component every time you're using the `BlogPost` component. Depending on your use case you should consider to use a separate `BlogPostSkeleton` component instead.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Using the blog post component
 
 Finally, let's take a look at how we can use the `BlogPost` component.
