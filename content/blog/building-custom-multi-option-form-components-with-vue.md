@@ -188,6 +188,17 @@ export default {
 
 We want to be able to provide an array of objects (a list of products for example) as options to a form field, we want the user to be able to select one of those objects and we want to get back the object as the selected value of the form field component via `v-model`.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Select field with objects as values
 
 As you can see in the screenshot below, the custom select component we're going to build, makes it possible to select one or multiple products (which are defined as objects with all the data of the products) which we can directly render in a table view without having to map the values of the select component manually to match products in an array.
