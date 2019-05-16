@@ -453,14 +453,19 @@ Now let's imagine the following scenario: you want to render a list of posts and
 
 In the example above, you can see that we can nest `DataList` and `DataModel` components. By passing a `post` object as an entity to the `DataModel` component, no API call is made initially, but we're able to run CRUD operations on the model. A post can be deleted by clicking on the `Delete` button, the `@success` event handler on the `<data-model>` is triggered after a successful request, so if the post was deleted successfully, we trigger the `load()` method provided by the `DataList` component, which triggers a reload of the data provided by the `DataList` (which now shouldn't contain the deleted post anymore).
 
-<hr class="c-hr">
-<div class="c-service-info">
-  <h2>Do you like what you're reading?</h2>
-  <p class="c-service-info__body">
-    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
-  </p>
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
 </div>
-<hr class="c-hr">
 
 ## Wrapping it up
 
