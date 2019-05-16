@@ -311,6 +311,17 @@ To render the error messages, we're using an unordered list. The list will only 
 </ul>
 ```
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Scroll to the first error
 
 Now that we've implemented the basic functionality of our contact form and we've also set up validation, let's add one further enhancement. **It's general a good practice to focus the first form field with a validation error**. And oftentimes it's even inevitable to somehow **guide the user to the form field which they've entered incorrectly because the error message might not be visible otherwise**, causing the user to be confused.
