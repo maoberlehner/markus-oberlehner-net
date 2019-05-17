@@ -339,6 +339,17 @@ Because we want to catch the `keydown` event no matter which element is currentl
 
 In order to cleanup whenever our component is destroyed, we remove the event listener when the `hook.destroyed` event of the component is triggered.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 #### Dynamically render a content component
 
 Now we want to implement the functionality for dynamically loading the content of the modal. Unfortunately it's not possible to mock a non-existing module with Jest, therefore we have to use the real thing in our test.
