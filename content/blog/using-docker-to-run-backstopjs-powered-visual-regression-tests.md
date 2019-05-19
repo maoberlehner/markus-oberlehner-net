@@ -16,10 +16,16 @@ Luckily BackstopJS now provides a way to run visual regression tests inside of a
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff 2x"
-        alt="Screenshot of the different default font on Linux and macOS"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff 2x"
+        alt="Screenshot of the different default font on Linux and macOS."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
+          alt="Screenshot of the different default font on Linux and macOS."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption">
