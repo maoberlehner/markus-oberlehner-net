@@ -140,7 +140,7 @@ function bind(repositoryName, Interface) {
         return repository.default[method](...args);
       };
       return { ...prev, [method]: resolveableMethod };
-    }, {})
+    }, {}),
   };
 }
 
@@ -186,7 +186,7 @@ In the above example we wait until the service is actually used before loading i
          return repository.default[method](...args);
        };
        return { ...prev, [method]: resolveableMethod };
-     }, {})
+     }, {}),
    };
  }
 
@@ -194,12 +194,12 @@ In the above example we wait until the service is actually used before loading i
 -  productRepository: bind('product', RepositoryInterface),
 +  get productRepository() {
 +    // Delay loading until a method of the repository is called.
-+    return bind(() => import(`./repositories/product`), RepositoryInterface);
++    return bind(() => import('./repositories/product'), RepositoryInterface);
 +  },
 -  userRepository: bind('user', RepositoryInterface),
 +  get userRepository() {
 +    // Load the repository immediately when it's injected.
-+    const userRepositoryPromise = import(`./repositories/user`);
++    const userRepositoryPromise = import('./repositories/user');
 +    return bind(() => userRepositoryPromise, RepositoryInterface);
 +  },
  };
