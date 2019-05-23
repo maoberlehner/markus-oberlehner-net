@@ -137,7 +137,7 @@ So far so good, we're done setting up our basic application structure and, at le
 
 ### Building a user list component
 
-In this example, we'll build a very simple component to render a list of users. We also want to be able to load more informations regarding the user to test the native ES6 dynamic import feature (a.k.a. native code splitting). Keep in mind, though, that ES6 dynamic imports are currently [not supported in every modern browser](https://caniuse.com/#feat=es6-module-dynamic-import). I won't go into much detail explaining the components itself, because the point of this article is to show what we're capable of doing without webpack, not how to build stuff with Vue.js in general.
+In this example, we'll build a very simple component to render a list of users. We also want to be able to load more information regarding the user to test the native ES6 dynamic import feature (a.k.a. native code splitting). Keep in mind, though, that ES6 dynamic imports are currently [not supported in every modern browser](https://caniuse.com/#feat=es6-module-dynamic-import). I won't go into much detail explaining the components itself, because the point of this article is to show what we're capable of doing without webpack, not how to build stuff with Vue.js in general.
 
 ```js
 // src/components/UserList.js

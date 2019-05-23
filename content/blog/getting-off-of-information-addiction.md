@@ -1,8 +1,8 @@
 +++
 date = "2017-07-09T07:15:44+02:00"
 title = "Getting Off of Information Addiction (Part 1: Social Media)"
-description = "Beeing addicted to consume informations is a huge waste of time and can lead to an unhappy life. Read about the negative impact social media can have on your life and how to quit Facebook for good."
-intro = "Being addicted to consume informations like constantly checking emails, glancing over your Facebook news feed or reading instant messages at the moment they arrive on your phone, is not only time consuming, it can make you inefficient at work. Even worse: studies have shown, that people who are spending a lot of time on Facebook and other social media platforms are often less happy with their life in general..."
+description = "Beeing addicted to consume information is a huge waste of time and can lead to an unhappy life. Read about the negative impact social media can have on your life and how to quit Facebook for good."
+intro = "Being addicted to consume information like constantly checking emails, glancing over your Facebook news feed or reading instant messages at the moment they arrive on your phone, is not only time consuming, it can make you inefficient at work. Even worse: studies have shown, that people who are spending a lot of time on Facebook and other social media platforms are often less happy with their life in general..."
 draft = false
 categories = ["Life"]
 tags = ["Time Management"]
@@ -10,13 +10,13 @@ tags = ["Time Management"]
 
 If there is not enough time in your day to do all the things you wan't to do, naturally you'll start looking for opportunities to stop wasting time to have more time available for doing things which add real value to your life.
 
-As I started looking for such things, I quickly realized that I wasted a ton of time with consuming (mostly worthless) informations from various sources across the internet. Checking various kinds of news feeds multiple times a day, sometimes even multiple times per hour, has become a habit for not only many digital natives but also regular people. Social media platforms are using algorithms to figure out how to make their users browser their site or open their app as often as possible.
+As I started looking for such things, I quickly realized that I wasted a ton of time with consuming (mostly worthless) information from various sources across the internet. Checking various kinds of news feeds multiple times a day, sometimes even multiple times per hour, has become a habit for not only many digital natives but also regular people. Social media platforms are using algorithms to figure out how to make their users browser their site or open their app as often as possible.
 
 Reading the news or checking the latest updates on Facebook makes us feel good. Staying up to date, or even better, sharing a post which receives a like or an upvote, triggers our brain to release dopamine which is also known as the “reward molecule”. In short: checking Facebook, makes us happy (for a very brief moment).
 
 Because of this very short feel good moment we experience from the release of dopamine, consuming social media status updates or news feeds can become a severe addiction. Similar to smoking cigarettes, drinking alcohol or taking drugs, the positive effects of consuming those substances are often outweighed by many negative concomitant effects – especially if taking them becomes an addiction.
 
-Being addicted to consume informations from social media, news feeds or instant messaging services, is not only time consuming, it can make you inefficient at work or at achieving your goals for life. Even worse: studies have shown, that people who are spending a lot of time on Facebook and other social media platforms, are often less happy with their life in general than people in the moderate and no social media consumption control groups.
+Being addicted to consume information from social media, news feeds or instant messaging services, is not only time consuming, it can make you inefficient at work or at achieving your goals for life. Even worse: studies have shown, that people who are spending a lot of time on Facebook and other social media platforms, are often less happy with their life in general than people in the moderate and no social media consumption control groups.
 
 ## Facebook
 At the time I stopped using Facebook cold turkey, I didn't think much about effective time management. But what I've observed was, that reading my Facebook feed often times made me angry or sometimes even sad.

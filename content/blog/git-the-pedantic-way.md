@@ -12,7 +12,7 @@ When people think about programmers, they think of pale nerds who sit in front o
 
 Because what most of us do most of the time is reading and trying do understand code, it is all the more important to write code which is easy to understand. But even if we're doing a great job writing simple code, what oftentimes is missing, is an explanation **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story **why** it was written in the first place all by itself.
 
-This is where Git commit messages come into play. A carefully crafted commit message can express additional informations about your code, which you can't provide directly in the code itself.
+This is where Git commit messages come into play. A carefully crafted commit message can express additional information about your code, which you can't provide directly in the code itself.
 
 ## Why good commit messages matter
 What often happens to me during bug fixing, while reading code mostly written by other people, is that I encounter a particular snippet of code (which could very well be the source of the bug I'm hunting) which I know for a fact, that it was not that way when I last have seen it. I know that either because I have written the original code myself or because I've read this particular part of the code multiple times before.
@@ -38,7 +38,7 @@ In the following examples, we're going to look at some typical version control c
 ### Temporary WIP commits
 In an ideal world, we would work at only one feature at a time and there would be no bugs which we urgently need to fix in the meantime. But we do not live in an ideal world. So sometimes we're in the middle of work when we have to interrupt to fix one of those urgent problems.
 
-Git provides us with the `stash` command to quickly stash away our changes so we can work on something else and retrieve our changes from the stash if we want to continue. If you just want to quickly stash away some changes, using `git stash` might be sufficient. But what I like to do is to use a temporary commit to store my changes. That way I can easily add a commit message containing informations for my future self, about what I was working on when I had to interrupt my work.
+Git provides us with the `stash` command to quickly stash away our changes so we can work on something else and retrieve our changes from the stash if we want to continue. If you just want to quickly stash away some changes, using `git stash` might be sufficient. But what I like to do is to use a temporary commit to store my changes. That way I can easily add a commit message containing information for my future self, about what I was working on when I had to interrupt my work.
 
 ```bash
 # Add everything to the index.

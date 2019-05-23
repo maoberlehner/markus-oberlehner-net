@@ -18,10 +18,10 @@ Somehow we think, because of our highly evolved brains, we're smart enough to di
 
 At the beginning of a new project or a major refactoring we are sure: this time we will do better. We'll plan everything in advance and come up with a beautiful design for our software, that will fit the needs of our project perfectly, now and forever. But somehow it never works that way. Along the way, we encounter problems with our design. Specifications change and new requirements emerge.
 
-At this point we're realizing that what we've planned out so intelligently at the beginning of our project, does not hold up to reality, we either blame ourself for not foreseeing the (realistically) unforeseeable, or we blame the project manager for coming up with new features or adjusting existing feature requirements - “This is not how software development works, we have to have perfect informations right from the beginning.”
+At this point we're realizing that what we've planned out so intelligently at the beginning of our project, does not hold up to reality, we either blame ourself for not foreseeing the (realistically) unforeseeable, or we blame the project manager for coming up with new features or adjusting existing feature requirements - “This is not how software development works, we have to have perfect information right from the beginning.”
 
 ## The power of evolution in software architecture
-But is it even possible to have all the informations up front and to plan everything perfectly before even a single line of code is written? Of course it is not.
+But is it even possible to have all the information up front and to plan everything perfectly before even a single line of code is written? Of course it is not.
 
 Although there is nothing wrong with extensive planning upfront, we should not expect to get everything right from the beginning. We should allow constant refactoring to happen and we should embrace the fact, that software is flexible.
 

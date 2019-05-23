@@ -192,7 +192,7 @@ function totalValueFromProducts(products) {
 
 The first function `lineItemValueFromProduct()` you can see in the example code above, takes a `product` object, containing it's quantity and value, and calculates the total price by multiplication of those two values.
 
-The `displayItemsFromProducts()` helper function takes an array of products and builds a new `displayItems` object from it. Because the [current specification of the Payment Request API](https://www.w3.org/TR/payment-request/) does not mention any way of specifying a quantity on a payment item, we have to use it's `label` property for providing informations about how often one item was added to the shopping cart. If the quantity is higher than `1` a prefix in the form of `2 x` is added to the products label.
+The `displayItemsFromProducts()` helper function takes an array of products and builds a new `displayItems` object from it. Because the [current specification of the Payment Request API](https://www.w3.org/TR/payment-request/) does not mention any way of specifying a quantity on a payment item, we have to use it's `label` property for providing information about how often one item was added to the shopping cart. If the quantity is higher than `1` a prefix in the form of `2 x` is added to the products label.
 
 In the `totalValueFromProducts()` helper function, we're using JavaScripts `Array.reduce()` function to calculate the total value of all products in the shopping cart store.
 

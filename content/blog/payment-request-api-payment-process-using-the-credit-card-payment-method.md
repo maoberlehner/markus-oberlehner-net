@@ -147,7 +147,7 @@ function paymentFactory({ paymentRequest }) {
 
 Again we're using a factory function for better testability and easier consecutive usage. The `payment()` function is calling the `PaymentRequest` instance provided by the `paymentRequest()` function which is injected as a dependency.
 
-By calling the `show()` method on the `paymentRequest()` function we're telling the browser to show the payment popup and ask for the credit card informations of the user.
+By calling the `show()` method on the `paymentRequest()` function we're telling the browser to show the payment popup and ask for the credit card information of the user.
 
 ```js
 function paymentHandlerFactory({ paymentProcessor }) {

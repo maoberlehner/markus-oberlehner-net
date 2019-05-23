@@ -190,7 +190,7 @@ The most convenient way of showing users a GDPR consent information form is to u
     @decline="$emit('deny-consent')"
   >
     <div class="o-content">
-      <h2>GDPR Informations</h2>
+      <h2>GDPR Information</h2>
       <p>
         We want to do a lot of stuff with your data, please
         give us your consent to do so, thank you very much!

@@ -16,7 +16,7 @@ I already built some sets from the [LEGO Architecture series](http://amzn.to/2oA
 ## Let's get it started
 ![LEGO Architecture - Berlin: Unboxed](/images/2017-04-16/lego-architecture-berlin-unboxed.jpg)
 
-The instructions include some background informations on the buildings that are included.
+The instructions include some background information on the buildings that are included.
 
 ![LEGO Architecture - Berlin: Instructions](/images/2017-04-16/lego-architecture-berlin-instructions.jpg)
 

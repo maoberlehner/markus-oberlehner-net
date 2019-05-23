@@ -112,7 +112,7 @@ function checkoutPaymentDetailsFactory({ store, taxCategories }) {
 }
 ```
 
-The `checkoutPaymentDetailsFactory()` returns the `checkoutPaymentDetails()` function, which extracts all relevant informations from all of the products added to the shopping cart.
+The `checkoutPaymentDetailsFactory()` returns the `checkoutPaymentDetails()` function, which extracts all relevant information from all of the products added to the shopping cart.
 
 The new `taxesFromProducts()` helper function is responsible for calculating sub totals for all products of the different tax categories and further calculate the respective tax value. The function returns an array of display items for all relevant tax categories which we can concatenate onto the display items of all products, returned by `displayItemsFromProducts()`.
 

@@ -27,7 +27,7 @@ In order to keep this article as concise as possible, I focus to show only the c
 
 ## The tools
 
-In the process of researching for this article, I discovered that there is a huge number of tools for performing visual regression tests. You can find a [comprehensive list of tools and informations about the topic of regression testing on GitHub](https://github.com/mojoaxel/awesome-regression-testing).
+In the process of researching for this article, I discovered that there is a huge number of tools for performing visual regression tests. You can find a [comprehensive list of tools and information about the topic of regression testing on GitHub](https://github.com/mojoaxel/awesome-regression-testing).
 
 Initially, I planned to use [BackstopJS](https://github.com/garris/BackstopJS) because I have already experience with it using it for [avalanche](https://avalanche.oberlehner.net), which is a SCSS framework of mine. But thinking about it further, I've come to the realization, that I already have a pretty powerful testing tool to my disposal in most of my projects (Nightwatch.js) and adding another tool might not be necessary at all.
 

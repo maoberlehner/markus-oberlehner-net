@@ -33,7 +33,7 @@ In my recent article I wrote about [how to build a simple website with Storyblok
   </p>
 </div>
 
-The plugin we build is called `augmented-image`. It enables the user to upload an image and extend it with multiple markers to add additional detail informations (text and image) to certain areas of the image. You can see [a demo of the final result of the output produced by the plugin, hosted on Netlify](https://building-a-custom-storyblok-field-type-plugin-with-vue.netlify.com/). Also you can find [the repository for the plugin](https://github.com/maoberlehner/storyblok-augmented-image) and [the repository for the demo page](https://github.com/maoberlehner/building-a-custom-storyblok-field-type-plugin-with-vue) on GitHub.
+The plugin we build is called `augmented-image`. It enables the user to upload an image and extend it with multiple markers to add additional detail information (text and image) to certain areas of the image. You can see [a demo of the final result of the output produced by the plugin, hosted on Netlify](https://building-a-custom-storyblok-field-type-plugin-with-vue.netlify.com/). Also you can find [the repository for the plugin](https://github.com/maoberlehner/storyblok-augmented-image) and [the repository for the demo page](https://github.com/maoberlehner/building-a-custom-storyblok-field-type-plugin-with-vue) on GitHub.
 
 ## The basics
 
