@@ -14,7 +14,13 @@ When we're building single page applications, the time it takes to load the appl
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <img src="/images/2018-07-01/baseline-lighthouse-result.png" srcset="/images/2018-07-01/baseline-lighthouse-result-2x.png 2x" alt="Screenshot of baseline Lighthouse benchmark result">
+    <img data-src="/images/2018-07-01/baseline-lighthouse-result.png" data-srcset="/images/2018-07-01/baseline-lighthouse-result-2x.png 2x" alt="Screenshot of baseline Lighthouse benchmark result.">
+    <noscript>
+      <img
+        src="/images/2018-07-01/baseline-lighthouse-result.png"
+        alt="Screenshot of baseline Lighthouse benchmark result."
+      >
+    </noscript>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
     <small>Baseline Lighthouse benchmark result</small>
@@ -197,7 +203,13 @@ We've now successfully added pre-rendering to our application. Let's run `npm ru
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <img src="/images/2018-07-01/basic-pre-render-lighthouse-result.png" srcset="/images/2018-07-01/basic-pre-render-lighthouse-result-2x.png 2x" alt="Screenshot of Lighthouse benchmark result of pre-rendered site">
+    <img data-src="/images/2018-07-01/basic-pre-render-lighthouse-result.png" data-srcset="/images/2018-07-01/basic-pre-render-lighthouse-result-2x.png 2x" alt="Screenshot of Lighthouse benchmark result of pre-rendered site.">
+    <noscript>
+      <img
+        src="/images/2018-07-01/basic-pre-render-lighthouse-result.png"
+        alt="Screenshot of Lighthouse benchmark result of pre-rendered site."
+      >
+    </noscript>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
     <small>Lighthouse benchmark result of pre-rendered site</small>
@@ -234,7 +246,13 @@ The Prerender SPA Plugin provides a way of post processing the HTML before savin
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <img src="/images/2018-07-01/deferred-pre-render-lighthouse-result.png" srcset="/images/2018-07-01/deferred-pre-render-lighthouse-result-2x.png 2x" alt="Screenshot of Lighthouse benchmark result of pre-rendered site with deferred JavaScript">
+    <img data-src="/images/2018-07-01/deferred-pre-render-lighthouse-result.png" data-srcset="/images/2018-07-01/deferred-pre-render-lighthouse-result-2x.png 2x" alt="Screenshot of Lighthouse benchmark result of pre-rendered site with deferred JavaScript.">
+    <noscript>
+      <img
+        src="/images/2018-07-01/deferred-pre-render-lighthouse-result.png"
+        alt="Screenshot of Lighthouse benchmark result of pre-rendered site with deferred JavaScript."
+      >
+    </noscript>
   </div>
   <p class="c-content__caption" style="margin-top:-1em;">
     <small>Lighthouse benchmark result of pre-rendered site with deferred JavaScript</small>
