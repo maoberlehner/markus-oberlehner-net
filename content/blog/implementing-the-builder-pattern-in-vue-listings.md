@@ -162,7 +162,7 @@ export default {
 The result of the code you can see above is exactly the same as what we get when using our `ListingBuilder` class for creating the `ProductListing` component. If you are interested in seeing the rest of the code, you can take a look at the following CodeSandbox.
 
 <div class="c-content__broad">
-  <iframe src="https://codesandbox.io/embed/implementing-the-builder-pattern-in-vuejs-listings-y2p0m8v5zz?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Listings" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/implementing-the-builder-pattern-in-vuejs-listings-y2p0m8v5zz?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Listings" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 <div>
