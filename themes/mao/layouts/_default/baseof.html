@@ -70,13 +70,15 @@
       ga('create','UA-57407594-3','auto');ga('send','pageview');
       [].slice.call(document.querySelectorAll('[data-event-category]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event',e.getAttribute('data-event-category'),e.getAttribute('data-event-action'),e.getAttribute('data-event-label'),e.getAttribute('data-event-value'))})}),[].slice.call(document.querySelectorAll('[href*="amzn.to"]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event','link','click: afiliate',e.getAttribute('href'))})});
     </script>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-9292041942138380",
-        enable_page_level_ads: true
-      });
-    </script>
+    {{ if not .IsHome }}
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9292041942138380",
+          enable_page_level_ads: true
+        });
+      </script>
+    {{ end }}
     <script src="https://www.google-analytics.com/analytics.js" defer></script>
   </body>
 </html>
