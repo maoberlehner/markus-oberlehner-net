@@ -24,10 +24,16 @@ Let's get started by creating two new components in Storyblok. **First we need a
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-05/storyblok-create-comment">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comment"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-create-comment 2x"
-        alt="Screenshot of the Storyblok component UI creating a comment component"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comment"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-create-comment 2x"
+        alt="Screenshot of the Storyblok component UI creating a comment component."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comment"
+          alt="Screenshot of the Storyblok component UI creating a comment component."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -60,10 +66,16 @@ The `article` component also has a `title` and a `text` field but additionally *
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-05/storyblok-comments-settings">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-comments-settings"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-comments-settings 2x"
-        alt="Screenshot of the comments field settings in Storyblok"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-comments-settings"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-comments-settings 2x"
+        alt="Screenshot of the comments field settings in Storyblok."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-comments-settings"
+          alt="Screenshot of the comments field settings in Storyblok."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption">
@@ -79,10 +91,16 @@ Now we're ready to add new content to our Storyblok space. For our little demo a
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-05/storyblok-homepage-content">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-homepage-content"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-homepage-content 2x"
-        alt="Screenshot of the Storyblok UI for creating a new article content"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-homepage-content"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-homepage-content 2x"
+        alt="Screenshot of the Storyblok UI for creating a new article content."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-homepage-content"
+          alt="Screenshot of the Storyblok UI for creating a new article content."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -96,10 +114,16 @@ Depending on how popular our application we'll be, at some point in the future, 
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-05/storyblok-create-comments-folder">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comments-folder"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-create-comments-folder 2x"
-        alt="Screenshot of the Storyblok UI for creating a new comments folder"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comments-folder"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-05/storyblok-create-comments-folder 2x"
+        alt="Screenshot of the Storyblok UI for creating a new comments folder."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-05/storyblok-create-comments-folder"
+          alt="Screenshot of the Storyblok UI for creating a new comments folder."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
