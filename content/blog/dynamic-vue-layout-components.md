@@ -333,14 +333,19 @@ export default {
 
 As I've already said, this approach is not necessarily better than the previous way of not using dynamic imports. It highly depends on your application and how well webpack optimizes your bundles. **I'd recommend you to test both approaches and settle for the one which provides better results in terms of performance, or, if the differences are negligible, whichever you like better.**
 
-<hr class="c-hr">
-<div class="c-service-info">
-  <h2>Do you like what you're reading?</h2>
-  <p class="c-service-info__body">
-    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
-  </p>
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
 </div>
-<hr class="c-hr">
 
 ## Wrapping it up
 
