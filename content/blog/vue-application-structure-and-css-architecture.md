@@ -312,6 +312,17 @@ Considering that the `mini-css-extract-plugin` is still very young, there might 
 \- **More CSS classes** in the HTML code  
 \- **Potential issues with specificity** (which can be solved by using scoped styles)
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## 3. Everything is a component
 
 Last but not least we'll build our little example application by using components for everything.
