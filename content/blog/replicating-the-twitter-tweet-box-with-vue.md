@@ -400,6 +400,17 @@ Let's start with a simple counter that shows how many characters are still allow
 
 In the code snippets above, you can se that we've added a `has-exceeded-limit` class which is attached to the root element as soon as the `limitStatus` is higher than 100%. Also we've added a new `<div>` for grouping our visual representations of the character limit, starting with the `remainingCharacters` (which are calculated by a new computed property). In the style section you can see the code necessary for positioning the new elements and for setting the color to `$color-danger` in the case of having exceeded the character limit.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Visual counter
 
 Next we want to add a visual represenation of the amount of characters already entered relative to the limit.
