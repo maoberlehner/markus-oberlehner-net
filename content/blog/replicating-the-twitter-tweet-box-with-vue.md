@@ -492,6 +492,20 @@ Another important thing to note is, that we're using the camel case notation for
 
 The styling of the visual counter adds a little animation which is triggered as soon as the `has-exceeded-limit` class is added to the root element of the component.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Believe it or not, that was one of the hardest problems I've ever dealt with in a blog article. Although the final solution seems to be relatively simple and straightforward, I spent a lot of time trying to bend a `contenteditable` element to my will.
