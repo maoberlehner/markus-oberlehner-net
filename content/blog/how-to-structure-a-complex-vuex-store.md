@@ -440,6 +440,20 @@ Because we're not globally registering all of our modules upfront, it's possible
 
 Designing our store structure in a way which makes certain modules reusable, can have an **enormous positive impact on maintainability and also bundle size**, when the application is getting bigger. The key to success with this strategy, is to come up with strict rules for naming and structuring your modules, so that they all adhere to a certain API and are named in a predictable way.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Closing remarks
 
 Admittedly, the approach we've looked at in this article, is designed to solve a very specific use case. You might have to adapt certain aspects of it to your own needs. But I hope this article will serve as an inspiration for a powerful solution which fits your specific use case.
