@@ -177,6 +177,20 @@ The biggest change although, is that we're now matching a list of element names 
 
 With this set of five simple but smart step definitions, it is already possible to write tests for various use cases. Of course, as your application is growing, you might add several new general purpose definitions or tweak some of those which already exist. And very likely you also have to add a number of custom step definitions to test some more advanced features of your app. But ultimately this is a solid starting point.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 By using `data-qa` attributes on the HTML elements which we want to target in our tests, it is possible to write test specifications in (almost) perfect natural language, without having to map every element in a separate step definition.
 
