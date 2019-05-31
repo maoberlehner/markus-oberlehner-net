@@ -74,6 +74,17 @@ The idea of the `abomination` concept is to build static websites with JavaScrip
 
 As you can see above, the `abomination` prototype provides you with a `DynamicComponent` wrapper component. **At build time, the code for initializing all the dynamic components is extracted from the page.** Instead of all the code for rendering the static content and some dynamic components, **only the code for the dynamic components ends up in the final JavaScript bundle**.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Potential downsides
 
 There are basically two major downsides to this concept. First of all, the developer experience is not as straightforward anymore because you have to think about which components should be dynamic and which not.

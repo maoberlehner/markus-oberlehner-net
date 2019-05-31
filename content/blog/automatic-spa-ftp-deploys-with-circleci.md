@@ -290,6 +290,17 @@ Now we've successfully set up CircleCI to automatically push a new version of ou
   </p>
 </div>
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Wrapping it up
 
 Of course, setting up a system to automatically deploy a modern SPA to a remote FTP server seems pretty dated in the times of Netlify. But sometimes we don't have a choice and we have to work with what is already there.

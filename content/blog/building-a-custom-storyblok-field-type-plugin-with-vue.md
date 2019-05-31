@@ -318,6 +318,17 @@ Uploading images (or any other kind of assets) to Storyblok is a two step proces
 
 You can see both steps in the code snippet above. For signing the image, we can use the Storyblok API client instance to send a `POST` request containing the filename and an authorization header. For uploading the image, we use XHR. After both steps have succeeded, the `upload()` method returns a promise resolving to the data returned from the upload request, containing the URL of the newly uploaded image.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 #### Integrating the image upload component
 
 Next, we can integrate the `ImageUpload` plugin into our core `Plugin` component.
