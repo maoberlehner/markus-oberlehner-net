@@ -59,6 +59,20 @@ So how can we use a combination of BEM mixes and modifiers to handle the styling
 ## BEM mix or modifier – where do i put my styles?
 You may wonder how to decide which styles do belong in a BEM mix and which styles do belong in a modifier. I'd say that positional styles like `margin` or `top` / `left` are typical candidates for a BEM mix. Other than that `font-size`, `color` and `text-align` may also be potential styles which could be used in a BEM mix under some circumstances. You should ask yourself if a certain style hinders potential reusability outside of a given context, if that is the case, a BEM mix might be the best place to put such a style.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 First of all I'd argue that writing a style like `.modal .button {}` should be avoided by all means. You'll not only end up wondering where you should put such a style but you're also opening the pandora's box of specificity battles.
 
