@@ -80,6 +80,17 @@ Now we can generate the Vue icon components by running the command above. Don't 
 src/components/icons
 ```
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Dynamically loading icons
 
 Although, most SVG icons are quite small in file size, their size can add up. **To prevent them slowing down the initial page load, we can use dynamic loading to lazy load icons which are not visible on initial page load**.
