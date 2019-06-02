@@ -262,10 +262,16 @@ jobs:
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-12/circleci-environment-variables">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-environment-variables"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-12/circleci-environment-variables 2x"
-        alt="Screenshot of the CircleCI UI for adding environment variables"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-environment-variables"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-12/circleci-environment-variables 2x"
+        alt="Screenshot of the CircleCI UI for adding environment variables."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-environment-variables"
+          alt="Screenshot of the CircleCI UI for adding environment variables."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -279,10 +285,16 @@ Now we've successfully set up CircleCI to automatically push a new version of ou
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-08-12/circleci-ftp-deploy">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-ftp-deploy"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-12/circleci-ftp-deploy 2x"
-        alt="Screenshot of the deployment process running in CircleCI"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-ftp-deploy"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-08-12/circleci-ftp-deploy 2x"
+        alt="Screenshot of the deployment process running in CircleCI."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-08-12/circleci-ftp-deploy"
+          alt="Screenshot of the deployment process running in CircleCI."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
