@@ -227,6 +227,17 @@ The `src/components/views/Home.vue` view component you can see above, dynamicall
   </p>
 </div>
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Rendering the content blocks
 
 Because our content blocks landing page field is a reference field referencing the content block content type, we need to make some changes to our landing page model because, by default, the Contentful JavaScript client does not resolve references.
