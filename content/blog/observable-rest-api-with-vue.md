@@ -35,9 +35,13 @@ async function withPolling(callback, interval) {
   // instance and refetch the data according to
   // the specified polling interval.
   const observableData = Vue.observable({ data });
-  setInterval(async () => {
-    observableData.data = { ...(await callback()) };
-  }, interval);
+  const poll = () => {
+    setTimeout(async () => {
+      observableData.data = { ...(await callback()) };
+      poll();
+    }, interval);
+  };
+  poll();
 
   return observableData;
 }
