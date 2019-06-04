@@ -511,6 +511,17 @@ Now that we've already set up most of our basic CSS and we've declared all the v
 
 In the screenshot above, you can see the current state of affairs. Of course, this is not exactly an award winning design but I hope you get the basic idea.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Creating content in Storyblok
 
 I have to admit, setting up the basic application and CSS structure, is not the most interesting thing to do but now it gets more exciting, I promise.
