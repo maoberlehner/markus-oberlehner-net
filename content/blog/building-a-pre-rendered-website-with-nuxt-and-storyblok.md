@@ -64,6 +64,17 @@ In [my recent article about pre-rendering Vue.js websites](https://markus.oberle
 
 Because in this article, I want to focus on pre-rendering and how to integrate Storyblok into Nuxt.js, I don't want to waste any time with explaining how to set up a Nuxt.js. You can [checkout the official documentation](https://nuxtjs.org/guide/installation) or you can [clone the GitHub repository of this project](https://github.com/maoberlehner/building-a-pre-rendered-website-with-nuxt-and-storyblok) to get going.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Storyblok components
 
 Before we dive into the code, let's start with setting up the Storyblok components for the content of our little website.

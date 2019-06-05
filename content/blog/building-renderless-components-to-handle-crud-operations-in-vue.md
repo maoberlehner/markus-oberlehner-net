@@ -154,6 +154,17 @@ Let's take a look at a more advanced example. With some small tweaks to the code
 
 In the example above, you can see that we now pass a filter object as a property to the `<data-list>` component instance. The buttons at the bottom are our pagination controls, by setting the value of `page` every time a user clicks on a button, the `filter` is updated and the `DataList` component triggers the `load()` method.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Declarative CRUD operations
 
 So far we've only touched the `R` in `CRUD`. Let's take a look at how we can make it possible to also create, update and delete data in a declarative way.

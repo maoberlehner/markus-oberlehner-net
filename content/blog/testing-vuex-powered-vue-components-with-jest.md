@@ -349,6 +349,17 @@ export const store = __createMocks().store;
 
 Above you can see the full example code of our mock implementation of the store.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about testing Vue.js applications?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### The example component
 To keep this article as simple as possible, I won't guide you through writing tests in a TDD manner but instead show you the finished component immediately – here it is.
 

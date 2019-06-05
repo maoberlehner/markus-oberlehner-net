@@ -144,6 +144,17 @@ Next we can see the `addressByCoordinates()` method. The `addressByCoordinates()
 
 The `currentAddress()` method is a shortcut for first retrieving the current coordinates of the user and then reverse geocoding them with `addressByCoordinates()`.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Autofilling a form with address data
 
 Now that we've set everything up, we can use our newly created renderless `LocationFrame` component to auto fill a simple address form.
