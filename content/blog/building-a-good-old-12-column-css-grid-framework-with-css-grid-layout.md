@@ -81,6 +81,20 @@ To create responsive grid items, we're adding `width` classes wrapped in media q
 
 To define a column which spans across the full width of your layout on mobile resolutions and `6` columns at the `medium` breakpoint (which could be about the size of a tablet) you can write: `<div class="width-12/12 width-6/12@m">`.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Recap
 It was never that easy to build powerful layouts with CSS as it is today. Since the implementation of Flexbox in most modern browsers – for the first time in history – we're able to build CSS layouts without having to rely on hacks.
 
