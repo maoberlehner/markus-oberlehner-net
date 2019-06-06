@@ -113,6 +113,20 @@ Furthermore, the combination of being an introvert and not drinking any alcohol 
 
 All things considered, for me, the positive impact outweighs the minor inconveniences by an order of magnitude. Like all of the other tips in this article, this one might be completely useless for your personal situation, because either you're drinking very little alcohol to begin with, or because for you, the experience you have when drinking alcohol is mostly positive, if that's the case, that's great. But for some of you, cutting back your alcohol consumption might be a worthy consideration if you want to improve your overall mental health.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 
 I guess many people who are searching for ways of improving their mental health, are hoping to find an easy solution, that one weird trick which helps them to finally become happy. There is no such trick (I'm aware of). Finding fulfillment in life is hard work and you're never done with it.
