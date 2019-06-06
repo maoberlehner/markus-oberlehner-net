@@ -116,6 +116,17 @@ export function find(id) {
 
 Above you can see the services we'll use to query the Airtable API for invoices, clients and tasks.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Rendering the invoice with Vue.js
 
 Next up, we can use the services, to fetch all the data we need for our Vue.js application to render an invoice. Below you can see the contents of the `src/App.vue` file of our application which is doing all the magic. You might want to split this up into multiple components, I decided against it because I feel it's not large enough yet to sacrifice the convenience of having everything in one place for a clean and tidy application structure.
