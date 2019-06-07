@@ -374,6 +374,20 @@ export default {
 </script>
 ```
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 As you can see above, we're using the `mapState()` helper function, which Vuex is providing, to map the `book` and `bookList` properties as computed properties to our component.
 
 In the `beforeCreate()` hook, which is already called before the component is even created, we're dispatching the `fetchBook` and `fetchBookList` store actions, which are responsible for fetching data from our GraphQL server.
