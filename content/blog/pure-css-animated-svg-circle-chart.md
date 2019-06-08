@@ -66,6 +66,20 @@ At this point I thought I was done, but as one of my colleagues noticed, this ap
 
 Because setting the transform origin when using the `transform` attribute is not possible, rotating and mirroring an SVG element is a little bit trickier that way: `transform="rotate(-90 16.91549431 16.91549431)"`. We have to use the second and third parameter of `rotate` to rotate the element using its center as origin. Because `scale` does not support setting the transform origin, we have to use `matrix` instead, to mirror the SVG element. The transformation attribute to display negative values, looks like the following: `transform="rotate(-90 16.91549431 16.91549431) matrix(-1, 0, 0, 1, 33.83098862, 0)"`.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 It was a lot of fun and a great learning experience coming up with a CSS only solution for animating an SVG circle chart. The following pen includes all the features and I tried to add some useful comments to make it easier to understand how all the CSS properties work together.
 
