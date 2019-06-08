@@ -365,6 +365,20 @@ The `updateMonth()` function works pretty much the same, but because there is no
 
 In the code in the `<script>` block above, you can also see a new `watch` section containing a `year()` method. This method is automatically triggered, every time the value of the year changes. We're using this method to effectively limit the digits of the year `<input>` field to 4. Keep in mind though, that there might be situations where you want to allow more than 4 digits.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 It's always risky to re-implement features, which are already implemented in browsers, yourself. Oftentimes something like a `<input>` of type `date` seems much simpler than it really is – for example: in the current version, we're missing `:focus` styles, which is a huge usability no-no.
