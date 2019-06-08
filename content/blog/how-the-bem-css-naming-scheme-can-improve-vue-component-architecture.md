@@ -38,6 +38,17 @@ Let's say you have a component for displaying a list of the latest articles of y
 
 In this simplified example of a `LatestArticles` component, we can see a pattern emerge: the *Element* part of the class names is prefixed (e.g. `LatestArticles__list-item` and `LatestArticles__list-headline`). In the first example, you might think about simply removing the prefix and defining a class name like `LatestArticles__item` but a name like that might be too generic and as we can see with the class `LatestArticles__list-headline` this approach won't work, because we already have a class named `LatestArticles__headline`.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 **Prefixing class names like that, might be a good indicator for when it's time to refactor your component and splitting it up into multiple smaller components might be a good idea.**
 
 ```html

@@ -48,6 +48,17 @@ We begin with defining the basic markup for our date input element. There are tw
 
 Above we can see our template which consists of a wrapper div, which we'll use later to style the date field, and three separate `<input>` elements for the day, month and year parts of the date.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Conditional rendering
 
 In the next step, because there might be situations where we only need the month and the year of a date but no day, we want to make it possible to conditionally render only certain parts of our date field.
