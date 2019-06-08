@@ -112,6 +112,20 @@ By additionally specifying a `min-width` we're able to define that the column is
 
 (Look at the example at CodePen: https://codepen.io/maoberlehner/pen/ZXPNEy)
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 Flexbox is a powerful tool which makes it possible to build very complex layouts which adapt to the screen size and the content. However the combinations of flex specific properties to add to the CSS code to achieve certain layouts, might not always be self-explanatory.
 
