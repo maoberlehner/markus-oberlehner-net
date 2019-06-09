@@ -328,10 +328,16 @@ export default run(({ url = 'ProductListingContainer' }) => {
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/product-listing-integration-test">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-listing-integration-test 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-listing-integration-test 2x"
         alt="Product listing container Integration Test."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
+          alt="Product listing container Integration Test."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -378,10 +384,16 @@ After hitting `Run all specs` you should see the following result.
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/homepage-acceptance-test">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/homepage-acceptance-test 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/homepage-acceptance-test 2x"
         alt="Homepage Acceptance Test."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
+          alt="Homepage Acceptance Test."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
@@ -420,10 +432,16 @@ describe('Products', () => {
   <div class="c-content__broad">
     <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/products-acceptance-test">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/products-acceptance-test 2x"
+        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
+        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/products-acceptance-test 2x"
         alt="Products Acceptance Test."
       >
+      <noscript>
+        <img
+          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
+          alt="Products Acceptance Test."
+        >
+      </noscript>
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
