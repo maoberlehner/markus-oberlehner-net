@@ -27,19 +27,19 @@
       {{ $.Scratch.Set "has_related" true }}
     {{ end }}
     {{ if $.Scratch.Get "has_related" }}
-        <hr class="c-hr">
-        <aside class="o-vertical-spacing o-vertical-spacing--m">
-          <h2 class="c-section-headline">Related Content</h2>
-          <ul class="c-related">
-            {{ $num_to_show := .Site.Params.related_content_limit | default 7 }}
-            {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
-              <li class="c-related__item">
-                <span class="c-related__date">{{- dateFormat "02 Jan 2006" (default .Date (.PublishDate)) -}}</span>
-                <a class="c-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ end }}
-          </ul>
-        </aside>
-      {{ end }}
+      <hr class="c-hr">
+      <aside class="o-vertical-spacing o-vertical-spacing--m">
+        <h2 class="c-section-headline">Related Content</h2>
+        <ul class="c-related">
+          {{ $num_to_show := .Site.Params.related_content_limit | default 7 }}
+          {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+            <li class="c-related__item">
+              <span class="c-related__date">{{- dateFormat "02 Jan 2006" (default .Date (.PublishDate)) -}}</span>
+              <a class="c-anchor" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ end }}
+        </ul>
+      </aside>
+    {{ end }}
   </main>
 {{ end }}
 {{ define "footer" }}
