@@ -18,17 +18,15 @@
   "bugs": {
     "url": "https://github.com/maoberlehner/markus-oberlehner-net/issues"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@avalanche/eslint-config": "^3.0.0",
     "@avalanche/generic-box-sizing-reset": "^4.0.0-alpha.5",
     "@avalanche/object-container": "^4.0.0-alpha.9",
     "@avalanche/object-vertical-spacing": "^4.0.0-alpha.6",
     "@avalanche/setting-breakpoints": "^4.0.0-alpha.5",
     "@avalanche/setting-colors": "^4.0.0-alpha.5",
     "@avalanche/setting-font-sizes": "^4.0.0-alpha.5",
-    "@avalanche/setting-spacings": "^4.0.0-alpha.6"
-  },
-  "devDependencies": {
-    "@avalanche/eslint-config": "^3.0.0",
+    "@avalanche/setting-spacings": "^4.0.0-alpha.6",
     "@avalanche/stylelint-config": "^1.0.0",
     "clean-css": "^4.2.1",
     "concurrently": "^4.1.0",
