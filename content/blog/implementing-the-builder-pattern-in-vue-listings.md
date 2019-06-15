@@ -11,7 +11,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_a
 
 Recently I've seen a great talk by Jacob Schatz about [Phenomenal Design Patterns in Vue](https://www.youtube.com/watch?v=RF1bbhRw9sg). One of the patterns he mentioned in his talk was the Builder Pattern. I found his example very interesting, so it was clear to me that I had to experiment with this pattern myself.
 
-In this article, we take a look at a possible implementation of the Builder Pattern that is custom tailored to how I typically structure my Vue.js applications. In the first part of this two-part series, **we use this pattern to create highly reusable listing views** (think of an app with a lot of listing views for a multitude of different content types) and in the second part, we will explore a possible solution for creating many generic forms using this approach.
+In this article, we take a look at a possible implementation of the Builder Pattern that is custom tailored to how I typically structure my Vue.js applications. In the first part of this two-part series, **we use this pattern to create highly reusable listing views** (think of an app with a lot of listing views for a multitude of different content types) and in [the second part](/blog/implementing-the-builder-pattern-in-vue-forms/), we will explore a possible solution for creating many generic forms using this approach.
 
 ## The Builder Pattern with Vue.js components
 
@@ -256,7 +256,7 @@ Above you can see how we can use the `ListingDirector` for reusing existing conf
 
 Although I can definitely see the strengths of this pattern, it feels like a foreign body in a typical Vue.js application. I don't think it's a pattern that you will use very often in every app you build, but rather a pattern that you only reach for in very specific situations.
 
-But this was only the first part of this two-part series. You can [follow me on Twitter](https://twitter.com/MaOberlehner) or [sign up for my newsletter](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b) if you don't want to miss the second part where we use this pattern to build a system for creating flexible forms.
+But this was only the first part of this two-part series. You can [read the second part of this article series](/blog/implementing-the-builder-pattern-in-vue-forms/) to learn more about how to use the Builder Pattern to generate highly reusable forms.
 
 ## References
 
