@@ -424,7 +424,7 @@ export default {
 Thanks to the Director Pattern, we don't have to repeat ourselves in order to create the same form component in multiple locations of our application.
 
 <div class="c-content__broad">
-  <iframe data-src="https://codesandbox.io/embed/implementing-the-builder-pattern-in-vuejs-forms-25vpm?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Listings" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/implementing-the-builder-pattern-in-vuejs-forms-25vpm?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Forms" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 <div class="c-content__broad">

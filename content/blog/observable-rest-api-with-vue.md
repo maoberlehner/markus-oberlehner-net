@@ -122,7 +122,7 @@ export default {
 If you want to see the code in action you can [take a look at the following CodeSandbox](https://codesandbox.io/s/observable-rest-api-with-vuejs-hv54n). Keep in mind, however, that I had to make some modifications to the code in order to demonstrate polling.
 
 <div class="c-content__broad">
-  <iframe data-src="https://codesandbox.io/embed/observable-rest-api-with-vuejs-hv54n?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Listings" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/observable-rest-api-with-vuejs-hv54n?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Observable REST API with Vue.js" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 <div class="c-content__broad">
