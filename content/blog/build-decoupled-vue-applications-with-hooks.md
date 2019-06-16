@@ -171,7 +171,7 @@ addHook({
 If the `context` contains an `error` property we don't track a Google Analytics or Matomo event but send an error event to our error tracking service instead.
 
 <div class="c-content__broad">
-  <iframe data-src="https://codesandbox.io/embed/build-decoupled-vuejs-applications-with-hooks-8twcc?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Implementing the Builder Pattern in Vue.js: Listings" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  <iframe data-src="https://codesandbox.io/embed/build-decoupled-vuejs-applications-with-hooks-8twcc?fontsize=14&module=%2Fsrc%2FApp.vue&view=editor" title="Build Decoupled Vue.js Applications with Hooks" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
 ## Click tracking with Hooks
