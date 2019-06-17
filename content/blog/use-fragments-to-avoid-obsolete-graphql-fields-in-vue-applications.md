@@ -13,7 +13,7 @@ The more I use GraphQl, the more I ask myself the following: How can I avoid Gra
 
 ## The problem
 
-Let's look at the following application structure. The following excerpt shows a component tree of a typical Vue.js application: a base component that has several levels deep of child components.
+Let's take look at the following application structure. The snippet shows a component tree of a typical Vue.js application: a base component that has several levels deep of child components.
 
 ```bash
 UserDashboard
@@ -24,7 +24,7 @@ UserDashboard
          └─ UserDetails
 ```
 
-In our example, the `UserDashboard` component is responsible for fetching the current user and the necessary fields to render all of the child components.
+In our example, the `UserDashboard` component is responsible for fetching the current user and the necessary fields to render all of its child components.
 
 ```html
 <template>
@@ -126,7 +126,7 @@ If you have great commit discipline and your original change was properly encaps
  </template>
 ```
 
-Seems straightforward? But you might very well have introduced a new bug. The field that was originally added because it had to be rendered in `UserDetails` is now also used in one or more other subcomponents. So if you want to remove a field from the GraphQL query, **you need to check all child components that take the result of the query as a property for possible use of the field.**
+Seems straightforward at first glance, but you might very well have introduced a new bug. **The field that was originally added because it had to be rendered in `UserDetails` is now also used in one or more other subcomponents.** So if you want to remove a field from the GraphQL query, **you need to check all child components that take the result of the query as a property for possible use of the field.**
 
 In the real world, most developers won't do that because we're busy and have a lot to do. This means that after a few months, or even more after a few years, **we will have a lot of queries in our codebase that consist of a number of fields that are no longer used anywhere,** but it's a lot of work to figure out which fields that concerns.
 
@@ -143,7 +143,7 @@ In the real world, most developers won't do that because we're busy and have a l
 
 ## A possible solution using fragments
 
-Although I've been thinking about it for a few weeks now, I haven't found a solution that is 100% satisfactory. But after seeing this pattern in a few React applications, I figured it could be very useful in Vue.js as well.
+Although I've been thinking about this problem for a few weeks now, I haven't found a solution that is 100% satisfactory. But after seeing this pattern in a few React applications, I figured it could be very useful in Vue.js as well.
 
 ### Using component specific fragments
 
@@ -302,7 +302,7 @@ But if you're absolutely sure you'll never move away from GraphQL anyway, this s
 
 ## Wrapping it up
 
-Although GraphQL seems to be everybody's darling at the moment and I too think it's a very cool technology, its tendency to get into every corner of your application and dictate how to structure your components is something you should at least be aware of and ideally counter. **In an ideal world, I can change my data fetching layer without touching any of my components. GraphQL makes this almost impossible.**
+Although GraphQL seems to be everybody's darling at the moment and I too think it's a very cool technology, its tendency to get into every corner of your application and dictate how to structure your components is something you should at least be aware of and ideally work against it. **In an ideal world, I can change my data fetching layer without touching any of my components. GraphQL makes this almost impossible.**
 
 In addition to using fragments as described in this article, **I also try not to pass objects as properties whenever I can.** This makes my components 100% independent from the API layer and also makes them more explicit about what data they expect.
 
