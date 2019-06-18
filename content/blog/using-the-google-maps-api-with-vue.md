@@ -15,7 +15,7 @@ You can [take a look at the complete source code on GitHub](https://github.com/m
 
 ## The vue2-google-maps plugin
 
-Before we get started with building our own custom implementation, let me point out that there already is a pretty nice Vue.js plugin named `vue2-google-maps` which makes it possible to assemble a map with its markers in a declarative manner. 
+Before we get started with building our own custom implementation, let me point out that there already is a pretty nice Vue.js plugin named `vue2-google-maps` which makes it possible to assemble a map and its markers in a declarative manner.
 
 ```html
 <GmapMap :center="{ lat: 10, lng: 10 }">
