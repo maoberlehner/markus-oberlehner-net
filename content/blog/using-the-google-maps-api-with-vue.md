@@ -28,7 +28,7 @@ Before we get started with building our own custom implementation, let me point 
 </GmapMap>
 ```
 
-Although **I find the declarative approach pretty interesting and very Vue-ish,** in this article we will not use this plugin but rather use the bare Google Maps API. There are two reasons for this decision: first of all, using the plugin adds some overhead in terms of bundle size and second **it also adds some overhead in terms of finding out how to do more complicated stuff with the API**. If we use the raw API instead, we can simply read the documentation or some StackOverflow threads to learn how to do certain things. On the other hand if we use the plugin, we might have troubles finding out how to do more advanced stuff which might not be covered by the documentation of the `vue2-google-maps` plugin.
+Although **I find the declarative approach pretty interesting and very Vue-ish,** in this article we will not use this plugin but rather use the bare Google Maps API. There are two reasons for this decision: first of all, using the plugin adds some overhead in terms of bundle size and second **it also adds some overhead in terms of finding out how to do more complicated stuff with the API.** If we use the raw API instead, we can simply read the documentation or some StackOverflow threads to learn how to do certain things. On the other hand if we use the plugin, we might have troubles finding out how to do more advanced stuff which might not be covered by the documentation of the `vue2-google-maps` plugin.
 
 ## Loading the Google Maps API
 
