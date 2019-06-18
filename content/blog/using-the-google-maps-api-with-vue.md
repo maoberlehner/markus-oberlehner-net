@@ -32,7 +32,7 @@ Although **I find the declarative approach pretty interesting and very Vue-ish,*
 
 ## Loading the Google Maps API
 
-In the following code snippet you can see the `init()` function which we later use to initially load the Google Maps script.
+In the following code snippet you can see the `init()` function which we later use to initially load the Google Maps script. This allows loading the Google Maps script on demand, which means that we can delay loading the script until we actually want to render a Google Map.
 
 ```js
 // src/utils/gmaps.js
