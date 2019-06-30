@@ -6,7 +6,7 @@ intro = "In one of my previous articles, we examined how we can use JSX in Vue.j
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158513/blog/2019-06-30/sfc-proxy-component"]
+images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158514/blog/2019-06-30/sfc-proxy-component"]
 +++
 
 In one of my [previous articles](/blog/multi-export-vue-single-file-ui-components/), we examined how we can use JSX in Vue.js to export multiple Vue.js components from a single Single File Component (SFC) `.vue` file. Just recently I found an even easier solution to this problem.
@@ -59,32 +59,24 @@ Let's improve this somewhat by updating our `FancyTable` component to serve as a
 </template>
 
 <script>
-import FancyTableBody from './FancyTableBody.vue';
-import FancyTableCell from './FancyTableCell.vue';
-import FancyTableHead from './FancyTableHead.vue';
-import FancyTableRow from './FancyTableRow.vue';
-
-// The root component.
-const FancyTable = {
+// Export the root component as named export.
+export const FancyTable = {
   name: 'FancyTable',
   // ...
 };
 
 // Proxy export all related components.
-export {
-  FancyTable,
-  FancyTableBody,
-  FancyTableCell,
-  FancyTableHead,
-  FancyTableRow,
-};
+export { default as FancyTableBody } from './FancyTableBody.vue';
+export { default as FancyTableCell } from './FancyTableCell.vue';
+export { default as FancyTableHead } from './FancyTableHead.vue';
+export { default as FancyTableRow } from './FancyTableRow.vue';
 
 // A Vue.js SFC must have a default export.
 export default FancyTable;
 </script>
 ```
 
-Now our `FancyTable` component serves as a proxy for all related subcomponents.
+Now our `FancyTable` component serves as a proxy for all related subcomponents. Shout-out to Philipp Kühn for [showing me this shortened `export` / `from` syntax](https://twitter.com/_philippkuehn/status/1145241257419202560).
 
 <div>
   <hr class="c-hr">
