@@ -24,59 +24,55 @@ gulp.task(`watch`, () => {
   gulp.watch(scssPath, [`styles`]);
 });
 
-gulp.task(`styles`, [`clean:styles`], () =>
-  gulp.src(scssPath)
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      importer: nodeSassMagicImporter(),
-    }).on(`error`, sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write({ sourceRoot: path.join(`/`, scssRoot) }))
-    .pipe(gulp.dest(stylesDestDirectory)));
+gulp.task(`styles`, [`clean:styles`], () => gulp.src(scssPath)
+  .pipe(sourcemaps.init())
+  .pipe(sass({
+    importer: nodeSassMagicImporter(),
+  }).on(`error`, sass.logError))
+  .pipe(autoprefixer())
+  .pipe(sourcemaps.write({ sourceRoot: path.join(`/`, scssRoot) }))
+  .pipe(gulp.dest(stylesDestDirectory)));
 
-gulp.task(`minify:markup`, () =>
-  gulp.src(htmlPath)
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(inline({
-      rootpath: path.join(publicDirectory, `/`),
-      handlers: (source, context) =>
-        new Promise((resolve) => {
-          if (source.type === `css` && source.fileContent && !source.content) {
-            uncss(context.html, { htmlroot: publicDirectory }, (error, css) => {
-              if (error) throw error;
-              // eslint-disable-next-line no-param-reassign
-              source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
-              resolve();
-            });
-          } else {
-            resolve();
-          }
-        }),
-    }))
-    .pipe(transform(`utf8`, content => declassify.process(content, {
-      attrs: [`class`],
-      ignore: [`codepen`, `twitter-tweet`, /language-.+/, (process.env.NODE_ENV === `test` ? /qa-.+/ : undefined)],
-    })))
-    .pipe(gulp.dest(publicDirectory)));
+gulp.task(`minify:markup`, () => gulp.src(htmlPath)
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(inline({
+    rootpath: path.join(publicDirectory, `/`),
+    handlers: (source, context) => new Promise((resolve) => {
+      if (source.type === `css` && source.fileContent && !source.content) {
+        uncss(context.html, { htmlroot: publicDirectory }, (error, css) => {
+          if (error) throw error;
+          // eslint-disable-next-line no-param-reassign
+          source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
+          resolve();
+        });
+      } else {
+        resolve();
+      }
+    }),
+  }))
+  .pipe(transform(`utf8`, content => declassify.process(content, {
+    attrs: [`class`],
+    ignore: [`codepen`, `twitter-tweet`, /language-.+/, (process.env.NODE_ENV === `test` ? /qa-.+/ : undefined)],
+  })))
+  .pipe(gulp.dest(publicDirectory)));
 
-gulp.task(`service-worker`, () =>
-  wbBuild.generateSW({
-    globDirectory: `./public/`,
-    swDest: `./public/sw.js`,
-    globPatterns: [
-      `dist/**/*.{html,js,css}`,
-      `images/*.{png,jpg}`,
-      `index.html`,
-    ],
+gulp.task(`service-worker`, () => wbBuild.generateSW({
+  globDirectory: `./public/`,
+  swDest: `./public/sw.js`,
+  globPatterns: [
+    `dist/**/*.{html,js,css}`,
+    `images/*.{png,jpg}`,
+    `index.html`,
+  ],
+})
+  .then(() => {
+    // eslint-disable-next-line no-console
+    console.log(`Service worker generated.`);
   })
-    .then(() => {
-      // eslint-disable-next-line no-console
-      console.log(`Service worker generated.`);
-    })
-    .catch((error) => {
-      // eslint-disable-next-line no-console
-      console.log(`[ERROR] ${error}`);
-    }));
+  .catch((error) => {
+    // eslint-disable-next-line no-console
+    console.log(`[ERROR] ${error}`);
+  }));
 
 gulp.task(`clean:styles`, () => rimraf.sync(stylesDestDirectory));
 
