@@ -9,7 +9,7 @@
   "scripts": {
     "start": "concurrently 'gulp' 'hugo server --buildDrafts' 'open http://localhost:1313'",
     "build": "gulp styles && hugo && gulp minify:markup && gulp service-worker",
-    "lint": "eslint gulpfile.js test/**/*.js && stylelint themes/**/*.scss"
+    "lint": "eslint gulpfile.js && stylelint themes/**/*.scss"
   },
   "repository": {
     "type": "git",
