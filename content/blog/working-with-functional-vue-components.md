@@ -13,7 +13,7 @@ On my journey to find ways to improve the rendering performance of large scale V
 
 ## Special characteristics of functional components
 
-Functional components have some caveats that cause them to behave differently than other components. For example, **attributes are not passed along automatically, i.e. classes or ID's specified on a functional component are ignored by default.**
+Functional components have some restrictions that cause them to behave differently than other components. For example, **attributes are not passed along automatically, i.e. classes or ID's specified on a functional component are ignored by default.**
 
 ```html
 <!-- src/components/ArticleTeaser.vue -->
