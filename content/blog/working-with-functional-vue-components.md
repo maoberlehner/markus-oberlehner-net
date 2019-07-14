@@ -76,9 +76,9 @@ Although you may think that this should do the trick, we are not quite finished 
   <hr class="c-hr">
 </div>
 
-## Passing classes to functional components
+## Passing classes and styles to functional components
 
-Because Vue.js applies a special logic to the `class` attribute, it is not part of `data.attrs`, but instead you can access classes via `data.class` and `data.staticClass`.
+Because Vue.js applies a special logic to the `class` and `style` attributes, they are not part of `data.attrs`, but instead you can access classes and styles via `data.class` / `data.staticClass` and `data.style` / `data.staticStyle`.
 
 ```html
 <!-- Goes into `data.class` -->
@@ -88,12 +88,13 @@ Because Vue.js applies a special logic to the `class` attribute, it is not part 
 <UiHeadline class="my-class"/>
 ```
 
-This means that if you want to make your template-based functional components fully transparent, **you have to apply `data.class` and `data.staticClass` manually.**
+This means that if you want to make your template-based functional components fully transparent, **you have to apply `data.class` and `data.staticClass` as well as `data.style` and `data.staticStyle` manually.**
 
 ```html
 <template functional>
   <h1
     :class="[data.class, data.staticClass]"
+    :style="[data.style, data.staticStyle]"
     v-bind="data.attrs"
     v-on="listeners"
   >
@@ -102,7 +103,7 @@ This means that if you want to make your template-based functional components fu
 </template>
 ```
 
-Now our functional `UiHeadline` component is fully transparent and it doesn't matter to the people who use it that they're actually dealing with a functional component.
+Now our functional `UiHeadline` component is fully transparent and it doesn't matter to the people who use it that they're actually dealing with a functional component. Many thanks to Nico Prat, who made me aware that [the `style` attribute must also be taken into account](https://twitter.com/nicooprat/status/1148970449776386048).
 
 <div class="c-content__broad">
   <iframe data-src="https://codesandbox.io/embed/working-with-functional-vuejs-components-7fwe7?fontsize=14&module=%2Fsrc%2Fcomponents%2FUiHeadline.vue&view=editor" title="Working With Functional Vue.js Components" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
