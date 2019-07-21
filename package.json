@@ -32,7 +32,7 @@
     "concurrently": "^4.1.1",
     "declassify": "^2.1.0",
     "eslint": "^6.0.1",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.18.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-htmlmin": "^5.0.1",
