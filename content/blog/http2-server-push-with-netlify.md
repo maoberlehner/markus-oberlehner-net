@@ -1,7 +1,7 @@
 +++
 date = "2019-05-12T06:19:19+02:00"
 title = "HTTP/2 Server Push with Netlify"
-description = "Learn how to user HTTP/2 Server Push with Netlify and how to automatically configure HTTP/2 Server Push with Nuxt.js."
+description = "Learn how to use HTTP/2 Server Push with Netlify and how to automatically configure HTTP/2 Server Push with Nuxt.js."
 intro = "Everyone I know who uses Netlify for the first time is blown away by its simplicity. But sometimes there are situations where we need to do some advanced server configuration in order to serve our web applications as fast as possible. But as I recently discovered, configuring advanced techniques like using HTTP/2 server push is also quite easy to set up with Netlify..."
 draft = false
 categories = ["Development"]
