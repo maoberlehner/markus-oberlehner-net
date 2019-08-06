@@ -24,7 +24,7 @@ Functional components have some restrictions that cause them to behave different
       class="ArticleTeaser__title"
       @click="readMore"
     >
-	    {{ article.title }}
+      {{ article.title }}
     </UiHeadline>
     <p>{{ article.intro }}</p>
   </div>
