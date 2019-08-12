@@ -76,9 +76,9 @@ Although you may think that this should do the trick, we are not quite finished 
   <hr class="c-hr">
 </div>
 
-## Passing classes and styles to functional components
+## Passing classes, styles and refs to functional components
 
-Because Vue.js applies a special logic to the `class` and `style` attributes, they are not part of `data.attrs`, but instead you can access classes and styles via `data.class` / `data.staticClass` and `data.style` / `data.staticStyle`.
+Because Vue.js applies a special logic to the `class`, `style` and `ref` attributes, they are not part of `data.attrs`, but instead you can access classes, styles and refs via `data.class` / `data.staticClass`, `data.style` / `data.staticStyle` and `data.ref`.
 
 ```html
 <!-- Goes into `data.class` -->
@@ -88,11 +88,12 @@ Because Vue.js applies a special logic to the `class` and `style` attributes, th
 <UiHeadline class="my-class"/>
 ```
 
-This means that if you want to make your template-based functional components fully transparent, **you have to apply `data.class` and `data.staticClass` as well as `data.style` and `data.staticStyle` manually.**
+This means that if you want to make your template-based functional components fully transparent, **you have to apply `data.class` and `data.staticClass` as well as `data.style` and `data.staticStyle` and also `data.ref` manually.**
 
 ```html
 <template functional>
   <h1
+    :ref="data.ref"
     :class="[data.class, data.staticClass]"
     :style="[data.style, data.staticStyle]"
     v-bind="data.attrs"
@@ -103,7 +104,7 @@ This means that if you want to make your template-based functional components fu
 </template>
 ```
 
-Now our functional `UiHeadline` component is fully transparent and it doesn't matter to the people who use it that they're actually dealing with a functional component. Many thanks to Nico Prat, who made me aware that [the `style` attribute must also be taken into account](https://twitter.com/nicooprat/status/1148970449776386048).
+Now our functional `UiHeadline` component is fully transparent and it doesn't matter to the people who use it that they're actually dealing with a functional component. Many thanks to Nico Prat, who made me aware that [the `style` and `ref` attributes must also be taken into account](https://twitter.com/nicooprat/status/1148970449776386048).
 
 <div class="c-content__broad">
   <iframe data-src="https://codesandbox.io/embed/working-with-functional-vuejs-components-7fwe7?fontsize=14&module=%2Fsrc%2Fcomponents%2FUiHeadline.vue&view=editor" title="Working With Functional Vue.js Components" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
