@@ -13,6 +13,7 @@ In the first part of this three part series we've [set up a Nightwatch.js and Cu
 Today, in the third and final part of this series about acceptance testing with Nightwatch.js and Cucumber.js, we're going to integrate automated cross browser testing, powered by BrowserStack, into our workflow.
 
 ## Configuration
+
 Currently we're using the default configuration file `test/conf/default.conf.js` (you can find the code in [the GitHub repository I've created for this article](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-3-browserstack)) for running our tests with Nightwatch.js and Selenium.
 
 There are multiple ways of how to configure Nightwatch.js to run tests in BrowserStack, I prefer to create a separate configuration file which extends and overrides the default configuration. By following this approach, you can keep the configuration files relatively small and simple.
@@ -106,6 +107,7 @@ One way of adding your BrowserStack credentials to your environment variables is
 The code at the bottom of the configuration file merges the default configuration and the settings of the `default` `test_settings`.
 
 ## Local test runner
+
 With BrowserStack it is possible to test an instance of a website, which is running on a local server on your machine, in the remote BrowserStack testing environment. But we need to install a new package to make this work: `browserstack-local`.
 
 ```bash
@@ -153,6 +155,7 @@ try {
 The code above runs Nightwatch.js tests with BrowserStack which is able to access your local test server, thanks to the `browserstack-local` package.
 
 ## Parallel testing limit
+
 Depending on your BrowserStack plan, you're only allowed to run a limited amount of automated tests in parallel. To prevent exceeding this amount let's write a little shell script `test/browserstack.sh` to start the tests consecutively.
 
 ```bash
@@ -184,4 +187,5 @@ Finally, to conveniently start the tests, let's add a new npm script.
 This makes it possible to execute the tests with the command: `npm run test-browserstack`.
 
 ## Wrapping it up
+
 Cross browser testing can be a tedious task. By automating this process, you can save a lot of boring, manual work. BrowserStack and Nightwatch.js make it pretty easy to run your tests on a wide variety of browsers. Happy testing.
