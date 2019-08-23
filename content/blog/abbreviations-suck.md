@@ -2,16 +2,16 @@
 date = "2017-01-22T09:06:05+02:00"
 title = "Abbreviations Suck"
 description = "Using abbreviations for naming variables and functions leads to harder to understand code. Not using abbreviations is an easy way to improve your code."
-intro = "For a recent project I had to work a lot with express (Node.js framework). In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic."
+intro = "For a recent project I had to work a lot with the express Node.js framework. Abbreviations are used everywhere in the express documentation: req, res, err, etc. As I copied code snippets from the documentation into my project and kept changing the abbreviations into the words they stand for, I figured I could write an article on the subject..."
 draft = false
 categories = ["Development"]
 +++
 
-For a recent project I had to work a lot with the express Node.js framework. In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic.
+For a recent project I had to work a lot with the express Node.js framework. Abbreviations are used everywhere in the express documentation: `req`, `res`, `err`, etc. As I copied code snippets from the documentation into my project and kept changing the abbreviations into the words they stand for, I figured I could write an article on the subject.
 
 ## The case for abbreviations
 
-Let's start with the adverse opinion – why use abbreviations in the first place? There are only two reasons I can think of:
+Let's start with the opposing opinion - why use abbreviations in the first place? There are only two reasons I can think of:
 
 1. **Abbreviations are shorter and therefore faster to write**  
 Although this argument could be completely shut down by stating that every modern code editor has an autocomplete feature, let's do some math. I'm writing with about 300 keystrokes per minute – time saved writing 5 letters less (e.g. `res` instead of `response`)? 1 second. Even if you are writing a lot of code per day, let's say 160 lines, and let's assume you're writing one abbreviation every two lines. The time saved per day would be roughly 7 minutes. In contrast to that there might be dozens of people reading your code in the future. If each of them has to think only one minute longer about your code to understand it because an abbreviation isn't completely clear, it results in a net loss of time spent. Or even worse: a bug might be caused by a misunderstanding of an abbreviation.
