@@ -10,6 +10,7 @@ categories = ["Development"]
 For a recent project I had to work a lot with the express Node.js framework. In the express documentation, abbreviations are used everywhere: `req`, `res`, `err`,... While copying code snippets from the documentation into my project and changing the abbreviations to the words they stand for again and again, I figured I should write an article about this topic.
 
 ## The case for abbreviations
+
 Let's start with the adverse opinion – why use abbreviations in the first place? There are only two reasons I can think of:
 
 1. **Abbreviations are shorter and therefore faster to write**  
@@ -18,6 +19,7 @@ Although this argument could be completely shut down by stating that every moder
 There is some truth to this argument in that it's broadly considered a good practice to keep your line length short (80-120 characters per line depending on who you ask). But I'd argue that although abbreviations might help in reducing the line length, they oppose the actual goal of the rule which is to improve readability.
 
 ## The case against abbreviations
+
 Now take a look at the reasons why not to use abbreviations.
 
 1. **Abbreviations make it harder to understand your code**  
@@ -28,6 +30,7 @@ There may be dozens of people working on one codebase simultaneously. Everyone o
 Naming things is hard. Some say coming up with a good name for a variable or function is one of the hardest things in programming. But it is much easier if you give up on keeping the names as short as possible. Use obvious names like `getResponseValues` instead of `getResVal`. `Res` could stand for `Response`, `Resource`, `Reserved`,... and `Val` could stand for `Value`, `Validation`,... What might seem obvious at the time you're writing it, may not be that obvious for other people, or even yourself in one year.
 
 ## Exceptions
+
 I'm not a fan of absolutes and there might be valid cases in which using abbreviations makes sense.
 
 - As a JavaScript developer one exception that instantly comes to mind when talking about abbreviations is `e` for `event`. Thats just such a widely used pattern that I hardly can argue against it. All the more important it is to not use `e` as an abbreviation for `error`.
