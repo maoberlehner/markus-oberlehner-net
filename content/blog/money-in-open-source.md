@@ -2,14 +2,14 @@
 date = "2018-01-21T09:26:02+02:00"
 title = "Money in Open Source"
 description = "In theory, open source seems like an egalitarian system where everybody is free to contribute and to consume whatever they like. But taking a closer look, we can see, that much like in the economic world, the Winner-Takes-All principle is strong in open source too."
-intro = "Last week at Scriptconf in Linz, Austria, Evan You, the creator of Vue.js, spoke about his journey to becoming a full-time open source developer. Although most of the things he was talking about do not apply to small open source projects and their contributors, I still found it interesting to gain some insights in the world of highly successful open source projects. But the one thing that people seemed to talk most about after the talk was how much money Evan makes on Patreon...."
+intro = "Last week at Scriptconf in Linz, Austria, Evan You, the creator of Vue.js, spoke about his journey to becoming a full-time open source developer. Although most of the things he talked about don't apply to small open source projects and their contributors, I still found it interesting to gain some insight into the world of highly successful open source projects. But the one thing that people seemed to talk most about after the talk was how much money Evan makes on Patreon...."
 draft = false
 categories = ["Development"]
 +++
 
-Last week at [Scriptconf](https://scriptconf.org/speakers) in Linz, Austria, Evan You, the creator of Vue.js, spoke about his journey to becoming a full-time open source developer. Although most of the things he was talking about do not apply to small open source projects and their contributors, I still found it interesting to gain some insights in the world of highly successful open source projects.
+Last week at [Scriptconf](https://scriptconf.org/speakers) in Linz, Austria, Evan You, the creator of Vue.js, spoke about his journey to becoming a full-time open source developer. Although most of the things he talked about don't apply to small open source projects and their contributors, I still found it interesting to gain some insight into the world of highly successful open source projects.
 
-But the one thing that people seemed to talk most about after the talk was how much money Evan makes on Patreon ($ 12,526 / month as of writing this). This got me thinking about the topic of money in open source and monetization of open source projects in general.
+But the one thing that people seemed to talk most about after the talk was how much money Evan makes on Patreon ($12,526 / month at the time of writing). This got me thinking about money in open source and the monetization of open source projects in general.
 
 ## Capitalism
 
