@@ -13,6 +13,7 @@ In the [first part](https://markus.oberlehner.net/blog/acceptance-testing-with-n
 In an ideal world, it should be possible to write basic acceptance test specifications without having to add any new step definitions. In the real world this is not always possible, because some features, with some very specific functionality, might need special treatment and are impossible to test without writing custom step definitions. However our goal today, is to write a few very simple step definitions which are smart enough to cover the vast majority of test cases.
 
 ## The test subject
+
 To make things more interesting and to also make our example website a little bit more realistic, let's update the code to simulate two occurrences of a newsletter form on the same page.
 
 Usually you'd want to test both occurrences the same way but there might be cases where you want to test such elements separately because they should behave slightly different depending on where they are positioned on the page. Let's assume – in this specific case – that we want to test the functionality of the second newsletter form in the footer.
@@ -66,6 +67,7 @@ Usually you'd want to test both occurrences the same way but there might be case
 As you can see above, the `qa-` prefixed classes we've used previously to select specific elements in our step definitions, are gone. Instead you can see custom `data-qa` attributes used on certain HTML elements. This makes it possible to use human readable names to select HTML elements in the step definitions. This is only the most important part of the code, if you're intrested in the full code example, you can checkout the [GitHub repository](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-2-smart-step-definitions) I've created for this article.
 
 ## Rewriting the acceptance test feature specification
+
 Because we now have two newsletter forms on the same page and we've slightly tweaked the naming of some elements, we must update our test specification `test/features/newsletter-form.feature` too.
 
 ```gherkin
@@ -102,6 +104,7 @@ In this case we want to target the element with the name `error message`, which 
 By writing a more specific test case, we are able to test a specific one of the two newsletter forms on the page.
 
 ## Writing Smart step definitions
+
 What I mean by smart step definitions is, that they can be reused for different scenarios and are not specific to a certain test case, but they also should be flexible in the way they can be used to make it possible to write test cases in a natural language without having to stick to very strict rules how to phrase the test cases.
 
 ```js
@@ -192,6 +195,7 @@ With this set of five simple but smart step definitions, it is already possible 
 </div>
 
 ## Wrapping it up
+
 By using `data-qa` attributes on the HTML elements which we want to target in our tests, it is possible to write test specifications in (almost) perfect natural language, without having to map every element in a separate step definition.
 
 Because we're using a lot of very general matching regular expressions in our smart step definitions, there might be situations where you have to tweak a definition to make it work with some other, more specific definition. But overall the benefits of having a set of smart step definitions, which cover a broad range of test cases, outweigh those minor inconveniences.
