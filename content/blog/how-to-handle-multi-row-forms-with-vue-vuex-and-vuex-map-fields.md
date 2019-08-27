@@ -169,6 +169,6 @@ In the Vue component you can see above, we're using `v-for` to render rows of fo
 ## Recap
 Handling form data with Vue in a way which does not mutate the Vuex store, can be a tricky thing to do. Even more tricky can it be to handle multi-row forms.
 
-I hope for [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to be a useful tool in the tool belt of Vue developers to make handling form data with Vue and Vuex a more pleasant experience.
+I hope for [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to be a useful tool in the utility belt of Vue developers to make handling form data with Vue and Vuex a more pleasant experience.
 
 If you enjoyed this article, please **make sure to also read one of my previous articles about [form field handling in combination with Vuex](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/)**.

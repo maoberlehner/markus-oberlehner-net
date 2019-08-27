@@ -32,7 +32,7 @@ I often wonder **how to best decouple certain parts of an application.** At firs
   </p>
 </div>
 
-In this article, **we take a look at what patterns exist in Vue.js applications to provide dependencies to components.** We will examine the advantages and disadvantages of each approach and what alternatives there are to each. We'll also see that certain methods are very well suited for particular use cases but not so well for others. After reading this article, you should have enough tools in your tool belt to decide whether a hammer or a Phillips screwdriver is a better choice for a certain use case.
+In this article, **we take a look at what patterns exist in Vue.js applications to provide dependencies to components.** We will examine the advantages and disadvantages of each approach and what alternatives there are to each. We'll also see that certain methods are very well suited for particular use cases but not so well for others. After reading this article, you should have enough tools in your utility belt to decide whether a hammer or a Phillips screwdriver is a better choice for a certain use case.
 
 ## Importing modules
 

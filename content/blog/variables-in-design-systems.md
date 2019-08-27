@@ -22,7 +22,7 @@ Variables can help us to ensure consistency across our design system. By definin
 
 ### Keeping the codebase DRY
 
-Sticking to the `$color-warning` example – by changing the value of this single variable, we're able to change the color of all warning messages across our application. This is the main reason why variables are such a powerful tool in the tool belt when it comes to building large scale design systems with (S)CSS.
+Sticking to the `$color-warning` example – by changing the value of this single variable, we're able to change the color of all warning messages across our application. This is the main reason why variables are such a powerful tool in the utility belt when it comes to building large scale design systems with (S)CSS.
 
 ## Why not use variables?
 
