@@ -17,6 +17,7 @@ Although, as an introvert, there are not many things I hate more than speaking i
 ![Markus Oberlehner on the stage at the WeAreDevelopers conference 2017](/images/2017-05-13/markus-oberlehner-wearedevelopers-stage.jpg)
 
 ## Being an introvert
+
 The most basic definition of an introvert is: “A person who gains energy from being alone and loses energy in stimulating environments, such as social events.” That doesn't mean that I don't want to be around other people at all. I just drain energy quite fast if I'm around other people, especially people I don't know very well or not at all.
 
 In my experience this is not very well understood by non introverts because for extroverts it's the other way round and – at least in my experience – most people lie more on the non introvert spectrum even if they are not hardcore extroverts.
@@ -24,6 +25,7 @@ In my experience this is not very well understood by non introverts because for 
 I may write a little more detailed blog post about my experiences as an introvert in the future. For the matter of this article let's just put it that way: I'm an introvert and I usually do not enjoy being around a lot of people for an extended period of time, let alone speaking in front of hundreds of people I do not know at all.
 
 ## Getting out of your comfort zone
+
 I do not agree at all with the thousands of wannabe helpful articles on the internet and in magazines which state that “getting out of your comfort zone” is a thing introverts should do on a regular basis. It's bullshit.
 
 After a long week of work, I need to recharge my batteries. Getting out of my comfort zone, in the sense of being around a lot of people, is draining my batteries even further. The point is: this is not changing, no matter how often I get out of my comfort zone. So in general I would say that's pretty bad advice which is only given by people who have no idea how introverts “work” and for whom introversion is a flaw which needs to be fixed.
@@ -31,11 +33,13 @@ After a long week of work, I need to recharge my batteries. Getting out of my co
 That said there are good reasons for getting out of your comfort zone from time to time. One of those good reasons is to bring yourself forward in your career or professional field. And speaking at conferences is one way of achieving that.
 
 ## Getting started as a speaker
+
 One thing that is mentioned time after time by experienced speakers is, that the best way to get started as a speaker is, to speak at local meetups, and thats the way which worked for me as well.
 
 After I switched jobs last year and started working at karriere.at I used every chance I got to speak about stuff I learned on my side projects at our monthly karriere.at internal “Dev Cafes”. And because this did work out quite well, my boss asked me to do a talk at the local JavaScript meetup [stahlstadt.js](https://www.meetup.com/de-DE/stahlstadt-js/) which was held at the karriere.at office. This also worked out quite well and I guess thats why, when he hadn't enough time to prepare a talk for the WeAreDevelopers conference, he asked me to replace him.
 
 ## Preparation, preparation, preparation
+
 As I said before, being around a lot of people and especially speaking in front of a lot of unfamiliar people, isn't my most favorite exercise. But doing a talk at a big conference was a chance I couldn't miss.
 
 I knew I had do be very well prepared to prevent being overwhelmed by nervousness when standing on the stage in front of 300 strangers. I did everything I could to be as well prepared as one can be.
@@ -47,6 +51,7 @@ After finishing the work on my presentation, I started to memorize the things I 
 One week before the conference I already was very confident, that I'm able to do a great job at the real stage. Being perfectly prepared, greatly reduced the nervousness I was feeling the last days before the talk.
 
 ## Just do it
+
 When the moment of truth finally came I took a deep breath, walked up the stage and just did it. I held my talk like I already did many times before, just in front of more people.
 
 The feeling I felt after I walked down the stage was amazing.
