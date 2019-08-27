@@ -8,9 +8,9 @@ categories = ["Development", "Life"]
 images = ["https://markus.oberlehner.net/images/2017-05-13/markus-oberlehner-wearedevelopers-stage.jpg"]
 +++
 
-Yesterday I had the privilege to speak on one of the side stages at the [WeAreDevelopers](https://www.wearedevelopers.com) conference, which is the largest developers conference in Europe.
+Yesterday I had the privilege of speaking on one of the side stages of the [WeAreDevelopers](https://www.wearedevelopers.com) conference, the largest development conference in Europe.
 
-I want to thank my boss for giving me the chance and trusting me enough to replace him as a speaker at this conference and I also want to thank my fellow colleagues who supported me before, during and after the talk.
+I would like to take this opportunity to thank my boss for giving me the chance and trusting me enough to replace him as speaker at this conference, and I would also like to thank my colleagues who supported me before, during and after the presentation.
 
 Although, as an introvert, there are not many things I hate more than speaking in front of hundreds of people, it was an opportunity I had to take.
 
