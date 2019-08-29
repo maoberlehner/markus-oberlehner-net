@@ -2,13 +2,13 @@
 date = "2018-08-12T06:00:00+02:00"
 title = "Automatic SPA FTP Deploys with CircleCI"
 description = "Learn how to deploy a modern SPA to a remote FTP server using CircleCI and Node.js."
-intro = "Most of my articles are about the latest and greatest tools and technologies out there. One of the nice things about writing blog articles, in order to explore new technologies, is that it's a theoretical exercise. There is no client who dictates the specifications and there is no preexisting legacy stuff you have to consider..."
+intro = "Most of my articles are about the latest and greatest tools and technologies out there. One of the nice things about writing blog articles is that you can devote yourself fully to exploring new technologies. There is no client dictating the specifications, and there is no legacy code and technologies you need to consider..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "deployment"]
 +++
 
-Most of my articles are about the latest and greatest tools and technologies out there. One of the nice things about writing blog articles, in order to explore new technologies, is that it's a theoretical exercise. There is no client who dictates the specifications and there is no preexisting legacy stuff you have to consider, so you're free to choose any new and shiny technology you want.
+Most of my articles are about the latest and greatest tools and technologies out there. One of the nice things about writing blog articles is that you can devote yourself fully to exploring new technologies. There is no client dictating the specifications, and there is no legacy code and technologies you need to consider, so you can freely choose any new and shiny technology you want.
 
 The reality, however, is different. **In reality there are crazy project requirements and there is always a lot of legacy stuff, seriously, there is legacy technology everywhere.**
 
