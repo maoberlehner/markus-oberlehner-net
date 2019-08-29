@@ -17,11 +17,13 @@ To cut a long story short: none of those approaches were originally intended to 
 I created an [example CodePen](https://codepen.io/maoberlehner/pen/aWarZO) using the concepts explained in the following article: [Good Ol' 12 Column CSS Grid Framework Using CSS Grid Layout](https://codepen.io/maoberlehner/pen/aWarZO)
 
 ## Finally: CSS Grid Layout
+
 A framework is a tool to provide a solid fundament for building complex systems. By building your own CSS grid framework, we have a solid and - at least after some time - battle tested system to build on top on.
 
 After Flexbox we now have a second „official“ way of building CSS powered layouts. As I wrote in a previous article, many people argue, that those new tools make grid frameworks obsolete. Let's prove them wrong and build a traditional 12 column grid framework using the new CSS Grid Layout.
 
 ### Grid wrapper
+
 ```scss
 .grid {
   display: grid;
@@ -34,6 +36,7 @@ After Flexbox we now have a second „official“ way of building CSS powered la
 Let's take a closer look at the code above: the `display` property is set to `grid` which activates the CSS Grid Layout. The `grid-template-columns` property is responsible for line names and track sizing functions of grid columns. We're using the `repeat` function to define 12 columns, each spanning across 1 fraction. To set horizontal and vertical gutter, we can use the `grid-column-gap` and `grid-row-gap` properties. By setting those to `1em` both horizontal and vertical gutters between grid items are `1em` wide. If we want to use the same amount of space between columns and rows, like in our example, we can also use the `grid-gap` shorthand property to set both gutters at once.
 
 ### Grid items
+
 ```scss
 .width-1\/12 {
   grid-column: span 1;
@@ -55,6 +58,7 @@ By default every element in our grid spans across 1 fraction which represents a 
 One thing to mention is, that by using this approach of defining fixed dimensions for our grid items, we're loosing a lot of the auto layout goodness CSS Grid Layout provides. Be mindful about how you use your CSS Grid Layout powered grid framework. In many cases a custom solution for the problem at hand, might be a better choice.
 
 #### Responsive grid items
+
 ```scss
 @media (min-width: 48em) {
   .width-1\/12\@m {
@@ -96,6 +100,7 @@ To define a column which spans across the full width of your layout on mobile re
 </div>
 
 ## Recap
+
 It was never that easy to build powerful layouts with CSS as it is today. Since the implementation of Flexbox in most modern browsers – for the first time in history – we're able to build CSS layouts without having to rely on hacks.
 
 At this point, some of you might wonder when it's appropriate to use Flexbox and when to use CSS Grid Layout? As a rule of thumb: use CSS Grid Layout for building your overall layout like header, main content + sidebar and footer. Use Flexbox on a component level, if you're displaying multiple elements side by side inside your pages header for example. Although there is no definitive answer to this question yet. We as developers have to figure out the best ways of using those new powerful tools that were given to us.
