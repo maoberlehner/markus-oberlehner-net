@@ -24,6 +24,7 @@ The Priority+ horizontal scroll navigation pattern works the same way but instea
 </div>
 
 ## The markup
+
 In the first step we're going to build the HTML markup for our Priority+ scroll navigation.
 
 ```html
@@ -50,6 +51,7 @@ In the first step we're going to build the HTML markup for our Priority+ scroll 
 As you can see we're using a very basic approach of marking up a navigation. Using the `<nav>` tag as our wrapper for the navigation, gives the navigation the correct semantic meaning. Although using an `<ul>` for building navigations is not strictly necessary, it has become more or less the standard way of marking up navigations.
 
 ## The (S)CSS
+
 We're using Sass and the BEM methodology for styling things.
 
 ```scss
@@ -146,6 +148,7 @@ The `-webkit-overflow-scrolling: touch;` CSS property enables momentum-based scr
 Setting `pointer-events: none;` on the shadow elements is recommended because otherwise the user might tap on a navigation item which is partly hidden by a shadow and therefore the tap does not reach the navigation item but the shadow element which would lead to a rather frustrating user experience.
 
 ## The JavaScript
+
 In order to show and hide the shadows on the left and the right side to make it clear that navigation items are hidden, we have to use some JavaScript magic.
 
 ```js
@@ -184,5 +187,6 @@ The `handleShadowVisibility()` determines if and if yes which shadow(s) should b
 Inside the `toggleShadow()` function, we're determining if the shadow element should get hidden or shown. Because scrolling can become sluggish if layout repaints are triggered during scrolling, we're using `requestAnimationFrame` to reduce layout thrashing.
 
 ## Demo
+
 <p data-height="350" data-theme-id="0" data-slug-hash="WOmobd" data-default-tab="js,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Priority+ Scroll Navigation" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/WOmobd/">Priority+ Scroll Navigation</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
