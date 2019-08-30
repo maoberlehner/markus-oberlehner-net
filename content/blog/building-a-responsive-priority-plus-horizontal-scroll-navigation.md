@@ -2,13 +2,13 @@
 date = "2017-08-20T07:50:21+02:00"
 title = "Building a Responsive Priority+ Horizontal Scroll Navigation"
 description = "Learn how to build a responsive Priority+ horizontal scroll navigation with CSS and JavaScript."
-intro = "One of the harder problems to solve in responsive design and especially when designing websites which are supposed to work well on small screens, is building user friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction..."
+intro = "One of the most difficult problems to solve when designing websites that are supposed to work well on small screens is creating user-friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "JavaScript"]
 +++
 
-One of the harder problems to solve in responsive design and especially when designing websites which are supposed to work well on small screens, is building user friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction.
+One of the most difficult problems to solve when designing websites that are supposed to work well on small screens is creating user-friendly navigations. For a long time the goto solution was to hide the navigation items behind a hamburger button. Although the hamburger button is still going strong, there are some new approaches coming up and gaining traction.
 
 One of this (kinda) new approaches is a variant of the Priority+ pattern (coined by [Michael Scharnagl](https://justmarkup.com/)) combined with horizontal scrolling. The Priority+ pattern describes a horizontal navigation which shows the most important items first, as the screen size shrinks the least important navigation items are hidden and you have to press a button to show all the navigation items again.
 
