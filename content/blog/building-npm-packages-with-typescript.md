@@ -11,9 +11,11 @@ tags = ["TypeScript"]
 Recently I worked on a couple of npm packages which I built using TypeScript. In the process of figuring things out I encountered some challenges with publishing my code built with TypeScript to npm. In this article I'm going to show you how to setup your project to make publishing your TypeScript powered package to npm a pleasant experience.
 
 ## Module exporting
+
 A vital part of working with Node.js is the approach of exporting and importing JavaScript modules. If you're writing plain old JavaScript powered Node.js code, you're most likely using `require` for importing modules `const path = require('path');` and `exports = () => 'Hello World';` to export certain parts of your package for others to use. The system for handling modularization in Node.js is called CommonJS and this is the default way of handling JavaScript modules in Node.js.
 
 ### Configuring TypeScript to export CommonJS modules
+
 If you're going to publish your code to npm and you want to make it as easy as possible for others to use your code in their own projects, you have to configure TypeScript to export your code in a format which can be handled by using the CommonJS `require` syntax. You can achieve this by setting the `module` compiler option in your `tsconfig.json` file to `commonjs`.
 
 ```json
@@ -27,6 +29,7 @@ If you're going to publish your code to npm and you want to make it as easy as p
 (Keep in mind that this only applies to packages which are meant to be used (mostly) on the backend. If you're developing a npm package which is going to be used for building frontend applications, you might choose `umd` as your `module` output format.)
 
 ### Writing modular TypeScript code
+
 TypeScript inherited the ES6 way of handling modules. You might be familiar with the following syntax for importing JavaScript modules `import path from 'path';` and `export default () => 'Hello World';` for exporting a default function in a module.
 
 Because of the concepts of named and default imports and exports in the ES6 specification (which are missing from the CommonJS system) CommonJS and ES6 imports and exports are not compatible. Although tools like Webpack, Babel and rollup.js came up with various solutions to make them work together – this is why usually most users do not have any problems making CommonJS modules play nicely with the ES6 style import syntax.
@@ -75,6 +78,7 @@ Although this would work, it is not a nice API and most certainly not what the u
 There are several ways how to work around this problem the following example is just one of the possible solutions. The key takeaway here is that using ES6 default exports won't produce the most favorable results if you're planning to publish your code to npm.
 
 #### CommonJS style imports and exports in TypeScript
+
 One of the easiest ways of dealing with this problem is to split your code across multiple files and use the TypeScript `export =` and `import x =` syntax which mimics the CommonJS behavior.
 
 ```ts
@@ -104,6 +108,7 @@ catsSay(); // Returns `Meow`.
 ```
 
 ## Publishing types to npm
+
 If you're using TypeScript you might have noticed that a lot of npm packages are missing support for types. If you're publishing a new package built on top of TypeScript you're able to publish the type declarations to npm automatically, so other TypeScript users are getting full type support out of the box when using your package.
 
 To do so there are only two settings you have to make. First of all open your `tsconfig.json` file and add `"declaration": true` to your `compilerOptions`.
@@ -126,4 +131,5 @@ Secondly you have to define the path to the types of your package which are gene
 ```
 
 ## Wrapping it up
+
 Although ES6 named and default exports are a huge step forward, Node.js does not support them yet (without additional tooling). If you're publishing your code to npm you most likely want others to use it. In order to make it as easy as possible for others to use your code, it is important to follow certain best practices and provide a predictable API. By using the TypeScript `export =` syntax we can achieve this goal.
