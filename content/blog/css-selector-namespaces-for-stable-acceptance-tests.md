@@ -15,6 +15,7 @@ Today we're going to look at the approach of using separate, namespaced CSS sele
 I first read about this concept in an article by Harry Roberts about [more transparent UI code with namespaces](https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces#qa-namespaces-qa-). If you're not familiar with the approach of using namespaces in CSS, I highly recommend you to read the whole article.
 
 ## Tightly coupled acceptance tests
+
 Methodologies like OOCSS and BEM have tackled the problem of tightly coupling markup and styling. But when we're writing acceptance tests, many of us fall into the old pattern of tightly coupling the selectors used in the acceptance tests to the markup of the tested module, even worse, we often use selectors intended to represent a certain styling of a module, which has nothing to do with the functionality we're testing.
 
 ```js
@@ -57,6 +58,7 @@ In this example you can see that we've added a separate class `qa-hero-link`. Th
 There are two main benefits of this approach: no more tight coupling between a specific implementation of the markup or styling and it's clearly visible to the programmer, that there are changes to be made to the tests if an element with a `qa-` prefixed class is removed or its behavior is changed.
 
 ## Removing quality assurance classes in production
+
 If you're obsessed about performance and you want to eliminate every unnecessary byte which is delivered to the user, you might think about removing those `qa-` classes before deploying to production. If you're planning to go this way, keep in mind the following caveat: what you're delivering to production, is not what you've tested – there might be side effects you don't catch because, well, you ran your tests on a different output.
 
 ```js
