@@ -2,7 +2,7 @@
 date = "2017-09-06T08:52:50+02:00"
 title = "Dealing with the BrowserStack Parallel Test Limit When Using TestCafe"
 description = "Overcome the BrowserStack parallel test limit when using TestCafe. Run TestCafe tests consecutively on BrowserStack."
-intro = "One problem you might run into, if you're trying to run cross browser tests in multiple browsers on BrowserStack with TestCafe, is the parallel test limit which depends on your BrowserStack plan. At the time of writing this, all regular BrowserStack plans include only one parallel test – which means that you're allowed to run only one automated test at a time..."
+intro = "One problem you might encounter when trying to run cross-browser tests in multiple browsers on BrowserStack with TestCafe is the parallel test limit that depends on your BrowserStack plan. At the time of writing, all regular BrowserStack plans include only one parallel test - which means you can only run one automated test at a time..."
 draft = false
 categories = ["Development"]
 tags = ["TDD", "Front-End testing", "acceptance tests"]
@@ -10,7 +10,7 @@ tags = ["TDD", "Front-End testing", "acceptance tests"]
 
 In my previous article about [automated testing with TestCafe and BrowserStack](/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/), we explored how to utilize TestCafe to run cross browser acceptance tests powered by BrowserStack.
 
-One problem you might run into, if you're trying to run cross browser tests in multiple browsers on BrowserStack with TestCafe, is the parallel test limit which depends on your BrowserStack plan. At the time of writing this, all regular BrowserStack plans include only one parallel test – which means that you're allowed to run only one automated test at a time.
+One problem you might encounter when trying to run cross-browser tests in multiple browsers on BrowserStack with TestCafe is the parallel test limit that depends on your BrowserStack plan. At the time of writing, all regular BrowserStack plans include only one parallel test - which means you can only run one automated test at a time.
 
 ## TestCafe multi browser handling
 
