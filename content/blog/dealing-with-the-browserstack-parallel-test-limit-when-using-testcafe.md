@@ -13,6 +13,7 @@ In my previous article about [automated testing with TestCafe and BrowserStack](
 One problem you might run into, if you're trying to run cross browser tests in multiple browsers on BrowserStack with TestCafe, is the parallel test limit which depends on your BrowserStack plan. At the time of writing this, all regular BrowserStack plans include only one parallel test – which means that you're allowed to run only one automated test at a time.
 
 ## TestCafe multi browser handling
+
 The way I want to use TestCafe is to run automated tests on a wide range of browsers – all the browsers I want to actively support – to guarantee everything works as expected.
 
 ```bash
@@ -28,6 +29,7 @@ ERROR Unable to establish one or more of the specified browser connections. This
 Also your BrowserStack Automate instance will crash and you can't execute automated tests anymore. Even clicking “Stop session” on frozen tests won't work and you have to wait until they time out or some nice member of the BrowserStack support team stops them for you.
 
 ## Running TestCafe tests on BrowserStack consecutively
+
 The solution to the problem is to run TestCafe tests on BrowserStack one after another instead of all at once. TestCafe does not support this out of the box so we have to build a little shell script to help us out.
 
 ```bash
