@@ -2,12 +2,12 @@
 date = "2017-02-26T11:07:05+02:00"
 title = "Perfectionism Kills Motivation"
 description = "Every programmer knows that feeling: you're looking at some code you wrote a few weeks or maybe even some months or years ago and you are embarrassed."
-intro = "The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation..."
+intro = "In the last couple of days, I felt like I was running out of steam. Following my daily routine of committing at least two enhancements to one or more open source projects (mostly my own) felt very exhausting. Yesterday I finally took the time to think about why I'm losing my motivation..."
 draft = false
 categories = ["Life"]
 +++
 
-The last couple of days I was feeling like running out of steam. Following my daily routine of committing at least two enhancements to one or multiple open source projects (mostly my own) felt pretty demanding. Yesterday I finally took the time to think about why I'm loosing motivation. As I found out there are multiple factors why I was feeling less and less motivated to work on my pet projects.
+In the last couple of days, I felt like I was running out of steam. Following my daily routine of committing at least two enhancements to one or more open source projects (mostly my own) felt very exhausting. Yesterday I finally took the time to think about why I'm losing my motivation. I have come to the conclusion that there are several factors why I felt less and less motivated to work on my pet projects.
 
 ## Discipline > motivation
 
