@@ -2,19 +2,19 @@
 date = "2017-06-27T19:21:11+02:00"
 title = "Dreaming of a Package Based CSS Workflow"
 description = "Learn more about building modular CSS architectures using third party packages and tools, which make it possible to use ES6 style import syntax in Sass."
-intro = "CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language. But there are new challenges coming up in the fast moving web development world..."
+intro = "CSS has a pretty bad reputation with programmers of all kinds. For many people CSS still remains a source of annoying problems such as seemingly impossible vertical centering, rendering headaches between different browsers, and unpredictable behavior in general, to name a few. However, the first two problems have been solved for years and the latter is usually a result of developers not knowing the language well enough. But there are new challenges coming up in the fast-moving web development world..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
 +++
 
-CSS has quite a bad reputation among programmers of all kinds. CSS to many people is still about problems like seemingly impossible vertical centering, rendering issues across different browsers and unpredictable behaviour in general. Although the first two issues are solved since years and the last one is mostly a problem of developers not knowing the language.
+CSS has a pretty bad reputation with programmers of all kinds. For many people CSS still remains a source of annoying problems such as seemingly impossible vertical centering, rendering headaches between different browsers, and unpredictable behavior in general, to name a few. However, the first two problems have been solved for years and the latter is usually a result of developers not knowing the language well enough.
 
 Another reason why many developers are not very fond of CSS is the massive amounts of poor quality legacy code many of us have to deal with on a regular basis. Bad CSS code is usually written by people who do not know CSS very well. For a long time CSS was not taken seriously enough to be treated as a distinct language so most people didn't bother to learn and understand it to it's core.
 
 In the recent years this has changed for many developers. People began to think about how to structure CSS and how to write durable and easy deletable code. Browser vendors are constantly implementing new features and those are usually adopted pretty fast by all major browsers. CSS has grown up.
 
-But there are new challenges coming up in the fast moving web development world. While JavaScript has evolved to support building modern, modular systems, Bootstrap and Foundation – the two most popular CSS frameworks – are still using a monolithic approach.
+But there are new challenges coming up in the fast-moving web development world. While JavaScript has evolved to support building modern, modular systems, Bootstrap and Foundation – the two most popular CSS frameworks – are still using a monolithic approach.
 
 ## Packages in JavaScript
 
