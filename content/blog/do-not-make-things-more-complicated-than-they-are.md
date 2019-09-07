@@ -2,13 +2,13 @@
 date = "2017-09-17T06:56:54+02:00"
 title = "Don't Make Things More Complicated as They Are"
 description = "Thoughts about overthinking programming problems and how to deal with issues which seem to be too complicated to solve."
-intro = "Yesterday I’ve learned a valuable lesson in how to solve a problem by looking at it from a different angle. The longest open issues in the node-sass-magic-importer GitHub issue queue, is about source map support..."
+intro = "Yesterday I learned a valuable lesson on how to solve a problem by looking at it from a different angle. The longest open issues in the node-sass-magic-importer GitHub issue queue, is about source map support..."
 draft = false
 categories = ["Development"]
 tags = ["Sass"]
 +++
 
-Yesterday I’ve learned a valuable lesson in how to solve a problem by looking at it from a different angle.
+Yesterday I learned a valuable lesson on how to solve a problem by looking at it from a different angle.
 
 The longest open issues in the [node-sass-magic-importer GitHub issue queue](https://github.com/maoberlehner/node-sass-magic-importer/issues), is about source map support. A source map maps from the transformed source (CSS) served to the browser to the original source (SCSS), enabling the browser to reconstruct the original source and present the reconstructed original in the developer tools.
 
