@@ -1,5 +1,5 @@
 +++
-date = "2019-08-25T09:09:09+02:00"
+date = "2019-09-01T09:09:09+02:00"
 title = "Controlling the LEGO Mindstorms NXT with Node.js Part 1: It's Alive"
 description = "Learn how to control the LEGO Mindstorms NXT with Node.js over Bluetooth."
 intro = "For several years now, my LEGO Mindstorms NXT has been living a life as a decorative item on my desk. Since I wasn't in the mood to do real work today, I was wondering if it wouldn't be possible to use JavaScript to control it. After searching the web I found out that it is actually possible to do this. So let's have some fun..."
