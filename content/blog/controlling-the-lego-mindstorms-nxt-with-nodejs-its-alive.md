@@ -142,4 +142,4 @@ The little move the robot makes at the end is not achieved by the above code, th
 
 Although there isn't much documentation available, and this can be a bit frustrating from time to time, writing code that causes a small LEGO robot to make noises or even move, is for the most part a lot of fun.
 
-Speaking of movement, in the second part of this series we take a closer look at how we can control the motors of the LEGO Mindstorms NXT with Node.js. Stay tuned!
+Speaking of movement, in [the second part](/blog/controlling-the-lego-mindstorms-nxt-with-nodejs-its-moving/) of this series we take a closer look at how we can control the motors of the LEGO Mindstorms NXT with Node.js. Stay tuned!
