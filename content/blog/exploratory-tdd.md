@@ -15,6 +15,7 @@ Sometimes laziness is the reason why I fall back into my old habit of writing co
 Well, I know what the thing is supposed to do once it's ready, but there is a long way ahead and a lot of lines of code have to be written before reaching the final goal of a working implementation.
 
 ## The TDD writer's block
+
 When I'm struggling with getting started writing tests, I oftentimes go back to the literature, searching for instructions on how to deal with a severe TDD writer's block. But most of the examples used in TDD articles and books are very basic.
 
 Of course very basic examples are used when explaining the concepts of TDD, it is much easier to explain the essential techniques with simple examples. I myself use rather basic examples in this blog too.
@@ -22,6 +23,7 @@ Of course very basic examples are used when explaining the concepts of TDD, it i
 But when you're working on real world projects, things are different. You have to solve complex problems of a kind you more often than not, have never dealt with before. In such situations it feels like all of those articles, books and talks about TDD are a lie. Of course TDD works when dealing with such (artificially) simple problems, you might think in those moments.
 
 ## Exploratory coding to the rescue
+
 One technique I've used with decent success lately in such situations, is exploratory coding. The way I do it, is to start hacking and playing around with the code similar to “normal”, non test driven coding. There are two major differences though.
 
 1. **I don't care about code quality at all.** Usually when writing code, I'm trying to do my best to keep the code clean and DRY. But not so when I'm doing exploratory coding – quite the opposite. Oftentimes I intentionally write WET code to see patterns emerge. What counts in this phase of programming is, that I get a feeling for the requirements of the implementation. The end result is not necessarily a working implementation, but an idea of how a possible implementation could look like.
@@ -32,11 +34,13 @@ After I've gathered enough knowledge about the problem – and I feel ready to s
 Most of the time, the final (tested) code has not too much in common with the code written during the exploration phase. The exploration phase helps me to wrap my head around the problem and provides me with a starting point for writing the real code in a test driven manner.
 
 ## Don't be too dogmatic
+
 However, it may happen that the code written during the exploration phase is perfectly fine. You might have found a simple and elegant solution to the problem you're dealing with.
 
 It would be silly to throw away such code just because it was not written using TDD. In such cases, the most practical solution would be to write your tests retroactively and call it a day. But you should be suspicious of yourself if you use this as an excuse for not doing *real* TDD again and again.
 
 ## Final thoughts
+
 The approach of exploratory TDD might not be a perfect fit for every situation and there might even be some TDD extremists who think it's blasphemy, but it often works for me.
 
 The next time you suffer from a TDD writer's block, I recommend you to start with some exploratory coding first.
