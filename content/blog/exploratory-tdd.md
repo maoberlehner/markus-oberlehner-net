@@ -2,13 +2,13 @@
 date = "2017-12-10T06:55:59+02:00"
 title = "Exploratory TDD"
 description = "Read more about how to overcome the TDD writer's block. Exploratory coding can help you to get started writing code in a test driven manner."
-intro = "I'm currently working hard on making TDD my default way of writing code. Although I've noticed that the more I practice TDD, the more easier it becomes, oftentimes I still fall back into writing dozens of lines of code with absolutely no tests covering them..."
+intro = "I'm currently working hard on making TDD my default way of writing code. Although I have noticed that the more I practice TDD, the easier it becomes, I still often fall back on writing dozens of lines of code without running tests that cover them..."
 draft = false
 categories = ["Development"]
 tags = ["TDD"]
 +++
 
-I'm currently working hard on making TDD my default way of writing code. Although I've noticed that the more I practice TDD, the more easier it becomes, oftentimes I still fall back into writing dozens of lines of code with absolutely no tests covering them.
+I'm currently working hard on making TDD my default way of writing code. Although I have noticed that the more I practice TDD, the easier it becomes, I still often fall back on writing dozens of lines of code without running tests that cover them.
 
 Sometimes laziness is the reason why I fall back into my old habit of writing code without coming up with a test first. But oftentimes the reason is that I just don't know how to start. I have no idea what test to write first, because I have no idea about how I'm going to implement the feature that I have to build. 
 
