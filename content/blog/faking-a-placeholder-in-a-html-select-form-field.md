@@ -17,11 +17,13 @@ Most of the time this is a pretty bad idea. **It is very hard to get accessibili
 I'd recommend you to avoid building custom form elements at all cost. If you absolutely have to use a custom styled solution, use a battle tested library instead of rolling your own.
 
 ## Fiddling around
+
 In my case it was not necessary to swap the native HTML select field with a fake select field. The problem at hand is, how to display a placeholder inside a select field.
 
 At first I didn’t realise that the HTML select element does not support the placeholder attribute, I just assumed it does. The next thing I tried was using a disabled but default selected option element and setting the font color to the same grey as the input placeholder element. And this works in Firefox (and maybe even in Internet Explorer) but in WebKit and Blink based browsers, this does not work either.
 
 ## The solution
+
 After playing around and noticing that you can change the color of the select element itself, I worked on the idea of **setting the select elements color to placeholder grey as long as a disabled option is selected and changing the color to the default color as soon as the value changes**.
 
 After coming up with a simple JavaScript powered solution my “somehow this has to work without JavaScript” sense tingled again. After some research I found out I could use native browser form validation with the `required` attribute and the `:invalid` pseudo class to achieve the effect I was looking for.
@@ -29,9 +31,11 @@ After coming up with a simple JavaScript powered solution my “somehow this has
 <p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 ### Avoiding JavaScript at all costs
+
 The problem with this solution is, that it only works for required form fields. **To circumvent the need for JavaScript we can avoid using a placeholder in optional select fields altogether by providing a neutral default option** like you can see with the second select field in the CodePen above.
 
 ### Sprinkles of JavaScript
+
 Assuming that select fields are either always required or we are able to provide a default value for optional select fields, is an assumption which might not hold true all of the time.
 
 Although usually one of my pet peeves is to build functionality which requires (or seems to require) JavaScript, with pure CSS, in this case just some sprinkles of JavaScript could solve this problem once and for all.
