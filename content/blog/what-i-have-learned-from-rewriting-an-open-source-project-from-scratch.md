@@ -2,14 +2,14 @@
 date = "2017-08-06T08:24:33+02:00"
 title = "What I’ve Learned from Rewriting an Open Source Project from Scratch"
 description = "Rewriting the entirety of your codebase from scratch, is almost always a bad idea. Things to consider when you feel the urge to rewrite your codebase."
-intro = "A few months ago I started to learn more about TypeScript. It was refreshing and in the process I learned a lot about type based programming in general. So the natural urge of a programmer learning a new technique he or she enjoys hit me: I wanted to rewrite everything I've ever built using TypeScript..."
+intro = "A few months ago I started learning more about TypeScript. It was very refreshing and I learned a lot about type-based programming in general. So I was overcome by the natural urge of every programmer who is learning a new technique that they enjoy: I wanted to rewrite everything I ever built with TypeScript..."
 draft = false
 categories = ["Development"]
 tags = ["TDD", "TypeScript"]
 +++
 
-A few months ago I started to learn more about TypeScript. It was refreshing and in the process I learned a lot about type based programming in general.
-So the natural urge of a programmer learning a new technique he or she enjoys hit me: I wanted to rewrite everything I've ever built using TypeScript.
+A few months ago I started learning more about TypeScript. It was very refreshing and I learned a lot about type-based programming in general.
+So I was overcome by the natural urge of every programmer who is learning a new technique that they enjoy: I wanted to rewrite everything I ever built with TypeScript.
 
 I don't know exactly why I thought starting with [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer), which is one of my bigger projects, was a good idea. The enthusiasm of using my newly acquired TypeScript skills on a real project was just overwhelming.
 
