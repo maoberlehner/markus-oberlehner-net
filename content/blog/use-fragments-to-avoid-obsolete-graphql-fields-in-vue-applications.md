@@ -2,14 +2,14 @@
 date = "2019-06-16T06:41:41+02:00"
 title = "Use Fragments to Avoid Obsolete GraphQL Fields in Vue.js Applications"
 description = "Learn how to use component specific GraphQL fragments in Vue.js to avoid obsolete fields in your GraphQL queries."
-intro = "The more I use GraphQl, the more I ask myself the following: How can I avoid GraphQL queries which query a bunch of fields that were once needed but are no longer used because the code has changed and the fields are now obsolete..."
+intro = "The more I use GraphQl, the more I ask myself the following question: How can I avoid GraphQL queries which query a bunch of fields that were once needed but are no longer used because the code has changed and the fields are now obsolete..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "GraphQL"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-16/component-specific-fragments"]
 +++
 
-The more I use GraphQl, the more I ask myself the following: How can I avoid GraphQL queries which query a bunch of fields that were once needed but are no longer used because the code has changed and the fields are now obsolete?
+The more I use GraphQl, the more I ask myself the following question: How can I avoid GraphQL queries which query a bunch of fields that were once needed but are no longer used because the code has changed and the fields are now obsolete?
 
 ## The problem
 
