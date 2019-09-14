@@ -15,6 +15,7 @@ Testing Vue.js components is different from testing regular JavaScript modules o
 Let's find out how to deal with those challenges.
 
 ## Setting up the test environment
+
 In preparation for this article, I've set up a simple demo project, using the official [Vue.js CLI PWA template](https://github.com/vuejs-templates/pwa). You may view the [complete code used in this article on GitHub](https://github.com/maoberlehner/unit-testing-vue-components-with-ava).
 
 After creating a new project with the Vue.js CLI (already including the `vue-router` package), we can now start by installing all the necessary dependencies that we need to build and test our app.
@@ -29,6 +30,7 @@ Let's take a closer look at this long list of dependencies. The only non develop
 `ava` is the test framework which we're going to use. The `babel-plugin-transform-object-rest-spread` makes it possible to test components which are using the new JavaScript spread operator, we're going to use the spread operator in combination with Vuex' `mapActions()` function. We're going to use `jsdom` and `jsdom-global` to simulate a browser environment in our tests. The `require-extension-hooks-*` packages are required in order to being able to test single file Vue.js components without having to compile them with webpack first. `sinon` is a mocking library which makes it possible to create spies and stubs of objects. Last but not least comes the `vue-test-utils` package, which is the official helper package for testing Vue.js components.
 
 ### Configuring ava
+
 Because Vue.js single file components can't be compiled by ava on the fly, we have to create a `setup.js` file in a newly created `test` directory, which runs before the test and compiles the tested single file component into pure JavaScript code which can be interpreted by ava.
 
 ```js
@@ -68,6 +70,7 @@ The last thing we have to do before we can get started with writing our first te
 ```
 
 ## Using TDD to build a component
+
 Now that we've set up our testing environment, let's build a to-do app using the TDD approach.
 
 ```html
@@ -103,6 +106,7 @@ In the test code above you can see, that we're importing a function named `shall
 The first test case you can see in the code snippet above, tests if the wrapper element, rendered by the component, is a `<div>` tag. You might wonder what this test is good for: with this very simple test, we test not primarily the functionality of the component but whether the setup works in principle. If this test fails and we've made sure that the component in fact should render a `<div>`, we know that something is wrong with the setup, but not necessarily with the component.
 
 ### Implementing the functionality
+
 When following the TDD approach, the test is written before the implementation. The first thing we want to implement is a list of to-do items.
 
 ```js
@@ -226,6 +230,7 @@ export default {
 In the code above, you can see that we've added a new input and a button element. By using `v-model` on the input element we're binding its value to the `newItem` data key. The click event listener on the button element pushes the value of `newItem` into the `items` array when activated.
 
 ### Testing Vuex powered components
+
 We now have a working to-do app. But this is a rather simple example of how to build a Vue.js component, in a real world application you'll most likely use a global state to store your data. This is the right time to bring Vuex into the equation.
 
 To get Vuex up and running we need to add the following directories and files.
@@ -426,6 +431,7 @@ Let's walk through the changes we've made to make the test work with Vuex. First
 In the last test case, we've changed the assertion from checking if the list of to-do items was updated, to making sure, that the `ADD` mutation was called. In unit tests, we assume that everything outside of the scope of the current test works as expected. By applying this logic, we can safely assume that the `ADD` mutation does its job correctly, and it will indeed add a new to-do item to the store. In a previous test we've already tested if items in the store render correctly, therefore in this test it is sufficient to check if the mutation function was called with the correct parameters.
 
 ### Testing vue-router powered components
+
 Now that we've built a Vuex powered to-do app, let's take a look  at how to test Vue.js components, which are using the vue-router package.
 
 In this example we'll assume that we want to link to a statistics page and we want to handle a click event on the router link. Usually, if you're using the `shallow` function, the vue-test-utils will stub all child components of the component under test, but this makes it impossible to handle a click event on a child component. Vue.js requires you to use `@click.native` if you want to handle (click) events on child components, but `native` events are not fired if the component is not initialized. Because of this, we have to use the `mount` function instead of `shallow` whenever we want to test if an event bound to a child component was emitted correctly.
@@ -532,4 +538,5 @@ test('It should emit an event when clicking the stats link.', (t) => {
 In order to mount our `ToDo` component with the `<router-link>` handled by the vue-router, we have to import the vue-router and register it with our Vue.js instance. In the test case we trigger a click event on the `<router-link>` element and we check if a `clickStatsLink` event was emitted. If we've done everything correctly our test should pass.
 
 ## Wrapping it up
+
 Thanks to the vue-test-utils package, using a TDD approach for building Vue.js components has become a breeze. However, things can become tricky when external plugins and dependencies are being used. I hope this article answers some questions about how to test Vuex and vue-router powered Vue.js single file components.
