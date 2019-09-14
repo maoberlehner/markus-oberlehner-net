@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "unit tests", "Vue"]
 +++
 
-In todays article, we're going to explore how to unit test Vue.js single file components using the ava test framework and the vue-test-utils package. I've decided to write this article because ava is my favorite test framework, if you're more into the Mocha test framework, I highly recommend you to watch the [Testing Vue series on Laracasts](https://laracasts.com/series/testing-vue).
+In today's article, we will explore how to unit test Vue.js single file components using the ava test framework and the `vue-test-utils` package. I've decided to write this article because ava is my favorite test framework, if you're more into the Mocha test framework, I highly recommend you to watch the [Testing Vue series on Laracasts](https://laracasts.com/series/testing-vue).
 
 Testing Vue.js components is different from testing regular JavaScript modules or classes in two ways. First of all Vue.js components depend on Vue.js, its global state and oftentimes on plugins like Vuex or the vue-router. Second, Vue.js single file components usually are compiled with webpack, the regular workflow of using Babel to compile JavaScript code before testing it, is not sufficient in this case.
 
