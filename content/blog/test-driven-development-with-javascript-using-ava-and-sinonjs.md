@@ -15,6 +15,7 @@ Two or three years ago I started to work on some open source projects and I need
 Up until this day I'm still learning how to do this testing thing correctly and most of the time I still write my tests after I wrote the code (so I actually don't do TDD).
 
 ## Writing testable code
+
 For the longest time I did quite some things wrong when writing tests for my projects. I didn't get that you have to actually write testable code in order to write good tests for it.
 
 Let's take the following code from my most recent project ([loading-comparison](https://github.com/maoberlehner)) as an example.
@@ -34,9 +35,11 @@ module.exports = function formatValues(values) {
 Whats wrong with this code when it comes to testability? The `formatValues` function depends on functions in the global scope (`chalk` and `Math`). Why is this bad? When testing this function we are limited in what we can test. In fact we can only test the output of the function. If we change something and the test fails, the only thing we know is that something is wrong but not exactly what. We are not able to determine if the `Math` or the `chalk` functions are called with the correct values or if they are called at all.
 
 ## Refactoring with TDD
+
 So let's rebuild the `formatValues` function using the TDD approach.
 
 ### Setting up ava
+
 Although I'm used to [mocha](https://mochajs.org/), sometimes I want to try new stuff and I choose [ava](https://github.com/avajs/ava) to experiment with. Why ava? It is new and has 8.700 stars on GitHub, so it must be good, right?
 
 Let's install ava and [Sinon.JS](http://sinonjs.org/) and add a new `test` script to our `package.json` file to get started.
@@ -54,6 +57,7 @@ npm add -D ava sinon
 ```
 
 ### Writing our first (failing) test
+
 Because we are real developers who only do real TDD, we start with creating our first test before we are writing any actual code.
 
 ```js
@@ -73,6 +77,7 @@ Although it might seem superfluous, it is a good habit to always run your tests 
 ![Terminal output of failing ava test](/images/2017-02-05/failing-test.png)
 
 ### Make our first test succeed
+
 Now we have a failing test – let's make it succeed.
 
 ```js
@@ -103,6 +108,7 @@ Let's run the test and see it succeed.
 ![Terminal output of succeeding ava test](/images/2017-02-05/succeeding-test.png)
 
 ### Adding functionality
+
 Our test succeeds and that's great, but our code doesn't do much. In fact, it does nothing at all, so let's change that. But first, we add a new test, off course.
 
 ```js
@@ -131,6 +137,7 @@ function formatValues({ Math }, values) {
 ```
 
 ### Add more functionality
+
 Now we know what our min values are. Let's paint them with [chalk](https://github.com/chalk/chalk). But not so fast, first things first: the test.
 
 ```js
@@ -163,6 +170,7 @@ function formatValues({ Math, chalk }, values) {
 ```
 
 ### Testing the return value
+
 At this point we are almost done. The last thing we want our function to do is, to return the new array with the highlighted values.
 
 ```js
@@ -199,6 +207,7 @@ function formatValues({ Math, chalk }, values) {
 Finally our function does what we expect it to do, all tests succeed and we feel great!
 
 ## Final thoughts
+
 You may have noticed, that `formatValuesFactory()` is called for every test case. In your “real” codebase you won't do that. The factory function is called only once or at most once in every controller or entry file or whatever, in your project. The reason why we do this in the test script is, because we want a clean environment for every test case. If we would call the factory function once at the beginning of the test file, and use the same returned function for every test case, there might be side effects caused by the way the (factory) function works. Because of the pure nature of our `formatValues` function, it doesn't matter, we could use the same instance without fearing side effects but it is a good habit to always use new instances for every test case.
 
 TDD is fun but there are many things you can do wrong. There are many things I did and still do wrong, but the worst thing you can do is to not test at all.
