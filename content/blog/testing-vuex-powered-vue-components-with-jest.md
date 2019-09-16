@@ -2,13 +2,13 @@
 date = "2017-12-03T10:48:34+02:00"
 title = "Testing Vuex Powered Vue.js Components with Jest"
 description = "Learn how to test Vue single file components with Jest and how to test Vue components which rely on a Vuex store by creating a mock of the store with Jest."
-intro = "Thanks to the vue-test-utils testing Vue components has become much easier. But things can still become a little bit more complicated when Vuex is added to the equation..."
+intro = "Thanks to the vue-test-utils, testing Vue components has become much easier. But things can get a little more complicated if you add Vuex to the equation..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "unit tests", "Vue"]
 +++
 
-Thanks to the [vue-test-utils](https://vue-test-utils.vuejs.org), testing Vue components has become much easier. But things can still become a little bit more complicated when Vuex is added to the equation. One option would be to not bother mocking the Vuex store altogether and using the regular store implementation for testing too. But in many cases this is not the optimal solution. Usually you want to test only *the thing* and mock everything else which is required for *the thing* to run.
+Thanks to the [vue-test-utils](https://vue-test-utils.vuejs.org), testing Vue components has become much easier. But things can get a little more complicated if you add Vuex to the equation. One way to deal with the additional complexity of Vuex would be not to mock the Vuex store at all and also use the regular store implementation for testing. But in many cases this is not the optimal solution. Usually you want to test only *the thing* and mock everything else which is required for *the thing* to run.
 
 Because of the amazing mocking functionalities which Jest offers out of the box, creating a mock Vuex store can be done very comfortable. In this article we're going to take a look at how to set up Jest to work with Vue single file components and how to use the Jest mocking functionalities to create a mock instance of the Vuex store.
 
