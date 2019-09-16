@@ -15,6 +15,7 @@ Because of the amazing mocking functionalities which Jest offers out of the box,
 You can find an [example project](https://github.com/maoberlehner/testing-vuex-powered-vue-components-with-jest), containing all the code you'll see in this article, [on GitHub](https://github.com/maoberlehner/testing-vuex-powered-vue-components-with-jest).
 
 ## Setting up Jest for testing Vue.js components
+
 First things first, let's start with setting up Jest in our Vue project. The first step is to install all necessary dependencies.
 
 ```bash
@@ -71,6 +72,7 @@ In order to being able to conveniently run Jest tests, I recommend you to add a 
 Now you can trigger the `test` script by running `npm test`. You should get an error for now, because currently no tests can be found in the `src` directory.
 
 ## The Vuex store
+
 Now that Jest is set up, let's write some code and create a little example component.
 
 ```js
@@ -133,6 +135,7 @@ export const store = new Vuex.Store({
 What you can see above is the code for the Vuex store of our example project. In this article we're focusing on how to mock a Vuex store and how to test Vue components which are using a Vuex store. Testing the store itself is out of the scope of this article, if you want to learn more about testing Vuex stores, I recommend you to read the [official documentation](https://vuex.vuejs.org/en/testing.html).
 
 ### Creating a mock of the Vuex store
+
 Jest has a very smart mocking mechanism which we can utilize to create a mock implementation of our Vuex store you can see above.
 
 First of all, let's create a new directory `__mocks__` in the `src/store` directory containing a new file named `index.js`.
@@ -361,6 +364,7 @@ Above you can see the full example code of our mock implementation of the store.
 </div>
 
 ### The example component
+
 To keep this article as simple as possible, I won't guide you through writing tests in a TDD manner but instead show you the finished component immediately – here it is.
 
 ```html
@@ -416,6 +420,7 @@ Let's take a look at what is happening in this very basic shopping list componen
 In the JavaScript section of this component, you can see that we're using the Vuex mapping helper functions to map certain store functions to our component. The computed properties are containing the getters for items *in* or *not in* the basket. The methods contain all the functions we need for modifying our store. And in the `created()` hook we're triggering the `fetchItems()` function to simulate an API request which initially fills our store with data.
 
 ### Writing tests utilizing the Vuex mock store
+
 Now let's check if our component does, what it's supposed to do, by writing tests.
 
 ```js
@@ -523,6 +528,7 @@ describe('ShoppingList', () => {
 In this last test case, we wan't to make sure, that an empty basket is not rendered at all. Because by default our mock store implementation returns an array of items which are in the basket, we have to override this behavior to make this test work. In order to do so, we create a new `storeMocks` instance in which we override the `itemsInBasket()` getter function to return an empty array.
 
 ## Conclusion
+
 The Jest mocking tools make it a lot easier to deal with complex dependencies like a Vuex store. Thanks to Jest and the vue-test-utils package, there is no excuse anymore not to test your Vue components.
 
 You can find an [example project](https://github.com/maoberlehner/testing-vuex-powered-vue-components-with-jest), containing all the code you've seen in this article, [on GitHub](https://github.com/maoberlehner/testing-vuex-powered-vue-components-with-jest).
