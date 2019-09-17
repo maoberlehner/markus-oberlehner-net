@@ -11,6 +11,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 In my last article series about automated testing, we were looking at how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/) and [how to run automated cross browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we're going to look at two ways of speeding up the process of running tests with Nightwatch.js – because faster is always better.
 
 ## Running Nightwatch.js without Selenium
+
 The first small speed improvement can be achieved by eliminating Selenium from the setup. As far as I know, the following approach, of running tests in Nightwatch.js without Selenium, for now is only possible with Google Chrome. If you want to run tests in Browsers other than Google Chrome, you still have to rely on Selenium or you can use BrowserStack, which also doesn't require you to have Selenium installed locally.
 
 To run tests in Google Chrome directly without using Selenium, you have to change your Nightwatch.js configuration.
@@ -69,6 +70,7 @@ module.exports = {
 Thats it! After amending your configuration and adding the hooks to start and stop the ChromeDriver, you're ready to run your tests without having to rely on Selenium. Although the gains in speed are not huge, depending on your setup, you'll save a few seconds here and there.
 
 ## Parallelization with test workers
+
 By default, Nightwatch.js runs your tests sequentially, but most modern computers are multi core machines and are able to run multiple processes in parallel. Luckily Nightwatch.js supports running your tests in parallel with so called test workers. To enable test workers, you have to add the following line to your configuration file.
 
 ```js
@@ -108,6 +110,7 @@ module.exports = {
 ```
 
 ## Conclusion
+
 In a world of TDD, there is nothing as annoying as having to wait for your tests to finish.
 
 Eliminating Selenium from your test setup can improve the speed of your tests slightly. Enabling parallelization with test workers takes it a step further by speeding up your tests by a factor equal to the number of cores you have in your machine (at least theoretically speaking).
