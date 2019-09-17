@@ -2,13 +2,13 @@
 date = "2017-11-19T08:42:22+02:00"
 title = "Speeding up Nightwatch.js Powered Acceptance Tests"
 description = "Learn how to run Nightwatch.js tests without Selenium and how to utilize parallelization for speeding up your tests."
-intro = "Today we're going to look at two ways of speeding up the process of running tests with Nightwatch.js – because faster is always better. The first small speed improvement can be achieved by eliminating Selenium from the setup..."
+intro = "Today we will examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better. The first small speed improvement can be achieved by eliminating Selenium from the setup..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In my last article series about automated testing, we were looking at how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/) and [how to run automated cross browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we're going to look at two ways of speeding up the process of running tests with Nightwatch.js – because faster is always better.
+In my last article series on automated testing, we explored how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/) and [how to run automated cross browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we will examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better.
 
 ## Running Nightwatch.js without Selenium
 
