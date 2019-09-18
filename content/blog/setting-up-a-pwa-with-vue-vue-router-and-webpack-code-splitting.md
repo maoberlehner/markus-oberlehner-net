@@ -2,13 +2,13 @@
 date = "2017-10-01T09:47:23+02:00"
 title = "Setting up a PWA with Vue, Vue Router and webpack Code Splitting"
 description = "Learn how to build a progressive web app using Vue, Vue Router, code splitting with webpack and the Extract Text Plugin."
-intro = "Today we're going to set up a progressive web app (PWA) powered by Vue including Vue Router and built with webpack code splitting enabled. Luckily, building progressive web apps has never been easier. Thanks to the hard work of many wonderful people in the open source community, every major JavaScript framework comes with an effortless way of kickstarting a new PWA powered project via a simple CLI command..."
+intro = "Today we will create a progressive web app (PWA) based on Vue.js with Vue Router, featuring code splitting with webpack. Luckily, building progressive web apps has never been easier. Thanks to the hard work of many wonderful people in the open source community, every major JavaScript framework comes with an effortless way of kickstarting a new PWA powered project via a simple CLI command..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "PWA", "webpack", "code splitting"]
 +++
 
-Today we're going to set up a progressive web app (PWA) powered by Vue including Vue Router and built with webpack code splitting enabled.
+Today we will create a progressive web app (PWA) based on Vue.js with Vue Router, featuring code splitting with webpack.
 
 Luckily, building progressive web apps has never been easier. Thanks to the hard work of many wonderful people in the open source community, every major JavaScript framework comes with an effortless way of kickstarting a new PWA powered project via a simple CLI command.
 
