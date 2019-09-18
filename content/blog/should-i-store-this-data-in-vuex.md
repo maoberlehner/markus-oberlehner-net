@@ -65,7 +65,7 @@ Although Vuex is much simpler than some of its competitors, it is still more com
 
 ### Overhead
 
-Using Vuex in a component always means some overhead. Because of that, I recommend you to use local component state as your default and only opt-in to Vuex as soon as a reason to do so arises.
+The use of Vuex in a component always means a certain architectural overhead. Because of that, I recommend you to use local component state as your default and only opt-in to Vuex as soon as a reason to do so arises.
 
 ## Alternatives to storing data in Vuex
 
