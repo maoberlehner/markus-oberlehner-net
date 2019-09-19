@@ -32,7 +32,7 @@ export default {
   <div class="MyComponent">
     <some-component :some-value="someValue"></some-component>
   </div>
-</template
+</template>
 ```
 
 If you're working on a rather simple application or if all you do is to replace some parts of your (server rendered) application with some Vue.js magic, you might actually be fine not using Vuex at all.
@@ -99,7 +99,7 @@ At first glance, the [PortalVue](https://github.com/LinusBorg/portal-vue) plugin
       </app-modal>
     </portal>
   </button>
-</template
+</template>
 ```
 
 In the simplified pseudo example above, you can see a `AppDeleteButton` component which contains the modal, which should be opened when it's clicked. This makes it possible to directly use the `id` from the `item` property of the `AppDeleteButton` inside of the modal component instead of making it globally accessible via a centralized store.
