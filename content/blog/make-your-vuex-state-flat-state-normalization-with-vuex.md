@@ -89,6 +89,8 @@ In Vuex we can use modules to cleanly separate different entity types. And in ad
 
 ```js
 // src/store/modules/article.js
+import Vue from 'vue';
+
 import { normalizeRelations, resolveRelations } from '../helpers';
 import articleService from '../../services/article';
 
@@ -126,7 +128,7 @@ const actions = {
 
 const mutations = {
   add: (state, item) => {
-    state.byId[item.id] = item;
+    Vue.set(state.byId, item.id, item);
     if (state.allIds.includes(item.id)) return;
     state.allIds.push(item.id);
   },
