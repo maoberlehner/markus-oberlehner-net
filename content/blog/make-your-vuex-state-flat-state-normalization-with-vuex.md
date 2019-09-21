@@ -113,7 +113,7 @@ const actions = {
   load: async ({ commit }) => {
     const articles = await articleService.list();
     articles.forEach((item) => {
-      // Noramlize nested data and swap the author object
+      // Normalize nested data and swap the author object
       // in the API response with an ID reference.
       commit('add', normalizeRelations(item, ['author']));
       // Add or update the author.
