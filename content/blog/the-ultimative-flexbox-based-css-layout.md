@@ -15,6 +15,7 @@ Until the rest of us can also switch to CSS Grid Layout for good, we have to rel
 In todays article we're going to build two powerful Sass Mixins to serve all of our CSS layout needs.
 
 ## The starting point: Flexbox grid
+
 The challenge of finding smarter and better methods of building grid layouts with CSS is as old as CSS itself. When Flexbox was introduced, things got a lot easier.
 
 ```scss
@@ -57,6 +58,7 @@ We're applying the vertical and horizontal gutters as paddings. By setting the `
 (Look at the example at CodePen: https://codepen.io/maoberlehner/pen/zPYmrV)
 
 ## Transforming the grid into a layout Swiss Army Knife
+
 Grids can be pretty useful to build certain layouts but oftentimes grids are not the best solution for the problem at hand. Flexbox makes it possible to build flexible and fluid layouts which adapt to the content without using any media queries at all.
 
 ```scss
@@ -127,6 +129,7 @@ By additionally specifying a `min-width` we're able to define that the column is
 </div>
 
 ## Final thoughts
+
 Flexbox is a powerful tool which makes it possible to build very complex layouts which adapt to the screen size and the content. However the combinations of flex specific properties to add to the CSS code to achieve certain layouts, might not always be self-explanatory.
 
 Using Sass Mixins can add a layer of abstraction which not only makes it easier to achieve those complex layouts but even more important, it makes it easier to understand the code.
