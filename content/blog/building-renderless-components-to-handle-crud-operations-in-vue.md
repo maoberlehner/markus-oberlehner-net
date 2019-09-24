@@ -2,13 +2,13 @@
 date = "2018-05-21T08:25:25+02:00"
 title = "Building Renderless Components to Handle CRUD Operations in Vue.js"
 description = "Learn how to build reusable components which can handle basic CRUD operations using the “renderless components” approach."
-intro = "In episode 81 of the Full Stack Radio podcast Adam Wathan and Evan You talked about the possibility of utilizing the power of slot scopes to build components which sole purpose is to fetch data and provide the result via slot scope properties to the markup. In todays article we're going to take this into practice and we even go a little further: we'll build “renderless components” to handle all CRUD operations in a reusable way..."
+intro = "In episode 81 of the Full Stack Radio podcast Adam Wathan and Evan You talked about the possibility of utilizing the power of slot scopes to build components which sole purpose is to fetch data and provide the result via slot scope properties to the markup. In today's article we're going to take this into practice and we even go a little further: we'll build “renderless components” to handle all CRUD operations in a reusable way..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In [episode 81 of the Full Stack Radio podcast](http://www.fullstackradio.com/81) Adam Wathan and Evan You talked about the possibility of utilizing the power of slot scopes to build components which sole purpose is to fetch data and provide the result via slot scope properties to the markup. In todays article we're going to take this into practice and we even go a little further: we'll build “renderless components” to handle all CRUD operations in a reusable way.
+In [episode 81 of the Full Stack Radio podcast](http://www.fullstackradio.com/81) Adam Wathan and Evan You talked about the possibility of utilizing the power of slot scopes to build components which sole purpose is to fetch data and provide the result via slot scope properties to the markup. In today's article we're going to take this into practice and we even go a little further: we'll build “renderless components” to handle all CRUD operations in a reusable way.
 
 Disclaimer: while working on this article I've found out that Adam has already implemented a basic version of this concept in his [Advanced Vue Component Design](https://adamwathan.me/advanced-vue-component-design/) course himself (checkout Adams course, it's definitely worth its money), but because in my article, I take the idea one step further, I decided that this article is still worth publishing.
 

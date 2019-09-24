@@ -12,7 +12,7 @@ Although testing, and especially acceptance testing, seems like a rather boring 
 
 I've already written an article about writing [smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/). Although we're using this approach with great success, I'm still not satisfied with all aspects of this technique. There are two problems with the smart step definition approach. First of all the backticks, which are used to mark selectors, destroy the flow when reading the steps. And second, the step definitions lack flexibility.
 
-In todays article we'll explore how we can fix those problems and how to build crazy powerful Cucumber.js step definitions and write better acceptance tests.
+In today's article we'll explore how we can fix those problems and how to build crazy powerful Cucumber.js step definitions and write better acceptance tests.
 
 In order to keep this article concise, I'll focus on showing the core concepts of Crazy Powerful Step Definitions, you can [checkout the GitHub repository containing all the code, to see more examples](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions).
 

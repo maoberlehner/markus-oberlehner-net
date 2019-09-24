@@ -2,13 +2,13 @@
 date = "2018-01-14T08:01:21+02:00"
 title = "Vue.js Form Validation with Vuelidate"
 description = "Learn how to validate forms in Vue.js with Vuelidate and how to trigger the browser to scroll to the first validation error and focus the input element."
-intro = "In todays article we're going to build a simple contact form with inline validation powered by Vuelidate. One of the best features of Vuelidate is its relatively small footprint..."
+intro = "In today's article we're going to build a simple contact form with inline validation powered by Vuelidate. One of the best features of Vuelidate is its relatively small footprint..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In todays article we're going to build a simple contact form with inline validation powered by [Vuelidate](https://monterail.github.io/vuelidate/). One of the best features of Vuelidate is its relatively **small footprint which is about 4.2 kB** (gzipped). But the small package size comes with a cost: Vuelidate focuses on validation only. It's the task of us programmers to add further functionality like displaying validation error messages and scrolling to the first validation error.
+In today's article we're going to build a simple contact form with inline validation powered by [Vuelidate](https://monterail.github.io/vuelidate/). One of the best features of Vuelidate is its relatively **small footprint which is about 4.2 kB** (gzipped). But the small package size comes with a cost: Vuelidate focuses on validation only. It's the task of us programmers to add further functionality like displaying validation error messages and scrolling to the first validation error.
 
 [The full code which is featured in this article is available on GitHub](https://github.com/maoberlehner/vue-form-validation-with-vuelidate).
 

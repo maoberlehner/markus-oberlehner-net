@@ -10,7 +10,7 @@ tags = ["Time Management"]
 
 In the [first part of this two part series](https://markus.oberlehner.net/blog/getting-off-of-information-addiction/) about how to escape information addiction, I wrote about [why and how to leave certain social media platforms](https://markus.oberlehner.net/blog/getting-off-of-information-addiction/), or at least limit how often you check them for updates. Although leaving social media platforms and especially Facebook, might seem a little extreme in the eyes of many people, more and more sociologists and psychologists are suggesting that the way how a lot of us are using social media, can be problematic. And many people themselves are realizing that their social media habits are making them less productive and less happy in general.
 
-But todays topic is even more controversial, what I'm suggesting in this article is to stop reading news sites for good.
+But today's topic is even more controversial, what I'm suggesting in this article is to stop reading news sites for good.
 
 ## Hello I'm Markus and I was a news junky
 Not too long ago not reading the news every day seemed like a silly idea to me. I scanned the latest headlines on my favorite news site at least every couple of hours.

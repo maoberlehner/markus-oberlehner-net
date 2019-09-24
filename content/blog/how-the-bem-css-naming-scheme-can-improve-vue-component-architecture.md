@@ -2,13 +2,13 @@
 date = "2018-09-30T12:21:21+02:00"
 title = "How the BEM CSS Naming Scheme Can Improve Vue.js Component Architecture"
 description = "Quick tip about how the BEM CSS naming scheme can be useful to decide when to split up a large Vue.js component into multiple smaller ones."
-intro = "In todays quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones..."
+intro = "In today's quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "BEM", "Front-End Architecture", "Vue"]
 +++
 
-In todays quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones.
+In today's quick tip we'll take a look at how the BEM CSS naming scheme can be quite useful to detect when it might be better to split up a large component into multiple smaller ones.
 
 Let's say you have a component for displaying a list of the latest articles of your blog in a grid layout.
 

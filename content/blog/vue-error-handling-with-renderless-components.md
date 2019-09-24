@@ -2,14 +2,14 @@
 date = "2019-03-24T05:24:24+02:00"
 title = "Vue.js Error Handling with Renderless Components"
 description = "Learn how to build renderless Vue.js components for catching errors in child components."
-intro = "Solid error handling is one those things which can make the difference between a good application and a great application. In todays article we'll take a look at how we can build renderless components to help us capture errors in our Vue.js applications..."
+intro = "Solid error handling is one those things which can make the difference between a good application and a great application. In today's article we'll take a look at how we can build renderless components to help us capture errors in our Vue.js applications..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-24/vue-error-wrapper-component"]
 +++
 
-Solid error handling is one those things which can make the difference between a good application and a great application. **In todays article we'll take a look at how we can build renderless components to help us capture errors in our Vue.js applications.** We’ll build a generic error handling component which we can use to wrap other components to catch errors and notify the user that something went wrong. Furthermore, we will explore how we can use our generic renderless error component to create a more specific component that displays a toast popup each time an error occurs.
+Solid error handling is one those things which can make the difference between a good application and a great application. **In today's article we'll take a look at how we can build renderless components to help us capture errors in our Vue.js applications.** We’ll build a generic error handling component which we can use to wrap other components to catch errors and notify the user that something went wrong. Furthermore, we will explore how we can use our generic renderless error component to create a more specific component that displays a toast popup each time an error occurs.
 
 If you're interested in the complete code featured in this article you can [checkout the CodeSandbox](https://codesandbox.io/s/1889llp297?fontsize=14&module=%2Fsrc%2FApp.vue) where you can also see a live demo.
 

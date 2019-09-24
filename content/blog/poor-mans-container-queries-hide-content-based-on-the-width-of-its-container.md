@@ -10,7 +10,7 @@ tags = ["CSS Architecture"]
 
 The more we think about websites as collections of separate components (or atoms, molecules and organisms, to use the terms of the popular Atomic Design methodology), the more clear it becomes, that Media Queries are not the best solution for building truly responsive websites and applications.
 
-I've already written about [how to build responsive layouts without relying on Media Queries](/blog/creating-a-responsive-alternating-two-column-layout-with-flexbox/) in this article we've explored how to change the layout of a component based on the available space. In todays article we'll take a look at how we can use a CSS only approach, to hide certain elements inside of a component as soon as the available space inside of it becomes too narrow to contain its entire content.
+I've already written about [how to build responsive layouts without relying on Media Queries](/blog/creating-a-responsive-alternating-two-column-layout-with-flexbox/) in this article we've explored how to change the layout of a component based on the available space. In today's article we'll take a look at how we can use a CSS only approach, to hide certain elements inside of a component as soon as the available space inside of it becomes too narrow to contain its entire content.
 
 I recommend you to [view the following CodePen demo in fullscreen mode](https://codepen.io/maoberlehner/full/LgjxPw/) for it to make sense.
 

@@ -2,7 +2,7 @@
 date = "2018-01-28T11:11:11+02:00"
 title = "How to Handle Multi-row Forms with Vue, Vuex and vuex-map-fields"
 description = "Learn how to handle multi-row form data the Vuex way with the vuex-map-fields package."
-intro = "In one of my previous articles about form field handling in combination with Vuex, I introduced the vuex-map-fields package, which makes it possible to conveniently map a list of fields to Vuex conform getter and setter functions. In todays article we take it a step further and we'll explore how we can use the latest release of vuex-map-fields to build a Vuex powered multi-row form..."
+intro = "In one of my previous articles about form field handling in combination with Vuex, I introduced the vuex-map-fields package, which makes it possible to conveniently map a list of fields to Vuex conform getter and setter functions. In today's article we take it a step further and we'll explore how we can use the latest release of vuex-map-fields to build a Vuex powered multi-row form..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue", "Vuex"]
 
 In one of my previous articles about [form field handling in combination with Vuex](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/), I introduced the [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) package, which makes it possible to conveniently [map a list of fields to Vuex conform getter and setter functions](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/#using-vuex-map-fields-for-simple-vuex-form-handling).
 
-In todays article we take it a step further and we'll explore how we can use the latest release of [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to build a Vuex powered multi-row form.
+In today's article we take it a step further and we'll explore how we can use the latest release of [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to build a Vuex powered multi-row form.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

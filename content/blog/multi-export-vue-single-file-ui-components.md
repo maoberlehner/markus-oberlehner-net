@@ -2,7 +2,7 @@
 date = "2019-02-03T04:42:42+02:00"
 title = "Multi Export Vue.js Single File UI Components"
 description = "Learn how to use named exports to export multiple components from a single .vue file and how to use JSX to build powerful UI components."
-intro = "In todays article we'll learn how to build Vue.js Single File Components (SFC) which export multiple components at once using ES6 named exports. Furthermore we'll utilize render functions to render the markup of our components via JSX. By combining these techniques, we are able to create UI components that consist of several separate components combined into a single file..."
+intro = "In today's article we'll learn how to build Vue.js Single File Components (SFC) which export multiple components at once using ES6 named exports. Furthermore we'll utilize render functions to render the markup of our components via JSX. By combining these techniques, we are able to create UI components that consist of several separate components combined into a single file..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
@@ -12,7 +12,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 > **Note:** This is the first part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss any new article.  
 > [Next >](/blog/reusing-logic-with-renderless-vue-frame-components/)
 
-In todays article we'll learn how to build **Vue.js Single File Components (SFC) which export multiple components at once using ES6 named exports.** Furthermore we'll utilize render functions to render the markup of our components via JSX. By combining these techniques, we are able to create UI components that consist of **several separate components combined into a single file.**
+In today's article we'll learn how to build **Vue.js Single File Components (SFC) which export multiple components at once using ES6 named exports.** Furthermore we'll utilize render functions to render the markup of our components via JSX. By combining these techniques, we are able to create UI components that consist of **several separate components combined into a single file.**
 
 What we ultimately try to accomplish is the clean separation of our UI components (the styling) from components which contain logic or fetch data from an API.
 

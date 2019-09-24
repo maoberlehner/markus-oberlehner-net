@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue", "headless CMS"]
 
 I'm currently invested in exploring the world of headless content management systems and how to use modern web frameworks – like Vue.js – to build applications and websites on top of them. **One of my favorite headless CMS so far is Storyblok, especially because it makes it possible to roll your own field type plugins with Vue.js.**
 
-In my recent article I wrote about [how to build a simple website with Storyblok](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/). In todays article, we'll take a closer look at the powerful Storyblok plugin system, which makes it possible to build any content structure we can think of, with the Storyblok CMS.
+In my recent article I wrote about [how to build a simple website with Storyblok](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/). In today's article, we'll take a closer look at the powerful Storyblok plugin system, which makes it possible to build any content structure we can think of, with the Storyblok CMS.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

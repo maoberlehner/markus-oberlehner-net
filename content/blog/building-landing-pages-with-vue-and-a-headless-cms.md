@@ -12,7 +12,7 @@ Although, nowadays, my main focus at work is to build app like websites, at my f
 
 A couple of days ago, I started thinking about how I would build such sites today. Drupal is a very powerful CMS and there is nothing inherently *bad* about it, but it's very heavyweight and the frontend part is pretty outdated. Its strength lies in the editing and management of content, but it is very difficult to adapt the frontend to your own needs.
 
-In todays article we'll explore how to combine the power of the **headless CMS [Contentful](https://www.contentful.com/)** with the flexibility of a **modern Vue.js frontend stack** to build brochure sites and landing pages. We'll set up our project using the **Vue CLI** and we'll use the [contentful](https://www.npmjs.com/package/contentful) npm package to fetch data from the **Contentful API**. Additionally we'll use **Vuex** to store the data we've fetched from the API.
+In today's article we'll explore how to combine the power of the **headless CMS [Contentful](https://www.contentful.com/)** with the flexibility of a **modern Vue.js frontend stack** to build brochure sites and landing pages. We'll set up our project using the **Vue CLI** and we'll use the [contentful](https://www.npmjs.com/package/contentful) npm package to fetch data from the **Contentful API**. Additionally we'll use **Vuex** to store the data we've fetched from the API.
 
 You can find the complete code, we'll write in this article, [on Github](https://github.com/maoberlehner/building-landing-pages-with-vue-and-a-headless-cms) and you can [view a demo of the application hosted on Netlify](https://building-landing-pages-with-vue-and-a-headless-cms.netlify.com/).
 

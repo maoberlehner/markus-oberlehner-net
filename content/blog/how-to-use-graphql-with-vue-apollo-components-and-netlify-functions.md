@@ -2,7 +2,7 @@
 date = "2019-01-20T04:56:56+02:00"
 title = "How to Use GraphQL with Vue Apollo Components and Netlify Functions"
 description = "Learn how to set up a GraphQL endpoint with Netlify Functions and how to use Vue Apollo Components to fetch data in a declarative manner."
-intro = "Although I've already experimented a little bit with GraphQL, especially how to integrate GraphQL in a Vuex powered application, I never took the time to delve into the details. In todays article we'll build a simple example application using Apollo Components..."
+intro = "Although I've already experimented a little bit with GraphQL, especially how to integrate GraphQL in a Vuex powered application, I never took the time to delve into the details. In today's article we'll build a simple example application using Apollo Components..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
@@ -11,7 +11,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 
 Although I've already experimented a little bit with GraphQL, especially [how to integrate GraphQL in a Vuex powered application](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/), I never took the time to delve into the details.
 
-In todays article we'll build a simple example application using [Apollo Components](https://vue-apollo.netlify.com/guide/components/) which basically are renderless components (although they do render a wrapper `<div>`) for querying a GraphQL backend. Furthermore we’ll set up Netlify Functions to run our GraphQL endpoint.
+In today's article we'll build a simple example application using [Apollo Components](https://vue-apollo.netlify.com/guide/components/) which basically are renderless components (although they do render a wrapper `<div>`) for querying a GraphQL backend. Furthermore we’ll set up Netlify Functions to run our GraphQL endpoint.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
