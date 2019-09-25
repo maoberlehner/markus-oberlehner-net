@@ -13,6 +13,7 @@ In this article we're going to explore how to build unit tests for JavaScript co
 The code we're testing is the code of a real world project of mine: [perfundo – a pure CSS lightbox](https://github.com/maoberlehner/perfundo).
 
 ## Real browser vs. mock browser
+
 There're basically two ways how to run unit tests which depend on a browser environment. Either you're booting up a real browser engine with PhantomJS, Headless Chrome or something similar or you're using a mock browser environment.
 
 There are ups and downs to both approaches. Booting up a real browser environment gives you the real thing. PhantomJS is powered by WebKit and Headless Chrome uses exactly the same browser engine as it is used by the regular Chrome application. You can load real HTML and you can run your tests under almost real world conditions. But the downside of using a real browser environment approach is slow performance. Booting up a browser and running tests in a real browser engine can take quite a lot of time.
@@ -24,6 +25,7 @@ Saving just a few seconds by choosing a mock browser environment over a real bro
 Another thing to consider is, that we're going to write acceptance test in the second part of this two part article series. Those acceptance tests will run in real browsers, so there is no need for us to test the functionality of the code in real browsers with our unit tests.
 
 ## Setup
+
 First of all we're creating the directory structure for our test code. Because we're also going to add acceptance tests later it makes sense to nest a `unit` directory inside the projects `test` directory.
 
 ```bash
@@ -50,6 +52,7 @@ We're installing ava locally, therefore we need to add an npm script to our `pac
 Because we're going to also add acceptance tests in the future, it makes sense to split the test scripts in multiple namespaced scripts. Later we're going to add a `test:acceptance` script – both test scripts can than be triggered by running the `test` script.
 
 ## Writing testable code
+
 In oder to being able to write good unit tests, we have to write testable code. If you're following the TDD approach, this happens automatically, because if you write the tests first you're forced to write testable code. What “testable code” basically means is, that we must avoid using global variables in our code. All global dependencies must be injected into our codebase.
 
 ```js
@@ -69,6 +72,7 @@ In this example you can see the `Perfundo` function which takes `dependencies` a
 Providing a `dependencies` object as parameter makes it possible to mock those dependencies in our unit tests. Because of that we can provide a mocked DOM as `context` instead of a real DOM for example.
 
 ### Providing a nice API for users
+
 At this point you might wonder if the users of perfundo have to provide the dependencies themselves every time they're using perfundo? The answer is no. This would be quite a lot of overhead and our number one priority should always be to provide an easy to use API for our users.
 
 The best way to deal with this problem is to not expose the `Perfundo` function itself but a factory function which automatically returns a new, readily configured instance of the `Perfundo` function instead.
@@ -96,6 +100,7 @@ perfundo('.perfundo-selector');
 In this example of how to use perfundo as an npm package we can see that the factory function approach also has a second advantage: the factory function returns a new instance of `Perfundo` therefore the users do not have to use the `new` keyword themselves. Because of the way how `new` works in JavaScript it can lead to a lot of problems if users are forgetting to use it. By removing the need for using `new` altogether we're eliminating a potential source of trouble.
 
 ## Writing tests
+
 Before we start writing tests I have to say, that in this article I'll only show the test code – if you want to see the code being tested, you can go to the [perfundo GitHub repository](https://github.com/maoberlehner/perfundo/tree/3.0.3) and checkout [the code which is being tested](https://github.com/maoberlehner/perfundo/tree/3.0.3/js/lib/perfundo.js) in the following examples.
 
 It is up to you how you structure your test code. Some people like to put their test files alongside the “real” files containing the production code. In this example we're going to place the test files inside a separate direcotry `test/unit`. Let's write our first test.
@@ -138,6 +143,7 @@ Our first test is pretty straightforward: we check if `Perfundo` is actually a f
 Now we can run `npm run test:unit` and if everything in fact is set up correctly, we'll see our test succeed.
 
 ### Test prototypes and mock the DOM
+
 In this article I'm going to focus on the most interesting parts of the test code in order to make the article more compact and easier to follow. If you want to see the complete test code used in the real perfundo project, you can look at [the code at GitHub](https://github.com/maoberlehner/perfundo/tree/3.0.3/test/unit/perfundo.test.js).
 
 Let's write a test for the prototype functions which open and close the perfundo overlay: `Perfundo.prototype.open()` and `Perfundo.prototype.close()`.
@@ -183,6 +189,7 @@ At first we create a new DOM context using the mock `document`. We also create a
 After initializing a new instance of `Perfundo` with `new Perfundo(dependencies, '.perfundo');` we're triggering the `open()` prototype function. To check if everything worked as it should we're inspecting the `overlayElement` to see if it got a `.is-active` class on it. Now we can trigger the `close()` function and afterwards check if the `.is-active` class on the `overlayElement` was correctly removed again.
 
 ### Making things easier
+
 As you can see in the previous example, most of the test code is needed to build the mock DOM for our test. In order to make it easier to write tests and to DRY up the code, I wrote a little helper function called `createContext()` to automate the process of mocking the DOM for further test cases. You can see the code [in the perfundo GitHub repository](https://github.com/maoberlehner/perfundo/blob/3.0.3/test/unit/helper/create-context.js).
 
 ```js
@@ -214,6 +221,7 @@ The `mockClose()` function is used to override the `Perfundo.prototype.close()` 
 After triggering the `Perfundo.prototype.prev()` function with `perfundoInstances[1].prev();` we check if everything worked as intended by verifying if the `mockClose()` and `mockClick()` functions were called in the process of showing the previous perfundo element.
 
 ## Wrapping it up
+
 As a maintainer of several open source projects and as a perfectionist, I live in the constant fear of breaking things with new releases. Testing your codebase can take away a huge chunk of this fear. And even more importantly testing your production code can prevent downtimes and lost revenue because of regressions and bugs in your codebase.
 
 Because of those reasons, testing back-end code is nowadays pretty common in many companies but writing unit tests for the front-end of things is still quite rare in my experience. But it doesn't have to be anymore, with tools like browser mocking and excellent test runners like ava, testing front-end code has become just as easy as testing back-end code.
