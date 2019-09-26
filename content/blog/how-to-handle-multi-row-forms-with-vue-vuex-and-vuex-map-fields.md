@@ -22,9 +22,11 @@ In today's article we take it a step further and we'll explore how we can use th
 </div>
 
 ## Multi-row form with Vue and Vuex
+
 In our example form component, we want to have a form which makes it possible to enter and edit multiple rows of addresses. Also it should be possible to add new addresses on the fly. We want to handle the state of our multi-row form with Vuex.
 
 ### The Vuex store
+
 Let's start with our basic data structure which we'll later fill with data from our multi-row form.
 
 ```js
@@ -81,6 +83,7 @@ export default new Vuex.Store({
 </div>
 
 ### The component
+
 We want the component to render all items of the `addresses` property, which we defined in the store above, as one row with form elements. **Also we want to be able, to dynamically add new rows to add additional addresses when needed**.
 
 ```html
@@ -167,6 +170,7 @@ In the Vue component you can see above, we're using `v-for` to render rows of fo
 </div>
 
 ## Recap
+
 Handling form data with Vue in a way which does not mutate the Vuex store, can be a tricky thing to do. Even more tricky can it be to handle multi-row forms.
 
 I hope for [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to be a useful tool in the utility belt of Vue developers to make handling form data with Vue and Vuex a more pleasant experience.
