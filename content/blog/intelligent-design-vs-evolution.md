@@ -12,6 +12,7 @@ In the recent days I was confronted with the result of wrong planning in multipl
 Why is it, that we – as developers, people of science, as which we know of evolution as a fact and chuckle about the idea of an “Intelligent Design” forming the world we live in – don't honor the principles of evolution in our own craft and instead try to apply the idea of an “Intelligent Design” to our projects?
 
 ## The impossibility of intelligent design
+
 We're only able to write software because our brains evolved slowly, over hundreds of thousands of years, to this powerful thinking machines they are today. And still, they're far from perfect. I'm reminded about that every time I stand in front of the fridge and I have no idea what I was looking for.
 
 Somehow we think, because of our highly evolved brains, we're smart enough to discard the principles of evolution in our own work. If we have to work on legacy projects, the general consensus is that either our past selfs, or ideally some other people, were just not smart enough to build it right from the get go. Every time we encounter a flaw in the architectural design of the application, we want to immediately tear everything down and start from scratch.
@@ -21,6 +22,7 @@ At the beginning of a new project or a major refactoring we are sure: this time 
 At this point we're realizing that what we've planned out so intelligently at the beginning of our project, does not hold up to reality, we either blame ourself for not foreseeing the (realistically) unforeseeable, or we blame the project manager for coming up with new features or adjusting existing feature requirements - “This is not how software development works, we have to have perfect information right from the beginning.”
 
 ## The power of evolution in software architecture
+
 But is it even possible to have all the information up front and to plan everything perfectly before even a single line of code is written? Of course it is not.
 
 Although there is nothing wrong with extensive planning upfront, we should not expect to get everything right from the beginning. We should allow constant refactoring to happen and we should embrace the fact, that software is flexible.
@@ -34,6 +36,7 @@ To some extend, this is how evolution works too, evolution happens through rando
 But oftentimes we don't act like intelligent people and instead apply quick and dirty changes. Because after all, it is legacy code and it doesn't matter. We're actively driving the evolution of our project in the wrong direction, we're worse than natural evolution – maybe because we **want** the project to go distinct?
 
 ## Evolving software intelligently
+
 So how should we build software with the principles of evolution in mind? The first step is to believe in software evolution. With rising complexity levels it gets almost impossible to plan everything perfectly upfront. Allow yourself to make errors and take the time to refactor parts of your codebase which haven't proven themselves to work best for your use case.
 
 Make small improvements, one after another. Oftentimes we have the feeling that we have to refactor everything at once, and this is impossible because we don't have the time to do that. But small changes add up over time. Especially if you're working on a new(ish) project, making small improvements to the parts of the code you're currently working on, can prevent the project from becoming the next big, messy legacy project in your company.
@@ -45,6 +48,7 @@ Learn from your mistakes and make better decisions the next time you encounter a
 If you're working on a new project, have the guts to let patterns emerge. It happens to me again and again, that I come up with, what seems like a very smart idea at first, but ends up to be an over engineered overly complex solution to what turns out to be a rather simple problem. Don't make assumptions about future requirements. Build for the current requirements and refactor your code if you see patterns emerge.
 
 ## Conclusion
+
 Fail fast, follow The Boy Scout Rule and constantly refactor your codebase. Don't wait until someone grants you the time to refactor some part of the project. If you're working on a new feature and you're touching code which is begging to be improved, just do it.
 
 Believe in the evolution of your codebase but also be intelligent about it.
