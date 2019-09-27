@@ -2,12 +2,12 @@
 date = "2017-11-12T09:26:18+02:00"
 title = "Intelligent Design vs. Evolution"
 description = "Why is it, that we as developers don't honor the principles of evolution in our own craft and instead try to apply the idea of an “Intelligent Design” to our projects? Some thoughts about the principles of evolution in software development."
-intro = "In the recent days I was confronted with the result of wrong planning in multiple (personal and professional) projects I work on. It is an unpleasant feeling if you have to refactor large parts of the architecture of a project because you've came to the realization that, what seemed like a good idea in the beginning, turned out to not work like you imagined it..."
+intro = "In the last few days I have been confronted with the results of planning mistakes in several (personal and professional) projects on which I work. It's an unpleasant feeling to have to refactor large parts of the architecture of a project because you've come to realize that what initially looked like a good idea doesn't work the way you imagined it would..."
 draft = false
 categories = ["Development"]
 +++
 
-In the recent days I was confronted with the result of wrong planning in multiple (personal and professional) projects I work on. It is an unpleasant feeling if you have to refactor large parts of the architecture of a project because you've came to the realization that, what seemed like a good idea in the beginning, turned out to not work like you imagined it.
+In the last few days I have been confronted with the results of planning mistakes in several (personal and professional) projects on which I work. It's an unpleasant feeling to have to refactor large parts of the architecture of a project because you've come to realize that what initially looked like a good idea doesn't work the way you imagined it would.
 
 Why is it, that we – as developers, people of science, as which we know of evolution as a fact and chuckle about the idea of an “Intelligent Design” forming the world we live in – don't honor the principles of evolution in our own craft and instead try to apply the idea of an “Intelligent Design” to our projects?
 
