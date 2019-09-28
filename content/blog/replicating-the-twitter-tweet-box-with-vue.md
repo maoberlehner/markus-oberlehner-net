@@ -2,13 +2,13 @@
 date = "2018-04-29T13:32:32+02:00"
 title = "Replicating the Twitter Tweet Box with Vue.js"
 description = "Learn how to replicate the Twitter Tweet Box textarea including the features of highlighting superfluous characters and an animated SVG status circle."
-intro = "Today we're going to take a look at how to replicate the Twitter Tweet Box (the text area you use to compose new tweets) using Vue.js. At first glance, the Tweet text field might look like a straightforward `<textarea>` element, but it is not. It's certainly much more complicated than that. In this article, we'll find out why the Twitter Tweet Box isn't a simple `<textarea>` element and how the developers of Twitter have solved this problem. Furthermore, we'll explore a more convenient way, of how we can recreate the same functionality in Vue.js..."
+intro = "Today we will take a look at how to replicate the Twitter Tweet Box (the text area you use to compose new tweets) using Vue.js. At first glance, the Tweet text field might look like a straightforward `<textarea>` element, but it is not. It's certainly much more complicated than that. In this article, we'll find out why the Twitter Tweet Box isn't a simple `<textarea>` element and how the developers of Twitter have solved this problem. Furthermore, we'll explore a more convenient way, of how we can recreate the same functionality in Vue.js..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Today we're going to take a look at how to replicate the Twitter Tweet Box (the text area you use to compose new tweets) using Vue.js. At first glance, the Tweet text field might look like a straightforward `<textarea>` element, but it is not. It's certainly much more complicated than that. In this article, we'll find out *why* the Twitter Tweet Box isn't a simple `<textarea>` element and how the developers of Twitter have solved this problem. Furthermore, we'll explore a more convenient way, of how we can recreate the same functionality in Vue.js.
+Today we will take a look at how to replicate the Twitter Tweet Box (the text area you use to compose new tweets) using Vue.js. At first glance, the Tweet text field might look like a straightforward `<textarea>` element, but it is not. It's certainly much more complicated than that. In this article, we'll find out *why* the Twitter Tweet Box isn't a simple `<textarea>` element and how the developers of Twitter have solved this problem. Furthermore, we'll explore a more convenient way, of how we can recreate the same functionality in Vue.js.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
