@@ -305,6 +305,17 @@ Let’s say we want to build a contact form next. Again, we can reuse the `Frame
 
 Above you can see that we now emit a `success` event after successfully querying the API endpoint. You might want to consider to emit events for all possible status changes directly in the `FramePromise` component, but for now we keep it simple and only emit a `success` event from the `FrameApi` component.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ```html
 <template>
   <FrameApi
