@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Dependency Injection"]
 +++
 
-This is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function.
+The Testable Module Pattern is a pattern to write JavaScript modules which are fully testable by unit tests but also easy to use without the overhead of directly using a factory function.
 
 You might use this pattern when you want to use unit tests but you do not want to give up on the flexibility of a modular, dependency based approach of structuring your code.
 
