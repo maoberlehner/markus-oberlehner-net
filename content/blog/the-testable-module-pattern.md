@@ -15,6 +15,7 @@ You might use this pattern when you want to use unit tests but you do not want t
 The testable module pattern builds upon the traditional approach of using dependency injection in combination with a factory function to make modules testable.
 
 ## Dependency injection and the factory pattern
+
 In my last blog article I wrote about how to make a module testable by using a factory function for injecting dependencies into a function.
 
 ```js
@@ -47,6 +48,7 @@ const formattedValues2 = formatValues([3, 2, 1]);
 We only have to initialize the `formatValues` function once but we still have to do this either in a controller file and pass the dependency down to our modules or we have to do this in every module that is using the function. Either way there is quite some overhead.
 
 ## Using the testable module pattern
+
 The testable module pattern is an extended variation of the dependency injection and factory function based approach shown in the previous example.
 
 It combines the enhanced testability of the factory function based approach with the simplicity of traditional, self contained modules.
@@ -93,6 +95,7 @@ test(`Some test case.`, (t) => {
 ```
 
 ### Simplified testable module pattern
+
 You may decide that you do not need the extra factory function because you're either using the default export in your production code or the named export of `formatValues` for testing. In this case you can further simplify the pattern by removing the factory function.
 
 ```js
@@ -110,6 +113,7 @@ export default formatValues.bind(null, { Math, chalk });
 ```
 
 ## Potential downsides of the testable module pattern
+
 One potential downside of this approach is, that you're loading the dependencies of the module no matter if you're using them or not. If you're just importing the factory function and inject your own dependencies, you're still loading the dependencies which are defined in the module. The way I would use this approach is to always use the default export in production code. I would only use the named exports for testing where it doesn't matter (that much) to use a little more resources than necessary.
 
 If you're planing to build modules which you want to initialize with different dependencies, depending on the situation you're using them in, you might be better off with the traditional factory function approach.
