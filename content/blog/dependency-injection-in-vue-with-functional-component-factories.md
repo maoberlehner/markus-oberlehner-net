@@ -97,6 +97,25 @@ export default (Component, props) => ({
 
 With only 6 lines of code we are able to conveniently inject services and other dependencies without having to add a lot of boilerplate code to our components.
 
+As [@karlito40](https://twitter.com/karlito40) [pointed out on Twitter](https://twitter.com/karlito40/status/1178293595130007553?s=20), the container factory could be extended by automatically passing all its props to the wrapped component.
+
+```diff
+ // src/components/factories/container.js
+ export default (Component, props) => ({
+   functional: true,
++  props: Component.props,
+-  render(h) {
++  render(h, context) {
+-    return h(Component, { props });
++    return h(Component, {
++      props: { ...context.props, ...props },
++    });
+   }
+ });
+```
+
+Depending on your use case, this can be a variant to choose instead.
+
 <div class="c-content__broad">
   <div class="c-twitter-teaser">
     <div class="c-twitter-teaser__content">
