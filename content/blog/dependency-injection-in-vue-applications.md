@@ -58,7 +58,7 @@ export default {
   methods: {
     async login() {
       this.success = await login();
-    }
+    },
   },
   // ...
 };
@@ -107,7 +107,7 @@ export default {
   methods: {
     async login(data) {
       this.success = await login(data);
-    }
+    },
   },
   // ...
 };
@@ -149,7 +149,7 @@ export default {
     fetch(options) {
       const { data } = await fetch(options);
       this.products = data;
-    }
+    },
   },
   // ...
 };
@@ -196,7 +196,7 @@ export default {
       this.products = data;
       this.page = page;
       this.pageCount = pageCount;
-    }
+    },
   },
   // ...
 };
@@ -260,7 +260,7 @@ export default {
   methods: {
     async login(data) {
       this.success = await this.$userService.login(data);
-    }
+    },
   },
   // ...
 };
@@ -320,7 +320,7 @@ export default {
       this.products = data;
       this.page = page;
       this.pageCount = pageCount;
-    }
+    },
   },
   // ...
 };
