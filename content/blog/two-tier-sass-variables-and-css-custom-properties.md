@@ -37,6 +37,7 @@ $color-gray-300: #a5a5a5;
 As you can see in the example above, we're using the same `$color-gray-200` variable for different use cases. Now imagine you decide that all the disabled styles in your codebase (in our example those are two styles, in a real world application this might be hundreds of styles) should be one shade lighter. You now have to find all the occurrences of the variable in the context of disabled styles and replace the variables with `$color-gray-100`.
 
 ## Two tier variables to the rescue
+
 One way to make it easier to handle such situations is, to use a two tier approach for naming your variables. The first tier is for generic variables like the basic gray tones we've seen in the example above. Second tier variables are either named after the context in which they are used or they are named after a specific use case. Furthermore second tier variables always use a first tier variable as their value.
 
 ```scss
@@ -100,6 +101,7 @@ Next you can see the same example as above but with CSS custom properties instea
 ```
 
 ## Two tier variables on a component level
+
 In the examples above we've kept the variable names generic, but there might be situations when you have to be more specific.
 
 ```scss
@@ -169,6 +171,7 @@ $color-secondary-contrast: $color-white;
 The concept above, which only uses generic variable names, is a very clean solution to the problem. But keep in mind, that although this might work very well in the beginning of your project, you may encounter problems later on when your CSS codebase is growing and you have to consider more and more edge cases.
 
 ## Final considerations
+
 There are no definitive rules of how to use a two tier variable system. You might define a lot of second tier variables for every specific use case or you may want to keep it DRY by defining few, very generic second tier variables.
 
 Having a lot of very specific variables for every possible use case, makes it easier to cover edge cases where no generic variable would fit and it also gives you more freedom on the design front.
