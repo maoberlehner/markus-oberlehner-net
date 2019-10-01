@@ -310,13 +310,13 @@ But the way we want to use provide / inject, we don't care about reactivity at a
 <script>
 export default {
   name: 'ListingContainer',
-  inject: ['fetch']
+  inject: { fetchEntities: 'fetch' },
   created() {
     this.fetch();
   },
   methods: {
     fetch(options) {
-      const { page, pageCount, data } = await fetch(options);
+      const { page, pageCount, data } = await this.fetchEntities(options);
       this.products = data;
       this.page = page;
       this.pageCount = pageCount;
