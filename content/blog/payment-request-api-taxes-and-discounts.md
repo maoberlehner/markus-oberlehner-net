@@ -24,6 +24,7 @@ Today we're going to implement taxes and discounts into our existing checkout pr
 </div>
 
 ## Adding tax categories
+
 Every country on earth handles taxes differently in one way or another, although one common theme in many countries is that different products require different tax percentages. For example foods might be taxed differently than electronic products.
 
 ```js
@@ -89,6 +90,7 @@ function productFromDomFactory() {
 In order to retrieve the tax category from products, we have to update the `productFromDomFactory()` function. As you can see above, we're adding a new `tax` property.
 
 ## Calculating taxes
+
 Because it is possible that the user adds multiple products – which are associated with different tax categories – to his or her shopping cart, we can't just calculate the taxes from the total value.
 
 ```js
@@ -142,9 +144,11 @@ function taxesFromProducts(products, taxCategories) {
 The `taxesFromProducts()` helper function, takes an array of `products` and the `taxCategories` object as its parameters. We're traversing the `taxCategories` objects keys to find all products which match the current tax category. The total value of all the products of the current tax category is used to calculate the total tax value. Tax categories with no matching products are filtered out. This function returns an array of tax display items.
 
 ## Discounts
+
 There are usually two kinds of discounts you can find in online shops: fixed price discounts and percentage based discounts. In this example we're going to implement fixed price discounts.
 
 ### Adding a discount product
+
 In this example we're keeping it simple – we're simulating the process of adding a discount, by simply adding a new discount product. In a real world application you would most likely add the “discount product” automatically after the user enters a promo code or something like that.
 
 ```html
@@ -196,6 +200,7 @@ function displayItemsFromProducts(products) {
 The `displayItemsFromProducts()` helper function you can see above, is responsible for building an array of display items to submit to the Payment Request API. By adding the `sort()` function at the bottom, we're ordering the products in the shopping cart by their value from high to low which leads to the discount product – with its negative value, which is always lower than a positive value of a product – being at the bottom automatically.
 
 ## Full code and demo
+
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html).
 
 The code you can see on GitHub is the code used to build [this demo page on which you can see the Payment Request API powered shopping cart with taxes and discounts in action](/demos/2017-09-14/payment-request-api/).
