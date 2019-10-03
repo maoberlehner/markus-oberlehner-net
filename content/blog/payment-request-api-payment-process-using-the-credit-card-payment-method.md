@@ -22,9 +22,11 @@ This is the first part of a three part series on how to use the new Payment Requ
 Thanks to the Payment Request API, accepting payments from our users now is a piece of cake. Albeit support from third party payment processors is still rather limited – Android Pay being one of the most notable – this will very likely change in the near future. Furthermore you don't necessarily need a third party payment provider to integrate directly into the Request Payment API, it is also possible to collect credit card data from the user via the Request Payment API and send them to your payment provider using it's own API.
 
 ## Building a demo shop using the Request Payment API
+
 In the following examples we'll examine how to collect credit card data from a user in order to pay for a product in an online shop. The end result will be a [little demo shop](/demos/2017-09-07/payment-request-api/) – you can [look at the complete code of the demo shop on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
 
 ### Basic HTML structure and event listeners
+
 We'll keep the basic structure of our [demo shop](/demos/2017-09-07/payment-request-api/) very, very simple. The only thing we want to show is a (fake) product that the user can buy. Buying the product triggers the Request Payment API (if the browser supports it).
 
 ```html
@@ -72,6 +74,7 @@ If everything worked correctly, the `then()` method is called which in turn is c
 If the payment gets cancelled or some other error occurs, we catch the `error` and pass it to our `errorHandler()` which takes further action (in our case, just logging the error to the browser console).
 
 ### Initializing functions
+
 In order to make it easier to structure and test our codebase, we're going to make heavy use of factory functions and dependency injection for initializing all the functions that we need without having to specify their dependencies every time we're using them. The following block of code initializes all the functions we need via their factory functions.
 
 ```js
@@ -99,9 +102,11 @@ const paymentDetailsFromProduct = paymentDetailsFromProductFactory();
 ```
 
 ### Submiting a payment request
+
 Because their specific implementation doesn't matter too much for our example, I won't go into much detail about how `PaymentRequestPolyfill`, `paymentProcessorFactory()`, `errorHandlerFactory()`, and `productFromDomFactory()` are implemented. If you're interested in the code you can look at [the complete code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
 
 #### The payment details object
+
 ```js
 function paymentDetailsFromProductFactory() {
   return (product) => ({
@@ -119,6 +124,7 @@ function paymentDetailsFromProductFactory() {
 The `PaymentRequest` function expects a `paymentDetails` object as its second parameter. The function returned by the `paymentDetailsFromProductFactory()` function you can see above, takes a `product` object and returns a new `paymentDetails` object to be used for triggering a payment request.
 
 #### Wrapping the PaymentRequest object
+
 ```js
 function paymentRequestFactory({ paymentMethods }) {
   return (paymentDetails) => new PaymentRequest(paymentMethods, paymentDetails);
@@ -137,6 +143,7 @@ const paymentMethods = [creditCardPaymentMethod];
 The `paymentMethods` you can see above, are passed to the `paymentRequestFactory()` function to initialize a new `PaymentRequest` using those payment methods. In our example we're only defining `basic-card` as a payment method, you can read more at [developers.google.com](https://developers.google.com/web/fundamentals/discovery-and-monetization/payment-request/deep-dive-into-payment-request#defining_supported_payment_methods) about other available payment methods.
 
 #### Triggering a payment request
+
 The `payment()` function is where the magic happens. We call this function every time the user should be promted to enter his or her payment details.
 
 ```js
@@ -163,6 +170,7 @@ function paymentHandlerFactory({ paymentProcessor }) {
 The `paymentHandler()` function is responsible for handling the payment data which the user provided. Usually this means sending them to a third party payment provider like PayPal or Stripe. The most important thing which is going on here is calling the `complete()` method on the `paymentResponse` object – this is telling the browser, that everything worked correctly which in turn closes the payment popup.
 
 ## Full code and demo
+
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-07/payment-request-api/index.html).
 
 The code you can see on GitHub is the code used to build [this demo page on which you can see the Payment Request API in action](/demos/2017-09-07/payment-request-api/).
