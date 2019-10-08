@@ -2,17 +2,17 @@
 date = "2018-06-17T06:47:47+02:00"
 title = "Layouts with Vue.js - How to Create Dynamic Layout Components"
 description = "Learn how to build a performant Vue.js layout system with layouts that do not re-render on every route change and how to build flexible layout components with Vue.js."
-intro = "Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server side rendered applications or powering very large scale single page applications, and everything in between. If you're using Vue.js to build complex single page applications you'll sooner rather than later encounter situations in which you need different page layouts for certain parts of your application..."
+intro = "Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations in which you need different page layouts for certain parts of your app...."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server side rendered applications or powering very large scale single page applications, and everything in between. If you're using Vue.js to build complex single page applications you'll sooner rather than later encounter situations in which you need different page layouts for certain parts of your application.
+Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations in which you need different page layouts for certain parts of your app.
 
-Today we'll take a look at multiple ways of how to handle layouts in Vue.js and we'll explore the potential up and downsides of the different approaches.
+Today we'll take a look at multiple ways of how to handle layouts in Vue.js, and we'll explore the potential up and downsides of the different approaches.
 
-You can find [the code for this article on GitHub](https://github.com/maoberlehner/dynamic-vue-layout-components) and you can [browse the final result hosted on Netlify](https://dynamic-vue-layout-components.netlify.com/).
+You can find [the code for this article on GitHub](https://github.com/maoberlehner/dynamic-vue-layout-components), and you can [browse the final result hosted on Netlify](https://dynamic-vue-layout-components.netlify.com/).
 
 ## The Vue CLI way
 
