@@ -1,7 +1,7 @@
 +++
 date = "2019-01-06T07:04:04+02:00"
 title = "Building a Renderless reCAPTCHA v3 Form Component with Vue.js"
-description = "Learn how to build a reusable form component which handles loading and error logic and is secured by reCAPTCHA v3 with the “renderless components” approach."
+description = "Learn how to build a reCAPTCHA v3 powered reusable form component which handles loading and error logic with the “renderless components” approach."
 intro = "The modern frontend stack is all about reusable components. The renderless component pattern is one of the most elegant ways of how to build highly reusable components. Today we'll build a renderless component for handling form submission, loading and error logic in a generic and reusable way. Additionally we'll take a look at how we can use the new reCAPTCHA v3 to secure our form from spam submissions..."
 draft = false
 categories = ["Development"]
