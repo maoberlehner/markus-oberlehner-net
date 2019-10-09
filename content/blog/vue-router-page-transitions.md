@@ -2,15 +2,15 @@
 date = "2018-06-10T10:15:15+02:00"
 title = "Vue Router Page Transitions with Fade, Slide and Zoom Effects"
 description = "Learn how to transition between Vue Router Views using fade, slide and zoom effects. Examples for using animations for Vue Router page transitions."
-intro = "In my last article we've explored how to use the powerful Vue.js transition component, to animate an element from zero height to auto height. Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application..."
+intro = "In my last article, we've explored how to use the powerful Vue.js transition component, to animate an element from zero height to auto height. Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In my last article we've explored how to use the powerful Vue.js transition component, to [animate an element from zero height to auto height](https://markus.oberlehner.net/blog/transition-to-height-auto-with-vue/). Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application.
+In my last article, we've explored how to use the powerful Vue.js transition component, to [animate an element from zero height to auto height](https://markus.oberlehner.net/blog/transition-to-height-auto-with-vue/). Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application.
 
-If you're curious about the result, you can [take a look at the final result hosted on Netlify](https://vue-router-page-transitions.netlify.com) or you can [checkout the full code on GitHub](https://github.com/maoberlehner/vue-router-page-transitions).
+If you're curious about the result, you can [take a look at the final result hosted on Netlify](https://vue-router-page-transitions.netlify.com), or you can [check out the full code on GitHub](https://github.com/maoberlehner/vue-router-page-transitions).
 
 ## Basic fade transition
 
@@ -47,7 +47,7 @@ Let's get started with the most basic transition effect: **fade out the current 
 </template>
 ```
 
-Because the `<router-view>` is a regular component, we're able to use the `<transition>` component around it to attach transition effects to route changes. In the code snippet above, you can see that we give the transition the name `fade` and we set the `mode` property to `out-in`, so the current page is first faded out before the new page is faded in.
+Because the `<router-view>` is a regular component, we're able to use the `<transition>` component around it to attach transition effects to route changes. In the code snippet above, you can see that we give the transition the name `fade`, and we set the `mode` property to `out-in`, so the current page is first faded out before the new page is faded in.
 
 ```scss
 // src/App.vue
@@ -69,11 +69,11 @@ Because the `<router-view>` is a regular component, we're able to use the `<tran
 // ...
 ```
 
-Next up we have to define our transition styles to make the fade transition work. Above you can see some code of the `<style>` section of our `src/App.vue` component. We could use the shorthand syntax of the `transition` property, but we'll enhance the transition in the next chapter.
+Next up, we have to define our transition styles to make the fade transition work. Above you can see some code of the `<style>` section of our `src/App.vue` component. We could use the shorthand syntax of the `transition` property, but we'll enhance the transition in the next chapter.
 
 ## Advanced fade transition (with height)
 
-Thanks to the amazing `<transition>` component, we've already achieved a basic fading page transition effect, but currently it doesn't look very smooth because the footer isn't adapting very well to the new height of the content section. **Let's fix this by not only transition the opacity of the router views but also their height**.
+Thanks to the amazing `<transition>` component, we've already achieved a basic fading page transition effect. but currently, it doesn't look very smooth because the footer isn't adapting very well to the new height of the content section. **Let's fix this by not only transition the opacity but also the height of the router views**.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -127,11 +127,11 @@ export default {
 };
 ```
 
-In the JavaScript code block above, you can see the three new methods which are triggered by our transition hooks. The `beforeLeave()` method gets the element of the current page as its only parameter, we can use this to get the height of the current page and save it for later usage.
+In the JavaScript code block above, you can see the three new methods which are triggered by our transition hooks. The `beforeLeave()` method gets the element of the current page as its only parameter; we can use this to get the height of the current page and save it for later usage.
 
-Next we can see the `enter()` method which is responsible for actually triggering the transition of the height of the new page which we transition to. First we get the final height of the new page and save it in a `height` variable. Next we set the height of the new page to the height of the current page, this is our starting point for the transition. And finally we set the height of the new page to its original height back again. We do this inside a `setTimeout()` function to make sure the browser has triggered a paint after setting the height of the new page to the height of the current page, because otherwise we'd see no transition effect.
+Next, we can see the `enter()` method, which is responsible for actually triggering the transition of the height of the new page, to which we transition. First, we get the final height of the new page and save it in a `height` variable. Next, we set the height of the new page to the height of the current page; this is our starting point for the transition. And finally, we set the height of the new page to its original height back again. We do this inside a `setTimeout()` function to make sure the browser has triggered a paint after setting the height of the new page to the height of the current page. Otherwise, we'd see no transition effect.
 
-After the entrance transition of the new page has finished, the `afterEnter()` method is triggered and we set the height of the page back to `auto` to make sure its height is dynamic again, in case new content is rendered or the size of the browser window changes or something like that.
+After the entrance transition of the new page has finished, the `afterEnter()` method is triggered. Next, we set the height of the page back to `auto` to make sure its height is dynamic again. We do this in case new content is rendered or the size of the browser window changes.
 
 ```diff
  .fade-enter-active,
@@ -144,7 +144,7 @@ After the entrance transition of the new page has finished, the `afterEnter()` m
  }
 ```
 
-In order to animate the change of the height, we have to add the `height` to the list of transition properties. Also we have to add `overflow: hidden` to make sure the height of the page is actually cut off and not visible until it has transitioned to its final height.
+To animate the change of the height, we add the `height` to the list of transition properties. Also, we have to add `overflow: hidden` to make sure the height of the page is actually cut off and not visible until it has transitioned to its final height.
 
 <div>
   <hr class="c-hr">
@@ -159,7 +159,7 @@ In order to animate the change of the height, we have to add the `height` to the
 
 ## Slide transition
 
-So far so good, the combination of transitioning the opacity and the height of the pages, already looks pretty decent. But we still can do better and make an even more fancy page transition: **we can use a sliding effect to transition between pages**.
+So far, so good, the combination of transitioning the opacity and the height of the pages already looks pretty decent. But we still can do better and make an even more fancy page transition: **we can use a sliding effect to transition between pages**.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -205,7 +205,7 @@ The following code is loosely based on some code from [the official Vue Router d
  });
 ```
 
-As you can see in the diff above, we add a new route for a [sub page](https://github.com/maoberlehner/vue-router-page-transitions/blob/master/src/views/AboutMore.vue) of the `About` page. Note that we define a `meta` property on that new route. We can use the `meta` property to define a property, in this case we named it `transitionName` (but you can name it however you want), which we can use to define the page transition we want to use for this page.
+As you can see in the diff above, we add a new route for a [sub page](https://github.com/maoberlehner/vue-router-page-transitions/blob/master/src/views/AboutMore.vue) of the `About` page. Note that we define a `meta` property on that new route. We can use the `meta` property to define a property; in this case, we named it `transitionName` (but you can name it however you want). We can use it to define the page transition we want to use for the page.
 
 ```diff
      </nav>
@@ -218,7 +218,7 @@ As you can see in the diff above, we add a new route for a [sub page](https://gi
          @enter="enter"
 ```
 
-Next we make the transitions `name` property dynamic by assigning it a variable instead of a string.
+Next, we make the transitions `name` property dynamic by assigning it a variable instead of a string.
 
 ```diff
 +const DEFAULT_TRANSITION = 'fade';
@@ -255,7 +255,7 @@ Now it gets a little bit more complicated. Because we want to use both, the fade
 
 At the top of the JavaScript code, we define a constant for our default transition, which should be `fade`. We assign this constant as the initial value of our new `transitionName` data property.
 
-In the `created()` hook of the `App.vue` component, we use the `beforeEach()` router instance method, to run some code before every route change. If the route changes, the function we've defined here is triggered and we check if either the `to` page or the `from` page has a `transitionName` `meta` property, if so, we use this transition name. If the `transitionName` equals `slide` we check if we're either navigating deeper into the tree of pages (e.g. from `/about` to `/about/more`) or if we're navigating in the opposite direction. Depending on the direction in which the user is navigating we either want to show a sliding transition from left to right or right to left.
+In the `created()` hook of the `App.vue` component, we use the `beforeEach()` router instance method, to run some code before every route change. If the route changes, the function we've defined here is triggered, and we check if either the `to` page or the `from` page has a `transitionName` `meta` property, if so, we use this transition name. If the `transitionName` equals `slide` we check if we're either navigating deeper into the tree of pages (e.g. from `/about` to `/about/more`) or if we're navigating in the opposite direction. Depending on the direction in which the user is navigating, we either want to show a sliding transition from left to right or right to left.
 
 ```scss
 // src/App.vue
@@ -287,11 +287,11 @@ In the `created()` hook of the `App.vue` component, we use the `beforeEach()` ro
 // ...
 ```
 
-Above you can see the CSS code necessary for the left to right and right to left transitions to work.
+Above, you can see the CSS code necessary for the left to right and right to left transitions to work.
 
 ## Zoom transition
 
-Ok, those sliding transitions are already pretty fancy but we can still make an even more fancy transition. **Let's build a zoom transition**.
+Ok, those sliding transitions are already pretty fancy, but we can still make an even more fancy transition. **Let's build a zoom transition**.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -331,7 +331,7 @@ A zoom transition is best suited for something like an overlay, so we add a new 
          @afterEnter="afterEnter"
 ```
 
-Because the zoom transition of an overlay behaves a little bit different than the other two transition we've built before, we have to change the `mode` and the `enter-active-class` properties to be dynamic.
+Because the zoom transition of an overlay behaves a little bit different than the other two transitions we've built before, we have to change the `mode` and the `enter-active-class` properties to be dynamic.
 
 ```diff
  const DEFAULT_TRANSITION = 'fade';
@@ -382,9 +382,9 @@ Because the zoom transition of an overlay behaves a little bit different than th
      });
 ```
 
-There is a lot of new code in the JavaScript snippet above, let's walk through it. First we define a new `DEFAULT_TRANSITION_MODE` constant and set it to the value we've used previously directly in the template: `out-in`. In the router `beforeEach` hook, we now check if the `to` route or the `from` route have set their `transitionName` `meta` property to `zoom` and we change the transition properties accordingly if this is the case.
+There is a lot of new code in the JavaScript snippet above, let's walk through it. First, we define a new `DEFAULT_TRANSITION_MODE` constant and set it to the value we've used previously directly in the template: `out-in`. In the router `beforeEach` hook, we now check if the `to` route or the `from` route have set their `transitionName` `meta` property to `zoom` and we change the transition properties accordingly if this is the case.
 
-If the user navigates to a route with a `zoom` transition, we change the transition mode to `in-out` which means we first zoom in the overlay view and then we hide the current page. Because the current page is hidden behind the overlay page, we don't see this transition, which is exactly what we want.
+If the user navigates to a route with a `zoom` transition, we change the transition mode to `in-out`, which means we first zoom in the overlay view, and then we hide the current page. Because the current page is hidden behind the overlay page, we don't see this transition, which is precisely what we want.
 
 In the case the user navigates away from the overlay page, we want to immediately show the new page the user is navigating to and then zoom out the overlay page, so the new page appears behind the overlay page. To make this possible, we reset the transition mode which means hiding the current and showing the new page happens at the same time and we also set the `enter-active-class` to `null` which means no class is applied which has the effect, that no transition is applied for showing the new page which means it appears immediately.
 
@@ -436,7 +436,7 @@ Above you can see the CSS code which makes the zoom animation happen.
 
 ## Refactoring
 
-Now everything works as we've imagined it to work but our code has become rather complex. In order to keep our `App.vue` component clean, we can refactor our code and move all of the transition logic into a separate component.
+Now everything works as we've imagined it to work, but our code has become rather complicated. To keep our `App.vue` component clean, we can refactor our code and move all of the transition logic into a separate component.
 
 ```diff
        <router-link to="/about">About</router-link>
@@ -599,7 +599,7 @@ Now everything works as we've imagined it to work but our code has become rather
    margin-right: auto;
 ```
 
-In the diff snippets above, you can see that we can remove all of the code related to our page transitions. Instead we add a new `TransitionPage` component you can see in the next code snippet.
+In the diff snippets above, you can see that we can remove all of the code related to our page transitions. Instead, we add a new `TransitionPage` component you can see in the next code snippet.
 
 ```html
 <template>
@@ -743,4 +743,4 @@ export default {
 
 Applying a simple transition to route changes in a Vue.js application is pretty straight forward. But things can become tricky very quickly if you want to combine multiple complex page transitions in one application.
 
-The Vue.js transition component is very powerful out of the box and you can make your code a lot cleaner by wrapping it in your own custom transition component.
+The Vue.js transition component is very powerful out of the box, and you can make your code a lot cleaner by wrapping it in your custom transition component.
