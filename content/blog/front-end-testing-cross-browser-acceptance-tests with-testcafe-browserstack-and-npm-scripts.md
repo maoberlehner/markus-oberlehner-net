@@ -11,6 +11,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 In [the first part](/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/) of this two part series about front-end testing we explored [how to write JavaScript unit tests](/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/). In this article we'll build acceptance tests powered by [TestCafe](https://github.com/DevExpress/testcafe), [BrowserStack](https://www.browserstack.com) and npm scripts. After we've set up local testing we're going to integrate Travis CI to automatically run our tests after pushing new code to a Git repository.
 
 ## Setup
+
 First of all we're creating the directory structure for our test code. In the first part of this series we've already created a `test` directory containing a sub directory for our unit tests now we add an additional `acceptance` directory for our acceptance test files.
 
 ```bash
@@ -41,6 +42,7 @@ The `test:unit` npm script you can see here was created in the first part of thi
 By specifying the `--app` option we can tell TestCafe to start a new HTTP server using the `http-server` npm package, serving the contents from the `demo/` directory, using port `1337` and suppress (HTTP server) log messages by providing the `-s` (silent) option. The site which is served by `http-server` is the site we're going to test.
 
 ## Writing tests
+
 The page we're going to test is the project website of an open source project of mine: [perfundo – a pure CSS lightbox](https://perfundo.oberlehner.net/). You can find [the code of the site and also all the test code on GitHub](https://github.com/maoberlehner/perfundo/tree/3.0.3).
 
 Usually you'll create a separate test file for every page of your website. In some cases – if you want to test very complex pages – you might also create separate files for every feature on a page. In our case there is only one page, the homepage, which we're going to test.
@@ -87,6 +89,7 @@ By running `npm run test:acceptance` we can run our tests locally. Assuming Chro
 If you want to see more test examples you can go to the [perfundo GitHub repository](https://github.com/maoberlehner/perfundo/blob/3.0.3/test/acceptance/index.js).
 
 ## Configuring Travis CI
+
 In order to automatically run tests when pushing new code to GitHub (or some other system with Travis CI integration) we have to add a `.travis.yml` configuration file and activate our project in the Travis CI dashboard. You can read more about [adding a new project to Travis CI in the official documentation](https://docs.travis-ci.com/user/getting-started/).
 
 ```yaml
@@ -119,6 +122,7 @@ In the Travis CI configuration file you can see above, we're telling Travis CI t
 That's it. After enabling your project in the Travis CI dashboard and adding a `.travis.yml` configuration file to your project you're able to automatically run your TestCafe powered acceptance tests on Travis CI every time you push new code.
 
 ## Cross browser testing with BrowserStack
+
 Automatically running your acceptance tests in Chrome and Firefox is nice but we all know that there are several other browsers we have to take care of. BrowserStack makes it possible to boot up an instance of basically every relevant browser on the market. And furthermore BrowserStack provides an automation API which makes it possible to automate cross browser testing.
 
 Luckily TestCafe makes integrating BrowserStack as easy as it gets by providing an npm package to connect with the BrowserStack automation API.
@@ -149,6 +153,7 @@ While your tests are running you can watch their status in the [BrowserStack Aut
 <video data-src="/videos/2017-09-04/perfundo-testcafe-browserstack-video.mp4" poster="/videos/2017-09-04/perfundo-testcafe-browserstack-video.jpg" controls></video>
 
 ### Re-configure Travis CI for BrowserStack cross browser testing
+
 If you want to test only in BrowserStack browsers, you can cleanup your `.travis.yml` configuration file.
 
 ```yaml
@@ -163,6 +168,7 @@ script:
 You can remove all the additional settings which were required to install Firefox, Chrome and Fluxbox.
 
 ## Configuring ESLint to work with TestCafe
+
 I personally had some troubles to get up and running with linting TestCafe files using ESLint. To save you the headaches here are some things I've learned about using ESLint with TestCafe (following the JavaScript syntax described in the TestCafe documentation) I wish I had known earlier.
 
 ```json
@@ -184,6 +190,7 @@ I personally had some troubles to get up and running with linting TestCafe files
 What you can see above is my `.eslintrc` ESLint configuration file. By defining `fixture` and `test` as globals, ESLint ignores the usage of those variables without defining them. Setting the `ecmaVersion` to `8` makes it possible to use the latest JavaScript syntax which is also used in the TestCafe documentation code examples. There is also an [official TestCafe ESLint configuration package](https://www.npmjs.com/package/eslint-plugin-testcafe) you can use, but the only thing it does is to add the `fixture` and `test` globals.
 
 ## Wrapping it up
+
 The combination of TestCafe, BrowserStack and Travis CI makes it possible to run all of your acceptance tests on all of your supported platforms automatically whenever you push new code to your repository.
 
 You can save a lot of precious time and money by making sure your new feature runs in all relevant browsers without manually running every test yourself. And even more importantly automated tests can give you the peace of mind that everything still works after a major code overhaul or after implementing a new feature which affects other parts of your site.
