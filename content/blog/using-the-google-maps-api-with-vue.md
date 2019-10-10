@@ -2,20 +2,20 @@
 date = "2018-12-23T06:29:29+02:00"
 title = "Using the Google Maps API with Vue.js"
 description = "Learn how to use the Google Maps API and how to use marker clustering in combination with Vue.js"
-intro = "In today’s article we take a look at how we can use the Google Maps API in combination with Vue.js. We will build a simple Vue.js component which renders a Google Map. Furthermore we will find out how we can listen for click events on markers and how we can cluster multiple markers in close distance to each other..."
+intro = "In today's article, we take a look at how we can use the Google Maps API in combination with Vue.js. We build a simple Vue.js component, which renders a Google Map. Furthermore, we learn how to listen for click events on markers and how we can cluster multiple markers in close distance to each other..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/vue-google-map-twitter-card"]
 +++
 
-In today’s article we take a look at how we can use the Google Maps API in combination with Vue.js. **We will build a simple Vue.js component which renders a Google Map.** Furthermore we'll learn how to **listen for click events on markers and how we can cluster multiple markers in close distance to each other.**
+In today's article, we take a look at how we can use the Google Maps API in combination with Vue.js. **We build a simple Vue.js component, which renders a Google Map.** Furthermore, we learn how to **listen for click events on markers and how we can cluster multiple markers in close distance to each other.**
 
-You can [take a look at the complete source code on GitHub](https://github.com/maoberlehner/using-the-google-maps-api-with-vue) or you can [checkout the demo application hosted on Netlify](https://using-the-google-maps-api-with-vue.netlify.com/).
+You can [take a look at the complete source code on GitHub](https://github.com/maoberlehner/using-the-google-maps-api-with-vue), or you can [check out the demo application hosted on Netlify](https://using-the-google-maps-api-with-vue.netlify.com/).
 
 ## The vue2-google-maps plugin
 
-Before we get started with building our own custom implementation, let me point out that there already is a pretty nice Vue.js plugin named `vue2-google-maps` which makes it possible to assemble a map and its markers in a declarative manner.
+Before we get started with building our custom implementation, let me point out that there already is a pretty good Vue.js plugin named `vue2-google-maps` which makes it possible to assemble a map and its markers in a declarative manner.
 
 ```html
 <GmapMap :center="{ lat: 10, lng: 10 }">
