@@ -2,17 +2,17 @@
 date = "2018-02-04T10:01:01+02:00"
 title = "How to Structure a Complex Vuex Store with Modules"
 description = "Best practices for using Vuex modules to structure a Vuex store. Learn how to enable lazy loading of Vuex store modules and how to fetch data via an API."
-intro = "In today's article, we're going to take a look at a possible way of how to structure a Vuex store for a large scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find any good examples..."
+intro = "In this article, we take a look at a possible way of how to structure a Vuex store for a large scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find any good examples..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
-> **Update from 2019:** I wrote this article about a year ago and I changed my mind about a few things regarding the use of Vuex at scale since then. Although most of this article is still relevant today, I highly recommend you to also [read my article about possible alternatives for Vuex and how you can decide when to use Vuex over an alternative solution](/blog/should-i-store-this-data-in-vuex/). Moreover, I plan to write a book about this topic, you can [follow me on Twitter](https://twitter.com/maoberlehner) or [subscribe to my newsletter](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b) if you want to stay up to date.
+> **Update from 2019:** I wrote this article about a year ago, and I changed my mind about a few things regarding the use of Vuex at scale since then. Although most of this article is still relevant today, I highly recommend you also [read my article about possible alternatives for Vuex and how you can decide when to use Vuex over an alternative solution](/blog/should-i-store-this-data-in-vuex/). Moreover, I plan to write a book about this topic, and you can [follow me on Twitter](https://twitter.com/maoberlehner) or [subscribe to my newsletter](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b) if you want to stay up to date.
 
-In today's article we will take a look at a possible way to structure a Vuex Store for a large-scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find good examples. Most of the Vuex examples out there demonstrate the core concepts of Vuex by showing how to build a simple application, such as a very simple shopping cart or a to-do list.
+In this article, we take a look at a possible way to structure a Vuex Store for a large-scale application. When I was researching possible approaches for handling the state of big, Vue powered applications with Vuex, it was pretty hard to find good examples. Most of the Vuex examples out there demonstrate the core concepts of Vuex by showing how to build a reduced version of a shopping cart or a simple to-do list.
 
-In this article we're building a simple application which consists of two pages: on the first page it is possible to create a new customer and on the second page the user can enter a shipping address.
+Today we build a straightforward application consisting of two pages. The first page makes it possible to create a new customer, and on the second page, the user can enter a shipping address.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
