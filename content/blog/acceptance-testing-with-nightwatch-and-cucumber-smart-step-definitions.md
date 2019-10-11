@@ -64,7 +64,7 @@ Usually you'd want to test both occurrences the same way but there might be case
 </script>
 ```
 
-As you can see above, the `qa-` prefixed classes we've used previously to select specific elements in our step definitions, are gone. Instead you can see custom `data-qa` attributes used on certain HTML elements. This makes it possible to use human readable names to select HTML elements in the step definitions. This is only the most important part of the code, if you're intrested in the full code example, you can checkout the [GitHub repository](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-2-smart-step-definitions) I've created for this article.
+As you can see above, the `qa-` prefixed classes we've used previously to select specific elements in our step definitions, are gone. Instead you can see custom `data-qa` attributes used on certain HTML elements. This makes it possible to use human readable names to select HTML elements in the step definitions. This is only the most important part of the code, if you're intrested in the full code example, you can check out the [GitHub repository](https://github.com/maoberlehner/acceptance-testing-with-nightwatch-cucumber-and-browserstack/tree/part-2-smart-step-definitions) I've created for this article.
 
 ## Rewriting the acceptance test feature specification
 

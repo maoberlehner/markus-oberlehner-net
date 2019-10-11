@@ -34,7 +34,7 @@ In [the first part of this series](/blog/distributed-vue-applications-loading-co
 
 **The final result will be a simple news feed application which demonstrates the basic principles of this approach.** We want to fetch the latest news from a REST API endpoint and subscribe to a WebSocket feed to check for updates on existing or new news items.
 
-You can [find a live demo of the application on Netlify](https://pushing-content-and-component-updates-to-the-client.netlify.com/) and you can [checkout the code on GitHub](https://github.com/maoberlehner/distributed-vue-applications-pushing-content-and-component-updates-to-the-client). Please note that the live demo does not make use of WebSockets but rather fakes them in order to make the deployment easier.
+You can [find a live demo of the application on Netlify](https://pushing-content-and-component-updates-to-the-client.netlify.com/) and you can [check out the code on GitHub](https://github.com/maoberlehner/distributed-vue-applications-pushing-content-and-component-updates-to-the-client). Please note that the live demo does not make use of WebSockets but rather fakes them in order to make the deployment easier.
 
 ## Building a simple API endpoint
 

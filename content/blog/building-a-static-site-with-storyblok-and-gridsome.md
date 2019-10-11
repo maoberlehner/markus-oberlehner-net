@@ -144,7 +144,7 @@ module.exports = {
 
 ## Querying data with GraphQL
 
-Now that we've successfully set up our new Storyblok data source, we're able to start the Gridsome development server and checkout if everything works as expected.
+Now that we've successfully set up our new Storyblok data source, we're able to start the Gridsome development server and check out if everything works as expected.
 
 ```bash
 npm run develop
@@ -248,7 +248,7 @@ export default {
 
 In the `<page-query>` block you can see the GraphQL query which is used to fetch the data we need to render our landing page. We can access the data inside the `<template>` section via the `$page.landingPage` variable.
 
-If you want to take a closer look at the `AppMediaBlock` and `AppTeaser` components, you can [checkout the code on GitHub](https://github.com/maoberlehner/building-a-static-site-with-storyblok-and-gridsome/tree/master/src/components).
+If you want to take a closer look at the `AppMediaBlock` and `AppTeaser` components, you can [check out the code on GitHub](https://github.com/maoberlehner/building-a-static-site-with-storyblok-and-gridsome/tree/master/src/components).
 
 ## Performance
 

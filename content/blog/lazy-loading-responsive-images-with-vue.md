@@ -24,7 +24,7 @@ In today's article, we'll take a closer look at how we can build our own custom 
   </p>
 </div>
 
-If you want to take a look at the result of our work, you can [look at a demo hosted on Netlify](https://lazy-loading-responsive-images-with-vue.netlify.com/) and you can [checkout the code on GitHub](https://github.com/maoberlehner/lazy-loading-responsive-images-with-vue).
+If you want to take a look at the result of our work, you can [look at a demo hosted on Netlify](https://lazy-loading-responsive-images-with-vue.netlify.com/) and you can [check out the code on GitHub](https://github.com/maoberlehner/lazy-loading-responsive-images-with-vue).
 
 ## Vue-Lazyload
 

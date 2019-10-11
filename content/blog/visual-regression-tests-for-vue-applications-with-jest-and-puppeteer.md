@@ -29,7 +29,7 @@ Assuming that we already have [integration tests](/blog/integration-testing-vue-
   </p>
 </div>
 
-This article builds upon my previous article about [integration testing with Jest and Puppeteer](/blog/integration-testing-vue-components-with-jest-and-puppeteer/). If you want to follow along you can [checkout the repository of the previous article](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components/tree/jest-and-puppeteer-integration-tests). Additionally, you can [find the full code covered in this article on GitHub](https://github.com/maoberlehner/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer) and you can also [take a look on the demo application running on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com/).
+This article builds upon my previous article about [integration testing with Jest and Puppeteer](/blog/integration-testing-vue-components-with-jest-and-puppeteer/). If you want to follow along you can [check out the repository of the previous article](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components/tree/jest-and-puppeteer-integration-tests). Additionally, you can [find the full code covered in this article on GitHub](https://github.com/maoberlehner/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer) and you can also [take a look on the demo application running on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com/).
 
 ## The setup
 

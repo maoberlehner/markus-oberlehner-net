@@ -14,7 +14,7 @@ I've already written an article about writing [smart step definitions](https://m
 
 In today's article we'll explore how we can fix those problems and how to build crazy powerful Cucumber.js step definitions and write better acceptance tests.
 
-In order to keep this article concise, I'll focus on showing the core concepts of Crazy Powerful Step Definitions, you can [checkout the GitHub repository containing all the code, to see more examples](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions).
+In order to keep this article concise, I'll focus on showing the core concepts of Crazy Powerful Step Definitions, you can [check out the GitHub repository containing all the code, to see more examples](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions).
 
 ## Writing the first scenario
 
@@ -200,7 +200,7 @@ return client.useXpath().expect
 
 ## Further examples
 
-I took the step definition above as an example because it's one of the more complex step definitions. If you want to take a look at further step definitions built with this technique, please [checkout the GitHub repository accommodating this article to see more examples](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions/blob/master/test/step-definitions/base.js).
+I took the step definition above as an example because it's one of the more complex step definitions. If you want to take a look at further step definitions built with this technique, please [check out the GitHub repository accommodating this article to see more examples](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions/blob/master/test/step-definitions/base.js).
 
 ## Composing step definitions
 
@@ -257,4 +257,4 @@ On the other hand, I can see the downsides of building very powerful step defini
 
 That said, I had a lot of fun and I've learned a lot working on the Crazy Powerful Step Definitions. Also, I really like the possibility of combining multiple steps into one step definition which can help with writing better, less specific scenarios.
 
-If you want to see the full code and play around with the Crazy Powerful Step Definitions yourself, you can [checkout the GitHub repository containing additional examples and step definitions](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions).
+If you want to see the full code and play around with the Crazy Powerful Step Definitions yourself, you can [check out the GitHub repository containing additional examples and step definitions](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions).

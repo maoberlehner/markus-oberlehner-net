@@ -30,7 +30,7 @@ In my previous article about [Advanced Component Composition](/blog/advanced-vue
 
 **Today we’ll take a look at how we can avoid Unit Tests but still be able to test our Container Components in a reasonable manner.** The way we structured our components, the Container Components don't have much logic that could be tested in a Unit Test anyhow. The job of our Container Components is to glue a bunch of components together and pass the initial data as properties to them. **The best way to test the integration of multiple parts of an application and whether they interact properly is to write Integration Tests.**
 
-If you're interested into diving deeper into the code featured in this article, you can [checkout the GitHub repository](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components). Furthermore you can [see a live demo of the application hosted on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com).
+If you're interested into diving deeper into the code featured in this article, you can [check out the GitHub repository](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components). Furthermore you can [see a live demo of the application hosted on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com).
 
 ## Unit Tests, Integration Tests and Acceptance Tests
 
@@ -202,7 +202,7 @@ export default run(({ url = 'ProductTeaserContainer' }) => {
 });
 ```
 
-Above you can see our first Integration Test for the rather simple `ProductTeaserContainer` component. Let's walk through it step by step. In the first line you can see that we import three helper functions `mount()`, `run()` and `setup()`. If you're interested in the implementation of those, you can [checkout the GitHub repository of this article](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components/blob/master/test/utils.js) to take a closer look.
+Above you can see our first Integration Test for the rather simple `ProductTeaserContainer` component. Let's walk through it step by step. In the first line you can see that we import three helper functions `mount()`, `run()` and `setup()`. If you're interested in the implementation of those, you can [check out the GitHub repository of this article](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components/blob/master/test/utils.js) to take a closer look.
 
 In the callback function of the `setup()` method, we import and mount the component which we want to test. Next we call the `run()` utility with a callback function which takes a `context` object as its only parameter. **We can later pass different contexts to our Integration Tests when we reuse them in our acceptance tests. If no context is passed the name of the component is used as the default value for the `url` property.** This is because we've configured the Vue CLI to run in multi-page mode and we use the name of the component under test as the URL for the generated page.
 

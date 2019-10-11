@@ -50,7 +50,7 @@ As you can see in the article I've linked above, you can also create PDFs direct
 
 ## Querying Airtable with Vue.js
 
-After setting up Airtable we can [create a fresh API token](https://airtable.com/account) which makes it possible to access the data via a very powerful API. Next we can set up a new Vue.js project using the Vue CLI. I won't go into much detail about the set up process. If you want to save time, you can [checkout the GitHub repository for this article](https://github.com/maoberlehner/creating-pdf-invoices-with-airtable-vue-and-puppeteer).
+After setting up Airtable we can [create a fresh API token](https://airtable.com/account) which makes it possible to access the data via a very powerful API. Next we can set up a new Vue.js project using the Vue CLI. I won't go into much detail about the set up process. If you want to save time, you can [check out the GitHub repository for this article](https://github.com/maoberlehner/creating-pdf-invoices-with-airtable-vue-and-puppeteer).
 
 **Now that we've initialized a basic Vue.js project, we can add the functionality to make queries to the Airtable API.**
 

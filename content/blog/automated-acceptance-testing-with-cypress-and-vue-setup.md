@@ -21,7 +21,7 @@ In today's article we're going to take a look at one of the rising stars in the 
 
 ## Setup
 
-In the following steps, I assume that you have a Vue.js app already up and running. If you don't or you want to see the full code used in this article, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue).
+In the following steps, I assume that you have a Vue.js app already up and running. If you don't or you want to see the full code used in this article, you can check out the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue).
 
 ```bash
 npm install --save-dev cypress

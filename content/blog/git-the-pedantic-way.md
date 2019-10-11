@@ -28,7 +28,7 @@ Saving one minute by not writing a descriptive commit message, oftentimes result
 
 ## Small vs. big commits
 
-A popular saying, when the question is raised how big a commit should be, is “Commit Early And Often”. I tend to agree with the general notion, but I would like to add that you should only commit changes that work on their own – ideally it should be possible to checkout a random commit and the project builds and works as expected.
+A popular saying, when the question is raised how big a commit should be, is “Commit Early And Often”. I tend to agree with the general notion, but I would like to add that you should only commit changes that work on their own – ideally it should be possible to `git checkout` a random commit and the project builds and works as expected.
 
 So in general, I'd say a commit is too small, if it doesn't contain a working feature but only some code that is work in progress.
 

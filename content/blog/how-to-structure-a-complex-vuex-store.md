@@ -25,7 +25,7 @@ In this article we're building a simple application which consists of two pages:
 
 ## What we're building
 
-You can checkout [a demo of the project here](https://how-to-structure-a-complex-vuex-store.netlify.com/) (make sure to open your browsers developer tools to see console output). Furthermore, you can look at [the complete code at GitHub](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store).
+You can check out [a demo of the project here](https://how-to-structure-a-complex-vuex-store.netlify.com/) (make sure to open your browsers developer tools to see console output). Furthermore, you can look at [the complete code at GitHub](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store).
 
 ## A new way of structuring a Vuex store
 
@@ -155,7 +155,7 @@ At the beginning of the file, we're importing all the dependencies which we'll u
 
 The `createHelpers()` function imported from the [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) package, is used to handle form fields with Vuex. Because this is only a demo application, the `api()` util is a fake implementation, which simulates a failing request every other time, to demonstrate both, error and success handling.
 
-We're using models to map the data from the store to a structure which we can send to the API. If you want to take a closer look at those models, you can checkout [the code in the GitHub repository](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store/tree/master/src/models).
+We're using models to map the data from the store to a structure which we can send to the API. If you want to take a closer look at those models, you can check out [the code in the GitHub repository](https://github.com/maoberlehner/how-to-structure-a-complex-vuex-store/tree/master/src/models).
 
 ### Actions
 

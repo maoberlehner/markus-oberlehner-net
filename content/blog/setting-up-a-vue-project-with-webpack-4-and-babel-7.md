@@ -12,7 +12,7 @@ For my previous article about [three different ways of how to structure a Vue.js
 
 I quickly realized though, that there is currently no official way of how to setup a webpack 4 powered Vue.js development environment. Both the current [Vue.js webpack template](https://github.com/vuejs-templates/webpack) and the [vue-cli](https://github.com/vuejs/vue-cli) (which is currently in beta), are still using webpack 3. So I decided to set up a webpack 4 powered build process myself.
 
-This tutorial focuses exclusively on how to configure webpack, you can see [the application code on GitHub](https://github.com/maoberlehner/setting-up-a-vue-project-with-webpack-4-and-babel-7) and you can checkout a [live demo on Netlify](https://setting-up-a-vue-project-with-webpack-4-and-babel-7.netlify.com/).
+This tutorial focuses exclusively on how to configure webpack, you can see [the application code on GitHub](https://github.com/maoberlehner/setting-up-a-vue-project-with-webpack-4-and-babel-7) and you can check out a [live demo on Netlify](https://setting-up-a-vue-project-with-webpack-4-and-babel-7.netlify.com/).
 
 ## Configuring webpack 4 for Vue.js
 

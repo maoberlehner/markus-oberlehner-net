@@ -12,7 +12,7 @@ In my previous article about [automated acceptance testing with Cypress](https:/
 
 Making the switch to Cypress in all of my projects, isn't possible for two reasons: changing your testing framework isn't a small task to begin with and furthermore, full blown support for the Gherkin syntax is a must have in my book. So I started to think about ways of how to integrate network stubs and mock timers into my existing Nightwatch.js and Cucumber.js powered test setup.
 
-In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwatch.js configuration, if you're interested in that, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/tags/acceptance-tests/).
+In the following article I'll show you a basic approach for mocking XHR requests and JavaScript timers, in combination with a Nightwatch.js and Cucumber.js powered test workflow. I'll not go into too much detail about the general Nightwatch.js configuration, if you're interested in that, you can check out the [GitHub repository for this article](https://github.com/maoberlehner/network-stubs-and-timers-with-nightwatch-and-cucumber) or one of [my previous articles about this topic](https://markus.oberlehner.net/tags/acceptance-tests/).
 
 <div class="c-content__figure">
   <div class="c-content__broad">

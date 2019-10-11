@@ -31,7 +31,7 @@ In recent weeks I played around with a ton of headless content management system
 
 **Storyblok**, on the other hand, is very powerful and provides all the basic features I'd expect from a CMS, out of the box. **Furthermore it is possible to extend its functionality by adding custom field type plugins, which are basically regular Vue.js components.** The pricing is amazing. Even the free plan is plenty if you just get started and for $ 14 / month you basically get everything you need for your typical small business website – that's a lot closer to what small businesses are used to pay for hosting their website. Having said that, I also have to say that the UI is a lot less intuitive and just doesn't look as polished as the gorgeous UI of Contentful.
 
-If you are curious about the result, you can [take a look at a demo of the application we're going to build, hosted on Netlify](https://building-a-pre-rendered-website-with-nuxt-and-storyblok.netlify.com/) or you can [checkout the code at GitHub](https://github.com/maoberlehner/building-a-pre-rendered-website-with-nuxt-and-storyblok).
+If you are curious about the result, you can [take a look at a demo of the application we're going to build, hosted on Netlify](https://building-a-pre-rendered-website-with-nuxt-and-storyblok.netlify.com/) or you can [check out the code at GitHub](https://github.com/maoberlehner/building-a-pre-rendered-website-with-nuxt-and-storyblok).
 
 ## Storyblok + Vue.js = a perfect match
 
@@ -62,7 +62,7 @@ In today's article, we'll focus on how to set up a very basic page with Storyblo
 
 In [my recent article about pre-rendering Vue.js websites](https://markus.oberlehner.net/blog/how-to-pre-render-vue-powered-websites-with-webpack/), we explored how to add pre-rendering to an existing Vue CLI powered application. **Today we're going to build a simple, pre-rendered website with Nuxt.js and Storyblok.** Nuxt.js provides a lot of the things, we'd had to configure ourselves in the previous article, out of the box. Furthermore, Nuxt.js also has SSR already built in, without any additional configuration required.
 
-Because in this article, I want to focus on pre-rendering and how to integrate Storyblok into Nuxt.js, I don't want to waste any time with explaining how to set up a Nuxt.js. You can [checkout the official documentation](https://nuxtjs.org/guide/installation) or you can [clone the GitHub repository of this project](https://github.com/maoberlehner/building-a-pre-rendered-website-with-nuxt-and-storyblok) to get going.
+Because in this article, I want to focus on pre-rendering and how to integrate Storyblok into Nuxt.js, I don't want to waste any time with explaining how to set up a Nuxt.js. You can [check out the official documentation](https://nuxtjs.org/guide/installation) or you can [clone the GitHub repository of this project](https://github.com/maoberlehner/building-a-pre-rendered-website-with-nuxt-and-storyblok) to get going.
 
 <div>
   <hr class="c-hr">

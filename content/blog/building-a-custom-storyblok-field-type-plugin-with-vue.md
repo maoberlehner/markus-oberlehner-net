@@ -655,7 +655,7 @@ Now that our plugin is ready, if you followed the [official guide for setting up
 
 After adding and configuring the new field provided by our plugin to one of our Storyblok components or Bloks, we can start to add augmented images to our content and we can fetch it via the Storyblok API the same way as all the other content provided by the regular Storyblok fields and plugins.
 
-If you want to learn more about how to fetch data from the Storyblok API in Vue.js or Nuxt.js, you can read [my previous article about this topic](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/). Or you can checkout the code, for [the demo application](https://building-a-custom-storyblok-field-type-plugin-with-vue.netlify.com/) featuring [the augmented image plugin, on GitHub](https://github.com/maoberlehner/building-a-custom-storyblok-field-type-plugin-with-vue).
+If you want to learn more about how to fetch data from the Storyblok API in Vue.js or Nuxt.js, you can read [my previous article about this topic](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/). Or you can check out the code, for [the demo application](https://building-a-custom-storyblok-field-type-plugin-with-vue.netlify.com/) featuring [the augmented image plugin, on GitHub](https://github.com/maoberlehner/building-a-custom-storyblok-field-type-plugin-with-vue).
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">

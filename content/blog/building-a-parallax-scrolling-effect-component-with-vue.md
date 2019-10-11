@@ -23,7 +23,7 @@ In this article you'll **learn how to build a Vue.js component for handling para
   </p>
 </div>
 
-You can [take a look at a live demo of the final result hosted on Netlify](https://building-a-parallax-scrolling-effect-component-with-vue.netlify.com/) and you can [checkout the code on GitHub](https://github.com/maoberlehner/building-a-parallax-scrolling-effect-component-with-vue).
+You can [take a look at a live demo of the final result hosted on Netlify](https://building-a-parallax-scrolling-effect-component-with-vue.netlify.com/) and you can [check out the code on GitHub](https://github.com/maoberlehner/building-a-parallax-scrolling-effect-component-with-vue).
 
 ## The parallax scrolling wrapper component
 

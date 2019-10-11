@@ -21,7 +21,7 @@ In my opinion, one of the greatest features of Vue.js, is the ability to build c
 
 Today we'll focus on building custom form components for selecting multiple options in various ways. The first component we'll build, is an enhanced version of the default HTML select tag. Next we'll take a look at how to build a custom multi checkbox form element. To top it all off, we'll explore how to build a simple tagging form element with Vue.js.
 
-You can find a [live demo of all the components featured in this article, hosted on Netlify](https://building-custom-multi-option-form-components-with-vue.netlify.com). If you want to [checkout the full code powering the demo, you can find it on GitHub](https://github.com/maoberlehner/building-custom-multi-option-form-components-with-vue).
+You can find a [live demo of all the components featured in this article, hosted on Netlify](https://building-custom-multi-option-form-components-with-vue.netlify.com). If you want to [check out the full code powering the demo, you can find it on GitHub](https://github.com/maoberlehner/building-custom-multi-option-form-components-with-vue).
 
 ## Basics
 

@@ -29,7 +29,7 @@ When we're building single page applications, the time it takes to load the appl
 
 When building landing pages or brochure sites, things are very different. Usually we want to sell our users something on a landing page. Sometimes this might be a physical or digital product, or it might even be an idea we firmly believe in. **No matter what we want to sell, we want our users to see it and we want them to see it fast. If we can't show it to them fast enough, they might not even stay around long enough to see it at all.**
 
-If you want to take a look at the final result, you can [view a live demo on Netlify](https://how-to-pre-render-vue-powered-websites-with-webpack.netlify.com/) or checkout [the code on GitHub](https://github.com/maoberlehner/how-to-pre-render-vue-powered-websites-with-webpack).
+If you want to take a look at the final result, you can [view a live demo on Netlify](https://how-to-pre-render-vue-powered-websites-with-webpack.netlify.com/) or check out [the code on GitHub](https://github.com/maoberlehner/how-to-pre-render-vue-powered-websites-with-webpack).
 
 ## Improving the performance of Vue.js powered websites
 

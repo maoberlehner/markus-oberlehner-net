@@ -21,7 +21,7 @@ Although I already know about the possible solutions, because all three of those
   </p>
 </div>
 
-You can find a [live demo of the component we build in this article on Netlify](https://transition-to-height-auto-with-vue.netlify.com/) and you can also [checkout the complete code on GitHub](https://github.com/maoberlehner/transition-to-height-auto-with-vue).
+You can find a [live demo of the component we build in this article on Netlify](https://transition-to-height-auto-with-vue.netlify.com/) and you can also [check out the complete code on GitHub](https://github.com/maoberlehner/transition-to-height-auto-with-vue).
 
 ## Why not use JavaScript?
 

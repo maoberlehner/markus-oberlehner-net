@@ -11,7 +11,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 
 Solid error handling is one those things which can make the difference between a good application and a great application. **In today's article we'll take a look at how we can build renderless components to help us capture errors in our Vue.js applications.** We’ll build a generic error handling component which we can use to wrap other components to catch errors and notify the user that something went wrong. Furthermore, we will explore how we can use our generic renderless error component to create a more specific component that displays a toast popup each time an error occurs.
 
-If you're interested in the complete code featured in this article you can [checkout the CodeSandbox](https://codesandbox.io/s/1889llp297?fontsize=14&module=%2Fsrc%2FApp.vue) where you can also see a live demo.
+If you're interested in the complete code featured in this article you can [check out the CodeSandbox](https://codesandbox.io/s/1889llp297?fontsize=14&module=%2Fsrc%2FApp.vue) where you can also see a live demo.
 
 ## How to capture errors in Vue.js
 

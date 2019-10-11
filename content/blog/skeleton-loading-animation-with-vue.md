@@ -353,7 +353,7 @@ export default {
 </script>
 ```
 
-You can take a look at a [live demo of the final result hosted on Netlify](https://skeleton-loading-animation-with-vue.netlify.com/) and you can checkout [the code on GitHub](https://github.com/maoberlehner/skeleton-loading-animation-with-vue).
+You can take a look at a [live demo of the final result hosted on Netlify](https://skeleton-loading-animation-with-vue.netlify.com/) and you can check out [the code on GitHub](https://github.com/maoberlehner/skeleton-loading-animation-with-vue).
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">

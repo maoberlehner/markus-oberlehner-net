@@ -101,7 +101,7 @@ In this example of how to use perfundo as an npm package we can see that the fac
 
 ## Writing tests
 
-Before we start writing tests I have to say, that in this article I'll only show the test code – if you want to see the code being tested, you can go to the [perfundo GitHub repository](https://github.com/maoberlehner/perfundo/tree/3.0.3) and checkout [the code which is being tested](https://github.com/maoberlehner/perfundo/tree/3.0.3/js/lib/perfundo.js) in the following examples.
+Before we start writing tests I have to say, that in this article I'll only show the test code – if you want to see the code being tested, you can go to the [perfundo GitHub repository](https://github.com/maoberlehner/perfundo/tree/3.0.3) and check out [the code which is being tested](https://github.com/maoberlehner/perfundo/tree/3.0.3/js/lib/perfundo.js) in the following examples.
 
 It is up to you how you structure your test code. Some people like to put their test files alongside the “real” files containing the production code. In this example we're going to place the test files inside a separate direcotry `test/unit`. Let's write our first test.
 

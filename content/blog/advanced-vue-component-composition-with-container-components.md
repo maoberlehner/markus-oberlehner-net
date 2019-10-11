@@ -55,7 +55,7 @@ The homepage will have a teaser section with the top three products and also ano
 
 **We'll use a test-driven approach to build our application. This means that we'll first write a failing test and then write just enough code to make it pass.** We'll repeat this process until our application is finished. However, there are some exceptions, e.g. we will not test any UI Components.
 
-If you want to take a look at the project setup as a whole, you can [checkout the GitHub repository](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components). Additionally you can [view a live demo of the application on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com/).
+If you want to take a look at the project setup as a whole, you can [check out the GitHub repository](https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components). Additionally you can [view a live demo of the application on Netlify](https://advanced-vue-component-composition-with-container-components.netlify.com/).
 
 ### The basic building blocks: UI Components
 

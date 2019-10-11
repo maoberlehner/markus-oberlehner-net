@@ -28,7 +28,7 @@ In today's article we'll build a simple example application using [Apollo Compon
   </p>
 </div>
 
-You can [checkout the code of the example application on GitHub](https://github.com/maoberlehner/how-to-use-graphql-with-vue-apollo-components-and-netlify-functions) and you can [see the final result on Netlify](https://graphql-with-vue-apollo-components-and-netlify-functions.netlify.com).
+You can [check out the code of the example application on GitHub](https://github.com/maoberlehner/how-to-use-graphql-with-vue-apollo-components-and-netlify-functions) and you can [see the final result on Netlify](https://graphql-with-vue-apollo-components-and-netlify-functions.netlify.com).
 
 ## Installation
 

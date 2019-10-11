@@ -143,7 +143,7 @@ You can play around with the following demo application to see an example of thi
   <iframe data-src="https://codesandbox.io/embed/mm2x15m8r9?module=%2Fsrc%2FApp.vue&view=preview" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
-**So static layout wrapper components are very powerful and flexible, but they also come with a cost.** Let's checkout if we can come up with an approach which has all the positive characteristics of static wrapper components but none of the negative ones.
+**So static layout wrapper components are very powerful and flexible, but they also come with a cost.** Let's check out if we can come up with an approach which has all the positive characteristics of static wrapper components but none of the negative ones.
 
 ## Dynamic layout wrapper components
 

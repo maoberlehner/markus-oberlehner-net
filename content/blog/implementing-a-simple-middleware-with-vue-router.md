@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue"]
 
 The concept of Middleware in frameworks like Laravel makes it fairly easy to do things like requiring an authenticated user for certain routes. Today we‘ll explore how we can implement a similar concept in the Vue.js world using the Vue Router.
 
-If you want to see the Middleware powered application in action, you can [view a demo hosted on Netlify](https://implementing-a-simple-middleware-with-vue-router.netlify.com/) and you can [checkout the full code on GitHub](https://github.com/maoberlehner/implementing-a-simple-middleware-with-vue-router).
+If you want to see the Middleware powered application in action, you can [view a demo hosted on Netlify](https://implementing-a-simple-middleware-with-vue-router.netlify.com/) and you can [check out the full code on GitHub](https://github.com/maoberlehner/implementing-a-simple-middleware-with-vue-router).
 
 ## The Middleware functions
 

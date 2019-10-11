@@ -24,7 +24,7 @@ Clients love them, most web developers hate them: sliders with fancy transition 
   </p>
 </div>
 
-You can find a [demo of the final result of our work hosted on Netlify](https://building-a-simple-ken-burns-slider-with-vue.netlify.com/) and you can checkout [all the code necessary to run the demo on GitHub](https://github.com/maoberlehner/building-a-simple-ken-burns-slider-with-vue).
+You can find a [demo of the final result of our work hosted on Netlify](https://building-a-simple-ken-burns-slider-with-vue.netlify.com/) and you can check out [all the code necessary to run the demo on GitHub](https://github.com/maoberlehner/building-a-simple-ken-burns-slider-with-vue).
 
 ## Switching between multiple images
 

@@ -16,7 +16,7 @@ But is it really necessary to use webpack in order to build modern JavaScript ap
 
 The goal of today's article is to set up a Vue.js project without relying on a complicated build process and a lot of third party dependencies. at the same time we don't want to do without powerful functionality like code splitting and the development process should be as comfortable as possible.
 
-If you wan't to checkout a live example of the code you'll see in this article, [you can take a look at it on Netlify](https://goodbye-webpack-building-vue-applications-without-webpack.netlify.com/) or you can [view the full code on GitHub](https://github.com/maoberlehner/goodbye-webpack-building-vue-applications-without-webpack).
+If you wan't to check out a live example of the code you'll see in this article, [you can take a look at it on Netlify](https://goodbye-webpack-building-vue-applications-without-webpack.netlify.com/) or you can [view the full code on GitHub](https://github.com/maoberlehner/goodbye-webpack-building-vue-applications-without-webpack).
 
 ## Setting up a Vue.js application without webpack
 
@@ -241,4 +241,4 @@ Vue.js single file components are also greatly missed. We have to rely on global
 
 Still, I think it's interesting to see, that it is very much possible to build something like a quick prototype or maybe a simple application which is only used internally by people with modern browsers, without having to rely on a complicated and high-maintenance webpack build setup.
 
-If you wan't to checkout a live example of the code you've seen in this article, [you can take a look at it on Netlify](https://goodbye-webpack-building-vue-applications-without-webpack.netlify.com/) or you can [view the full code on GitHub](https://github.com/maoberlehner/goodbye-webpack-building-vue-applications-without-webpack).
+If you wan't to check out a live example of the code you've seen in this article, [you can take a look at it on Netlify](https://goodbye-webpack-building-vue-applications-without-webpack.netlify.com/) or you can [view the full code on GitHub](https://github.com/maoberlehner/goodbye-webpack-building-vue-applications-without-webpack).

@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue", "headless CMS", "Serverless", "Netlify"]
 
 For a long time I was able to abstain, but now the time has come: **I'm jumping on the Serverless hype train.** Today we'll build a Serverless comment system powered by **[Netlify Functions](https://www.netlify.com/docs/functions/)** and we'll use the headless CMS **[Storyblok](https://www.storyblok.com/)** as a database (on steroids) to store the comments entered by our users. Furthermore we'll use **Vue.js** to build the frontend of our application. Because we want to make sure that only humans are allowed to add new comments, we'll use the latest **reCAPTCHA v3 beta** to get a score of the likelihood that a comment was entered not by a human but a bot. If the author of the comment is likely to be a robot, we'll not save the comment in Storyblok.
 
-If you're curious about the result, you can [checkout the complete code on GitHub](https://github.com/maoberlehner/building-a-serverless-comment-system-with-netlify-functions-storyblok-and-vue) or [take a look at the application hosted on Netlify](https://serverless-comment-system.netlify.com/).
+If you're curious about the result, you can [check out the complete code on GitHub](https://github.com/maoberlehner/building-a-serverless-comment-system-with-netlify-functions-storyblok-and-vue) or [take a look at the application hosted on Netlify](https://serverless-comment-system.netlify.com/).
 
 ## Storyblok
 

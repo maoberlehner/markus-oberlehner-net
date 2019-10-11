@@ -11,7 +11,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_a
 
 A few weeks ago I started working on a small side project where it is a requirement to authenticate users. It was pretty clear to me that I didn't want to roll my own custom authentication flow, but I didn't want to go the cheap way and work with Netlify Identity either, because although I'm sure it's great (like any Netlify service), I want to learn new things with my side projects. So I decided to go the middle way and use the very popular [Passport Express middleware](http://www.passportjs.org/).
 
-You can [take a look at the complete source code on GitHub](https://github.com/maoberlehner/implementing-an-authentication-flow-with-passport-and-netlify-functions) or you can [checkout the demo application hosted on Netlify](https://authentication-flow-with-passport-and-netlify-functions.netlify.com/).
+You can [take a look at the complete source code on GitHub](https://github.com/maoberlehner/implementing-an-authentication-flow-with-passport-and-netlify-functions) or you can [check out the demo application hosted on Netlify](https://authentication-flow-with-passport-and-netlify-functions.netlify.com/).
 
 ## Netlify Dev
 

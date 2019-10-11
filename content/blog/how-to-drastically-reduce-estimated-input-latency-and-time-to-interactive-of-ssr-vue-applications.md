@@ -34,7 +34,7 @@ Nuxt.js and other frameworks promise to help with the initial page load dilemma 
   </p>
 </div>
 
-If you want to dive directly into the code, you can [take a look at the GitHub repository](https://github.com/maoberlehner/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications) for [the demo application](https://drastically-reduce-estimated-input-latency.netlify.com/) and you can also [checkout the vue-lazy-hydration plugin GitHub project](https://github.com/maoberlehner/vue-lazy-hydration).
+If you want to dive directly into the code, you can [take a look at the GitHub repository](https://github.com/maoberlehner/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications) for [the demo application](https://drastically-reduce-estimated-input-latency.netlify.com/) and you can also [check out the vue-lazy-hydration plugin GitHub project](https://github.com/maoberlehner/vue-lazy-hydration).
 
 ## Solutions to high Estimated Input Latency and Time to Interactive
 

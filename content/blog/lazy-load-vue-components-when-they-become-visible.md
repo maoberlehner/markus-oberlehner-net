@@ -138,7 +138,7 @@ Above you can see how to use the `lazyLoadComponent()` function inside of a Vue.
 
 ## Analyzing the results
 
-In order to find out how this approach affects the loading performance of a *real* application, I built a little demo app. You can [checkout the code at GitHub](https://github.com/maoberlehner/lazy-load-vue-components-when-they-become-visible) and you can [test it yourself on Netlify](https://lazy-load-vue-components-when-they-become-visible.netlify.com/).
+In order to find out how this approach affects the loading performance of a *real* application, I built a little demo app. You can [check out the code at GitHub](https://github.com/maoberlehner/lazy-load-vue-components-when-they-become-visible) and you can [test it yourself on Netlify](https://lazy-load-vue-components-when-they-become-visible.netlify.com/).
 
 If we take a look at the network tab of our browser of choice, we can see that **we can save 126 kb on the initial page load**. To be fair, most of that (115 kb) is because of images, but we're also able to shave off about a third of the JavaScript code needed to initially render the page. Considering that this is a very simple application with some very simple components, it's still not too shabby.
 

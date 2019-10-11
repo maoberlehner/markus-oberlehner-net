@@ -10,7 +10,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 
 This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we're going to take a look at two advanced features of Cypress: Network Stubs and Timers.
 
-If you want to see the full code used in this article, you can checkout [the GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
+If you want to see the full code used in this article, you can check out [the GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
 
 ## Acceptance testing vs. end-to-end testing
 
@@ -52,7 +52,7 @@ describe('Home', () => {
 });
 ```
 
-In the example above, you can see that we've added a new test to our existing tests we've created in the [first part of the series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). If you want to see the full code, you can checkout the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
+In the example above, you can see that we've added a new test to our existing tests we've created in the [first part of the series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). If you want to see the full code, you can check out the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
 
 In the test, we use `data` selectors to find the element which should contain the name of the currently logged in user. Let's start our development server with `npm start` and the Cypress GUI with `npm run test:open` to run our test and see it fail.
 

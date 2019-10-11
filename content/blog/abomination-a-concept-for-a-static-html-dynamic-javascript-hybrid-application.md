@@ -93,7 +93,7 @@ The second downside is that you loose the dynamic routing capabilities that you 
 
 ## Check it out
 
-`abomination` is meant to be a proof of concept for a possible enhancement to current frontend framework based static site generators. It is not meant to be used in production quite yet. But if you want to play around with it, please feel free to [checkout the GitHub repository](https://github.com/maoberlehner/abomination-a-concept-for-a-static-html-dynamic-javascript-hybrid-application) and [take a look at the demo hosted on Netlify](https://abomination-concept-example.netlify.com/).
+`abomination` is meant to be a proof of concept for a possible enhancement to current frontend framework based static site generators. It is not meant to be used in production quite yet. But if you want to play around with it, please feel free to [check out the GitHub repository](https://github.com/maoberlehner/abomination-a-concept-for-a-static-html-dynamic-javascript-hybrid-application) and [take a look at the demo hosted on Netlify](https://abomination-concept-example.netlify.com/).
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">

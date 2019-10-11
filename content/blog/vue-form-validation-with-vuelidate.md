@@ -388,4 +388,4 @@ Vuelidate is one of the most minimal validation plugins for Vue – functionalit
 
 **The end result is usually a lightweight, custom tailored solution, which does exactly what you want**, without wasting precious resources for stuff you don't need.
 
-If you want to dive deeper, you can checkout [the code on GitHub](https://github.com/maoberlehner/vue-form-validation-with-vuelidate).
+If you want to dive deeper, you can check out [the code on GitHub](https://github.com/maoberlehner/vue-form-validation-with-vuelidate).

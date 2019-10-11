@@ -70,7 +70,7 @@ After setting up our Landing Page content type and adding all necessary fields, 
 
 ## Setting up the project
 
-Thanks to the awesome [Vue CLI](https://cli.vuejs.org/), setting up a Vue.js project has never been more convenient. If you want to start from scratch, please follow the instructions in the Vue CLI documentation. Otherwise you can checkout [the complete code featured in this article on GitHub](https://github.com/maoberlehner/building-landing-pages-with-vue-and-a-headless-cms).
+Thanks to the awesome [Vue CLI](https://cli.vuejs.org/), setting up a Vue.js project has never been more convenient. If you want to start from scratch, please follow the instructions in the Vue CLI documentation. Otherwise you can check out [the complete code featured in this article on GitHub](https://github.com/maoberlehner/building-landing-pages-with-vue-and-a-headless-cms).
 
 ## Loading data form Contentful with Vue.js
 

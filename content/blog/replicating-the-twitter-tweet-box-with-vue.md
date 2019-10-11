@@ -19,7 +19,7 @@ Today we will take a look at how to replicate the Twitter Tweet Box (the text ar
   </p>
 </div>
 
-If you want to checkout the example yourself, without having to set up you own Vue.js build environment, you can take a look at [the full code at GitHub](https://github.com/maoberlehner/replicating-the-twitter-tweet-box-with-vue) or play around with a [live demo of the Twitter Tweet Box implemented in Vue.js hosted on Netlify](https://replicating-the-twitter-tweet-box-with-vue.netlify.com).
+If you want to check out the example yourself, without having to set up you own Vue.js build environment, you can take a look at [the full code at GitHub](https://github.com/maoberlehner/replicating-the-twitter-tweet-box-with-vue) or play around with a [live demo of the Twitter Tweet Box implemented in Vue.js hosted on Netlify](https://replicating-the-twitter-tweet-box-with-vue.netlify.com).
 
 ## Challenges
 
@@ -525,4 +525,4 @@ After I've abandoned the plan of using `contenteditable`, and I came up with the
 
 But in the end, I'm pretty proud of the outcome. I think it's simpler than the original implementation and thanks to Vue.js and `v-model` also more powerful.
 
-[You can checkout the full code at GitHub](https://github.com/maoberlehner/replicating-the-twitter-tweet-box-with-vue) or play around with a [live demo of the Twitter Tweet Box implemented in Vue.js hosted on Netlify](https://replicating-the-twitter-tweet-box-with-vue.netlify.com).
+[You can check out the full code at GitHub](https://github.com/maoberlehner/replicating-the-twitter-tweet-box-with-vue) or play around with a [live demo of the Twitter Tweet Box implemented in Vue.js hosted on Netlify](https://replicating-the-twitter-tweet-box-with-vue.netlify.com).

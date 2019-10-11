@@ -19,7 +19,7 @@ tags = ["JavaScript"]
   </p>
 </div>
 
-The following code examples are based on the code in [the previous article about the Payment Request API](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/), you can look at [the full code featured in this article at GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html) and you can checkout the functionality by looking at [the demo](/demos/2017-09-10/payment-request-api/).
+The following code examples are based on the code in [the previous article about the Payment Request API](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/), you can look at [the full code featured in this article at GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html) and you can check out the functionality by looking at [the demo](/demos/2017-09-10/payment-request-api/).
 
 ## Basic HTML structure and event listeners
 For this example we have to make some slight changes to the code we've already built in the [previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/).

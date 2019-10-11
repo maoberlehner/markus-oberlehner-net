@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue"]
 
 In this article we're going to explore two approaches for dynamically loading SVG icons with Vue.js. We'll use the wonderful [vue-svgicon](https://github.com/MMF-FE/vue-svgicon) package as a foundation for our SVG icon workflow.
 
-If you want to take a closer look at the example code, you can [find it on GitHub](https://github.com/maoberlehner/dynamically-loading-svg-icons-with-vue). Or you can checkout a live example of the code [hosted on Netlify](https://dynamically-loading-svg-icons-with-vue.netlify.com).
+If you want to take a closer look at the example code, you can [find it on GitHub](https://github.com/maoberlehner/dynamically-loading-svg-icons-with-vue). Or you can check out a live example of the code [hosted on Netlify](https://dynamically-loading-svg-icons-with-vue.netlify.com).
 
 <div class="c-content__figure">
   <div class="c-content__broad">

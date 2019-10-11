@@ -12,7 +12,7 @@ In [the first part](/blog/payment-request-api-payment-process-using-the-credit-c
 
 To further improve the functionality, we looked at [how to build a Payment Request API powered shopping cart in the second article](/blog/payment-request-api-building-a-shopping-cart/) of this series.
 
-Today we're going to implement taxes and discounts into our existing checkout process. The code is based on the code we've produced in the previous steps. You can look up [the full code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html) and [checkout the demo by following this link](/demos/2017-09-14/payment-request-api/).
+Today we're going to implement taxes and discounts into our existing checkout process. The code is based on the code we've produced in the previous steps. You can look up [the full code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html) and [check out the demo by following this link](/demos/2017-09-14/payment-request-api/).
 
 <div class="c-content__figure">
   <div class="c-content__broad">
