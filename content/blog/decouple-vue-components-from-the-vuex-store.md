@@ -48,7 +48,7 @@ export default {
   // ...
   computed: {
     products() {
-      return store.state.product.items;
+      return this.$store.state.product.items;
     }
   },
   async created() {
