@@ -2,13 +2,13 @@
 date = "2018-05-13T07:39:00+02:00"
 title = "Goodbye webpack: Building Vue.js Applications Without webpack"
 description = "Learn how to set up a Vue.js project without webpack or any other complicated build tools, including features like code splitting and automatically refreshing the browser during development."
-intro = "First of all, let me say this: webpack is great! Developing JavaScript applications would look quite different if it wasn't for webpack. Having said that, oftentimes it feels pretty foreign to me, having to set up a quite complicated build process to build a rather simple JavaScript app..."
+intro = "First of all, let me say this: webpack is great! Developing JavaScript applications would look quite different if it wasn't for webpack. Having said that, oftentimes, it feels pretty foreign to me, having to set up a quite complicated build process to build a rather simple JavaScript app..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "code splitting"]
 +++
 
-First of all, let me say this: webpack is great! Developing JavaScript applications would look quite different if it wasn't for webpack. Having said that, oftentimes it feels pretty foreign to me, having to set up a quite complicated build process to build a rather simple JavaScript app.
+First of all, let me say this: webpack is great! Developing JavaScript applications would look quite different if it wasn't for webpack. Having said that, oftentimes, it feels pretty foreign to me, having to set up a quite complicated build process to build a rather simple JavaScript app.
 
 In the good old times, *in which I had an onion tied to my belt which was the style at the time*, creating a JavaScript application was straightforward: create a `.html` file, add a `<script>` tag, write some JavaScript and open the file in the browser.
 
