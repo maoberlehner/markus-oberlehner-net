@@ -2,13 +2,13 @@
 date = "2018-05-27T10:33:33+02:00"
 title = "Should I Store This Data in Vuex?"
 description = "Learn how to decide which data should be stored in a centralized Vuex store and what other possibilities there are to share data with other Vue.js components."
-intro = "When first starting out with Vuex, most people wonder what data should be stored in Vuex in the first place? In the journey of answering this question, for many people (including me) comes, what I call the “Let's Store Everything in Vuex” phase. But very quickly, after having encountered the first obstacles, comes the realization, that this cannot be the be-all and end-all solution to managing state in Vue.js applications..."
+intro = "When first starting with Vuex, most people wonder what data should be stored in Vuex in the first place? In the journey of answering this question, for many people (including me) comes what I call the “Let's Store Everything in Vuex” phase. But very quickly, after having encountered the first obstacles, comes the realization, that this cannot be the be-all and end-all solution to managing state in Vue.js applications..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
-When first starting out with Vuex, most people wonder what data should be stored in Vuex in the first place? In the journey of answering this question, for many people (including me) comes, what I call the “Let's Store Everything in Vuex” phase. But very quickly, after having encountered the first obstacles, comes the realization, that this cannot be the be-all and end-all solution to managing state in Vue.js applications.
+When first starting with Vuex, most people wonder what data should be stored in Vuex in the first place? In the journey of answering this question, for many people (including me) comes what I call the “Let's Store Everything in Vuex” phase. But very quickly, after having encountered the first obstacles, comes the realization, that this cannot be the be-all and end-all solution to managing state in Vue.js applications.
 
 In this article I'll try to answer the question in which situations Vuex is a good solution to the problem at hand and when it may be better to use a different approach.
 
