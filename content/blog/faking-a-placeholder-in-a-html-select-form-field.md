@@ -1,7 +1,7 @@
 +++
 date = "2017-07-16T07:55:22+02:00"
 title = "How to Show a Placeholder for a <select> Tag"
-description = "Learn how to add a placeholder to a <select> HTML element and how you can make a <select> element look like an input field with placeholder attribute."
+description = "Learn how to add a placeholder to a <select> HTML element and how you can make a <select> element look like an input field with a placeholder attribute."
 intro = "Styling native HTML form fields – especially select fields – with CSS has always been a little tricky. Recently I was confronted with the task of creating a select field with a placeholder value so that the select field blends in nicely with other form fields on the page. The problem of custom styled select elements is a hard one..."
 draft = false
 categories = ["Development"]
@@ -10,11 +10,11 @@ tags = ["CSS Architecture"]
 
 Styling native HTML form fields – especially select fields – with CSS has always been a little tricky. Recently I was confronted with the task of creating a select field with a placeholder value so that the select field blends in nicely with other form fields on the page.
 
-The problem of custom styled select elements is a hard one. Styling a select form field in a very specific way is often times impossible. For that reason, a lot of websites are replacing select elements with a custom built solution powered by HTML, CSS and JavaScript.
+The problem of custom styled select elements is a hard one. Styling a select form field in a particular way is often impossible. For that reason, many websites are replacing select elements with a custom-built solution powered by HTML, CSS, and JavaScript.
 
-Most of the time this is a pretty bad idea. **It is very hard to get accessibility right when building a custom form element**. Many of those custom built select form fields do not work with screen readers at all or are very hard to use on mobile devices.
+Most of the time, this is a pretty bad idea. **It is tough to get accessibility right when building a custom form element**. Many of those custom-built select form fields do not work with screen readers at all or are very hard to use on mobile devices.
 
-I'd recommend you to avoid building custom form elements at all cost. If you absolutely have to use a custom styled solution, use a battle tested library instead of rolling your own.
+I recommend you to avoid building custom form elements at all costs. If you have to use a custom-styled solution, use a battle-tested library instead of rolling your own.
 
 ## Fiddling around
 
