@@ -1,7 +1,7 @@
 +++
 date = "2019-06-23T06:49:49+02:00"
-title = "Styling HTML Tables: How to Apply Margins, Borders and z-index on Table Elements"
-description = "Learn how to apply margins, borders and z-index on tbody, thead and tr HTML table elements."
+title = "Styling HTML Tables: How to Apply Margin, Border and z-index on Table Elements"
+description = "Learn how to use margin, border and z-index on tbody, thead and tr HTML table elements."
 intro = "A long time ago there was practically no way around the HTML <table> element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays we only use the <table> element as it should be used: to display tabular data. However, only recently I was reminded again that styling tables is not as easy as one might think..."
 draft = false
 categories = ["Development"]
