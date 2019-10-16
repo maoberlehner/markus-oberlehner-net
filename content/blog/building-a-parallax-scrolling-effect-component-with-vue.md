@@ -215,6 +215,17 @@ export default {
 </style>
 ```
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Applying the parallax effect to an image
 
 **Next we can take a look at how we can use what we’ve built so far to create a parallax image component.** The special thing about images is, that we most likely want them to do their parallax thing without seeing a blank space or the image scrolling over the element next to it. Therefore we need a container around it.
