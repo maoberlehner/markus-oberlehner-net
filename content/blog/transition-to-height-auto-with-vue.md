@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue"]
 
 Every now and then, I end up in a situation where I need to animate an HTML element from `height: 0` to its natural height (`height: auto`). Based on my experience, I already know that there are only three ways of achieving this: transitioning from `max-height: 0` to `max-height: Xpx`, transitioning from `transform: scaleY(0)` to `transform: scaleY(1)` and JavaScript magic (you can [read about all three of them in this Stack Overflow thread](https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css)).
 
-Although I already know about the possible solutions, because all three of those methods have their disadvantages, I tend to head over to Google doing some research to see if there now is a better way to do this. And after finding the same resources I've already found the last time I had this problem, I usually go with the `max-height` approach.
+I already know about three possible solutions, and all of those methods have their disadvantages. Still, I tend to head over to Google doing some research to see if, in the meantime, somebody came up with a better way to do this. And after finding the same resources I've already found the last time I had this problem, I usually go with the `max-height` approach.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -21,7 +21,7 @@ Although I already know about the possible solutions, because all three of those
   </p>
 </div>
 
-You can find a [live demo of the component we build in this article on Netlify](https://transition-to-height-auto-with-vue.netlify.com/) and you can also [check out the complete code on GitHub](https://github.com/maoberlehner/transition-to-height-auto-with-vue).
+You can find a [live demo of the component we build in this article on Netlify](https://transition-to-height-auto-with-vue.netlify.com/), and you can also [check out the complete code on GitHub](https://github.com/maoberlehner/transition-to-height-auto-with-vue).
 
 ## Why not use JavaScript?
 
