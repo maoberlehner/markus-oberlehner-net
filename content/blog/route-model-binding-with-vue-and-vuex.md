@@ -217,6 +217,17 @@ Now here is where everything comes together. In the route named `user` you can s
 
 That's it. Thanks to the generic `Base` model and the `bindModel()` helper function, you can now create new models and store modules without too much effort and without writing a lot of (reapeating) code. And you also don't have to write the logic for retrieving the data from the store in your components again and again.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Bonus: Field mapping with vuex-map-fields
 
 We've already achieved our main goal of having a more convenient and abstracted way of automatically loading data by binding a model to a route. As a little bonus, let's build an additional page where the user can input their data.

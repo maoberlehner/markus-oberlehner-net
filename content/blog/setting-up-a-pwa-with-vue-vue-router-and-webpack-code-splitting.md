@@ -195,6 +195,17 @@ Those are the separate chunks which webpack is automatically creating for us. Tw
 
 The answer is prefetching. There are two `1.SOME-RANDOM-HASH.js` requests, because the script is prefetched and then loaded immediately because it is needed to render the current page. And `0.SOME-RANDOM-HASH.js` is loaded (although it is not needed yet) because it is prefetched by the browser, which makes loading the `/hello` route blazing fast.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Configuring the Extract Text Plugin for code splitting
 
 The Vue PWA template we've used to set up our app, is utilizing the Extract Text Plugin for webpack to extract the CSS code from the JavaScript code. This has the advantage of faster rendering and, under some circumstances, faster loading of the app.
