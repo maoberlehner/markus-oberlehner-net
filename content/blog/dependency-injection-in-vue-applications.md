@@ -1,15 +1,15 @@
 +++
 date = "2019-04-21T06:23:23+02:00"
 title = "Dependency Injection in Vue.js Applications"
-description = "Learn which dependency injection variants there are in Vue.js and how to decide which one to use for a certain use case."
-intro = "I often wonder how to best decouple certain parts of an application. At first this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events, that's it. Right? Yeah, kinda. But also kinda not..."
+description = "Learn which dependency injection variants there are in Vue.js and how to decide which one to use for a particular use case."
+intro = "I often wonder how to decouple certain parts of an application best. At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kinda. But also kinda not..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"]
 +++
 
-I often wonder **how to best decouple certain parts of an application.** At first this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events, that's it. Right? Yeah, kinda. But also kinda not. **Soon there will be the need to access global state or retrieve data from an external resource via an API.** If we don't be careful how we tackle these challenges, there will be the time when we realize that our components, which we planned to be nicely decoupled, use many external dependencies and are really anything but decoupled.
+I often wonder **how to decouple certain parts of an application best.** At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kinda. But also kinda not. **Soon there will be the need to access global state or retrieve data from an external resource via an API.** If we don't be careful how we tackle these challenges, there will be the time when we realize that our components, which we planned to be nicely decoupled, use many external dependencies and are anything but decoupled.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -32,7 +32,7 @@ I often wonder **how to best decouple certain parts of an application.** At firs
   </p>
 </div>
 
-In this article, **we take a look at what patterns exist in Vue.js applications to provide dependencies to components.** We will examine the advantages and disadvantages of each approach and what alternatives there are to each. We'll also see that certain methods are very well suited for particular use cases but not so well for others. After reading this article, you should have enough tools in your utility belt to decide whether a hammer or a Phillips screwdriver is a better choice for a certain use case.
+In this article, **we take a look at what patterns exist in Vue.js applications to provide dependencies to components.** We examine the advantages and disadvantages of each approach and what alternatives there are to each. Also, we learn that certain methods are very well suited for particular use cases but not so well for others. After reading this article, you should have enough tools in your utility belt to decide whether a hammer or a Phillips screwdriver is a better choice for a specific use case.
 
 ## Importing modules
 
