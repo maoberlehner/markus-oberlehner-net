@@ -316,6 +316,20 @@ export default {
 
 By using the spread operator (`...`) we can use the `mapFields()` method on the `user` model, to map all fields of the user store module to our component. By using `v-model` on the input fields, we create a two-way data binding which updates the state via the `updateField()` mutation function which is provided by `vuex-map-fields`.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 It can be very inspiring to work with technologies other than those which you're using day in and day out. Even if you're not going to use them in your projects, there might be lessons to be learned which also apply to the technologies you're using.
