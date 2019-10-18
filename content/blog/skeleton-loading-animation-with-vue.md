@@ -2,13 +2,13 @@
 date = "2018-11-04T05:32:32+02:00"
 title = "Skeleton Loading Animation with Vue.js"
 description = "Learn how to build a pure CSS skeleton loading animation with a pure CSS shimmer animation."
-intro = "Although there is some debate as to whether skeleton loading screens actually do enhance the perceived performance or not, there seems to be some evidence that they do work if they are done right. So today we'll take a look at how we can implement the skeleton loading animation pattern with Vue.js..."
+intro = "Although there is some debate as to whether skeleton loading screens do enhance the perceived performance or not, there seems to be some evidence that they do work if they are done right. So today we'll take a look at how we can implement the skeleton loading animation pattern with Vue.js..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Although there is some debate as to whether skeleton loading screens actually do enhance the perceived performance [or not](https://www.viget.com/articles/a-bone-to-pick-with-skeleton-screens/) there seems to be some evidence, that [they do work if they are done right](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a?fbclid=IwAR0pcp6tQg2gmUPjsnfRrpA3-l1qDQKjjtZbawagxBvRozM1vxTAF67NHQE#845d). **So today we'll take a look at how we can implement the skeleton loading animation pattern with Vue.js.**
+Although there is some debate as to whether skeleton loading screens do enhance the perceived performance [or not](https://www.viget.com/articles/a-bone-to-pick-with-skeleton-screens/), there seems to be some evidence that [they do work if they are done right](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a?fbclid=IwAR0pcp6tQg2gmUPjsnfRrpA3-l1qDQKjjtZbawagxBvRozM1vxTAF67NHQE#845d). **So today, we take a look at how we can implement the skeleton loading animation pattern with Vue.js.**
 
 <div class="c-content__figure">
   <div class="c-content__broad">
