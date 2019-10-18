@@ -548,6 +548,20 @@ test('It should emit an event when clicking the stats link.', (t) => {
 
 In order to mount our `ToDo` component with the `<router-link>` handled by the vue-router, we have to import the vue-router and register it with our Vue.js instance. In the test case we trigger a click event on the `<router-link>` element and we check if a `clickStatsLink` event was emitted. If we've done everything correctly our test should pass.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Thanks to the vue-test-utils package, using a TDD approach for building Vue.js components has become a breeze. However, things can become tricky when external plugins and dependencies are being used. I hope this article answers some questions about how to test Vuex and vue-router powered Vue.js single file components.
