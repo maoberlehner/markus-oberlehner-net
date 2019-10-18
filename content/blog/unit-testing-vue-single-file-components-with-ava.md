@@ -430,6 +430,17 @@ Let's walk through the changes we've made to make the test work with Vuex. First
 
 In the last test case, we've changed the assertion from checking if the list of to-do items was updated, to making sure, that the `ADD` mutation was called. In unit tests, we assume that everything outside of the scope of the current test works as expected. By applying this logic, we can safely assume that the `ADD` mutation does its job correctly, and it will indeed add a new to-do item to the store. In a previous test we've already tested if items in the store render correctly, therefore in this test it is sufficient to check if the mutation function was called with the correct parameters.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Testing vue-router powered components
 
 Now that we've built a Vuex powered to-do app, let's take a look  at how to test Vue.js components, which are using the vue-router package.
