@@ -342,6 +342,20 @@ Scenario: The homepage looks as expected
 
 By temporarily (!) adding the `@visual-regression-reference` tag to certain scenarios, we can trigger the creation of new reference screenshots by running `npm run test:visual-regression-reference` in the command line.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Although BDD purists might not be amused by the idea of writing visual regression tests using Gherkin syntax, I think the benefit of not having to learn another tool and having all the frontend tests in one place, outweighs the drawback of not doing it exactly by the book.
