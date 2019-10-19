@@ -2,14 +2,14 @@
 date = "2018-12-30T06:59:59+02:00"
 title = "Lazy Load Vue.js Components When They Become Visible"
 description = "Learn how to apply lazy loading techniques to Vue.js components using the Intersection Oberserver API."
-intro = "Over the last couple of years as a web developer I've seen the same pattern over and over again: the homepage becomes a political issue within a company because every department wants to present itself and, of course, every department considers itself the most important. Usually two things happen: a slider is added at the top of the page so that each department can get its own slide at the very top, and more and more stuff is added to the homepage..."
+intro = "Over the last couple of years as a web developer, I've seen the same pattern over and over again: the homepage becomes a political issue within a company because every department wants to present itself and, of course, every department considers itself the most important. Usually, two things happen: a slider is added at the top of the page so that each department can get its slide at the very top, and more and more stuff is added to the homepage..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/lazy-loading-placeholders-twitter"]
 +++
 
-Over the last couple of years as a web developer I've seen the same pattern over and over again: **the homepage becomes a political issue within a company** because every department wants to present itself and, of course, **every department considers itself the most important**. Usually two things happen: a slider is added at the top of the page so that each department can get its own slide at the very top, and more and more stuff is added to the homepage because: *everything is important*.
+Over the last couple of years as a web developer, I've seen the same pattern over and over again: **the homepage becomes a political issue within a company** because every department wants to present itself and, of course, **every department considers itself the most important**. Usually, two things happen: a slider is added at the top of the page so that each department can get its slide at the very top, and more and more stuff is added to the homepage because: *everything is important*.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
