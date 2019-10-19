@@ -161,6 +161,17 @@ After you've configured one of your fields to use the Cloudinary Assets plugin a
 
 As you can see in the screenshot above, there is a hex color associated with the images. **This is the dominant color of the image. Let's take a look at how we can use this information to enhance the perceived performance of lazy loaded images.**
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Usage in Vue.js
 
 I've already written a dedicated article about the topic of [lazy loading images with Vue.js](https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/). We can reuse the `AppImage` component we've built in the previous article.
