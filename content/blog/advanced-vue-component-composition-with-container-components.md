@@ -1,7 +1,7 @@
 +++
 date = "2019-02-17T11:20:20+02:00"
 title = "Container Components in Vue.js: Advanced Component Composition"
-description = "Learn how to utilize the Container Component pattern in Vue.js in order to build highly reusable and easy to test components."
+description = "Learn how to utilize the Container Component pattern in Vue.js to build highly reusable and easy to test components."
 intro = "When building large scale applications where it is a top priority to achieve high test coverage, you are often faced with the problem that it becomes very difficult to test some of the components of the application. A common reason for this is that you have to mock a lot of global dependencies like the Vue Router or the Vuex Store..."
 draft = false
 categories = ["Development"]
@@ -12,7 +12,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 > **Note:** This is the fourth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
 > [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/renderless-vue-lifecycle-hook-components/) [Next >](/blog/integration-testing-vue-container-components-with-cypress/)
 
-When building large scale applications **where it is a top priority to achieve high test coverage,** you are often faced with the problem that it becomes very difficult to test some of the components of the application. A common reason for this is that you have to mock a lot of global dependencies like the Vue Router or the Vuex Store and other side effect afflicted parts of your code like data fetching logic.
+When building large scale applications **where it is a top priority to achieve high test coverage,** you are often faced with the problem that it becomes complicated to test some of the components of the application. A common reason for this is that you have to mock a lot of global dependencies like the Vue Router or the Vuex Store, and other side effect afflicted parts of your code like data fetching logic.
 
 One way to work around these problems is to **separate your components into two categories: Container Components and Presentational Components.**
 
