@@ -39,7 +39,10 @@ gulp.task(`minify:markup`, () => gulp.src(htmlPath)
     rootpath: path.join(publicDirectory, `/`),
     handlers: (source, context) => new Promise((resolve) => {
       if (source.type === `css` && source.fileContent && !source.content) {
-        uncss(context.html, { htmlroot: publicDirectory }, (error, css) => {
+        uncss(context.html, {
+          htmlroot: publicDirectory,
+          ignore: [/carbon.*/],
+        }, (error, css) => {
           if (error) throw error;
           // eslint-disable-next-line no-param-reassign
           source.content = `<style>${new CleanCSS({ level: 2 }).minify(css).styles}</style>`;
