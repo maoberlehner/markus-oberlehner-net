@@ -170,6 +170,20 @@ $color-secondary-contrast: $color-white;
 
 The concept above, which only uses generic variable names, is a very clean solution to the problem. But keep in mind, that although this might work very well in the beginning of your project, you may encounter problems later on when your CSS codebase is growing and you have to consider more and more edge cases.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final considerations
 
 There are no definitive rules of how to use a two tier variable system. You might define a lot of second tier variables for every specific use case or you may want to keep it DRY by defining few, very generic second tier variables.
