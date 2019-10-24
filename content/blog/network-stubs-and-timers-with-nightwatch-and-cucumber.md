@@ -410,6 +410,20 @@ In the example scenario above, we're also enabling time traveling additionally t
 
 After the user clicks a button, a new user is created and they should be greeted by a message which should disappear after 4 seconds. Because we don't want to actually wait for 4 seconds, we can utilize the power of mock timers, to fast forward 5 seconds (4 seconds + 1 second buffer) instantaneously.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Mock timers and network stubs have huge potential to not only make tests faster, but also much more reliable, because you don't have to rely on external infrastructure outside of your control.
