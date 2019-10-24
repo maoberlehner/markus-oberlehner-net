@@ -12,13 +12,13 @@ Most of my articles are about the latest and greatest tools and technologies out
 
 The reality, however, is different. **In reality there are crazy project requirements and there is always a lot of legacy stuff, seriously, there is legacy technology everywhere.**
 
-Today we'll deal with one possible aspect of a legacy technology stack: FTP. **We'll take a look at how we can deploy a modern single page application, featuring code splitting, with zero downtime, using the plain old file transfer protocol (FTP).**
+Today we'll deal with one possible aspect of a legacy technology stack: FTP. **We'll take a look at how we can deploy a modern single-page application, featuring code splitting, with zero downtime, using the plain old file transfer protocol (FTP).**
 
 You can find a complete [example project featuring the code of this article on GitHub](https://github.com/maoberlehner/automatic-spa-ftp-deploys-with-circleci).
 
 ## Challenges
 
-One of the hardest problems to solve, when deploying a new version of a single page application, is to avoid any downtime whatsoever. Depending on the approach you're using, there might be a short time where the old files are already deleted but the new files are not in place yet.
+One of the hardest problems to solve, when deploying a new version of a single-page application, is to avoid any downtime whatsoever. Depending on the approach you're using, there might be a short time where the old files are already deleted but the new files are not in place yet.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

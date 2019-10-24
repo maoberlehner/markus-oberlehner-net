@@ -351,6 +351,6 @@ As I've already said, this approach is not necessarily better than the previous 
 
 ## Wrapping it up
 
-When building large scale single page applications, it is almost inevitable that you need a robust layout system. Using dynamic rendering can be a quick fix but it can become a maintenance hell as complexity is growing and requirements are changing. Static wrapper layouts can be problematic in terms of rendering performance and also can lead to larger bundle sizes.
+When building large scale single-page applications, it is almost inevitable that you need a robust layout system. Using dynamic rendering can be a quick fix but it can become a maintenance hell as complexity is growing and requirements are changing. Static wrapper layouts can be problematic in terms of rendering performance and also can lead to larger bundle sizes.
 
 By using dynamic renderless layout components we can achieve the same flexibility and functionality as with static wrapper layouts but without forcing the client to re-render the complete layout on every route change and with the potential to improve bundle sizes thanks to dynamic imports.

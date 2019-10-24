@@ -1,7 +1,7 @@
 +++
 date = "2019-01-13T06:10:10+02:00"
 title = "How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications"
-description = "Learn how to solve the problem of a very high Estimated Input Latency of pre-rendered Vue.js or Nuxt.js powered Single Page Applications"
+description = "Learn how to solve the problem of a very high Estimated Input Latency of pre-rendered Vue.js or Nuxt.js powered Single-Page Applications"
 intro = "Performance is a huge topic in the web dev world. Furthermore  performance is especially a huge topic in the context of SPAs. Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern..."
 draft = false
 categories = ["Development"]

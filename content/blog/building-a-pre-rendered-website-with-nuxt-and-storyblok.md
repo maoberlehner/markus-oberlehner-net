@@ -548,6 +548,6 @@ With the two commands you can see above, you can either serve a server side rend
 
 ## Wrapping it up
 
-Storyblok provides us with all the tools necessary to implement not only very simple websites, like the one we built in this article, but also very complex projects. Nuxt.js makes it very easy to create a pre-rendered bundle of our application which is not only important for SEO but it also makes it possible to build single page applications that load very fast.
+Storyblok provides us with all the tools necessary to implement not only very simple websites, like the one we built in this article, but also very complex projects. Nuxt.js makes it very easy to create a pre-rendered bundle of our application which is not only important for SEO but it also makes it possible to build single-page applications that load very fast.
 
 [In my next article, we'll explore how we can build our own Storyblok field type plugins with Vue.js](/blog/building-a-custom-storyblok-field-type-plugin-with-vue/).

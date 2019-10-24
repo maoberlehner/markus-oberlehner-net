@@ -15,7 +15,7 @@ Inspired by [this Full Stack Radio podcast episode in which Adam Wathan talks to
 
 ## The problem
 
-Modern single page web applications are based on reusable, generic components. But often, when we create these generic, low-level building blocks of our applications, **we don't know where and how these components will later be used.** This means that in most cases we fall back to elements without semantic meaning (most notably divs and spans).
+Modern single-page web applications are based on reusable, generic components. But often, when we create these generic, low-level building blocks of our applications, **we don't know where and how these components will later be used.** This means that in most cases we fall back to elements without semantic meaning (most notably divs and spans).
 
 ## Examples
 

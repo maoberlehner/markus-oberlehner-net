@@ -1,7 +1,7 @@
 +++
 date = "2018-12-16T08:43:43+02:00"
 title = "abomination: a Concept for a Static HTML / Dynamic JavaScript Hybrid Application"
-description = "Learn more about a potential solution to the problem of a very high Estimated Input Latency of pre-rendered Single Page Applications"
+description = "Learn more about a potential solution to the problem of a very high Estimated Input Latency of pre-rendered Single-Page Applications"
 intro = "Static site generators are on the rise. To be more specific: static site generators like Gatsby.js (React) and VuePress (Vue.js) which are based on modern frontend frameworks are becoming more and more popular. Although those are great projects and especially the developer experience is amazing, there is one huge downside of using those systems to generate mostly static, text and image based websites..."
 draft = false
 categories = ["Development"]

@@ -37,7 +37,7 @@ export default {
 
 If you're working on a rather simple application or if all you do is to replace some parts of your (server rendered) application with some Vue.js magic, you might actually be fine not using Vuex at all.
 
-On the other hand, if you're working on a large scale single page app, you may encounter situations where you need the same data at two completely different places in your application. This is the point at which a centralized state management tool like Vuex oftentimes makes a lot of sense.
+On the other hand, if you're working on a large scale single-page app, you may encounter situations where you need the same data at two completely different places in your application. This is the point at which a centralized state management tool like Vuex oftentimes makes a lot of sense.
 
 ## Reasons for storing data in Vuex
 

@@ -199,7 +199,7 @@ As you can see above we replaced the direct usage of the child component `<Error
 
 ## Wrapping it up
 
-**When building modern, API powered single page applications, it is important to plan for errors.** HTTP requests can fail and they occasionally will fail. **We always have to keep that in mind and build our code in a way that it fails gracefully.**
+**When building modern, API powered single-page applications, it is important to plan for errors.** HTTP requests can fail and they occasionally will fail. **We always have to keep that in mind and build our code in a way that it fails gracefully.**
 
 As developers we should always try to make our code as simple as possible. By utilizing the power of generic error handling wrapper components, we’re able to build resilient applications without having to repeat the same error handling logic again and again in different components.
 	
