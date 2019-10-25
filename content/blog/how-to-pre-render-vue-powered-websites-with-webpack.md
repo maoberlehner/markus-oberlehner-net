@@ -218,6 +218,17 @@ We've now successfully added pre-rendering to our application. Let's run `npm ru
 
 Not too shabby, pre-rendering our application shaved off about 150 milliseconds of the first meaningful paint time and improved the perceptual speed index score by quite a lot. Interestingly, the overall score went down 2 points. This is because the estimated input latency of our pre-rendered application is through the roof. I suspect this is because it takes a lot of resources to parse the injected initial state, which is basically a huge JavaScript object and also Vue.js might have problems hydrating the already existing HTML. Although, as we'll see later in this article, I've found a way to improve this, I'm still curious of how to improve the input latency – if you have any tips regarding this topic, [please let me know](https://twitter.com/maoberlehner).
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about testing Vue.js applications?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Further optimizations
 
 One neat side effect of pre-rendering is that our application now works without JavaScript (at least the initial rendering). Not only is this great for SEO reasons, but consequently, we can make further optimizations to make our application load even faster.
