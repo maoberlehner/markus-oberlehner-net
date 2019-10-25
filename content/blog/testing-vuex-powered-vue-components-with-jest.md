@@ -527,6 +527,20 @@ describe('ShoppingList', () => {
 
 In this last test case, we wan't to make sure, that an empty basket is not rendered at all. Because by default our mock store implementation returns an array of items which are in the basket, we have to override this behavior to make this test work. In order to do so, we create a new `storeMocks` instance in which we override the `itemsInBasket()` getter function to return an empty array.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 The Jest mocking tools make it a lot easier to deal with complex dependencies like a Vuex store. Thanks to Jest and the vue-test-utils package, there is no excuse anymore not to test your Vue components.
