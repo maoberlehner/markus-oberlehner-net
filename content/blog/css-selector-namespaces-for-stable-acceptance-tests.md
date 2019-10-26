@@ -57,6 +57,20 @@ In this example you can see that we've added a separate class `qa-hero-link`. Th
 
 There are two main benefits of this approach: no more tight coupling between a specific implementation of the markup or styling and it's clearly visible to the programmer, that there are changes to be made to the tests if an element with a `qa-` prefixed class is removed or its behavior is changed.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Removing quality assurance classes in production
 
 If you're obsessed about performance and you want to eliminate every unnecessary byte which is delivered to the user, you might think about removing those `qa-` classes before deploying to production. If you're planning to go this way, keep in mind the following caveat: what you're delivering to production, is not what you've tested – there might be side effects you don't catch because, well, you ran your tests on a different output.
