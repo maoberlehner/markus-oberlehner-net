@@ -18,7 +18,7 @@ Some days later Harry Roberts wrote [a blog article](https://csswizardry.com/201
 
 So where do we stand taking the input of those three sources? The poll attached to Dave Rupert's tweet comes to the conclusion, that a slim majority would put `.some-context .thing {}` in a file named `some-context.css`. Harry Roberts and Jonathan Snook disagree and argue that `thing.css` should contain this style.
 
-Both Harry Roberts and Jonathan Snook go a little further and explain different ways how to avoid writing a nested style like that in the first place. Harry Roberts suggests to use a so called “BEM mix” and Jonathan Snook explains how to use a BEM modifier class to style `.thing` to avoid styling a specific context but a specific purpose (of “the thing”).
+Both Harry Roberts and Jonathan Snook go a little further and explain different ways how to avoid writing a nested style like that in the first place. Harry Roberts suggests to use a so-called “BEM mix” and Jonathan Snook explains how to use a BEM modifier class to style `.thing` to avoid styling a specific context but a specific purpose (of “the thing”).
 
 ## Combining BEM mixes and modifiers
 

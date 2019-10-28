@@ -71,7 +71,7 @@ Thats it! After amending your configuration and adding the hooks to start and st
 
 ## Parallelization with test workers
 
-By default, Nightwatch.js runs your tests sequentially, but most modern computers are multi core machines and are able to run multiple processes in parallel. Luckily Nightwatch.js supports running your tests in parallel with so called test workers. To enable test workers, you have to add the following line to your configuration file.
+By default, Nightwatch.js runs your tests sequentially, but most modern computers are multi core machines and are able to run multiple processes in parallel. Luckily Nightwatch.js supports running your tests in parallel with so-called test workers. To enable test workers, you have to add the following line to your configuration file.
 
 ```js
 module.exports = {

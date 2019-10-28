@@ -89,7 +89,7 @@ Let's take a closer look at the regular expression instance which is returned by
 /(?:in a|in the|in) ?(.+?) ?(?:area|section)/g;
 ```
 
-The first part `(?:in a|in the|in)` is a so called non-capturing group. The `?:` at the beginning marks the group as non-capturing which means that the group is matched, but it's not captured in the result when executing the regular expression.
+The first part `(?:in a|in the|in)` is a so-called non-capturing group. The `?:` at the beginning marks the group as non-capturing which means that the group is matched, but it's not captured in the result when executing the regular expression.
 
 In the middle we have ` ?(.+?) ?` which is responsible for matching a `data-qa` term. The ` ?` at the beginning and the end matches an empty space which is optional. The group `(.+?)` matches every character, as long as there is at least one character, in a non greedy way.
 
