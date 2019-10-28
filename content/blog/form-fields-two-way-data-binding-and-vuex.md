@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
-One of the most valuable features that Vue.js has to offer, is painless two-way data binding. By using the `v-model` directive, you can quickly set up two-way data binding on form elements.
+One of the most valuable features that Vue.js has to offer is painless two-way data binding. By using the `v-model` directive, you can quickly set up two-way data binding on form elements.
 
 ```html
 <template>
@@ -28,7 +28,7 @@ export default {
 </script>
 ```
 
-So far so good. But as our application is growing, we might want to use a more powerful, but also a more complex state management pattern like Vuex. One of the core principles of state management patterns like Vuex is immutability: **we're not allowed to change the state in a Vuex store directly**, but we have to use so called “mutations” to trigger state changes.
+So far, so good. But as our application is growing, we might want to use a more powerful, but also a more complex state management pattern like Vuex. One of the core principles of state management patterns like Vuex is immutability: **we're not allowed to change the state in a Vuex store directly**, but we have to use so-called “mutations” to trigger state changes.
 
 ## Vuex form handling
 
