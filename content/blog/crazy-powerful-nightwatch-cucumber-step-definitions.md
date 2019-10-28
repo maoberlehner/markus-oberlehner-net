@@ -249,6 +249,20 @@ Given(/I have successfully registered/, () => {
 
 Above you can see the step definition for the `I have successfully registered` step. We're using the `run()` function (imported from [the step.js helper package](https://github.com/maoberlehner/crazy-powerful-nightwatch-cucumber-step-definitions/blob/master/test/helpers/step.js)) to consecutively trigger the steps which make up the combined step.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 On one hand, having a set of very powerful and generic step definitions, can not only speed up the process of writing acceptance tests, but it can also help by drastically reducing the amount of step definitions which have to be written and, even more important, maintained.
