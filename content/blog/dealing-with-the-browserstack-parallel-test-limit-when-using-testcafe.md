@@ -28,6 +28,20 @@ ERROR Unable to establish one or more of the specified browser connections. This
 
 Also your BrowserStack Automate instance will crash and you can't execute automated tests anymore. Even clicking “Stop session” on frozen tests won't work and you have to wait until they time out or some nice member of the BrowserStack support team stops them for you.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Running TestCafe tests on BrowserStack consecutively
 
 The solution to the problem is to run TestCafe tests on BrowserStack one after another instead of all at once. TestCafe does not support this out of the box so we have to build a little shell script to help us out.
