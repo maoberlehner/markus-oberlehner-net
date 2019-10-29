@@ -1,7 +1,7 @@
 +++
 date = "2019-09-15T07:36:36+02:00"
 title = "Make your Vuex State Flat: State Normalization with Vuex"
-description = "Learn how to design a flat Vuex store architecture in order to avoid deeply nested state trees."
+description = "Learn how to design a flat Vuex store architecture to avoid deeply nested state trees."
 intro = "Listening to one of Full Stack Radio's latest episodes, I was very impressed by the expertise of Matt Biilmann, CEO of Netlify. Adam Wathan and Matt talked a lot about how global state is handled in the Netlify web application. Although the Netlify app is built with React and Redux when he spoke of his philosophy for structuring the global state of the app, it motivated me to think a little more about this topic in the context of Vue.js and Vuex..."
 draft = false
 categories = ["Development"]
@@ -13,13 +13,13 @@ Listening to one of [Full Stack Radio's latest episodes](http://www.fullstackrad
 
 ## Global state best practices
 
-The first rule you should bear in mind when dealing with global state is that it is not a panacea for all your state-related problems. I recommend that you always use your Vuex store as a means of last resort and only use it when there is a good reason to do so. Always [consider the alternatives to putting state into Vuex](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
+The first rule you should bear in mind when dealing with global state is that it is not a panacea for all your state-related problems. I recommend that you always use your Vuex store as a means of last resort and only use it when there is a reason to do so. Always [consider the alternatives to putting state into Vuex](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
 
 The second rule is to keep your global state tree flat. This means that you should not have nested entities like article data with the corresponding author information as nested objects in your state. Instead, lists of articles and authors should be separated.
 
 ### Problems with deeply nested Vuex state
 
-One of the main problems with a nested state tree is that it is more difficult to keep all your data up to date and synchronized. Suppose you have a few articles of the same author in your state and now the author changes their profile and at the same time the user loads a new article of that author. Now the newly loaded article shows a different author profile than the rest of the articles that were loaded before the author updated their profile.
+One of the main problems with a nested state tree is that it is more difficult to keep all your data up to date and synchronized. Suppose you have a few articles of the same author in your state, and now the author changes their profile, and at the same time, the user loads a new article of that author. Now the newly loaded article shows a different author profile than the rest of the articles that were loaded before the author updated their profile.
 
 ```js
 const articles = [
