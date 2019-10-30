@@ -137,6 +137,20 @@ To run our newly created test, we have to start the webpack development server f
 
 The first command `test:open` opens the Cypress GUI which makes it possible to run specific tests and watch them run live. The second command `test` runs Cypress in headless mode, this is the one you want to run on your CI system or if you want to check if all your tests are passing before pushing a new feature. Let's run `npm run test:open` to open the Cypress GUI. To run our test, click the `Run All Tests` button in the top right corner of the app.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 
 Although we've only scratched the surface of what Cypress is capable of, the GUI already looks very promising. I'm also very curios to try out some of the advanced features like time traveling, spies, clocks and stubbing network requests.
