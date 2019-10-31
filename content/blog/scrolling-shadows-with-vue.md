@@ -142,6 +142,7 @@ export default {
   border-radius: 6em;
   opacity: 0;
   transition: opacity 0.2s;
+  pointer-events: none;
 }
 
 .shadow-top,
