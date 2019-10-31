@@ -8,19 +8,17 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we're going to take a look at two advanced features of Cypress: Network Stubs and Timers.
+This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we take a look at two advanced features of Cypress: Network Stubs and Timers.
 
 If you want to see the full code used in this article, you can check out [the GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
 
 ## Acceptance testing vs. end-to-end testing
 
-Before we delve deeper into the matter, a few words about the difference between end-to-end testing and automated acceptance testing.
-
-Although Cypress advertises itself as a tool for end-to-end testing and it doesn't mention acceptance testing anywhere on its website, I choose the term “acceptance testing” for the title of this article because of one major reason: real end-to-end testing means that you are testing your application under real world conditions from one end (the client) to the other end (usually the database). All of the technologies in between have to work the same way as they do on your production system. This is not what I want to accomplish with the examples I'm showing throughout this series.
+Before we delve deeper into the matter, let's think about the difference between end-to-end testing and automated acceptance testing. Although Cypress advertises itself as a tool for end-to-end testing, and it doesn't mention acceptance testing anywhere on its website, I choose the term “acceptance testing” for the title of this article. Mostly because of one major reason: real end-to-end testing means that you are testing your application under real-word conditions from one end (the client) to the other end (usually the database). All of the technologies in between have to work the same way as they do on your production system. This is not what I want to accomplish with the examples I'm showing throughout this series.
 
 ### End-to-end testing
 
-Although it can be extremely valuable, doing “real” end-to-end testing is pretty hard to do. You need some way of spinning up a system that is mostly identical to your production system and in a known state, every time you start an end-to-end test. Or, if you're doing it in hard mode, you run your tests directly on your live system, which comes with a variety of challenges, most notably the requirement of not affecting the users data in any way (if your tests are writing data in the database, nobody should see this data).
+Although it can be extremely valuable, doing “real” end-to-end testing is pretty hard to do. You need some way of spinning up a system that is mostly identical to your production system and in a known state, every time you start an end-to-end test. Or, if you're doing it in hard mode, you run your tests directly on your live system, which comes with a variety of challenges, most notably the requirement of not affecting the users' data in any way (if your tests are writing data in the database, nobody should see this data).
 
 ### Acceptance testing
 
@@ -117,7 +115,7 @@ Above you can see that we're conditionally rendering a `<p>` tag containing the 
   </p>
 </div>
 
-As you can see in the screenshot above, our test is still failing, because the username we get from the placeholder API (which would be your real API in real world code) does not match the username we've specified in our test.
+As you can see in the screenshot above, our test is still failing, because the username we get from the placeholder API (which would be your real API in real-word code) does not match the username we've specified in our test.
 
 We're currently making a request to a real API even in our acceptance tests. Because we don't want our tests to rely on a real API, and because we want to have full control over what data we do expect from the API, let's stub the API response.
 
