@@ -251,6 +251,20 @@ Above you can see the code of our `App` component. On the root element, we're li
 
 If we run our test again, we can see that it succeeds, and we can see that it succeeds almost immediately instead of having to wait the actual four and a half minutes.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 In my opinion, end-to-end tests should do exactly that, test the application, under real conditions, exactly the way the user would use the app, from one end (client facing application) to the other end (backend and database). Everything should be more or less the real deal and no network request is stubed an no timer is manipulated.
