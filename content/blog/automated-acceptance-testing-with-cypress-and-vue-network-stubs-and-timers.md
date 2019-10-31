@@ -150,6 +150,17 @@ In order to enable response stubbing, we have to run `cy.server()` before the fi
 
 As you can see in the screenshot above, the expected username is showing and our test is finally succeeding.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Time traveling
 
 Let's assume we're building an ultra secure application and we want to automatically logout users after five minutes of inactivity (which is defined as not clicking anywhere). But we want to give them a warning after four and a half minutes of inactivity, so they can prevent being logged out.
