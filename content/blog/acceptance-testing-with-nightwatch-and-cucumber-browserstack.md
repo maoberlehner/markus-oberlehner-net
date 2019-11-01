@@ -186,6 +186,20 @@ Finally, to conveniently start the tests, let's add a new npm script.
 
 This makes it possible to execute the tests with the command: `npm run test-browserstack`.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Cross browser testing can be a tedious task. By automating this process, you can save a lot of boring, manual work. BrowserStack and Nightwatch.js make it pretty easy to run your tests on a wide variety of browsers. Happy testing.
