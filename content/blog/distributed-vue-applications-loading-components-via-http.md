@@ -9,7 +9,7 @@ tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-04-07/distribution-architecture-diagram"]
 +++
 
-Imagine the following scenario: We have **a central content distribution server** responsible for pushing new content (think of news articles for example) to **a variety of Vue.js-based client applications.** But we not only want to push new content but also describe the shape of the content via Vue.js components. One possibility would be to share those Vue.js components as npm packages but that way every client application must be updated whenever a new version or a completely new component is released. What if we also could manage these components on the central distribution server and create **client applications that are capable of dynamically loading components** from that server?
+Imagine the following scenario: We have **a central content distribution server** responsible for pushing new content (think of news articles for example) to **a variety of Vue.js-based client applications.** But we not only want to push new content but also describe the shape of the content via Vue.js components. One possibility would be to share those Vue.js components as npm packages. Still, that way, every client application must be updated whenever a new version or a completely new component is released. What if we also could manage these components on the central distribution server and create **client applications that are capable of dynamically loading components** from that server?
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -32,9 +32,9 @@ Imagine the following scenario: We have **a central content distribution server*
   </p>
 </div>
 
-This is the first part of a series of articles about Distributed Vue.js Applications. Over the course of the series **we’ll find out how we can dynamically load Vue.js components via HTTP** from a content and component distribution server. Furthermore, **we’ll explore how we can push updates to components via a WebSocket connection** and how to re-render the client application whenever there is new content or a component was updated.
+This is the first part of a series of articles about Distributed Vue.js Applications. Throughout the series, **we find out how we can dynamically load Vue.js components via HTTP** from a content and component distribution server. Furthermore, **we explore how we can push updates to components via a WebSocket connection** and how to re-render the client application whenever there is new content, or a component was updated.
 
-In this article we'll take a look at **how we can use the Vue CLI to generate a component library** which is ready for being distributed over a remote server. Additionally, we'll look at how we can dynamically load those components from the distribution server into our client application.
+In this article, we take a look at **how we can use the Vue CLI to generate a component library** that is ready for being distributed over a remote server. Additionally, we learn how we can dynamically load those components from the distribution server into our client application.
 
 You can [find the full code featured in this article on GitHub](https://github.com/maoberlehner/distributed-vue-applications-loading-components-via-http).
 
@@ -48,7 +48,7 @@ Since the release of Vue CLI v3, it's easier than ever before to package Vue.js 
 </template>
 ```
 
-Above you can see a very simple example component (`server/components/MyComponent/MyComponent.vue`) which we'll convert into a library component in the next step.
+Above, you can see a very simple example component (`server/components/MyComponent/MyComponent.vue`), which we convert into a library component in the next step.
 
 ```bash
 npm install @vue/cli-service
