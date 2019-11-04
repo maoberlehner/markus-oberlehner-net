@@ -29,6 +29,20 @@ There may be dozens of people working on one codebase simultaneously. Everyone o
 3. **Naming things is easier being more explicit**  
 Naming things is hard. Some say coming up with a good name for a variable or function is one of the hardest things in programming. But it is much easier if you give up on keeping the names as short as possible. Use obvious names like `getResponseValues` instead of `getResVal`. `Res` could stand for `Response`, `Resource`, `Reserved`,... and `Val` could stand for `Value`, `Validation`,... What might seem obvious at the time you're writing it, may not be that obvious for other people, or even yourself in one year.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Exceptions
 
 I'm not a fan of absolutes and there might be valid cases in which using abbreviations makes sense.
