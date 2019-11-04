@@ -7,7 +7,7 @@ draft = false
 categories = ["Development"]
 +++
 
-For a recent project I had to work a lot with the express Node.js framework. Abbreviations are used everywhere in the express documentation: `req`, `res`, `err`, etc. As I copied code snippets from the documentation into my project and kept changing the abbreviations into the words they stand for, I figured I could write an article on the subject.
+For a recent project, I had to work a lot with the express Node.js framework. Abbreviations are used everywhere in the express documentation: `req`, `res`, `err`, etc. As I copied code snippets from the documentation into my project and kept changing the abbreviations into the words they stand for, I figured I could write an article on the subject.
 
 ## The case for abbreviations
 
