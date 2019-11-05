@@ -160,7 +160,7 @@ Above you can see the best solution I could find in order to deal with such situ
     <div class="c-twitter-teaser__content">
       <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
       <p class="c-twitter-teaser__body">
-        Follow me to get my latest Vue.js articles.
+        Follow me to get my latest articles.
       </p>
       <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
         Find me on Twitter
