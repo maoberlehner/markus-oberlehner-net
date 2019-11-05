@@ -8,11 +8,11 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In my last article series on automated testing, we explored how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/) and [how to run automated cross browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we will examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better.
+In my last article series on automated testing, we explored how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/), and [how to run automated cross-browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better.
 
 ## Running Nightwatch.js without Selenium
 
-The first small speed improvement can be achieved by eliminating Selenium from the setup. As far as I know, the following approach, of running tests in Nightwatch.js without Selenium, for now is only possible with Google Chrome. If you want to run tests in Browsers other than Google Chrome, you still have to rely on Selenium or you can use BrowserStack, which also doesn't require you to have Selenium installed locally.
+We can achieve the first small speed improvement by eliminating Selenium from the setup. As far as I know, the following approach of running tests in Nightwatch.js without Selenium, for now, is only possible with Google Chrome. If you want to run tests in Browsers other than Google Chrome, you still have to rely on Selenium, or you can use BrowserStack, which also doesn't require you to have Selenium installed locally.
 
 To run tests in Google Chrome directly without using Selenium, you have to change your Nightwatch.js configuration.
 
