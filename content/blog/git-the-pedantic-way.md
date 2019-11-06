@@ -153,6 +153,20 @@ I recommend you to use `git rebase` instead of `git merge` to resolve merge conf
 
 One potential downside of using `git rebase` though is, that you might have to do more work fixing merge conflicts, because you might have to fix the same conflicts multiple times, if multiple commits are affected. I recommend you to rebase the current state of the production branch frequently during development to minimize merge conflicts.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 Commit messages are an essential part of your codebase. In the same way you don't want to have useless code in your codebase, you don't want to have useless commit messages in your version control system.
