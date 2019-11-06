@@ -1,16 +1,16 @@
 +++
 date = "2017-11-26T09:06:56+02:00"
 title = "Git, the pedantic way"
-description = "Read more about possible ways of keeping your Git commit history clean and how to write better commit messages."
-intro = "When people think of programmers, they think of pale nerds sitting in front of their computers writing code all day long. As we all know, this couldn't be further from the truth. In reality we're pale nerds, who spend most of our time siting in front of our computers reading (and trying to make sense of code), written by other people (or our past selves)..."
+description = "Learn how to keep your Git commit history clean and how to write better and more meaningful commit messages."
+intro = "When people think of programmers, they think of pale nerds sitting in front of their computers writing code all day long. As we all know, this couldn't be further from the truth. In reality, we're pale nerds, who spend most of our time sitting in front of our computers reading (and trying to make sense of code), written by other people (or our past selves)..."
 draft = false
 categories = ["Development"]
 tags = ["Git"]
 +++
 
-When people think of programmers, they think of pale nerds sitting in front of their computers writing code all day long. As we all know, this couldn't be further from the truth. In reality we're pale nerds, who spend most of our time siting in front of our computers **reading** (and trying to make sense of) code, written by **other people** (or our past selves).
+When people think of programmers, they think of pale nerds sitting in front of their computers writing code all day long. As we all know, this couldn't be further from the truth. In reality, we're pale nerds, who spend most of our time sitting in front of our computers **reading** (and trying to make sense of) code, written by **other people** (or our past selves).
 
-Since what most of us do most of the time is read code and try do understand it, it is all the more important to write code that is easy to understand. But even if we're doing a great job writing simple code, what oftentimes is missing, is an explanation **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story **why** it was written in the first place all by itself.
+Since what most of us do most of the time is read code and try to understand it, it is all the more important to write code that is easy to understand. But even if we're doing a great job writing simple code, what oftent is missing, is an explanation of **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story **why** it was written in the first place all by itself.
 
 This is where Git commit messages come into play. A carefully crafted commit message can express additional information about your code, which you can't provide directly in the code itself.
 
