@@ -227,6 +227,20 @@ To conveniently run tests we're adding a new `test` script to our `package.json`
 
 To run the npm script, type `npm test` into your command line tool of choice. You should see that a new browser instance is opened and the browser is navigating to the URL we've specified in our test. The input field is filled automatically and the correct message should show up. If everything went correctly, the `nightwatch` command will exit with a success state.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Next steps
 
 The result of today's work is a very basic test case and very basic step definitions. We've also learned the general principles of running Cucumber.js powered tests in Nightwatch.js.
