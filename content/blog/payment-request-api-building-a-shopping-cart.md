@@ -2,13 +2,13 @@
 date = "2017-09-10T10:42:04+02:00"
 title = "Payment Request API Part 2: Building a Shopping Cart"
 description = "Learn how to implement a JavaScript shopping cart and collect credit card data with the Payment Request API."
-intro = "The first article of this three part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process..."
+intro = "The first article of this three-part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript"]
 +++
 
-[The first article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process.
+[The first article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three-part series was about building a very basic checkout process using the Payment Request API. In this article we're going to build a basic shopping cart implementation followed by a Payment Request API powered checkout process.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

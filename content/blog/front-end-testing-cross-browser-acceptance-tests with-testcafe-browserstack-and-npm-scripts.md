@@ -121,9 +121,9 @@ In the Travis CI configuration file you can see above, we're telling Travis CI t
 
 That's it. After enabling your project in the Travis CI dashboard and adding a `.travis.yml` configuration file to your project you're able to automatically run your TestCafe powered acceptance tests on Travis CI every time you push new code.
 
-## Cross browser testing with BrowserStack
+## Cross-browser testing with BrowserStack
 
-Automatically running your acceptance tests in Chrome and Firefox is nice but we all know that there are several other browsers we have to take care of. BrowserStack makes it possible to boot up an instance of basically every relevant browser on the market. And furthermore BrowserStack provides an automation API which makes it possible to automate cross browser testing.
+Automatically running your acceptance tests in Chrome and Firefox is nice but we all know that there are several other browsers we have to take care of. BrowserStack makes it possible to boot up an instance of basically every relevant browser on the market. And furthermore BrowserStack provides an automation API which makes it possible to automate cross-browser testing.
 
 Luckily TestCafe makes integrating BrowserStack as easy as it gets by providing an npm package to connect with the BrowserStack automation API.
 
@@ -152,7 +152,7 @@ While your tests are running you can watch their status in the [BrowserStack Aut
 
 <video data-src="/videos/2017-09-04/perfundo-testcafe-browserstack-video.mp4" poster="/videos/2017-09-04/perfundo-testcafe-browserstack-video.jpg" controls></video>
 
-### Re-configure Travis CI for BrowserStack cross browser testing
+### Re-configure Travis CI for BrowserStack cross-browser testing
 
 If you want to test only in BrowserStack browsers, you can cleanup your `.travis.yml` configuration file.
 

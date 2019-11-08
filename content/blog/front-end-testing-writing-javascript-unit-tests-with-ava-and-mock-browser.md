@@ -22,7 +22,7 @@ Using a mock browser environment gives us the possibility to write blazing fast 
 
 Saving just a few seconds by choosing a mock browser environment over a real browser engine, might not seem like a big deal, but especially if you're doing TDD, waiting on your unit tests to finish can be a quite frustrating experience.
 
-Another thing to consider is, that we're going to write acceptance test in the second part of this two part article series. Those acceptance tests will run in real browsers, so there is no need for us to test the functionality of the code in real browsers with our unit tests.
+Another thing to consider is, that we're going to write acceptance test in the second part of this two-part article series. Those acceptance tests will run in real browsers, so there is no need for us to test the functionality of the code in real browsers with our unit tests.
 
 ## Setup
 
@@ -226,4 +226,4 @@ As a maintainer of several open source projects and as a perfectionist, I live i
 
 Because of those reasons, testing back-end code is nowadays pretty common in many companies but writing unit tests for the front-end of things is still quite rare in my experience. But it doesn't have to be anymore, with tools like browser mocking and excellent test runners like ava, testing front-end code has become just as easy as testing back-end code.
 
-In the second part of this two part series we're going to see how to write acceptance tests for your web apps with TestCafe, how to automatically run them on Travis CI and how to implement full blown cross browser tests by integrating BrowserStack – stay tuned.
+In the second part of this two-part series we're going to see how to write acceptance tests for your web apps with TestCafe, how to automatically run them on Travis CI and how to implement full blown cross-browser tests by integrating BrowserStack – stay tuned.

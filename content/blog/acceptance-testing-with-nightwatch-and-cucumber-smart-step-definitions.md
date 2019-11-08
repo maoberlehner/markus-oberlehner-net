@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In the [first part](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/) of this three part series, we've [set up an automated system to run acceptance tests with Nightwatch.js and Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). Today we're extending what we've built previously and make our Cucumber.js step definitions a little bit smarter.
+In the [first part](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/) of this three-part series, we've [set up an automated system to run acceptance tests with Nightwatch.js and Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). Today we're extending what we've built previously and make our Cucumber.js step definitions a little bit smarter.
 
 In an ideal world, it should be possible to write basic acceptance test specifications without having to add any new step definitions. In the real world this is not always possible, because some features, with some very specific functionality, might need special treatment and are impossible to test without writing custom step definitions. However our goal today, is to write a few very simple step definitions which are smart enough to cover the vast majority of test cases.
 
@@ -202,4 +202,4 @@ Because we're using a lot of very general matching regular expressions in our sm
 
 Although writing tests with Gherkin syntax is something you have to get used to, I begin to see the advantages of such a system. Having the specification of a feature written down in plain english, checked in directly into your repository, can be a huge advantage later on, when you're not quite sure why some feature is implemented in a certain way.
 
-In [the third part of this series](/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/), we're going to integrate cross browser testing (powered by BrowserStack) into our Nichtwatch.js and Cucumber.js workflow, [follow me on Twitter](https://twitter.com/MaOberlehner) to not miss the next article.
+In [the third part of this series](/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/), we're going to integrate cross-browser testing (powered by BrowserStack) into our Nichtwatch.js and Cucumber.js workflow, [follow me on Twitter](https://twitter.com/MaOberlehner) to not miss the next article.

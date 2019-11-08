@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript"]
 +++
 
-In [the first part](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three part series about the Payment Request API, we explored how to implement a basic payment process using the new Payment Request API.
+In [the first part](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) of this three-part series about the Payment Request API, we explored how to implement a basic payment process using the new Payment Request API.
 
 To further improve the functionality, we looked at [how to build a Payment Request API powered shopping cart in the second article](/blog/payment-request-api-building-a-shopping-cart/) of this series.
 

@@ -1,14 +1,14 @@
 +++
 date = "2017-10-15T13:04:52+02:00"
 title = "Acceptance Testing with Nightwatch.js and Cucumber.js Part 3: BrowserStack"
-description = "Learn how to run Nightwatch.js powered, automated cross browser acceptance tests on BrowserStack."
+description = "Learn how to run Nightwatch.js powered, automated cross-browser acceptance tests on BrowserStack."
 intro = "Today, in the third and final part of this series about acceptance testing with Nightwatch.js and Cucumber.js, we will integrate automated cross-browser testing powered by BrowserStack into our workflow..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In the first part of this three part series we've [set up a Nightwatch.js and Cucumber.js powered test environment](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). In the second part we've looked at [how to write smart step definitions for Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/).
+In the first part of this three-part series we've [set up a Nightwatch.js and Cucumber.js powered test environment](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). In the second part we've looked at [how to write smart step definitions for Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/).
 
 Today, in the third and final part of this series about acceptance testing with Nightwatch.js and Cucumber.js, we will integrate automated cross-browser testing powered by BrowserStack into our workflow.
 
@@ -202,4 +202,4 @@ This makes it possible to execute the tests with the command: `npm run test-brow
 
 ## Wrapping it up
 
-Cross browser testing can be a tedious task. By automating this process, you can save a lot of boring, manual work. BrowserStack and Nightwatch.js make it pretty easy to run your tests on a wide variety of browsers. Happy testing.
+Cross-browser testing can be a tedious task. By automating this process, you can save a lot of boring, manual work. BrowserStack and Nightwatch.js make it pretty easy to run your tests on a wide variety of browsers. Happy testing.

@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript"]
 +++
 
-This is the first part of a three part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In [the second article we're going to look at how to build a Payment Request API powered shopping cart](/blog/payment-request-api-building-a-shopping-cart/). Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.
+This is the first part of a three-part series on how to use the new Payment Request browser API. In this article we're implementing a very basic payment process, collecting credit card data via the Payment Request API. In [the second article we're going to look at how to build a Payment Request API powered shopping cart](/blog/payment-request-api-building-a-shopping-cart/). Last but not least in the third article of this series, we'll implement taxes and discounts into our payment process.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

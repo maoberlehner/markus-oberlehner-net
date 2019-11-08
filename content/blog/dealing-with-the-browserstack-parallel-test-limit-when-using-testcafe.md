@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In my previous article about [automated testing with TestCafe and BrowserStack](/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/), we explored how to utilize TestCafe to run cross browser acceptance tests powered by BrowserStack.
+In my previous article about [automated testing with TestCafe and BrowserStack](/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/), we explored how to utilize TestCafe to run cross-browser acceptance tests powered by BrowserStack.
 
 One problem you might encounter when trying to run cross-browser tests in multiple browsers on BrowserStack with TestCafe is the parallel test limit that depends on your BrowserStack plan. At the time of writing, all regular BrowserStack plans include only one parallel test - which means you can only run one automated test at a time.
 
