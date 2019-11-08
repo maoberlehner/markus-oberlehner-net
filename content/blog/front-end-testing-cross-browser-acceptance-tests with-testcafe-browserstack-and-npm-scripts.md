@@ -189,6 +189,20 @@ I personally had some troubles to get up and running with linting TestCafe files
 
 What you can see above is my `.eslintrc` ESLint configuration file. By defining `fixture` and `test` as globals, ESLint ignores the usage of those variables without defining them. Setting the `ecmaVersion` to `8` makes it possible to use the latest JavaScript syntax which is also used in the TestCafe documentation code examples. There is also an [official TestCafe ESLint configuration package](https://www.npmjs.com/package/eslint-plugin-testcafe) you can use, but the only thing it does is to add the `fixture` and `test` globals.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 The combination of TestCafe, BrowserStack and Travis CI makes it possible to run all of your acceptance tests on all of your supported platforms automatically whenever you push new code to your repository.
