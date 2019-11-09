@@ -200,3 +200,6 @@ Although setting up Tailwind CSS to work with Vue.js is rather straightforward, 
 
 But this was only the beginning: if you want to be informed about my next article about how to build reusable functional components with Tailwind CSS and Vue.js, you can [follow me on Twitter](https://twitter.com/maoberlehner) or [subscribe to my newsletter](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b).
 
+## References
+
+- [kyis, Vue + Tailwind + PurgeCSS — The right way](https://medium.com/@kyis/vue-tailwind-purgecss-the-right-way-c70d04461475)
