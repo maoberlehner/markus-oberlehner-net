@@ -34,6 +34,16 @@ I often wonder **how to decouple certain parts of an application best.** At firs
 
 In this article, **we take a look at what patterns exist in Vue.js applications to provide dependencies to components.** We examine the advantages and disadvantages of each approach and what alternatives there are to each. Also, we learn that certain methods are very well suited for particular use cases but not so well for others. After reading this article, you should have enough tools in your utility belt to decide whether a hammer or a Phillips screwdriver is a better choice for a specific use case.
 
+## Table of Contents
+
+- [Importing modules](#importing-modules)
+- [Decoupled component composition](#decoupled-component-composition)
+- [Plugins](#plugins)
+- [Provide / inject](#provide-inject)
+- [Functional component factories](#functional-component-factories)
+- [Injecting global state](#injecting-global-state)
+- [Third party tools](#third-party-tools)
+
 ## Importing modules
 
 Let's start with the first method of how we can “inject” functionality into a Vue.js component: module imports. Although one might argue that this is the complete opposite of dependency injection, I go with the literal sense of the words. Even if you don't agree with me calling this a form of dependency injection, I think it's still worth taking a closer look at what the pros and cons of this practice are.
