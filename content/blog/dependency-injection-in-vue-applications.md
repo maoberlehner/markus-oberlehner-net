@@ -376,6 +376,10 @@ export default {
 
 **Recommendation:** use this pattern instead of plugins whenever it's suitable but also don't overuse it. If you catch yourself using this pattern to pass down dependencies over multiple levels a lot, there might be a problem with your overall architecture.
 
+## Functional component factories
+
+Another way to deal with dependency injection in Vue.js is to use [functional component factories](/blog/dependency-injection-in-vue-with-functional-component-factories/). I've written [a separate, in-depth article on this topic](/blog/dependency-injection-in-vue-with-functional-component-factories/).
+
 <div>
   <hr class="c-hr">
   <div class="c-service-info">
