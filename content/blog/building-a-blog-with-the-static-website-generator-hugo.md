@@ -1,13 +1,13 @@
 +++
 date = "2017-04-01T20:18:06+02:00"
 title = "Building a Blog with the Static Website Generator Hugo"
-description = "Using the static website generator Hugo to build a blog. Setup a simple personal blog with Hugo, Gulp and npm scripts to achieve blazing fast loading times."
-intro = "There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are currently getting a lot of attention. With smashingmagazine.com one of the most well known web design blogs has just announced to make the switch from WordPress to a static website generator..."
+description = "Learn how to use the static website generator, Hugo, to build a blog. Setup a simple personal blog with Hugo, Gulp and npm scripts to achieve blazing fast loading times."
+intro = "There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps, and static website generators. Especially static website generators are currently getting a lot of attention. With smashingmagazine.com one of the most well-known web design blogs has just announced to make the switch from WordPress to a static website generator..."
 draft = false
 categories = ["Development"]
 +++
 
-There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps and static website generators. Especially static website generators are getting a lot of attention since [smashingmagazine.com](https://www.smashingmagazine.com/) – one of the most well known web design blogs – has announced to make the switch from WordPress to a static website generator. Their choice fell on [Hugo](https://gohugo.io/) which is the current rising star in the static website generator universe.
+There are currently three huge trends in the web development world: reactive JavaScript frameworks, progressive web apps, and static website generators. Especially static website generators are getting a lot of attention since [smashingmagazine.com](https://www.smashingmagazine.com/) – one of the most well-known web design blogs – has announced to make the switch from WordPress to a static website generator. Their choice fell on [Hugo](https://gohugo.io/), which is the current rising star in the static website generator universe.
 
 ## Building my blog
 
