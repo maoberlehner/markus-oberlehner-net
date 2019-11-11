@@ -104,6 +104,20 @@ The only thing a really don't like about Hugo is the Go template language. It su
 
 I wrote this code myself just a day ago and I have no idea what the hell is going on. So this is my only major pain point with Hugo so far.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 The combination of Progressive Web App technologies and static websites is very powerful and enables developers to build websites which are not only faster than regular dynamically rendered websites but also easier to build and to deploy.
