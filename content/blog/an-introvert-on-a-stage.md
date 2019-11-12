@@ -50,6 +50,20 @@ After finishing the work on my presentation, I started to memorize the things I 
 
 One week before the conference I already was very confident, that I'm able to do a great job at the real stage. Being perfectly prepared, greatly reduced the nervousness I was feeling the last days before the talk.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Just do it
 
 When the moment of truth finally came I took a deep breath, walked up the stage and just did it. I held my talk like I already did many times before, just in front of more people.
