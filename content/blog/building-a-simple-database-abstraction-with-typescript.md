@@ -272,6 +272,20 @@ const article = articleFactory(db);
 console.log(article.getAll());
 ```
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 I really like TypeScript. I especially like the introduction of interfaces into the JavaScript world. Also the combination of Visual Studio Code and TypeScript makes working with JavaScript a lot of fun again. Jump to reference, code completion, parameter hints,... it's just awesome.
 
