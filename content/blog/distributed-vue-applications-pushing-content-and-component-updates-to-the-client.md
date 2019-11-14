@@ -2,14 +2,14 @@
 date = "2019-04-14T10:38:38+02:00"
 title = "Distributed Vue.js Applications Part 2: Pushing Content and Component Updates to the Client"
 description = "Learn how to use WebSockets to update the content and the components of a Vue.js application."
-intro = "In this article, we will explore how we can leverage the power of WebSockets to push content and even component updates to simple Vue.js client applications..."
+intro = "In this article, we explore how we can leverage the power of WebSockets to push content and even component updates to simple Vue.js client applications..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-14/content-and-component-push"]
 +++
 
-In [the first part of this series](/blog/distributed-vue-applications-loading-components-via-http/) we’ve seen how we can build standalone Vue.js components and how we can load them via HTTP in oder to make it possible to share them via a central distribution server. **In this article, we will explore how we can leverage the power of WebSockets to push content and even component updates to lean Vue.js client applications.**
+In [the first part of this series](/blog/distributed-vue-applications-loading-components-via-http/), we’ve seen how we can build standalone Vue.js components and how we can load them via HTTP to make it possible to share them via a central distribution server. **In this article, we explore how we can leverage the power of WebSockets to push content and even component updates to lean Vue.js client applications.**
 
 <div class="c-content__figure">
   <div class="c-content__broad">
