@@ -112,6 +112,20 @@ export function formatValues({ Math, chalk }, values) {
 export default formatValues.bind(null, { Math, chalk });
 ```
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Potential downsides of the testable module pattern
 
 One potential downside of this approach is, that you're loading the dependencies of the module no matter if you're using them or not. If you're just importing the factory function and inject your own dependencies, you're still loading the dependencies which are defined in the module. The way I would use this approach is to always use the default export in production code. I would only use the named exports for testing where it doesn't matter (that much) to use a little more resources than necessary.
