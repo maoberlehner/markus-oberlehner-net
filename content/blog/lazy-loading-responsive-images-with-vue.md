@@ -1,14 +1,14 @@
 +++
 date = "2018-07-29T06:30:30+02:00"
 title = "Vue.js Responsive Image Lazy Loading"
-description = "Learn how to use lazy loading for responsive images with Vue.js and how to maintain the aspect ratio of the lazy loaded images while showing the images dominant color as a placeholder."
-intro = "In today's article, we'll take a closer look at how we can build our own custom lazy loading image component with Vue.js. We'll use the very fast and lightweight Lozad.js package for handling the lazy loading logic for us and we'll enhance it with the ability to display the dominant color of the image as a fallback color..."
+description = "Learn how to use lazy loading for responsive images with Vue.js and how to maintain the aspect ratio of the lazy-loaded images while showing the images' dominant color as a placeholder."
+intro = "In today's article, we take a closer look at how we can build our own custom lazy loading image component with Vue.js. We use the fast and lightweight Lozad.js package for handling the lazy loading logic for us, and we enhance it with the ability to display the dominant color of the image as a fallback color..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In today's article, we'll take a closer look at how we can build our own custom lazy loading image component with Vue.js. We'll use the very fast and lightweight [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) package for handling the lazy loading logic for us and **we'll enhance it with the ability to display the dominant color of the image as a fallback color,** which is shown while the original image is loading. **Additionally, the lazy loading component will handle maintaining the correct aspect ratio while a placeholder rectangle is shown.**
+In today's article, we take a closer look at how we can build our own custom lazy loading image component with Vue.js. We use the fast and lightweight [Lozad.js](https://github.com/ApoorvSaxena/lozad.js) package for handling the lazy loading logic for us, and **we'll enhance it with the ability to display the dominant color of the image as a fallback color,** which is shown while the original image is loading. **Additionally, the lazy loading component handles maintaining the correct aspect ratio while a placeholder rectangle is shown.**
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -193,7 +193,7 @@ There are multiple ways of how to use the component. If you're ok with the image
     ></video>
   </div>
   <p class="c-content__caption">
-    <small>The lazy loaded image pops up as soon as it's loaded</small>
+    <small>The lazy-loaded image pops up as soon as it's loaded</small>
   </p>
 </div>
 
