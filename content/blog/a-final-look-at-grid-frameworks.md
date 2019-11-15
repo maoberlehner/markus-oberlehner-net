@@ -76,6 +76,20 @@ But other than that, single direction margins are also solving the overflowing i
 <p data-height="265" data-theme-id="0" data-slug-hash="QpErew" data-default-tab="result" data-user="maoberlehner" data-embed-version="2" data-pen-title="avalanche grid awesomeness" class="codepen">See the Pen <a href="http://codepen.io/maoberlehner/pen/QpErew/">avalanche grid awesomeness</a> by Markus Oberlehner (<a href="http://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thougts
 
 New techniques like Flexbox and CSS Grid Layout may change how we build and use grid frameworks but they won't replace them. Grid frameworks are here to stay. If you're using an approach like (or similar to) OOCSS you want to abstract away as much complexity as possible. Many grid frameworks and even the widely used Bootstrap grid framework, have no bullet proof solutions for common patterns like vertical spacing or varying gutters. You should be aware of those problems and extend the grid system you're using to deal with those shortcomings – or use a grid system that already has those features in the first place.
