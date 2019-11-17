@@ -411,7 +411,7 @@ I don't think that using a utility-first approach when working with CSS is a sil
 
 **The key to success is to be smart about when to use abstractions. I think it's very easy to either make the mistake of using too few or too many abstractions.** In the first case, you might have to regularly use search and replace across your whole codebase only to change how your buttons look. Contrary to that, using too many or wrong abstractions can lead to constantly fighting against your CSS styles because it's too hard to make changes. Or you are afraid to change anything at all because you don't know exactly which places are affected by that change.
 
-In my next article, I write about my thoughts and opinions when it comes to working utility-first CSS. Stay tuned!
+In my next article, [I write about my thoughts and opinions when it comes to working utility-first CSS](/blog/thoughts-about-utility-first-css-frameworks/).
 
 ## Resources
 
