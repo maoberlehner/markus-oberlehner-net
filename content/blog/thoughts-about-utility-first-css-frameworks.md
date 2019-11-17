@@ -2,7 +2,7 @@
 date = "2019-11-17T05:58:58+02:00"
 title = "Thoughts about Utility-First CSS Frameworks"
 description = "Learn more about my opinions about utility-first CSS frameworks like Tailwind CSS."
-intro = "Many people, including me, are very skeptic about the utility-first approach of Tailwind CSS and other similar CSS frameworks like Tachyons. But I think it is essential to be open-minded about new ideas and techniques, especially if there's a bunch of people who like it."
+intro = "Many people, including me, are very skeptic about the utility-first approach of Tailwind CSS and other similar CSS frameworks like Tachyons. But I think it is essential to be open-minded about new ideas and techniques, especially if there's a bunch of people who like it..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture"]
