@@ -158,6 +158,20 @@ Writing your frontend code that way solves multiple problems when developing big
 - No constant reinventing of the wheel: the `@avalanche/component-button` and other packages can be used across thousands of projects as a solid starting point for styling your components.
 - No global leaking styles: although the global nature of CSS can also be a good thing in some circumstances, Vue.js single file components make it possible to scope certain styles to a certain component, this is a huge advantage when working on very big projects which consist of dozens or maybe even hundreds of components.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## The future is now
 
 Modern build tools like Sass, webpack and `node-sass-magic-importer` make building highly modular frontend code, using third party packages from npm, an easy task.
