@@ -1,19 +1,19 @@
 +++
 date = "2019-07-07T06:25:25+02:00"
 title = "Working With Functional Vue.js Components"
-description = "Learn how to pass classes, attributes and event listerners to functional Vue.js components."
-intro = "On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far I've always found one or two reasons why I can't use them in my application..."
+description = "Learn how to pass classes, attributes, and event listeners to functional Vue.js components."
+intro = "On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far, I've always found one or two reasons why I can't use them in my application..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-07/transparent-functional-component"]
 +++
 
-On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far I've always found one or two reasons why I can't use them in my application.
+On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far, I've always found one or two reasons why I can't use them in my application.
 
 ## Special characteristics of functional components
 
-Functional components have some restrictions that cause them to behave differently than other components. For example, **attributes are not passed along automatically, i.e. classes or ID's specified on a functional component are ignored by default.**
+Functional components have some restrictions that cause them to behave differently than other components. For example, **attributes are not passed along automatically, i.e., classes or ID's specified on a functional component are ignored by default.**
 
 ```html
 <!-- src/components/ArticleTeaser.vue -->
@@ -40,7 +40,7 @@ Functional components have some restrictions that cause them to behave different
 </template>
 ```
 
-In the above example, none of the attributes would work on the template-based functional `UiHeadline` component. There would be no `id` or `class` and also the `@click` event handler would not be fired.
+In the above example, none of the attributes would work on the template-based functional `UiHeadline` component. There would be no `id` or `class`, and also the `@click` event handler would not be fired.
 
 The biggest problem with that, in my opinion, is that **this is not transparent in any way.** Imagine that the person who created the `UiHeadline` component is not the same person who is responsible for the `ArticleTeaser` component - developers who only use the `UiHeadline` component might have no idea why these attributes don't work, at least not until they take a closer look at the source code.
 
