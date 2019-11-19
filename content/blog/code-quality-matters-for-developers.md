@@ -39,6 +39,20 @@ Companies want to have happy employees and they especially want their employees 
 
 Last but not least: happy employees will work harder and write better code, which leads to even more happy employees.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Move fast and break things
 
 Although we have examined why it's worth to keep developers happy and how code quality is important to achieve this goal, there are still times when moving fast is just more valuable.
