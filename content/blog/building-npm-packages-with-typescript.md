@@ -130,6 +130,20 @@ Secondly you have to define the path to the types of your package which are gene
 }
 ```
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 Although ES6 named and default exports are a huge step forward, Node.js does not support them yet (without additional tooling). If you're publishing your code to npm you most likely want others to use it. In order to make it as easy as possible for others to use your code, it is important to follow certain best practices and provide a predictable API. By using the TypeScript `export =` syntax we can achieve this goal.
