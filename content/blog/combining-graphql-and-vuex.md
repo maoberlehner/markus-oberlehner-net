@@ -8,15 +8,15 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
-In today's article, we're going to take a look at how we can combine GraphQL and Vuex to manage the state of a Vue application. But first of all let me say that the way we're going to integrate the Apollo GraphQL client into our Vue application is not the “official” way of how to integrate GraphQL into a Vue powered application. The most standard way of using GraphQL with Vue would be the [vue-apollo](https://github.com/Akryum/vue-apollo) plugin.
+In today's article, we're going to take a look at how we can combine GraphQL and Vuex to manage the state of a Vue application. But first of all, let me say that the way we're going to integrate the Apollo GraphQL client into our Vue application is not the “official” way of how to integrate GraphQL into a Vue powered application. The most standard way of using GraphQL with Vue would be the [vue-apollo](https://github.com/Akryum/vue-apollo) plugin.
 
-Let me explain the reasons why I choose to not use `vue-apollo`.
+Let me explain the reasons why I choose not to use `vue-apollo`.
 
 1. Too much magic: I want to experience how it “feels” to integrate GraphQL / Apollo into an application with my bare hands.
 2. One more dependency: `vue-apollo` to me, feels like another dependency in the already abyssal GraphQL dependency tree.
 3. Vuex integration: I want Vuex to be the single source of truth for application state, `vue-apollo` is designed to be used alongside Vuex, but I want to integrate the GraphQL client into the Vuex store.
 
-I'm still experimenting with this approach, so if you want a solution that is battle tested by the community, I recommend you to use `vue-apollo`. But if you want to deeply integrate GraphQL with Vuex you might find the following article useful.
+I'm still experimenting with this approach, so if you want a solution that is battle-tested by the community, I recommend you to use `vue-apollo`. But if you want to integrate GraphQL with Vuex deeply, you might find this article useful.
 
 You can find [the code for this article on GitHub](https://github.com/maoberlehner/combining-graphql-and-vuex).
 
