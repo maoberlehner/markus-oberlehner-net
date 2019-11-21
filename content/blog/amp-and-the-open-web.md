@@ -46,6 +46,20 @@ At least since the monopoly of Standard Oil (ended by antitrust laws in 1911) we
 
 Also there is no guarantee that competing services will be infinitely supported by AMP in the future. Whats even worse is, it is getting very hard for new services to gain ground. A new advertising service may be too unknown to get integrated into AMP but without AMP support no news platform will ever consider to use that new advertising service – a vicious circle.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## The Open Web
 
 AMP is violating all of the most important principles of the Open Web. It prohibits the use of open standards like they are intended to be used, and in turn forces you to use their own proprietary HTML extensions. It attacks one of the most simple yet also most powerful features of the web: the URL. Sharing URLs is getting harder with AMP Cache URLs and it is also harder for users to immediately know the source of the content they are looking at. There are already cases of far right sites or propaganda news platforms like Russia Today, concealing their identity and benefit from the credibility the Google AMP Cache domain provides.
