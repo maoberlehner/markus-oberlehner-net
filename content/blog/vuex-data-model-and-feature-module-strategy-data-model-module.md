@@ -388,3 +388,7 @@ As we can see in this example, the caching layer adds a lot of complexity to our
 Out of the box solutions like the Apollo caching layer can hide this complexity from you so you don’t have to deal with it (as long as everything works).
 
 But this was only the first part of a two part series. In the second part we explore how we can combine data model modules with feature modules for paginated lists and other use cases.
+
+## References
+
+- [Nada Rifki, 10 Good Practices for Building and Maintaining Large Vue.js Projects](https://www.telerik.com/blogs/10-good-practices-building-maintaining-large-vuejs-projects)
