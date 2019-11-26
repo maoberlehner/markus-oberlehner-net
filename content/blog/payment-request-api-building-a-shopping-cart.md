@@ -22,6 +22,7 @@ tags = ["JavaScript"]
 The following code examples are based on the code in [the previous article about the Payment Request API](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/), you can look at [the full code featured in this article at GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html) and you can check out the functionality by looking at [the demo](/demos/2017-09-10/payment-request-api/).
 
 ## Basic HTML structure and event listeners
+
 For this example we have to make some slight changes to the code we've already built in the [previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/).
 
 ```html
@@ -72,6 +73,7 @@ The process of adding the event listeners to trigger the `handleProductClick()` 
 For a detailed explanation of the `payment()` function, you can read [the previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) or take a look at [the code on GitHub](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html).
 
 ## Initializing functions
+
 Additionally to the functions we've already used in [the previous article](/blog/payment-request-api-payment-process-using-the-credit-card-payment-method/) we need three more objects which we have to initialize.
 
 ```js
@@ -97,6 +99,7 @@ The `addToCart()` function is built by providing the previously created `store` 
 Finally we need a way to retrieve the payment detail data from the shopping cart store. This is what the `checkoutPaymentDetails()` function does.
 
 ## Adding products to the cart
+
 In order to add products to the cart instead of immediately triggering the checkout process when the user clicks on a product button, we have to make some slight modifications to the `handleProductClick()` function.
 
 ```js
@@ -139,6 +142,7 @@ By calling `store.set()` we're either overriding an existing line item in the st
 To notify the user that he or she has successfully added a new product to the cart, we're calling `alert()` with an info message.
 
 ## Checkout payment details from the shopping cart store
+
 To retrieve the payment details, which we're providing when we're calling the `payment()` function, we need a function to take all the items we've added to the store and build a valid `paymentDetails` object from them.
 
 ```js
@@ -197,6 +201,7 @@ The `displayItemsFromProducts()` helper function takes an array of products and 
 In the `totalValueFromProducts()` helper function, we're using JavaScripts `Array.reduce()` function to calculate the total value of all products in the shopping cart store.
 
 ## Full code and demo
+
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-10/payment-request-api/index.html).
 
 The code you can see on GitHub is the code used to build [this demo page on which you can see the Payment Request API powered shopping cart in action](/demos/2017-09-10/payment-request-api/).
