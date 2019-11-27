@@ -199,6 +199,20 @@ function displayItemsFromProducts(products) {
 
 The `displayItemsFromProducts()` helper function you can see above, is responsible for building an array of display items to submit to the Payment Request API. By adding the `sort()` function at the bottom, we're ordering the products in the shopping cart by their value from high to low which leads to the discount product – with its negative value, which is always lower than a positive value of a product – being at the bottom automatically.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Full code and demo
 
 The code snippets in this article only illustrate the most important parts of the code. If you want to see the full code, please [take a look at the code at the GitHub repository](https://github.com/maoberlehner/markus-oberlehner-net/tree/dev/static/demos/2017-09-14/payment-request-api/index.html).
