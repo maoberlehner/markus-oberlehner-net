@@ -9,13 +9,13 @@ tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:50BF54,f_auto,q_auto,w_1014,h_510/v1542158519/blog/2019-09-29/functional-component-factory"]
 +++
 
-If you are a regular reader of my blog (thanks to all of you), you may have noticed that many of my articles are about decoupling components from their dependencies. Over the past few months I have written a few articles on this subject.
+If you are a regular reader of my blog, you may have noticed that many of my articles are about decoupling components from dependencies. Over the past few months, I have written a few articles on this subject.
 
 - [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
 - [The IoC Container Pattern with Vue.js](https://markus.oberlehner.net/blog/the-ioc-container-pattern-with-vue/)
 - [Dependency Injection in Vue.js Applications](https://markus.oberlehner.net/blog/dependency-injection-in-vue-applications/)
 
-I regularly use variations of the approaches mentioned in these articles in my daily work. But today I share with you an additional way to inject dependencies into Vue.js components that I find very interesting: dependerncy injection via functional components and component props.
+I regularly use variations of the approaches mentioned in these articles in my daily work. But today, I share with you an additional way to inject dependencies into Vue.js components that I find very interesting: dependency injection via functional components and component props.
 
 <div class="c-content__broad">
   <iframe data-src="https://codesandbox.io/embed/dependency-injection-in-vuejs-with-functional-component-factories-iepwy?fontsize=14&module=%2Fsrc%2Fcomponents%2FProductListing.vue&view=editor" title="Dependency Injection in Vue.js with Functional Component Factories" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
