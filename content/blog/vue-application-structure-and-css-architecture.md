@@ -1,18 +1,18 @@
 +++
 date = "2018-04-01T13:45:21+02:00"
 title = "Vue.js Application Structure and CSS Architecture"
-description = "Learn about 3 ways of how to structure the CSS in a Vue.js project and the pros and cons of certain architectural decisions."
-intro = "In recent days, I thought a lot about structuring large scale component based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together and without too much effort you've implemented the first feature of your application in a reasonable amount of time..."
+description = "Learn about 3 ways of how to structure the CSS in a Vue.js project and the pros and cons of individual architectural decisions."
+intro = "In recent days, I thought a lot about structuring large scale component-based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together, and without too much effort you've implemented the first feature of your application in a reasonable amount of time..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "CSS Architecture", "Sass"]
 +++
 
-In recent days, I thought a lot about structuring large scale component based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together and without too much effort you've implemented the first feature of your application in a reasonable amount of time.
+In recent days, I thought a lot about structuring large scale component-based applications. Oftentimes, at the beginning of a project, everything seems to be easy. You build a couple of components, put them together, and without too much effort, you've implemented the first feature of your application in a reasonable amount of time.
 
-Deceived by the project's rapid progress, you think, now that you already have a bunch of components, developing the next feature must be even easier and faster. But more often than not, it's more complicated than that. You realize that the components you've built, are not that generic as you thought they are. Sometimes you think you can reuse a component fairly easy only to find out that in this particular case, the component should look or work a little different than it does.
+Deceived by the project's rapid progress, you think, now that you already have a bunch of components, developing the next feature must be even easier and faster. But more often than not, it's more complicated than that. You realize that the components you've built are not that generic as you thought they are. Sometimes you think you can reuse a component fairly easy only to find out that in this particular case, the component should look or work a little different than it does.
 
-In this article, I want to take a closer look at three different approaches of how to structure a component based Vue.js application. We'll build one and the same application in three different ways and we'll find out the pros and cons of every version of the application.
+In this article, I want to take a closer look at three different approaches of how to structure a component-based Vue.js application. We build one and the same application in three different ways, and we find out the pros and cons of every version of the application.
 
 ## 1. Few components + Sass Mixins
 
