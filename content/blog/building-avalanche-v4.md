@@ -106,6 +106,20 @@ Although automated tests are not a huge thing in the CSS world, I really wanted 
 
 Every **avalanche** 4.x.x package comes with it's own regression tests and a new release is only created if all the packages pass their tests. [BackstopJS](https://github.com/garris/backstopjs) is used to run the tests.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 For now I'm quite happy with the latest release of **avalanche**. I made the packages work standalone, optimized the development process by using a monorepo approach and made development less fragile by adding regression tests.
