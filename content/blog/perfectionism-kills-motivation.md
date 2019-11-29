@@ -31,6 +31,20 @@ And that's where perfectionism comes into play. I think almost every programmer 
 
 With many open projects you're  working on in parallel this feeling gets even worse. It's a constant itching that you know you're using some advanced methodology in the one but not in the other project. And with doing many things at once and knowing about all the shortcomings my code has, I was hardly able to feel motivated to work on any of my projects.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## What to do?
 
 You should focus your energy on only a few things at a time. Don't try to learn more than one new technique at once. Be disciplined even if you're not motivated but try to manipulate your environment to feel motivated at least some of the time.
