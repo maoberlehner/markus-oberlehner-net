@@ -2,13 +2,13 @@
 date = "2018-11-25T08:54:54+02:00"
 title = "Building a Parallax Scrolling Effect Component with Vue.js"
 description = "Learn how to build a parallax scrolling effect component and how to apply a parallax scrolling effect to images with Vue.js"
-intro = "In this article you'll learn how to build a Vue.js component for handling parallax scrolling. We'll structure the components in a way, which makes them very flexible and highly reusable..."
+intro = "In this article, we explore how to build a Vue.js component for handling parallax scrolling. And how to structure the components in a way, which makes them very flexible and highly reusable..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In this article you'll **learn how to build a Vue.js component for handling parallax scrolling.** We'll structure the components in a way, which makes them very flexible and highly reusable.
+In this article, **we explore how to build a Vue.js component for handling parallax scrolling.** And how to structure the components in a way, which makes them very flexible and highly reusable.
 
 <div class="c-content__figure">
   <video
@@ -23,7 +23,7 @@ In this article you'll **learn how to build a Vue.js component for handling para
   </p>
 </div>
 
-You can [take a look at a live demo of the final result hosted on Netlify](https://building-a-parallax-scrolling-effect-component-with-vue.netlify.com/) and you can [check out the code on GitHub](https://github.com/maoberlehner/building-a-parallax-scrolling-effect-component-with-vue).
+You can [take a look at a live demo of the final result hosted on Netlify](https://building-a-parallax-scrolling-effect-component-with-vue.netlify.com/), and you can [check out the code on GitHub](https://github.com/maoberlehner/building-a-parallax-scrolling-effect-component-with-vue).
 
 ## The parallax scrolling wrapper component
 
