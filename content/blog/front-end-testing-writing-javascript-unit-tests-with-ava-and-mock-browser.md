@@ -220,6 +220,20 @@ The `mockClose()` function is used to override the `Perfundo.prototype.close()` 
 
 After triggering the `Perfundo.prototype.prev()` function with `perfundoInstances[1].prev();` we check if everything worked as intended by verifying if the `mockClose()` and `mockClick()` functions were called in the process of showing the previous perfundo element.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping it up
 
 As a maintainer of several open source projects and as a perfectionist, I live in the constant fear of breaking things with new releases. Testing your codebase can take away a huge chunk of this fear. And even more importantly testing your production code can prevent downtimes and lost revenue because of regressions and bugs in your codebase.
