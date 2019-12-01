@@ -72,6 +72,17 @@ Right at the beginning, we can see the vital part of this feature module: **inst
 
 As soon as the `queryId` state is set, **the two getters `items` and `meta` return the data of the data model for the associated `queryId`.** The `items` getter gives us a list of all items for the current page, and the `meta` getters return additional information like the current `page` and the number of total `pages`, for example.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ### Using feature modules
 
 Now let's take a look at how we can use our newly created paginated list feature module to render multiple paginated lists for the same content type. All of which can have an independent state but can reuse cached queries from the data model module.
