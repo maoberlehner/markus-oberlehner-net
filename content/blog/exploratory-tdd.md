@@ -39,6 +39,20 @@ However, it may happen that the code written during the exploration phase is per
 
 It would be silly to throw away such code just because it was not written using TDD. In such cases, the most practical solution would be to write your tests retroactively and call it a day. But you should be suspicious of yourself if you use this as an excuse for not doing *real* TDD again and again.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 
 The approach of exploratory TDD might not be a perfect fit for every situation and there might even be some TDD extremists who think it's blasphemy, but it often works for me.
