@@ -47,6 +47,20 @@ Learn from your mistakes and make better decisions the next time you encounter a
 
 If you're working on a new project, have the guts to let patterns emerge. It happens to me again and again, that I come up with, what seems like a very smart idea at first, but ends up to be an over engineered overly complex solution to what turns out to be a rather simple problem. Don't make assumptions about future requirements. Build for the current requirements and refactor your code if you see patterns emerge.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 Fail fast, follow The Boy Scout Rule and constantly refactor your codebase. Don't wait until someone grants you the time to refactor some part of the project. If you're working on a new feature and you're touching code which is begging to be improved, just do it.
