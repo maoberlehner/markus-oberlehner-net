@@ -2,18 +2,18 @@
 date = "2019-08-25T07:45:45+02:00"
 title = "Vue.js Powered Data Model and Query Builder"
 description = "Learn how to implement reactive data models with an integrated Query Builder using JavaScript and Vue.js."
-intro = "I absolutely love the concept of reactive computed properties in Vue.js. So much so that I miss them in situations where I don't have them available. In this article, we will explore how to create reactive data models with all the features of regular Vue.js components such as computed properties..."
+intro = "I love the concept of reactive computed properties in Vue.js. So much so that I miss them in situations where I don't have them available. In this article, we will explore how to create reactive data models with all the features of regular Vue.js components such as computed properties..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-25/reactive-data-models-query-builder"]
 +++
 
-I absolutely love the concept of reactive computed properties in Vue.js. So much so that I miss them in situations where I don't have them available. In this article, we will explore how to create reactive data models with all the features of regular Vue.js components such as computed properties. Our goal is to fetch data from an API and store it in a reactive data model.
+I love the concept of reactive computed properties in Vue.js. So much so that I miss them in situations where I don't have them available. In this article, we explore how to create reactive data models with all the features of regular Vue.js components such as computed properties. Our goal is to fetch data from an API and store it in a reactive data model.
 
 ## Reactive data models
 
-Most of the time we tend to fetch data directly in our components and use computed properties in case we need to process the received data.
+Most of the time, we tend to fetch data directly in our components and use computed properties if we need to process the received data.
 
 ```js
 // BlogPost.vue
@@ -43,11 +43,11 @@ export default {
 };
 ```
 
-But now let's assume we have two or more components in which we want to render the full name of the author of a blog post and a short version of the blog post itself. **This means that we have to repeat the same computed properties over and over again.**
+But now, let's assume we have two or more components in which we want to render the full name of the author of a blog post and a short version of the blog post itself. **This means that we have to repeat the same computed properties over and over again.**
 
-Wouldn't it be nice to actually have the computed properties directly in a data model? **Ideally, we would have to write the logic only once in the data model and the consuming components would access it like any other regular property** - ideally, the data model should work like a Vue.js component.
+Wouldn't it be nice to have the computed properties directly in a data model? **Ideally, we would have to write the logic only once in the data model, and the consuming components would access it like any other regular property** - ideally, the data model should work like a Vue.js component.
 
-One possible way to achieve the desired effect is to use Vuex. And there's no reason why you shouldn't use Vuex in such a case, actually I'd say it's perfect for solving such problems. But sometimes it seems a bit over the top to use a global state management solution just to solve a tiny problem.
+One possible way to achieve the desired effect is to use Vuex. And there's no reason why you shouldn't use Vuex in such a case, actually I'd say it's perfect for solving such problems. But sometimes it seems a bit over the top to use a global state management solution to solve a relatively simple problem.
 
 ### Creating a Vue.js powered data model
 
