@@ -206,6 +206,20 @@ function formatValues({ Math, chalk }, values) {
 
 Finally our function does what we expect it to do, all tests succeed and we feel great!
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 
 You may have noticed, that `formatValuesFactory()` is called for every test case. In your “real” codebase you won't do that. The factory function is called only once or at most once in every controller or entry file or whatever, in your project. The reason why we do this in the test script is, because we want a clean environment for every test case. If we would call the factory function once at the beginning of the test file, and use the same returned function for every test case, there might be side effects caused by the way the (factory) function works. Because of the pure nature of our `formatValues` function, it doesn't matter, we could use the same instance without fearing side effects but it is a good habit to always use new instances for every test case.
