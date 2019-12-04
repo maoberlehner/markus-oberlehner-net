@@ -21,7 +21,7 @@ In the following two articles, you can read about an approach I have developed t
   <iframe data-src="https://codesandbox.io/embed/vuex-data-model-and-feature-module-strategy-the-data-model-module-le03t?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fstore%2Fmodules%2Fdata-model.js&view=editor" title="Vuex Data Model and Feature Module Strategy Part 1: The Data Model Module" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
-This is the first part of a two-part article series. You can [follow this link to read the second part about Vuex feature modules](/blog/vuex-data-model-and-feature-module-strategy-data-model-module/).
+This is the first part of a two-part article series. You can [follow this link to read the second part about Vuex feature modules](/blog/vuex-data-model-and-feature-module-strategy-feature-modules/).
 
 ## The data model module factory
 
@@ -387,7 +387,7 @@ As we can see in this example, the caching layer adds a lot of complexity to our
 
 Out of the box solutions like the Apollo caching layer can hide this complexity from you so you don’t have to deal with it (as long as everything works).
 
-But this was only the first part of a two part series. [In the second part we explore how we can combine data model modules with feature modules for paginated lists and other use cases](/blog/vuex-data-model-and-feature-module-strategy-data-model-module/).
+But this was only the first part of a two part series. [In the second part we explore how we can combine data model modules with feature modules for paginated lists and other use cases](/blog/vuex-data-model-and-feature-module-strategy-feature-modules/).
 
 ## References
 
