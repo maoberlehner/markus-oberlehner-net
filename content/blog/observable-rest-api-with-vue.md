@@ -1,17 +1,17 @@
 +++
 date = "2019-06-02T06:24:24+02:00"
 title = "Observable REST API with Vue.js"
-description = "Learn how to use Vue.observable to build a reactive REST API service with polling capabilities."
-intro = "Just recently I discovered a rather new feature in Vue.js: Vue.observable. It is used internally in Vue.js to make the object returned by the data() function of a component reactive. In this article we'll take a look at how we can use this new feature to build a very simple reactive polling system for a regular REST API..."
+description = "Learn how to use Vue.observable() to build a reactive REST API service with polling capabilities."
+intro = "Just recently, I discovered a rather new feature in Vue.js: Vue.observable. It is used internally in Vue.js to make the object returned by the data() function of a component reactive. In this article, we take a look at how we can use this new feature to build a straightforward reactive polling system for a regular REST API..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-02/vue-observable-wrapper"]
 +++
 
-Just recently I discovered a rather new feature in Vue.js (since 2.6.0+): [Vue.observable](https://vuejs.org/v2/api/#Vue-observable). `Vue.observable` is used internally in Vue.js to make the object returned by the `data()` function of a component reactive.
+Just recently, I discovered a rather new feature in Vue.js (since 2.6.0+): [Vue.observable()](https://vuejs.org/v2/api/#Vue-observable). `Vue.observable()` is used internally in Vue.js to make the object returned by the `data()` function of a component reactive.
 
-In this article we'll take a look at how we can use this new feature to build **a very simple reactive polling system for a regular REST API.**
+In this article, we take a look at how we can use this new feature to build **a straightforward reactive polling system for a regular REST API.**
 
 ## REST API utility function with polling
 
@@ -31,7 +31,7 @@ async function withPolling(callback, interval) {
   // return a regular object with the data.
   if (!interval) return { data };
 
-  // Otherwise, we create a new `Vue.observable`
+  // Otherwise, we create a new `Vue.observable()`
   // instance and refetch the data according to
   // the specified polling interval.
   const observableData = Vue.observable({ data });
@@ -141,6 +141,6 @@ If you want to see the code in action you can [take a look at the following Code
 
 ## Wrapping it up
 
-I think `Vue.observable` can be a very powerful tool when it is used the right way. But it can also be a possible foot gun. Although, even the official documentation states a simple global store solution as a possible use case, I'd highly recommend you to not use `Vue.observable` that way.
+I think `Vue.observable()` can be a very powerful tool when it is used the right way. But it can also be a possible foot gun. Although, even the official documentation states a simple global store solution as a possible use case, I'd highly recommend you to not use `Vue.observable()` that way.
 
 Changing the contents of an observable object should always be one way. Like in our example the data is only modified by the API response. You absolutely should not change the data directly in the consuming `App.vue` component. Otherwise, as your application is growing, you'll soon be in a world of trouble where a lot of different components make changes to the same global state and there is no way of knowing which component triggered what change (that's why you're only allowed to change the state in Vuex through mutations).
