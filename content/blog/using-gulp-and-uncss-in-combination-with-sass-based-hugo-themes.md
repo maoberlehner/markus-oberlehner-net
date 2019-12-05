@@ -232,6 +232,20 @@ The `start` script uses `concurrently` to run both `gulp` and `hugo` in parallel
 
 To create a new release of your blog ready for publishing, we can use the `build` npm script. The build script runs the Hugo default command and also runs the Gulp `build` task after Hugo has finished.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Recap
 
 Although all the cool kids seem to use webpack nowadays, there is still a place for build tools like Gulp.
