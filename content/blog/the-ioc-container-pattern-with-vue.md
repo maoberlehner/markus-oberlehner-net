@@ -1,19 +1,19 @@
 +++
 date = "2019-05-05T08:45:45+02:00"
 title = "The IoC Container Pattern with Vue.js"
-description = "Learn how to apply the IoC container pattern to Vue.js applications using provide / inject, and what the ups and downs are when using this pattern with JavaScript."
-intro = "In this article we will experiment with implementing the IoC container pattern in Vue.js. The IoC container pattern is very popular in other languages and frameworks, but not so much in the JavaScript world – we'll also take a look at why that might be so..."
+description = "Learn how to apply the IoC container pattern to Vue.js applications using provide/inject, and what the ups and downs are when using this pattern with JavaScript."
+intro = "In this article we experiment with implementing the IoC container pattern in Vue.js. The IoC container pattern is prevalent in other languages and frameworks, but not so much in the JavaScript world – we also take a look at why that might be so..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-05/vue-service-container"]
 +++
 
-In this article we will experiment with implementing the IoC container pattern in Vue.js. The IoC container pattern is very popular in other languages and frameworks, but not so much in the JavaScript world – we'll also take a look at why that might be so. The implementation we'll build is inspired by [the IoC container solution in Laravel](https://laravel.com/docs/5.8/container).
+In this article, we experiment with implementing the IoC container pattern in Vue.js. The IoC container pattern is prevalent in other languages and frameworks, but not so much in the JavaScript world – we also take a look at why that might be so. The implementation we build is inspired by [the IoC container solution in Laravel](https://laravel.com/docs/5.8/container).
 
-In the first step **we'll build a rather simple service container, which imports all services of our application in one place.** Although this may work very well for applications with rather few services or very simple services, for large applications with a multitude of injected dependencies it might be better to load only those services that are actually needed to display the current view.
+In the first step, **we build a rather simple service container, which imports all the services of our application in one place.** Although this may work very well for applications with rather few services or very simple services, for large applications with a multitude of injected dependencies, it might be better to load only those services that are needed to display the current view.
 
-To solve this problem, **in the second part of the article we take a look at how we can load services on demand only when they are actually used.** For this we will use code splitting via dynamic imports, and thus load certain services on demand.
+To solve this problem, **in the second part of the article, we take a look at how we can load services on-demand only when they are actually used.** For this, we use code splitting via dynamic imports, and thus load certain services on-demand.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -38,7 +38,7 @@ To solve this problem, **in the second part of the article we take a look at how
 
 ## Using a service container in Vue.js
 
-Let's start with the specification of the application we want to build: We want to render a list of products and we also want to render a list of users of our app. So first we need two repositories for these two content types.
+Let's start with the specification of the application we want to build: We want to render a list of products, and we also want to render a list of users of our app. So first, we need two repositories for these two content types.
 
 ```js
 // src/repositories/product.js
@@ -236,7 +236,7 @@ export default {
 </script>
 ```
 
-In the following code snippet you can see the same component using provide / inject and the service container pattern instead.
+In the following code snippet you can see the same component using provide/inject and the service container pattern instead.
 
 ```html
 <template>
@@ -257,7 +257,7 @@ export default {
 
 Another possibility would be to use plugins to make certain services globally available. Although this is also a valid approach, there are some disadvantages: First, normal plugins are not code splittable, but you could solve this with a similar approach as we did in the second example of our service container.
 
-In addition, plugins are always global. With the provide / inject approach, **you can decide to provide the service container on a route level and have different service containers with different implementations of your services for each route.**
+In addition, plugins are always global. With the provide/inject approach, **you can decide to provide the service container on a route level and have different service containers with different implementations of your services for each route.**
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">
