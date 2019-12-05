@@ -297,7 +297,7 @@ After you've made changes to your application, ran the regression tests and you'
 
 You can do so, by deleting the reference images you want to update, and run the tests again. Although this is a simple and effective method, it can become quite tedious to do so after your test base has grown to include a few dozen reference screenshots or more.
 
-Instead, we also can enhance our step definition, for creating the screenshots of the current and the reference representation, with some additional code which makes it possible to create new reference images on demand.
+Instead, we also can enhance our step definition, for creating the screenshots of the current and the reference representation, with some additional code which makes it possible to create new reference images on-demand.
 
 ```diff
  const referenceDirectory = path.resolve(__dirname, `..`, `visual-reference`);

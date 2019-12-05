@@ -70,7 +70,7 @@ Consider the following example: a very long page is viewed on a small screen, th
 
 ### The vue-lazy-hydration plugin
 
-Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plugin](https://github.com/maoberlehner/vue-lazy-hydration). This plugin makes it pretty easy to utilize certain techniques for lazy loading Vue.js components on demand. Furthermore it makes it possible to delay the hydration of server side rendered HTML until it’s really needed. In the following examples we‘ll use `vue-lazy-hydration` to improve the Estimated Input Latency of our [demo application](https://drastically-reduce-estimated-input-latency.netlify.com/).
+Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plugin](https://github.com/maoberlehner/vue-lazy-hydration). This plugin makes it pretty easy to utilize certain techniques for lazy loading Vue.js components on-demand. Furthermore it makes it possible to delay the hydration of server side rendered HTML until it’s really needed. In the following examples we‘ll use `vue-lazy-hydration` to improve the Estimated Input Latency of our [demo application](https://drastically-reduce-estimated-input-latency.netlify.com/).
 
 ### Conditionally loading components
 

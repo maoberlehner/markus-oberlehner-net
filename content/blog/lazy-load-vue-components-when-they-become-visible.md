@@ -159,7 +159,7 @@ If we take a look at the network tab of our browser of choice, we can see that *
     </a>
   </div>
   <p class="c-content__caption" style="margin-top:-1.5em;">
-    <small>JavaScript files in the red box are lazy loaded on demand</small>
+    <small>JavaScript files in the red box are lazy loaded on-demand</small>
   </p>
 </div>
 
