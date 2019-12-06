@@ -61,6 +61,20 @@ Thinking closer about it, I come to the conclusion, that the distribution of wor
 
 On the other hand, a lot of people are not able to give anything. Either because they are still learning or because they have no money or free time to contribute. Thanks to open source, those people have access to all the same resources other developers have access to, for free. That's great! And this is also the most important difference between the open source “economy” and the capitalist economic system we live in.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Conclusion
 
 As I see it, if you want to get started with open source, don't do it for the money in the first place. On the one hand, I think it's cool, that some people are able to earn a decent living by working on open source projects, on the other hand I hope it doesn't attract too many people for the wrong reasons. But I guess, currently, this is not an issue.
