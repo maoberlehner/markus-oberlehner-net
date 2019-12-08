@@ -65,11 +65,6 @@
       function f(t){t.setAttribute("data-loaded",!0)}var b=function(t){return"true"===t.getAttribute("data-loaded")};return function(){var r,o,a=0<arguments.length&&void 0!==arguments[0]?arguments[0]:".lozad",t=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},e=g({},l,t),n=e.root,i=e.rootMargin,d=e.threshold,c=e.load,u=e.loaded,s=void 0;return window.IntersectionObserver&&(s=new IntersectionObserver((r=c,o=u,function(t,e){t.forEach(function(t){(0<t.intersectionRatio||t.isIntersecting)&&(e.unobserve(t.target),b(t.target)||(r(t.target),f(t.target),o(t.target)))})}),{root:n,rootMargin:i,threshold:d})),{observe:function(){for(var t=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:document;return t instanceof Element?[t]:t instanceof NodeList?t:e.querySelectorAll(t)}(a,n),e=0;e<t.length;e++)b(t[e])||(s?s.observe(t[e]):(c(t[e]),f(t[e]),u(t[e])))},triggerLoad:function(t){b(t)||(c(t),f(t),u(t))},observer:s}}});
       const observer = lozad(document.querySelectorAll('[data-src],[data-srcset]'));
       observer.observe();
-
-      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-      ga('create','UA-57407594-3','auto');ga('send','pageview');
-      [].slice.call(document.querySelectorAll('[data-event-category]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event',e.getAttribute('data-event-category'),e.getAttribute('data-event-action'),e.getAttribute('data-event-label'),e.getAttribute('data-event-value'))})}),[].slice.call(document.querySelectorAll('[href*="amzn.to"]')).forEach(function(e){e.addEventListener('click',function(){ga('send','event','link','click: afiliate',e.getAttribute('href'))})});
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" defer></script>
   </body>
 </html>
