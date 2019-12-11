@@ -58,6 +58,20 @@ The thing is: the integration tests implemented in node-sass-magic-importer are 
 - Making your codebase perfectly testable adds a lot of overhead because you need some kind auf dependency injection.
 - Because of the nature of the project some aspects are very hard to test with unit tests, but very easy to test with integration tests.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Recap
 
 The next time you're thinking about throwing all your code away and rewrite everything from scratch, keep in mind the 80 / 20 rule. Be aware of the fact that the outcome won't be a perfectly clean codebase like you're imagine it at that moment. Reconsider if it is the best use of your time or if you'll be better off working on new features and refactoring the existing codebase.
