@@ -2,18 +2,18 @@
 date = "2019-09-22T06:32:32+02:00"
 title = "Generic Content Vuex Modules"
 description = "Learn how to quickly create new generic Vuex modules for typical CRUD applications with factory functions."
-intro = "Today we look at how we can design a system for easily creating generic Vuex modules for typical CRUD content types. Often when creating applications rather sooner than later we catch ourselves repeating the same boilerplate code over and over again because most of our content types are very similar at their core..."
+intro = "Today we look at how we can design a system for quickly creating generic Vuex modules for typical CRUD content types. Often when creating applications rather sooner than later we catch ourselves repeating the same boilerplate code over and over again because most of our content types are very similar at their core..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:b5ad3b,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-09-22/generic-content-vuex"]
 +++
 
-In my [last article we examined the advantages of a flat Vuex state tree](/blog/make-your-vuex-state-flat-state-normalization-with-vuex/). Today we look at how we can design a system for easily creating generic Vuex modules for **typical CRUD content types.**
+In my [last article, we examined the advantages of a flat Vuex state tree](/blog/make-your-vuex-state-flat-state-normalization-with-vuex/). Today we look at how we can design a system for quickly creating generic Vuex modules for **typical CRUD content types.**
 
 Often when creating applications, rather sooner than later, we catch ourselves **repeating the same boilerplate code** over and over again because **most of our content types are very similar at their core.**
 
-Basically, we have several forms for entering data for different content types, which are usually pretty much the same, but have different fields. In addition, **we display the data in the same list or table views with the same sort and filter mechanisms.** And we use pretty much the same data fetching logic, but with different API endpoints.
+We have several forms for entering data for different content types, which are usually pretty much the same but have different fields. Also, **we display the data in the same list or table views with the same sort and filter mechanisms.** And we use pretty much the same data fetching logic, but with different API endpoints.
 
 In this article, we try to DRY up one aspect of our codebase by building upon the code from the previous article and **making the Vuex part of our application generic and reusable.**
 
@@ -23,7 +23,7 @@ In this article, we try to DRY up one aspect of our codebase by building upon th
 
 ## Building a Vuex module factory
 
-By using a factory function that creates new Vuex store modules for us, we can, on the one hand, **reuse all the repeating boilerplate code** and, on the other hand, **pass different implementations of certain dependencies** to adapt to the needs of our various content types.
+By using a factory function that creates new Vuex store modules for us, we can **reuse all the repeating boilerplate code** and **pass different implementations of specific dependencies** to adapt to the needs of our various content types.
 
 ```js
 // src/store/modules/crud.js
