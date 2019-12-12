@@ -2,13 +2,13 @@
 date = "2018-03-04T10:45:32+02:00"
 title = "Automated Acceptance Testing with Cypress and Vue.js Part 1: Setup"
 description = "Learn how to set up Cypress for testing Vue.js powered applications to run automated acceptance tests."
-intro = "In today's article we're going to take a look at one of the rising stars in the automated end-to-end testing scene: Cypress. When I first discovered Cypress, I thought that it looks very promising but I was skeptical if it can live up to the hype..."
+intro = "In today's article, we're going to take a look at one of the rising stars in the automated end-to-end testing scene: Cypress. When I first discovered Cypress, I thought that it looks very promising, but I was skeptical if it can live up to the hype..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
 +++
 
-In today's article we're going to take a look at one of the rising stars in the automated end-to-end testing scene: [Cypress](https://www.cypress.io/). When I first discovered Cypress, I thought that it looks very promising but I was skeptical if it can live up to the hype. Although [Nightwatch.js](http://nightwatchjs.org/) is kinda old and boring, it has proven to be a useful tool, which, even though it has it quirks, does its job well, most of the time. Let's find out if Cypress is a serious competitor.
+In today's article, we're going to take a look at one of the rising stars in the automated end-to-end testing scene: [Cypress](https://www.cypress.io/). When I first discovered Cypress, I thought that it looks very promising, but I was skeptical if it can live up to the hype. Although [Nightwatch.js](http://nightwatchjs.org/) is rather old and boring, it has proven to be a useful tool, which, even though it has its quirks, does its job well, most of the time. Let's find out if Cypress is a serious competitor.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
