@@ -66,6 +66,20 @@ What if I replace the nodes with newlines (`\n`) instead of removing them comple
 
 This might not be the most elegant solution but it works and it is a very easy one to implement. node-sass removes empty newlines when compiling the source to CSS, so nobody ever sees the “virtual” source with the ugly empty newlines anyway.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Final thoughts
 
 Because my brain thought about source maps as a complicated matter, this issue seemed to be a very complicated thing too. By taking a step back and looking at the problem with a fresh state of mind, the allegedly hard problem became an easy one.
