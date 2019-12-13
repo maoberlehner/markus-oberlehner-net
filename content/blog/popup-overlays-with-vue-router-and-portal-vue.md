@@ -19,7 +19,7 @@ Reusable means that we want to be able to either use our overlay in a nested chi
   <iframe data-src="https://codesandbox.io/embed/popup-overlays-with-vue-router-and-portal-vue-12hf1?fontsize=14" title="Popup Overlays with Vue Router and Portal Vue" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
-**Disclaimer:** there seems to be a bug with Vue Router on CodeSandbox. If you try to close the overlay from the Vue Router example, although the URL changes back, the modal does not close. If you run the application locally, it works
+**Disclaimer:** there seems to be a bug with Vue Router on CodeSandbox. If you try to close the overlay from the Vue Router example, although the URL changes back, the modal does not close. If you run the application locally, it works.
 
 ## Minimum requirements
 
