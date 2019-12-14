@@ -2,7 +2,7 @@
 date = "2019-02-10T06:18:18+02:00"
 title = "Reusing Logic With Renderless Vue.js Frame Components"
 description = "Learn how to build highly reusable renderless components for declarative data fetching and building form components."
-intro = "Reusing logic and keeping your codebase DRY should be one of your top priorities. In a Vue.js application components are the most important means of code reuse. But usually we think of components as a combination of markup, logic and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all..."
+intro = "Reusing logic and keeping your codebase DRY should be one of your top priorities. In a Vue.js application, components are the primary means of code reuse. But usually, we think of components as a combination of markup, logic, and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
@@ -12,15 +12,15 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 > **Note:** This is the second part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
 > [< Previous](/blog/multi-export-vue-single-file-ui-components/) [Next >](/blog/renderless-vue-lifecycle-hook-components/)
 
-**Reusing logic and keeping your codebase DRY** should be one of your top priorities. In a Vue.js application components are the most important means of code reuse. But usually we think of components as a combination of markup, logic and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all.
+**Reusing logic and keeping your codebase DRY** should be one of your top priorities. In a Vue.js application, components are the primary means of code reuse. But usually, we think of components as a combination of markup, logic, and CSS. At first, it might not be very intuitive to use components to provide only logic and not render anything at all.
 
-Components which do not render their own markup are called renderless components. I’ve already written a couple of articles about [how to use renderless components to handle CRUD operations](/blog/building-renderless-components-to-handle-crud-operations-in-vue/) and [how to build a renderless reCAPTCHA component](/blog/building-a-renderless-recaptcha-v3-form-component-with-vue/) for example. **Since the term “renderless” is more of a name for the overall pattern, I choose to call this type of component “Frame Components” in my codebase.** They form a frame around other components and offer a range of useful functions or data to everything they encompass.
+Components that do not render markup are called renderless components. I’ve already written a couple of articles about [how to use renderless components to handle CRUD operations](/blog/building-renderless-components-to-handle-crud-operations-in-vue/) and [how to build a renderless reCAPTCHA component](/blog/building-a-renderless-recaptcha-v3-form-component-with-vue/), for example. **Since the term “renderless” is more of a name for the overall pattern, I choose to call this type of component “Frame Components” in my codebase.** They form a frame around other components and offer a range of useful functions or data to everything they encompass.
 
 Today we’ll build a couple of Frame Components to lay the foundation for building a fully functional demo application that we’ll build step by step over the next articles in this series on Advanced Vue.js Application Architecture.
 
 ## Consuming promises in a declarative way
 
-The first component we build is pretty similar to the wonderful [vue-promised](https://github.com/posva/vue-promised) package. You might as well use this component if you like but if you want to roll your own read on.
+The first component we build is pretty similar to the excellent [vue-promised](https://github.com/posva/vue-promised) package. You might as well use this component if you like, but if you want to roll your own, read on.
 
 ```js
 export default {
