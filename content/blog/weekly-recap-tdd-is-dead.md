@@ -49,9 +49,9 @@ Additionally, I read about [the problem with acceptance testing](https://www.jam
 
 Some of the things I read about this week, I already knew, but it was a great reminder. Overall, my thinking about practicing TDD changed quite a bit. I try to improve my Red, Green, Refactor discipline, and how to determine the system under test.
 
-## Resources
+## References
 
-[David Heinemeier Hansson, TDD is dead. Long live testing.](https://dhh.dk/2014/tdd-is-dead-long-live-testing.html)
-[Ian Cooper, TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
-[James Shore, The Problems With Acceptance Testing](https://www.jamesshore.com/Blog/The-Problems-With-Acceptance-Testing.html)
-[Eric Elliott, TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
+- [David Heinemeier Hansson, TDD is dead. Long live testing.](https://dhh.dk/2014/tdd-is-dead-long-live-testing.html)
+- [Ian Cooper, TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
+- [James Shore, The Problems With Acceptance Testing](https://www.jamesshore.com/Blog/The-Problems-With-Acceptance-Testing.html)
+- [Eric Elliott, TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
