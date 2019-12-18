@@ -2,16 +2,16 @@
 date = "2019-01-13T06:10:10+02:00"
 title = "How to Drastically Reduce Estimated Input Latency and Time to Interactive of SSR Vue.js Applications"
 description = "Learn how to solve the problem of a very high Estimated Input Latency of pre-rendered Vue.js or Nuxt.js powered Single-Page Applications"
-intro = "Performance is a huge topic in the web dev world. Furthermore  performance is especially a huge topic in the context of SPAs. Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern..."
+intro = "Performance is a huge topic in the web dev world. Furthermore, performance is especially a huge topic in the context of SPAs. Ironically, performance is frequently stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-13/lazy-hydration-demo-benchmark-twitter"]
 +++
 
-Performance is a huge topic in the web dev world. Furthermore performance is especially a huge topic in the context of SPAs. **Ironically, performance is oftentimes stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern.** While subsequent page views are typically very fast with client side rendered applications, the initial page load can require to load (and even more importantly: to parse) a few megabytes (!) of JavaScript.
+Performance is a huge topic in the web dev world. Furthermore, performance is especially a huge topic in the context of SPAs. **Ironically, performance is frequently stated as one of the biggest benefits and also as one of the most pressing concerns when it comes to this architectural pattern.** While subsequent page views are typically very fast with client-side rendered applications, the initial page load can require to load (and even more importantly: to parse) a few megabytes (!) of JavaScript.
 
-Nuxt.js and other frameworks promise to help with the initial page load dilemma which developers of large scale Vue.js applications oftentimes have to deal with. But there comes the next problem: **rehydrating server side rendered applications is also a huge burden on the CPU** and it shows in benchmarks like Lighthouse.
+Nuxt.js and other frameworks promise to help with the initial page load dilemma which developers of large scale Vue.js applications often have to deal with. But there comes the next problem: **rehydrating server-side rendered applications is also a massive burden on the CPU**, and it shows in benchmarks like Lighthouse.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -70,7 +70,7 @@ Consider the following example: a very long page is viewed on a small screen, th
 
 ### The vue-lazy-hydration plugin
 
-Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plugin](https://github.com/maoberlehner/vue-lazy-hydration). This plugin makes it pretty easy to utilize certain techniques for lazy loading Vue.js components on-demand. Furthermore it makes it possible to delay the hydration of server side rendered HTML until it’s really needed. In the following examples we‘ll use `vue-lazy-hydration` to improve the Estimated Input Latency of our [demo application](https://drastically-reduce-estimated-input-latency.netlify.com/).
+Over the last couple of days I was working on the [vue-lazy-hydration Vue.js plugin](https://github.com/maoberlehner/vue-lazy-hydration). This plugin makes it pretty easy to utilize certain techniques for lazy loading Vue.js components on-demand. Furthermore it makes it possible to delay the hydration of server-side rendered HTML until it’s really needed. In the following examples we‘ll use `vue-lazy-hydration` to improve the Estimated Input Latency of our [demo application](https://drastically-reduce-estimated-input-latency.netlify.com/).
 
 ### Conditionally loading components
 
@@ -173,7 +173,7 @@ Above you can see how we can use the `on-interaction` property to initialize the
 
 ### Not loading and hydrating components at all
 
-So much about conditionally hydrating components. But what about all those components which are only representational? They might only show some text and an image but they don't have any functionality other than just rendering content. Why even bother with loading the JavaScript code and doing expensive rehydrating of server side rendered code if the rendered HTML output of those components doesn't change no matter what?
+So much about conditionally hydrating components. But what about all those components which are only representational? They might only show some text and an image but they don't have any functionality other than just rendering content. Why even bother with loading the JavaScript code and doing expensive rehydrating of server-side rendered code if the rendered HTML output of those components doesn't change no matter what?
 
 ```html
 <template>
