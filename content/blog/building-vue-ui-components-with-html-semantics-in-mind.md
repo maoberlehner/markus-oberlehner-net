@@ -15,7 +15,7 @@ Inspired by [this Full Stack Radio podcast episode in which Adam Wathan talks to
 
 ## The problem
 
-Modern single-page web applications are based on reusable, generic components. But often, when we create these generic, low-level building blocks of our applications, **we don't know where and how these components will later be used.** This means that in most cases we fall back to elements without semantic meaning (most notably divs and spans).
+Modern single-page web applications are based on reusable, generic components. But often, when we create these generic, low-level building blocks of our applications, **we don't know where and how these components will later be used.** This means that in most cases, we fall back to elements without semantic meaning (most notably divs and spans).
 
 ## Examples
 
@@ -57,7 +57,7 @@ export default {
 </style>
 ```
 
-Above you can see the wrapper component of our Media Object implementation. The component (and all our other UI components) declare a `tag` property that allows us to change which HTML element is rendered. If you want to see all parts of our Vue.js Media Object implementation, you can [check out the CodeSandbox for this article](https://codesandbox.io/s/building-vuejs-ui-components-with-html-semantics-in-mind-we17z?fontsize=14&module=%2Fsrc%2FApp.vue).
+Above, you can see the wrapper component of our Media Object implementation. The component (and all our other UI components) declare a `tag` property that allows us to change which HTML element is rendered. If you want to see all parts of our Vue.js Media Object implementation, you can [check out the CodeSandbox for this article](https://codesandbox.io/s/building-vuejs-ui-components-with-html-semantics-in-mind-we17z?fontsize=14&module=%2Fsrc%2FApp.vue).
 
 ```html
 <template>
@@ -89,7 +89,7 @@ Here you can see how the `UiMedia` component can be used to render semantic `<fi
 
 ### Semantic headline component
 
-In many cases, the visual hierarchy of the headlines of an application does not correspond to their semantic hierarchy. In such cases, **it can be very useful to have a headline component that allows you to set the visual size independently of the rendered tag.**
+In many cases, the visual hierarchy of the headlines of an application does not correspond to their semantic hierarchy. In such cases, **it can be handy to have a headline component that allows you to set the visual size independently of the rendered tag.**
 
 Furthermore, I'm pretty sure you know the feeling when you get handed over a new design with some huge text (h1 or h2 style) that simply isn't a headline in the semantic meaning. In such situations, **it can be useful to overwrite the tag which is used to render our headline component.**
 
@@ -145,7 +145,7 @@ export default {
 </style>
 ```
 
-This `UiHeadline` component can be controlled by three properties. The `level` property controls which tag (h1-h6) is rendered. Changing the `size` property affects the CSS class applied to the heading, thus changing the visual size of the headline. Last but not least, you can choose to render a completely different HTML element by changing the `tag` property.
+Three properties can control this `UiHeadline` component. The `level` property controls which tag (h1-h6) is rendered. Changing the `size` property affects the CSS class applied to the heading, thus changing the visual size of the headline. Last but not least, you can choose to render a completely different HTML element by changing the `tag` property.
 
 ```html
 <template>
