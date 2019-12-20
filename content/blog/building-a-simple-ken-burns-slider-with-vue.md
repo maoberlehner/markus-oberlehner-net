@@ -2,13 +2,13 @@
 date = "2018-08-19T05:08:08+02:00"
 title = "Building a Simple Ken Burns Slider with Vue.js"
 description = "Learn how to build a simple image slider with Vue.js and how to implement the Ken Burns transition effect with pure CSS."
-intro = "Clients love them, most web developers hate them: sliders with fancy transition effects. Today we’ll build a very simple implementation of an image slider featuring the famous Ken Burns transition effect..."
+intro = "Clients love them; most web developers hate them: sliders with fancy transition effects. Today we’ll build a straightforward implementation of an image slider featuring the famous Ken Burns transition effect..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Clients love them, most web developers hate them: sliders with fancy transition effects. Today we’ll build a very simple implementation of an image slider featuring the famous Ken Burns transition effect (named after the American filmmaker [Kenneth Lauren Burns](https://en.wikipedia.org/wiki/Ken_Burns)).
+Clients love them; most web developers hate them: sliders with fancy transition effects. Today we’ll build a straightforward implementation of an image slider featuring the famous Ken Burns transition effect (named after the American filmmaker [Kenneth Lauren Burns](https://en.wikipedia.org/wiki/Ken_Burns)).
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -24,7 +24,7 @@ Clients love them, most web developers hate them: sliders with fancy transition 
   </p>
 </div>
 
-You can find a [demo of the final result of our work hosted on Netlify](https://building-a-simple-ken-burns-slider-with-vue.netlify.com/) and you can check out [all the code necessary to run the demo on GitHub](https://github.com/maoberlehner/building-a-simple-ken-burns-slider-with-vue).
+You can find a [demo of the final result of our work hosted on Netlify](https://building-a-simple-ken-burns-slider-with-vue.netlify.com/), and you can check out [all the code necessary to run the demo on GitHub](https://github.com/maoberlehner/building-a-simple-ken-burns-slider-with-vue).
 
 ## Switching between multiple images
 
