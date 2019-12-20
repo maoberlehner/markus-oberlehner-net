@@ -156,7 +156,7 @@ On a side note: you might notice, that the `network-stubs.js` bundle takes sever
 
 ### The test server
 
-Because we want to manipulate the client side JavaScript code, we need a way of how to get the code, which is needed for mocking timers and XHR requests, into the browser (which is controlled by Nightwatch.js).
+Because we want to manipulate the client-side JavaScript code, we need a way of how to get the code, which is needed for mocking timers and XHR requests, into the browser (which is controlled by Nightwatch.js).
 
 There are multiple ways of how to achieve this goal. You could bundle the mock code with your regular JavaScript bundle, only in the case that the `NODE_ENV` is set to `test` for example. This could be done with the [webpack-conditional-loader](https://www.npmjs.com/package/webpack-conditional-loader). Or you could even create a browser extension which injects those scripts into the page under test.
 

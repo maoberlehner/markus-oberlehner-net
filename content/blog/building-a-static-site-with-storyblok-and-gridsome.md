@@ -41,9 +41,9 @@ You can [see a demo of the site hosted on Netlify](https://building-a-static-sit
 
 **Gridsome, as well as the `generate` mode of Nuxt.js, both generate pre-rendered static HTML from a regular Vue.js application.** So much for the similarities, let's take a look at some of the differences between Gridsome and Nuxt.js.
 
-Gridsome is a tool for building static websites. It's best suited for brochure sites and blogs. **Because Nuxt.js has a dedicated server rendering mode, it's able to do a lot more. It not only pre-renders the static HTML of a Vue.js application, but it is also able to run server side logic like handling authentication via middleware.**
+Gridsome is a tool for building static websites. It's best suited for brochure sites and blogs. **Because Nuxt.js has a dedicated server rendering mode, it's able to do a lot more. It not only pre-renders the static HTML of a Vue.js application, but it is also able to run server-side logic like handling authentication via middleware.**
 
-If you're planning to build a large scale application, handling authentication and other stuff which is better suited to be handled on the server side, Nuxt.js is definitely the way to go. **But if, what you're building is more simple than that, the very fast build and render times of Gridsome are a pretty good reason to choose it over Nuxt.js.**
+If you're planning to build a large scale application, handling authentication and other stuff which is better suited to be handled on the server-side, Nuxt.js is definitely the way to go. **But if, what you're building is more simple than that, the very fast build and render times of Gridsome are a pretty good reason to choose it over Nuxt.js.**
 
 ## Setting up Gridsome
 

@@ -50,7 +50,7 @@ Now we're ready for developing an awesome new PWA powered application with Vue. 
 
 ## Code splitting
 
-Client side rendered single-page applications (SPA) are currently the way to go if you're planning to build an app like experience in the browser. Although they are awesome and with tools like webpack, ES6 and npm, developing single-page JavaScript applications has never been more enjoyable, there are many things you can do wrong when developing a SPA.
+Client-side rendered single-page applications (SPA) are currently the way to go if you're planning to build an app like experience in the browser. Although they are awesome and with tools like webpack, ES6 and npm, developing single-page JavaScript applications has never been more enjoyable, there are many things you can do wrong when developing a SPA.
 
 One major downside of single-page applications is that they can grow to an enormous size. I've seen single-page applications which are sending multiple megabytes of JavaScript on initial page load. This is a huge burden not only on the loading time of the website, but also on the time it takes to render the site for the first time, because the browser has to parse this huge amount of JavaScript first before it can render anything meaningful. And although many people argue, that the first load doesn't matter as much with an SPA, because subsequent visits are loading very fast thanks to caching, the time the browser takes to parse several megabytes of JavaScript is still critical, especially on low end smartphones.
 

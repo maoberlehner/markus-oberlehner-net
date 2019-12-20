@@ -25,7 +25,7 @@ You can find a [live demo of the component we build in this article on Netlify](
 
 ## Why not use JavaScript?
 
-In the past, I mostly worked on traditional server side rendered applications. In this context, using JavaScript for transitioning the height of an element, although all other transitions on the page are made of pure CSS, just felt wrong. But nowadays most projects I'm working on are powered by Vue.js, so using JavaScript for triggering and controlling transitions is almost inevitable. Also Vue.js provides us with the wonderful `<transition>` component which makes animating HTML elements a very pleasant experience.
+In the past, I mostly worked on traditional server-side rendered applications. In this context, using JavaScript for transitioning the height of an element, although all other transitions on the page are made of pure CSS, just felt wrong. But nowadays most projects I'm working on are powered by Vue.js, so using JavaScript for triggering and controlling transitions is almost inevitable. Also Vue.js provides us with the wonderful `<transition>` component which makes animating HTML elements a very pleasant experience.
 
 So there are hardly any reasons not to use (at least a little bit of) JavaScript to animate elements when using Vue.js.
 

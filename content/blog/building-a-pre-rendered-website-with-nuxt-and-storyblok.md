@@ -530,7 +530,7 @@ npm start
 npm run generate
 ```
 
-With the two commands you can see above, you can either serve a server side rendered version of your application or you can use the `generate` command to create a pre-rendered bundle, ready to be deployed on a static hosting service like Netlify.
+With the two commands you can see above, you can either serve a server-side rendered version of your application or you can use the `generate` command to create a pre-rendered bundle, ready to be deployed on a static hosting service like Netlify.
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">

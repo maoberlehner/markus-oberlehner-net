@@ -22,7 +22,7 @@ Although it can be extremely valuable, doing “real” end-to-end testing is pr
 
 ### Acceptance testing
 
-Acceptance testing on the other hand, focuses only on one part of the system (in our case the client side app). Similar to unit testing, we just assume that all other parts of the system, like the API and the database, work as expected.
+Acceptance testing on the other hand, focuses only on one part of the system (in our case the client-side app). Similar to unit testing, we just assume that all other parts of the system, like the API and the database, work as expected.
 
 ### The bottom line
 

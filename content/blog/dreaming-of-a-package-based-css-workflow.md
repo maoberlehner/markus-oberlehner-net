@@ -18,7 +18,7 @@ But there are new challenges coming up in the fast-moving web development world.
 
 ## Packages in JavaScript
 
-In recent years JavaScript made the transformation from being  used to add some gimmicky features to static or server side rendered websites, to being a grown up language used to build professional web applications.
+In recent years JavaScript made the transformation from being  used to add some gimmicky features to static or server-side rendered websites, to being a grown up language used to build professional web applications.
 
 With the growing complexity of JavaScript codebases – which is a inevitable side effect when building large scale applications – there was a growing need for new ways of structuring JavaScript code. Dependency management and module loading systems where the logical consequence to this development, which – after many competing custom solutions where invented – finally was addressed in the official specification for ECMAScript 6.
 

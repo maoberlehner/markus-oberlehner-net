@@ -68,7 +68,7 @@ import Airtable from 'airtable';
 // to your Airtable account!
 // Do not expose this to the public! Don't
 // use this API key in a public facing
-// client side application!
+// client-side application!
 const API_KEY = 'key123xxx123yyy11';
 const BASE_ID = 'appX14nhkIr0iPp5M';
 
