@@ -1,7 +1,7 @@
 +++
 date = "2018-04-15T10:42:42+02:00"
 title = "Building a Date Input Component with Vue.js"
-description = "Learn how to build a custom date input component with Vue.js including timestamp conversion and automatically focusing the correct input fields."
+description = "Learn how to build a custom date input component with Vue.js, including timestamp conversion and automatically focusing the correct input fields."
 intro = "Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are certain situations where the native date input field falls short. So let us take a look at how we can build a custom date input field with Vue.js..."
 draft = false
 categories = ["Development"]
@@ -19,7 +19,7 @@ Today we're going to build a custom date input component powered by Vue.js. Alth
   </p>
 </div>
 
-If you want to play around with the component we will build in this article yourself, you can find a working example of [the date input component on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue) or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).
+If you want to play around with the component we build yourself, you can find a working example of [the date input component on GitHub](https://github.com/maoberlehner/building-a-date-input-component-with-vue), or you can take a look at a [demo running on Netlify](https://building-a-date-input-component-with-vue.netlify.com).
 
 ## The markup
 
