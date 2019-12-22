@@ -2,7 +2,7 @@
 date = "2018-04-22T08:01:12+02:00"
 title = "Visual Regression Testing with Nightwatch.js and Cucumber.js"
 description = "Learn how to run visual regression tests powered by pixelmatch with Nightwatch.js and Cucumber.js."
-intro = "As most of my regular readers have probably already noticed, I'm a huge fan of testing all the things. In many of my recent articles, we've already explored multiple techniques for unit testing and acceptance testing. Unit testing ensures, that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can ensure that what we've built does what it should do. Visual regression testing makes it possible, that we can test if our application actually looks the way it's supposed to look..."
+intro = "As most of my regular readers have probably already noticed, I'm a huge fan of testing all the things. In many of my recent articles, we've already explored multiple techniques for unit testing and acceptance testing. Unit testing ensures that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can guarantee that what we've built does what it should do. Visual regression testing makes it possible that we can test if our application looks the way it's supposed to look..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests", "regression tests"]
@@ -10,7 +10,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests", "regressio
 
 As most of my regular readers have probably already noticed, I'm a huge fan of testing *all the things*. In many of my recent articles, we've already explored multiple techniques for [unit testing](https://markus.oberlehner.net/tags/unit-tests) and [acceptance testing](https://markus.oberlehner.net/tags/acceptance-tests).
 
-Unit testing ensures, that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can ensure that what we've built does what it should do. Visual regression testing makes it possible, that we can test if our application actually looks the way it's supposed to look. At least after we've defined a reference point for how it should look.
+Unit testing ensures that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can guarantee that what we've built does what it should do. Visual regression testing makes it possible that we can test if our application looks the way it's supposed to look. At least after we've defined a reference point for how it should look.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -21,7 +21,7 @@ Unit testing ensures, that certain parts (or *units*) of our code do work correc
   </p>
 </div>
 
-As our applications grow, not only in size but also in complexity, it can become close to impossible to keep track of in which places a certain component is used and how a certain component should look like in a certain context. With visual regression testing, we can automate the process of making sure that changes to the style of a component (or some other part of the application) in one context, don't have unwanted side effects in another context in which the element is used.
+As our applications grow, not only in size but also in complexity, it can become close to impossible to keep track of in which places a particular component is used and how a specific component should look like in a particular context. With visual regression testing, we can automate the process of making sure that changes to the style of a component (or some other part of the application) in one context don't have unwanted side effects in another context in which the element is used.
 
 In order to keep this article as concise as possible, I focus to show only the code absolutely necessary for the techniques described in this article to work. If you want to see [the full code, including the Nightwatch.js and Cucumber.js setup, you can find it on GitHub](https://github.com/maoberlehner/visual-regression-testing-with-nightwatch-and-cucumber).
 
