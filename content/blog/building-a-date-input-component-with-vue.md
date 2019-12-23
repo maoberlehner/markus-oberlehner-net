@@ -2,13 +2,13 @@
 date = "2018-04-15T10:42:42+02:00"
 title = "Building a Date Input Component with Vue.js"
 description = "Learn how to build a custom date input component with Vue.js, including timestamp conversion and automatically focusing the correct input fields."
-intro = "Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are certain situations where the native date input field falls short. So let us take a look at how we can build a custom date input field with Vue.js..."
+intro = "Today we build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are certain situations where the native date input field falls short. So let us take a look at how we can build a custom date input field with Vue.js..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Today we're going to build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are [certain situations where the native date input field falls short](http://html5doctor.com/the-woes-of-date-input/). So let us take a look at how we can build a custom date input field with Vue.js.
+Today we build a custom date input component powered by Vue.js. Although there is a native date input type available in all modern browsers, there are [certain situations where the native date input field falls short](http://html5doctor.com/the-woes-of-date-input/). So let us take a look at how we can build a custom date input field with Vue.js.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -23,7 +23,7 @@ If you want to play around with the component we build yourself, you can find a 
 
 ## The markup
 
-We begin with defining the basic markup for our date input element. There are two ways of how to achieve the goal we have in mind. One possibility would be to use a single `<input>` element and use some JavaScript magic to limit the input capabilities so that it looks like a date. The second option, which is the one we will use in this article, is to use separate `<input>` elements for every portion of the date (day, month and year).
+We begin with defining the necessary markup for our date input element. There are two ways of how to achieve the goal we have in mind. One possibility would be to use a single `<input>` element and use some JavaScript magic to limit the input capabilities so that it looks like a date. The second option, which is the one we use in this article, is to use separate `<input>` elements for every portion of the date (day, month, and year).
 
 ```html
 <template>
