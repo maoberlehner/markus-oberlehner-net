@@ -189,7 +189,7 @@ Most studies conducted to the efficiency of skeleton loading screens, come to th
  </style>
 ```
 
-Above you can see, that we've added a subtle shimmer animation to our `SkeletonBox` component by using an `::after` pseudo element, with a gradient background image, wich we move from left to right.
+Above, you can see that we've added a subtle shimmer animation to our `SkeletonBox` component by using an `::after` pseudo-element, with a gradient background image, which we move from left to right.
 
 ## Combining the blog post and skeleton components 
 

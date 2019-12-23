@@ -2,7 +2,7 @@
 date = "2017-07-30T12:05:21+02:00"
 title = "Using Gulp and UnCSS in Combination with Sass based Hugo themes"
 description = "Using UnCSS and Gulp to build Hugo themes which pass the PageSpeed Insights test. Eliminate render-blocking CSS and minify CSS and HTML of a blog created with Hugo."
-intro = "My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog wich loads almost instantly and scores highly in the Google PageSpeed Insights test..."
+intro = "My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog which loads almost instantly and scores highly in the Google PageSpeed Insights test..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "Sass"]
