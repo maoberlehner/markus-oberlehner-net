@@ -2,13 +2,13 @@
 date = "2018-09-23T08:56:56+02:00"
 title = "Implementing a GDPR Consent Workflow with Vue.js"
 description = "Learn how to use renderless components to build a GDPR workflow for a newsletter form and a cookie bar."
-intro = "Love it or hate it, GDPR compliance is now a requirement if you want to collect data from EU citizens. Today we'll take a look at how we can use the concept of renderless components to implement a basic GDPR consent workflow..."
+intro = "Love it or hate it, GDPR compliance is now a requirement if you want to collect data from EU citizens. Today we take a look at how we can use the concept of renderless components to implement a basic GDPR consent workflow..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Love it or hate it, GDPR compliance is now a requirement if you want to collect data from EU citizens. Today we'll take a look at how we can use the concept of [renderless components](/blog/building-renderless-components-to-handle-crud-operations-in-vue/) to implement a basic GDPR consent workflow.
+Love it or hate it, GDPR compliance is now a requirement if you want to collect data from EU citizens. Today we take a look at how we can use the concept of [renderless components](/blog/building-renderless-components-to-handle-crud-operations-in-vue/) to implement a basic GDPR consent workflow.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -25,7 +25,7 @@ Love it or hate it, GDPR compliance is now a requirement if you want to collect 
   </p>
 </div>
 
-Additionally to the concept of renderless components we'll use [Portal Vue](https://github.com/LinusBorg/portal-vue) to display a modal dialog.
+Additionally to the concept of renderless components, we use [Portal Vue](https://github.com/LinusBorg/portal-vue) to display a modal dialog.
 
 If you’re curious about the final result, you can [take a look at the full code at GitHub](https://github.com/maoberlehner/implementing-a-gdpr-consent-workflow-with-vue) or a [demo application hosted on Netlify](https://implementing-a-gdpr-consent-workflow-with-vue.netlify.com/).
 
