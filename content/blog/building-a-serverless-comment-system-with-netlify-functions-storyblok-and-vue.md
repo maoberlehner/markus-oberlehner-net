@@ -2,13 +2,13 @@
 date = "2018-08-05T06:30:30+02:00"
 title = "Building a Serverless Comment System with Netlify Functions, Storyblok and Vue.js"
 description = "Learn how to add a comment system to your Vue.js application using Netlify Functions and Storyblok."
-intro = "For a long time I was able to abstain, but now the time has come: I'm jumping on the Serverless hype train. Today we'll build a Serverless comment system powered by Netlify Functions and we'll use the headless CMS Storyblok as a database (on steroids) to store the comments entered by our users..."
+intro = "For a long time, I was able to abstain, but now the time has come: I'm jumping on the Serverless hype train. Today we build a Serverless comment system powered by Netlify Functions, and we use the headless CMS Storyblok as a database (on steroids) to store the comments entered by our users..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "headless CMS", "Serverless", "Netlify"]
 +++
 
-For a long time I was able to abstain, but now the time has come: **I'm jumping on the Serverless hype train.** Today we'll build a Serverless comment system powered by **[Netlify Functions](https://www.netlify.com/docs/functions/)** and we'll use the headless CMS **[Storyblok](https://www.storyblok.com/)** as a database (on steroids) to store the comments entered by our users. Furthermore we'll use **Vue.js** to build the frontend of our application. Because we want to make sure that only humans are allowed to add new comments, we'll use the latest **reCAPTCHA v3 beta** to get a score of the likelihood that a comment was entered not by a human but a bot. If the author of the comment is likely to be a robot, we'll not save the comment in Storyblok.
+For a long time, I was able to abstain, but now the time has come: **I'm jumping on the Serverless hype train.** Today we build a Serverless comment system powered by **[Netlify Functions](https://www.netlify.com/docs/functions/),** and we use the headless CMS **[Storyblok](https://www.storyblok.com/)** as a database (on steroids) to store the comments entered by our users. Furthermore, we use **Vue.js** to build the frontend of our application. Because we want to make sure that only humans are allowed to add new comments, we use the latest **reCAPTCHA v3 beta** to get a score of the likelihood that a comment was entered not by a human but a bot. If the author of the comment is likely to be a robot, we not save the comment in Storyblok.
 
 If you're curious about the result, you can [check out the complete code on GitHub](https://github.com/maoberlehner/building-a-serverless-comment-system-with-netlify-functions-storyblok-and-vue) or [take a look at the application hosted on Netlify](https://serverless-comment-system.netlify.com/).
 
@@ -646,6 +646,6 @@ You might notice, that even if the `isHuman()` check fails, we still return a `2
 
 ## Wrapping it up
 
-Once again the combination of Storyblok, Netlify and Vue.js proves to be a very straight forward solution for building powerful applications in almost no time.
+Once again, the combination of Storyblok, Netlify, and Vue.js proves to be a very straight forward solution for building robust applications in almost no time.
 
 Although I'm still not quite sure why it's called “Serverless”, because, after all, it's server-side JavaScript (aka Node.js) running on a server, it cannot be denied that building applications this way is very convenient.
