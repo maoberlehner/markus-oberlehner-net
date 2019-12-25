@@ -462,4 +462,4 @@ After adding a new npm script for starting our SPA server, we can run `npm run s
 
 Although I'd not recommend to roll your own build setup for large scale applications (use [vue-cli](https://github.com/vuejs/vue-cli) instead), **I think it is important to know at least the basics of how to configure webpack**.
 
-Also, it can be very useful to set up your own build process for small scale or experimental applications and although doing so is still not as straight forward as I'd wish, webpack 4 is a huge step forward in that regards.
+Also, it can be very useful to set up your own build process for small scale or experimental applications and although doing so is still not as straightforward as I'd wish, webpack 4 is a huge step forward in that regards.

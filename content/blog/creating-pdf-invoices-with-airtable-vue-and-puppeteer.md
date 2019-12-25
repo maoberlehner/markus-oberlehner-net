@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue"]
 
 I recently started freelancing. After doing my thing, building great web stuff (of course), there comes a lot of additional work I'm not so experienced at: time tracking, book keeping and accounting. Recently I had to send my first invoice, and because the invoice has to not only list all the line items in a boring way, but also look on point, my business partner, who is a great designer, decided to do it in InDesign. Although the resulting invoice does, indeed, look great, it is not the most efficient and scaleable way to do things.
 
-After doing some research on which tools are available out there for creating invoices, I quickly realized that none of them allow for the level of customization we wanted. None of them, but [Airtable](https://airtable.com/invite/r/8syxTT9n) (this is an affiliate link, [this](https://airtable.com) is not – if you want to support me, choose the former). Airtable is basically a database on steroids with a beautiful UI on top of it. It also makes it very easy to query all the data you enter via a straight forward API.
+After doing some research on which tools are available out there for creating invoices, I quickly realized that none of them allow for the level of customization we wanted. None of them, but [Airtable](https://airtable.com/invite/r/8syxTT9n) (this is an affiliate link, [this](https://airtable.com) is not – if you want to support me, choose the former). Airtable is basically a database on steroids with a beautiful UI on top of it. It also makes it very easy to query all the data you enter via a straightforward API.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

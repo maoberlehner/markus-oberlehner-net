@@ -39,7 +39,7 @@ So let's take a look at how we can enhance the default approach, provided to us 
 
 ## Conditional rendering
 
-The most basic and straight forward approach would be to conditionally render certain parts of your layout. So you might add `v-if` directives to certain parts of your layout and toggle the visibility as you wish.
+The most basic and straightforward approach would be to conditionally render certain parts of your layout. So you might add `v-if` directives to certain parts of your layout and toggle the visibility as you wish.
 
 ```diff
  <template>

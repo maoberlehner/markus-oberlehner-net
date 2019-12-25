@@ -741,6 +741,6 @@ export default {
 
 ## Wrapping it up
 
-Applying a simple transition to route changes in a Vue.js application is pretty straight forward. But things can become tricky very quickly if you want to combine multiple complex page transitions in one application.
+Applying a simple transition to route changes in a Vue.js application is pretty straightforward. But things can become tricky very quickly if you want to combine multiple complex page transitions in one application.
 
 The Vue.js transition component is very powerful out of the box, and you can make your code a lot cleaner by wrapping it in your custom transition component.

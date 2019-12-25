@@ -222,7 +222,7 @@ const mutations = {
 
 ### The state and modules
 
-The state object is pretty straight forward, we're defining an error and a success property. In the modules section, we're specifying the three form modules which are used to store the form data.
+The state object is pretty straightforward, we're defining an error and a success property. In the modules section, we're specifying the three form modules which are used to store the form data.
 
 ```js
 // src/store/modules/customer.js

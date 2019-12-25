@@ -346,7 +346,7 @@ export default {
 
 ## The FormDirector
 
-Although initializing new form components is very straight forward with the `FormBuilder` class, it also can become tedious very quickly if we want to reuse a certain form component in multiple places. This is where the Director Pattern comes in handy.
+Although initializing new form components is very straightforward with the `FormBuilder` class, it also can become tedious very quickly if we want to reuse a certain form component in multiple places. This is where the Director Pattern comes in handy.
 
 ```js
 import { required } from 'vuelidate/lib/validators';

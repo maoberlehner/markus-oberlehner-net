@@ -646,6 +646,6 @@ You might notice, that even if the `isHuman()` check fails, we still return a `2
 
 ## Wrapping it up
 
-Once again, the combination of Storyblok, Netlify, and Vue.js proves to be a very straight forward solution for building robust applications in almost no time.
+Once again, the combination of Storyblok, Netlify, and Vue.js proves to be a very straightforward solution for building robust applications in almost no time.
 
 Although I'm still not quite sure why it's called “Serverless”, because, after all, it's server-side JavaScript (aka Node.js) running on a server, it cannot be denied that building applications this way is very convenient.

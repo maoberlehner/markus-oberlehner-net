@@ -215,7 +215,7 @@ export default {
 
 The container component above is responsible for assembling all the necessary components and pass in the data they need and additionally listen to events they emit. The generic `ListingLayout` component is responsible for basic styling and layout of the listing. **We successfully decoupled our very specific components and replaced them with highly reusable generic components.**
 
-You can see that we could easily reuse the `NavFilter`, `EntityList` and `NavPagination` components because they're completely decoupled from any data fetching logic. **It would be very straight forward to create a new `ArticleListingContainer` component by simply reusing the components that already exist.**
+You can see that we could easily reuse the `NavFilter`, `EntityList` and `NavPagination` components because they're completely decoupled from any data fetching logic. **It would be very straightforward to create a new `ArticleListingContainer` component by simply reusing the components that already exist.**
 
 **Recommendation:** using component composition with slots should be the preferred way of how to decouple components from logic in order to make them reusable.
 

@@ -192,7 +192,7 @@ Next we want to take a closer look at a more classic approach of doing things. I
 
 ### Hypothesis
 
-Although it's gone out of fashion lately to style things with applying CSS classes to HTML elements, in my opinion it's still one of the most straight forward approaches. **CSS classes are reusable and, in theory, it should be more efficient to declare a CSS class once and reuse it as often as you like**. A potential downside of using CSS classes could be that it's harder to maintain large scale applications because it's not always clear if some class is still in use or not.
+Although it's gone out of fashion lately to style things with applying CSS classes to HTML elements, in my opinion it's still one of the most straightforward approaches. **CSS classes are reusable and, in theory, it should be more efficient to declare a CSS class once and reuse it as often as you like**. A potential downside of using CSS classes could be that it's harder to maintain large scale applications because it's not always clear if some class is still in use or not.
 
 ### Example
 
