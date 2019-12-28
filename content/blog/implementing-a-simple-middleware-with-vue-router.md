@@ -2,23 +2,23 @@
 date = "2018-08-26T05:31:31+02:00"
 title = "Implementing a Simple Middleware with Vue Router"
 description = "Learn how to build a simple route Middleware for protecting routes from being accessed by unauthenticated users."
-intro = "The concept of Middleware in frameworks like Laravel makes it fairly easy to do things like requiring an authenticated user for certain routes. Today we‘ll explore how we can implement a similar concept in the Vue.js world using the Vue Router..."
+intro = "The concept of Middleware in frameworks like Laravel makes it fairly easy to do things like requiring an authenticated user for specific routes. Today we explore how we can implement a similar concept in the Vue.js world using the Vue Router..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-The concept of Middleware in frameworks like Laravel makes it fairly easy to do things like requiring an authenticated user for certain routes. Today we‘ll explore how we can implement a similar concept in the Vue.js world using the Vue Router.
+The concept of Middleware in frameworks like Laravel makes it fairly easy to do things like requiring an authenticated user for specific routes. Today we explore how we can implement a similar concept in the Vue.js world using the Vue Router.
 
-If you want to see the Middleware powered application in action, you can [view a demo hosted on Netlify](https://implementing-a-simple-middleware-with-vue-router.netlify.com/) and you can [check out the full code on GitHub](https://github.com/maoberlehner/implementing-a-simple-middleware-with-vue-router).
+If you want to see the Middleware powered application in action, you can [view a demo hosted on Netlify](https://implementing-a-simple-middleware-with-vue-router.netlify.com/), and you can [check out the full code on GitHub](https://github.com/maoberlehner/implementing-a-simple-middleware-with-vue-router).
 
 ## The Middleware functions
 
-For our example application we create two Middleware functions. The `auth()` function will check if a JWT exists in the local storage and if not, will redirect the user to the login route. The `log()` Middleware function will simply log the name of the current route to the console, we’ll do this, mostly to demonstrate how we can combine two (or more) Middleware functions to run before a single route.
+For our example application, we create two Middleware functions. The `auth()` function checks if a JWT exists in the local storage and, if not, redirects the user to the login route. The `log()` Middleware function logs the name of the current route to the console, we do this, mostly to demonstrate how we can combine two (or more) Middleware functions to run before a single route.
 
 ### Authentication Middleware
 
-The authentication Middleware function is pretty straightforward. We check if an item named `jwt` exists in the clients local storage, if not, the user is redirected to the `login` route.
+The authentication Middleware function is pretty straightforward. We check if an item named `jwt` exists in the client's local storage; if not, the user is redirected to the `login` route.
 
 ```js
 // src/middleware/auth.js
@@ -33,7 +33,7 @@ export default function auth({ next, router }) {
 
 ### Logging Middleware
 
-The log Middleware is for demonstration purposes only. The only thing we're doing here, is, to log the name of the current route to the console.
+The log Middleware is for demonstration purposes only. The only thing we're doing here is, logging the name of the current route to the console.
 
 ```js
 // src/middleware/log.js
