@@ -21,12 +21,12 @@ If you want to take a look at the final code, you can [check out the full code o
 
 ## Table of Contents
 
-- [Using Tailwind CSS with Vue CLI](#using-tailwind-css-with-vue-cli)
+- [Using Tailwind with Vue CLI](#using-tailwind-with-vue-cli)
   - [Customizing the Tailwind configuration](#customizing-the-tailwind-configuration)
   - [Reducing file size with PurgeCSS](#reducing-file-size-with-purgecss)
 - [Writing purgeable Vue components](#writing-purgeable-vue-components)
 
-## Using Tailwind CSS with Vue CLI
+## Using Tailwind with Vue CLI
 
 Before we can get started building Tailwind CSS powered Vue.js applications, we have to set it up.
 
