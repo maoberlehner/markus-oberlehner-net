@@ -13,7 +13,7 @@ Tailwind CSS is one of the rising stars in the CSS framework world. It's especia
 
 In this article, we learn how to **set up Tailwind CSS to work with a Vue CLI powered application.** Because Tailwind CSS is a utility-first CSS framework which provides **a lot** of utility classes out of the box, its file size without any optimizations is pretty massive (350.4kb / 58.8kb gzipped). But luckily, **we can use PurgeCSS to improve the final bundle size of our application tremendously.**
 
-This is the first part of a short excursion into the world of utility-first CSS frameworks. In the second part, we find out how to build highly maintainable applications with Tailwind CSS and Vue.js by utilizing the power of functional UI components. If you want to be informed about the second part, you can [follow me on Twitter](https://twitter.com/maoberlehner) or [subscribe to my newsletter](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b).
+This is the first part of a short excursion into the world of utility-first CSS frameworks. In the second part, we find out how to build highly maintainable applications with Tailwind CSS and Vue.js by utilizing the power of functional UI components. [Follow this link to read the second part about how to build reusable functional Vue.js components with Tailwind CSS](/blog/reusable-functional-vue-components-with-tailwind-css/).
 
 If you want to take a look at the final code, you can [check out the full code on GitHub](https://github.com/maoberlehner/setting-up-tailwind-css-with-vue).
 
