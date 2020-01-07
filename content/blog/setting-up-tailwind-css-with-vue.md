@@ -19,6 +19,13 @@ If you want to take a look at the final code, you can [check out the full code o
 
 > In this article, you learn how to set up Tailwind CSS and PurgeCSS with Vue.js manually. But if you use the Vue CLI, you can also use [`vue-cli-plugin-tailwind`](https://github.com/forsartis/vue-cli-plugin-tailwind) to get up and running even faster.
 
+## Table of Contents
+
+- [Using Tailwind CSS with Vue CLI](#using-tailwind-css-with-vue-cli)
+  - [Customizing the Tailwind configuration](#customizing-the-tailwind-configuration)
+  - [Reducing file size with PurgeCSS](#reducing-file-size-with-purgecss)
+- [Writing purgeable Vue components](#writing-purgeable-vue-components)
+
 ## Using Tailwind CSS with Vue CLI
 
 Before we can get started building Tailwind CSS powered Vue.js applications, we have to set it up.
