@@ -144,7 +144,7 @@ As you can see above, we only add the `purgecss` plugin in `production` mode. Th
 
 ## Writing purgeable Vue components
 
-As it's stated [in the official Tailwind CSS documentation](Writing purgeable HTML), we have to follow some rules to avoid PurgeCSS removing CSS styles, which it is not supposed to remove.
+As it's stated [in the official Tailwind CSS documentation](https://tailwindcss.com/docs/controlling-file-size/#writing-purgeable-html), we have to follow some rules to avoid PurgeCSS removing CSS styles, which it is not supposed to remove.
 
 ```html
 <template>
