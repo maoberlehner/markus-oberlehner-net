@@ -17,6 +17,8 @@ This is the first part of a short excursion into the world of utility-first CSS 
 
 If you want to take a look at the final code, you can [check out the full code on GitHub](https://github.com/maoberlehner/setting-up-tailwind-css-with-vue).
 
+> In this article, you learn how to set up Tailwind CSS and PurgeCSS with Vue.js manually. But if you use the Vue CLI, you can also use [`vue-cli-plugin-tailwind`](https://github.com/forsartis/vue-cli-plugin-tailwind) to get up and running even faster.
+
 ## Using Tailwind CSS with Vue CLI
 
 Before we can get started building Tailwind CSS powered Vue.js applications, we have to set it up.
