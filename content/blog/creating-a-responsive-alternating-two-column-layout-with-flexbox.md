@@ -2,26 +2,26 @@
 date = "2018-09-09T06:05:05+02:00"
 title = "Creating a Responsive Alternating Two Column Layout with Flexbox"
 description = "Learn how to build an alternating two column layout with text on one side and an image on the other side with Flexbox."
-intro = "Last week a Tweet by Benjamin De Cock about how to achieve a two column layout with CSS Grid popped up in my timeline. This reminded me of my own journey of creating a two column layout featuring the image left / text right, text right / image left pattern, I've gone through very recently..."
+intro = "Last week a Tweet by Benjamin De Cock about how to achieve a two-column layout with CSS Grid popped up in my timeline. This reminded me of my journey of creating a two-column layout featuring the image left / text right, text right/image left pattern, I've gone through very recently..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture"]
 +++
 
-Last week a Tweet by Benjamin De Cock about how to achieve a two column layout with CSS Grid popped up in my timeline.
+Last week a Tweet by Benjamin De Cock about how to achieve a two-column layout with CSS Grid popped up in my timeline.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Quick example of an alternating two column layout made with CSS Grid: <a href="https://t.co/IwQFyiyh6l">pic.twitter.com/IwQFyiyh6l</a></p>&mdash; Benjamin De Cock (@bdc) <a href="https://twitter.com/bdc/status/1037007612678561792?ref_src=twsrc%5Etfw">4. September 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-This reminded me of my own journey of creating a two column layout featuring the image left / text right, text right / image left pattern, I've gone through very recently.
+This reminded me of my journey of creating a two-column layout featuring the image left / text right, text right/image left pattern, I've gone through very recently.
 
 ## Why is this even a problem to think about?
 
-Some people might wonder: whats so special about this, isn't this quite easy to do with CSS Grid, Flexbox, Floats or even good old Tables? Yes and no, but in the days of responsive design: mostly no.
+Some people might wonder: what's so special about this, isn't this quite easy to do with CSS Grid, Flexbox, Floats or even good old Tables? Yes and no, but in the days of responsive design: mostly no.
 
-Sure, it's very easy to do, even with ancient methods like using Tables or Floats, and, as we can see in the tweet I've linked above, it's even easier to do with modern technologies, assuming your website is always the same width (ahh.. the good old times). But responsive design, as we all know, has changed everything (thanks Ethan Marcotte).
+Sure, it's straightforward to do, even with ancient methods like using Tables or Floats, and, as we can see in the tweet I've linked above, it's even easier to do with modern technologies, assuming your website is always the same width (ahh.. the good old times). But responsive design, as we all know, has changed everything (thanks Ethan Marcotte).
 
-Considering all kinds and sizes of devices, which might be rendering our layout, this becomes a much harder problem to solve. Your first instinct might be to use Media Queries and you're right, you kinda can solve this problem pretty easily using Media Queries, but it'll be a fragile solution. Next you might think, now that we have CSS Grid this must be easy to solve, right?
+Considering all kinds and sizes of devices, which might be rendering our layout, this becomes a much harder problem to solve. Your first instinct might be to use Media Queries, and you're right, you kind of can solve this problem pretty quickly using Media Queries, but it'll be a fragile solution. Next, you might think, now that we have CSS Grid, this must be easy to solve, right?
 
 ## Why CSS Grid isn't a panacea to all problems
 
