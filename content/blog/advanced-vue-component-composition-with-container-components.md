@@ -43,9 +43,9 @@ I've first read about the concept of Container Components in the context of Reac
 
 **Container Components are not concerned with how things look but only with fetching data and initializing one or multiple Presentational or other Container Components.** When using this pattern, only Container Components are allowed to fetch data from an API or communicate with the Vuex Store.
 
-In contrast, **only Presentational Components are permitted to render their own markup.** But Presentational Components are also allowed to contain other Presentational Components and even Container Components. This does not affect testability in a negative way because we usually use shallow mounting in unit testing, which means that child components are not rendered and therefore we don't have to mock their dependencies.
+In contrast, **only Presentational Components are permitted to render their own markup.** But Presentational Components are also allowed to contain other Presentational Components and even Container Components. This does not negatively affect testability because we usually use shallow mounting in unit testing, which means that child components are not rendered. Therefore, we don't have to mock their dependencies.
 
-**By dividing our components into these two categories, we end up with a lot of very simple and easy to test Presentational Components and some hard to test Container Components.** I recommend that you don't write any unit tests at all for Container Components and use integration tests instead, but even if you decide to write unit tests for Container Components, testing the application as a whole will still be easier because there are only a few components where you need to mock API calls or the Vuex Store.
+**By dividing our components into these two categories, we end up with a lot of very simple and easy to test Presentational Components and some hard to test Container Components.** I recommend that you don't write any unit tests at all for Container Components and use integration tests instead. But even if you decide to write unit tests for Container Components, testing the application as a whole will still be easier because there are only a few components where you need to mock API calls or the Vuex Store.
 
 ## Building a demo application
 
