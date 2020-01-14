@@ -20,11 +20,11 @@ If you want to check out a live example of the code you'll see in this article, 
 
 ## Setting up a Vue.js application without webpack
 
-We're going to use **ES6 modules** to build our application, which, since May 9th, are supported in all major browsers. If you haven't had the time yet to catch up on this new technology, I recommend you to [read the relevant MDN page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
+We use **ES6 modules** to build our application, which, since May 9th, are supported in all major browsers. If you haven't had the time yet to catch up on this new technology, I recommend you to [read the relevant MDN page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import).
 
 ### Setting up a web server
 
-To enhance security, ES6 modules are subject to [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) which means we have to run a local server in order to being able to run JavaScript applications using this technology. Unfortunately, that means we have to install a npm dependency – but that'll be the only one, I promise.
+To enhance security, ES6 modules are subject to [same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), which means we have to run a local server to be able to run JavaScript applications using this technology. Unfortunately, that means we have to install an npm dependency – but that'll be the only one, I promise.
 
 ```bash
 npm install --save-dev browser-sync
