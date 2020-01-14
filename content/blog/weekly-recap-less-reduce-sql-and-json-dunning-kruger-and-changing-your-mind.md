@@ -10,6 +10,13 @@ tags = ["Weekly Recap"]
 
 Last week I discovered some things that made me question myself. Do I use `Array.reduce()` too much? Do I sometimes feel too competent in subjects about which I know little in reality?
 
+## Table of Contents
+
+- [`Array.reduce()` considered harmful?](#array-reduce-considered-harmful)
+- [SQL and JSON with PostgreSQL](#sql-and-json-with-postgresql)
+- [Dunning-Kruger effect](#dunning-kruger-effect)
+- [How to change your mind](#how-to-change-your-mind)
+
 ## `Array.reduce()` considered harmful?
 
 I like to use `Array.reduce()` because I assume it makes my code look cleaner. Also, I have to admit that sometimes it makes me feel smart when writing my code. When I solve a problem with `Array.reduce()`, it often seems like a really elegant solution. But I realize now that it can be difficult to understand code written this way later on.
