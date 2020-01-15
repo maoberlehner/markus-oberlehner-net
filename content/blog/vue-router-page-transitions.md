@@ -12,6 +12,13 @@ In my last article, we've explored how to use the powerful Vue.js transition com
 
 If you're curious about the result, you can [take a look at the final result hosted on Netlify](https://vue-router-page-transitions.netlify.com), or you can [check out the full code on GitHub](https://github.com/maoberlehner/vue-router-page-transitions).
 
+## Table of Contents
+
+- [Basic fade transition](#basic-fade-transition)
+- [Advanced fade transition](#advanced-fade-transition-with-height)
+- [Slide transition](#slide-transition)
+- [Zoom transition](#zoom-transition)
+
 ## Basic fade transition
 
 Let's get started with the most basic transition effect: **fade out the current page and fade in the next page**.
