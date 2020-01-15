@@ -20,9 +20,9 @@ The first approach we want to investigate is using **very few Vue.js components 
 
 ### Hypothesis
 
-Although Vue.js tends to be very fast, large scale applications consisting of a large number of components, can still become slow. **By using fewer components and instead utilizing Sass Mixins for consistent styling, we can save on the number of components** (e.g. a button doesn't have to be a component, but can be styled with a Sass Mixin).
+Although Vue.js tends to be very fast, large scale applications consisting of a large number of components can still become slow. **By using fewer components and instead utilizing Sass Mixins for consistent styling, we can save on the number of components** (e.g., a button doesn't have to be a component, but can be styled with a Sass Mixin).
 
-Also we expect it to be easier to deal with cases when something looks (almost) exactly as something else, but it works (a little) differently; with this approach we're able to create two components, each doing different things, but sharing the same look without having to duplicate the CSS, thanks to the Sass Mixin.
+Also, we expect it to be easier to deal with cases when something looks (almost) exactly as something else, but it works (a little) differently. With this approach, we're able to create two components, each doing different things, but sharing the same look without having to duplicate the CSS, thanks to the Sass Mixin.
 
 ### Example
 
