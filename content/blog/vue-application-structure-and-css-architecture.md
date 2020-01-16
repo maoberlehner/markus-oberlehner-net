@@ -14,6 +14,13 @@ Deceived by the project's rapid progress, you think, now that you already have a
 
 In this article, I want to take a closer look at three different approaches of how to structure a component-based Vue.js application. We build one and the same application in three different ways, and we find out the pros and cons of every version of the application.
 
+## Table of Contents
+
+- [Few components + Sass Mixins](#1-few-components-sass-mixins)
+- [Few components + CSS classes](#2-few-components-css-classes)
+- [Everything is a component](#3-everything-is-a-component)
+- [Conclusion](#conclusion)
+
 ## 1. Few components + Sass Mixins
 
 The first approach we want to investigate is using **very few Vue.js components but a lot of reusable Sass Mixins** for styling recurring elements of our application.
