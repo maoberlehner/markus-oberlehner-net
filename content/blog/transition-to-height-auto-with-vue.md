@@ -25,7 +25,7 @@ You can find a [live demo of the component we build in this article on Netlify](
 
 ## Why not use JavaScript?
 
-In the past, I mostly worked on traditional server-side rendered applications. In this context, using JavaScript for transitioning the height of an element, although all other transitions on the page are made of pure CSS, just felt wrong. But nowadays most projects I'm working on are powered by Vue.js, so using JavaScript for triggering and controlling transitions is almost inevitable. Also Vue.js provides us with the wonderful `<transition>` component which makes animating HTML elements a very pleasant experience.
+In the past, I mostly worked on traditional server-side rendered applications. In this context, using JavaScript for transitioning the height of an element, although all other transitions on the page are made of pure CSS, just felt wrong. But nowadays, most projects I'm working on are powered by Vue.js, so using JavaScript for triggering and controlling transitions is almost inevitable. Also, Vue.js provides us with the wonderful `<transition>` component, which makes animating HTML elements an enjoyable experience.
 
 So there are hardly any reasons not to use (at least a little bit of) JavaScript to animate elements when using Vue.js.
 
@@ -41,7 +41,7 @@ Because `<transition>` (almost) behaves like a regular component, it's also poss
 </template>
 ```
 
-As you can see in the example code snippet above it's possible to build a custom component which basically wraps the Vue.js core `<transition>` component. We'll use this concept to build our own `TransitionExpand` component which makes it possible to transition the height of an element from `0` to `auto`.
+As you can see in the example code snippet above, it's possible to build a custom component that wraps the Vue.js core `<transition>` component. We'll use this concept to build our own `TransitionExpand` component, which makes it possible to transition the height of an element from `0` to `auto`.
 
 ## A reusable height transition component
 
