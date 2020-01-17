@@ -1,17 +1,17 @@
 +++
 date = "2019-06-23T06:49:49+02:00"
 title = "Styling HTML Tables: How to Apply Margin, Border and z-index on Table Elements"
-description = "Learn how to use margin, border and z-index on tbody, thead and tr HTML table elements."
-intro = "A long time ago there was practically no way around the HTML <table> element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays we only use the <table> element as it should be used: to display tabular data. However, only recently I was reminded again that styling tables is not as easy as one might think..."
+description = "Learn how to use margin, border, and z-index on tbody, thead, and tr HTML table elements."
+intro = "A long time ago, there was practically no way around the HTML <table> element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays, we only use the <table> element as it should be used: to display tabular data. However, only recently, I was reminded again that styling tables is not as easy as one might think..."
 draft = false
 categories = ["Development"]
 tags = ["HTML", "CSS"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-23/final-result-twitter"]
 +++
 
-A long time ago there was practically no way around the HTML `<table>` element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays we only use the `<table>` element as it should be used: to display tabular data. However, only recently I was reminded again that styling tables is not as easy as one might think.
+A long time ago, there was practically no way around the HTML `<table>` element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays, we only use the `<table>` element as it should be used: to display tabular data. However, only recently, I was reminded again that styling tables is not as easy as one might think.
 
-Unfortunately, some CSS properties (e.g. `margin`, `border-radius` and `z-index`) do not work on certain HTML table elements like `<tbody>`, `<thead>` and `<tr>`. In this article, we will explore how we can work around these limitations.
+Unfortunately, some CSS properties (e.g. `margin`, `border-radius`, and `z-index`) do not work on certain HTML table elements like `<tbody>`, `<thead>`, and `<tr>`. In this article, we explore how we can work around these limitations.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -42,7 +42,7 @@ Unfortunately, some CSS properties (e.g. `margin`, `border-radius` and `z-index`
 
 ## The table markup
 
-The screenshot above illustrates the final result we want to achieve: a table with the first row being the main header and multiple sections which all have their own sub headers.
+The screenshot above illustrates the final result we want to achieve: a table with the first row being the main header and multiple sections, which all have their subheaders.
 
 ```html
 <table class="table">
