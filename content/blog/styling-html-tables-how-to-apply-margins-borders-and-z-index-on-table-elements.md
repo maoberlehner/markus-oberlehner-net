@@ -34,6 +34,12 @@ Unfortunately, some CSS properties (e.g. `margin`, `border-radius` and `z-index`
   </p>
 </div>
 
+## Table of Contents
+
+- [`margin` on table elements](#using-margin-on-table-elements)
+- [`border-radius` on table elements](#using-border-radius-on-table-elements)
+- [`z-index` on table elements](#using-z-index-on-table-elements)
+
 ## The table markup
 
 The screenshot above illustrates the final result we want to achieve: a table with the first row being the main header and multiple sections which all have their own sub headers.
