@@ -171,7 +171,7 @@ Above you can see how we can use `box-shadow` instead of `border` in order to ac
   <iframe data-src="https://codesandbox.io/embed/how-to-apply-margins-borders-and-z-index-on-table-elements-wo9cc?fontsize=14&initialpath=%2Fborder-radius-with-box-shadow.html&module=%2Fborder-radius-with-box-shadow.html" title="How to Apply Margins, Borders and z-index on Table Elements"  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </div>
 
-## Styling table cells instead
+### Styling table cells instead
 
 As you may have noticed, our current implementation doesn't look exactly like the screenshot you saw at the beginning of this article.
 
