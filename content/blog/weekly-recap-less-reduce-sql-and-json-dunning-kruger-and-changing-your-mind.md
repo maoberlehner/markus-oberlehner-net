@@ -2,7 +2,7 @@
 date = "2020-01-12T07:19:19+02:00"
 title = "Weekly Recap: Less Array.reduce(), SQL and JSON, Dunning-Kruger and Changing Your Mind"
 description = "My personal recap of the last week reflecting on my use of Array.reduce(), how to use JSON in SQL, the Dunning-Kruger effect and how to change your mind."
-intro = "Last week I discovered some things that made me question myself. Do I use Array.reduce() too much? Do I sometimes feel too competent in subjects about which I know little in reality?..."
+intro = "Last week I discovered some things that made me question myself. Do I use Array.reduce() too much? Do I sometimes feel too competent in subjects about which I know little in reality?"
 draft = false
 categories = ["Development"]
 tags = ["Weekly Recap"]
