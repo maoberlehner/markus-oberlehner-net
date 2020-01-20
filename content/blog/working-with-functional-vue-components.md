@@ -11,6 +11,13 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_a
 
 On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far, I've always found one or two reasons why I can't use them in my application.
 
+## Table of Contents
+
+- [Special characteristics](#special-characteristics-of-functional-components)
+- [Attributes and event listeners](#passing-along-attributes-and-event-listeners)
+- [Classes, styles and refs](#passing-classes-styles-and-refs-to-functional-components)
+- [Benchmarks](#benchmarks)
+
 ## Special characteristics of functional components
 
 Functional components have some restrictions that cause them to behave differently than other components. For example, **attributes are not passed along automatically, i.e., classes or ID's specified on a functional component are ignored by default.**
