@@ -13,6 +13,15 @@ In today's article, we take a look at how we can use the Google Maps API in comb
 
 You can [take a look at the complete source code on GitHub](https://github.com/maoberlehner/using-the-google-maps-api-with-vue), or you can [check out the demo application hosted on Netlify](https://using-the-google-maps-api-with-vue.netlify.com/).
 
+## Table of Contents
+
+- [The vue2-google-maps plugin](#the-vue2-google-maps-plugin)
+- [Loading the Google Maps API](#loading-the-google-maps-api)
+- [Rendering a simple map](#rendering-a-simple-map)
+- [Rendering markers](#rendering-markers)
+- [Cluster markers](#cluster-markers)
+- [Handle click events on markers](#handle-click-events-on-markers)
+
 ## The vue2-google-maps plugin
 
 Before we get started with building our custom implementation, let me point out that there already is a pretty good Vue.js plugin named `vue2-google-maps` which makes it possible to assemble a map and its markers in a declarative manner.
