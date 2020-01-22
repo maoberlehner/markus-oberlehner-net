@@ -2,7 +2,7 @@
 date = "2019-03-03T05:57:57+02:00"
 title = "Integration Testing Vue.js Components With Jest and Puppeteer"
 description = "Learn how to use Jest and Puppeteer for Integration Testing Vue.js Container Components and Acceptance Testing Vue.js applications."
-intro = "This is a followup article of my previous article about Integration Testing Vue.js applications with Cypress. In this article we are testing the same application but instead of using Cypress we want to use the combined forces of Jest and Puppeteer..."
+intro = "This is a followup article of my previous article about Integration Testing Vue.js applications with Cypress. In this article, we test the same application but, instead of using Cypress, we want to use the combined forces of Jest and Puppeteer..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture", "TDD"]
@@ -12,7 +12,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 > **Note:** This is the sixth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
 > [<< First](/blog/multi-export-vue-single-file-ui-components/) [< Previous](/blog/integration-testing-vue-container-components-with-cypress/) [Next >](/blog/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer/)
 
-This is a followup article of [my previous article about Integration Testing Vue.js applications with Cypress](/blog/integration-testing-vue-container-components-with-cypress/). In this article we are testing the same application but instead of using Cypress we want to use the combined forces of Jest and Puppeteer. I won’t go into much detail about the application itself or about the separation of Integration Tests and Acceptance Tests, if you’re interested in that, please also [read the previous article](/blog/integration-testing-vue-container-components-with-cypress/). **In this article we take a closer look at the technical aspect of how we can utilize Jest and Puppeteer to write Integration and Acceptance Tests for a Vue.js application.**
+This is a followup article of [my previous article about Integration Testing Vue.js applications with Cypress](/blog/integration-testing-vue-container-components-with-cypress/). In this article, we test the same application but, instead of using Cypress, we want to use the combined forces of Jest and Puppeteer. I won’t go into much detail about the application itself or the separation of Integration Tests and Acceptance Tests, if you’re interested in that, please also [read the previous article](/blog/integration-testing-vue-container-components-with-cypress/). **In this article we take a closer look at the technical aspect of how we can utilize Jest and Puppeteer to write Integration and Acceptance Tests for a Vue.js application.**
 
 ## Table of Contents
 
@@ -23,13 +23,13 @@ This is a followup article of [my previous article about Integration Testing Vue
 
 ## Setup
 
-Let’s begin with installing all the necessary npm packages. I'm assuming that you already have a Vue CLI 3 setup with Jest Unit Testing up and running, otherwise you also have to [set up Jest](https://www.npmjs.com/package/@vue/cli-plugin-unit-jest#installing-in-an-already-created-project).
+Let's begin by installing all the necessary npm packages. I'm assuming that you already have a Vue CLI 3 setup with Jest Unit Testing up and running; otherwise you also have to [set up Jest](https://www.npmjs.com/package/@vue/cli-plugin-unit-jest#installing-in-an-already-created-project).
 
 ```bash
 npm install jest-puppeteer puppeteer --save-dev
 ```
 
-Next up we have to update our Jest configuration file to make it possible to switch between Unit-, Acceptance- and Integration Testing modes.
+Next up, we have to update our Jest configuration file to make it possible to switch between Unit-, Acceptance- and Integration Testing modes.
 
 ```js
 // jest.config.js
