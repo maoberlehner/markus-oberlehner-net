@@ -14,6 +14,13 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q
 
 This is a followup article of [my previous article about Integration Testing Vue.js applications with Cypress](/blog/integration-testing-vue-container-components-with-cypress/). In this article we are testing the same application but instead of using Cypress we want to use the combined forces of Jest and Puppeteer. I won’t go into much detail about the application itself or about the separation of Integration Tests and Acceptance Tests, if you’re interested in that, please also [read the previous article](/blog/integration-testing-vue-container-components-with-cypress/). **In this article we take a closer look at the technical aspect of how we can utilize Jest and Puppeteer to write Integration and Acceptance Tests for a Vue.js application.**
 
+## Table of Contents
+
+- [Setup](#setup)
+- [Puppeteer helper functions](#puppeteer-helper-functions)
+- [Writing tests](#writing-tests)
+- [Pros and cons compared to Cypress](#pros-and-cons-compared-to-cypress)
+
 ## Setup
 
 Let’s begin with installing all the necessary npm packages. I'm assuming that you already have a Vue CLI 3 setup with Jest Unit Testing up and running, otherwise you also have to [set up Jest](https://www.npmjs.com/package/@vue/cli-plugin-unit-jest#installing-in-an-already-created-project).
