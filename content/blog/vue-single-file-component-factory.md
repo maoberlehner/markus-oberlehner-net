@@ -2,20 +2,20 @@
 date = "2019-08-11T06:52:52+02:00"
 title = "Vue.js Single File Component Factory"
 description = "Learn how to export a factory function from a Vue.js Single File Component (SFC) and how to inject dependencies that way."
-intro = "In my opinion, the best way to inject dependencies is via factory functions that take the dependencies as parameters. Unfortunately it is not possible to export factory functions from Vue.js Single File Components. According to the specification, the default export should be a Vue.js component options object..."
+intro = "In my opinion, the best way to inject dependencies is via factory functions that take the dependencies as parameters. Unfortunately, it is not possible to export factory functions from Vue.js Single File Components. According to the specification, the default export should be a Vue.js component options object..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-11/vue-component-factory"]
 +++
 
-In my opinion, the best way to inject dependencies is via factory functions that take the dependencies as parameters. Unfortunately it is not possible to export factory functions from Vue.js Single File Components. According to [the specification](https://vue-loader.vuejs.org/spec.html), the default export should be a Vue.js component options object.
+In my opinion, the best way to inject dependencies is via factory functions that take the dependencies as parameters. Unfortunately, it is not possible to export factory functions from Vue.js Single File Components. According to [the specification](https://vue-loader.vuejs.org/spec.html), the default export should be a Vue.js component options object.
 
-In this article, we will examine a solution that makes it possible to overcome this limitation. If you want to see the full code of a working example of the approach described in this article, you can [take a look at this GitHub repository](https://github.com/maoberlehner/vue-single-file-component-factory).
+In this article, we examine a solution that makes it possible to overcome this limitation. If you want to see the full code of a working example of the approach described in this article, you can [take a look at this GitHub repository](https://github.com/maoberlehner/vue-single-file-component-factory).
 
 ## Why factory functions are awesome
 
-Before we answer the question *How?*, let's take a look at a very simple example component to clarify *Why?* Factory functions are awesome. **In the following examples you can see how we can use factory functions to improve the design of our applications.**
+Before we answer the question *How?*, let's take a look at a straightforward example component to clarify *Why?* Factory functions are awesome. **In the following examples, you can see how we can use factory functions to improve the design of our applications.**
 
 ```html
 <template>
