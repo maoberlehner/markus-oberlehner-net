@@ -12,7 +12,15 @@ When first starting with Vuex, most people wonder what data should be stored in 
 
 In this article I'll try to answer the question in which situations Vuex is a good solution to the problem at hand and when it may be better to use a different approach.
 
-## Why use Vuex in the first place?
+## Table of Contents
+
+- [Why use Vuex?](#why-use-vuex)
+- [Reasons for storing data in Vuex](#reasons-for-storing-data-in-vuex)
+- [Reasons not to store data in Vuex](#reasons-not-to-store-data-in-vuex)
+- [Alternatives to storing data in Vuex](#alternatives-to-storing-data-in-vuex)
+- [Decision flow chart](#decision-flow-chart)
+
+## Why use Vuex?
 
 Out of the box, Vue.js provides us with a very powerful way to handle state with the reactive `data` property and the possibility to pass down properties to child components.
 
@@ -121,7 +129,7 @@ I've also written an [article about how to implement a modal component using Vue
 
 If you already use GraphQL & Apollo in your application, you might decide to also use it for managing your state. [Natalia Tepluhina](https://twitter.com/N_Tepluhina) has written [a great article about how you can utilize the local state feature of Apollo for state management](https://dev.to/n_tepluhina/apollo-state-management-in-vue-application-8k0).
 
-## The “Should I Store This Data in Vuex?” flow chart
+## Decision flow chart
 
 In order to make it easier to make a decision wether to store data in a centralized Vuex store or not, I made a flow chart to help with that.
 
