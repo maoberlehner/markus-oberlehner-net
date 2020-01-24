@@ -23,6 +23,13 @@ Throughout this article, **we examine how to create a generic and reusable struc
 
 Since it would be a huge undertaking to build a fully functional application, our goal in this article is to create a basic prototype that meets our core requirements and is easily extensible to work in the real world. If you want to see how to build a full-blown app using this and also alternative approaches, you can [sign up for the newsletter of my upcoming book, which goes into much more detail](https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b).
 
+## Table of Contents
+
+- [Configuration](#the-configuration-format)
+- [Dynamic Vuex modules](#dynamic-vuex-modules)
+- [Dynamic routes](#dynamic-routes)
+- [Initializing the dynamic app](#initializing-the-dynamic-app)
+
 ## The configuration format
 
 Before we dive into the code, let's have a look at how we imagine the configuration file to be structured.
