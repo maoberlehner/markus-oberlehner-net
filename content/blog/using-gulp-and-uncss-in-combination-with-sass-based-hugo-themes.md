@@ -2,13 +2,13 @@
 date = "2017-07-30T12:05:21+02:00"
 title = "Using Gulp and UnCSS in Combination with Sass based Hugo themes"
 description = "Using UnCSS and Gulp to build Hugo themes which pass the PageSpeed Insights test. Eliminate render-blocking CSS and minify CSS and HTML of a blog created with Hugo."
-intro = "My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog which loads almost instantly and scores highly in the Google PageSpeed Insights test..."
+intro = "My blog – you're currently reading – runs on Hugo, and so far I'm very happy with its simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore, we will utilize UnCSS to enable building a blog that loads almost instantly and scores highly in the Google PageSpeed Insights test..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "Sass"]
 +++
 
-In one of my previous articles I wrote about [setting up a basic blog with Hugo](https://markus.oberlehner.net/blog/building-a-blog-with-the-static-website-generator-hugo/). My own blog – you're currently reading – runs on Hugo and so far I'm very happy with it's simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore we will utilize UnCSS to enable building a blog which loads almost instantly and scores highly in the Google PageSpeed Insights test.
+In one of my previous articles, I wrote about [setting up a basic blog with Hugo](https://markus.oberlehner.net/blog/building-a-blog-with-the-static-website-generator-hugo/). My blog – you're currently reading – runs on Hugo, and so far I'm very happy with its simplicity and speed. Today I'll show you how we can use a Gulp build process to establish a convenient way to work on Hugo themes. Furthermore, we will utilize UnCSS to enable building a blog that loads almost instantly and scores highly in the Google PageSpeed Insights test.
 
 ## Basic Gulp and npm setup
 
