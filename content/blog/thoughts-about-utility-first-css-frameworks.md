@@ -19,7 +19,7 @@ Some of my opinions are rather critical but remember that every approach has dis
 
 There are a couple of very nice things that come along with using a utility-first approach to building your design system.
 
-### Enforcing consistenzy
+### Enforcing consistency
 
 If you use Tailwind CSS as an API for your design system, **it is a superb tool to enforce the basic rules,** for example, which colors you use or which margins and paddings should be applied.
 
