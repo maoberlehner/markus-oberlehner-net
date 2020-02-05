@@ -170,14 +170,14 @@ In the example headline component above, we use template-strings to programmatic
  <template>
    <Component
 -    :is="`h${level}`"
-+    :is="'h1', 'h2', 'h3', 'h4', 'h5', 'h6'][level - 1]"
++    :is="['h1', 'h2', 'h3', 'h4', 'h5', 'h6'][level - 1]"
 -    :class="`font-light leading-tight text-${size}xl`"
 +    class="font-light leading-tight"
 +    :class="[
-+      ...(size <= 1 ? 'text-1xl'] : []),
-+      ...(size === 2 ? 'text-2xl'] : []),
-+      ...(size === 3 ? 'text-3xl'] : []),
-+      ...(size === 4 ? 'text-4xl'] : []),
++      ...(size <= 1 ? ['text-1xl'] : []),
++      ...(size === 2 ? ['text-2xl'] : []),
++      ...(size === 3 ? ['text-3xl'] : []),
++      ...(size === 4 ? ['text-4xl'] : []),
 +    ]"
    >
      <slot/>
