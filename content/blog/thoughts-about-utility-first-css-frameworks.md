@@ -76,7 +76,7 @@ Readability is probably the most common point of criticism about Tailwind. And e
 
 ```scss
 .btn {
-  @apply font-bold py-2 px-4 rounded;
+  @apply py-2 px-4 rounded font-bold;
 }
 
 .btn-blue {
@@ -92,9 +92,9 @@ The first question I ask myself when I see the example code snippet above, taken
 
 ```scss
 .button {
-  font-weight: $font-bold;
   padding: $spacing-2 $spacing-4;
   border-radius: $border-radius-m;
+  font-weight: $font-bold;
 }
 
 .button--primary {
