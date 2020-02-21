@@ -203,7 +203,7 @@ export function makeGuard(options) {
 
 ## Wrapping it up
 
-I'm not quite sure yet if I want to use this rather hacky approach in one of my productions apps. But I also don't see EINEN DRIFITIGEN GRUND why not.
+I'm not quite sure yet if I want to use this rather hacky approach in one of my productions apps. But I also don't see a good reason why not.
 
 I hope that one day the Vue.js SFC spec also allows for exporting a factory function which returns a Vue.js component options object or a promise which resolves to an options object. For now we have to make the best out of what we have.
 
