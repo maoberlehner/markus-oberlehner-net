@@ -5,7 +5,7 @@ description = "Learn more about my thoughts about naming unit tests applying pat
 intro = "For the most time, when writing unit tests, I favored the it should ... pattern for naming my tests. But time and time again, I noticed that when following this naming convention, I either had to write very long test cases or omit important information..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD"]
+tags = ["JavaScript", "TDD", "Naming things"]
 +++
 
 For the most time, when writing unit tests, I favored the `it should ...` pattern for naming my tests. But time and time again, I noticed that when following this naming convention, I either had to write very long test cases or omit important information.
