@@ -88,11 +88,11 @@ export default {
       getComputedStyle(element).height;
 
       // Trigger the animation.
-      // We use `setTimeout` because we need
+      // We use `requestAnimationFrame` because we need
       // to make sure the browser has finished
       // painting after setting the `height`
       // to `0` in the line above.
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         element.style.height = height;
       });
     },
@@ -104,7 +104,7 @@ You might wonder why we have to set style properties like `width`, `position` an
 
 The element we want to animate starts out with a height of `0`, so if we use JavaScript to get its height, we'd get `0`. In order to get the height of the element it would have if it was `height: auto` we have to set its height to `auto`. But because this would affect other elements and because the element would be visible (at least for a short period of time) we have to position it `absolute` to prevent it having an effect on other elements and we have to set its `visibility` to `hidden` so it is invisible. And because positioning an element `absolute` means its dimensions are no longer defined by its parent, we have to get the `width` of the element before we set its `position` to `absolute` and then set the width explicitly so the element still has the same dimensions as it would have if it was not positioned `absolute`.
 
-After we've retrieved the height of the element it would have if it was `height: auto`, we're able to use this value to start the animation. But before we can do this, we have to reset all the values we've set before. Because otherwise the browser does not repaint after setting the `height` the first two times, we need to set the final height in a `setTimeout()` function.
+After we've retrieved the height of the element it would have if it was `height: auto`, we're able to use this value to start the animation. But before we can do this, we have to reset all the values we've set before. Because otherwise the browser does not repaint after setting the `height` the first two times, we need to set the final height in a `requestAnimationFrame()` function.
 
 ```css
 .expand-enter-active,
@@ -144,7 +144,7 @@ export default {
       // animation is triggered correctly.
       getComputedStyle(element).height;
 
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         element.style.height = 0;
       });
     },
@@ -290,7 +290,7 @@ As a little bonus, let's take a look at how we can transform our regular compone
 +          // animation is triggered correctly.
 +          getComputedStyle(element).height;
 +
-+          setTimeout(() => {
++          requestAnimationFrame(() => {
 +            element.style.height = height;
 +          });
 +        },
@@ -307,7 +307,7 @@ As a little bonus, let's take a look at how we can transform our regular compone
 -      // animation is triggered correctly.
 -      getComputedStyle(element).height;
 -
--      setTimeout(() => {
+-      requestAnimationFrame(() => {
 -        element.style.height = height;
 -      });
 -    },
@@ -319,7 +319,7 @@ As a little bonus, let's take a look at how we can transform our regular compone
 +          // animation is triggered correctly.
 +          getComputedStyle(element).height;
 +
-+          setTimeout(() => {
++          requestAnimationFrame(() => {
 +            element.style.height = 0;
 +          });
 +        },
@@ -330,7 +330,7 @@ As a little bonus, let's take a look at how we can transform our regular compone
 -      // animation is triggered correctly.
 -      getComputedStyle(element).height;
 -
--      setTimeout(() => {
+-      requestAnimationFrame(() => {
 -        element.style.height = 0;
 -      });
 -    },
