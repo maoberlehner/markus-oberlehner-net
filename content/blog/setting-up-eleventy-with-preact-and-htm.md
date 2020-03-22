@@ -123,7 +123,7 @@ module.exports = ({ page }) => html`
 `;
 ```
 
-One thing you have to keep in mind is that although we are using Preact to build our website, Eleventy still is a **static** site generator. **So by using Preact as a server-side templating language, you can't build anything interactive like buttons that react to click events, for example.** The code only runs once on the server, and the generated HTML output is rendered in the browser. **No JavaScript is loaded or executed on the client!** At least for now. **If you want to use certain interactive elements like image carousels or contact forms on your website, you can read about it in my next article coming up Sunday 22nd of March.** [Follow me on Twitter if you don't want to miss it](https://twitter.com/MaOberlehner).
+One thing you have to keep in mind is that although we are using Preact to build our website, Eleventy still is a **static** site generator. **So by using Preact as a server-side templating language, you can't build anything interactive like buttons that react to click events, for example.** The code only runs once on the server, and the generated HTML output is rendered in the browser. **No JavaScript is loaded or executed on the client!** At least for now. **If you want to use certain interactive elements like image carousels or contact forms on your website, you can [read about it in my next article](/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy).**
 
 ### Rendering content
 
@@ -179,4 +179,4 @@ The [data which is used to render the page above](https://github.com/maoberlehne
 
 What I love about this approach is that **every code snippet you can see in this article is *just* JavaScript.** We don't have to use and maintain a complicated webpack set up to run this code. We don't have to configure our linter and code editor to work with some pseudo-language like JSX or Vue.js Single File Components.
 
-Because of that, I think Eleventy, Preact, and htm are a perfect match. Eleventy, too, is known and loved for its simplicity, which makes it a joy to use those two in conjunction.
+Because of that, I think Eleventy, Preact, and htm are a perfect match. Eleventy, too, is known and loved for its simplicity, which makes it a joy to use those two in conjunction. If you want to read more about how to make this combination even more powerful you can read [my follow up article about how to do partial hydration with Eleventy and Preact](/blog/building-partially-hydrated-progressively-enhanced-static-websites-with-isomorphic-preact-and-eleventy).
