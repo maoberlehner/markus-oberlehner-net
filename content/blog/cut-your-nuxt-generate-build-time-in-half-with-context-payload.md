@@ -11,7 +11,7 @@ images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:23C9
 
 One of my freelancing projects is a Nuxt.js project powered by the wonderful [headless CMS Storyblok](https://www.storyblok.com/). Because performance is critical, I decided to use Nuxt.js in generate mode outputs static HTML files for each page at build time. But because Nuxt.js needs to generate 1.000+ pages, the build time got long (over 10 minutes).
 
-The way that I've set up my Nuxt.js project, every page made a separate request to fetch the data it needs. So 1.000 pages make 1.000 API requests. But making 1.000 API requests takes its time. Luckily, with the Nuxt.js `context.payload` option, it is possible to fetch all the data for all the pages upfront. This drastically reduces the number of requests that are made when generating all the static HTML files.
+The way that I've set up my Nuxt.js project, every page made a separate request to fetch the data it needs. So 1.000 pages make 1.000 API requests. But making 1.000 API requests takes its time. **Luckily, with the Nuxt.js `context.payload` option, it is possible to fetch all the data for all the pages upfront. This drastically reduces the number of requests that are made when generating all the static HTML files.**
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ The way that I've set up my Nuxt.js project, every page made a separate request 
 
 Usually, Nuxt.js is very fast when rendering pages, but fetching the necessary data from an external API can take some time.
 
-Thanks to the `context.payload` feature, we can load all of the data we need to render our pages upfront in a single request (or at least only a few requests if there is a maximum of items we can fetch at once).
+**Thanks to the `context.payload` feature, we can load all of the data we need to render our pages upfront in a single request** (or at least only a few requests if there is a maximum of items we can fetch at once).
 
 ```js
 // nuxt.config.js
@@ -60,7 +60,7 @@ export default {
 
 ## Usage with `asyncData()`
 
-Because we are providing the data via the `payload` property, for every route in the `nuxt.config.js`, we can access the data in our pages without making an additional API request.
+Because we are providing the data via the `payload` property, for every route in the `nuxt.config.js`, **we can access the data in our pages without making an additional API request.**
 
 ```html
 <template>
