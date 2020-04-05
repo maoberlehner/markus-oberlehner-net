@@ -8,6 +8,8 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Naming things"]
 +++
 
+> UPDATE: I have written a follow-up article with [more thoughts on this topic](/blog/telling-a-story-with-test-code).
+
 For the most time, when writing unit tests, I favored the `it should ...` pattern for naming my tests. But time and time again, I noticed that when following this naming convention, I either had to write very long test cases or omit important information.
 
 Let's take a look at the following example where I use the `it should` pattern.
