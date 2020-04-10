@@ -14,13 +14,13 @@ In this article I'll try to answer the question in which situations Vuex is a go
 
 ## Table of Contents
 
-- [Why use Vuex?](#why-use-vuex)
+- [When use Vuex?](#when-use-vuex)
 - [Reasons for storing data in Vuex](#reasons-for-storing-data-in-vuex)
 - [Reasons not to store data in Vuex](#reasons-not-to-store-data-in-vuex)
 - [Alternatives to storing data in Vuex](#alternatives-to-storing-data-in-vuex)
 - [Decision flow chart](#decision-flow-chart)
 
-## Why use Vuex?
+## When use Vuex?
 
 Out of the box, Vue.js provides us with a very powerful way to handle state with the reactive `data` property and the possibility to pass down properties to child components.
 
