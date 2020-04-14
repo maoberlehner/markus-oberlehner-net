@@ -118,15 +118,6 @@ Thanks to the latest beta version of `vue-loader`, it is finally possible to use
 
 This makes it possible to use the [node-sass-magic-importer](https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer) to do fancy things with Sass like [selector-filtering](https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer#selector-filtering) which means importing only specific CSS selectors, [glob imports](https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer#globbing) to enable glob patterns like `**/*.scss` to import multiple `.scss` files at once or [node-filtering](https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer#node-filtering) which makes it possible to only import variables and mixins for example.
 
-<hr class="c-hr">
-<div class="c-service-info">
-  <h2>Sounds interesting?</h2>
-  <p class="c-service-info__body">
-    <a class="c-anchor" rel="nofollow" href="https://github.com/maoberlehner/node-sass-magic-importer" data-event-category="link" data-event-action="click: project" data-event-label="node-sass-magic-importer (article content)">Find node-sass-magic-importer on GitHub</a>.
-  </p>
-</div>
-<hr class="c-hr">
-
 ```bash
 npm install --save-dev node-sass-magic-importer
 ```
