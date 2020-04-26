@@ -5,7 +5,7 @@ description = "Learn how to implement cross-browser acceptance tests using TestC
 intro = "In this article we'll build acceptance tests powered by TestCafe, BrowserStack, and npm scripts. After setting up local testing we configure Travis CI to automatically run our tests after pushing new code to a Git repository..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
 In [the first part](/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/) of this two-part series about front-end testing, we explored [how to write JavaScript unit tests](/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/). In this article, we build acceptance tests powered by [TestCafe](https://github.com/DevExpress/testcafe), [BrowserStack](https://www.browserstack.com), and npm scripts. After setting up local testing, we configure Travis CI to automatically run our tests after pushing new code to a Git repository.

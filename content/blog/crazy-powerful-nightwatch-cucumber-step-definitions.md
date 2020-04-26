@@ -5,7 +5,7 @@ description = "Learn how to write powerful Cucumber.js step definitions for Nigh
 intro = "Although testing, and especially acceptance testing, seems like a rather boring topic (at least to many developers) in the past few months I acquired an interest in optimizing the test setup and come up with better ways of writing tests. Especially when using Nightwatch.js in combination with Cucumber.js, there is another challenging aspect to it: writing step definitions..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
 Although testing, and especially acceptance testing, seems like a rather boring topic (at least to many developers) in the past few months I acquired an interest in optimizing the test setup and come up with better ways of writing tests. Especially when using [Nightwatch.js](http://nightwatchjs.org/) in combination with [Cucumber.js](https://github.com/cucumber/cucumber-js), there is another challenging aspect to it: writing step definitions.

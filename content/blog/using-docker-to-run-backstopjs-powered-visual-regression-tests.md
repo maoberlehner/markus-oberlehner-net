@@ -5,7 +5,7 @@ description = "Learn more about how I updated one of my open source projects to 
 intro = "My very own CSS framework avalanche, uses BackstopJS for regression testing. Unfortunately, for the most time, this didn't work as expected on my continuous integration service of choice: Travis CI. The rendering of fonts is slightly different on the Linux image which is used on Travis CI compared to macOS which I use for development..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests", "regression tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing", "regression tests"]
 +++
 
 My very own CSS framework [avalanche](https://avalanche.oberlehner.net/), uses [BackstopJS](https://github.com/garris/BackstopJS) for regression testing. Unfortunately, for the most time, this didn't work as expected on my continuous integration service of choice: Travis CI. **The rendering of fonts is slightly different on the Linux image which is used on Travis CI compared to macOS which I use for development on my end.** This prevents visual regression tests from being useful in this configuration, because, the reference images, taken on my macOS machine, do not match the comparison images on Travis CI.

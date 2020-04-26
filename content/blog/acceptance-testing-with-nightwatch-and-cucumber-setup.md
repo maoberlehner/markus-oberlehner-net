@@ -5,7 +5,7 @@ description = "Learn how to set up Nightwatch.js in combination with Cucumber.js
 intro = "Nightwatch.js is battle-tested and has proven to be a potent tool in the utility belt when it comes to conducting end-to-end tests. The combination of Nightwatch.js and Cucumber.js enables the writing of robust automated acceptance tests in plain language (Gherkin) so that every project stakeholder can read and understand the test definitions..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
 In my previous article series about front-end testing ([Part 1](https://markus.oberlehner.net/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/) / [Part 2](https://markus.oberlehner.net/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/)), I wrote about how to run acceptance tests with TestCafe. Although I'm a huge fan of TestCafe because it's shiny and new and uses the latest JavaScript features, there are several good reasons to use established systems like Nightwatch.js and Cucumber.js.

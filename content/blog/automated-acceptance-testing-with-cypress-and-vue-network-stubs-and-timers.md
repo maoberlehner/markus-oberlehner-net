@@ -5,7 +5,7 @@ description = "Learn how to mock API requests and Timers with Cypress to efficie
 intro = "This is the second part of my article series about automated acceptance testing with Cypress. In the first part of this series we've learned how to set up Cypress. Today we're going to take a look at two advanced features of Cypress: Network Stubs and Timers..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
 This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we take a look at two advanced features of Cypress: Network Stubs and Timers.

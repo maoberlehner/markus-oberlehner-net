@@ -5,7 +5,7 @@ description = "Learn how to run Nightwatch.js tests without Selenium and how to 
 intro = "Today we will examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better. The first small speed improvement can be achieved by eliminating Selenium from the setup..."
 draft = false
 categories = ["Development"]
-tags = ["JavaScript", "TDD", "Front-End testing", "acceptance tests"]
+tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
 In my last article series on automated testing, we explored how to [set up Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/), [write smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/), and [how to run automated cross-browser acceptance tests on BrowserStack with Nightwatch.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-browserstack/). Today we examine two ways how we can speed up the testing process with Nightwatch.js – because faster is always better.
