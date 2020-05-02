@@ -1,3 +1,4 @@
+https://markus-oberlehner.netlify.app/* https://markus.oberlehner.net/:splat 301!
 https://markus-oberlehner.netlify.com/* https://markus.oberlehner.net/:splat 301!
 
 /blog/using-the-wrapper-factory-patten-for-vue-unit-testing /blog/using-the-wrapper-factory-pattern-for-vue-unit-testing 301
