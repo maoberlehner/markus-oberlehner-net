@@ -6,7 +6,7 @@ intro = "One of my top priorities is to create the fastest possible websites (th
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Preact", "Eleventy", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:EEDF47,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-22/partial-hydrated-preact"]
+images = ["/images/c_pad,b_rgb:EEDF47,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-22/partial-hydrated-preact"]
 +++
 
 Lately, a [tweet by Jake Archibald](https://twitter.com/jaffathecake/status/1230388412806520833) and a [post by Jeremy Keith](https://adactio.com/journal/16404) reinforced my feeling that **modern frameworks like Gatsby and Nuxt.js are not always the best tool for the job.** In my experience, there are better ways of how to build content-heavy websites (think marketing sites, not web applications).

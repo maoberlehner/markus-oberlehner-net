@@ -16,15 +16,15 @@ For this article, I'll assume that you have some basic knowledge about how to bu
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/final-result">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/final-result">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/final-result"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/final-result 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/final-result"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/final-result 2x"
         alt="Screenshot of the final result."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/final-result"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/final-result"
           alt="Screenshot of the final result."
         >
       </noscript>
@@ -154,15 +154,15 @@ You can use the integrated GraphQL explorer `http://localhost:8080/___explore` t
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/graphql-test-query">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/graphql-test-query">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/graphql-test-query"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/graphql-test-query 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/graphql-test-query"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/graphql-test-query 2x"
         alt="Querying data from Storyblok via GraphQL."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/graphql-test-query"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/graphql-test-query"
           alt="Querying data from Storyblok via GraphQL."
         >
       </noscript>
@@ -256,15 +256,15 @@ If you want to take a closer look at the `AppMediaBlock` and `AppTeaser` compone
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/gridsome-performance">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-11-18/gridsome-performance">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/gridsome-performance"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/gridsome-performance 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/gridsome-performance"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-11-18/gridsome-performance 2x"
         alt="Almost perfect Lighthouse score out of the box."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/gridsome-performance"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-11-18/gridsome-performance"
           alt="Almost perfect Lighthouse score out of the box."
         >
       </noscript>

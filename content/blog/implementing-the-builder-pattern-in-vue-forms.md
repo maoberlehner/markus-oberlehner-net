@@ -6,7 +6,7 @@ intro = "In this article, we'll take a look at how we can use the Builder Patter
 draft = false
 categories = ["Development"]
 tags = ["Front-End Architecture", "JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-26/builder-director-pattern-forms-vue"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-26/builder-director-pattern-forms-vue"]
 +++
 
 In [the last article](/blog/implementing-the-builder-pattern-in-vue-listings/) in this two-part series about implementing the Builder Pattern in Vue.js, we saw how we can use this technique to quickly create slightly different variants of the same component. **Another area in which it is very typical to have fairly similar components over and over again are forms in a CRUD application with many different content types.** In this article, we'll take a look at how we can use the Builder Pattern to make it very easy to create many different form components for each content type of a typical CRUD application.

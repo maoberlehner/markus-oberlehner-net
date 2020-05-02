@@ -6,7 +6,7 @@ intro = "Recently I've seen a great talk by Jacob Schatz about Phenomenal Design
 draft = false
 categories = ["Development"]
 tags = ["Front-End Architecture", "JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-19/builder-director-pattern-vue"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-19/builder-director-pattern-vue"]
 +++
 
 Recently I've seen a great talk by Jacob Schatz about [Phenomenal Design Patterns in Vue](https://www.youtube.com/watch?v=RF1bbhRw9sg). One of the patterns he mentioned in his talk was the Builder Pattern. I found his example very interesting, so it was clear to me that I had to experiment with this pattern myself.

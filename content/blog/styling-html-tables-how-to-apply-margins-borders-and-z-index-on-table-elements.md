@@ -6,7 +6,7 @@ intro = "A long time ago, there was practically no way around the HTML <table> e
 draft = false
 categories = ["Development"]
 tags = ["HTML", "CSS"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-23/final-result-twitter"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-23/final-result-twitter"]
 +++
 
 A long time ago, there was practically no way around the HTML `<table>` element for creating complex layouts on the web. Fortunately, those days are long gone. Nowadays, we only use the `<table>` element as it should be used: to display tabular data. However, only recently, I was reminded again that styling tables is not as easy as one might think.
@@ -15,15 +15,15 @@ Unfortunately, some CSS properties (e.g. `margin`, `border-radius`, and `z-index
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/final-result">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/final-result">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/final-result 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/final-result 2x"
         alt="The final result."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
           alt="The final result."
         >
       </noscript>
@@ -183,15 +183,15 @@ As you may have noticed, our current implementation doesn't look exactly like th
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/wrong-spacing">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/wrong-spacing">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/wrong-spacing"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/wrong-spacing 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/wrong-spacing"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/wrong-spacing 2x"
         alt="The spacing hack works like padding instead of margin."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/wrong-spacing"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/wrong-spacing"
           alt="The spacing hack works like padding instead of margin."
         >
       </noscript>
@@ -274,15 +274,15 @@ As you can see in the initial screenshot of the final result, a `box-shadow` has
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/shadow-behind-row">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/shadow-behind-row">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/shadow-behind-row"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/shadow-behind-row 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/shadow-behind-row"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/shadow-behind-row 2x"
         alt="The box shadow disappears behind the following row."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/shadow-behind-row"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/shadow-behind-row"
           alt="The box shadow disappears behind the following row."
         >
       </noscript>
@@ -297,15 +297,15 @@ Normally, we would use `z-index` to raise the sub header above the following row
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/final-result">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-06-23/final-result">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/final-result 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-06-23/final-result 2x"
         alt="The final result."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-06-23/final-result"
           alt="The final result."
         >
       </noscript>

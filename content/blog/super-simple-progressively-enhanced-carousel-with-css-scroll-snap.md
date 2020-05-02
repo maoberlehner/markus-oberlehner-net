@@ -6,7 +6,7 @@ intro = "In this article, we explore how to create a simple carousel with only H
 draft = false
 categories = ["Development"]
 tags = ["HTML", "CSS"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_crop,f_auto,q_auto/v1542158520/blog/2020-04-26/pure-css-and-html-carousel-twitter"]
+images = ["/images/c_crop,f_auto,q_auto/v1542158520/blog/2020-04-26/pure-css-and-html-carousel-twitter"]
 +++
 
 In this article, **we explore how to create a simple carousel with only HTML and CSS.** Recently, when I was reminded of the existence of the CSS property `scroll-snap`, I thought it should be easy to create a simple carousel component with it. After outlining a quick proof of concept in a simple HTML file, my assumption was confirmed.

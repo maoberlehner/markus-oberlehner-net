@@ -6,7 +6,7 @@ intro = "For several years now, my LEGO Mindstorms NXT has been living a life as
 draft = false
 categories = ["Development", "LEGO"]
 tags = ["JavaScript", "Node.js", "LEGO Mindstorms"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/f_auto,q_auto,w_2000/v1542158518/blog/2019-09-01/mindstorms-nxt"]
+images = ["/images/f_auto,q_auto,w_2000/v1542158518/blog/2019-09-01/mindstorms-nxt"]
 +++
 
 For several years now, my LEGO Mindstorms NXT has been living a life as a decorative item on my desk. Since I wasn't in the mood to do real work today, I was wondering if it wouldn't be possible to use JavaScript to control it. After searching the web I found out that it is actually possible to do this. So let's have some fun.

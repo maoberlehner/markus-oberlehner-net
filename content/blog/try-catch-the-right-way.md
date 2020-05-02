@@ -6,7 +6,7 @@ intro = "Because of a recent bug hunting session where it took me a couple of ho
 draft = false
 categories = ["Development"]
 tags = ["JavaScript"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158515/blog/2019-04-28/try-catch-the-right-way"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158515/blog/2019-04-28/try-catch-the-right-way"]
 +++
 
 Because of a recent bug hunting session where it took me a couple of hours to drill down several levels of npm dependencies in order to finally find a `try...catch` statement with the `catch` part being empty, I decided to write an article about this topic. Although, I have to admit, my first instinct was to be angry at the developer who did this, I figured **taking a closer look at how to properly deal with exceptions in Node.js and JavaScript** would be a better way to deal with the situation. I also realized that I myself am not entirely innocent in this respect.

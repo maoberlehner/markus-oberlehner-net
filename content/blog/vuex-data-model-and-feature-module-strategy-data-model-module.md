@@ -6,7 +6,7 @@ intro = "The data model approach builds on the idea that you have a separate Vue
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:3FED36,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-11-24/data-model-module"]
+images = ["/images/c_pad,b_rgb:3FED36,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-11-24/data-model-module"]
 +++
 
 A few days ago, I read this [excellent article about building and maintaining large Vue.js projects by Nada Rifki](https://www.telerik.com/blogs/10-good-practices-building-maintaining-large-vuejs-projects). **The one section I'm most interested in is about organizing your Vuex store.** I have experimented with both approaches she mentions in her article and also ended up mostly using data model modules.

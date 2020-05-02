@@ -6,7 +6,7 @@ intro = "In this article we experiment with implementing the IoC container patte
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-05/vue-service-container"]
+images = ["/images/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-05-05/vue-service-container"]
 +++
 
 In this article, we experiment with implementing the IoC container pattern in Vue.js. The IoC container pattern is prevalent in other languages and frameworks, but not so much in the JavaScript world – we also take a look at why that might be so. The implementation we build is inspired by [the IoC container solution in Laravel](https://laravel.com/docs/5.8/container).
@@ -17,15 +17,15 @@ To solve this problem, **in the second part of the article, we take a look at ho
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-05-05/vue-service-container">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-05-05/vue-service-container">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-05-05/vue-service-container"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-05-05/vue-service-container 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-05-05/vue-service-container"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-05-05/vue-service-container 2x"
         alt="Vue.js service container pattern schema."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-05-05/vue-service-container"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-05-05/vue-service-container"
           alt="Vue.js service container pattern schema."
         >
       </noscript>

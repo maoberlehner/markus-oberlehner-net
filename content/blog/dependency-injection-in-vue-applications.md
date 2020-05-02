@@ -6,22 +6,22 @@ intro = "I often wonder how to decouple certain parts of an application best. At
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"]
+images = ["/images/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"]
 +++
 
 I often wonder **how to decouple certain parts of an application best.** At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kinda. But also kinda not. **Soon there will be the need to access global state or retrieve data from an external resource via an API.** If we don't be careful how we tackle these challenges, there will be the time when we realize that our components, which we planned to be nicely decoupled, use many external dependencies and are anything but decoupled.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling 2x"
         alt="Tight coupling vs. loose coupling Vue.js components."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"
           alt="Tight coupling vs. loose coupling Vue.js components."
         >
       </noscript>

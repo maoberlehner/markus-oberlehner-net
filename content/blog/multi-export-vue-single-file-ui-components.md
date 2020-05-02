@@ -6,7 +6,7 @@ intro = "In today's article we'll learn how to build Vue.js Single File Componen
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-03/named-export-vue-sfc-twitter"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-03/named-export-vue-sfc-twitter"]
 +++
 
 > **Note:** This is the first part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss any new article.  

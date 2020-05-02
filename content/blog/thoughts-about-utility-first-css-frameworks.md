@@ -6,7 +6,7 @@ intro = "Many people, including me, are very skeptic about the utility-first app
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_thumb,f_auto,q_auto,w_1014,h_510/v1542158524/blog/2019-11-17/tailwind-thoughts"]
+images = ["/images/c_thumb,f_auto,q_auto,w_1014,h_510/v1542158524/blog/2019-11-17/tailwind-thoughts"]
 +++
 
 Many people, including me, are very skeptic about the utility-first approach of [Tailwind CSS](https://tailwindcss.com/) and other similar CSS frameworks like [Tachyons](https://tachyons.io/). But I think it is essential to be open-minded about new ideas and techniques, especially if there's a bunch of people who like it.

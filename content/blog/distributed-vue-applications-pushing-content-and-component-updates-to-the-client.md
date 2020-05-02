@@ -6,22 +6,22 @@ intro = "In this article, we explore how we can leverage the power of WebSockets
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-14/content-and-component-push"]
+images = ["/images/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-14/content-and-component-push"]
 +++
 
 In [the first part of this series](/blog/distributed-vue-applications-loading-components-via-http/), we’ve seen how we can build standalone Vue.js components and how we can load them via HTTP to make it possible to share them via a central distribution server. **In this article, we explore how we can leverage the power of WebSockets to push content and even component updates to lean Vue.js client applications.**
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-14/content-and-component-push">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-14/content-and-component-push">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-14/content-and-component-push"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-14/content-and-component-push 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-14/content-and-component-push"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-14/content-and-component-push 2x"
         alt="Content and Vue.js component distribution architecture."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-14/content-and-component-push"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-14/content-and-component-push"
           alt="Content and Vue.js component distribution architecture."
         >
       </noscript>

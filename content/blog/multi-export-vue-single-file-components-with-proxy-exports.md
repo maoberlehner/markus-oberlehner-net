@@ -6,7 +6,7 @@ intro = "In one of my previous articles, we examined how we can use JSX in Vue.j
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158514/blog/2019-06-30/sfc-proxy-component"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158514/blog/2019-06-30/sfc-proxy-component"]
 +++
 
 In one of my [previous articles](/blog/multi-export-vue-single-file-ui-components/), we examined how we can use JSX in Vue.js to export multiple Vue.js components from a single Single File Component (SFC) `.vue` file. Just recently I found an even easier solution to this problem.

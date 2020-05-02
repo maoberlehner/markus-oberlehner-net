@@ -12,15 +12,15 @@ In one of my recent articles, we took a closer look at [how to build websites wi
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color 2x"
         alt="Dominant color is shown as a placeholder while loading images."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
           alt="Dominant color is shown as a placeholder while loading images."
         >
       </noscript>
@@ -48,15 +48,15 @@ The `build` script generates the `dist/export.js` file. You can copy all the cod
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin 2x"
         alt="Creating a new plugin in Storyblok."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/create-new-cloudinary-asset-storyblok-plugin"
           alt="Creating a new plugin in Storyblok."
         >
       </noscript>
@@ -71,15 +71,15 @@ The `build` script generates the `dist/export.js` file. You can copy all the cod
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-plugin-editor">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-plugin-editor">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-plugin-editor"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-plugin-editor 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-plugin-editor"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-plugin-editor 2x"
         alt="Screenshot of the Storyblok UI for creating a new plugin."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-plugin-editor"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-plugin-editor"
           alt="Screenshot of the Storyblok UI for creating a new plugin."
         >
       </noscript>
@@ -96,15 +96,15 @@ After you've configured one of your fields to use the Cloudinary Assets plugin a
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options 2x"
         alt="You have to configure the field options correctly."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-options"
           alt="You have to configure the field options correctly."
         >
       </noscript>
@@ -119,15 +119,15 @@ After you've configured one of your fields to use the Cloudinary Assets plugin a
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin 2x"
         alt="The Cloudinary media library overlay in Storyblok."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/selecting-images-with-storyblok-cloudinary-assets-plugin"
           alt="The Cloudinary media library overlay in Storyblok."
         >
       </noscript>
@@ -140,15 +140,15 @@ After you've configured one of your fields to use the Cloudinary Assets plugin a
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color 2x"
         alt="A dominant color is determined automatically for each image."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/storyblok-cloudinary-assets-dominant-color"
           alt="A dominant color is determined automatically for each image."
         >
       </noscript>
@@ -188,15 +188,15 @@ I've already written a dedicated article about the topic of [lazy loading images
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color 2x"
         alt="Dominant color is shown as a placeholder while loading images."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-14/lazy-loading-with-dominant-color"
           alt="Dominant color is shown as a placeholder while loading images."
         >
       </noscript>

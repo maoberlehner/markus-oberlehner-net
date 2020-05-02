@@ -6,7 +6,7 @@ intro = "If we like it or not, modal dialogs and overlays are a recurring patter
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2019-10-20/add-to-cart-modal"]
+images = ["/images/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2019-10-20/add-to-cart-modal"]
 +++
 
 If we like it or not, modal dialogs and overlays are a recurring pattern on many websites and apps. **In this article, we take a look at how to implement popup overlays with Vue Router so that they have a URL.**

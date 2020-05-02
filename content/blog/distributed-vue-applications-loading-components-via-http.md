@@ -6,22 +6,22 @@ intro = "Imagine the following scenario: We have a central content distribution 
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-04-07/distribution-architecture-diagram"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-04-07/distribution-architecture-diagram"]
 +++
 
 Imagine the following scenario: We have **a central content distribution server** responsible for pushing new content (think of news articles, for example) to **a variety of Vue.js-based client applications.** But we not only want to push new content but also describe the shape of the content via Vue.js components. One possibility would be to share those Vue.js components as npm packages. Still, that way, every client application must be updated whenever a new version or a completely new component is released. What if we also could manage these components on the central distribution server and create **client applications that are capable of dynamically loading components** from that server?
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-07/distribution-architecture-diagram">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-04-07/distribution-architecture-diagram">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-07/distribution-architecture-diagram"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-07/distribution-architecture-diagram 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-07/distribution-architecture-diagram"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-04-07/distribution-architecture-diagram 2x"
         alt="Content and Vue.js component distribution architecture."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-07/distribution-architecture-diagram"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-04-07/distribution-architecture-diagram"
           alt="Content and Vue.js component distribution architecture."
         >
       </noscript>

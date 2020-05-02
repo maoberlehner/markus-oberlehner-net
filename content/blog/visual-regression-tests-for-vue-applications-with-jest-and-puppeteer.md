@@ -6,7 +6,7 @@ intro = "Assuming that we already have integration tests and unit tests in place
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture", "TDD"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"]
 +++
 
 > **Note:** This is the seventh part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
@@ -16,10 +16,10 @@ Assuming that we already have [integration tests](/blog/integration-testing-vue-
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff 2x"
         alt="Diff of Visual Regression."
       >
     </a>
@@ -185,15 +185,15 @@ npm run test:visual
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/new-diff-screenshot">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/new-diff-screenshot">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/new-diff-screenshot 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/new-diff-screenshot 2x"
         alt="A new reference image is automatically created."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/new-diff-screenshot"
           alt="A new reference image is automatically created."
         >
       </noscript>

@@ -6,7 +6,7 @@ intro = "Often it seems like we build the same applications again and again. And
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:b03788,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-10-13/dynamic-routes"]
+images = ["/images/c_pad,b_rgb:b03788,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-10-13/dynamic-routes"]
 +++
 
 Often it seems like we build the same applications again and again. And at least sometimes it feels like that because indeed we do. Again and again, we build the same CRUD applications with their generic list views, edit forms, and previews.

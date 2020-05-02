@@ -6,7 +6,7 @@ intro = "One of the main concerns I have when building Vuex-based applications i
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:3755B0,f_auto,q_auto,w_1014,h_510/v1542158519/blog/2019-10-06/provider-initialization"]
+images = ["/images/c_pad,b_rgb:3755B0,f_auto,q_auto,w_1014,h_510/v1542158519/blog/2019-10-06/provider-initialization"]
 +++
 
 One of the main concerns I have when building Vuex-based applications is the **tight coupling of components with the Vuex store** that seems inevitable when using Vuex. Ideally, I want to be able to switch the data layer of my application at any time without having to touch all my components that rely on data from an external resource.

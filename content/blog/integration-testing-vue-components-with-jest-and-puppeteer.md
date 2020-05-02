@@ -6,7 +6,7 @@ intro = "This is a followup article of my previous article about Integration Tes
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture", "TDD"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-03/jest-puppeteer-test-code-twitter"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-03/jest-puppeteer-test-code-twitter"]
 +++
 
 > **Note:** This is the sixth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
@@ -210,10 +210,10 @@ npm run test:integration
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-03/jest-puppeteer-result">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-03/jest-puppeteer-result">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-03/jest-puppeteer-result"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-03/jest-puppeteer-result 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-03/jest-puppeteer-result"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-03/jest-puppeteer-result 2x"
         alt="Product listing page with filters and pagination."
       >
     </a>

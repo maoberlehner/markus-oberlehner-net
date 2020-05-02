@@ -6,7 +6,7 @@ intro = "Tailwind CSS is one of the rising stars in the CSS framework world. It'
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2019-11-03/tailwind-vue"]
+images = ["/images/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2019-11-03/tailwind-vue"]
 +++
 
 Tailwind CSS is one of the rising stars in the CSS framework world. It's especially popular in the Laravel and Vue.js community. So in my next two articles, we take a closer look at this utility-first CSS framework.

@@ -1,6 +1,8 @@
 https://markus-oberlehner.netlify.app/* https://markus.oberlehner.net/:splat 301!
 https://markus-oberlehner.netlify.com/* https://markus.oberlehner.net/:splat 301!
 
+/images/* https://res.cloudinary.com/maoberlehner/image/upload/:splat 200
+
 /blog/using-the-wrapper-factory-patten-for-vue-unit-testing /blog/using-the-wrapper-factory-pattern-for-vue-unit-testing 301
 /blog/2016/12/building-avalanche-v4 /blog/building-avalanche-v4 301
 /blog/2017/01/abbreviations-suck /blog/abbreviations-suck 301

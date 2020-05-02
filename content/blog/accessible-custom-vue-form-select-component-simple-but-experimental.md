@@ -6,7 +6,7 @@ intro = "Unfortunately, accessibility (a11y) is often treated as an afterthought
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "a11y"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-21/simple-vue-custom-select-component"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-21/simple-vue-custom-select-component"]
 +++
 
 Unfortunately, accessibility (a11y) is often treated as an afterthought by many of us developers, including myself. For me, there are two reasons why I often don't treat <abbr title="accessibility">a11y</abbr> as a priority: **approaching deadlines and lack of knowledge.**

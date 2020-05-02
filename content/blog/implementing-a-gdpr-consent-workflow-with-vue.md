@@ -12,10 +12,10 @@ Love it or hate it, GDPR compliance is now a requirement if you want to collect 
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-23/vue-gdpr-modal">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-23/vue-gdpr-modal">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-23/vue-gdpr-modal"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-23/vue-gdpr-modal 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-23/vue-gdpr-modal"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-23/vue-gdpr-modal 2x"
         alt="GDPR modal form"
       >
     </a>

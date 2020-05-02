@@ -6,17 +6,17 @@ intro = "Over the last couple of years as a web developer, I've seen the same pa
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/lazy-loading-placeholders-twitter"]
+images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/lazy-loading-placeholders-twitter"]
 +++
 
 Over the last couple of years as a web developer, I've seen the same pattern over and over again: **the homepage becomes a political issue within a company** because every department wants to present itself and, of course, **every department considers itself the most important**. Usually, two things happen: a slider is added at the top of the page so that each department can get its slide at the very top, and more and more stuff is added to the homepage because: *everything is important*.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/lazy-loading-placeholders">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/lazy-loading-placeholders">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/lazy-loading-placeholders"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/lazy-loading-placeholders 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/lazy-loading-placeholders"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/lazy-loading-placeholders 2x"
         alt="Gray placeholder boxes are shown while components are lazy loaded."
       >
     </a>
@@ -144,15 +144,15 @@ If we take a look at the network tab of our browser of choice, we can see that *
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/dev-tools-network">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/dev-tools-network">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/dev-tools-network"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/dev-tools-network 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/dev-tools-network"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/dev-tools-network 2x"
         alt="Google Chrome Developer Tools with Network tab opened."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/dev-tools-network"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/dev-tools-network"
           alt="Google Chrome Developer Tools with Network tab opened."
         >
       </noscript>
@@ -167,15 +167,15 @@ In the following screenshot you can see a graphical analysis of the bundles crea
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/webpack-bundle-analyze">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-30/webpack-bundle-analyze">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/webpack-bundle-analyze"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/webpack-bundle-analyze 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/webpack-bundle-analyze"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-30/webpack-bundle-analyze 2x"
         alt="Result page of the webpack bundle analyzer."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/webpack-bundle-analyze"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-30/webpack-bundle-analyze"
           alt="Result page of the webpack bundle analyzer."
         >
       </noscript>

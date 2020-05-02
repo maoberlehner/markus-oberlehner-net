@@ -6,7 +6,7 @@ intro = "A few weeks ago I started working on a small side project where it is a
 draft = false
 categories = ["Development"]
 tags = ["Netlify", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-08-04/github-auth-flow"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-08-04/github-auth-flow"]
 +++
 
 A few weeks ago I started working on a small side project where it is a requirement to authenticate users. It was pretty clear to me that I didn't want to roll my own custom authentication flow, but I didn't want to go the cheap way and work with Netlify Identity either, because although I'm sure it's great (like any Netlify service), I want to learn new things with my side projects. So I decided to go the middle way and use the very popular [Passport Express middleware](http://www.passportjs.org/).
@@ -33,15 +33,15 @@ We use GitHub as our authentication provider of choice. To authenticate our user
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app 2x"
         alt="Setting up a new GitHub OAuth application."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/creating-a-new-github-oauth-app"
           alt="Setting up a new GitHub OAuth application."
         >
       </noscript>
@@ -56,15 +56,15 @@ Above you can see that we set the callback URL of our application to `‌/api/au
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/github-oauth-app-credentials">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/github-oauth-app-credentials">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/github-oauth-app-credentials"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/github-oauth-app-credentials 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/github-oauth-app-credentials"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/github-oauth-app-credentials 2x"
         alt="The credentials we need in our application."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/github-oauth-app-credentials"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/github-oauth-app-credentials"
           alt="The credentials we need in our application."
         >
       </noscript>
@@ -83,15 +83,15 @@ After setting up our new GitHub OAuth application we proceed configuring Netlify
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/netlify-env-variables">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-08-04/netlify-env-variables">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/netlify-env-variables"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/netlify-env-variables 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/netlify-env-variables"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-08-04/netlify-env-variables 2x"
         alt="Netlify environment variables."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/netlify-env-variables"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-08-04/netlify-env-variables"
           alt="Netlify environment variables."
         >
       </noscript>

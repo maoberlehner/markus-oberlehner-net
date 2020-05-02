@@ -6,7 +6,7 @@ intro = "Today we'll explore how we can use Docker to run our tests in a standar
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"]
 +++
 
 This is a follow-up to my last article about about [how to create Visual Regression Tests with Jest and Puppeteer for Vue.js applications](/blog/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer/). **Today we'll explore how we can use Docker to run our tests in a standardized environment in order to prevent false positives because of differences between operating systems.** For a detailed explanation of how to set up Jest and Puppeteer please take a look at [the previous article](/blog/visual-regression-tests-for-vue-applications-with-jest-and-puppeteer/).
@@ -15,15 +15,15 @@ You can [find the full code of a demo application on GitHub](https://github.com/
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff 2x"
         alt="Diff of Visual Regression."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-03-17/visual-regression-jest-puppeteer-diff"
           alt="Diff of Visual Regression."
         >
       </noscript>

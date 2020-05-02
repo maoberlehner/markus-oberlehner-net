@@ -14,10 +14,10 @@ After doing some research on which tools are available out there for creating in
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/airtable-invoice-table">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/airtable-invoice-table">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/airtable-invoice-table"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/airtable-invoice-table 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/airtable-invoice-table"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/airtable-invoice-table 2x"
         alt="A list of invoices in Airtable"
       >
     </a>
@@ -33,10 +33,10 @@ Although we're using a different tool for project management, I'm planning on us
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/airtable-invoice-generator">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/airtable-invoice-generator">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/airtable-invoice-generator"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/airtable-invoice-generator 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/airtable-invoice-generator"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/airtable-invoice-generator 2x"
         alt="Creating PDFs with Airtable"
       >
     </a>
@@ -381,10 +381,10 @@ The `fetchInvoiceData()` method gets the invoice ID from the `invoiceId` URL par
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/browser-rendered-invoice">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-10-21/browser-rendered-invoice">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/browser-rendered-invoice"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/browser-rendered-invoice 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-10-21/browser-rendered-invoice"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-10-21/browser-rendered-invoice 2x"
         alt="A basic invoice rendered with Vue.js in the browser"
       >
     </a>

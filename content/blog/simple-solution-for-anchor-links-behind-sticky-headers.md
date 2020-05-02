@@ -14,15 +14,15 @@ In this article, we take a look at one of the pieces you need to solve to make s
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header 2x"
         alt="Sticky header covering an anchor target headline."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header"
           alt="Sticky header covering an anchor target headline."
         >
       </noscript>
@@ -65,15 +65,15 @@ The `[id]` selector targets all elements that have an `id` attribute because all
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed 2x"
         alt="Anchor target with scroll-margin-top."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-04-19/anchor-link-behind-sticky-header-fixed"
           alt="Anchor target with scroll-margin-top."
         >
       </noscript>

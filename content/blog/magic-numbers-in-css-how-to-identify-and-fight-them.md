@@ -6,7 +6,7 @@ intro = "Recently I started thinking about magic numbers. Until this point I hav
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture", "Sass", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-01-27/magic-numbers-twitter"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-01-27/magic-numbers-twitter"]
 +++
 
 Recently I started thinking about magic numbers. Until this point I haven't given much thought to what the term “magic number“ actually means in the context of CSS. **I thought about it as basically all numbers in my CSS. The logical solution was to use variables for everything.**

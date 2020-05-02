@@ -6,7 +6,7 @@ intro = "Sometimes we find ourselves in a situation where the content of a parti
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_crop,f_auto,q_auto,w_1014/v1542158521/blog/2019-10-27/vue-scroll-shadow"]
+images = ["/images/c_crop,f_auto,q_auto,w_1014/v1542158521/blog/2019-10-27/vue-scroll-shadow"]
 +++
 
 Sometimes we find ourselves in a situation where the content of a particular area of our website or web app is too big to fit inside of our layout. In such cases, `overflow: auto` can come in handy. But usually, this comes with the downside that **users with browsers which do not show scrollbars by default (macOS or most mobile devices) might not be aware that it is possible to scroll.**

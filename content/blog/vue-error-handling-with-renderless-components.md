@@ -6,7 +6,7 @@ intro = "Reliable error handling is one of those things which can make the diffe
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-24/vue-error-wrapper-component"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-03-24/vue-error-wrapper-component"]
 +++
 
 Reliable error handling is one of those things which can make the difference between a good application and a great application. **In today's article we take a look at how we can build renderless components to help us capture errors in our Vue.js applications.** We build a generic error handling component which we can use to wrap other components to catch errors and notify the user that something went wrong. Furthermore, we explore how we can use our generic renderless error component to create a more specific component that displays a toast popup each time an error occurs.

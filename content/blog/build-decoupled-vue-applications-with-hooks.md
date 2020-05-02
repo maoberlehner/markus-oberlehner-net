@@ -6,7 +6,7 @@ intro = "Recently, I was wondering how best to decouple the code needed to track
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-09/with-hooks"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-09/with-hooks"]
 +++
 
 Recently, I was wondering how best to decouple the code needed to track certain form submissions (e.g. conversion tracking in Google Analytics or Matomo) from the business logic of the forms.

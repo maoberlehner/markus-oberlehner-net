@@ -6,7 +6,7 @@ intro = "Although I've already experimented a little bit with GraphQL, especiall
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify-twitter"]
+images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify-twitter"]
 +++
 
 Although I've already experimented a little bit with GraphQL, especially [how to integrate GraphQL in a Vuex powered application](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/), I never took the time to delve into the details.
@@ -15,10 +15,10 @@ In today's article we'll build a simple example application using [Apollo Compon
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify">
       <img
-        src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify"
-        srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify 2x"
+        src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify"
+        srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify 2x"
         alt="List of news articles fetched from a GraphQL endpoint."
       >
     </a>

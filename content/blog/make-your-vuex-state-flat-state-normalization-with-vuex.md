@@ -6,7 +6,7 @@ intro = "Listening to one of Full Stack Radio's latest episodes, I was very impr
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:3CB797,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-09-15/flat-vuex-state"]
+images = ["/images/c_pad,b_rgb:3CB797,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-09-15/flat-vuex-state"]
 +++
 
 Listening to one of [Full Stack Radio's latest episodes](http://www.fullstackradio.com/122), I was very impressed by the expertise of Matt Biilmann, CEO of Netlify. Adam Wathan and Matt talked a lot about how global state is handled in the Netlify web application. Although the Netlify app is built with React and Redux when he spoke of his philosophy for structuring the global state of the app, it motivated me to think a little more about this topic in the context of Vue.js and Vuex.

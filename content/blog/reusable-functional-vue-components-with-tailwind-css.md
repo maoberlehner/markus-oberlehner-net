@@ -6,7 +6,7 @@ intro = "Tailwind is a CSS framework that I never used extensively, but I always
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:ed8936,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-11-10/tailwind-vue-ui-component"]
+images = ["/images/c_pad,b_rgb:ed8936,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-11-10/tailwind-vue-ui-component"]
 +++
 
 Tailwind is a CSS framework that I never used extensively, but I always found it interesting enough to keep it on my radar and occasionally play around with it. **Today we explore how we can use Tailwind CSS with Vue.js.**

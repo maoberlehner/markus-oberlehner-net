@@ -16,15 +16,15 @@ Although those are great projects and especially the developer experience is ama
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency 2x"
         alt="High Estimated Input Latency result for Gatsby.js."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/gatsby-high-estimated-input-latency"
           alt="High Estimated Input Latency result for Gatsby.js."
         >
       </noscript>
@@ -37,15 +37,15 @@ Although those are great projects and especially the developer experience is ama
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency 2x"
         alt="High Estimated Input Latency result for VuePress."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-16/vuepress-high-estimated-input-latency"
           alt="High Estimated Input Latency result for VuePress."
         >
       </noscript>

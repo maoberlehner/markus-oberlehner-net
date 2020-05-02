@@ -6,7 +6,7 @@ intro = "When building modern, component-based client-side applications, we ofte
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "HTML"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-14/semantic-html-ui-components"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-14/semantic-html-ui-components"]
 +++
 
 When building modern, component-based client-side applications, we often tend to forget about the foundations of web development: HTML and CSS. Sometimes we act as if the rules of writing semantic HTML are somehow no longer relevant. But the opposite is true. More and more people use web applications every day, and **the reasons why we should strive to write semantic and accessible HTML are at least as valid today as they were in the past.**

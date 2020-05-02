@@ -6,7 +6,7 @@ intro = "If you are a regular reader of my blog (thanks to all of you), you may 
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:50BF54,f_auto,q_auto,w_1014,h_510/v1542158519/blog/2019-09-29/functional-component-factory"]
+images = ["/images/c_pad,b_rgb:50BF54,f_auto,q_auto,w_1014,h_510/v1542158519/blog/2019-09-29/functional-component-factory"]
 +++
 
 If you are a regular reader of my blog, you may have noticed that many of my articles are about decoupling components from dependencies. Over the past few months, I have written a few articles on this subject.

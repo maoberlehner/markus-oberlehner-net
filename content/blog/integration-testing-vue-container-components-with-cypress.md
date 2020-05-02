@@ -6,7 +6,7 @@ intro = "In my previous article about Advanced Component Composition, we wrote U
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture", "TDD"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-24/acceptance-test-code-twitter"]
+images = ["/images/c_scale,f_auto,q_auto,w_1200,h_675/v1532158513/blog/2019-02-24/acceptance-test-code-twitter"]
 +++
 
 > **Note:** This is the fifth part of my “Advanced Vue.js Application Architecture” series on how to structure and test large scale Vue.js applications. Stay tuned, there's more to come! [Follow me on Twitter](https://twitter.com/MaOberlehner) if you don't want to miss the next article.  
@@ -216,15 +216,15 @@ After running those npm scripts the Cypress UI opens like you can see in the fol
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/cypress-open-ui">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/cypress-open-ui">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/cypress-open-ui"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/cypress-open-ui 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/cypress-open-ui"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/cypress-open-ui 2x"
         alt="Cypress UI."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/cypress-open-ui"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/cypress-open-ui"
           alt="Cypress UI."
         >
       </noscript>
@@ -239,15 +239,15 @@ Click `Run all specs` to run our newly created integration test. You can see the
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/product-teaser-integration-test">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/product-teaser-integration-test">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-teaser-integration-test"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-teaser-integration-test 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-teaser-integration-test"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-teaser-integration-test 2x"
         alt="Product teaser Integration Test."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-teaser-integration-test"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-teaser-integration-test"
           alt="Product teaser Integration Test."
         >
       </noscript>
@@ -326,15 +326,15 @@ export default run(({ url = 'ProductListingContainer' }) => {
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/product-listing-integration-test">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/product-listing-integration-test">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-listing-integration-test 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/product-listing-integration-test 2x"
         alt="Product listing container Integration Test."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/product-listing-integration-test"
           alt="Product listing container Integration Test."
         >
       </noscript>
@@ -382,15 +382,15 @@ After hitting `Run all specs` you should see the following result.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/homepage-acceptance-test">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/homepage-acceptance-test">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/homepage-acceptance-test 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/homepage-acceptance-test 2x"
         alt="Homepage Acceptance Test."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/homepage-acceptance-test"
           alt="Homepage Acceptance Test."
         >
       </noscript>
@@ -430,15 +430,15 @@ describe('Products', () => {
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/products-acceptance-test">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-02-24/products-acceptance-test">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/products-acceptance-test 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2019-02-24/products-acceptance-test 2x"
         alt="Products Acceptance Test."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2019-02-24/products-acceptance-test"
           alt="Products Acceptance Test."
         >
       </noscript>

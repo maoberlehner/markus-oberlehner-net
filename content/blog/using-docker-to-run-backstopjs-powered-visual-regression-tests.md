@@ -14,15 +14,15 @@ Luckily BackstopJS now provides a way to run visual regression tests inside of a
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff 2x"
         alt="Screenshot of the different default font on Linux and macOS."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-09-02/backstopjs-os-font-rendering-diff"
           alt="Screenshot of the different default font on Linux and macOS."
         >
       </noscript>

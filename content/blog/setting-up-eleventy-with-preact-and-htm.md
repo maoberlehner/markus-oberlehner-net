@@ -6,7 +6,7 @@ intro = "One of my top priorities is to create the fastest possible websites (th
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Preact", "Eleventy", "Front-End Architecture"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:EE3A97,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-15/eleventy-preact"]
+images = ["/images/c_pad,b_rgb:EE3A97,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-15/eleventy-preact"]
 +++
 
 One of my top priorities is to create **the fastest possible websites** (think marketing sites, not web applications), but I also don't want to do without **modern tools and a component-based workflow.** I have already written [a few articles about the problems I've encountered](https://markus.oberlehner.net/blog/how-to-drastically-reduce-estimated-input-latency-and-time-to-interactive-of-ssr-vue-applications/) when using state-of-the-art tools that promise to achieve this. While there are developments in the right direction, I don't think tools like Gatsby and Nuxt.js are quite there yet when it comes to building content heavy, mostly static sites.

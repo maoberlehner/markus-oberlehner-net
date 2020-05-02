@@ -6,7 +6,7 @@ intro = "In this article, we extend the functionality of our very simple demo ap
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:EFFA27,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-12-01/feature-module"]
+images = ["/images/c_pad,b_rgb:EFFA27,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-12-01/feature-module"]
 +++
 
 This is the second part of a series about the separation of Vuex Store modules into **data model modules and feature modules.** If you have not done so, you should [read the first article before proceeding](/blog/vuex-data-model-and-feature-module-strategy-data-model-module/).

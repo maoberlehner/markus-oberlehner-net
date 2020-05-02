@@ -6,7 +6,7 @@ intro = "In today's article, we take a look at how we can use the Google Maps AP
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/vue-google-map-twitter-card"]
+images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/vue-google-map-twitter-card"]
 +++
 
 In today's article, we take a look at how we can use the Google Maps API in combination with Vue.js. **We build a simple Vue.js component, which renders a Google Map.** Furthermore, we learn how to **listen for click events on markers and how we can cluster multiple markers in close distance to each other.**
@@ -140,15 +140,15 @@ body {
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/empty-fullscreen-map">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/empty-fullscreen-map">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/empty-fullscreen-map"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/empty-fullscreen-map 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/empty-fullscreen-map"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/empty-fullscreen-map 2x"
         alt="Empty fullscreen Google Map."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/empty-fullscreen-map"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/empty-fullscreen-map"
           alt="Empty fullscreen Google Map."
         >
       </noscript>
@@ -208,15 +208,15 @@ In the two code snippets above you can see that we've added an array of location
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/crowded-fullscreen-map">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/crowded-fullscreen-map">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/crowded-fullscreen-map"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/crowded-fullscreen-map 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/crowded-fullscreen-map"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/crowded-fullscreen-map 2x"
         alt="Fullscreen Google Map with a lot of markers in the Vienna area."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/crowded-fullscreen-map"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/crowded-fullscreen-map"
           alt="Fullscreen Google Map with a lot of markers in the Vienna area."
         >
       </noscript>
@@ -261,15 +261,15 @@ After installing the `@google/markerclusterer` package, we can import it into ou
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/map-with-clustered-markers">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2018-12-23/map-with-clustered-markers">
       <img
-        data-src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/map-with-clustered-markers"
-        data-srcset="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/map-with-clustered-markers 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/map-with-clustered-markers"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2018-12-23/map-with-clustered-markers 2x"
         alt="Fullscreen Google Map with clustered markers."
       >
       <noscript>
         <img
-          src="https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/map-with-clustered-markers"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2018-12-23/map-with-clustered-markers"
           alt="Fullscreen Google Map with clustered markers."
         >
       </noscript>

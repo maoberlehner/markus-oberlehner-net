@@ -6,7 +6,7 @@ intro = "Although GraphQL is pretty cool and powerful, I also like the simplicit
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:FA2727,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-12-29/reference-resolver"]
+images = ["/images/c_pad,b_rgb:FA2727,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-12-29/reference-resolver"]
 +++
 
 Although GraphQL is pretty cool and powerful, **I also like the simplicity of good old REST API endpoints.** Also, we often can't use GraphQL for everything because there is no GraphQL endpoint available.

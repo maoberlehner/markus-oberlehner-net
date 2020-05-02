@@ -6,7 +6,7 @@ intro = "The modern frontend stack is all about reusable components. The renderl
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_scale,f_auto,q_auto/v1532158514/blog/2019-01-06/renderless-form-recaptcha-vue-component-twitter"]
+images = ["/images/c_scale,f_auto,q_auto/v1532158514/blog/2019-01-06/renderless-form-recaptcha-vue-component-twitter"]
 +++
 
 The modern frontend stack is all about reusable components. The *renderless component* pattern is one of the most elegant ways of how to build highly reusable components. Today we'll build a renderless component for handling form submission, loading and error logic in a generic and reusable way. Additionally we'll take a look at how we can use the new reCAPTCHA v3 to secure our form from spam submissions.

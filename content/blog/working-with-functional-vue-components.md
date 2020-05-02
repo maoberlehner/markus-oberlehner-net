@@ -6,7 +6,7 @@ intro = "On my journey to find ways to improve the rendering performance of larg
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-07/transparent-functional-component"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-07/transparent-functional-component"]
 +++
 
 On my journey to find ways to improve the rendering performance of large scale Vue.js applications, I stumble upon functional components as a possible solution from time to time. But so far, I've always found one or two reasons why I can't use them in my application.

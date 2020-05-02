@@ -6,7 +6,7 @@ intro = "Just recently, I discovered a rather new feature in Vue.js: Vue.observa
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-02/vue-observable-wrapper"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-06-02/vue-observable-wrapper"]
 +++
 
 Just recently, I discovered a rather new feature in Vue.js (since 2.6.0+): [Vue.observable()](https://vuejs.org/v2/api/#Vue-observable). `Vue.observable()` is used internally in Vue.js to make the object returned by the `data()` function of a component reactive.

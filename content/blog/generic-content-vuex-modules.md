@@ -6,7 +6,7 @@ intro = "Today we look at how we can design a system for quickly creating generi
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:b5ad3b,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-09-22/generic-content-vuex"]
+images = ["/images/c_pad,b_rgb:b5ad3b,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2019-09-22/generic-content-vuex"]
 +++
 
 In my [last article, we examined the advantages of a flat Vuex state tree](/blog/make-your-vuex-state-flat-state-normalization-with-vuex/). Today we look at how we can design a system for quickly creating generic Vuex modules for **typical CRUD content types.**

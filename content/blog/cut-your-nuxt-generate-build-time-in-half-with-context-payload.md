@@ -6,7 +6,7 @@ intro = "One of my freelancing projects is a Nuxt.js project powered by the head
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_rgb:23C9F5,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-29/nuxt-generate-payload"]
+images = ["/images/c_pad,b_rgb:23C9F5,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-03-29/nuxt-generate-payload"]
 +++
 
 One of my freelancing projects is a Nuxt.js project powered by the wonderful [headless CMS Storyblok](https://www.storyblok.com/). Because performance is critical, I decided to use Nuxt.js in generate mode outputs static HTML files for each page at build time. But because Nuxt.js needs to generate 1.000+ pages, the build time got long (over 10 minutes).

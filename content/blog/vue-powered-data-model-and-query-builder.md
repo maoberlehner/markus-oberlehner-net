@@ -6,7 +6,7 @@ intro = "I love the concept of reactive computed properties in Vue.js. So much s
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-25/reactive-data-models-query-builder"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-25/reactive-data-models-query-builder"]
 +++
 
 I love the concept of reactive computed properties in Vue.js. So much so that I miss them in situations where I don't have them available. In this article, we explore how to create reactive data models with all the features of regular Vue.js components such as computed properties. Our goal is to fetch data from an API and store it in a reactive data model.

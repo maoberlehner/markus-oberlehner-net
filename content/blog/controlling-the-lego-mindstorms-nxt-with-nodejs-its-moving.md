@@ -6,7 +6,7 @@ intro = "In the first part of this series we made sure that we can connect to ou
 draft = false
 categories = ["Development", "LEGO"]
 tags = ["JavaScript", "Node.js", "LEGO Mindstorms"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/f_auto,q_auto,w_2000/v1542158518/blog/2019-09-01/mindstorms-nxt"]
+images = ["/images/f_auto,q_auto,w_2000/v1542158518/blog/2019-09-01/mindstorms-nxt"]
 +++
 
 In [the first part of this series](/blog/controlling-the-lego-mindstorms-nxt-with-nodejs-its-alive/) we made sure that we can connect to our NXT and send commands via Node.js. Today, we're exploring how we can control the motors of our LEGO Mindstorms robot to make it move.

@@ -6,7 +6,7 @@ intro = "Today, we will follow the W3C guidelines, on how to build a collapsible
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "a11y"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-28/a11y-custom-vue-select-component"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158516/blog/2019-07-28/a11y-custom-vue-select-component"]
 +++
 
 This is the second article in a two-part series on how to build accessible, custom form select components with Vue.js. You can read about the first technique, which is more of a concept, [in my previous article](/blog/accessible-custom-vue-form-select-component-simple-but-experimental/).

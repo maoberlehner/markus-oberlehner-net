@@ -6,7 +6,7 @@ intro = "In my opinion, the best way to inject dependencies is via factory funct
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["https://res.cloudinary.com/maoberlehner/image/upload/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-11/vue-component-factory"]
+images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158518/blog/2019-08-11/vue-component-factory"]
 +++
 
 In my opinion, the best way to inject dependencies is via factory functions that take the dependencies as parameters. Unfortunately, it is not possible to export factory functions from Vue.js Single File Components. According to [the specification](https://vue-loader.vuejs.org/spec.html), the default export should be a Vue.js component options object.
