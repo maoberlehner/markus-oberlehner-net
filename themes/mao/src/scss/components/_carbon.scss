@@ -1,9 +1,9 @@
 $c-content-broad-gap: 6rem;
 $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-broad-gap + 2;
 
-#carbonads {
-  display: flex;
-  max-width: 300px;
+.carbon-ad-container {
+  min-height: 125px;
+  width: 300px;
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
 
@@ -12,6 +12,10 @@ $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-br
     margin-right: -($c-content-broad-gap / 2);
     float: right;
   }
+}
+
+#carbonads {
+  display: flex;
 }
 
 #carbonads a {
