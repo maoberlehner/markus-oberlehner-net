@@ -10,9 +10,9 @@ tags = ["Naming things"]
 
 To become a capable programmer, it is crucial to have systems that free you of the mental burden of thinking about all the little things while programming so you can focus on the big picture.
 
-I often find myself thinking long and hard about how to name a particular variable or function. This is because I know how important it is to choose proper names so that other programmers and your future self can easily understand your code. But mostly, I think about unimportant details like how to name a boolean variable versus an array.
+I often find myself thinking long and hard about how to name a particular variable or function. This is because **I know how important it is to choose proper names so that other programmers and your future self can easily understand your code.** But mostly, I think about **unimportant details like how to name a boolean variable versus an array.**
 
-In this article, we try to define a system that relieves us from thinking about unimportant details.
+In this article, we try to **define a system that relieves us from thinking about unimportant details.**
 
 ## Naming Arrays
 
@@ -34,11 +34,11 @@ const users = {
 };
 ```
 
-This makes it very convenient in certain situations to quickly obtain the user object for a particular `id`. My rule of thumb is to use arrays only when order is important.
+This makes it very convenient in certain situations to quickly obtain the user object for a particular `id`. **My rule of thumb is to use arrays only when order is important.**
 
 But there is a problem with this: When you see the variable `users`, you expect it to be iterable. I tried a lot to solve this problem, for example, with the suffix `byId`: `usersById`. But I wouldn't say I like that very much.
 
-My latest approach is not to suffix the regular case but the exception. Whenever I declare an array, I use the `list` suffix: `usersList`.
+**My latest approach is not to suffix the regular case but the exception.** Whenever I declare an array, I use the `list` suffix: `usersList`.
 
 ```js
 const users = { /* ... */ };
@@ -84,7 +84,7 @@ In the example above, `mustShowNotification` is not ideal, because the code migh
 +if (mustOpenNewsletterModal) openNewsletterModal();
 ```
 
-In general, we should name variables according to the data or information they store, not what they are supposed to trigger. This is because the action triggered can change at any time.
+In general, **we should name variables according to the data or information they store, not what they are supposed to trigger.** This is because the action triggered can change at any time.
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">
