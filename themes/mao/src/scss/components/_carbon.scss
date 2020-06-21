@@ -1,7 +1,8 @@
 $c-content-broad-gap: 6rem;
 $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-broad-gap + 2;
 
-.carbon-ad-container {
+.monetizing-container {
+  position: relative;
   min-height: 125px;
   width: 300px;
   background-color: hsl(0, 0%, 98%);
@@ -14,8 +15,23 @@ $c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-br
   }
 }
 
+.monetizing-fallback {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.75em;
+}
+
 #carbonads {
   display: flex;
+  position: relative;
+  background-color: #fff;
 }
 
 #carbonads a {
