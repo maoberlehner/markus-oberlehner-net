@@ -10,7 +10,7 @@ tags = ["Git"]
 
 When people think of programmers, they think of pale nerds sitting in front of their computers writing code all day long. As we all know, this couldn't be further from the truth. In reality, we're pale nerds, who spend most of our time sitting in front of our computers **reading** (and trying to make sense of) code, written by **other people** (or our past selves).
 
-Since what most of us do most of the time is read code and try to understand it, it is all the more important to write code that is easy to understand. But even if we're doing a great job writing simple code, what often is missing, is an explanation of **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story **why** it was written in the first place all by itself.
+Since what most of us do most of the time is read code and try to understand it, it is even more important to write code that is easy to understand. But even if we're doing a great job writing simple code, what often is missing, is an explanation of **why** certain parts of the code were added or changed. Even the most elegant code, although easily understood, can't tell the full story of **why** we wrote it in the first place.
 
 This is where Git commit messages come into play. A carefully crafted commit message can express additional information about your code, which you can't provide directly in the code itself.
 
