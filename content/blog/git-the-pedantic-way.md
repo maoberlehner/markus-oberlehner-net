@@ -20,9 +20,9 @@ What often happens to me during bug fixing, while reading code mostly written by
 
 There is nothing more frustrating than running `git blame`, to find the commit which changed the part of the code, and all it says is something like `Refactoring`.
 
-What I now have to do, is to go to the person who refactored this part of the code and who crafted this wonderful descriptive commit message, and kill him or her. In an ideal world I would be allowed to do so, but because of laws and the basic rules of humanity, what I really have to do is to talk to the person, to find out why the code was changed in the first place.
+I now have to go to the person who refactored this part of the code and who crafted this wonderful descriptive commit message to kill him or her. In an ideal world, I would be allowed to do so, but because of laws and the basic rules of humanity, I have to talk to the person instead to find out why they changed the code in the first place.
 
-Depending on your personality, talking to other people might not be the worst thing on the planet, but if we have to *read a lot of code* and then we also have to *talk a lot about code*, there is less and less time to actually *write code*, which is what we're actually paid for to do.
+Depending on your personality, talking to other people might not be the worst thing on the planet. Still, if we have to *read a lot of code* and then we also have to *talk a lot about code*, there is less time to *write code*, which is what we're paid for to do.
 
 Saving one minute by not writing a descriptive commit message, oftentimes results in hours lost because dozens of programmers who encounter a certain part of confusing code in the future, have to find out what it does and why, by either talking to the person who wrote the code, or if the person is not working for the company anymore, by figuring it out themselves.
 
