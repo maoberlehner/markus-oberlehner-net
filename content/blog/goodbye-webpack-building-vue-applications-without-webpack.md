@@ -12,9 +12,9 @@ First of all, let me say this: webpack is excellent! Developing JavaScript appli
 
 In the good old times, *in which I had an onion tied to my belt which was the style at the time*, creating a JavaScript application was straightforward: create a `.html` file, add a `<script>` tag, write some JavaScript, and open the file in the browser.
 
-But is it really necessary to use webpack to build modern JavaScript applications? Is it really necessary to use webpack to build Vue.js powered applications? The answer is no. Thanks to native browser support for **JavaScript modules**, it's easier than ever to build powerful JavaScript applications without using any build tools at all.
+But is it really necessary to use webpack to build modern JavaScript applications? Is it really necessary to use webpack to build Vue.js powered applications? The answer is no. Thanks to native browser support for **JavaScript modules**, it's easier than ever to build powerful JavaScript applications without using any build tools.
 
-The goal of today's article is to set up a Vue.js project without relying on a complicated build process and a lot of third-party dependencies. At the same time, we don't want to do without powerful functionality like code splitting, and the development process should be as comfortable as possible.
+Today's article aims to set up a Vue.js project without relying on a complicated build process and a lot of third-party dependencies. At the same time, we don't want to do without powerful functionality like code splitting, and the development process should be as comfortable as possible.
 
 If you want to check out a live example of the code you'll see in this article, [you can take a look at it on Netlify](https://goodbye-webpack-building-vue-applications-without-webpack.netlify.com/), or you can [view the full code on GitHub](https://github.com/maoberlehner/goodbye-webpack-building-vue-applications-without-webpack).
 
