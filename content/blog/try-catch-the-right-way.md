@@ -171,7 +171,7 @@ Above you can see the best solution I could find in order to deal with such situ
 
 ## Wrapping it up
 
-If there is only one thing you've learned from this article, I hope it is that you never should have an empty `catch` block in your code. Yes, in some situations it might make sense to catch **certain** errors, but I can't think of a situation where you definitely want to catch **all*‌* errors no matter what.
+If there is only one thing you've learned from this article, I hope it is that you never should have an empty `catch` block in your code. Yes, in some situations it might make sense to catch **certain** errors, but I can't think of a situation where you definitely want to catch **all** errors no matter what.
 
 ## References
 
