@@ -80,8 +80,8 @@ try {
   if (error.message.match(/Network Error/)) {
     Sentry.withScope((scope) => {
       scope.setLevel(Sentry.Severity.Info);
-	    Sentry.captureException(error);
-	  });
+      Sentry.captureException(error);
+    });
   } else {
     throw error;
   }
@@ -116,7 +116,7 @@ try {
   // Naive implementation.
   Sentry.withScope((scope) => {
     scope.setLevel(Sentry.Severity.Warning);
-	  Sentry.captureException(error);
+    Sentry.captureException(error);
   });
   // Render an error in the UI so the
   // user knows somethign went wrong.
