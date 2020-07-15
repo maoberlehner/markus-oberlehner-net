@@ -35,7 +35,7 @@ You should only schedule as much work as you can do in half a day; **allow yours
 
 **The most demotivating thing for me is when it's not clear what I have to do.** That's not to be confused with having nothing to do; quite the opposite. It's a *not seeing the wood for the trees* kind of situation.
 
-[SMART](https://en.wikipedia.org/wiki/SMART_criteria) goals are: specific, measurable, achievable, relevant, and time-bound. The most critical factors to counteract are **specific, achievable,** and **time-bound.** If what you have to do is vague, far too much, and open-ended, you have the perfect mix for procrastination.
+[SMART](https://en.wikipedia.org/wiki/SMART_criteria) goals are: specific, measurable, achievable, relevant, and time-bound. The most critical factors to counteract procrastination are **specific, achievable,** and **time-bound.** If what you have to do is vague, far too much, and open-ended, you have the perfect mix for procrastination.
 
 **Make sure to first make your tasks SMART before starting to work on them.** This is not always easy to do, and very often, you'll find you can't do it all by yourself. Get help if you don't have the right skill set or knowledge to break down a particular task into specific and achievable pieces.
 
@@ -43,7 +43,7 @@ Although I know how I should deal with this situation on a theoretical level, th
 
 ## Do something useful
 
-Doing something useful when you should be doing something else is a double-edged sword: On the one hand, cleaning up your desk when you should be working on your master's thesis is a prime example of procrastination. But on the other hand, having a clean desk is still much better than spending the last half hour, mindlessly browsing the web.
+Doing something useful when you should be doing something else is a double-edged sword: On the one hand, cleaning up your desk when you should be working on your master's thesis is a prime example of procrastination. But on the other hand, having a clean desk is still much better than spending half an hour, mindlessly browsing the web.
 
 **The most important thing is to stay away from activities that give you a quick dopamine rush.** It's not ideal when you clean your apartment, instead of doing what you should be doing, but it's a lot better than checking social media.
 
