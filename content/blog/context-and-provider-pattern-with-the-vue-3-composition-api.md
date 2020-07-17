@@ -26,7 +26,7 @@ import {
   toRefs,
 } from 'vue';
 
-// We use symbols as a unique identifiers.
+// We use symbols as unique identifiers.
 export const UserSettingsStateSymbol = Symbol('User settings state provider identifier');
 export const UserSettingsUpdateSymbol = Symbol('User settings update provider identifier');
 
