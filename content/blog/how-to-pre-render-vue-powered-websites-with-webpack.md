@@ -1,6 +1,6 @@
 +++
 date = "2018-07-01T06:18:18+02:00"
-title = "How to Pre-render Vue.js Powered Websites With webpack"
+title = "How to Pre-render Vue.js Powered Websites with webpack"
 description = "Learn how to pre-render Vue.js powered websites with webpack for better performance and SEO."
 intro = "In my recent article, we built a landing page type website powered by a headless CMS and Vue.js. We've seen how quickly we can build a simple site with these two technologies. However there is still a major problem with the result of our work: the loading performance is pretty terrible..."
 draft = false
