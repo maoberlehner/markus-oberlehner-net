@@ -2,13 +2,13 @@
 date = "2018-06-17T06:47:47+02:00"
 title = "Layouts with Vue.js - How to Create Dynamic Layout Components"
 description = "Learn how to build a performant Vue.js layout system with layouts that do not re-render on every route change and how to build flexible layout components with Vue.js."
-intro = "Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations in which you need different page layouts for certain parts of your app...."
+intro = "Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations where you need different page layouts for certain parts of your app...."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations in which you need different page layouts for certain parts of your app.
+Vue.js is flexible enough to serve as a tool for either progressively enhancing certain parts of traditional server-side rendered applications or powering large scale single-page applications, and everything in between. If you build complex single-page applications, you'll most likely encounter situations where you need different page layouts for certain parts of your app.
 
 Today we'll take a look at multiple ways of how to handle layouts in Vue.js, and we'll explore the potential up and downsides of the different approaches.
 
@@ -33,13 +33,13 @@ Nowadays, I assume that most of you use the awesome [Vue CLI](https://github.com
 </template>
 ```
 
-**This is basically the default approach for structuring a basic layout for a Vue Router powered Vue.js application.** It works fine as long as you don't need different layouts throughout your application. For example, you may have a checkout flow where you don't want to display a navigation. Or you might have product pages with sidebars and other pages without sidebars and so on.
+**This is the default approach for structuring a basic layout for a Vue Router powered Vue.js application.** It works fine as long as you don't need different layouts throughout your application. For example, you may have a checkout flow where you don't want to display a navigation. Or you might have product pages with sidebars and other pages without sidebars and so on.
 
-So let's take a look at how we can enhance the default approach, provided to us by the Vue CLI, to handle cases in which we have to display different layouts.
+Let's take a look at how we can enhance the default approach, provided to us by the Vue CLI, to handle cases where we have to display different layouts.
 
 ## Conditional rendering
 
-The most basic and straightforward approach would be to conditionally render certain parts of your layout. So you might add `v-if` directives to certain parts of your layout and toggle the visibility as you wish.
+The most basic and straightforward approach would be to render certain parts of your layout conditionally. So you might add `v-if` directives to certain parts of your layout and toggle the visibility as you wish.
 
 ```diff
  <template>
