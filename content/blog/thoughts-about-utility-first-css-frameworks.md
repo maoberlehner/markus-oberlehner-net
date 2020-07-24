@@ -2,18 +2,18 @@
 date = "2019-11-17T05:58:58+02:00"
 title = "Thoughts about Utility-First CSS Frameworks"
 description = "Learn more about my opinions about utility-first CSS frameworks like Tailwind CSS."
-intro = "Many people, including me, are very skeptic about the utility-first approach of Tailwind CSS and other similar CSS frameworks like Tachyons. But I think it is essential to be open-minded about new ideas and techniques, especially if there's a bunch of people who like it..."
+intro = "Many people, including me, are very skeptical about the utility-first approach of Tailwind CSS and other similar CSS frameworks like Tachyons. But I think it is essential to be open-minded about new ideas and techniques, especially if many people like it..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture"]
 images = ["/images/c_thumb,f_auto,q_auto,w_1014,h_510/v1542158524/blog/2019-11-17/tailwind-thoughts"]
 +++
 
-Many people, including me, are very skeptic about the utility-first approach of [Tailwind CSS](https://tailwindcss.com/) and other similar CSS frameworks like [Tachyons](https://tachyons.io/). But I think it is essential to be open-minded about new ideas and techniques, especially if there's a bunch of people who like it.
+Many people, including me, are very skeptical about the utility-first approach of [Tailwind CSS](https://tailwindcss.com/) and other similar CSS frameworks like [Tachyons](https://tachyons.io/). But I think it is essential to be open-minded about new ideas and techniques, especially if many people like it.
 
 In the following paragraphs, I write about my thoughts on this approach. **But keep in mind that I only dipped a toe in the water. So take everything I write with a grain of salt.**
 
-Some of my opinions are rather critical but remember that every approach has disadvantages. If I wrote a similar article about BEM, I would also point out some of the problems with it. Moreover, **I ask you to try out Tailwind and form your own opinion.**
+Some of my opinions are rather critical, but remember that every approach has disadvantages. If I wrote a similar article about BEM, I would also point out some of its problems. Moreover, **I ask you to try out Tailwind and form your own opinion.**
 
 ## What I like
 
