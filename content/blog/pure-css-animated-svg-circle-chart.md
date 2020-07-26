@@ -2,17 +2,17 @@
 date = "2017-06-15T16:36:01+02:00"
 title = "Creating a Pure CSS Animated SVG Circle Chart"
 description = "Creating an animated SVG pie chart with pure CSS. A detailed explanation of how to build an SVG doughnut chart with just CSS animations and no JavaScript."
-intro = "Recently at work we faced the task of creating an animated SVG circle chart. At first it didn't seem like a big challenge, but after playing around with a JavaScript-based solution provided to us, and aiming to find a solution that would work without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle..."
+intro = "At my workplace, we recently faced the task of creating an animated SVG pie/doughnut/circle chart. At first, it didn't seem like a big challenge, but after playing around with a JavaScript-based solution provided to us, and aiming to find a solution that would work without JavaScript, my colleagues and I, concluded that a little JavaScript is necessary to animate the fill state of the circle..."
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture"]
 +++
 
-Recently at work we faced the task of creating an animated SVG pie / doughnut / circle chart. At first it didn't seem like a big challenge, but after playing around with a JavaScript-based solution provided to us, and aiming to find a solution that would work without JavaScript, my colleagues and I came to the conclusion that a little JavaScript is necessary to animate the fill state of the circle.
+At my workplace, we recently faced the task of creating an animated SVG pie/doughnut/circle chart. At first, it didn't seem like a big challenge, but after playing around with a JavaScript-based solution provided to us, and aiming to find a solution that would work without JavaScript, my colleagues and I, concluded that a little JavaScript is necessary to animate the fill state of the circle.
 
-Although I usually love JavaScript and most of what I do at work and in my spare time has something to do with JavaScript, there are situations where I also hate JavaScript – sometimes. **Every time I think something should be done with pure HTML or SVG and CSS and it seems to be impossible to do it without JavaScript, I hate JavaScript**.
+Although I usually love JavaScript and most of what I do at work, and in my spare time has something to do with JavaScript, there are situations where I also hate JavaScript – sometimes. **Every time I think something should be done with pure HTML or SVG and CSS, and it seems impossible to do it without JavaScript, I hate JavaScript**.
 
-So after not really solving the problem of an animated circle chart in a satisfying way, I couldn't sleep last night. It was somehow clear to me that **this has to be solved using plain CSS and SVG**. And I really had the feeling that it could be done using only those two techniques. I was lying in bed thinking about possible solutions until I had the first enlightenment how the problem could be at least simplified. I walked into my living room to grab my laptop and started hacking.
+After not solving the problem of an animated circle chart satisfyingly, I couldn't sleep last night. It was somehow clear to me that **this has to be solved using plain CSS and SVG**. And I had the feeling that it could be done using only those two techniques. I was lying in bed thinking about possible solutions until I first realized how the problem could be at least simplified. I walked into my living room to grab my laptop and started hacking.
 
 ## Part 1: Math is hard
 
