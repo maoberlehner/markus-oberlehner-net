@@ -2,14 +2,14 @@
 date = "2019-04-21T06:23:23+02:00"
 title = "Dependency Injection in Vue.js Applications"
 description = "Learn which dependency injection variants there are in Vue.js and how to decide which one to use for a particular use case."
-intro = "I often wonder how to decouple certain parts of an application best. At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kinda. But also kinda not..."
+intro = "I often wonder how to decouple certain parts of an application best. At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kind of. But also kind of not..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Front-End Architecture"]
 images = ["/images/c_pad,b_white,f_auto,q_auto,w_1014,h_510/v1532158513/blog/2019-04-21/tight-coupling-vs-loose-coupling"]
 +++
 
-I often wonder **how to decouple certain parts of an application best.** At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kinda. But also kinda not. **Soon there will be the need to access global state or retrieve data from an external resource via an API.** If we don't be careful how we tackle these challenges, there will be the time when we realize that our components, which we planned to be nicely decoupled, use many external dependencies and are anything but decoupled.
+I often wonder **how to decouple certain parts of an application best.** At first, this seems pretty straightforward in the context of Vue.js applications. You have components and components pass down properties and emit events; that's it. Right? Yeah, kind of. But also kind of not. **Soon there will be the need to access global state or retrieve data from an external resource via an API.** If we don't be careful how we tackle these challenges, there will be the time when we realize that our components, which we planned to be nicely decoupled, use many external dependencies and are anything but decoupled.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -46,7 +46,7 @@ In this article, **we take a look at what patterns exist in Vue.js applications 
 
 ## Importing modules
 
-Let's start with the first method of how we can “inject” functionality into a Vue.js component: module imports. Although one might argue that this is the complete opposite of dependency injection, I go with the literal sense of the words. Even if you don't agree with me calling this a form of dependency injection, I think it's still worth taking a closer look at what the pros and cons of this practice are.
+Let's start with the first method of “injecting” functionality into a Vue.js component: module imports. Although one might argue that this is the complete opposite of dependency injection, I use the literal sense of the words. Even if you don't agree with me calling this a form of dependency injection, I think it's still worth taking a closer look at the pros and cons of this practice.
 
 ```html
 <!-- components/LoginButton.vue -->
