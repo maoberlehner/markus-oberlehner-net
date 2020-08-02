@@ -1,7 +1,7 @@
 +++
 date = "2020-08-02T08:20:20+02:00"
 title = "Tight Coupling vs. Loose Coupling in Vue.js"
-description = "Learn how to differentiate between situations where you should loose coupling or tight coupling in your Vue.js applications."
+description = "Learn how to differentiate between situations where you should use loose coupling or tight coupling in your Vue.js applications."
 intro = "When talking about loose coupling and tight coupling, often, the impression arises that tight coupling is something we always have to avoid. But this is almost impossible. What's essential is that we use loose coupling when bridging the gap between layers of our application..."
 draft = false
 categories = ["Development"]
