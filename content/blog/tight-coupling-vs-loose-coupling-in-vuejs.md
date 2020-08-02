@@ -78,7 +78,7 @@ But sometimes, as we will see in the next chapter, the benefits of loose couplin
 
 ## When loose coupling is preferred
 
-Let's take a look at the following example where we change the way our `ListContent` gets its contents a little bit.
+Let's take a look at the following example where we slightly change the way our `ListContent` gets its contents.
 
 ```html
 <template>
