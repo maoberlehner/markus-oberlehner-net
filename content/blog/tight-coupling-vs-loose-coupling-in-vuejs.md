@@ -74,7 +74,7 @@ mount(ListContent, {
 
 As we can see above, if we want to test our component, we now have to manually mock `$sortAlphabetically()`. Of course, we could write a helper method for mounting components with all the plugins we also have in the production app. But this makes our test code more complicated, slower, and harder to maintain. And this for virtually no benefit other than to not have to import `sortAlphabetically()` in our component.
 
-But sometimes, as we will see in the next chapter, the benefits of loose coupling are much more significant, so it's worth to accept the hassle of having to use mocking in our tests. Or we have to mock the dependency anyway (too avoid sending requests to a real API, for example).
+But sometimes, as we will see in the next chapter, the benefits of loose coupling are much more significant, so it's worth to accept the hassle of having to use mocking in our tests. Or we have to mock the dependency anyway (to avoid sending requests to a real API, for example).
 
 ## When loose coupling is preferred
 
