@@ -1,6 +1,6 @@
 +++
 date = "2020-05-24T09:05:05+02:00"
-title = "Context and Provider Pattern with the Vue 3 Composition API"
+title = "React Context and Provider Pattern with the Vue 3 Composition API"
 description = "Learn how to use the Vue 3 Composition API to replicate the React Context and Provider API."
 intro = "The React Context API provides a way to share properties that are required by many components (e.g., user settings, UI theme) without having to pass a prop through every level of the tree (aka prop drilling)..."
 draft = false
