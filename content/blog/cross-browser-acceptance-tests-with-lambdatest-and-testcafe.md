@@ -10,7 +10,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 
 > This is a sponsored article. Thank you, LambdaTest, for supporting me and this blog!
 
-In this article, we will take a closer look at how we can run automated cross-browser acceptance tests in real browsers on [LambdaTest](http://www.lambdatest.com?fp_ref=markus88) using TestCafe as our test framework. LambdaTest is a modern and fast browser testing service with powerful features when it comes to automated cross-browser testing.
+In this article, we will take a closer look at how we can run automated cross-browser acceptance tests in real browsers on [LambdaTest](http://www.lambdatest.com?fp_ref=markus88) using TestCafe as our test framework. LambdaTest is a modern and fast browser testing service with powerful features when it comes to automated cross-browser testing. It provides advanced features like [Selenium Grid](https://www.lambdatest.com/selenium-automation?fp_ref=markus88) to automate Selenium testing in the cloud.
 
 You can check out the code for the final result of this article [on GitHub](https://github.com/maoberlehner/lambda-test-test-cafe).
 
@@ -100,7 +100,7 @@ If you don't have [created an account](http://www.lambdatest.com?fp_ref=markus88
 npm install --save-dev testcafe-browser-provider-lambdatest
 ```
 
-Next, we need to get our LambdaTest authentication credentials. Go to the [`Automation`](https://automation.lambdatest.com/) tab in the navigation and click on the key icon top right to find your credentials. Those credentials are secret! Make sure never to commit those credentials to a public Git repository!
+Next, we need to get our LambdaTest authentication credentials. Go to the [`LambdaTest Automation Dashboard`](https://automation.lambdatest.com?fp_ref=markus88) by clicking on the `Automation` tab in the navigation. Then click on the key icon top right to find your credentials. Those credentials are secret! Make sure never to commit those credentials to a public Git repository!
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -123,7 +123,7 @@ Next, we need to get our LambdaTest authentication credentials. Go to the [`Auto
   </p>
 </div>
 
-Next, run the following commands in your command line. Make sure to change the values with your credentials.
+Now we can run the following commands in our command line. Make sure to change the values with your credentials.
 
 ```bash
 export LT_USERNAME=markus.oberlehner
@@ -169,6 +169,8 @@ In this example we run our tests only in Edge 18 but if you want, you can add mo
   "test:acceptance:lambdatest": "testcafe 'lambdatest:Edge@18:Windows 10,lambdatest:Chrome@84:Windows 10' test/acceptance/ --app 'http-server dist/ -p 1337 -s'"
 }
 ```
+
+Not only can we run our tests in multiple browsers, but we can also run up to 25 tests in parallel. This can speed up the testing process tremendously if we have numerous tests we need to run.
 
 ## The LamdaTest GUI
 
