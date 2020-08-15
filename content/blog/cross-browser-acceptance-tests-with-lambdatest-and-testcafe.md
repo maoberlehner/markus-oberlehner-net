@@ -6,6 +6,7 @@ intro = "In this article, we will take a closer look at how we can run automated
 draft = true
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
+images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2020-08-16/lambda-test-gui"]
 +++
 
 > This is a sponsored article. Thank you, LambdaTest, for supporting me and this blog!
