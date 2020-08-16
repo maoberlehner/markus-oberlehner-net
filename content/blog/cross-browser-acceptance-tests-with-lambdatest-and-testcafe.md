@@ -1,9 +1,9 @@
 +++
-date = "2020-08-16T08:08:08+02:00"
+date = "2020-08-16T07:07:07+02:00"
 title = "Cross-Browser Acceptance Tests with LambdaTest and TestCafe"
 description = "Learn how to run automated cross-browser acceptance tests on LambdaTest with TestCafe."
 intro = "In this article, we will take a closer look at how we can run automated cross-browser acceptance tests in real browsers on LambdaTest using TestCafe as our test framework..."
-draft = true
+draft = false
 categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2020-08-16/lambda-test-gui"]
