@@ -77,7 +77,7 @@ export default {
 
     // Make sure to reset the refs before each update.
     onBeforeUpdate(() => {
-      divs.value = [],
+      divs.value = [];
     });
 
     return {
