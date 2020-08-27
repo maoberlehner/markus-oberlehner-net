@@ -85,6 +85,7 @@ This creates a new file, `tailwind.config.js` in the root directory of our appli
 ```js
 // tailwind.config.js
 module.exports = {
+  purge: [],
   theme: {
     extend: {},
   },
@@ -95,48 +96,25 @@ module.exports = {
 
 ## Reducing file size with PurgeCSS
 
-Now we have everything set up to start building Tailwind powered applications. But if we take a closer look at the final bundle size of our app, we notice that Tailwind adds a considerable large chunk of CSS. Fortunately, we can work around this by adding PurgeCSS to our Vue.js project.
-
-```bash
-npm install @fullhuman/postcss-purgecss --save-dev
-```
-
-After installing the `postcss-purgecss` plugin, we must add it to our `postcss.config.js`.
+Now we have everything set up to start building Tailwind powered applications. But if we take a closer look at the final bundle size of our app, we notice that Tailwind adds a considerable large chunk of CSS. Fortunately, we can work around this by enabling PurgeCSS.
 
 ```diff
- // postcss.config.js
- const autoprefixer = require('autoprefixer');
- const tailwindcss = require('tailwindcss');
-+const postcssPurgecss = require(`@fullhuman/postcss-purgecss`);
-
-+const purgecss = postcssPurgecss({
-+  // Specify the paths to all of the template files in your project.
-+  content: [
+ // tailwind.config.js
+ module.exports = {
+-  purge: [],
++  purge: [
 +    './public/**/*.html',
 +    './src/**/*.vue',
 +  ],
-+  // Include any special characters you're using in this regular expression.
-+  // See: https://tailwindcss.com/docs/controlling-file-size/#understanding-the-regex
-+  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-+  // Whitelist auto generated classes for transitions and router links.
-+  // From: https://github.com/ky-is/vue-cli-plugin-tailwind
-+  whitelistPatterns: [/-(leave|enter|appear)(|-(to|from|active))$/, /^(?!(|.*?:)cursor-move).+-move$/, /^router-link(|-exact)-active$/],
-+});
-
- module.exports = {
-   plugins: [
-     tailwindcss,
-     autoprefixer,
-+    ...process.env.NODE_ENV === 'production'
-+      ? [purgecss]
-+      : [],
-   ],
+   theme: {
+     extend: {},
+   },
+   variants: {},
+   plugins: [],
  };
 ```
 
-First, we add the `./public/**/*.html` directory to the list of directories to watch for HTML files, so PurgeCSS does not remove the default `<html>` and `<body>` styles added by Tailwind CSS to reset the browser default styles. Next, we change the `defaultExtractor` to work with Tailwind.
-
-As you can see above, we only add the `purgecss` plugin in `production` mode. This makes development faster but also comes with the downside that we might not be aware of the fact that PurgeCSS removes certain CSS styles because we did not write our CSS classes correctly inside of our components.
+We add the `./public/**/*.html` add all `*.html` and `*.vue` files to the list of files PurgeCSS should check for classes that must be not removed. Make sure to add all relevant paths here. By default PurgeCSS does only run when building for production, so make sure that `NODE_ENV` is set to `production` when deploying to production.
 
 <div>
   <hr class="c-hr">
