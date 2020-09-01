@@ -8,7 +8,7 @@ categories = ["Development"]
 images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158517/blog/2020-08-30/antifragile-web-development"]
 +++
 
-Recently I've finished reading the book Antifragile by Nassim Nicholas Taleb [US](https://amzn.to/34DtU6g) / [DE](https://amzn.to/34DtU6g) / [UK](https://amzn.to/31yy5OP). I was fascinated by the concept of antifragility. He uses the term to describe systems that benefit from volatility and disorder. In this article, I would like to reflect on a few ideas I had about applying some of the concepts in the book to web development.
+Recently I've finished reading the book Antifragile by Nassim Nicholas Taleb. I was fascinated by the concept of antifragility. He uses the term to describe systems that benefit from volatility and disorder. In this article, I would like to reflect on a few ideas I had about applying some of the concepts in the book to web development.
 
 ## Do you have evidence for no (long term) harm?
 
@@ -50,4 +50,4 @@ And last but not least, it turns out that sometimes, **the best we can do to mak
 
 ## Wrapping it up
 
-Although I think it has some flaws, I still can highly recommend reading Taleb's book [US](https://amzn.to/34DtU6g) / [DE](https://amzn.to/34DtU6g) / [UK](https://amzn.to/31yy5OP). Taleb tends to apply his methodology to various areas of life. I recommend you to make sure always to remember that it is, at its core, about risk management and that this is the area of expertise of Taleb. So take everything that he writes about more general topics like what he eats and drinks with a grain of salt. I understand those anecdotes as examples for practical applications of the heuristics described in the book, but not as definitive rules that everybody must follow precisely the way he does.
+Although I think it has some flaws, I still can highly recommend reading Taleb's book. Taleb tends to apply his methodology to various areas of life. I recommend you to make sure always to remember that it is, at its core, about risk management and that this is the area of expertise of Taleb. So take everything that he writes about more general topics like what he eats and drinks with a grain of salt. I understand those anecdotes as examples for practical applications of the heuristics described in the book, but not as definitive rules that everybody must follow precisely the way he does.

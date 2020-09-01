@@ -31,9 +31,9 @@ Developers are in the privileged position, that there are tons of free learning 
 
 My personal favorite learning resource is [laracasts.com](https://laracasts.com/) it has a ton of useful videos and Jeffrey Way, the guy behind Laracasts, is a overall great person.
 
-Although I rarely read books about programming there are two books I can whole heartedly recommend: [Clean Code](http://amzn.to/2hm46Eg) by Robert C. Martin and [CSS Secrets](http://amzn.to/2hm4YJ9) by Lea Verou. The former will help you to be a better programmer and the later teaches you things about CSS you never heard or thought about before. Currently I'm reading [Learning JavaScript Design Patterns](http://amzn.to/2ivlDZC) by Addy Osmani and I've already learned **a lot**.
+Although I rarely read books about programming there are two books I can whole heartedly recommend: Clean Code by Robert C. Martin and CSS Secrets by Lea Verou. The former will help you to be a better programmer and the later teaches you things about CSS you never heard or thought about before. Currently I'm reading Learning JavaScript Design Patterns by Addy Osmani and I've already learned **a lot**.
 
-Not everything you learn has to be related to programming. Most of the time I read books to become a more knowledgeable human in general. Recently I've read [7 Habits Of Highly Effective People](http://amzn.to/2i2i6jy) by Stephen R. Covey and I learned some things about living an effective life.
+Not everything you learn has to be related to programming. Most of the time I read books to become a more knowledgeable human in general. Recently I've read 7 Habits Of Highly Effective People by Stephen R. Covey and I learned some things about living an effective life.
 
 ### Hardware
 

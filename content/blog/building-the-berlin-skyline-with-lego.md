@@ -9,9 +9,9 @@ lego = ["Architecture"]
 images = ["https://markus.oberlehner.net/images/2017-04-16/lego-architecture-berlin-built.jpg"]
 +++
 
-Today I didn't feel like programming so I decided to build the [LEGO Architecture - Berlin set](http://amzn.to/2ozUx4Q). I've made the experience that building a LEGO set can be quite relaxing and sometimes it can help to regain motivation for doing the important work you have to do.
+Today I didn't feel like programming so I decided to build the LEGO Architecture - Berlin set. I've made the experience that building a LEGO set can be quite relaxing and sometimes it can help to regain motivation for doing the important work you have to do.
 
-I already built some sets from the [LEGO Architecture series](http://amzn.to/2oA24km) and I really like the little details they put into the sets. What's also very nice about them is that you can build most of the LEGO Architecture sets in about under an hour which is really convenient if you're just searching some distraction before going back to work.
+I already built some sets from the LEGO Architecture series and I really like the little details they put into the sets. What's also very nice about them is that you can build most of the LEGO Architecture sets in about under an hour which is really convenient if you're just searching some distraction before going back to work.
 
 ## Let's get it started
 

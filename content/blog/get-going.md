@@ -11,7 +11,7 @@ In the last two weeks I have started to learn more about what motivates people t
 
 In my previous article I wrote about how discipline is more reliable then motivation. Although what I discovered since is, that sometimes discipline alone is a pretty bad impetus for doing creative work like writing or even programming.
 
-I'm currently in the process of reading some books about the theory of motivation in general, and habits as a tool to hack motivation in particular ([Drive: The Surprising Truth About What Motivates Us](http://amzn.to/2sm7scI), [Superhuman By Habit: A Guide to Becoming the Best Possible Version of Yourself, One Tiny Habit at a Time](http://amzn.to/2rGvGw4)). I already have plans of writing a more in depth article about this topic – the following lines are more of a case study on how to deal with a sudden lack of motivation.
+I'm currently in the process of reading some books about the theory of motivation in general, and habits as a tool to hack motivation in particular (Drive: The Surprising Truth About What Motivates Us, Superhuman By Habit: A Guide to Becoming the Best Possible Version of Yourself, One Tiny Habit at a Time). I already have plans of writing a more in depth article about this topic – the following lines are more of a case study on how to deal with a sudden lack of motivation.
 
 ## Leisure work
 
