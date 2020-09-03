@@ -23,7 +23,7 @@ If you want to take a look at the final code, you can [check out the full code o
 
 - [Using Tailwind with Vue CLI](#using-tailwind-with-vue-cli)
 - [Customizing the Tailwind configuration](#customizing-the-tailwind-configuration)
-- [Reducing file size with PurgeCSS](#reducing-file-size-with-purgecss)
+- [Reducing the file size with PurgeCSS](#reducing-the-file-size-with-purgecss)
 - [Writing purgeable Vue components](#writing-purgeable-vue-components)
 
 ## Using Tailwind with Vue CLI
@@ -94,7 +94,7 @@ module.exports = {
 };
 ```
 
-## Reducing file size with PurgeCSS
+## Reducing the file size with PurgeCSS
 
 Now we have everything set up to start building Tailwind powered applications. But if we take a closer look at the final bundle size of our app, we notice that Tailwind adds a considerable large chunk of CSS. Fortunately, we can work around this by enabling PurgeCSS.
 
