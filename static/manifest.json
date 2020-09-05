@@ -10,6 +10,6 @@
   ],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#fafafa",
-  "theme_color": "#00acc1",
+  "theme_color": "#0597be",
   "display": "standalone"
 }
