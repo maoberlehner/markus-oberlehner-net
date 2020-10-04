@@ -84,9 +84,30 @@ The `[id]` selector targets all elements that have an `id` attribute because all
   </p>
 </div>
 
+## Alternative solution with `scroll-padding-top`
+
+Depending on your use case, using `scroll-padding-top` directly on the `html` (or any other scroll container) element might be the more appropriate solution.
+
+```scss
+// src/scss/navigation.scss
+
+$sticky-breakpoint: 32em;
+
+// 1. Approximate height of sticky navigation.
+html {
+  @media (min-height: $sticky-breakpoint) {
+    scroll-padding-top: 100px; // 1
+  }
+}
+
+.navigation {
+  // ...
+}
+```
+
 ## Browser support
 
-[Browser support](https://caniuse.com/#search=scroll-margin-top) for `scroll-margin-top` is pretty good. Because I consider hidden scroll anchors a minor inconvenience more than a serious issue, you most likely we'll be fine without using a fallback for older browsers.
+[Browser support](https://caniuse.com/#search=scroll-margin-top) for `scroll-margin-top` and [support](https://caniuse.com/#search=scroll-padding-top) for `scroll-padding-top` is pretty good. Because I consider hidden scroll anchors a minor inconvenience more than a serious issue, you most likely we'll be fine without using a fallback for older browsers.
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">
