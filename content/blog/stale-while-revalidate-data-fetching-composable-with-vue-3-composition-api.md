@@ -9,6 +9,8 @@ tags = ["JavaScript", "Vue"]
 images = ["/images/c_pad,b_rgb:F5D423,f_auto,q_auto,w_1014,h_510/v1542158521/blog/2020-05-10/vue-3-swr-composable"]
 +++
 
+> This article covers the basics of how to build a simple implementation of the SWR pattern. If you want to use it in a production application, I recommend using a fully-equipped package like [swrv](https://github.com/Kong/swrv).
+
 When building apps that rely on data from an API, two things are essential: **we want our data to be fresh, and we want it fast.** The stale-while-revalidate caching pattern helps us to strike a balance between both.
 
 If our cache already contains a copy of the requested information, **we can immediately show the (potentially stale) data.** But at the same time, **we revalidate our cache and fetch a new version.** This can make navigating our apps feel instantaneously while also making sure that the user sees the latest data eventually.
