@@ -11,9 +11,9 @@ images = ["/images/c_pad,b_rgb:50BF54,f_auto,q_auto,w_1014,h_510/v1542158519/blo
 
 If you are a regular reader of my blog, you may have noticed that many of my articles are about decoupling components from dependencies. Over the past few months, I have written a few articles on this subject.
 
-- [Vue.js Single File Component Factory](https://markus.oberlehner.net/blog/vue-single-file-component-factory/)
-- [The IoC Container Pattern with Vue.js](https://markus.oberlehner.net/blog/the-ioc-container-pattern-with-vue/)
-- [Dependency Injection in Vue.js Applications](https://markus.oberlehner.net/blog/dependency-injection-in-vue-applications/)
+- [Vue.js Single File Component Factory](/blog/vue-single-file-component-factory/)
+- [The IoC Container Pattern with Vue.js](/blog/the-ioc-container-pattern-with-vue/)
+- [Dependency Injection in Vue.js Applications](/blog/dependency-injection-in-vue-applications/)
 
 I regularly use variations of the approaches mentioned in these articles in my daily work. But today, I share with you an additional way to inject dependencies into Vue.js components that I find very interesting: dependency injection via functional components and component props.
 

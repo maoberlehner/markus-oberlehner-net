@@ -11,7 +11,7 @@ images = ["/images/c_pad,b_rgb:b03788,f_auto,q_auto,w_1014,h_510/v1542158520/blo
 
 Often it seems like we build the same applications again and again. And at least sometimes it feels like that because indeed we do. Again and again, we build the same CRUD applications with their generic list views, edit forms, and previews.
 
-When I wrote my article about [keeping the Vuex Store generic](https://markus.oberlehner.net/blog/generic-content-vuex-modules/), I started thinking about how to generalize other parts of Vue.js applications as well.
+When I wrote my article about [keeping the Vuex Store generic](/blog/generic-content-vuex-modules/), I started thinking about how to generalize other parts of Vue.js applications as well.
 
 Throughout this article, **we examine how to create a generic and reusable structure for a traditional CRUD application.** Our primary goal is to keep our codebase DRY.
 
@@ -65,9 +65,9 @@ If you decide to use this approach in a real-world application, you most like wo
 
 ## Dynamic Vuex modules
 
-We plan to build a large scale system, so we decide to use Vuex to handle the state of our application. But keep in mind that Vuex also has its downsides. You can [read more about possible alternatives and when to use Vuex in my article about this topic](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
+We plan to build a large scale system, so we decide to use Vuex to handle the state of our application. But keep in mind that Vuex also has its downsides. You can [read more about possible alternatives and when to use Vuex in my article about this topic](/blog/should-i-store-this-data-in-vuex/).
 
-I already wrote about the topic of [building generic Vuex modules in one of my previous articles](https://markus.oberlehner.net/blog/generic-content-vuex-modules/). If you want to learn more about the general approach for creating reusable Vuex modules, I recommend you to [read the previous article](https://markus.oberlehner.net/blog/generic-content-vuex-modules/).
+I already wrote about the topic of [building generic Vuex modules in one of my previous articles](/blog/generic-content-vuex-modules/). If you want to learn more about the general approach for creating reusable Vuex modules, I recommend you to [read the previous article](/blog/generic-content-vuex-modules/).
 
 <div class="c-content__broad">
   <iframe data-src="https://codesandbox.io/embed/dynamic-vuejs-crud-applications-9nnmj?fontsize=14&module=%2Fsrc%2Fstore%2Fcrud.js&view=editor" title="Dynamic Vue.js CRUD Applications" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>

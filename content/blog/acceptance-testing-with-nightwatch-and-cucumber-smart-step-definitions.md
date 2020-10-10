@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
-In the [first part](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/) of this three-part series, we've [set up an automated system to run acceptance tests with Nightwatch.js and Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). Today we're extending what we've built previously and make our Cucumber.js step definitions a little bit smarter.
+In the [first part](/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/) of this three-part series, we've [set up an automated system to run acceptance tests with Nightwatch.js and Cucumber.js](/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). Today we're extending what we've built previously and make our Cucumber.js step definitions a little bit smarter.
 
 In an ideal world, it should be possible to write basic acceptance test specifications without having to add any new step definitions. In the real world this is not always possible, because some features, with some very specific functionality, might need special treatment and are impossible to test without writing custom step definitions. However our goal today, is to write a few very simple step definitions which are smart enough to cover the vast majority of test cases.
 

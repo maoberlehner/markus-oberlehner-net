@@ -21,7 +21,7 @@ Discipline makes it possible to achieve certain goals over time. I built some ni
 
 While you can't rely only on motivation it definitely helps if you're feeling motivated or maybe even passionate about what you're doing at least some of the time. The recent days I didn't, and one of the reasons I found is that I'm doing too much things at the same time.
 
-The last couple of weeks I was getting into webpack and Vue.js, I toyed around with [LoopBack](http://loopback.io/) to build an API, I was tinkering with some little [new projects](https://github.com/maoberlehner/loading-comparison), I [learned about TDD](https://markus.oberlehner.net/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/) and I recently started to work on an idea I had for an app, which meant learning Ionic including TypeScript, Angular 2 and Firebase.
+The last couple of weeks I was getting into webpack and Vue.js, I toyed around with [LoopBack](http://loopback.io/) to build an API, I was tinkering with some little [new projects](https://github.com/maoberlehner/loading-comparison), I [learned about TDD](/blog/2017/02/test-driven-development-with-javascript-using-ava-and-sinonjs/) and I recently started to work on an idea I had for an app, which meant learning Ionic including TypeScript, Angular 2 and Firebase.
 
 While all of this was fun and I learned a lot, it is too much to keep up with for a longer period of time.
 

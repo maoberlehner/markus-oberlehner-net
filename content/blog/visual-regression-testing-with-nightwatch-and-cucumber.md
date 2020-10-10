@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
-As most of my regular readers have probably already noticed, I'm a huge fan of testing *all the things*. In many of my recent articles, we've already explored multiple techniques for [unit testing](https://markus.oberlehner.net/tags/unit-tests) and [acceptance testing](https://markus.oberlehner.net/tags/acceptance-tests).
+As most of my regular readers have probably already noticed, I'm a huge fan of testing *all the things*. In many of my recent articles, we've already explored multiple techniques for [unit testing](/tags/unit-tests) and [acceptance testing](/tags/acceptance-tests).
 
 Unit testing ensures that certain parts (or *units*) of our code do work correctly; with acceptance testing, we can guarantee that what we've built does what it should do. Visual regression testing makes it possible that we can test if our application looks the way it's supposed to look. At least after we've defined a reference point for how it should look.
 

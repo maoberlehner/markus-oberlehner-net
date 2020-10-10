@@ -436,7 +436,7 @@ Let's take a short look at what we've achieved and how this approach of structur
 
 ### Dynamically loading of modules
 
-Because we're not globally registering all of our modules upfront, it's possible to [use webpacks code splitting feature in combination with the vue-router](https://markus.oberlehner.net/blog/setting-up-a-pwa-with-vue-vue-router-and-webpack-code-splitting/), to **dynamically load components and their associated store modules**. This makes the app bundle size smaller which can have a **huge effect on the initial loading time**, especially with large scale applications.
+Because we're not globally registering all of our modules upfront, it's possible to [use webpacks code splitting feature in combination with the vue-router](/blog/setting-up-a-pwa-with-vue-vue-router-and-webpack-code-splitting/), to **dynamically load components and their associated store modules**. This makes the app bundle size smaller which can have a **huge effect on the initial loading time**, especially with large scale applications.
 
 ### Maximum reusability
 

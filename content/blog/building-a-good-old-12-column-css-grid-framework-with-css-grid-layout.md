@@ -12,7 +12,7 @@ Placing elements side by side is one of the oldest challenges in web development
 
 One of the first methods to build layouts was using HTML tables. With CSS taking over the rise of grid frameworks began. Most grid frameworks relied on the `float` property to be set either to `right` or `left`. Because of the way how floated elements behave, this approach made it necessary to clear overflowing elements, which lead to the invention of the „clearfix“. To avoid having to use a clearfix altogether, some grid frameworks relied on the `display` property to be set to `inline-block`. This approach didn't need a clearfix to prevent elements from overflowing, but because of the way `inline-block` elements behave, other hacks were needed to deal with the little space which occurs between `inline` and `inline-block` elements.
 
-To cut a long story short: none of those approaches were originally intended to be used to build layouts. If you want to read a little bit more about the history of displaying elements side by side, you can read further about it in the following article: [A (Final?) Look at Grid Frameworks](https://markus.oberlehner.net/blog/a-final-look-at-grid-frameworks/).
+To cut a long story short: none of those approaches were originally intended to be used to build layouts. If you want to read a little bit more about the history of displaying elements side by side, you can read further about it in the following article: [A (Final?) Look at Grid Frameworks](/blog/a-final-look-at-grid-frameworks/).
 
 I created an [example CodePen](https://codepen.io/maoberlehner/pen/aWarZO) using the concepts explained in the following article: [Good Ol' 12 Column CSS Grid Framework Using CSS Grid Layout](https://codepen.io/maoberlehner/pen/aWarZO)
 

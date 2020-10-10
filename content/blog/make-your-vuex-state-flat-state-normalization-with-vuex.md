@@ -13,7 +13,7 @@ Listening to one of [Full Stack Radio's latest episodes](http://www.fullstackrad
 
 ## Global state best practices
 
-The first rule you should bear in mind when dealing with global state is that it is not a panacea for all your state-related problems. I recommend that you always use your Vuex store as a means of last resort and only use it when there is a reason to do so. Always [consider the alternatives to putting state into Vuex](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
+The first rule you should bear in mind when dealing with global state is that it is not a panacea for all your state-related problems. I recommend that you always use your Vuex store as a means of last resort and only use it when there is a reason to do so. Always [consider the alternatives to putting state into Vuex](/blog/should-i-store-this-data-in-vuex/).
 
 The second rule is to keep your global state tree flat. This means that you should not have nested entities like article data with the corresponding author information as nested objects in your state. Instead, lists of articles and authors should be separated.
 

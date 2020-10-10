@@ -58,7 +58,7 @@ The most basic and straightforward approach would be to render certain parts of 
  </template>
 ```
 
-One problem of this approach is, that you have to control the visibility of those elements somewhere in your application. There are multiple ways of doing this and you can read about some of those in one of my recent articles about [how to handle global state in Vue.js](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
+One problem of this approach is, that you have to control the visibility of those elements somewhere in your application. There are multiple ways of doing this and you can read about some of those in one of my recent articles about [how to handle global state in Vue.js](/blog/should-i-store-this-data-in-vuex/).
 
 But to be completely honest, I'm not a big fan of this approach. **Although it might be the right way to go if you don't need very complex layouts and you just want to hide some element in certain contexts, this approach can potentially become a maintenance nightmare as your application is growing.**
 
@@ -218,7 +218,7 @@ Next you can see the same demo application as in the static layout wrapper examp
 
 ### Building a renderless dynamic layout component
 
-Renderless components are awesome. You can read more about them in one of my previous articles about [how to build renderless declarative data fetching components](https://markus.oberlehner.net/blog/building-renderless-components-to-handle-crud-operations-in-vue/). In our case, we can utilize the power of renderless components to make it easier and more comfortable to use dynamic layout components in our views. So let's refactor our code.
+Renderless components are awesome. You can read more about them in one of my previous articles about [how to build renderless declarative data fetching components](/blog/building-renderless-components-to-handle-crud-operations-in-vue/). In our case, we can utilize the power of renderless components to make it easier and more comfortable to use dynamic layout components in our views. So let's refactor our code.
 
 ```html
 <template>

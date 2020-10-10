@@ -32,7 +32,7 @@ So what's the problem with very long pages in combination with a typical modern 
 
 ## Lazy loading to the rescue
 
-It's pretty common practice nowadays to use lazy loading techniques to delay the loading of images until they are visible. You can [read more about lazy loading images with Vue.js in my article about this very topic](https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/). But what if we could also apply this approach to Vue.js components?
+It's pretty common practice nowadays to use lazy loading techniques to delay the loading of images until they are visible. You can [read more about lazy loading images with Vue.js in my article about this very topic](/blog/lazy-loading-responsive-images-with-vue/). But what if we could also apply this approach to Vue.js components?
 
 <div class="c-content__figure">
   <video
@@ -123,7 +123,7 @@ export default {
 };
 ```
 
-Above you can see how to use the `lazyLoadComponent()` function inside of a Vue.js component. If you're interested in the implementation of the `SkeletonBox` component, which we use as a loading placeholder, you can [read my article about how to build it](https://markus.oberlehner.net/blog/skeleton-loading-animation-with-vue/).
+Above you can see how to use the `lazyLoadComponent()` function inside of a Vue.js component. If you're interested in the implementation of the `SkeletonBox` component, which we use as a loading placeholder, you can [read my article about how to build it](/blog/skeleton-loading-animation-with-vue/).
 
 <div>
   <hr class="c-hr">

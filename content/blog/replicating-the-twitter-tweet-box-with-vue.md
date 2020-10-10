@@ -458,7 +458,7 @@ Next we want to add a visual represenation of the amount of characters already e
  </template>
 ```
 
-In the template above, you can see that we've added an SVG containing two circles to represent the current status of how many characters were already entered. You can read more about some tricks for creating SVG circles in the following article: [Creating a Pure CSS Animated SVG Circle Chart](https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/).
+In the template above, you can see that we've added an SVG containing two circles to represent the current status of how many characters were already entered. You can read more about some tricks for creating SVG circles in the following article: [Creating a Pure CSS Animated SVG Circle Chart](/blog/pure-css-animated-svg-circle-chart/).
 
 Another important thing to note is, that we're using the camel case notation for the `viewBox` attribute. If you use `viewbox` instead, the browser won't parse the SVG correctly.
 

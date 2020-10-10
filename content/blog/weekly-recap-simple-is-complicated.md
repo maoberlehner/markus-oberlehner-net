@@ -14,7 +14,7 @@ Last week was a slow week when it comes to discovering or learning about new thi
 
 It’s a mantra in programming that you should strive for simplicity. But often we have to solve complex problems and coming up with a simple solution isn’t always doable or seems to be utterly impossible.
 
-One thing I discovered is that it can help to [work with flat data structures](https://markus.oberlehner.net/blog/make-your-vuex-state-flat-state-normalization-with-vuex/). Accessing properties of objects which are nested multiple levels deep can lead to hard to understand code, especially when you have to use loops and `find` a lot.
+One thing I discovered is that it can help to [work with flat data structures](/blog/make-your-vuex-state-flat-state-normalization-with-vuex/). Accessing properties of objects which are nested multiple levels deep can lead to hard to understand code, especially when you have to use loops and `find` a lot.
 
 ## Writing simple code is complicated
 
@@ -56,4 +56,4 @@ I learned a few interesting things last week and I’m very excited to start pla
 - [Wes Bos, Scott Tolinski and David Khourshid, State Machines, CSS and Animations](https://syntax.fm/show/206/state-machines-css-and-animations-with-david-k-piano)
 - [David Khourshid, Model-Based Testing in React with State Machines](https://css-tricks.com/model-based-testing-in-react-with-state-machines/)
 - [Jamie Kyle, A fucking rant about fucking const vs fucking let](https://jamie.build/const)
-- [Markus Oberlehner, Make your Vuex State Flat: State Normalization with Vuex](https://markus.oberlehner.net/blog/make-your-vuex-state-flat-state-normalization-with-vuex/)
+- [Markus Oberlehner, Make your Vuex State Flat: State Normalization with Vuex](/blog/make-your-vuex-state-flat-state-normalization-with-vuex/)

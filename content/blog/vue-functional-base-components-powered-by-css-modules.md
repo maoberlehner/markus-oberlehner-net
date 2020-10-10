@@ -9,7 +9,7 @@ tags = ["JavaScript", "Vue"]
 images = ["/images/c_pad,b_rgb:6CFA27,f_auto,q_auto,w_1014,h_510/v1542158520/blog/2020-02-02/css-module-functional-component"]
 +++
 
-In one of my earlier articles, [I wrote about how to use functional Vue.js components so that they inherit attributes such as classes and styles](https://markus.oberlehner.net/blog/working-with-functional-vue-components/). This way, functional components are perfect for creating simple base components.
+In one of my earlier articles, [I wrote about how to use functional Vue.js components so that they inherit attributes such as classes and styles](/blog/working-with-functional-vue-components/). This way, functional components are perfect for creating simple base components.
 
 In this article, we take a look at how we can simplify and generalize the process of creating new functional base components by automatically creating new Vue.js components from CSS files.
 

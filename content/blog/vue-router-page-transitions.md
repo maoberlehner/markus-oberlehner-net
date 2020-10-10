@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-In my last article, we've explored how to use the powerful Vue.js transition component, to [animate an element from zero height to auto height](https://markus.oberlehner.net/blog/transition-to-height-auto-with-vue/). Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application.
+In my last article, we've explored how to use the powerful Vue.js transition component, to [animate an element from zero height to auto height](/blog/transition-to-height-auto-with-vue/). Today we'll take a look at how we can utilize the transition component to create fancy transitions between different pages of a Vue Router powered Vue.js application.
 
 If you're curious about the result, you can [take a look at the final result hosted on Netlify](https://vue-router-page-transitions.netlify.com), or you can [check out the full code on GitHub](https://github.com/maoberlehner/vue-router-page-transitions).
 

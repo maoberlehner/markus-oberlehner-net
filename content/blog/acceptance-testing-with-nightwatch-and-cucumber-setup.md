@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
-In my previous article series about front-end testing ([Part 1](https://markus.oberlehner.net/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/) / [Part 2](https://markus.oberlehner.net/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/)), I wrote about how to run acceptance tests with TestCafe. Although I'm a huge fan of TestCafe because it's shiny and new and uses the latest JavaScript features, there are several good reasons to use established systems like Nightwatch.js and Cucumber.js.
+In my previous article series about front-end testing ([Part 1](/blog/front-end-testing-writing-javascript-unit-tests-with-ava-and-mock-browser/) / [Part 2](/blog/front-end-testing-cross-browser-acceptance-tests-with-testcafe-browserstack-and-npm-scripts/)), I wrote about how to run acceptance tests with TestCafe. Although I'm a huge fan of TestCafe because it's shiny and new and uses the latest JavaScript features, there are several good reasons to use established systems like Nightwatch.js and Cucumber.js.
 
 Nightwatch.js is battle-tested and has proven to be a potent tool in the utility belt when it comes to conducting end-to-end tests. The combination of Nightwatch.js and Cucumber.js enables the writing of robust automated acceptance tests in plain language (Gherkin) so that every project stakeholder can read and understand the test definitions.
 
@@ -209,7 +209,7 @@ defineSupportCode(({ Given, Then }) => {
 
 After requiring some basic helper functions (`client` and `defineSupportCode`) and loading the base URL from the default config file we've created earlier, we're defining a `pages` and an `elements` object. We're going to use those objects to map certain keywords specified in `test/features/newsletter-form.feature` to page URLs and HTML element selectors.
 
-You can see that we're using `.qa-` prefixed selectors, I wrote an [article about why I think separate CSS selectors for testing purposes are a good idea](https://markus.oberlehner.net/blog/css-selector-namespaces-for-stable-acceptance-tests/).
+You can see that we're using `.qa-` prefixed selectors, I wrote an [article about why I think separate CSS selectors for testing purposes are a good idea](/blog/css-selector-namespaces-for-stable-acceptance-tests/).
 
 Next we're using the `defineSupportCode` function, to tell Cucumber.js about certain patterns we're using in our feature specification. As you can see, this patterns are based on regular expressions.
 

@@ -6,7 +6,7 @@ intro = "Today I didn't feel like programming so I decided to build the LEGO Arc
 draft = false
 categories = ["LEGO", "Life"]
 lego = ["Architecture"]
-images = ["https://markus.oberlehner.net/images/2017-04-16/lego-architecture-berlin-built.jpg"]
+images = ["/images/2017-04-16/lego-architecture-berlin-built.jpg"]
 +++
 
 Today I didn't feel like programming so I decided to build the LEGO Architecture - Berlin set. I've made the experience that building a LEGO set can be quite relaxing and sometimes it can help to regain motivation for doing the important work you have to do.

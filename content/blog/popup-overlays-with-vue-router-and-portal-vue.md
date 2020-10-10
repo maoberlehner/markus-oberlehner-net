@@ -29,7 +29,7 @@ There are a few specifications our overlay must fulfill, which are best achieved
 2. Can be controlled from everywhere in our application.
 3. SRR is possible in certain scenarios.
 
-To achieve point 2, we need to choose one of a few ways, which makes it possible to control Vue.js components from anywhere in our application. Partly I have already covered this in an earlier [article about Vuex alternatives](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex/).
+To achieve point 2, we need to choose one of a few ways, which makes it possible to control Vue.js components from anywhere in our application. Partly I have already covered this in an earlier [article about Vuex alternatives](/blog/should-i-store-this-data-in-vuex/).
 
 In this article, we combine **Portal Vue with nested child routes.** Unfortunately, as I discovered during writing this article, it seems to be very hard to achieve point 1 and 3 at the same time. **Portal Vue helps us with making our solution accessible but it also prevents us from making our popups SSR compatible.**
 

@@ -54,7 +54,7 @@ If you use Tailwind CSS as an API for your design system, **it is a superb tool 
 
 The Tailwind solution definitely looks a lot tidier.
 
-On the other hand, did we actually improve consistency that way? Check out this article if you want to read more about this specific topic: [Variables in Design Systems](https://markus.oberlehner.net/blog/variables-in-design-systems/).
+On the other hand, did we actually improve consistency that way? Check out this article if you want to read more about this specific topic: [Variables in Design Systems](/blog/variables-in-design-systems/).
 
 ### Reducing decisions
 

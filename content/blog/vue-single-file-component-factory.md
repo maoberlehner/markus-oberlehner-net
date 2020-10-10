@@ -101,13 +101,13 @@ export default {
 </script>
 ```
 
-Now you might think: ok, the `LoadEntities` component is now reusable and easier to test, but we just moved the problem to the `StuffLoader` component – and that's true. But if we think about the `StuffLoader` component as a [container component](https://markus.oberlehner.net/blog/advanced-vue-component-composition-with-container-components/), this absolutely makes sense. If we split up our applications in small and reusable, easily unit testable components on the one hand and container components which are supposed to wire everything up on the other hand, **those container components are now our main integration points of our application.** They are perfectly suited for integration tests or even E2E tests.
+Now you might think: ok, the `LoadEntities` component is now reusable and easier to test, but we just moved the problem to the `StuffLoader` component – and that's true. But if we think about the `StuffLoader` component as a [container component](/blog/advanced-vue-component-composition-with-container-components/), this absolutely makes sense. If we split up our applications in small and reusable, easily unit testable components on the one hand and container components which are supposed to wire everything up on the other hand, **those container components are now our main integration points of our application.** They are perfectly suited for integration tests or even E2E tests.
 
 ## Vue.js SFC factory function
 
 There is only one problem: as I said before, the SFC specification does not allow factory functions. To circumvent this, I used template strings in the examples above. But this means we have to sacrifice the covenience of having a separate `<template>` and `<style>` section all along our JavaScript code, inside of a single file.
 
-So how can we solve this? There are a several options of how to do dependency injection in Vue.js e.g. via props or [provide / inject](https://markus.oberlehner.net/blog/the-ioc-container-pattern-with-vue) and [a couple of other ways](https://markus.oberlehner.net/blog/dependency-injection-in-vue-applications/). But none of those are as clean and elegant as using a factory function.
+So how can we solve this? There are a several options of how to do dependency injection in Vue.js e.g. via props or [provide / inject](/blog/the-ioc-container-pattern-with-vue) and [a couple of other ways](/blog/dependency-injection-in-vue-applications/). But none of those are as clean and elegant as using a factory function.
 
 <div>
   <hr class="c-hr">

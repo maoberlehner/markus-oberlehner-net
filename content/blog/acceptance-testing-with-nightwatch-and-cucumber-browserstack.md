@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
-In the first part of this three-part series we've [set up a Nightwatch.js and Cucumber.js powered test environment](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). In the second part we've looked at [how to write smart step definitions for Cucumber.js](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/).
+In the first part of this three-part series we've [set up a Nightwatch.js and Cucumber.js powered test environment](/blog/acceptance-testing-with-nightwatch-and-cucumber-setup/). In the second part we've looked at [how to write smart step definitions for Cucumber.js](/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/).
 
 Today, in the third and final part of this series about acceptance testing with Nightwatch.js and Cucumber.js, we will integrate automated cross-browser testing powered by BrowserStack into our workflow.
 

@@ -112,7 +112,7 @@ At first glance, the [PortalVue](https://github.com/LinusBorg/portal-vue) plugin
 
 In the simplified pseudo example above, you can see a `AppDeleteButton` component which contains the modal, which should be opened when it's clicked. This makes it possible to directly use the `id` from the `item` property of the `AppDeleteButton` inside of the modal component instead of making it globally accessible via a centralized store.
 
-I've also written an [article about how to implement a modal component using Vuex](https://markus.oberlehner.net/blog/building-a-modal-dialog-with-vue-and-vuex/) if you're interested in the opposite approach.
+I've also written an [article about how to implement a modal component using Vuex](/blog/building-a-modal-dialog-with-vue-and-vuex/) if you're interested in the opposite approach.
 
 <div>
   <hr class="c-hr">

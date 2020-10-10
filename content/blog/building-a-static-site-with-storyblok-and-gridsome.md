@@ -12,7 +12,7 @@ tags = ["JavaScript", "Vue", "headless CMS"]
 
 We will integrate the headless CMS [Storyblok](https://www.storyblok.com/) as a datasource for Gridsome an we'll build a simple site to demonstrate the capabilities of those systems.
 
-For this article, I'll assume that you have some basic knowledge about how to build websites with Storyblok. If you're completely new to Storyblok, you can [read my previous article about building sites with Storyblok and Nuxt.js](https://markus.oberlehner.net/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/) where I take a deeper look at how to build pages with Storyblok.
+For this article, I'll assume that you have some basic knowledge about how to build websites with Storyblok. If you're completely new to Storyblok, you can [read my previous article about building sites with Storyblok and Nuxt.js](/blog/building-a-pre-rendered-website-with-nuxt-and-storyblok/) where I take a deeper look at how to build pages with Storyblok.
 
 <div class="c-content__figure">
   <div class="c-content__broad">

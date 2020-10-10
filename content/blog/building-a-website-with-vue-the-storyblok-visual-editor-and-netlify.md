@@ -1548,6 +1548,6 @@ Thanks to the rise of headless content management systems, we as frontend develo
 
 **The Storyblok Visual Editor makes it very easy for people who are not web developers to edit their websites, so even many of those people will prefer Storyblok over their previous CMS.**
 
-Having said that, there are some hurdles to take when building mostly static websites with Vue.js. **You [absolutely should implement some kind of pre-rendering](https://markus.oberlehner.net/blog/how-to-pre-render-vue-powered-websites-with-webpack/), at least for your most important content and you should always have an eye on the rendering performance on low-end devices.**
+Having said that, there are some hurdles to take when building mostly static websites with Vue.js. **You [absolutely should implement some kind of pre-rendering](/blog/how-to-pre-render-vue-powered-websites-with-webpack/), at least for your most important content and you should always have an eye on the rendering performance on low-end devices.**
 
 If you want to, you can see a live preview of the website we've built [hosted on Netlify](https://building-a-website-with-vue-the-storyblok-visual-editor.netlify.com/) and you can [view all the code on GitHub](https://github.com/maoberlehner/building-a-website-with-vue-the-storyblok-visual-editor-and-netlify).

@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "webpack", "code splitting"]
 +++
 
-For my previous article about [three different ways of how to structure a Vue.js application](https://markus.oberlehner.net/blog/vue-application-structure-and-css-architecture/), I wanted to set up a build system which not only allows for regular **JavaScript code splitting, but also CSS code splitting**. Thanks to webpack 4 and the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) (which basically is the successor of the [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)), **CSS code splitting is finally possible**.
+For my previous article about [three different ways of how to structure a Vue.js application](/blog/vue-application-structure-and-css-architecture/), I wanted to set up a build system which not only allows for regular **JavaScript code splitting, but also CSS code splitting**. Thanks to webpack 4 and the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) (which basically is the successor of the [extract-text-webpack-plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)), **CSS code splitting is finally possible**.
 
 I quickly realized though, that there is currently no official way of how to setup a webpack 4 powered Vue.js development environment. Both the current [Vue.js webpack template](https://github.com/vuejs-templates/webpack) and the [vue-cli](https://github.com/vuejs/vue-cli) (which is currently in beta), are still using webpack 3. So I decided to set up a webpack 4 powered build process myself.
 

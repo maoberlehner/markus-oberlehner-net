@@ -26,7 +26,7 @@ Apollo and Relay are very powerful tools, but they add a critical amount of over
 
 João Rosa had pointed out [in a tweet](https://twitter.com/antao/status/1229329606659932160) that every CFO knows about the financial debts of their company, but most CTOs have no idea how to express the technical debt of the company. I think the main problem is that it is not clear what technical debt is and how it can be measured.
 
-Everybody uses terms like *technical debt* and [*legacy code*](https://markus.oberlehner.net/blog/weekly-recap-atomic-commits-legacy-code-and-evil-string-identifiers#all-code-is-legacy-code), but most of us have no clear definition in mind. What most people mean when they say those words is: I don't like this code.
+Everybody uses terms like *technical debt* and [*legacy code*](/blog/weekly-recap-atomic-commits-legacy-code-and-evil-string-identifiers#all-code-is-legacy-code), but most of us have no clear definition in mind. What most people mean when they say those words is: I don't like this code.
 
 I have only found two indicators for technical debt that can be measured to some extent with automated tools: cyclomatic complexity and code duplication. You can set up a [linting rule for cyclomatic complexity](https://eslint.org/docs/rules/complexity), and you can use a tool like [jscpd](https://github.com/kucherenko/jscpd) to find duplicated code.
 

@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "headless CMS"]
 +++
 
-In one of my recent articles, we took a closer look at [how to build websites with the Headless CMS Storyblok and Vue.js](https://markus.oberlehner.net/blog/building-a-website-with-vue-the-storyblok-visual-editor-and-netlify/). In this article we‘ll learn how we can combine the awesome digital asset management platform Cloudinary with the power of Storyblok to automatically handle image optimazation for us. We‘ll also explore how we can use the additional data, like the dominant color or the aspect ratio of an image, provided by the [Storyblok Cloudinary Assets plugin](https://github.com/maoberlehner/storyblok-cloudinary-assets), to implement enhanced image lazy loading.
+In one of my recent articles, we took a closer look at [how to build websites with the Headless CMS Storyblok and Vue.js](/blog/building-a-website-with-vue-the-storyblok-visual-editor-and-netlify/). In this article we‘ll learn how we can combine the awesome digital asset management platform Cloudinary with the power of Storyblok to automatically handle image optimazation for us. We‘ll also explore how we can use the additional data, like the dominant color or the aspect ratio of an image, provided by the [Storyblok Cloudinary Assets plugin](https://github.com/maoberlehner/storyblok-cloudinary-assets), to implement enhanced image lazy loading.
 
 <div class="c-content__figure">
   <div class="c-content__broad">
@@ -174,7 +174,7 @@ As you can see in the screenshot above, there is a hex color associated with the
 
 ### Usage in Vue.js
 
-I've already written a dedicated article about the topic of [lazy loading images with Vue.js](https://markus.oberlehner.net/blog/lazy-loading-responsive-images-with-vue/). We can reuse the `AppImage` component we've built in the previous article.
+I've already written a dedicated article about the topic of [lazy loading images with Vue.js](/blog/lazy-loading-responsive-images-with-vue/). We can reuse the `AppImage` component we've built in the previous article.
 
 ```html
 <app-image

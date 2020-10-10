@@ -5,7 +5,7 @@ description = "Introverts tend to avoid large crowds – but I took the chance t
 intro = "I had the privilege to speak on one of the side stages at the WeAreDevelopers conference, which is the largest developers conference in Europe. Although, as an introvert, there are not many things I hate more than speaking in front of hundreds of people, it was an opportunity I had to take..."
 draft = false
 categories = ["Development", "Life"]
-images = ["https://markus.oberlehner.net/images/2017-05-13/markus-oberlehner-wearedevelopers-stage.jpg"]
+images = ["/images/2017-05-13/markus-oberlehner-wearedevelopers-stage.jpg"]
 +++
 
 Yesterday I had the privilege of speaking on one of the side stages of the [WeAreDevelopers](https://www.wearedevelopers.com) conference, the largest development conference in Europe.

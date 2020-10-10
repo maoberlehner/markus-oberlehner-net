@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
 +++
 
-In one of my previous articles about [form field handling in combination with Vuex](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/), I introduced the [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) package, which allows to conveniently [map a list of fields to Vuex conform getter and setter functions](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/#using-vuex-map-fields-for-simple-vuex-form-handling).
+In one of my previous articles about [form field handling in combination with Vuex](/blog/form-fields-two-way-data-binding-and-vuex/), I introduced the [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) package, which allows to conveniently [map a list of fields to Vuex conform getter and setter functions](/blog/form-fields-two-way-data-binding-and-vuex/#using-vuex-map-fields-for-simple-vuex-form-handling).
 
 In today's article we take it a step further and we'll explore how we can use the latest release of [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to build a Vuex powered multi-row form.
 
@@ -175,4 +175,4 @@ Handling form data with Vue in a way which does not mutate the Vuex store, can b
 
 I hope for [vuex-map-fields](https://github.com/maoberlehner/vuex-map-fields) to be a useful tool in the utility belt of Vue developers to make handling form data with Vue and Vuex a more pleasant experience.
 
-If you enjoyed this article, please **make sure to also read one of my previous articles about [form field handling in combination with Vuex](https://markus.oberlehner.net/blog/form-fields-two-way-data-binding-and-vuex/)**.
+If you enjoyed this article, please **make sure to also read one of my previous articles about [form field handling in combination with Vuex](/blog/form-fields-two-way-data-binding-and-vuex/)**.

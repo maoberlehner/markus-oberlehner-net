@@ -8,11 +8,11 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Vue"]
 +++
 
-Today we're building a modal dialog in Vue using Vuex. In my last article about [exploratory TDD](https://markus.oberlehner.net/blog/exploratory-tdd/) I wrote about the lack of tutorials demonstrating TDD in more complex, real world scenarios, so I decided to guide you through the whole process of building a modal dialog using the TDD methodology.
+Today we're building a modal dialog in Vue using Vuex. In my last article about [exploratory TDD](/blog/exploratory-tdd/) I wrote about the lack of tutorials demonstrating TDD in more complex, real world scenarios, so I decided to guide you through the whole process of building a modal dialog using the TDD methodology.
 
 We're using [Jest](https://facebook.github.io/jest/) as our test runner of choice and the official [vue-test-utils](https://github.com/vuejs/vue-test-utils) package to drive our tests. You can find [all the code demonstrated in this article on GitHub](https://github.com/maoberlehner/building-a-modal-dialog-with-vue-and-vuex).
 
-In order to keep this article as simple as possible, I won't go into much detail about the technique used to mock the Vuex store. I highly recommend you to read one of my previous articles about [how to mock a Vuex store in Jest](https://markus.oberlehner.net/blog/testing-vuex-powered-vue-components-with-jest/) before you continue reading the following article.
+In order to keep this article as simple as possible, I won't go into much detail about the technique used to mock the Vuex store. I highly recommend you to read one of my previous articles about [how to mock a Vuex store in Jest](/blog/testing-vuex-powered-vue-components-with-jest/) before you continue reading the following article.
 
 ## Prerequisite and considerations
 
@@ -503,4 +503,4 @@ Using dynamic imports for rendering content inside of the modal, can be very hel
 
 On the other hand, the solution demonstrated in this article, might be too complex for smaller applications.
 
-If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](https://markus.oberlehner.net/blog/how-to-structure-a-complex-vuex-store/)**.
+If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](/blog/how-to-structure-a-complex-vuex-store/)**.

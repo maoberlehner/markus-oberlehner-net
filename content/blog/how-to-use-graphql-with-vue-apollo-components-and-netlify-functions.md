@@ -9,7 +9,7 @@ tags = ["JavaScript", "Vue"]
 images = ["/images/c_scale,f_auto,q_auto/v1532158513/blog/2019-01-20/graphql-vue-apollo-netlify-twitter"]
 +++
 
-Although I've already experimented a little bit with GraphQL, especially [how to integrate GraphQL in a Vuex powered application](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/), I never took the time to delve into the details.
+Although I've already experimented a little bit with GraphQL, especially [how to integrate GraphQL in a Vuex powered application](/blog/combining-graphql-and-vuex/), I never took the time to delve into the details.
 
 In today's article we'll build a simple example application using [Apollo Components](https://vue-apollo.netlify.com/guide/components/) which basically are renderless components (although they do render a wrapper `<div>`) for querying a GraphQL backend. Furthermore we’ll set up Netlify Functions to run our GraphQL endpoint.
 

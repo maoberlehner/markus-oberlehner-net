@@ -126,7 +126,7 @@ test('It should show a list of to-do items if there are any.', (t) => {
 });
 ```
 
-In the test above we're initializing a new instance of our `ToDo` component with some data. We specify that our component should render a list of items and check if this is true by asserting that the wrapper contains an element with the CSS selector `.qa-to-do-item` ([read more about why `qa` prefixes are awesome](https://markus.oberlehner.net/blog/css-selector-namespaces-for-stable-acceptance-tests/)). If we run this test with `npm run test` the test should fail, because we don't have implemented the functionality yet.
+In the test above we're initializing a new instance of our `ToDo` component with some data. We specify that our component should render a list of items and check if this is true by asserting that the wrapper contains an element with the CSS selector `.qa-to-do-item` ([read more about why `qa` prefixes are awesome](/blog/css-selector-namespaces-for-stable-acceptance-tests/)). If we run this test with `npm run test` the test should fail, because we don't have implemented the functionality yet.
 
 ```html
 <template>

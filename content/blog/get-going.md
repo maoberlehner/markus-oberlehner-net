@@ -7,7 +7,7 @@ draft = false
 categories = ["Life"]
 +++
 
-In the last two weeks I have started to learn more about what motivates people to do what they do. I myself experience varying levels of motivation. Sometimes I feel very motivated to do a lot of stuff, especially on the weekend, and sometimes I can't motivate me to do a thing. What I already learned previously (and I even [wrote about it](https://markus.oberlehner.net/blog/perfectionism-kills-motivation/#discipline-motivation) earlier) is, that you can't rely solely on motivation to achieve excellence.
+In the last two weeks I have started to learn more about what motivates people to do what they do. I myself experience varying levels of motivation. Sometimes I feel very motivated to do a lot of stuff, especially on the weekend, and sometimes I can't motivate me to do a thing. What I already learned previously (and I even [wrote about it](/blog/perfectionism-kills-motivation/#discipline-motivation) earlier) is, that you can't rely solely on motivation to achieve excellence.
 
 In my previous article I wrote about how discipline is more reliable then motivation. Although what I discovered since is, that sometimes discipline alone is a pretty bad impetus for doing creative work like writing or even programming.
 
@@ -23,7 +23,7 @@ After finishing this “leisure work” I realized that if I don't stop right no
 
 Quickly thousands of activities crossed my mind. There are a ton of useful tasks to do: I could work on the backlog of one of my GitHub projects. I could read a book or a magazine. I could (or even should) mow the lawn. I could do various things around the house. I could learn some new JavaScript framework or other programming technique...
 
-And there are even a lot of things to do which usually are considered more pleasant: I could watch The Lord of the Rings again. I could go out and meet friends. I could play computer games. I could [play with LEGOs](https://markus.oberlehner.net/blog/building-the-berlin-skyline-with-lego/). I could drive somewhere where I never was before...
+And there are even a lot of things to do which usually are considered more pleasant: I could watch The Lord of the Rings again. I could go out and meet friends. I could play computer games. I could [play with LEGOs](/blog/building-the-berlin-skyline-with-lego/). I could drive somewhere where I never was before...
 
 So many things to do and none of those things – neither one of the reasonable nor one of the pleasant activities – seemed to be something I would enjoy doing at this very moment. One psychological effect which operates here is the “Paradox of Choice”. We're so afraid that the option we're going to choose is worse than another option, that we do not want to make a decision at all. You may have experienced this first hand when deciding which movie to watch on Netflix – after browsing hundreds of movies you decide that you can't decide and you quit Netflix without having to settle for a movie over another.
 

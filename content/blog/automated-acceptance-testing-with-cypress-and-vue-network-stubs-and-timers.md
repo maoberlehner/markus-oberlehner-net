@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 +++
 
-This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we take a look at two advanced features of Cypress: Network Stubs and Timers.
+This is the second part of my article series about automated acceptance testing with Cypress. In [the first part of this series](/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) we've learned [how to set up Cypress](/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). Today we take a look at two advanced features of Cypress: Network Stubs and Timers.
 
 If you want to see the full code used in this article, you can check out [the GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
 
@@ -36,7 +36,7 @@ The reason why it's important to differentiate between acceptance testing and en
 
 There are multiple reasons why we don't want to make requests to a real API in our acceptance tests. Most importantly it makes things more complicated. Imagine we have tests where we want to test how our application behaves when a user has entered all of their data, and another one where a user has entered none of their data, and a third test which tests what happens when some specific data is there. We want to provide the exact data we need for our specific test case without having to create multiple entries, matching our test cases, in a database.
 
-Let's write a test for our simple application we've set up in [the first part of this article series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) which defines that we want to show the name of the logged in user, if a user is logged in.
+Let's write a test for our simple application we've set up in [the first part of this article series](/blog/automated-acceptance-testing-with-cypress-and-vue-setup/) which defines that we want to show the name of the logged in user, if a user is logged in.
 
 ```js
 // test/features/home.js
@@ -50,7 +50,7 @@ describe('Home', () => {
 });
 ```
 
-In the example above, you can see that we've added a new test to our existing tests we've created in the [first part of the series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). If you want to see the full code, you can check out the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
+In the example above, you can see that we've added a new test to our existing tests we've created in the [first part of the series](/blog/automated-acceptance-testing-with-cypress-and-vue-setup/). If you want to see the full code, you can check out the [GitHub repository for this article](https://github.com/maoberlehner/automated-acceptance-testing-with-cypress-and-vue/tree/network-stubs-and-timers).
 
 In the test, we use `data` selectors to find the element which should contain the name of the currently logged in user. Let's start our development server with `npm start` and the Cypress GUI with `npm run test:open` to run our test and see it fail.
 

@@ -267,7 +267,7 @@ Above you can see the code of our `ImageUpload` component. It might look a littl
 
 Let's take a look at the most interesting parts of the code. You can see, that there is an `<a>` element for the delete button which calls `$emit('input', '')` on click. Because of how `v-model` works, emitting an `input` event will set the value, bound via `v-model`, to the value which is emitted with the event. In this case an empty string is emitted, which basically deletes the image from the plugins data model.
 
-On the `<input>` element with `type="file"` you can see that the `uploadImage()` method is triggered every time its value changes. Inside of the `uploadImage()` method we call the imported `upload()` utility function and pass it an object of all the necessary properties which are injected into the `ImageUpload` component from the `Plugin` component (if the concept of provide / inject is new to you, [you can read more about this topic in my article about sharing data between Vue.js components](https://markus.oberlehner.net/blog/should-i-store-this-data-in-vuex#provide-inject)).
+On the `<input>` element with `type="file"` you can see that the `uploadImage()` method is triggered every time its value changes. Inside of the `uploadImage()` method we call the imported `upload()` utility function and pass it an object of all the necessary properties which are injected into the `ImageUpload` component from the `Plugin` component (if the concept of provide / inject is new to you, [you can read more about this topic in my article about sharing data between Vue.js components](/blog/should-i-store-this-data-in-vuex#provide-inject)).
 
 #### The upload utility function
 

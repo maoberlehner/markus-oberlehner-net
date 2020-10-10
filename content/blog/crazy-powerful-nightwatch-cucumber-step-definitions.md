@@ -10,7 +10,7 @@ tags = ["JavaScript", "TDD", "Front-End testing", "Acceptance testing"]
 
 Although testing, and especially acceptance testing, seems like a rather boring topic (at least to many developers) in the past few months I acquired an interest in optimizing the test setup and come up with better ways of writing tests. Especially when using [Nightwatch.js](http://nightwatchjs.org/) in combination with [Cucumber.js](https://github.com/cucumber/cucumber-js), there is another challenging aspect to it: writing step definitions.
 
-I've already written an article about writing [smart step definitions](https://markus.oberlehner.net/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/). Although we're using this approach with great success, I'm still not satisfied with all aspects of this technique. There are two problems with the smart step definition approach. First of all the backticks, which are used to mark selectors, destroy the flow when reading the steps. And second, the step definitions lack flexibility.
+I've already written an article about writing [smart step definitions](/blog/acceptance-testing-with-nightwatch-and-cucumber-smart-step-definitions/). Although we're using this approach with great success, I'm still not satisfied with all aspects of this technique. There are two problems with the smart step definition approach. First of all the backticks, which are used to mark selectors, destroy the flow when reading the steps. And second, the step definitions lack flexibility.
 
 In today's article we'll explore how we can fix those problems and how to build crazy powerful Cucumber.js step definitions and write better acceptance tests.
 

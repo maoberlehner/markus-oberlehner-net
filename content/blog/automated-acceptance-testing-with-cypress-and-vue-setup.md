@@ -155,4 +155,4 @@ The first command `test:open` opens the Cypress GUI which makes it possible to r
 
 Although we've only scratched the surface of what Cypress is capable of, the GUI already looks very promising. I'm also very curios to try out some of the advanced features like time traveling, spies, clocks and stubbing network requests.
 
-In [the second part of this article series](https://markus.oberlehner.net/blog/automated-acceptance-testing-with-cypress-and-vue-network-stubs-and-timers/), we're going to dive deeper into the matter of acceptance testing and we'll look into some advanced topics surrounding this very broad topic.
+In [the second part of this article series](/blog/automated-acceptance-testing-with-cypress-and-vue-network-stubs-and-timers/), we're going to dive deeper into the matter of acceptance testing and we'll look into some advanced topics surrounding this very broad topic.

@@ -66,7 +66,7 @@ export default {
 };
 ```
 
-In this example, we make the API of the `get()` and `post()` methods our own and use a [single object instead of multiple parameters](https://markus.oberlehner.net/blog/weekly-recap-single-parameter-object-and-craftsmanship-vs-engineering/#single-parameter-object).
+In this example, we make the API of the `get()` and `post()` methods our own and use a [single object instead of multiple parameters](/blog/weekly-recap-single-parameter-object-and-craftsmanship-vs-engineering/#single-parameter-object).
 
 <div class="c-content__broad">
   <div class="c-twitter-teaser">

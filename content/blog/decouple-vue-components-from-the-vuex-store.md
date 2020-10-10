@@ -205,7 +205,7 @@ export default containerFactory(ListingContainer, {
 
 In this example we use a `containerFactory` helper to inject the `provider` into a generic `ListingContainer` component as a prop and create a new specific `ArticleListing` component by doing so.
 
-If you want to learn more about the `containerFactory` approach you can [read my previous article about this very topic](https://markus.oberlehner.net/blog/dependency-injection-in-vue-with-functional-component-factories/).
+If you want to learn more about the `containerFactory` approach you can [read my previous article about this very topic](/blog/dependency-injection-in-vue-with-functional-component-factories/).
 
 ```html
 <script>
@@ -277,7 +277,7 @@ But if you use the approach described in this article and one day decide to chan
 
 ## Providers and GraphQL
 
-If you are a GraphQL user, you may be wondering how this could fit into your application. Unfortunately, I don't have a good answer to that yet. Although [it is possible to use GraphQL with Vuex](https://markus.oberlehner.net/blog/combining-graphql-and-vuex/) and you also could implement a GraphQL driver you basically lose one of the coolest features of GraphQL which is to only load the properties you actually need for your components.
+If you are a GraphQL user, you may be wondering how this could fit into your application. Unfortunately, I don't have a good answer to that yet. Although [it is possible to use GraphQL with Vuex](/blog/combining-graphql-and-vuex/) and you also could implement a GraphQL driver you basically lose one of the coolest features of GraphQL which is to only load the properties you actually need for your components.
 
 At the beginning of the article I said that I worry about how tightly coupled Vue.js applications become to the Vuex store if you use Vuex the way it is recommended to be used. The same applies all the more to GraphQL and especially when used with Apollo.
 

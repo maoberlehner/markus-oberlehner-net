@@ -12,7 +12,7 @@ Over the last two weeks, I've been thinking about how to Git, legacy code, why o
 
 ## Git: atomic commits vs squashing
 
-The topic of how to use Git effectively is always on my mind. [I'm a Git pedant](https://markus.oberlehner.net/blog/git-the-pedantic-way/), so I have a pretty strong opinion on the subject.
+The topic of how to use Git effectively is always on my mind. [I'm a Git pedant](/blog/git-the-pedantic-way/), so I have a pretty strong opinion on the subject.
 
 As so often, it was [a tweet from Jake Archibald](https://twitter.com/jaffathecake/status/1222478385168949248) that got me thinking. He argues that **a pull request should represent a unit of work.** Commits that are only there to incorporate feedback from the code review usually don't contribute to a better understanding of the code in retrospect. I couldn't agree more.
 

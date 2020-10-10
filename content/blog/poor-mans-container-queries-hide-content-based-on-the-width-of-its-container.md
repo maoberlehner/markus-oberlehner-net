@@ -21,7 +21,7 @@ I recommend you to [view the following CodePen demo in fullscreen mode](https://
 
 ## What's the problem with Media Queries?
 
-Because Media Queries are relative to the viewport size, we can't use them to change the look of separate components depending on how wide the component itself, but only on how wide the viewport is. But I've already articulated my thoughts about this in more detail in [my article about how to build a responsive alternating two column layout](https://markus.oberlehner.net/blog/creating-a-responsive-alternating-two-column-layout-with-flexbox#what-s-the-problem-with-media-queries).
+Because Media Queries are relative to the viewport size, we can't use them to change the look of separate components depending on how wide the component itself, but only on how wide the viewport is. But I've already articulated my thoughts about this in more detail in [my article about how to build a responsive alternating two column layout](/blog/creating-a-responsive-alternating-two-column-layout-with-flexbox#what-s-the-problem-with-media-queries).
 
 ## Using CSS to hide content based on container width
 

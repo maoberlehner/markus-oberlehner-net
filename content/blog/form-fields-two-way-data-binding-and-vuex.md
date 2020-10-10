@@ -208,4 +208,4 @@ I was really surprised to learn that there is no convenient way, how to handle f
 
 I hope this article and the `vuex-map-fields` package are helpful for some people.
 
-If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](https://markus.oberlehner.net/blog/how-to-structure-a-complex-vuex-store/)**.
+If you enjoyed this article, please **make sure to also read one of my previous articles about [how to structure a complex Vuex store](/blog/how-to-structure-a-complex-vuex-store/)**.

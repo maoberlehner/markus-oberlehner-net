@@ -10,7 +10,7 @@ tags = ["JavaScript", "Vue", "headless CMS"]
 
 > UPDATE: Since I wrote this article, the [vue-cli-plugin-prerender-spa](https://github.com/SolarLiner/vue-cli-plugin-prerender-spa) was created. I recommend that you take a look at it before you continue with this article.
 
-In my recent article, [we built a landing page type website powered by a headless CMS and Vue.js](https://markus.oberlehner.net/blog/building-landing-pages-with-vue-and-a-headless-cms/). We've seen how quickly we can build a simple site with these two technologies. However, there is still a major problem with the result of our work: **the loading performance is pretty terrible.**
+In my recent article, [we built a landing page type website powered by a headless CMS and Vue.js](/blog/building-landing-pages-with-vue-and-a-headless-cms/). We've seen how quickly we can build a simple site with these two technologies. However, there is still a major problem with the result of our work: **the loading performance is pretty terrible.**
 
 For single-page applications, the time it takes to load the application for the first time is typically not that important. Because it's most likely still a lot faster than downloading a native app, ideally, our users open our application regularly, which means we can utilize caching strategies to make sure consecutive visits are speedy.
 
