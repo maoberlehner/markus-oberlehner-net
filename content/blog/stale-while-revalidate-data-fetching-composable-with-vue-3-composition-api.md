@@ -1,8 +1,8 @@
 +++
 date = "2020-05-10T10:28:28+02:00"
 title = "Stale-While-Revalidate Data Fetching Composable with Vue 3 Composition API"
-description = "Learn how to use the Vue 3 Composition API to build a data fetching composable implementing the stale-while-revalidate pattern."
-intro = "When building apps that rely on data from an API, two things are essential: we want our data to be fresh, and we want it fast. The stale-while-revalidate caching pattern helps us to strike a balance between both..."
+description = "Learn how to use the Vue 3 Composition API to build a data fetching composable implementing the Stale-While-Revalidate pattern."
+intro = "When building apps that rely on data from an API, two things are essential: we want our data to be fresh, and we want it fast. The Stale-While-Revalidate cache pattern helps us to strike a balance between both..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
@@ -11,7 +11,7 @@ images = ["/images/c_pad,b_rgb:F5D423,f_auto,q_auto,w_1014,h_510/v1542158521/blo
 
 > This article covers the basics of how to build a simple implementation of the SWR pattern. If you want to use it in a production application, I recommend using a fully-equipped package like [swrv](https://github.com/Kong/swrv).
 
-When building apps that rely on data from an API, two things are essential: **we want our data to be fresh, and we want it fast.** The stale-while-revalidate caching pattern helps us to strike a balance between both.
+When building apps that rely on data from an API, two things are essential: **we want our data to be fresh, and we want it fast.** The Stale-While-Revalidate cache pattern helps us to strike a balance between both.
 
 If our cache already contains a copy of the requested information, **we can immediately show the (potentially stale) data.** But at the same time, **we revalidate our cache and fetch a new version.** This can make navigating our apps feel instantaneously while also making sure that the user sees the latest data eventually.
 
@@ -44,7 +44,7 @@ This is why since the introduction of Hooks, two quite similar data fetching lib
 
 I kept an eye on the development of the Vue 3 Composition API since the first RFC was published, but I never got around actually using it extensively. **After experimenting with it for a couple of days, I can say this: it is fantastic!** Now that I have (minimal) knowledge about how things are done in React, I can even more appreciate how powerful and straightforward to use the Composition API is.
 
-So without further ado, let's take a look at a naive implementation of a stale-while-revalidate data fetching composable for Vue 3.
+So without further ado, let's take a look at a naive implementation of a Stale-While-Revalidate data fetching composable for Vue 3.
 
 ```js
 // src/composables/swr-cache.js
