@@ -33,7 +33,7 @@ At first glance, the very flexible Vue.js approach seems preferable. Still, some
 
 ## `useState()` Hook as Vue 3 Composable
 
-With Vue 3, we can create Composables, which enable us to share stateful logic. So nothing is stopping us from making our own `useState()` Composable in Vue.
+With Vue 3, we can create composables, which enable us to share stateful logic. So nothing is stopping us from making our own `useState()` composable in Vue.
 
 ```js
 // src/composables/state.js
