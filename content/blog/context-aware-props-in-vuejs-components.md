@@ -1,6 +1,6 @@
 +++
 date = "2020-08-09T08:18:18+02:00"
-title = "Context Aware Props in Vue.js Components"
+title = "Context-Aware Props in Vue.js Components"
 description = "Learn how to derive default values for properties from the context of a component."
 intro = "Recently I saw an interesting Tweet by Mark Dalgleish, about the idea of contextual defaults for React components. I was especially interested in this because I had to solve a similar problem only a few days before..."
 draft = false
