@@ -74,7 +74,7 @@ If you are an old school CSS ninja, you immediately know how we can utilize nest
 
 But there is a reason why we mostly avoid to write nested styles. It requires a lot of discipline to keep our CSS sane in the long run if we liberally rely on nesting.
 
-## Using a context provider to provide default props
+## The Context-Aware Component Pattern
 
 In one of my earlier articles, I wrote about [how to replicate React Context in Vue.js](/blog/context-and-provider-pattern-with-the-vue-3-composition-api/). Let's take a look at how we can use this pattern to provide context-aware default properties for our `BaseButton` component.
 
