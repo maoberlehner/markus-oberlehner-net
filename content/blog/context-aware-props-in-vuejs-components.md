@@ -6,12 +6,32 @@ intro = "Recently I saw an interesting Tweet by Mark Dalgleish, about the idea o
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue"]
-images = ["/images/c_pad,b_rgb:EFEFEF,f_auto,q_auto,w_1014,h_510/v1542158521/blog/2020-08-09/dark-and-light-button"]
+images = ["/images/c_pad,b_rgb:EFEFEF,f_auto,q_auto,w_1014,h_510/v1542158522/blog/2020-08-09/the-context-aware-component-pattern"]
 +++
 
 Recently I saw an [interesting Tweet by Mark Dalgleish](https://twitter.com/markdalgleish/status/1291180726218563590), about the idea of contextual defaults for React components. I was especially interested in this because I had to solve a similar problem only a few days before.
 
-## The basic concept
+<div class="c-content__figure">
+  <video
+    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1542158517/blog/2020-08-09/the-context-aware-component-pattern-video.mov"
+    poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1542158518/blog/2020-08-09/the-context-aware-component-pattern-video"
+    muted
+    autoplay
+    loop
+  ></video>
+  <p class="c-content__caption">
+    <small>The Context-Aware Component Pattern</small>
+  </p>
+</div>
+
+## Table of Contents
+
+- [Basic Concept](#basic-concept)
+- [Pure CSS Solution](#pure-css-solution)
+- [The Context-Aware Component Pattern](#the-context-aware-component-pattern)
+- [Multiple Contexts](#multiple-contexts)
+
+## Basic Concept
 
 In the following screenshot, you can see two buttons: a dark button on a white background and a light button on a black background.
 
@@ -38,24 +58,22 @@ In the following screenshot, you can see two buttons: a dark button on a white b
 
 ```html
 <template>
-  <div>
-    <BaseIsland background="white">
-      <BaseButton>
-        Dark Button
-      </BaseButton>
-    </BaseIsland>
-    <BaseIsland background="black">
-      <BaseButton>
-        Light Button
-      </BaseButton>
-    </BaseIsland>
-  </div>
+  <BaseIsland background-color="white">
+    <BaseButtonContextAware>
+      Dark Button
+    </BaseButtonContextAware>
+  </BaseIsland>
+  <BaseIsland background-color="black">
+    <BaseButtonContextAware>
+      Light Button
+    </BaseButtonContextAware>
+  </BaseIsland>
 </template>
 ```
 
-You can see that both buttons are initialized the same way, without any modifier properties. This means that the buttons are context-aware and change their looks according to the context instead of us having to set a property explicitly.
+You can see that both buttons are initialized the same way, without any modifier properties. This means that the buttons are context-aware and change their looks according to the context (`BaseIsland`) instead of us having to set a property explicitly.
 
-## A pure CSS solution
+## Pure CSS Solution
 
 If you are an old school CSS ninja, you immediately know how we can utilize nesting to solve this problem.
 
@@ -80,14 +98,25 @@ In one of my earlier articles, I wrote about [how to replicate React Context in 
 
 ```html
 <!-- src/components/ProvideBackgroundColor.vue -->
+<template>
+  <slot/>
+</template>
+
 <script>
-import { computed, provide, reactive, toRefs } from 'vue';
+import { computed, provide } from 'vue';
 
 export const BackgroundColorProviderSymbol = Symbol('Background color provider identifier');
 
-const darkColors = ['black', 'darkGray'];
-const lightColors = ['white', 'lightGray'];
-const colors = [...darkColors, ...lightColors];
+// For simplicity we define those constants in here. In a real
+// application those would probably come from a global configuration.
+const COLORS_DARK = ['black', 'darkGray'];
+const COLORS_LIGHT = ['white', 'lightGray'];
+const COLORS = [...COLORS_DARK, ...COLORS_LIGHT];
+
+export const TONE = {
+  dark: 'dark',
+  light: 'light',
+};
 
 export default {
   props: {
@@ -96,34 +125,27 @@ export default {
       type: String,
       // Check if the given color is valid.
       validator(value) {
-        return colors.includes(value);
+        return COLORS.includes(value);
       },
     },
   },
   setup(props) {
+    // Make sure the `backgroundColor` we provide is reactive.
+    let backgroundColor = computed(() => props.backgroundColor);
     // We can have unlimited background colors but only two tones.
     // But depending on your use-case, there can also be more tones.
-    const tone = computed(() => {
-      if (darkColors.includes(props.backgroundColor)) return 'dark';
-      return 'light';
-    });
-    const state = reactive({
-      backgroundColor: props.backgroundColor,
-      tone,
+    let backgroundTone = computed(() => {
+      let isDarkTone = COLORS_DARK.includes(props.backgroundColor);
+      return isDarkTone ? TONE.dark : TONE.light;
     });
 
-    provide(BackgroundColorProviderSymbol, toRefs(state));
-  },
-  render() {
-    // Our provider component is a renderless component
-    // it does not render any markup of its own.
-    return this.$slots.default();
+    provide(BackgroundColorProviderSymbol, { backgroundColor, backgroundTone });
   },
 };
 </script>
 ```
 
-The renderless provider component we can see above takes a `backgroundColor` property and, depending on its value, decides if the `tone` of the background color is `dark` or `light`. Child components can now get the information in which background context they are rendered and change their look or even their behavior accordingly.
+The provider component above takes a `backgroundColor` property and, depending on its value, decides if the `backgroundTone` of the background color is `dark` or `light`. Child components can now get the information in which background context they are rendered and change their look or even their behavior accordingly.
 
 ```html
 <!-- src/components/BaseIsland.vue -->
@@ -148,7 +170,7 @@ export default {
       type: String,
     },
     padding: {
-      default: '4',
+      default: '12',
       type: String,
     },
   },
@@ -181,66 +203,191 @@ The [`BaseIsland` component](https://csswizardry.com/2011/10/the-island-object/)
   <hr class="c-hr">
 </div>
 
+Next, we want to create a context-aware `BaseButton` component. To make this easier for us to do, we first create a component factory function that serves as an abstraction to make components context-aware quickly.
+
+```js
+// src/utils/context-aware-component-factory.js
+import { h, inject, unref } from 'vue';
+
+export function contextAwareComponentFactory(component, {
+  contextId,
+  contextAwareProps,
+}) {
+  let contextAwareComponent = (props, { attrs, slots }) => {
+    let context = inject(contextId);
+    let options = { ...attrs };
+
+    for (let [propName, { adapter }] of Object.entries(contextAwareProps)) {
+      let propValue = props[propName];
+      // If an adapter function is provided, we get the value from that.
+      // Otherwise, we assume we have a 1:1 relation from component prop to
+      // context prop.
+      let contextValue = adapter ? adapter(context) : unref(context[propName]);
+      // Do not override explicitly set props.
+      options[propName] = propValue !== undefined ? propValue : contextValue;
+    }
+
+    return h(component, options, slots);
+  };
+
+  contextAwareComponent.props = contextAwareProps;
+
+  return contextAwareComponent;
+}
+```
+
+The `contextAwareComponentFactory()` above takes a component, the ID of a context, and a list of properties that we want to prefill according to the component's context. It returns a new component, which renders the given component with pre-set values for the given context-aware props.
+
 ```html
 <!-- src/components/BaseButton.vue -->
 <template>
-  <button
-    class="root"
-    :class="contextAwareTone"
-  >
+  <button :class="[backgroundClass, textColorClass]">
     <slot/>
   </button>
 </template>
 
 <script>
-import { computed, inject } from 'vue';
+import { computed, unref } from 'vue';
 
-import { BackgroundColorProviderSymbol } from './ProvideBackgroundColor.vue';
+import { contextAwareComponentFactory } from '../utils/context-aware-component-factory';
+import { TONE, BackgroundProviderSymbol } from './ProvideBackground.vue';
 
-export default {
+const BaseButton = {
+  name: 'BaseButton',
   props: {
     tone: {
-      default: null,
+      default: TONE.dark,
       type: String,
     },
   },
   setup(props) {
-    // Her we inject the `tone` provided by the BackgroundColorProvider context.
-    const { tone: toneFromContext } = inject(BackgroundColorProviderSymbol, {});
-    const defaultTone = 'dark';
-    const contextAwareTone = computed(() => {
-      // If a `tone` is explicitly set as a prop, we always use that.
-      if (props.tone) return props.tone;
-      // If no `tone` is provided by the context, we use the `defaultTone`.
-      if (!toneFromContext) return defaultTone;
+    let backgroundClass = computed(() => (props.tone === TONE.dark ? 'bg-black' : 'bg-white'));
+    let textColorClass = computed(() => (props.tone === TONE.dark ? 'text-white' : 'text-black'));
 
-      // Here we specify that we want to render a `light` variant of our button
-      // on a `dark` background and vice versa.
-      return toneFromContext.value === 'dark' ? 'light' : 'dark';
-    });
-
-    return { contextAwareTone };
+    return {
+      backgroundClass,
+      textColorClass,
+    };
   },
 };
+
+export const BaseButtonContextAware = contextAwareComponentFactory(BaseButton, {
+  contextId: BackgroundProviderSymbol,
+  contextAwareProps: {
+    tone: {
+      // If the background tone is `dark`, the button
+      // tone must be `light` and vice versa.
+      adapter: context => (unref(context.backgroundTone) === TONE.dark ? TONE.light : TONE.dark),
+    },
+  },
+});
+
+export default BaseButton;
 </script>
 
 <style>
-.dark {
+.bg-black {
   background-color: black;
-  color: white;
 }
 
-.light {
+.bg-white {
   background-color: white;
-  color: black;
 }
 
 /* ... */
 </style>
 ```
 
-In the `BaseButton` component, we inject the data of the `BackgroundColorProvider` context and use the `tone` value to decide if we want to render a `dark` or a `light` button. But only if no `tone` prop is set directly on the `BaseButton` itself, do we consider the background color context.
+In `BaseButton.vue`, we export two variants of our button component. `BaseButtonContextAware` is exported as a named export and `BaseButton` as the component's default export. This enables us to either use the one or the other depending on our use case.
 
-## Wrapping it up
+```html
+<template>
+  <BaseIsland background-color="black">
+    <BaseButton>
+      Default Button
+    </BaseButton>
+    <BaseButtonContextAware>
+      Context-Aware Button
+    </BaseButtonContextAware>
+  </BaseIsland>
+</template>
 
-Although this is a potent pattern, it suffers from some of the same problems as using nested CSS: it is not always immediately apparent where certain styles do come from. On the other hand, this pattern is even more powerful because we can modify not only the looks of a component but also its functionality based on its context. If you decide to use a similar approach in your codebase, be aware of its potential downsides and make sure that everybody who works with the codebase is on the same page.
+<script>
+import BaseButton, {
+  BaseButtonContextAware,
+} from './BaseButton.vue';
+// ...
+</script>
+```
+
+In this example, we're using both variants of `BaseButton.vue`. While the `BaseButton` variant's tone is static, the `BaseButtonContextAware` variant will automatically adapt to the background color of the parent `BaseIsland` component.
+
+## Multiple Contexts
+
+For now our `contextAwareComponentFactory()` can only deal with a single context. But what if we need our components to adapt to multiple contexts? Let's look at how we can make our factory function capable of dealing with multiple contexts.
+
+```diff
+ import { h, inject, unref } from 'vue';
+
++import { asArray } from './as-array';
+
+-export function contextAwareComponentFactory(component, {
+-  contextId,
+-  contextAwareProps,
+-}) {
++export function contextAwareComponentFactory(component, config) {
++  let configurations = asArray(config);
++  let allContextAwareProps = {};
+
+   let contextAwareComponent = (props, { attrs, slots }) => {
+-    let context = inject(contextId);
+     let options = { ...attrs };
+
++    for (let { contextId, contextAwareProps } of configurations) {
++      Object.assign(allContextAwareProps, contextAwareProps);
++      let context = inject(contextId);
+
+       for (let [propName, { adapter }] of Object.entries(contextAwareProps)) {
+         let propValue = props[propName];
+         let contextValue = adapter ? adapter(context) : unref(context[propName]);
+         // Do not override explicitly set props.
+         options[propName] = propValue !== undefined ? propValue : contextValue;
+       }
++    }
+
+     return h(component, options, slots);
+   };
+
+-  contextAwareComponent.props = contextAwareProps;
++  contextAwareComponent.props = allContextAwareProps;
+
+   return contextAwareComponent;
+ }
+```
+
+With those changes, we made it possible to either pass a single context or multiple contexts. The `config` option can be either an object like `{ contextId, contextAwareProps }` or an array of objects like `[{ contextId, contextAwareProps }]`. In the following example, we can see how to use `contextAwareComponentFactory()` with multiple contexts.
+
+```js
+export const BaseButtonContextAware = contextAwareComponentFactory(BaseButton, [
+  {
+    contextId: BackgroundProviderSymbol,
+    contextAwareProps: {
+      tone: {
+        adapter: context => (unref(context.backgroundTone) === TONE.dark ? TONE.light : TONE.dark),
+      },
+    },
+  },
+  {
+    contextId: FeatureDecisionsProviderSymbol,
+    contextAwareProps: {
+      enableClickTracking: {
+        adapter: context => unref(context.decisions[ENABLE_CLICK_TRACKING]),
+      },
+    },
+  },
+]);
+```
+
+## Wrapping It Up
+
+Although this is a potent pattern, it suffers from some of the same problems as nested CSS: it is not always immediately apparent where individual styles come from. On the other hand, this pattern is even more powerful because we can modify the looks of a component **and** its functionality based on its context. If you decide to use a similar approach in your codebase, be aware of its potential downsides and make sure that everybody who works with the codebase is on the same page.
