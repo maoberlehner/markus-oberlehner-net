@@ -12,13 +12,15 @@ images = ["/images/c_pad,b_rgb:EFEFEF,f_auto,q_auto,w_1014,h_510/v1542158522/blo
 Recently I saw an [interesting Tweet by Mark Dalgleish](https://twitter.com/markdalgleish/status/1291180726218563590), about the idea of contextual defaults for React components. I was especially interested in this because I had to solve a similar problem only a few days before.
 
 <div class="c-content__figure">
-  <video
-    data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1542158517/blog/2020-08-09/the-context-aware-component-pattern-video.mov"
-    poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1542158518/blog/2020-08-09/the-context-aware-component-pattern-video"
-    muted
-    autoplay
-    loop
-  ></video>
+  <div class="c-content__broad">
+    <video
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1542158517/blog/2020-08-09/the-context-aware-component-pattern-video.mov"
+      poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1542158518/blog/2020-08-09/the-context-aware-component-pattern-video"
+      muted
+      autoplay
+      loop
+    ></video>
+  </div>
   <p class="c-content__caption">
     <small>The Context-Aware Component Pattern</small>
   </p>
