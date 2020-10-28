@@ -14,8 +14,8 @@ Recently I saw an [interesting Tweet by Mark Dalgleish](https://twitter.com/mark
 <div class="c-content__figure">
   <div class="c-content__broad">
     <video
-      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1542158517/blog/2020-08-09/the-context-aware-component-pattern-video.mov"
-      poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1542158518/blog/2020-08-09/the-context-aware-component-pattern-video"
+      data-src="https://res.cloudinary.com/maoberlehner/video/upload/q_auto/v1542158519/blog/2020-08-09/the-context-aware-component-pattern-video.mov"
+      poster="https://res.cloudinary.com/maoberlehner/video/upload/q_auto,f_auto,so_0.0/v1542158519/blog/2020-08-09/the-context-aware-component-pattern-video"
       muted
       autoplay
       loop
@@ -31,7 +31,6 @@ Recently I saw an [interesting Tweet by Mark Dalgleish](https://twitter.com/mark
 - [Basic Concept](#basic-concept)
 - [Pure CSS Solution](#pure-css-solution)
 - [The Context-Aware Component Pattern](#the-context-aware-component-pattern)
-- [Multiple Contexts](#multiple-contexts)
 
 ## Basic Concept
 
@@ -61,14 +60,14 @@ In the following screenshot, you can see two buttons: a dark button on a white b
 ```html
 <template>
   <BaseIsland background-color="white">
-    <BaseButtonContextAware>
+    <BaseButton>
       Dark Button
-    </BaseButtonContextAware>
+    </BaseButton>
   </BaseIsland>
   <BaseIsland background-color="black">
-    <BaseButtonContextAware>
+    <BaseButton>
       Light Button
-    </BaseButtonContextAware>
+    </BaseButton>
   </BaseIsland>
 </template>
 ```
@@ -211,22 +210,34 @@ Next, we want to create a context-aware `BaseButton` component. To make this eas
 // src/utils/context-aware-component-factory.js
 import { h, inject, unref } from 'vue';
 
-export function contextAwareComponentFactory(component, {
-  contextId,
-  contextAwareProps,
-}) {
+export function contextAwareComponentFactory(component) {
+  let contextAwareProps = {};
   let contextAwareComponent = (props, { attrs, slots }) => {
-    let context = inject(contextId);
+    // Make it possible to use the context-aware component as the default
+    // export. The Vue SFC compiler appends the render function generated from
+    // the <template> section to the object exported as the default export. In
+    // this case, it is appended to `contextAwareComponent`.
+    if (contextAwareComponent.render) {
+      component.render = contextAwareComponent.render;
+    }
+
     let options = { ...attrs };
 
-    for (let [propName, { adapter }] of Object.entries(contextAwareProps)) {
-      let propValue = props[propName];
-      // If an adapter function is provided, we get the value from that.
-      // Otherwise, we assume we have a 1:1 relation from component prop to
-      // context prop.
-      let contextValue = adapter ? adapter(context) : unref(context[propName]);
+    for (let [propName, propOptions] of Object.entries(component.props)) {
+      let isContextAware = Boolean(propOptions.context);
+      if (!isContextAware) continue;
+
+      let contextId = propOptions.context.id || propOptions.context;
+      let context = inject(contextId, null);
+      let hasContext = Boolean(context);
+      if (!hasContext) continue;
+
+      let fallbackResolver = () => unref(context[propName]);
+      let resolveContextValue = propOptions.context.adapter || fallbackResolver;
+
       // Do not override explicitly set props.
-      options[propName] = propValue !== undefined ? propValue : contextValue;
+      options[propName] = props[propName] || resolveContextValue(context);
+      contextAwareProps[propName] = propOptions;
     }
 
     return h(component, options, slots);
@@ -238,7 +249,7 @@ export function contextAwareComponentFactory(component, {
 }
 ```
 
-The `contextAwareComponentFactory()` above takes a component, the ID of a context, and a list of properties that we want to prefill according to the component's context. It returns a new component, which renders the given component with pre-set values for the given context-aware props.
+The `contextAwareComponentFactory()` above takes a component, and checks its `props` option for props with a `context` property. It returns a new component, which renders the given component with pre-set values for the given context-aware props.
 
 ```html
 <!-- src/components/BaseButton.vue -->
@@ -254,37 +265,30 @@ import { computed, unref } from 'vue';
 import { contextAwareComponentFactory } from '../utils/context-aware-component-factory';
 import { TONE, BackgroundProviderSymbol } from './ProvideBackground.vue';
 
-const BaseButton = {
-  name: 'BaseButton',
+export default contextAwareComponentFactory({
+  name: `BaseButton`,
   props: {
     tone: {
+      context: {
+        // If the background tone is `dark`, the button
+        // tone must be `light` and vice versa.
+        adapter: context => (unref(context.backgroundTone) === TONE.dark ? TONE.light : TONE.dark),
+        id: BackgroundProviderSymbol,
+      },
       default: TONE.dark,
       type: String,
     },
   },
   setup(props) {
-    let backgroundClass = computed(() => (props.tone === TONE.dark ? 'bg-black' : 'bg-white'));
-    let textColorClass = computed(() => (props.tone === TONE.dark ? 'text-white' : 'text-black'));
+    let backgroundClass = computed(() => (props.tone === TONE.dark ? `bg-black` : `bg-white`));
+    let textColorClass = computed(() => (props.tone === TONE.dark ? `text-white` : `text-black`));
 
     return {
       backgroundClass,
       textColorClass,
     };
   },
-};
-
-export const BaseButtonContextAware = contextAwareComponentFactory(BaseButton, {
-  contextId: BackgroundProviderSymbol,
-  contextAwareProps: {
-    tone: {
-      // If the background tone is `dark`, the button
-      // tone must be `light` and vice versa.
-      adapter: context => (unref(context.backgroundTone) === TONE.dark ? TONE.light : TONE.dark),
-    },
-  },
 });
-
-export default BaseButton;
 </script>
 
 <style>
@@ -300,95 +304,27 @@ export default BaseButton;
 </style>
 ```
 
-In `BaseButton.vue`, we export two variants of our button component. `BaseButtonContextAware` is exported as a named export and `BaseButton` as the component's default export. This enables us to either use the one or the other depending on our use case.
+In `BaseButton.vue`, we export a context-aware variant of our button component. We can see that we use an `adapter` function to set the `tone` property according to its context. If we only need a 1:1 mapping between context and component prop, we can simply configure the context as `context: BackgroundProviderSymbol`. But in this case, the button's `tone` needs to be the exact opposite of the context's `tone`.
 
 ```html
 <template>
   <BaseIsland background-color="black">
-    <BaseButton>
-      Default Button
+    <BaseButton tone="light">
+      Manual set tone
     </BaseButton>
-    <BaseButtonContextAware>
+    <BaseButton>
       Context-Aware Button
-    </BaseButtonContextAware>
+    </BaseButton>
   </BaseIsland>
 </template>
 
 <script>
-import BaseButton, {
-  BaseButtonContextAware,
-} from './BaseButton.vue';
+import BaseButton from './BaseButton.vue';
 // ...
 </script>
 ```
 
-In this example, we're using both variants of `BaseButton.vue`. While the `BaseButton` variant's tone is static, the `BaseButtonContextAware` variant will automatically adapt to the background color of the parent `BaseIsland` component.
-
-## Multiple Contexts
-
-For now our `contextAwareComponentFactory()` can only deal with a single context. But what if we need our components to adapt to multiple contexts? Let's look at how we can make our factory function capable of dealing with multiple contexts.
-
-```diff
- import { h, inject, unref } from 'vue';
-
-+import { asArray } from './as-array';
-
--export function contextAwareComponentFactory(component, {
--  contextId,
--  contextAwareProps,
--}) {
-+export function contextAwareComponentFactory(component, config) {
-+  let configurations = asArray(config);
-+  let allContextAwareProps = {};
-
-   let contextAwareComponent = (props, { attrs, slots }) => {
--    let context = inject(contextId);
-     let options = { ...attrs };
-
-+    for (let { contextId, contextAwareProps } of configurations) {
-+      Object.assign(allContextAwareProps, contextAwareProps);
-+      let context = inject(contextId);
-
-       for (let [propName, { adapter }] of Object.entries(contextAwareProps)) {
-         let propValue = props[propName];
-         let contextValue = adapter ? adapter(context) : unref(context[propName]);
-         // Do not override explicitly set props.
-         options[propName] = propValue !== undefined ? propValue : contextValue;
-       }
-+    }
-
-     return h(component, options, slots);
-   };
-
--  contextAwareComponent.props = contextAwareProps;
-+  contextAwareComponent.props = allContextAwareProps;
-
-   return contextAwareComponent;
- }
-```
-
-With those changes, we made it possible to either pass a single context or multiple contexts. The `config` option can be either an object like `{ contextId, contextAwareProps }` or an array of objects like `[{ contextId, contextAwareProps }]`. In the following example, we can see how to use `contextAwareComponentFactory()` with multiple contexts.
-
-```js
-export const BaseButtonContextAware = contextAwareComponentFactory(BaseButton, [
-  {
-    contextId: BackgroundProviderSymbol,
-    contextAwareProps: {
-      tone: {
-        adapter: context => (unref(context.backgroundTone) === TONE.dark ? TONE.light : TONE.dark),
-      },
-    },
-  },
-  {
-    contextId: FeatureDecisionsProviderSymbol,
-    contextAwareProps: {
-      enableClickTracking: {
-        adapter: context => unref(context.decisions[ENABLE_CLICK_TRACKING]),
-      },
-    },
-  },
-]);
-```
+The first instance of `BaseButton` in the example above has its `tone` property manually set. While the first `BaseButton`'s tone is static, the second button will automatically adapt to the background color of the parent `BaseIsland` component.
 
 ## Wrapping It Up
 
