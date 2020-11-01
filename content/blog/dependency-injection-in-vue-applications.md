@@ -291,6 +291,8 @@ Furthermore, **because of the global nature of plugins, there might arise namesp
 
 ## Provide / inject
 
+> UPDATE: with the Vue 3 Composition API, we are now able to [inject dependencies using the Context Provider Pattern automatically](/blog/automatic-dependency-injection-in-vue-with-context-providers/).
+
 I feel [provide / inject](https://vuejs.org/v2/api/#provide-inject) has kind of a bad reputation in the Vue.js world. Unjustified, in my view. I guess one of the reasons why that is, is because variables provided to child components that way are not reactive. But thats a plus in my books. If they were reactive, this feature would be abused to break the one way data flow pattern Vue.js enforces. Another reason might be that in the official Vue.js documentation it is recommended to not use this pattern in generic application code. Unfortunately, it is not stated why this is so, because in my opinion you can do much worse things with plugins.
 
 But the way we want to use provide / inject, we don't care about reactivity at all: we want to inject dependencies, like the product service we've seen earlier, to child components.
