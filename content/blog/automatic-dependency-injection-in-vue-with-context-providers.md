@@ -50,7 +50,7 @@ export const serviceContainer = {
 };
 ```
 
-In this generic `service-container.js` file, we create all of our service instances. Services usually contain all the business logic of our application. Typically they are responsible for fetching data and sending data to an API but depending on the type of our application; they can do anything business logic related.
+In this generic `service-container.js` file, we create all of our service instances. Services usually contain all the business logic of our application. Typically they are responsible for fetching data and sending data to an API but depending on the type of our application, they can do anything business logic related.
 
 ```js
 // src/composables/service-container.js
