@@ -11,6 +11,27 @@ images = ["/images/c_pad,b_rgb:ED8936,f_auto,q_auto,w_1014,h_510/v1542158523/blo
 
 I'm kind of obsessed with Dependency Injection. But for a good reason. I believe that an essential factor when it comes to building maintainable, large-scale applications is to get Dependency Injection right. I'm not saying there is only one right way; I know for a fact that there are many ways. But it is crucial to find a way that fits the overall architecture of your application.
 
+<div class="c-content__figure">
+  <div class="c-content__broad">
+    <a href="/images/c_scale,f_auto,q_auto/v1542158523/blog/2020-11-01/automatic-dependency-injection">
+      <img
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1542158523/blog/2020-11-01/automatic-dependency-injection"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1542158523/blog/2020-11-01/automatic-dependency-injection 2x"
+        alt="Automatic Dependency Injection via a Context Provider."
+      >
+      <noscript>
+        <img
+          src="/images/c_scale,f_auto,q_auto,w_740/v1542158523/blog/2020-11-01/automatic-dependency-injection"
+          alt="Automatic Dependency Injection via a Context Provider."
+        >
+      </noscript>
+    </a>
+  </div>
+  <p class="c-content__caption">
+    <small>Automatic Dependency Injection via a Context Provider</small>
+  </p>
+</div>
+
 With `provide/inject`, we always had a [powerful tool in Vue.js to develop patterns for globally injecting dependencies](https://markus.oberlehner.net/blog/dependency-injection-in-vue-applications/#provide-inject). But only with the improvements to Vue 3, I'm convinced that we will see widespread use of `provide/inject` in real-world Vue.js applications. In the last weeks, I already wrote about how we can use [the Context Provider Pattern in Vue.js](https://markus.oberlehner.net/blog/context-aware-props-in-vuejs-components/) and utilize this technique to help us [implement feature toggles](https://markus.oberlehner.net/blog/vuejs-feature-toggle-context-provider/). But only a few days ago, I realized that the Context Provider Pattern allows us to build the ultimate Dependency Injection system with Vue.js.
 
 ## Service Container Context Provider
