@@ -141,7 +141,7 @@ In the above example, we can see how we can `useServiceContainerContext()` to ma
 
 ## Automatic DI with Context-Aware Components
 
-Instead of manually injecting the Service Container Context via the `useServiceContainerContext()` composable, we can use the Context-Aware Component Pattern to do this for us automatically.
+Instead of manually injecting the Service Container Context via the `useServiceContainerContext()` composable, we can use the [Context-Aware Component Pattern](https://markus.oberlehner.net/blog/context-aware-props-in-vuejs-components/) to do this for us automatically.
 
 ```diff
  // src/components/UserDashboard.vue
