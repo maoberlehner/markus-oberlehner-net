@@ -3,10 +3,10 @@
     display: block;
     margin-right: -(setting-spacing(l));
     margin-left: -(setting-spacing(l));
-    padding: setting-spacing(l);
-    overflow-x: auto;
     border-radius: 0.5em;
     background: setting-color(a, gray);
+    padding: setting-spacing(l);
+    overflow-x: auto;
     font-size: setting-font-size(s);
   }
 }
@@ -18,25 +18,25 @@
 
 .lntd {
   margin: 0;
-  padding: 0;
   border: 0;
+  padding: 0;
   vertical-align: top;
 }
 
 .lntable {
   display: block;
   margin: 0;
+  border: 0;
   padding: 0;
   width: auto;
   overflow: auto;
-  border: 0;
   border-spacing: 0;
 }
 
 .hl {
   display: block;
-  width: 100%;
   background-color: #ffc;
+  width: 100%;
 }
 
 .lnt {

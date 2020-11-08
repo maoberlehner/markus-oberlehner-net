@@ -1,7 +1,7 @@
 .c-feature {
+  background: setting-color(a, gray);
   padding-top: setting-spacing(xxl);
   padding-bottom: setting-spacing(xxl);
-  background: setting-color(a, gray);
 }
 
 .c-feature__list {
@@ -12,7 +12,7 @@
 .c-feature__listItem {
   &:not(:first-child) {
     margin-top: setting-spacing(l);
-    padding-top: setting-spacing(l);
     border-top: 1px solid setting-color(b, gray);
+    padding-top: setting-spacing(l);
   }
 }

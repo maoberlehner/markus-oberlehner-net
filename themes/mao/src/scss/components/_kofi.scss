@@ -1,17 +1,18 @@
 .kofi-button {
   display: inline-flex;
-  padding: setting-spacing(xs) setting-spacing(m);
   align-items: center;
+  transition: background-color 0.2s;
   border-radius: 0.25em;
   background-color: $brand-color;
+  padding: setting-spacing(xs) setting-spacing(m);
   text-decoration: none;
-  transition: background-color 0.2s;
 
   &,
   &:visited {
     color: $brand-color-contrast;
   }
 
+  // stylelint-disable-next-line order/order
   &:hover,
   &:focus {
     background-color: rgba($brand-color, 0.7);

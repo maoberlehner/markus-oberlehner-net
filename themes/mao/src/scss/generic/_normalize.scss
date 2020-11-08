@@ -36,8 +36,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-size: 1em; /* 2 */
   font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -92,8 +92,8 @@ strong {
 code,
 kbd,
 samp {
-  font-size: 1em; /* 1 */
   font-family: monospace, monospace; /* 2 */
+  font-size: 1em; /* 1 */
 }
 
 /**
@@ -125,8 +125,8 @@ small {
 sub,
 sup {
   position: relative;
-  line-height: 0;
   vertical-align: baseline;
+  line-height: 0;
   font-size: 75%;
 }
 
@@ -177,8 +177,8 @@ optgroup,
 select,
 textarea {
   line-height: 1.15;
-  font-size: 100%;
   font-family: inherit;
+  font-size: 100%;
 }
 
 /**
@@ -218,8 +218,8 @@ button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
-  padding: 0;
   border-style: none;
+  padding: 0;
 }
 
 /**
@@ -246,8 +246,8 @@ fieldset {
 legend {
   display: table; /* 1 */
   max-width: 100%; /* 1 */
-  color: inherit; /* 2 */
   white-space: normal; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /**
@@ -272,8 +272,8 @@ textarea {
  */
 [type='checkbox'],
 [type='radio'] {
-  padding: 0; /* 1 */
   box-sizing: border-box; /* 2 */
+  padding: 0; /* 1 */
 }
 
 /**
@@ -344,6 +344,6 @@ template {
  */
 ::selection {
   background: setting-color(a);
-  color: setting-color(a, contrast);
   text-shadow: none;
+  color: setting-color(a, contrast);
 }

@@ -17,8 +17,8 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  font-weight: 500;
   font-size: setting-font-size(l);
+  font-weight: 500;
 }
 
 b,
@@ -39,9 +39,9 @@ code {
 }
 
 code:not([class]) {
-  padding: 0.2em 0.4em;
   border-radius: 0.1875em;
   background: darken(setting-color(a, gray), 2%);
+  padding: 0.2em 0.4em;
   font-size: 85%;
 }
 

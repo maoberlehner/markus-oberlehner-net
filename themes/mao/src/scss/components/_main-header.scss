@@ -1,12 +1,7 @@
 .c-main-header {
+  background: $brand-color;
   padding-top: setting-spacing(m);
   padding-bottom: setting-spacing(m);
-  background: $brand-color;
-
-  &,
-  a {
-    color: $brand-color-contrast;
-  }
 
   &::before {
     position: fixed;
@@ -14,9 +9,14 @@
     right: 0;
     left: 0;
     z-index: 999;
-    height: 0.2em;
     background: $brand-color;
+    height: 0.2em;
     content: '';
+  }
+
+  &,
+  a {
+    color: $brand-color-contrast;
   }
 }
 
@@ -38,9 +38,9 @@
 }
 
 .c-main-header__logo {
-  line-height: 1.1;
-  text-decoration: none;
   text-transform: uppercase;
-  font-size: setting-font-size(s);
+  text-decoration: none;
+  line-height: 1.1;
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: setting-font-size(s);
 }
