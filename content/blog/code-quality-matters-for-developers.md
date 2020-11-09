@@ -1,27 +1,27 @@
 +++
 date = "2017-04-09T08:57:02+02:00"
 title = "Code Quality Matters (for Developers)"
-description = "Almost every developer with some years of experience knows the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase."
-intro = "Earlier today I read an interesting article speculating about the code quality of Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with..."
+description = "Almost all developers with some years of experience know the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase."
+intro = "Earlier today, I read an interesting article speculating about the code quality of Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the article's conclusions, and I myself know the pain of working with bad code all too well. But still, there was one comment from ”barry” against the popular opinion, which I also can't disagree with..."
 draft = false
 categories = ["Development"]
 +++
 
-Earlier today I read an [interesting article speculating about the code quality of Facebook](https://www.darkcoding.net/software/facebooks-code-quality-problem/). There is also a [Reddit thread](https://www.reddit.com/r/programming/comments/3r90iy/facebooks_code_quality_problem/) discussing the article with some insights from current and former Facebook employees.
+Earlier today, I read an [interesting article speculating about the code quality of Facebook](https://www.darkcoding.net/software/facebooks-code-quality-problem/). There is also a [Reddit thread](https://www.reddit.com/r/programming/comments/3r90iy/facebooks_code_quality_problem/) discussing the article with some insights from current and former Facebook employees.
 
-Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with.
+Most of the comments agree with the article's conclusions, and I myself know the pain of working with bad code all too well. But still, there was one comment from ”barry” against the popular opinion, which I also can't disagree with.
 
 > “And yet Facebook has more active users at any given moment than any other site in the world. How many startups run by functional programming snobs succeed vs the move fast and break things cohort? Perhaps perfection is an unrealistic and distracting target as the future is uncertain, hard to predict and is therefore the enemy of good.”
 
 ## Why developers hate bad code
 
-Almost every developer with some years of experience knows the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase. We're feeling dirty if we have to change or extend the functionality and feel forced to write even more bad code. It seems impossible to write clean code when working with all this old messy code (at least thats what we're telling our bosses).
+Almost all developers with some years of experience know the pain of working on a legacy project. The code quality is horrific, and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase. We're feeling dirty if we have to change or extend the functionality and feel forced to write even more bad code. It seems impossible to write clean code when working with all this old messy code (at least that's what we're telling our bosses).
 
 ## Why developers should appreciate legacy code
 
-At my workplace I can experience three levels of code quality first hand. We have the fancy new codebase, built from the ground up featuring all the latest technologies. Then there is the “newish” project still using modern technologies but, yeah it's fine but not great. And we have the big old legacy project featuring messy code and all the worst practices. It is really fun to build on top of the new codebase. It doesn't suck to work with the “newish” project. But working with the legacy project is a PITA – it is almost impossible to make changes of a certain size without introducing new bugs.
+At my workplace, I can experience three levels of code quality firsthand. We have a fancy new codebase, built from the ground up, featuring all the latest technologies. Then there is the “newish” project still using modern technologies but, yeah, it's okay but not great. And we have the big old legacy project featuring messy code and all the worst practices. It is really fun to build on top of the new codebase. It doesn't suck to work with the “newish” project. But working with the legacy project is a PITA – it is almost impossible to make changes of a certain size without introducing new bugs.
 
-But guess what? The messy old legacy project pays our bills and it does for a lot of people – from which most of aren't even developers – since years. There are thousands of users using it daily and they don't care if the developers implementing new features wan't to kill themselves on a regular basis (of course I'm exaggerating).
+But guess what? The messy old legacy project pays our bills, and it does for a lot of people – from which most of aren't even developers – for years. There are thousands of users using it daily, and they don't care if the developers implementing new features wan't to kill themselves regularly (of course, I'm exaggerating).
 
 ## The business value of good code
 
