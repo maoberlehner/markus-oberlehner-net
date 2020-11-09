@@ -2,7 +2,7 @@
 date = "2017-04-09T08:57:02+02:00"
 title = "Code Quality Matters (for Developers)"
 description = "Almost every developer with some years of experience knows the pain of working on a legacy project. The code quality is horrific and you're afraid of changing things because it will almost certainly break something somewhere else in the codebase."
-intro = "Earlier today I read an interesting article speculating about the code quality of Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with...."
+intro = "Earlier today I read an interesting article speculating about the code quality of Facebook. There is also a Reddit thread discussing the article with some insights from current and former Facebook employees. Most of the comments agree with the conclusions of the article and I myself know the pains of working with bad code all too well. But still there was one comment from ”barry” against the popular opinion which I also can't disagree with..."
 draft = false
 categories = ["Development"]
 +++
