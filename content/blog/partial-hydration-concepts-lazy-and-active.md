@@ -26,7 +26,7 @@ Lazy Hydration is a form of Partial Hydration where you can trigger hydration at
     <TheBlogArticle/>
   </LazyHydrate>
   <LazyHydrate when-visible>
-	  <TheFooter/>
+    <TheFooter/>
   </LazyHydrate>
 </template>
 ```
