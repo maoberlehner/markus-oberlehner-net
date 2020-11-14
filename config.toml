@@ -11,7 +11,7 @@ theme = "mao"
 [params]
   description = "Markus Oberlehner writes articles about Vue.js, JavaScript, CSS, Test Driven Development and Front-End Architecture in general."
   author = "Markus Oberlehner"
-  images = ["https://markus.oberlehner.net/images/markus-oberlehner-meta-2017-06.jpg"]
+  images = ["https://markus.oberlehner.net/images/f_auto,q_auto/v1532158513/blog/assets/markus-oberlehner-meta-2017-06"]
 
 [[menu.main]]
   name = "Home"

@@ -3,7 +3,7 @@ $c-hero-max-height: 52em;
 $c-hero-height: 100vh;
 
 .c-hero {
-  background-image: url('/images/markus-oberlehner-mobile-2017-06.jpg');
+  background-image: url('/images/f_auto,q_auto/v1532158513/blog/assets/markus-oberlehner-mobile-2017-06');
   background-position: top center;
   background-size: cover;
   height: $c-hero-height;
@@ -11,7 +11,7 @@ $c-hero-height: 100vh;
   max-height: $c-hero-max-height;
 
   @media (min-width: 42em) and (orientation: landscape) {
-    background-image: url('/images/markus-oberlehner-2017-06.jpg');
+    background-image: url('/images/f_auto,q_auto/v1532158513/blog/assets/markus-oberlehner-2017-06');
 
     &,
     a,
