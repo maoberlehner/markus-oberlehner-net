@@ -44,7 +44,7 @@ const aPlusB = computed(() => {
 
 ## When Should I Use `watch`?
 
-At first glance, `watchEffect()` seems superior to `watch()`. Because you simply define a callback function, and it is automatically triggered if one of the reactive variables you use inside of it changes. But this behavior can be problematic. If you only want to trigger the callback function when one or multiple specific variables change, you must use `watch()` instead of `watchEffect()`. 
+At first glance, `watchEffect()` seems superior to `watch()`. Because you simply define a callback function, and it is automatically triggered if one of the reactive variables you use inside of it changes. But this behavior can be problematic. If you only want to trigger the callback function when one or multiple *specific* variables change, you must use `watch()` instead of `watchEffect()`.
 
 Furthermore, using `watch()` also enables us to access the previous value of the watched variables.
 
