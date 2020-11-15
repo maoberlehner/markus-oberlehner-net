@@ -91,18 +91,15 @@ export default {
 
 Above you can see the example für dynamic Vue Composition API `$refs` from the [official documentation](https://composition-api.vuejs.org/api.html#template-refs).
 
-<div class="c-content__broad">
-  <div class="c-twitter-teaser">
-    <div class="c-twitter-teaser__content">
-      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
-      <p class="c-twitter-teaser__body">
-        Follow me to get my latest Vue.js articles.
-      </p>
-      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
-        Find me on Twitter
-      </a>
-    </div>
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
   </div>
+  <hr class="c-hr">
 </div>
 
 ## Wrapping it up
