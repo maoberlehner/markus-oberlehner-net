@@ -8,7 +8,7 @@ categories = ["Development"]
 tags = ["JavaScript", "Vue"]
 +++
 
-When I first studied the new Composition API, I was confused that there are two watch hooks: `watch()` and `watchEffect()`. From the documentation alone, it was not immediately apparent to me what's the difference.
+When I first studied the new Composition API, I was confused that there are two watch hooks: `watch()` and `watchEffect()`. From [the documentation](https://v3.vuejs.org/guide/reactivity-computed-watchers.html#watcheffect) alone, it was not immediately apparent to me what's the difference.
 
 ## The Difference Between `watch` and `watchEffect`
 
