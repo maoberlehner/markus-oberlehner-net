@@ -37,7 +37,7 @@ In this simplified example, you can see that we render `<TheNavigation>` as usua
 
 The Lazy Hydration concept you can see above works best when we have a mostly interactive application, but we want to exclude some parts from the hydration. Let's imagine the other way around: we have a huge application with deeply nested components, it is a static website, but there is this one deeply nested component, which must be interactive.
 
-```
+```bash
 App > ShoppingCart > ProductList > ProductListItem > ProductQuantity
 ```
 
