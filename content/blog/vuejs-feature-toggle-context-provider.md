@@ -242,14 +242,14 @@ export default WidgetVisitors;
 <template>
   <div>
     <WidgetUsageStatsContextAware/>
-    <WidgetUsageStatsContextAware/>
+    <WidgetVisitorsContextAware/>
     <!-- ... -->
   </div>
 </template>
 
 <script>
 import { WidgetUsageStatsContextAware } from './WidgetUsageStats.vue';
-import { WidgetUsageStatsContextAware } from './WidgetVisitors.vue';
+import { WidgetVisitorsContextAware } from './WidgetVisitors.vue';
 
 // ...
 </script>
