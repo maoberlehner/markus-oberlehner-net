@@ -50,9 +50,7 @@ The problem with this solution is, that it only works for required form fields. 
 
 ### Sprinkles of JavaScript
 
-Assuming that select fields are either always required or we are able to provide a default value for optional select fields, is an assumption which might not hold true all of the time.
-
-Although usually one of my pet peeves is to build functionality which requires (or seems to require) JavaScript, with pure CSS, in this case just some sprinkles of JavaScript could solve this problem once and for all.
+Making select fields required or provide a default value for optional select fields might not be possible all of the time. Some sprinkles of JavaScript can solve this problem once and for all.
 
 <p data-height="265" data-theme-id="0" data-slug-hash="YQBQNj" data-default-tab="css,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with (CSS + JavaScript Fallback)" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/YQBQNj/">Fake Select Placeholder with (CSS + JavaScript Fallback)</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
