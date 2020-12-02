@@ -16,13 +16,13 @@ Most of the time, this is a pretty bad idea. **It is tough to get accessibility 
 
 I recommend you to avoid building custom form elements at all costs. If you have to use a custom-styled solution, use a battle-tested library instead of rolling your own.
 
-## Fiddling around
+## Fiddling Around
 
 In my case, it was not necessary to swap the native HTML select field with a fake select field. The problem at hand is how to display a placeholder inside a select field.
 
 At first, I didn’t realize that the HTML select element does not support the placeholder attribute; I just assumed it does. Next, I tried using a `disabled` but default selected option element and setting the font color to the same grey as the input placeholder element. And this works in Firefox, but in WebKit and Blink based browsers, this does not work either.
 
-## The solution
+## The Solution
 
 After playing around and noticing that you can change the color of the select element itself, I worked on the idea of **setting the select elements color to placeholder grey as long as a disabled option is selected and changing the color to the default color as soon as the value changes**.
 
@@ -30,7 +30,7 @@ After coming up with a simple JavaScript powered solution my “somehow this has
 
 <p data-height="265" data-theme-id="0" data-slug-hash="WOWrqO" data-default-tab="html,result" data-user="maoberlehner" data-embed-version="2" data-pen-title="Fake Select Placeholder with Pure CSS" class="codepen">See the Pen <a href="https://codepen.io/maoberlehner/pen/WOWrqO/">Fake Select Placeholder with Pure CSS</a> by Markus Oberlehner (<a href="https://codepen.io/maoberlehner">@maoberlehner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-### Avoiding JavaScript at all costs
+### Avoiding JavaScript at All Costs
 
 The problem with this solution is, that it only works for required form fields. **To circumvent the need for JavaScript we can avoid using a placeholder in optional select fields altogether by providing a neutral default option** like you can see with the second select field in the CodePen above.
 
