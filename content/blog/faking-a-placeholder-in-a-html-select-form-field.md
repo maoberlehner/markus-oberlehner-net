@@ -18,9 +18,9 @@ I recommend you to avoid building custom form elements at all costs. If you have
 
 ## Fiddling around
 
-In my case it was not necessary to swap the native HTML select field with a fake select field. The problem at hand is, how to display a placeholder inside a select field.
+In my case, it was not necessary to swap the native HTML select field with a fake select field. The problem at hand is how to display a placeholder inside a select field.
 
-At first I didn’t realise that the HTML select element does not support the placeholder attribute, I just assumed it does. The next thing I tried was using a disabled but default selected option element and setting the font color to the same grey as the input placeholder element. And this works in Firefox (and maybe even in Internet Explorer) but in WebKit and Blink based browsers, this does not work either.
+At first, I didn’t realize that the HTML select element does not support the placeholder attribute; I just assumed it does. Next, I tried using a `disabled` but default selected option element and setting the font color to the same grey as the input placeholder element. And this works in Firefox, but in WebKit and Blink based browsers, this does not work either.
 
 ## The solution
 
