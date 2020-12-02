@@ -16,13 +16,13 @@ Most of the time, this is a pretty bad idea. **It is tough to get accessibility 
 
 I recommend you to avoid building custom form elements at all costs. If you have to use a custom-styled solution, use a battle-tested library instead of rolling your own.
 
-## Fiddling Around
+## Styling a Disabled Option Element
 
 In my case, it was not necessary to swap the native HTML select field with a fake select field. The problem at hand is how to display a placeholder inside a select field.
 
 At first, I didn’t realize that the HTML select element does not support the placeholder attribute; I just assumed it does. Next, I tried using a `disabled` but default selected option element and setting the font color to the same grey as the input placeholder element. And this works in Firefox, but in WebKit and Blink based browsers, this does not work either.
 
-## The Solution
+## Pure CSS Solution
 
 After playing around and noticing that you can change the color of the select element itself, I worked on the idea of **setting the select elements color to placeholder grey as long as a disabled option is selected and changing the color to the default color as soon as the value changes**.
 
