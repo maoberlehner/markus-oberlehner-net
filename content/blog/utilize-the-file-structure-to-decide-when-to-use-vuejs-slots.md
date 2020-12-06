@@ -84,7 +84,7 @@ Suppose we want to build our applications using the [Domain-Driven Design](https
 └─ ...
 ```
 
-All components at the root level of our file tree are allowed to use both `Base` components and components inside the `modules` directory (another possible name is `features`). But `Base` components are only allowed to import components inside of their scope. If a module needs the `BaseCard` component, we need to inject it via a slot or other means of dependency injection.
+All components at the root level of our file tree are allowed to use both `Base` components and components inside the `modules` directory (another possible name is `features`). But `Base` components are only allowed to import components within their scope. If a module needs the `BaseCard` component, we need to inject it via a slot or other means of dependency injection.
 
 That way, we get the following benefits:
 
