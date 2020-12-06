@@ -21,7 +21,7 @@ I recently discovered that we can let the file structure of our projects guide u
 
 But keep in mind that in programming, there are no absolute truths. So take `always` and `never` with a grain of salt. Depending on several factors, e.g., your application's size and complexity, Dependency Injection might be overkill.
 
-If you sometimes struggle to determine if you should use a slot or import a component directly, this article is for you. We will learn how we can utilize the file system to help us decide when to use slots.
+If you sometimes struggle to determine if you should use a slot or import a component directly, this article is for you. We will learn how we can utilize the file structure to help us decide when to use slots.
 
 ## Let the File Structure Determine Whether We Should Use Slots
 
@@ -62,7 +62,7 @@ Slots in Vue.js components are a form of Dependency Injection; instead of tightl
 
 **Generic base components should never rely on components with specific functionality.** But it's not always that straightforward. In some instances, you might wonder if you should apply the rules of loose coupling and use slots or if tightly coupling two or more components is the better approach.
 
-We can use the file system to make it easier to develop rules that guide us in making decisions about tight and loose coupling. In the example above, we can see that `BaseCard` is nested one level deeper than `ProductDetails`. If we follow this pattern with other types of components, we can make the following rule:
+We can use the file structure to make it easier to develop rules that guide us in making decisions about tight and loose coupling. In the example above, we can see that `BaseCard` is nested one level deeper than `ProductDetails`. If we follow this pattern with other types of components, we can make the following rule:
 
 > *Never* import components from a parent directory.
 
