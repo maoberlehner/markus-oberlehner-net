@@ -87,6 +87,10 @@ Often times the simplest solution is also the best solution. If it is possible t
 
 One lesser known feature of Vue.js is [provide / inject](https://vuejs.org/v2/api/#provide-inject). It can be used in situations where you need to pass data from a parent component to one or multiple child components which might not be direct descendants of the parent. A typical example would be an accordion component which consists of a main `AppAccordion` component, a child component `AppAccordionItem` for every accordion item and maybe a separate  `AppAccordionBody` component for the body of the accordion item. Provide / inject makes it possible to pass data from the main component to the component which renders the body of an accordion item. In situations where parent components and child components are directly interdependent (an `AppAccordionBody` component would never be used without having an `AppAccordion` component as an ancestor) this pattern can be pretty powerful and simpler than using Vuex.
 
+### Context Provider Pattern
+
+With Vue 3, Provide / Inject has gotten a big upgrade. With that, it is now possible to [create Context Providers](https://markus.oberlehner.net/blog/context-and-provider-pattern-with-the-vue-3-composition-api/), which enable us to share state between multiple components very similar to Vuex but without its overhead.
+
 ### Fetching data from an API / Apollo
 
 Let's revisit one of the pro Vuex examples: the To-Do app with multiple categories. Instead of fetching all the (undone) To-Do items of a user at once, it might be a better approach to only fetch the first 20 or so items to render them on the entry page. If the user navigates to a certain category page we can trigger a new request to the API fetching the first 20 items which match the given category and if the user opens the next category we trigger the next API request and so on and so forth. If the user navigates to a category they've already opened before, we can either make a new API request and freshly fetch the data again or we can implement some kind of caching (Apollo provides caching out of the box).
