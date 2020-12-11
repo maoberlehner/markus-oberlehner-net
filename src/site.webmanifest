@@ -1,0 +1,18 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Markus Oberlehner - Blog",
+  "short_name": "Markus O.",
+  "icons": [
+      {
+        "src": "/assets/images/icon512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+  ],
+  "theme_color": "#0597be",
+  "background_color": "#fafafa",
+  "start_url": "/?utm_source=homescreen",
+  "display": "standalone",
+  "orientation": "natural"
+}
