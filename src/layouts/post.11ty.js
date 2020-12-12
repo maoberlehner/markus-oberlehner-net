@@ -6,9 +6,11 @@ module.exports = class LayoutsPost {
   }
 
   render({ content, title }) {
-    return `<article>
-  <h1>${title}</h1>
-  ${content}
-</article>`;
+    return `
+      <article>
+        <h1>${title}</h1>
+        ${content}
+      </article>
+    `;
   }
 };
