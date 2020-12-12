@@ -1,0 +1,16 @@
+.c-read-more {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: setting-font-size(s);
+
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  // stylelint-disable-next-line order/order
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

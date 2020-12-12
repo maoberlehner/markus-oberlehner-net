@@ -1,0 +1,46 @@
+.c-main-header {
+  background: $brand-color;
+  padding-top: setting-spacing(m);
+  padding-bottom: setting-spacing(m);
+
+  &::before {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: $brand-color;
+    height: 0.2em;
+    content: '';
+  }
+
+  &,
+  a {
+    color: $brand-color-contrast;
+  }
+}
+
+.c-main-header--overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(#fff, 0.1);
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}
+
+.c-main-header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-main-header__logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.1;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: setting-font-size(s);
+}

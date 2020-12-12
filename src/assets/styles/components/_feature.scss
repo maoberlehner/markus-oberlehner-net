@@ -1,0 +1,18 @@
+.c-feature {
+  background: setting-color(a, gray);
+  padding-top: setting-spacing(xxl);
+  padding-bottom: setting-spacing(xxl);
+}
+
+.c-feature__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.c-feature__listItem {
+  &:not(:first-child) {
+    margin-top: setting-spacing(l);
+    border-top: 1px solid setting-color(b, gray);
+    padding-top: setting-spacing(l);
+  }
+}

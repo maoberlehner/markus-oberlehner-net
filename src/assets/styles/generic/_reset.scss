@@ -1,0 +1,69 @@
+html {
+  @include fluid-type(font-size, 20em, 80em, setting-font-size(m), setting-font-size(l));
+  line-height: 1.6;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-size: setting-font-size(l);
+  font-weight: 500;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+pre,
+code {
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+code:not([class]) {
+  border-radius: 0.1875em;
+  background: darken(setting-color(a, gray), 2%);
+  padding: 0.2em 0.4em;
+  font-size: 85%;
+}
+
+a {
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+a[href*='amzn.to']::after {
+  content: ' (affiliate link)';
+}
+
+ul,
+ol,
+dl {
+  padding-left: 2.5em;
+}
+
+li + li {
+  margin-top: setting-spacing(xs);
+}

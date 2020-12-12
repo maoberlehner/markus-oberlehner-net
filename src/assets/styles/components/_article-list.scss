@@ -1,0 +1,26 @@
+.c-article-list__item {
+  > :not(:first-child) {
+    margin-top: setting-spacing(xs, true) / 2;
+  }
+}
+
+.c-article-list__title {
+  display: block;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.c-article-list__cta {
+  display: inline-block;
+}
+
+.c-article-list__date {
+  display: inline-block;
+  text-transform: uppercase;
+  color: setting-color(c, gray);
+  font-size: setting-font-size(s);
+}

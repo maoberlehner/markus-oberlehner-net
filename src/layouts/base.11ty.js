@@ -13,6 +13,8 @@ module.exports = class LayoutsBase {
           <title>${title || meta.title}</title>
           <meta name="description" content="${description || meta.description}">
           <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <link rel="stylesheet" href="/assets/styles/main.css">
         </head>
         <body>
           <div role="document">

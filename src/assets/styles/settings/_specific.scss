@@ -1,0 +1,11 @@
+$brand-color: setting-color(a);
+$brand-color-contrast: setting-color(a, 'contrast');
+
+/**
+ * Object: container
+ */
+$o-container-max-widths: (
+  s: 33rem,
+  m: 42rem,
+  l: 51rem
+);

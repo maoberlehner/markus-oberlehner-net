@@ -1,0 +1,83 @@
+$c-content-broad-gap: 6rem;
+$c-content-broad-breakpoint: map-get($o-container-max-widths, s) + $c-content-broad-gap + 2;
+
+.monetizing-container {
+  position: relative;
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+  background-color: hsl(0, 0%, 98%);
+  width: 300px;
+  min-height: 125px;
+
+  @media (min-width: $c-content-broad-breakpoint) {
+    float: right;
+    margin: 0 0 1em 1em;
+    margin-right: -($c-content-broad-gap / 2);
+  }
+}
+
+.monetizing-fallback {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+#carbonads {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+}
+
+#carbonads a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#carbonads .carbon-wrap {
+  display: flex;
+}
+
+.carbon-img {
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+}
+
+.carbon-text {
+  padding: 10px;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.carbon-poweredby {
+  display: block;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, 0.025) 5px, hsla(0, 0%, 0%, 0.025) 10px) hsla(203, 11%, 95%, 0.4);
+  padding: 8px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  font-size: 9px;
+  font-weight: 600;
+}

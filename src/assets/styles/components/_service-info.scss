@@ -1,0 +1,14 @@
+.c-service-info {
+  margin-top: setting-spacing(l);
+  margin-bottom: setting-spacing(l);
+  text-align: center;
+
+  h2 {
+    font-size: setting-font-size(xxl) !important;
+  }
+}
+
+.c-service-info__body {
+  margin-top: setting-spacing(xs) / 2;
+  font-size: setting-font-size(l);
+}
