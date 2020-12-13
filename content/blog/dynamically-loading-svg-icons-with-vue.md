@@ -237,7 +237,7 @@ The wrapper component approach I've shown in this article isn't very flexible in
 <div class="c-content__broad">
   <div class="c-twitter-teaser">
     <div class="c-twitter-teaser__content">
-      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <h2 class="c-twitter-teaser__headline">Like What You Read?</h2>
       <p class="c-twitter-teaser__body">
         Follow me to get my latest Vue.js articles.
       </p>
