@@ -32,6 +32,20 @@ While a grandmaster chess player looks at the big picture instead of focusing on
 
 > Don't always focus on what is most visible: dig deeper, and look at the problem from a different angle.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like what you read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Taking the Initiative
 
 Another common mistake made by less experienced chess players is that they are hesitant to trade figures in situations where they could take a figure of the opponent by giving up one of their own equally worthy figures. Let's say the two queens face each other, but both are covered. Stronger players tend to take the initiative and capture the opponent's figure, while weaker players frequently make some other move and leave the decision to trade queens to the opponent.
