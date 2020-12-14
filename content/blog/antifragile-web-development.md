@@ -10,7 +10,7 @@ images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158517/blog/2020
 
 Recently I've finished reading the book Antifragile by Nassim Nicholas Taleb. I was fascinated by the concept of antifragility. He uses the term to describe systems that benefit from volatility and disorder. In this article, I would like to reflect on a few ideas I had about applying some of the concepts in the book to web development.
 
-## Do you have evidence for no (long term) harm?
+## Do You Have Evidence for No (Long Term) Harm?
 
 His anecdote about how doctors often prescribe drugs, with potentially serious side effects, to treat minor illnesses, immediately reminded me of how careless we usually are when it comes to adding dependencies to our projects.
 
@@ -22,7 +22,7 @@ When talking about heavy-hitting dependencies like a front-end framework (Vue, R
 
 > Do you have evidence, that introducing framework X or library Y into our codebase does not harm maintainability in the long run?
 
-## Via negativa
+## Via Negativa
 
 The most powerful heuristic described in Antifragile, applied to programming, is, in my opinion, *via negativa*. In the book, it is again mainly considered in terms of medical treatment. Instead of prescribing (more) drugs, it might be better to remove unhealthy substances or behaviors from your life, for example eliminating cigarettes or sugary drinks from your diet.
 
@@ -48,6 +48,6 @@ And last but not least, it turns out that sometimes, **the best we can do to mak
   </div>
 </div>
 
-## Wrapping it up
+## Wrapping It Up
 
 Although I think it has some flaws, I still can highly recommend reading Taleb's book. Taleb tends to apply his methodology to various areas of life. I recommend you to make sure always to remember that it is, at its core, about risk management and that this is the area of expertise of Taleb. So take everything that he writes about more general topics like what he eats and drinks with a grain of salt. I understand those anecdotes as examples for practical applications of the heuristics described in the book, but not as definitive rules that everybody must follow precisely the way he does.
