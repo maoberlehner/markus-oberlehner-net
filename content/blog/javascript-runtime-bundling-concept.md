@@ -113,7 +113,7 @@ There are two ways to solve this: [Resource Hints](https://www.w3.org/TR/resourc
 
 It is important to note here that **the waterfall problem is not relevant during local development** because files load extremely fast from the hard disk. **During development, we can do without bundling just fine.**
 
-Thanks to the `runtimeBundlerMiddleware` in `server.js`, we don't have to care about bundling. We can use modern JavaScript Module syntax and a static file server during development. When we deploy the application, **the webserver takes care of bundling.** This means developers don't have to deal with maintaining a complicated build tool chain. This can be done by specialized people who are responsible for maintaining the server setup.
+Thanks to the `runtimeBundlerMiddleware` in `server.js`, we don't have to care about bundling. We can use modern JavaScript Module syntax and a static file server during development. When we deploy the application, **the webserver takes care of bundling.** This means developers don't have to deal with maintaining a complicated build toolchain. This can be done by specialized people who are responsible for maintaining the server setup.
 
 ## Pros and Cons of Runtime Bundling
 
