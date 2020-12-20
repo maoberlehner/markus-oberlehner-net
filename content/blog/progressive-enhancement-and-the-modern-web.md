@@ -31,6 +31,15 @@ They don't support us:
 
 I think those tools have great potential, and many of the recently announced features in some of those meta-frameworks make me feel optimistic.
 
+<hr class="c-hr">
+<div class="c-service-info">
+  <h2>Do you like what you're reading?</h2>
+  <p class="c-service-info__body">
+    <a class="c-anchor" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">Follow me on Twitter for more</a>.
+  </p>
+</div>
+<hr class="c-hr">
+
 ## Wrapping It Up
 
 With the rise of frontend frameworks and their corresponding backend meta-frameworks, we have thrown some best practices out of the window without adequate replacements. But I think that are typical growing pains and that we are well on the way to ironing out some of our past mistakes.
