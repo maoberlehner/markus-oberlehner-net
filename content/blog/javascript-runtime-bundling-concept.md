@@ -90,15 +90,15 @@ In the `public/index.html` file, we load `public/js/main.js`, and in there, we l
 
 <div class="c-content__figure">
   <div class="c-content__broad">
-    <a href="/images/c_scale,f_auto,q_auto/v1532158513/blog/2020-12-20/runtime-bunlder-before-after">
+    <a href="/images/c_scale,f_auto,q_auto/v1532158514/blog/2020-12-20/runtime-bundler-before-after">
       <img
-        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-12-20/runtime-bunlder-before-after"
-        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158513/blog/2020-12-20/runtime-bunlder-before-after 2x"
+        data-src="/images/c_scale,f_auto,q_auto,w_740/v1532158514/blog/2020-12-20/runtime-bundler-before-after"
+        data-srcset="/images/c_scale,f_auto,q_auto,w_1480/v1532158514/blog/2020-12-20/runtime-bundler-before-after 2x"
         alt="Before and after comparison of the JavaScript Module loading waterfall."
       >
       <noscript>
         <img
-          src="/images/c_scale,f_auto,q_auto,w_740/v1532158513/blog/2020-12-20/runtime-bunlder-before-after"
+          src="/images/c_scale,f_auto,q_auto,w_740/v1532158514/blog/2020-12-20/runtime-bundler-before-after"
           alt="Before and after comparison of the JavaScript Module loading waterfall."
         >
       </noscript>
