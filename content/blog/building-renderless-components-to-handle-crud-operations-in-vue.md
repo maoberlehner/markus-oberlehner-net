@@ -16,7 +16,7 @@ As it is with almost all of my articles, you can find [the full code on GitHub](
 
 ## Building our first renderless component
 
-The term “renderless component” comes from the react world and, as far as I know, it was first used by [Adam Wathan](https://adamwathan.me/renderless-components-in-vuejs/) in conjunction with Vue.js components – it describes a component, which does not render any HTML itself but instead provides data and functionality to a component via a [scoped slot](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots). In this step, we'll create a renderless component which fetches data from an API.
+The term “renderless component” comes from the React world and, as far as I know, it was first used by [Adam Wathan](https://adamwathan.me/renderless-components-in-vuejs/) in conjunction with Vue.js components – it describes a component, which does not render any HTML itself but instead provides data and functionality to a component via a [scoped slot](https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots). In this step, we'll create a renderless component which fetches data from an API.
 
 ```bash
 npm install --save axios
