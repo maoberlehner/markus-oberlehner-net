@@ -31,6 +31,20 @@ Knowing what it depends on is hard to explain or teach because it is a lot about
 
 There is no single secret piece of knowledge that somebody can teach you to become a professional yourself. I can’t tell you *5 Simple Tricks to Becoming an Expert Developer*. Understanding why something is right in one scenario but not in another comes with experience. Being bitten by not considering X or not planning for Y. Having seen many different kinds of bugs. Watching hundreds of conference talks and reading thousands of blog articles, often providing contradicting information. All of this adds to make you a better developer in the long run. It all trains the pattern recognition part of our brain.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like What You Read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping It Up
 
 Reading a lot, soaking up a lot of knowledge, that all helps at becoming better. But there is nothing anyone can teach you to catapult you from junior level to an expert developer level. Becoming an expert in any profession means that you'll start *feeling* what's the right thing more than *knowing* it. This might sound crazy in an area like programming where everything is about logic. But always remember: There Is No Spoon.
