@@ -2,13 +2,13 @@
 date = "2021-01-03T09:04:04+02:00"
 title = "What Makes a Senior Developer? It Depends!"
 description = "Learn about my thoughts about how to become a professional. There is no easy answer to that, but why not?"
-intro = "The most common answer when you ask a professional about solving a specific problem is: it depends. I find myself regularly in this situation when I talk to craftspeople about home renovation projects. I can understand how frustrating this can be..."
+intro = "The most common answer when you ask a professional about how to solve a specific problem is: it depends. I find myself regularly in this situation when I talk to craftspeople about home renovation projects. I can understand how frustrating this can be..."
 draft = false
 categories = ["Development"]
 images = ["/images/c_pad,b_rgb:ED8936,f_auto,q_auto,w_1014,h_510/v1542158523/blog/2021-01-03/senior-developer-it-depends"]
 +++
 
-The most common answer when you ask a professional about solving a specific problem is: *it depends*. I find myself regularly in this situation when I talk to craftspeople about home renovation projects. I can understand how frustrating this can be for the less experienced person asking the question. When I'm the one to say those two words, I try not to say them but explain what I think it depends on instead. But more often than not, I find this pretty hard to do. Why is that?
+The most common answer when you ask a professional about how to solve a specific problem is: *it depends*. I find myself regularly in this situation when I talk to craftspeople about home renovation projects. I can understand how frustrating this can be for the less experienced person asking the question. When I'm the one to say those two words, I try not to say them but explain what I think it depends on instead. But more often than not, I find this pretty hard to do. Why is that?
 
 There rarely are one size fits all solutions for certain types of problems. While less experienced people tend to think that finding solutions to problems is like solving an arithmetic problem, A + B = C, more experienced professionals know that neither A nor B are fixed and there often is an unknown X.
 
