@@ -133,8 +133,8 @@ I argue that events and callbacks solve different problems. In my opinion, it is
 
 When you name your events, imagine that your component is merely informing parent components that something has happened. See the [list of all native events on MDN](https://developer.mozilla.org/en-US/docs/Web/Events) for inspiration.
 
-> [EVENT_NAME] has happened.
-> Click has happened.
+> [EVENT_NAME] has happened.  
+> Click has happened.  
 > Remove (action) has happened.
 
 Callbacks on the other hand should always be in imperative form. Ideally, they form a (somewhat) complete sentence with a bang at the end. They tell the parent component what to do.
