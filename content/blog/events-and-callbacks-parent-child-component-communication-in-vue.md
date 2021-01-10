@@ -88,7 +88,7 @@ Now that we know how components using events as their communication channel *sou
 
 – Child Component, via Callback
 
-In this example, the conversation starts much earlier. The child component introduces itself, even before something has happened, by letting the parent component know about its required properties (e.g., `EXAMPLE`) that it needs to handle a concrete situation. Note the bangs: now there is no optionality anymore; the child component knows that if its button is clicked, the parent component has to do something about it. The child component also knows *what* should happen but not *how* it should happen; that's still up to the parent.
+In this example, the conversation starts much earlier. The child component introduces itself, even before something has happened, by letting the parent component know about its required properties (e.g., `removeFromCart` in the following code snippet) that it needs to handle a concrete situation. Note the bangs: now there is no optionality anymore; the child component knows that if its button is clicked, the parent component has to do something about it. The child component also knows *what* should happen but not *how* it should happen; that's still up to the parent.
 
 ```html
 <!-- src/components/ShoppingCartList.vue -->
