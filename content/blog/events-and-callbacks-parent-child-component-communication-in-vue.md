@@ -189,6 +189,20 @@ export default defineComponent({
 
 As we can see above, with callbacks via props, we have 1) no magic strings, 2) required props to force consumer components to provide a callback, and 3) prop types to enforce a specific function signature. Suppose we decide to change the function signature of the `removeFromCart` callback to receive the `LineItem.id` as its parameter. In that case, our build will break if we don't update all consumer components accordingly.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like What You Read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping It Up
 
 Although it is not a very convincing reason, the convention to stick to events for communication between child components and their parent component is reason enough not to use callbacks if you have the feeling that this might be confusing to the developers in your team. But, as we've seen in this article, nothing is stopping us from using callbacks alongside events as a means of less fragile and more direct communication between components.
