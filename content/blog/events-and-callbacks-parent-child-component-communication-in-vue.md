@@ -148,6 +148,17 @@ Callbacks on the other hand should always be in imperative form. Ideally, they f
 - Use callbacks when something must be dealt with.
 - Use callbacks when it is clear what must be done.
 
+<div>
+  <hr class="c-hr">
+  <div class="c-service-info">
+    <h2>Do you want to learn more about advanced Vue.js techniques?</h2>
+    <p class="c-service-info__body">
+      Register for the Newsletter of my upcoming book: <a class="c-anchor" href="https://oberlehner.us20.list-manage.com/subscribe?u=8476a98c5640f6c7b5530ea57&id=8b26bf120b" data-event-category="link" data-event-action="click: newsletter" data-event-label="Newsletter (article content)">Advanced Vue.js Application Architecture</a>.
+    </p>
+  </div>
+  <hr class="c-hr">
+</div>
+
 ## Less Fragile Parent/Child Communication with Callbacks
 
 Events are fragile. If you change the name of an event but forget to rename it in every component where you are listening to it, your application breaks but no errors are triggered. If you change the parameter signature (data emitted by an event) and you don't update all the event handlers accordingly, your application breaks at runtime.
