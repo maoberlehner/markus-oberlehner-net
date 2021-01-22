@@ -19,7 +19,7 @@ In the first phase of the frontend framework revolution, we decoupled the backen
 
 Meta-frameworks like Next.js and Nuxt.js blurred the borders between frontend and backend again. In my opinion, both (and most other similar frameworks) have the potential to get us back on the Progressive Enhancement track by giving us a backend layer close to our frontend applications.
 
-Currently, how Next.js, Nuxt.js, and others work is that they pre-render HTML on the server, and then the HTML is hydrated on the client. Although technically possible, most websites built that way fail to work if no JavaScript is loaded or executed (for whatever reason). Not only is this very wasteful, because a lot of the HTML that is pre-rendered on the server is entirely static and doesn't need to be hydrated, this is also very fragile.
+Currently, how Next.js, Nuxt.js, and others work is that they pre-render HTML on the server, and then the HTML is hydrated on the client. Although technically possible, most websites built that way fail to work if no JavaScript is loaded or executed (for whatever reason). Not only is this very wasteful because a lot of the HTML that is pre-rendered on the server is entirely static and doesn't need to be hydrated, but this is also very fragile.
 
 Thanks to the server-side rendering and backend capabilities of those frameworks, nothing stops us from building progressively enhanced websites; nothing but the fact that the tools and frameworks we use are not built with Progressive Enhancement in mind.
 
