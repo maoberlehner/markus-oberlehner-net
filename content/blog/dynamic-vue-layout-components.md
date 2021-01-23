@@ -35,7 +35,7 @@ Nowadays, I assume that most of you use the awesome [Vue CLI](https://github.com
 
 **This is the default approach for structuring a basic layout for a Vue Router powered Vue.js application.** It works fine as long as you don't need different layouts throughout your application. For example, you may have a checkout flow where you don't want to display a navigation. Or you might have product pages with sidebars and other pages without sidebars and so on.
 
-Let's take a look at how we can enhance the default approach, provided to us by the Vue CLI, to handle cases where we have to display different layouts.
+Let's take a look at how we can enhance the default approach provided to us by the Vue CLI to handle cases where we have to display different layouts.
 
 ## Conditional rendering
 
