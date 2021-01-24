@@ -6,7 +6,7 @@ intro = "Tailwind CSS is a divisive issue in the web development world: some lov
 draft = false
 categories = ["Development"]
 tags = ["CSS Architecture"]
-images = ["/images/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2021-01-24/antifragile-css-framework"]
+images = ["/images/c_pad,b_rgb:ED8936,f_auto,q_auto,w_1014,h_510/v1542158523/blog/2021-01-24/antifragile-css-framework"]
 +++
 
 Tailwind CSS is a divisive issue in the web development world: some love it, others love to hate it. [I already wrote about my thoughts about Tailwind](/blog/thoughts-about-utility-first-css-frameworks/) in a separate article, and there are a ton of articles from different people about [why they like it](https://dev.to/swyx/why-tailwind-css-2o8f) and [why they don't like it](https://dev.to/jaredcwhite/why-tailwind-isn-t-for-me-5c90). This article is about one specific feature of Tailwind CSS: its antifragility.
