@@ -29,6 +29,20 @@ Writing CSS using BEM or other more traditional approaches means that complexity
 
 Tailwind can shine when used by teams of people with very diverse CSS skills. It is only a subset of CSS, so there is less to know. Ideally, you also want to follow some best practices, but there are a lot fewer rules, and the damage you can do by not following the rules is limited. It not being reliant on strict guidelines is what makes Tailwind CSS antifragile: it has a chaos cap. If you aim for fast-paced development cycles and things (people, features, products) are changing rapidly, antifragility might be a valuable asset that trumps the benefits of more traditional approaches.
 
+<div class="c-content__broad">
+  <div class="c-twitter-teaser">
+    <div class="c-twitter-teaser__content">
+      <h2 class="c-twitter-teaser__headline">Like What You Read?</h2>
+      <p class="c-twitter-teaser__body">
+        Follow me to get my latest Vue.js articles.
+      </p>
+      <a class="c-button c-button--outline c-twitter-teaser__button" rel="nofollow" href="https://twitter.com/maoberlehner" data-event-category="link" data-event-action="click: contact" data-event-label="Twitter (article content)">
+        Find me on Twitter
+      </a>
+    </div>
+  </div>
+</div>
+
 ## Wrapping It Up
 
 Tailwind is antifragile because the bigger and more chaotic an application gets, the better the CSS bundle will perform compared to CSS authored the traditional class-based way or with a methodology like BEM. BEM might be superior in an orderly world with good communication between team members and efficient processes. Still, most software projects go south one day or the other, and when that happens, Tailwind becomes more robust instead of weaker. Working on a codebase that has become a legacy codebase always sucks, but it probably sucks less with Tailwind.
