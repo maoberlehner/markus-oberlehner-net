@@ -11,13 +11,13 @@ images = ["/images/c_pad,b_auto,f_auto,q_auto,w_1014,h_510/v1542158514/blog/2019
 
 In one of my [previous articles](/blog/multi-export-vue-single-file-ui-components/), we examined how we can use JSX in Vue.js to export multiple Vue.js components from a single Single File Component (SFC) `.vue` file. Just recently I found an even easier solution to this problem.
 
-Although it can be very useful to use JSX for simple UI components, as I described in my article, there are also some drawbacks to this approach. First, JSX doesn't feel very natural in a Vue.js environment, and second, you lose many of the advantages of Vue.js Single File Components, such as scoped styles.
+Although it can be handy to use JSX for simple UI components, as I described in my article, there are some drawbacks to this approach. First, JSX doesn't feel very natural in a Vue.js environment, and second, you lose many of the advantages of Vue.js Single File Components, such as scoped styles.
 
 ## Proxy exports
 
 The concept I've come up with is quite simple: All components live in their own SFC, but there is one master component that proxies all associated components.
 
-Let's say we have a custom form and we want to split it up into multiple components for each part of the form.
+Let's say we have a custom form, and we want to split it up into multiple components for each part of the form.
 
 ```bash
 components
@@ -28,7 +28,7 @@ components
 └─ FancyTableRow.vue
 ```
 
-If we now want to use these generic form components to create a new, more specific component like a `DataList` component, it would look something like this.
+If we want to use these generic form components to create a new, more specific component like a `DataList` component, it will look something like this.
 
 ```html
 <template>
