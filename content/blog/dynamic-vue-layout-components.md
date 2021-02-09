@@ -37,6 +37,22 @@ Nowadays, I assume that most of you use the awesome [Vue CLI](https://github.com
 
 Let's take a look at how we can enhance the default approach provided to us by the Vue CLI to handle cases where we have to display different layouts.
 
+<div>
+  <hr class="c-hr">
+  <a
+    style="display: block; margin-top: 1em;"
+    href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
+  >
+    <img
+      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      alt="Screenshots of three premium Vue.js templates."
+      style="max-width: 100%; height: auto;"
+      loading="lazy"
+    >
+  </a>
+  <hr class="c-hr">
+</div>
+
 ## Conditional rendering
 
 The most basic and straightforward approach would be to render certain parts of your layout conditionally. So you might add `v-if` directives to certain parts of your layout and toggle the visibility as you wish.
