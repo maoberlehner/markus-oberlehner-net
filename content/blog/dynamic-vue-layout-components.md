@@ -48,6 +48,8 @@ Let's take a look at how we can enhance the default approach provided to us by t
       alt="Screenshots of three premium Vue.js templates."
       style="max-width: 100%; height: auto;"
       loading="lazy"
+      width="1240"
+      height="530"
     >
   </a>
   <hr class="c-hr">

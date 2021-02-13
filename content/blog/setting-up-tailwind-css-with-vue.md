@@ -72,6 +72,24 @@ After installing `tailwindcss` as a dependency of our project and adding it to t
 
 First, we create a new `index.css` file in `src/assets/styles` and load all Tailwind related styles in it. Next, we import this newly created file inside of our main `main.js` entry point of our app.
 
+<div>
+  <hr class="c-hr">
+  <a
+    style="display: block; margin-top: 1em;"
+    href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
+  >
+    <img
+      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      alt="Screenshots of three premium Vue.js templates."
+      style="max-width: 100%; height: auto;"
+      loading="lazy"
+      width="1240"
+      height="530"
+    >
+  </a>
+  <hr class="c-hr">
+</div>
+
 ## Customizing the Tailwind configuration
 
 If we want to change certain aspects of our Tailwind CSS setup, we can create a configuration file. This makes it possible to change things like the font family, colors, margins, and even the media query breakpoints, for example.

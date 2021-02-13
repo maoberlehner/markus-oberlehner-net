@@ -78,6 +78,24 @@ Because the `<router-view>` is a regular component, we're able to use the `<tran
 
 Next up, we have to define our transition styles to make the fade transition work. Above you can see some code of the `<style>` section of our `src/App.vue` component. We could use the shorthand syntax of the `transition` property, but we'll enhance the transition in the next chapter.
 
+<div>
+  <hr class="c-hr">
+  <a
+    style="display: block; margin-top: 1em;"
+    href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
+  >
+    <img
+      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      alt="Screenshots of three premium Vue.js templates."
+      style="max-width: 100%; height: auto;"
+      loading="lazy"
+      width="1240"
+      height="530"
+    >
+  </a>
+  <hr class="c-hr">
+</div>
+
 ## Advanced fade transition (with height)
 
 Thanks to the amazing `<transition>` component, we've already achieved a basic fading page transition effect. but currently, it doesn't look very smooth because the footer isn't adapting very well to the new height of the content section. **Let's fix this by not only transition the opacity but also the height of the router views**.

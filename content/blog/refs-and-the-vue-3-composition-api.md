@@ -52,6 +52,24 @@ export default {
 </template>
 ```
 
+<div>
+  <hr class="c-hr">
+  <a
+    style="display: block; margin-top: 1em;"
+    href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
+  >
+    <img
+      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      alt="Screenshots of three premium Vue.js templates."
+      style="max-width: 100%; height: auto;"
+      loading="lazy"
+      width="1240"
+      height="530"
+    >
+  </a>
+  <hr class="c-hr">
+</div>
+
 ## Dynamic `$refs` in v-for
 
 You might wonder how this can work with dynamic references. Luckily after a short chat with [Carlos Rodrigues](https://github.com/pikax), I knew the answer (the information is also in the [official API documentation](https://composition-api.vuejs.org/api.html#template-refs), but I somehow missed it).
