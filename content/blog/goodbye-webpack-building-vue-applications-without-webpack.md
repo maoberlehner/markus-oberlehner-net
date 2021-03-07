@@ -50,6 +50,24 @@ After installing Browsersync, we can add a new npm script to our `package.json` 
 
 In the `start` script you can see above, we tell Browsersync to start a server serving the contents of and watching for changes to files inside the `src` directory. The `--single` option triggers the Browsersync server to work in SPA mode.
 
+<div>
+  <hr class="c-hr">
+  <a
+    style="display: block; margin-top: 1em;"
+    href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
+  >
+    <img
+      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      alt="Screenshots of three premium Vue.js templates."
+      style="max-width: 100%; height: auto;"
+      loading="lazy"
+      width="1240"
+      height="530"
+    >
+  </a>
+  <hr class="c-hr">
+</div>
+
 ### The Project File Structure
 
 So let's take a closer look at how we structure our project directory. Next, you can see the basic directory and file structure of our application.
