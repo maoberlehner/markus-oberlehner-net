@@ -1,0 +1,18 @@
+.c-image-cta {
+  display: block;
+  transition: box-shadow 0.2s;
+  border-radius: 2em;
+  box-shadow: 0 2em 2em -1.5em rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2.5em 2em -0.5em rgba(0, 0, 0, 0.35);
+  }
+}
+
+.c-image-cta__img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
