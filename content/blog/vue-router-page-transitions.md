@@ -85,12 +85,12 @@ Next up, we have to define our transition styles to make the fade transition wor
     href="https://www.creative-tim.com/templates/vuejs/?partner=143346"
   >
     <img
-      src="/images/q_auto/v1532158514/blog/assets/high-quality-templates"
+      src="/images/q_auto,f_auto/v1532158515/blog/assets/high-quality-templates"
       alt="Screenshots of three premium Vue.js templates."
       style="max-width: 100%; height: auto;"
       loading="lazy"
       width="1240"
-      height="530"
+      height="576"
     >
   </a>
   <hr class="c-hr">
