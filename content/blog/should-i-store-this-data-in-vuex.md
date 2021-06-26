@@ -6,6 +6,7 @@ intro = "When first starting with Vuex, most people wonder what data should be s
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "Vue", "Vuex"]
+images = ["/images/c_pad,b_rgb:EFEFEF,f_auto,q_auto,w_1014,h_510/v1542158522/blog/2018-05-27/should-i-use-vuex"]
 +++
 
 When first starting with Vuex, most people wonder what data should be stored in Vuex in the first place? In the journey of answering this question, for many people (including me) comes what I call the “Let's Store Everything in Vuex” phase. But very quickly, after having encountered the first obstacles, comes the realization that this cannot be the be-all and end-all solution to managing state in Vue.js applications.
@@ -89,11 +90,17 @@ One lesser known feature of Vue.js is [provide / inject](https://vuejs.org/v2/ap
 
 ### Context Provider Pattern
 
-With Vue 3, Provide / Inject has gotten a big upgrade. With that, it is now possible to [create Context Providers](https://markus.oberlehner.net/blog/context-and-provider-pattern-with-the-vue-3-composition-api/), which enable us to share state between multiple components very similar to Vuex but without its overhead.
+With Vue 3, Provide / Inject has gotten a big upgrade. With that, it is now possible to [create Context Providers](/blog/context-and-provider-pattern-with-the-vue-3-composition-api/), which enable us to share state between multiple components very similar to Vuex but without its overhead.
 
-### Fetching data from an API / Apollo
+### Simple Vuex Alternative: Pinia
+
+If you feel the need to use a global state management solution in your application but think Vuex is too heavy for your use case, you might want to [look at Pinia](https://pinia.esm.dev/). Pinia is an extremely lightweight but capable Vuex alternative.
+
+### Caching Server-Side Data with Apollo or swrv
 
 Let's revisit one of the pro Vuex examples: the To-Do app with multiple categories. Instead of fetching all the (undone) To-Do items of a user at once, it might be a better approach to only fetch the first 20 or so items to render them on the entry page. If the user navigates to a certain category page we can trigger a new request to the API fetching the first 20 items which match the given category and if the user opens the next category we trigger the next API request and so on and so forth. If the user navigates to a category they've already opened before, we can either make a new API request and freshly fetch the data again or we can implement some kind of caching (Apollo provides caching out of the box).
+
+The best way to handle this scenario, in my opinion, is to make use of the SWR cache pattern. You can use [swrv](https://github.com/Kong/swrv) to get going using this pattern quickly. You can [read more about using the SWR cache pattern in Vue in my article about state management](/blog/application-state-management-with-vue-3/#use-the-swr-cache-pattern).
 
 ### Portals
 
