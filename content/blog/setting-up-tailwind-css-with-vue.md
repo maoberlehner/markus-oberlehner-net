@@ -1,23 +1,19 @@
 +++
 date = "2019-11-03T06:38:38+02:00"
-title = "Setting up Tailwind CSS with Vue.js"
-description = "Learn how to set up Tailwind CSS with Vue.js and how to configure PurgeCSS to work with a Vue CLI powered app."
-intro = "Tailwind CSS is one of the rising stars in the CSS framework world. It's especially popular in the Laravel and Vue.js community. So in my next two articles, we take a closer look at this utility-first CSS framework. In this article, we learn how to set up Tailwind CSS to work with a Vue CLI powered application..."
+title = "Setting up Tailwind CSS v2 with Vue.js"
+description = "Set up Tailwind CSS v2 with Vue.js and configure PurgeCSS to work with a Vue CLI powered app."
+intro = "Tailwind CSS is one of the rising stars in the CSS framework world. It's especially popular in the Laravel and Vue.js community. In this article, we learn how to set up Tailwind CSS to work with a Vue CLI powered application..."
 draft = false
 categories = ["Development"]
 tags = ["JavaScript", "CSS Architecture", "Vue"]
 images = ["/images/c_crop,f_auto,q_auto,w_1014/v1542158520/blog/2019-11-03/tailwind-vue"]
 +++
 
-Tailwind CSS is one of the rising stars in the CSS framework world. It's especially popular in the Laravel and Vue.js community. So in my next two articles, we take a closer look at this utility-first CSS framework.
-
-In this article, we learn how to **set up Tailwind CSS to work with a Vue CLI powered application.** Because Tailwind CSS is a utility-first CSS framework which provides **a lot** of utility classes out of the box, its file size without any optimizations is pretty massive (350.4kb / 58.8kb gzipped). But luckily, **we can use PurgeCSS to improve the final bundle size of our application tremendously.**
-
-This is the first part of a short excursion into the world of utility-first CSS frameworks. In the second part, we find out how to build highly maintainable applications with Tailwind CSS and Vue.js by utilizing the power of functional UI components. [Follow this link to read the second part about how to build reusable functional Vue.js components with Tailwind CSS](/blog/reusable-functional-vue-components-with-tailwind-css/).
+Tailwind CSS is one of the rising stars in the CSS framework world. It's especially popular in the Laravel and Vue.js community. In this article, we learn how to **set up Tailwind CSS to work with a Vue CLI powered application.** Because Tailwind CSS is a utility-first CSS framework which provides **a lot** of utility classes out of the box, its file size without any optimizations is pretty massive. But luckily, **we can use PurgeCSS to improve the final bundle size of our application tremendously.** Unfortunately, we can't use the Just-in-Time mode yet with Vue CLI because it requires the latest version of PostCSS (v8) to work.
 
 If you want to take a look at the final code, you can [check out the full code on GitHub](https://github.com/maoberlehner/setting-up-tailwind-css-with-vue).
 
-> In this article, you learn how to set up Tailwind CSS and PurgeCSS with Vue.js manually. But if you use the Vue CLI, you can also use [`vue-cli-plugin-tailwind`](https://github.com/forsartis/vue-cli-plugin-tailwind) to get up and running even faster.
+> In this article, you learn how to set up Tailwind CSS v2 and PurgeCSS with Vue.js manually. But if you use the Vue CLI, you can also use [`vue-cli-plugin-tailwind`](https://github.com/forsartis/vue-cli-plugin-tailwind) to get up and running even faster.
 
 ## Table of Contents
 
@@ -31,7 +27,8 @@ If you want to take a look at the final code, you can [check out the full code o
 Before we can get started building Tailwind CSS powered Vue.js applications, we have to set it up.
 
 ```bash
-npm install tailwindcss
+npm uninstall tailwindcss postcss autoprefixer
+npm install --save-dev tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
 ```
 
 ```js
@@ -46,6 +43,8 @@ module.exports = {
   ],
 };
 ```
+
+If you get an error like `TypeError: Invalid PostCSS Plugin found at: plugins[0]` make sure that you installed the `compat` versions of the package.
 
 After installing `tailwindcss` as a dependency of our project and adding it to the list of PostCSS plugins inside of our `postcss.config.js` file, we are ready to import Tailwind CSS into our project.
 
